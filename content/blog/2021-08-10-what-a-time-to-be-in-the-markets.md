@@ -12,11 +12,11 @@ Today was a bad day for smallcaps. The Nifty Smallcap 250 index was down by 2.59
 
 But anyway, what was funny about today was that, for the first time I've been on Twitter, I saw the [#smallcap](https://twitter.com/search?q=%23smallcap&src=typeahead_click) trending. I've seen #Nifty trend multiple times in the past couple of years.
 
-  ![](/images/2021/08/smallcap-2.jpg)
+ ![](/images/2021/08/smallcap-2.jpg)
 
 This was quite surprising given that the smallcap index is down just about 5%+ over the last week. 
 
-![](/images/2021/08/small-index.png)  
+![](/images/2021/08/small-index.png) 
 
 To put that into perspective, the Nifty Smallcap 250 index is up nearly 170% since its March lows. Even considering the fact that indices hide some of the sharper falls in individual smallcap names, this was funny. 
 

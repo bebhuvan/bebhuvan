@@ -8,7 +8,7 @@ tags = ["musings"]
 
 Microsoft hit $2 trillion in marketcap a few days ago. There was a time when a trillion meant something, but it doesn't seem so anymore. Microsoft and Apple now are worth over $2 trillion. It's a silly comparison, but for context, the market cap of all listed companies on NSE is a little over $3 trillion.
 
-![](/images/2021/06/Big-tech-1024x559.png)  
+![](/images/2021/06/Big-tech-1024x559.png) 
 
 The growth of big tech companies has been phenomenal. Here's a look at the [historical sector composition](https://www.indexologyblog.com/2021/03/05/celebrating-64-years-of-the-sp-500/) of the S&P 500. The way they've replaced the old economy and staid old names is remarkable. 
 
@@ -42,16 +42,7 @@ However you slice it, big tech regulation is one of the defining issues of our t
 
 [The Conversation](https://theconversation.com/au/topics/big-tech-68454)
 
-  
-    
-      
-        
-          [Get an email](https://www.bebhuvan.com/?post_type=post&#038;p=58)
-        
-      
-    
-  
-
- [1]: https://www.adexchanger.com/platforms/what-pubs-and-ad-tech-really-think-of-googles-project-bernanke/
- [2]: https://marginalrevolution.com/marginalrevolution/2019/04/should-we-break-up-the-big-tech-companies.html
- [3]: https://www.ben-evans.com/benedictevans/2020/8/10/would-breaking-up-big-tech-work
+     [Get an email](https://www.bebhuvan.com/?post_type=post&#038;p=58)
+[1]: https://www.adexchanger.com/platforms/what-pubs-and-ad-tech-really-think-of-googles-project-bernanke/
+[2]: https://marginalrevolution.com/marginalrevolution/2019/04/should-we-break-up-the-big-tech-companies.html
+[3]: https://www.ben-evans.com/benedictevans/2020/8/10/would-breaking-up-big-tech-work
