@@ -98,7 +98,7 @@ Of course, I'm not saying all of this is uniformly bad and I know this sounds po
 
 But history is also replete with examples of unregulated activities and regulatory arbitrages ending in disaster—[2008 crisis][11], [IL&FS crisis][12], US [S&L crisis][13], and [Wildcat banking][14]. The most recent example is the spectacular implosion of crypto platforms like [Celsius and Vauld][15] that trapped millions of investors. These fintechs often make it seem like the line between innovation and fraud is very thin. Clearly, they must have some serious eyesight issues. 
 
-So if the business models are unsound and the regulators are destroying any _perceived_ moats they had, how can they revolutionize the world?
+So if the business models are unsound and the regulators are destroying any _perceived_moats they had, how can they revolutionize the world?
 
 Artificial intelligence, machine learning, and blockchain-powered predatory lending. 
 
@@ -130,7 +130,7 @@ Check out all these shenanigans:
 
 The other issue is the deteriorating macroeconomic environment. All these platforms were subsidized by venture capital money for a long time. Now that the easy money is drying up, VCs have suddenly discovered the meaning of words like revenues and profitability. With funding drying up, all these VC-funded fintechs will be forced to generate revenues and show profitability. I have a feeling it's going to get infinitely worse.
 
-Like most people, I used to watch Jon Stewart's _Daily Show_ in the early 2010s. Listening to Jon Stewart made it easy for me to pretend to be an expert on US politics without letting minor things like not having a clue about what I was talking about getting in the way. One of my favorite Jon Stewart moments was his appearance on [CNN Crossfire][18], a silly political debate show hosted by Tucker Carlson and Paul Begala. He goes on the show and absolutely destroys the format and the hosts, leading to the show's eventual cancellation. At one point on the show, he says:
+Like most people, I used to watch Jon Stewart's _Daily Show_in the early 2010s. Listening to Jon Stewart made it easy for me to pretend to be an expert on US politics without letting minor things like not having a clue about what I was talking about getting in the way. One of my favorite Jon Stewart moments was his appearance on [CNN Crossfire][18], a silly political debate show hosted by Tucker Carlson and Paul Begala. He goes on the show and absolutely destroys the format and the hosts, leading to the show's eventual cancellation. At one point on the show, he says:
 
   I wanted to come here today and tell you guys—stop! Stop hurting America.
 

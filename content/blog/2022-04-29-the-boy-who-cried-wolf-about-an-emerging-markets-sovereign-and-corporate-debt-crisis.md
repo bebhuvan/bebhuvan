@@ -6,7 +6,7 @@ date = 2022-04-29
 tags = ["a little less dumb"]
 +++
 
-These are good times for all those who've been crying wolf about market crashes and economic crises for the past couple of decades. It just took two decades, but it seems like most of those apocalyptic predictions are partially starting to come true. The Weimar Republic people had been crying wolf about inflation since 2008. It only took 14 short years, but they were finally proved right. They were heard whispering, "I told you so." They couldn't shout because their throats had gone hoarse from crying wolf for 1.4 decades. 
+These are good times for all those who've been crying wolf about market crashes and economic crises for the past couple of decades. It just took two decades, but it _seems_like most of those apocalyptic predictions are partially starting to come true. The Weimar Republic people had been crying wolf about inflation since 2008. It only took 14 short years, but they were finally proved right. They were heard whispering, "I told you so." They couldn't shout because their throats had gone hoarse from crying wolf for 1.4 decades. 
 
 The "a sovereign debt crisis is coming" people have been crying wolf for longer, but a crisis never came. But it finally looks like their time is about to come. For the past few months, I've been listening to the who's who of macro. A recurring theme among these people is the looming sovereign and corporate debt crisis in emerging and advanced countries. I'm reliably told by certain genius macro commentators this is just a few months away. They were also generous enough to suggest I sell everything, invest in gold, buy an underground bunker and stock up on canned food and ammo. Very nice people. 
 
@@ -146,7 +146,7 @@ To sum up, here's a quick overview of emerging and developing economies by vulne
 
     ![](/images/2022/04/Emerging-markets-vulnerable-to-Ukraine-1024x885.jpg)
 
-The other perennial worry for emerging market watchers is foreign currency-denominated debt. After all, dollar-denominated debt was at the heart of the Latin American and Asian financial crises. It was dubbed the _"original sin."_ Since the crises, most emerging markets have [developed local currency bond markets][29]. Foreign currency borrowing has reduced significantly. 
+The other perennial worry for emerging market watchers is foreign currency-denominated debt. After all, dollar-denominated debt was at the heart of the Latin American and Asian financial crises. It was dubbed the _"original sin."_Since the crises, most emerging markets have [developed local currency bond markets][29]. Foreign currency borrowing has reduced significantly. 
 
     ![](/images/2022/04/Foreign-currency-borrwing-emerging-markets-by-country.jpg)
 
@@ -184,7 +184,7 @@ The bottom line is emerging markets have changed a lot since the Asian and Latin
 
  [Economist](https://www.economist.com/the-world-ahead/2021/11/08/the-outlook-for-emerging-market-debt-in-2022)
 
-The probability of a repeat of an 80s and 90s type of crisis is very slim. Having said that, the poorest countries like Pakistan, Egypt, Tunisia, Mozambique, and Rwanda have seen a sizable increase in debt burdens. The rising food and energy prices will make things worse at a time when they are already at a high risk of defaults. It looks like the wave of defaults in poor countries might just be starting. Zambia defaulted in 2020 and Sri Lanka this year. [Nepal][35] seems to be in the same situation as Sri Lanka.
+The probability of a repeat of an 80s and 90s type of crisis is very slim. Having said that, the poorest countries like Pakistan, Egypt, Tunisia, Mozambique, and Rwanda have seen a sizable increase in debt burdens. The rising food and energy prices will make things worse at a time when they are already at a high risk of defaults. It looks like the wave of defaults in poor countries might just be starting. Zambia defaulted in 2020 and Sri Lanka this year. [Nepal][35] _seems_to be in the same situation as Sri Lanka.
 
 As longtime EM observer David Lubin [wrote last year][36]: 
 

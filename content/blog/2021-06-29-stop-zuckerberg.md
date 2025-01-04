@@ -6,7 +6,7 @@ date = 2021-06-29
 tags = ["musings"]
 +++
 
-This week's edition of the _[Nonzero newsletter](https://nonzero.substack.com/p/mark-zuckerberg-must-be-stopped)_ was quite interesting. It chronicles all the shenanigans of Mark Zuckerberg since he was at Harvard. The post paints Zuck almost as a modern-day Darth Vader. Of course, you might agree or disagree depending on your vantage point, and I don't want to get into passing moral judgements on Zuck's character. 
+This week's edition of the _[Nonzero newsletter](https://nonzero.substack.com/p/mark-zuckerberg-must-be-stopped)_was quite interesting. It chronicles all the shenanigans of Mark Zuckerberg since he was at Harvard. The post paints Zuck almost as a modern-day Darth Vader. Of course, you might agree or disagree depending on your vantage point, and I don't want to get into passing moral judgements on Zuck's character. 
 
 But here's an interesting passage that kinda gives a sense of what I'm talking about: 
 

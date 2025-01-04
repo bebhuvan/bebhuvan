@@ -22,7 +22,7 @@ While it's impossible to get a clear picture of what's happening, it's important
 
 I've been trying to make sense of this tragedy and thought I'd share whatever I read, watched, and listened to over the past few weeks. 
 
-What ostensibly seemed like a cakewalk for the Russians has quickly become a nightmare for them. This is an existential crisis for both the Ukrainians who have mounted a heroic resistance against a far superior aggressor against all odds and the Russians. For Ukraine, it's a fight for Independence, and for Putin, it's a fight to save face enough to continue posting macho topless pictures. 
+What ostensibly seemed like a cakewalk for the Russians has quickly become a nightmare for them. This is an existential crisis for both the Ukrainians who have mounted a heroic resistance against a far superior aggressor against all odds and the Russians. For Ukraine, it's a fight for Independence, and for Putin, it's a fight to _save_face enough to continue posting macho topless pictures. 
 
 In response, the West has unleashed economic warfare on an unprecedented scale, and no, I'm using the term __lightly. Russia had been building up its foreign exchange reserves to withstand economic shocks. They grew the reserves from ~$380 billion to ~$630 billion. The reserves were in foreign currencies like the Euro, Sterling, Dollar, Yuan, Chinese bonds, and nearly 2300 tons of gold. 
 
@@ -222,7 +222,7 @@ Fertilizer prices had already been spiking even before the invasion, but things 
   
   [March 18, 2022](https://twitter.com/FertilizerWeek1/status/1504880816882655240?ref_src=twsrc%5Etfw)
 
-The impact of the conflict will inevitably feed into inflation, compounding the problem caused by strained supply chains around the world. This conflict is probably the final nail in the coffin of the _inflation is transitory_ narrative. Transitory inflation is dead, long live transitory inflation.
+The impact of the conflict will inevitably feed into inflation, compounding the problem caused by strained supply chains around the world. This conflict is probably the final nail in the coffin of the _inflation is transitory_narrative. Transitory inflation is dead, long live transitory inflation.
 
 ### Will the sanctions work? 
 
@@ -252,7 +252,7 @@ Interesting times? Bloody yes! 😐
 
 ### Good reads 
 
-**[Pausing at the precipice][17]** | I really loved this piece by Tanner Greer. He argues the West's desire to _"do the right thing"_ without pausing to carefully consider the consequences of their actions will end up hurting the people of Ukraine. He quotes from Michael Mazarr's book that documents the utter ineptitude of the Bush administration that led to the Iraq war. The quotes paint a rather disturbing picture of how the Bush administration was driven more by the need to do the right thing than by WMDs or oil, as is commonly assumed. There was a stunning lack of thought about the consequences that US actions would have. Tanner writes that the same lack of consideration about the second-order effects of the Iraq invasion is evident in the way the West has rushed to impose crippling economic sanctions against Russia. 
+**[Pausing at the precipice][17]** | I really loved this piece by Tanner Greer. He argues the West's desire to _"do the right thing"_without pausing to carefully consider the consequences of their actions will end up hurting the people of Ukraine. He quotes from Michael Mazarr's book that documents the utter ineptitude of the Bush administration that led to the Iraq war. The quotes paint a rather disturbing picture of how the Bush administration was driven more by the need to do the right thing than by WMDs or oil, as is commonly assumed. There was a stunning lack of thought about the consequences that US actions would have. Tanner writes that the same lack of consideration about the second-order effects of the Iraq invasion is evident in the way the West has rushed to impose crippling economic sanctions against Russia. 
 
 This piece is all the more important given the charged environment we are in. Anybody with anti-War or anti-Western views is labeled as a "Putin apologist" or a "commie." But that should be a sign to seek opposing views. The central point of the post about the need to consider the unintended consequences of actions is sage wisdom. 
 
@@ -280,7 +280,7 @@ She also thinks that given the fact that Russia and Russian puppet Belarus are t
 
 [**The American Pundits Who Can't Resist "Westsplaining" Ukraine**][26] | On the other extreme, you have people like Jan Smoleński and Jan Dutkiewicz argue that just blaming the US and NATO is an extremely misguided and reductive view of the realities of Eastern Europe. To say that NATO is to blame is to deny the agency of these countries. They write that Eastern European countries like Hungary, Poland, Czechoslovakia were subject to brutal Soviet occupation. In the case of Ukraine, it's even worse. Joseph Stalin unleashed a deliberate famine that killed anywhere between 3-12 million people. Several European countries deliberately sought NATO membership because they wanted security against Russia and a taste of the prosperity of the West.
 
-[**The Weakness of the Despot**][27] | Historian Stephen Kotkin disagrees with Mearsheimer and the others and says that the West and NATO aren't to blame. He goes to the other extreme and says that the fact that NATO expanded puts the West in a much better place to deal with Putin. He says that Russia has always been a _"weak great power"_ and its ambition to be recognized as a great power on the global stage has never matched the ground realities.
+[**The Weakness of the Despot**][27] | Historian Stephen Kotkin disagrees with Mearsheimer and the others and says that the West and NATO aren't to blame. He goes to the other extreme and says that the fact that NATO expanded puts the West in a much better place to deal with Putin. He says that Russia has always been a _"weak great power"_and its ambition to be recognized as a great power on the global stage has never matched the ground realities.
 
 He says the reason why Putin has maintained his grip on power for so long is that he knows the power of a good story. A brilliant point he makes is that censorship isn't just about suppressing information, but also about spreading stories that Russian enemies like NATO and IMF want to destroy it. As long as money (oil) gushes out of the ground, Putin can buy the cooperation of people in power and doesn't have to bother about the ordinary people. 
 
@@ -386,7 +386,7 @@ Throughout the 1800s, the dream of an independent Ukraine remained a dream. In t
 
 In the 1930s, Stalin unleashed the forced collectivization of farms. The idea was to replaced peasants and individual farmers with centrally controlled farms to increase yield. This deliberately unleashed a famine that killed over 4 million people, and it came to be known as _Holodomor_. In 1941 Hitler invaded the Soviet Union and the Soviet army was utterly humiliated. Nearly 3.5 million Red Army soldiers became prisoners of the Germans. Ukraine became a graveyard under the Germans as millions of Jews were killed on a scale never seen before. 
 
-The Soviets retook Ukraine in 1941, and Ukrainians had to endure another 50 years of Soviet rule. Finally, after much struggle, Ukraine declared its independence in 1991 which also meant the end of the Soviet Union. Thought the idea of the modern Ukraine nation emerged in the 19th century, the Ukrainian identity has always existed since medieval times in some form or the other. One of the meanings of the word Ukraine is _borderlands_ and throughout its history, Ukraine has always been a border for great empires. But like the first line of Ukraine's national anthem alludes to, "_Ukraine is not yet dead_," Ukrainians never gave up on their dream of an independent Ukraine, free to chart their own destiny. 
+The Soviets retook Ukraine in 1941, and Ukrainians had to endure another 50 years of Soviet rule. Finally, after much struggle, Ukraine declared its independence in 1991 which also meant the end of the Soviet Union. Thought the idea of the modern Ukraine nation emerged in the 19th century, the Ukrainian identity has always existed since medieval times in some form or the other. One of the meanings of the word Ukraine is _borderlands_and throughout its history, Ukraine has always been a border for great empires. But like the first line of Ukraine's national anthem alludes to, "_Ukraine is not yet dead_," Ukrainians never gave up on their dream of an independent Ukraine, free to chart their own destiny. 
 
 These podcast episodes are amazing if you want to get a sense of the history of Ukraine. 
 

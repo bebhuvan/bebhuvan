@@ -6,7 +6,7 @@ date = 2023-05-08
 tags = ["a little less dumb"]
 +++
 
-In the previous post, I wrote about a few underappreciated aspects of banking panics in the wake of the Silicon Valley Bank collapse. Since publishing the post, the _not-so-serious_ banking crisis seems to be getting serious.
+In the previous post, I wrote about a few underappreciated aspects of banking panics in the wake of the Silicon Valley Bank collapse. Since publishing the post, the _not-so-serious_banking crisis seems to be getting serious.
 
   [Stories that cause bank failures and the scars they leave](/blog/stories-that-cause-bank-failures-and-the-scars-they-leave/)
 
@@ -125,7 +125,7 @@ As the Silicon Valley Bank saga unfolded, a curious narrative took hold on Twitt
 
 ![](/images/2023/05/social-media-bank-run-1-1-1.jpeg) 
 
-[Anthony Cookson, Corbin Fox, Javier Gil-Bazo, Juan Felipe Imbet, and Christoph Schiller][2] published a paper showing how Twitter _fueled_ the SVB bank run. 
+[Anthony Cookson, Corbin Fox, Javier Gil-Bazo, Juan Felipe Imbet, and Christoph Schiller][2] published a paper showing how Twitter _fueled_the SVB bank run. 
 
   This paper presents comprehensive evidence that exposure to social media conversation about bank stocks amplifies classical bank run risks. Our empirical tests show that banks with a large preexisting exposure to social media performed much worse during the recent SVB bank run, particularly if they have large mark-to-market losses and a large percentage of uninsured deposits.
 
@@ -144,7 +144,7 @@ The [Cookson et al. (2023)][2] paper led to a lively debate on Twitter. While mo
   
   [April 28, 2023](https://twitter.com/PeterContiBrown/status/1651941010711384065?ref_src=twsrc%5Etfw)
 
-It also seems to me that this debate about whether Twitter caused the Silicon Valley Bank run is over a semantic difference or misunderstanding between "caused" and "fueled" or "contributed." I don't agree with the notion that Twitter caused the Silicon Valley Bank (SVB) run. Bank runs don't materialize just because a bunch of loudmouths on Twitter decide to cause panic. The Twitter sentiment did play a role, but that isn't the same as saying it caused it. 
+It also _seems_to me that this debate about whether Twitter caused the Silicon Valley Bank run is over a semantic difference or misunderstanding between "caused" and "fueled" or "contributed." I don't agree with the notion that Twitter caused the Silicon Valley Bank (SVB) run. Bank runs don't materialize just because a bunch of loudmouths on Twitter decide to cause panic. The Twitter sentiment did play a role, but that isn't the same as saying it caused it. 
 
 You could point out the GameStop and AMC Entertainment [incidents](https://blogs.cfainstitute.org/investor/2021/05/05/gamestop-artificial-intelligence-social-media-and-the-future-of-investing/) about how social media mobs moved stock prices, but SVB depositors didn't flee because the stock price was down. Moreover, the anecdotal evidence shows that the depositors were coordinating on WhatsApp, Slack, Discord groups, and on phone calls. All those things are unobservable. SVB depositors were [savvy and informed](https://www.phenomenalworld.org/analysis/banks-as-hedge-funds/); they monitored the bank's fundamentals and fled when they realized it was beyond redemption.
 

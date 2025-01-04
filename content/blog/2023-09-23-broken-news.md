@@ -58,9 +58,9 @@ I know that's a quaint notion at a time when the term "mainstream media" has bec
 
 My dad read newspapers every day and I picked up the same habit. As far as I can remember, I've always read random things. My dad's family didn't appreciate the value of education. I still remember him telling me stories about how some asshole family members of his made it impossible for him to pursue his studies. Given his experiences, he made it a priority to get me and my brother to read and interact with others as much as possible. Tagging along with him on his Bajaj Chetak and Kawasaki Bajaj KB 100 to the local tea shop to meet his friends was a regular ritual.
 
-No matter what changed as I grew up, the one thing that remained a constant was we always had newspapers. Whenever we changed houses, my dad would hunt down a newspaper agent like Liam Neeson In _Taken_ and restart the newspaper subscription. Reading a newspaper became a daily habit from an early age. I understood very little but read them nonetheless. With time, I understood the value of newspapers.
+No matter what changed as I grew up, the one thing that remained a constant was we always had newspapers. Whenever we changed houses, my dad would hunt down a newspaper agent like Liam Neeson In _Taken_and restart the newspaper subscription. Reading a newspaper became a daily habit from an early age. I understood very little but read them nonetheless. With time, I understood the value of newspapers.
 
-This is how weird I was. When _DNA_ launched in Bangalore, they had salespeople selling subscriptions. I still remember tagging along with the sales guys and helping them sell subscriptions in my neighborhood.
+This is how weird I was. When _DNA_launched in Bangalore, they had salespeople selling subscriptions. I still remember tagging along with the sales guys and helping them sell subscriptions in my neighborhood.
 
 Over time, I started writing as well, but I was shit at it, really shit. I can't recall why, but I also wanted to be a journalist at one point. Thank God I didn't become one. If I had, I would be sharing a luxurious single-bedroom condominium made of zinc-aluminum sheets with migrant construction workers from Bihar on a construction site at Whitefield.
 
@@ -132,7 +132,7 @@ I'm not an archaeologist in the formal sense of the word—I don't have any educ
 
 Before the written word, news was transmitted through the spoken word. [Messengers][4] and [town criers][5] were the earliest newspapers but human. Government bulletins were the precursors to modern newspapers and can be traced back thousands of years.
 
-But if you believe in made-up things like history and evidence, one of the first newspapers can be traced back to Rome between 59 BC and [130 BC][6]. Thanks to Julius Caesar, the Roman Empire had daily gazettes called _[Acta Diurna][7],_ or daily events. These [bulletins][8] contained news about births, deaths, gladiatorial fights, astrology, court trials, etc. There was a separate bulletin called Acta _[Senatus][9]_ to report on the developments of the Roman Senate. In a way, this was the very first Twitter feed. The Han dynasty _may_ have had _Dibao_, or palace reports, as early as [206 BC][10]. Around 713–734 AD, in the Kaiyuan [era][11], the Chinese had something called _[Kai Yuan Za Bao,][12]_ or Bulletin of the Court_._ These bulletins were handwritten on silk and contained domestic and political news for government officials.
+But if you believe in made-up things like history and evidence, one of the first newspapers can be traced back to Rome between 59 BC and [130 BC][6]. Thanks to Julius Caesar, the Roman Empire had daily gazettes called _[Acta Diurna][7],_or daily events. These [bulletins][8] contained news about births, deaths, gladiatorial fights, astrology, court trials, etc. There was a separate bulletin called Acta _[Senatus][9]_to report on the developments of the Roman Senate. In a way, this was the very first Twitter feed. The Han dynasty _may_have had _Dibao_, or palace reports, as early as [206 BC][10]. Around 713–734 AD, in the Kaiyuan [era][11], the Chinese had something called _[Kai Yuan Za Bao,][12]_or Bulletin of the Court_._These bulletins were handwritten on silk and contained domestic and political news for government officials.
 
 The modern, regularly published newspapers as we know them were not possible until the invention of the movable-type printing press by [Johannes Gutenberg][13] around 1440. Although Gutenberg gets all the credit, printing presses existed long before him. The Chinese and [Japanese][14] had [woodblock printing][15] as far back as the [7th][16] and 8th centuries, and the [Koreans][17] had it in the 10th and 11th centuries. The Chinese had the [movable-type printing press][18] around 1040 AD, and the Koreans had it by 1230. They never caught on in China because, unlike English, the Chinese language has thousands of characters, and having a printing block for every character was [impractical][16].
 
@@ -140,19 +140,19 @@ While it's easy to write about the history of news in a neat sequential order, t
 
   Among the early books printed on a Gutenberg press was a 16th-century collection of sex positions based on the sonnets of the man considered the first pornographer, Aretino—a book banned by the pope.
 
-Soon, the printing press started spreading around Europe. In 1470, a poem describing the conquest of Negroponte by the Ottomans was [published in Milan][20]. Around the 1500s, Italy had handwritten and [printed][21] newsletters called _[avvissi][22]._ The _avvissi_ were circulated both in public and private. They aggregated diplomatic, military, political, and religious news from various sources. By the 1570s, they were [widely read][23] by the city elite in Rome and Venice. The Medici dynasty invested considerable resources in setting up an information-gathering network [throughout Europe][24] to collect intelligence. Cosimo I de' Medici created a postal network when he ascended the throne to send and receive _avvisi_. 
+Soon, the printing press started spreading around Europe. In 1470, a poem describing the conquest of Negroponte by the Ottomans was [published in Milan][20]. Around the 1500s, Italy had handwritten and [printed][21] newsletters called _[avvissi][22]._The _avvissi_were circulated both in public and private. They aggregated diplomatic, military, political, and religious news from various sources. By the 1570s, they were [widely read][23] by the city elite in Rome and Venice. The Medici dynasty invested considerable resources in setting up an information-gathering network [throughout Europe][24] to collect intelligence. Cosimo I de' Medici created a postal network when he ascended the throne to send and receive _avvisi_. 
 
 Between the 1500s and 1660s, the Fugger family, one of the richest in Europe, established a vast network of correspondents to collect news in the form of handwritten newsletters. These newsletters contained political, military, religious, and criminal news. Apart from having a near monopoly in copper, the Fuggers were one of the largest lenders and were bankers to merchants, princes, popes, kings, and emperors. There's [speculation][25] that they set up a news correspondent network to decide their lending rates. There's debate over whether these were private newsletters or if they were circulated publicly, but it looks like they might [have been public][26]. In a way, the Fugger news network preceded finance news as we know it.
 
 Fuggers are the richest family you have never heard of, with a reported net worth of over $400 billion.
 
-There's debate over what's considered the first newspaper, but _Relation aller Fürnemmen und gedenckwürdigen Historien_ (Account of All Distinguished and Commemorable News), published in Strasbourg by [Johann Carolus][27] may have been the [first European newspaper][28]. Some consider this a "[newsbook][29]" and not a newspaper. The Courante uyt Italien, Duytslandt, &c._,_ was the [first broadsheet Dutch newspaper][30] and was published in Amsterdam in 1618.
+There's debate over what's considered the first newspaper, but _Relation aller Fürnemmen und gedenckwürdigen Historien_(Account of All Distinguished and Commemorable News), published in Strasbourg by [Johann Carolus][27] may have been the [first European newspaper][28]. Some consider this a "[newsbook][29]" and not a newspaper. The Courante uyt Italien, Duytslandt, &c._,_was the [first broadsheet Dutch newspaper][30] and was published in Amsterdam in 1618.
 
 ![](/images/2023/09/courante-uyt-italien-596x1024.webp) *[Courante uyt Italien][30]* 
 
-The [Star Chamber Decree of 1586,][31] under the reign of Elizabeth I, imposed restrictions on the publication of news in England. Early news publications in England were called _corantos,_ and were printed in Amsterdam. The first coranto printed in England may have been _The New Tydings Out of Italie Are Not yet Come_ in 1620 by Thomas Archer. This news sheet described the Thirty Years War. _Publick Occurrences Both Forreign and Domestick_, published in 1690 by Benjamin Harris was the first colonial newspaper in America. The paper was immediately [shut down][32] by the governor of Massachusetts, and Harris was jailed.
+The [Star Chamber Decree of 1586,][31] under the reign of Elizabeth I, imposed restrictions on the publication of news in England. Early news publications in England were called _corantos,_and were printed in Amsterdam. The first coranto printed in England may have been _The New Tydings Out of Italie Are Not yet Come_in 1620 by Thomas Archer. This news sheet described the Thirty Years War. _Publick Occurrences Both Forreign and Domestick_, published in 1690 by Benjamin Harris was the first colonial newspaper in America. The paper was immediately [shut down][32] by the governor of Massachusetts, and Harris was jailed.
 
-_The Boston News-Letter and The Boston Gazette_ launched 14 and 15 years later, respectively, and these papers [avoided politics][33]. In 1721, James Franklin, the elder brother of Benjamin Franklin, started _The New England Courant_ in Boston without a license. The paper opposed the British from the start, and this landed James in jail multiple times. After a couple of years, the British colonial authorities prohibited him from publishing, and he handed over the publishing of the paper to Ben Franklin to get around the restriction. _The New England Courant_ set the template for a free and independent press.
+_The Boston News-Letter and The Boston Gazette_launched 14 and 15 years later, respectively, and these papers [avoided politics][33]. In 1721, James Franklin, the elder brother of Benjamin Franklin, started _The New England Courant_in Boston without a license. The paper opposed the British from the start, and this landed James in jail multiple times. After a couple of years, the British colonial authorities prohibited him from publishing, and he handed over the publishing of the paper to Ben Franklin to get around the restriction. _The New England Courant_set the template for a free and independent press.
 
 The colonial era newspapers were small operations with six to twelve people. Most towns had one printing operation run by a master printer who owned the printing press. Setting up a printing press was a costly affair. Despite the printing press being a simple wooden contraption, it had some iron parts, like the screw, but America didn't have the manufacturing capabilities. The screw and the type had to be imported from England. The type was more expensive than the screw.
 
@@ -160,7 +160,7 @@ The master printer did everything from the manual work of setting type to editin
 
 Colonial-era printers made most of their money from job printing or on-demand printing, like printing pamphlets, broadsides, etc. In fact, pre-revolution printing operations weren't profitable and barely made enough to put food on the table. Printers published almanacs, speeches, and other political material to diversify away from only relying on newspapers.
 
-Benjamin Franklin was a true pioneer of the newspaper business and was the most successful printer, thanks to his keen business sense. Here's Joseph Adelman, the author of _[Revolutionary Networks,][35]_ [describing][36] the savviness of Ben Franklin:
+Benjamin Franklin was a true pioneer of the newspaper business and was the most successful printer, thanks to his keen business sense. Here's Joseph Adelman, the author of _[Revolutionary Networks,][35]_[describing][36] the savviness of Ben Franklin:
 
   If you want type of any decent quality it really has to come from England that had to be imported so it's an expense on its own and then it has to be imported which adds an expense. And so many printers when they're first starting out will start out with a hand-me-down for lack of a better word set of type from a master or from someone in town who just died and they're having an estate sale to get rid of that printers belongings. So you'll buy to the cheap secondhand type that means that people are often seeking partnerships when they're trying to start an office that could be with a former master.
 
@@ -182,7 +182,7 @@ Like European history, the predecessors of newspapers as we know them today can 
 
 Portuguese missionaries brought the first printing press to [Goa in 1566][40]. The British East India Company [installed printing presses][41] in Bombay in 1674, Madras in 1772, and Calcutta in 1779. William Bolts attempted to start the first newspaper in Calcutta in 1776, but concerned officials ordered him to stop and leave for Europe. The _Bengal Gazette_, or "Hicky's Gazette," became the first newspaper in India. Hickey earned the wrath of the British, and he went broke eventually.
 
-After the _Bengal Gazette_, the _Indian Gazette_, the _Calcutta Gazette_, the _Bengal Journal_, and the _Oriental Magazine_ or Calcutta Amusements launched, Unlike Hickey, these papers operated under the [patronage of the British government][42]. Most papers during this period were started by disgruntled British employees. The papers weren't influential because the [circulation][42] was limited to a few hundred copies.
+After the _Bengal Gazette_, the _Indian Gazette_, the _Calcutta Gazette_, the _Bengal Journal_, and the _Oriental Magazine_or Calcutta Amusements launched, Unlike Hickey, these papers operated under the [patronage of the British government][42]. Most papers during this period were started by disgruntled British employees. The papers weren't influential because the [circulation][42] was limited to a few hundred copies.
 
 In 1791, the United States ratified the Bill of Rights, which included the First Amendment guaranteeing freedom of speech and press. This informed the debates about freedom of the press around the world for decades to come.
 
@@ -204,7 +204,7 @@ The American press of that era flourished not only because of the government's s
 
 Notions of objectivity and fairness weren't even part of the lexicon. The American press of the era was [bitterly partisan][48] and divisive. They openly identified with political parties. Newspapers and political parties were tied at the hip. 
 
-Newspaper printing on its own wasn't enough to make money. Political parties funded loyal newspapers and bailed them out when they were in trouble. Printers were rewarded with [lucrative][49] government printing contracts, jobs, and political appointments for their support. In many ways, the _party press_ of the era flourished in large part due to the bitter rivalry between Hamiltonian Federalists and the Jeffersonian Democratic-Republicans. Leaders from both parties used papers loyal to them [overtly and covertly][50] to attack each other.
+Newspaper printing on its own wasn't enough to make money. Political parties funded loyal newspapers and bailed them out when they were in trouble. Printers were rewarded with [lucrative][49] government printing contracts, jobs, and political appointments for their support. In many ways, the _party press_of the era flourished in large part due to the bitter rivalry between Hamiltonian Federalists and the Jeffersonian Democratic-Republicans. Leaders from both parties used papers loyal to them [overtly and covertly][50] to attack each other.
 
 The government also helped fledgling newspapers by [subsidizing][51] postal charges. Newspapers sent to regular readers received a [90%][52] postal subsidy, while postage was free if the papers were sent to other editors and newspapers. This enabled the exchange system I mentioned earlier and helped spread the news across the country.
 
@@ -224,17 +224,17 @@ The naked partisanship wasn't the only difference between newspapers in the 1800
 
 While they didn't get as much attention, magazines and periodicals were also developing, along with newspapers. Johann Rist, a German theologian and poet, is credited with publishing the first magazine _Erbauliche Monaths-Unterredungen_, or Edifying Monthly Discussions. By the 18th century, like newspapers, magazines were [growing in popularity][56].
 
-Until the 1830s, newspapers cost about six cents, and the poor and the working class were priced out. All that changed in 1833 when Benjamin Day launched The Sun, a tabloid-style paper priced at one cent. Falling paper costs and the new steam printing press technology made it possible to produce more papers at a lower cost. The Sun was supported by advertising. Unlike the six-cent papers supported by political parties that catered to the "elite," _The Sun_ focused on general interest stories, crime, gossip, and scandals that entertained the masses. These penny papers introduced newspapers to the masses. Soon, other penny papers started with varying degrees of success.
+Until the 1830s, newspapers cost about six cents, and the poor and the working class were priced out. All that changed in 1833 when Benjamin Day launched The Sun, a tabloid-style paper priced at one cent. Falling paper costs and the new steam printing press technology made it possible to produce more papers at a lower cost. The Sun was supported by advertising. Unlike the six-cent papers supported by political parties that catered to the "elite," _The Sun_focused on general interest stories, crime, gossip, and scandals that entertained the masses. These penny papers introduced newspapers to the masses. Soon, other penny papers started with varying degrees of success.
 
 ![](/images/2023/09/NewYorkSun1834LR.jpg) *_[The Sun][57]_* 
 
 Some historians describe the penny press as a revolutionary step in the evolution of newspapers, but the reality is much more prosaic. Media scholar [John Nerone][58] argues that penny papers were a step in the natural evolution of newspapers, and there wasn't anything revolutionary about them. Since penny papers were supported by advertising, they claimed to be independent. In reality, American newspapers remained partisan well into the 19th century.
 
-The spread of fake news on the internet has become a major concern today, but it's nothing new. Early American newspapers had a [tenuous relationship][59] with the truth. Newspaper publishers weren't above making shit up to sell papers. One of the most famous made-up stories to have ever been published is the [six-part series][60] in The New York _Sun_ on the presence of life on the moon. The series depicted a fantasy lunar world full of forests, oceans, unicorns, bipedal beavers, and conversational man-bats. The story [spread][61] like wildfire across the United States and Europe.
+The spread of fake news on the internet has become a major concern today, but it's nothing new. Early American newspapers had a [tenuous relationship][59] with the truth. Newspaper publishers weren't above making shit up to sell papers. One of the most famous made-up stories to have ever been published is the [six-part series][60] in The New York _Sun_on the presence of life on the moon. The series depicted a fantasy lunar world full of forests, oceans, unicorns, bipedal beavers, and conversational man-bats. The story [spread][61] like wildfire across the United States and Europe.
 
 ![](/images/2023/09/1008px-great-moon-hoax-day-4-650ec0d383dc7.webp) *[Great moon hoax][62]* 
 
-In _Pirates of the Caribbean: Dead Man's Chest,_ there's a scene where Tom Hollander, who plays Cutler Beckett, tries to coerce William Turner to find Jack Sparrow and recover the compass from him. Beckett says:
+In _Pirates of the Caribbean: Dead Man's Chest,_there's a scene where Tom Hollander, who plays Cutler Beckett, tries to coerce William Turner to find Jack Sparrow and recover the compass from him. Beckett says:
 
   Will Turner: Somehow I doubt Jack will consider employment the same as being free. Lord Cutler Beckett: Freedom! Jack Sparrow is a dying breed. The world is shrinking. The blank edges of the map filled in. Jack must find his place in the new world or perish.
 
@@ -262,7 +262,7 @@ During the same period, literacy rates in the United States rose as the number o
 
 Early 1800: Charles Mahon (Earl of Stanhope) is credited with building the first [iron printing][78] press. This increased the output to 200–400 pulls per hour.
 
-1810: Frederick Koenig and Andreas Bauer patented a steam-powered cylindrical printing press. In 1814, _The Times_ in London printed the first newspaper with this design, capable of printing 1100 sheets per hour.
+1810: Frederick Koenig and Andreas Bauer patented a steam-powered cylindrical printing press. In 1814, _The Times_in London printed the first newspaper with this design, capable of printing 1100 sheets per hour.
 
 1846: Richard Hoe creates the revolving press that can print up to 8,000 sheets an hour. The output improves to 20,000 sheets with further enhancements.
 
@@ -284,7 +284,7 @@ Those were the words on the [first telephone call][85] on March 10, 1876, betwee
 
 Twenty years ago, America invaded Iraq [based on the lies][86] that Saddam Hussein was developing mass destruction (WMDs) and had links to al-Qaeda. All the major news outlets became cheerleaders for the Bush administration and helped sell the war to the American public. Over half a million people died, and the war cost the United States over [$3 trillion][87]. This wasn't the first time the American media was complicit in warmongering.
 
-In 1895, the Cuban War of Independence [broke out][88]. This was when the rivalry between Joseph Pulitzer's _New York World_ and William Randolph Hearst's _New York Journal_ hit a fever pitch. The press barons were battling each other for supremacy, and their papers featured lurid and sensationalist stories to increase circulation. Both saw the Cuban War as an opportunity to achieve dominance.
+In 1895, the Cuban War of Independence [broke out][88]. This was when the rivalry between Joseph Pulitzer's _New York World_and William Randolph Hearst's _New York Journal_hit a fever pitch. The press barons were battling each other for supremacy, and their papers featured lurid and sensationalist stories to increase circulation. Both saw the Cuban War as an opportunity to achieve dominance.
 
 Throughout the 1890s, both papers published exaggerated and even downright false stories. They were [agitating for war][89], pushing the United States to intervene in Cuba. The term "yellow journalism" was coined to describe the sensationalist style of news. In [1898,][90] the US invaded Cuba, defeated the Spanish, and liberated Cuba. Some historians attribute the invasion to warmongering by the press, but others argue that while the press played a role in the decision to invade by swaying sentiment, they [weren't the cause][91].
 
@@ -312,7 +312,7 @@ Technological advancements led to a shift from small businesses to large compani
 
 People like John D. Rockefeller, Cornelius Vanderbilt, and Andrew Carnegie emerged as the greatest tycoons America had ever seen. They used brutal tactics such as collusion, cartelization, political capture, and stock price manipulation to crush competition. They had near monopolies on oil, railroads, and steel at their peak. Major industries like coal, sugar, whiskey, tobacco, and meatpacking used trusts to integrate vertically and horizontally. These trusts had n[ear total control][100] over the industries they operated in. John D. Rockefeller's Standard Oil was the [poster child of this era][101]. It controlled [90%][102] of American oil refineries.
 
-[Ida Tarbell][103] saw Rockefeller's [brutal tactics][104] when he destroyed her father's fledgling oil business at 14. Despite studying biology, she discovered her love for writing and became a journalist. Working at _McClure's_ magazine, she started to [publish a mammoth expose][105] of Standard Oil, beginning in 1902. Over 19 parts, she laid bare the machinations of the oil refining giant and its brutal practices. Her dogged work was responsible for the eventual [breakup][106] of Standard Oil in 1911. The Standard Oil series is still considered one of the finest examples of investigative journalism.
+[Ida Tarbell][103] saw Rockefeller's [brutal tactics][104] when he destroyed her father's fledgling oil business at 14. Despite studying biology, she discovered her love for writing and became a journalist. Working at _McClure's_magazine, she started to [publish a mammoth expose][105] of Standard Oil, beginning in 1902. Over 19 parts, she laid bare the machinations of the oil refining giant and its brutal practices. Her dogged work was responsible for the eventual [breakup][106] of Standard Oil in 1911. The Standard Oil series is still considered one of the finest examples of investigative journalism.
 
 In reading the history, it wasn't surprising to me that the role of women in newspapers was ignored. Even as America grew, attitudes about women remained rooted in the dark ages—a woman's place was at home.
 
@@ -366,7 +366,7 @@ The soaring newspaper profits caught the attention of the Internal Revenue Servi
 
 Even as newspapers consolidated, the quality of journalism remained high. Papers continued to invest in editorial. 
 
-Daniel Ellsberg, an analyst at the RAND Institute, leaked a [classified study][124] about US involvement in Vietnam to reporters at _The New York Times_ and _The Washington Post_ in 1971. The study showed that successive administrations had deceived the American public about the purpose and true cost of the war. The war was an epic disaster. This led to the Watergate scandal, which ended with the resignation of President Richard Nixon. In a high-watermark for American journalism, Arthur Sulzberger, chairman of _The New York Times_, and Katherine Graham, owner of _The Washington Post,_ bet the entire house in a remarkable display of courage and [published][125] the leaked documents. The Nixon administration tried to stop the publication, but the US Supreme Court allowed the papers to publish in a [landmark decision][126], affirming the freedom of the press. This period marked the birth of the [adversarial American press][127].
+Daniel Ellsberg, an analyst at the RAND Institute, leaked a [classified study][124] about US involvement in Vietnam to reporters at _The New York Times_and _The Washington Post_in 1971. The study showed that successive administrations had deceived the American public about the purpose and true cost of the war. The war was an epic disaster. This led to the Watergate scandal, which ended with the resignation of President Richard Nixon. In a high-watermark for American journalism, Arthur Sulzberger, chairman of _The New York Times_, and Katherine Graham, owner of _The Washington Post,_bet the entire house in a remarkable display of courage and [published][125] the leaked documents. The Nixon administration tried to stop the publication, but the US Supreme Court allowed the papers to publish in a [landmark decision][126], affirming the freedom of the press. This period marked the birth of the [adversarial American press][127].
 
 The scale of the consolidation was stunning from the 1960s. In 1920, 92% of American newspapers were independently owned, and 42% of American cities had competing newspapers. By 1986, only 30% of the newspapers were independently owned, and only 2% of the cities had a competing newspaper. By 1970, [98%][128] of US newspapers were monopolies, and the vast majority of cities had no competing papers.
 
@@ -468,7 +468,7 @@ Then came the internet. It unbundled the newspaper and destroyed this arrangemen
 
 Advertisers didn't have to rely on newspapers to reach audiences because the newspaper was a dumb bundle. Advertisers could only target consumers based on the geographies that newspapers operated in. But internet companies like Google offered a far superior advertising proposition. Advertisers could slice and dice audiences and micro-target consumers.
 
-The readers no longer had to buy the entire newspaper bundle; they could read whatever they wanted online. The internet stripped the news bundle to its atomic unit—the news story. Readers no longer had to rely on publishers like _The New York Times_ and Gannett to assemble a news bundle. In a sense, everybody on the internet could be their own publisher. They could build their own bundle of what they wanted to read, watch, and listen to. They could read about politics in _The New York Times_, sports on ESPN, and entertainment on _Variety_. This was a boon for readers, not so much for newspapers.
+The readers no longer had to buy the entire newspaper bundle; they could read whatever they wanted online. The internet stripped the news bundle to its atomic unit—the news story. Readers no longer had to rely on publishers like _The New York Times_and Gannett to assemble a news bundle. In a sense, everybody on the internet could be their own publisher. They could build their own bundle of what they wanted to read, watch, and listen to. They could read about politics in _The New York Times_, sports on ESPN, and entertainment on _Variety_. This was a boon for readers, not so much for newspapers.
 
   Publishers also typically engage in horizontal integration, bundling hard news with horoscopes, gossip, recipes, sports. Simple inertia meant anyone who had tuned into a broadcast or picked up a publication for one particular story would keep watching or reading whatever else was in the bundle. Though this was often called loyalty, in most cases it was just laziness—the path of least resistance meant that reading another good-enough story in the local paper was easier than seeking out an excellent story in a separate publication.
 
@@ -546,7 +546,7 @@ In the early 1990s, Roger Fiddler [conceptualized][151] a tablet for reading new
 
 This excerpt from a [phenomenal study][157] by Iris Chyi, a media scholar, further illustrates how nimble newspapers were:
 
-  Contrary to general impressions, most U.S. newspapers were not slow in adopting Internet technologies for news delivery. The Web did not become publicly accessible until 1991. Soon after Mosaic (one of the earliest Web browsers) was released in 1993, the Palo Alto Weekly went online in January 1994 as the first Web-based newspaper. By May 1995, as many as 150 U.S. dailies offered online services—when less than 1% of the U.S. population had Web access (Carlson, 2003). The New York Times went online in January 1996, and numerous newspapers followed suit. By 1999, more than 2,600 U.S. newspapers were providing online services (Editor & Publisher Interactive, 1999). However, by 2003, the industry consensus was that no business model had been found (Carlson, 2003).
+  Contrary to general impressions, most U.S. newspapers were not slow in adopting Internet technologies for news delivery. The Web did not become publicly accessible until 1991. Soon after Mosaic (one of the earliest Web browsers) was released in 1993, the Palo Alto Weekly went online in January 1994 as the first Web-based newspaper. By May 1995, as many as 150 U.S. dailies offered online services—when less than 1% of the U.S. population had Web access (Carlson, 2003). _The New York Times_went online in January 1996, and numerous newspapers followed suit. By 1999, more than 2,600 U.S. newspapers were providing online services (Editor & Publisher Interactive, 1999). However, by 2003, the industry consensus was that no business model had been found (Carlson, 2003).
 
  Iris Chyi
 
@@ -584,11 +584,11 @@ The one that makes the most sense to you.
 
 No.
 
-In 2019, historian Jill Lepore wrote a phenomenal article titled "[Does Journalism Have a Future][162]?" In the post, she recounts two incidents involving _The Washington Post_ and _The New York Times_ that now, in hindsight, seem insane. The Washington Post let go of an opportunity to invest in Facebook. It also refused to back the founders of Politico, one of the greatest online publishing success stories. _The New York Times,_ on the other hand, refused to invest in Google. It's easy to extrapolate from these anecdotes and paint the newspapers as dinosaurs, but that's not the point. At the very least, they knew about internet upstarts threatening their existence. If nothing, this shows their myopia. They could've tried harder to adapt to the new era. I'm conscious that it's easy to exaggerate these things in hindsight.
+In 2019, historian Jill Lepore wrote a phenomenal article titled "[Does Journalism Have a Future][162]?" In the post, she recounts two incidents involving _The Washington Post_and _The New York Times_that now, in hindsight, seem insane. _The Washington Post_let go of an opportunity to invest in Facebook. It also refused to back the founders of Politico, one of the greatest online publishing success stories. _The New York Times,_on the other hand, refused to invest in Google. It's easy to extrapolate from these anecdotes and paint the newspapers as dinosaurs, but that's not the point. At the very least, they knew about internet upstarts threatening their existence. If nothing, this shows their myopia. They could've tried harder to adapt to the new era. I'm conscious that it's easy to exaggerate these things in hindsight.
 
 Why didn't the newspapers ever put up a decent fight against search giants like AOL, Yahoo, and Google? This question has bothered me for a long time. Newspapers had some idea of the threat that internet companies posed. Yet, the industry let the internet upstarts punch them in the face and walk away.
 
-Some newspapers did try. In 2011, the Tribune, Gannett, Hearst, and _The New York Times_ tried to pool their advertising inventory to compete against Google. The partnership shut down two years later. _The Guardian_, CNN, Reuters, T_he Economist_, _Financial Times_, and others formed a similar advertising alliance that ended in [2021.][163] In [2016][164], _USA Today, The Houston Chronicle, The Miami Herald, and The Los Angeles Times_ formed a similar partnership. There were several other [advertising partnerships][165] between competing publishers with varying degrees of success, but they were late by a decade. By the time of the first advertising partnership between news publishers in 2011, Google had generated $38 billion in revenue.
+Some newspapers did try. In 2011, the Tribune, Gannett, Hearst, and _The New York Times_tried to pool their advertising inventory to compete against Google. The partnership shut down two years later. _The Guardian_, CNN, Reuters, T_he Economist_, _Financial Times_, and others formed a similar advertising alliance that ended in [2021.][163] In [2016][164], _USA Today, The Houston Chronicle, The Miami Herald, and The Los Angeles Times_formed a similar partnership. There were several other [advertising partnerships][165] between competing publishers with varying degrees of success, but they were late by a decade. By the time of the first advertising partnership between news publishers in 2011, Google had generated $38 billion in revenue.
 
 As the internet arrived, newspapers were flush with cash. They had a chance to build advertising offerings that could've, at the very least, been distant alternatives to Google and Yahoo.
 
@@ -596,7 +596,7 @@ As the internet arrived, newspapers were flush with cash. They had a chance to b
 
  [Steve Burttry](https://stevebuttry.wordpress.com/2009/08/16/newspapers-original-sin-not-failing-to-charge-but-failing-to-innovate/), director of Student Media at the Manship School of Mass Communication at Louisiana State University.
 
-Not all experiments were in earnest. In response to the internet, newspapers just started to upload articles online in a haphazard way. They were too scared that digital would cannibalize print. In 2017, Melissa Bell, the co-founder of Vox Media, gave the [Reuters Memorial Lecture][166] on how we broke news and how to fix it. During the discussion, the legendary Marty Baron, the former editor of _The Washington Post_ and _The Boston Globe_, made some interesting comments:
+Not all experiments were in earnest. In response to the internet, newspapers just started to upload articles online in a haphazard way. They were too scared that digital would cannibalize print. In 2017, Melissa Bell, the co-founder of Vox Media, gave the [Reuters Memorial Lecture][166] on how we broke news and how to fix it. During the discussion, the legendary Marty Baron, the former editor of _The Washington Post_and _The Boston Globe_, made some interesting comments:
 
   I'm not sure that if we had done any one thing, things would have turned out all that differently, to be honest with you. There were a lot of efforts to deal with the internet.
 
@@ -666,7 +666,7 @@ The first era of digital publishing was accompanied by all the buzzwords of inno
 
 Matt Drudge started the Drudge Report in 1994 as a conservative news aggregation site. The site became popular during the Clinton-Lewinsky scandal as it broke stories before news outlets. By 2010–11, the site was driving [more traffic][176] to major news websites than Facebook and Google. The site foreshadowed the power of aggregators long before Google, Yahoo, and Facebook. 
 
-In 2005, Arianna Huffington, Ken Lerer, and Jonah Peretti launched the Huffington Post as a liberal counterweight to the Drudge Report. The site started aggregating news and publishing views from an army of unpaid writers like the Drudge Report. By 2010, its [traffic][177] was higher than that of _The LA Times, The Wall Street Journal,_ and _The Washington Post_.
+In 2005, Arianna Huffington, Ken Lerer, and Jonah Peretti launched the Huffington Post as a liberal counterweight to the Drudge Report. The site started aggregating news and publishing views from an army of unpaid writers like the Drudge Report. By 2010, its [traffic][177] was higher than that of _The LA Times, The Wall Street Journal,_and _The Washington Post_.
 
 ![](/images/2023/09/untitled-43-650e94604681e-1024x469.webp) 
 
@@ -714,23 +714,23 @@ The news publishing scene in the early 2010s.
 
  [Bill Keller, executive editor, New York Times](https://www.theguardian.com/media/2007/nov/29/pressandpublishing.digitalmedia1)
 
-_The New York Times_ was representative of the challenges faced by all "legacy" news publishers. As it prepared to enter the social era, _The Times_ was having an existential crisis and was in the midst of profound soul-searching.
+_The New York Times_was representative of the challenges faced by all "legacy" news publishers. As it prepared to enter the social era, _The Times_was having an existential crisis and was in the midst of profound soul-searching.
 
 ![](/images/2023/09/untitled-49-650e9464bc02e.webp) 
 
-It entered the 2010s with falling print advertising revenues, declining circulation, mounting losses, and a massive debt load. The situation was so bad that _The_ _Times_ had to [borrow $250 million][187] from Mexican billionaire Carlos Slim at an interest rate of 14%. _The Washington Post_ was in a similar boat and was [bleeding money][188].
+It entered the 2010s with falling print advertising revenues, declining circulation, mounting losses, and a massive debt load. The situation was so bad that _The__Times_had to [borrow $250 million][187] from Mexican billionaire Carlos Slim at an interest rate of 14%. _The Washington Post_was in a similar boat and was [bleeding money][188].
 
   Neither company could stop the bleeding. The Times lost [$543 million](https://s1.q4cdn.com/156149269/files/doc_financials/annual/2008NYTannual.pdf) in 2006, [$58 million in 2008](https://s1.q4cdn.com/156149269/files/doc_financials/annual/2008NYTannual.pdf), and [$40 million in 2011](https://s1.q4cdn.com/156149269/files/doc_financials/annual/2011NYTannual.pdf). The Post lost $165 million in 2009. Petrified of falling into corporate hands, the two instituted multiple rounds of layoffs to stay solvent. Fears of bankruptcy loomed. — [Jill Abramson, The Los Angeles Times](https://www.latimes.com/books/la-ca-jc-jill-abramson-merchants-of-truth-20190204-story.html)
 
 ![](/images/2023/09/untitled-50-650e946574031-1024x613.webp) 
 
-In 2013, the media world was shocked to learn that Jeff Bezos, the founder of Amazon, had [acquired][189] the venerable _Washington Post_ for $250 million. It probably wasn't the end that Katherine Graham, who oversaw the paper through the Watergate scandal, would've liked. The acquisition came days after another billionaire, John Henry, the owner of the Red Sox and Liverpool FC, [acquired][190] the storied _Boston Globe_ for $70 million.
+In 2013, the media world was shocked to learn that Jeff Bezos, the founder of Amazon, had [acquired][189] the venerable _Washington Post_for $250 million. It probably wasn't the end that Katherine Graham, who oversaw the paper through the Watergate scandal, would've liked. The acquisition came days after another billionaire, John Henry, the owner of the Red Sox and Liverpool FC, [acquired][190] the storied _Boston Globe_for $70 million.
 
 For a long time, media observers argued that giving away news for free online was the "[original sin][191]" of news publishers. 
 
 It wasn't. 
 
-Many papers tried to charge online, and all the experiments failed miserably. In 2011, _The New York Times_ decided to [erect a][192] paywall, a move that was met with skepticism. In the ensuing years, a team of 8 led by Arthur Sulzberger (The Sulzbergers owned _The Times_) prepared a 96-page internal report that laid bare the dramatic challenges _The Times_ was facing in adapting to the digital age. The report name-checked all the leading digital publishers like BuzzFeed, Huffington Post, and Vox. BuzzFeed, in particular, was mentioned 23 times, and in a profound twist of irony, BuzzFeed News [leaked][193] the report. Things couldn't have gotten any worse for the embattled Times.
+Many papers tried to charge online, and all the experiments failed miserably. In 2011, _The New York Times_decided to [erect a][192] paywall, a move that was met with skepticism. In the ensuing years, a team of 8 led by Arthur Sulzberger (The Sulzbergers owned _The Times_) prepared a 96-page internal report that laid bare the dramatic challenges _The Times_was facing in adapting to the digital age. The report name-checked all the leading digital publishers like BuzzFeed, Huffington Post, and Vox. BuzzFeed, in particular, was mentioned 23 times, and in a profound twist of irony, BuzzFeed News [leaked][193] the report. Things couldn't have gotten any worse for the embattled Times.
 
   Arthur Greg Sulzberger had just written "The Innovation Report," and my sense was that it dripped with a fair amount of envy for both BuzzFeed and Vice, especially because of &#8230; They were ahead of the Times in an area called audience development. — [Jill Abramson, former managig editor of The New York Times.](https://www.vox.com/2019/1/31/18204418/jill-abramson-merchants-truth-book-new-york-times-buzzfeed-layoffs-recode-media-peter-kafka-podcast)
 
@@ -768,7 +768,7 @@ By 2010, social traffic referral traffic to digital publishers from Facebook was
 
 ![](/images/2023/09/untitled-56-650e946b09922-1024x567.webp) *[Parse.ly][201]* 
 
-I didn't know who coined the term "BuzzFeed Envy," but it best captured the vibe of the era. Every publisher was envious of BuzzFeed because everything was working for them. Even storied legacy publishers like _The New York Times_ and _The Washington Post_ started aping BuzzFeed. It wouldn't be a stretch to say BuzzFeed remade the digital publishing industry in [its image][202] for a while.
+I didn't know who coined the term "BuzzFeed Envy," but it best captured the vibe of the era. Every publisher was envious of BuzzFeed because everything was working for them. Even storied legacy publishers like _The New York Times_and _The Washington Post_started aping BuzzFeed. It wouldn't be a stretch to say BuzzFeed remade the digital publishing industry in [its image][202] for a while.
 
 In 2015, an anonymous person in the media [wrote a letter][203] to the advice column at The Awl saying, "I hate myself because I can't work for BuzzFeed."
 
@@ -792,7 +792,7 @@ In 2012, A. J. Daulerio, the editor-in-chief of Gawker, [announced a new experim
 
 The stunt might have been a [parody][206] of what other publishers were doing at the time, but it captured the motif of the era—moar views. Post views were all that mattered. View count was a better indicator of quality than the opinion of a cantankerous curmudgeon sitting in the corner office yelling at the clouds.
 
-Future media historians will remember 2015 because that was the year _The New York Times_ invited Jonah Peretti for advice:
+Future media historians will remember 2015 because that was the year _The New York Times_invited Jonah Peretti for advice:
 
   Jonah Peretti, the BuzzFeed CEO, was asked to address the New York Times board and give them advice. And then Cliff Levy, who's one of the senior editors, interviewed him and asked him, "If we hired you tomorrow to be CEO of The New York Times, what would you do?" And Jonah says to them, with a straight face, "Well first I would ask you for a raise. And then I would go into my office, lock my door, and cry." Just to give you a sense of sort of the arrogance and sense that we had the wind at our back and these guys were screwed. — [Ben Smith speaking to Nick Gillespie, editor at large at Reason](https://reason.com/2023/08/27/ben-smiths-one-neat-trick-for-going-viral/)
 
@@ -830,7 +830,7 @@ The shift to video was based on the same [vague assumptions][217] as the VC inve
 
 The pivot to video was a disaster.
 
-With months of Zuckerberg and other top Facebook executives touting the glorious future of video, _The Wall Street Journal_ published a damning article that Facebook had overstated video metrics by 60–80%. It was sued by a group of advertisers in 2017 and settled the suit in 2019.
+With months of Zuckerberg and other top Facebook executives touting the glorious future of video, _The Wall Street Journal_published a damning article that Facebook had overstated video metrics by 60–80%. It was sued by a group of advertisers in 2017 and settled the suit in 2019.
 
 Facebook [changed the algorithm][218] again in 2018. It prioritized content from friends and family and deprioritized video and brand content. It was déjà vu for publishers all over again. Referral traffic from Facebook to publishers [dropped once again][219].
 
@@ -896,7 +896,7 @@ This was just 2017. 2018 wasn't any better for digital media outlets as the drum
 
   Atlantic Media sold Quartz to Uzabase for $86 million.
 
-The [story of Quartz][226] is also instructive of the social era of publishing. Atlantic Media launched Quartz in 2012 as a publication aimed at the "global business elite," with former _WSJ_ editor Kevin Delaney at the helm. It was targeting a niche dominated by the _Financial Times_, _The Wall Street Journal,_ _The Economist,_ Reuters, and Bloomberg. Quartz was free and relied on bespoke native advertising and beautiful banner ads. Within a year, its traffic had overtaken _The_ _Economist._
+The [story of Quartz][226] is also instructive of the social era of publishing. Atlantic Media launched Quartz in 2012 as a publication aimed at the "global business elite," with former _WSJ_editor Kevin Delaney at the helm. It was targeting a niche dominated by the _Financial Times_, _The Wall Street Journal,__The Economist,_Reuters, and Bloomberg. Quartz was free and relied on bespoke native advertising and beautiful banner ads. Within a year, its traffic had overtaken _The__Economist._
 
 Quartz had a culture of innovation and experimentation. Its advertising was top-notch, and so was its storytelling, which melded facts with beautiful visuals. It created amazing newsletters long before others jumped on the bandwagon. In 2016, it launched its widely praised news app that looked like a [messaging app][227] instead of an old, boring collection of headlines. It was even profitable for a brief moment. But like the other publications of the era, Quartz became a casualty of Facebook's fickleness. It then pivoted to quantity, video, then subscriptions, and was sold in 2018 only to be acquired back by co-founder Zack Seward in a weird deal. After failing to raise money, it was [sold][228] to G/O Media in 2022.
 
@@ -922,7 +922,7 @@ Throughout the late 2010s, things continued to get worse for publishers. They we
 
 A final gasp for scale for a desperate IPO
 
-In 2019, Vox Media [acquired][235] _New York_ magazine. Soon, Vice Media [acquired][236] Refinery29, which catered to women, in a deal valued at over $400 million. In 2020, life came full circle when BuzzFeed [acquired][236] Huffington Post. In 2021, BuzzFeed acquired Complex for $300 million. The BuzzFeed acquisitions, in particular, were a desperate attempt to build scale for an IPO. In December 2021, the company [went public][237] through a SPAC, raising just $16 million instead of the $250 million it had hoped for. It's been.
+In 2019, Vox Media [acquired][235] _New York_magazine. Soon, Vice Media [acquired][236] Refinery29, which catered to women, in a deal valued at over $400 million. In 2020, life came full circle when BuzzFeed [acquired][236] Huffington Post. In 2021, BuzzFeed acquired Complex for $300 million. The BuzzFeed acquisitions, in particular, were a desperate attempt to build scale for an IPO. In December 2021, the company [went public][237] through a SPAC, raising just $16 million instead of the $250 million it had hoped for. It's been.
 
 Of the three publishers, only BuzzFeed managed an IPO. But it was a disaster. The stock is trading 95% below its IPO price.
 
@@ -938,7 +938,7 @@ In April 2023, BuzzFeed announced that it was [firing 150 people][240] and shutt
 
  Jonah Peretti
 
-Nick Denton's comment 11 years later seems prophetic:
+Nick Denton's comment 11 years later _seems_prophetic:
 
   Ben Smith's quick-hit campaign "scoops" are about as viral as cat videos. That fits with Buzzfeed. But I suspect Smith has too much respect for journalistic accuracy to be comfortable with Jonah Peretti's stunts. Remember that Buzzfeed's founder made his name with fake news, like the Nike letter. And Peretti's craving for the quick viral fix will not be satisfied by the nourishing fare put out by prestige hires like Doree Shafrir and Matt Buchanan. Either before or after acquisition, Buzzfeed will collapse under the weight of its own contradictions.
 
@@ -952,17 +952,17 @@ Vice Media, which was valued at $5.7 billion in its last round, filed for bankru
 
 It was a depressing end for two of the biggest names in digital media. It wasn't just BuzzFeed and Vice. In 2023, the media industry as a whole will have laid off over [1700 people][243].
 
-Remember when everybody thought that these digital upstarts would kill legacy media publishers like _the Times_ and _the Post_? Remember that time when legacy media threw hundreds of millions into these companies to not be killed by them? Remember all the bombastic pronouncements of the digital publishing revolution? It feels like yesterday.
+Remember when everybody thought that these digital upstarts would kill legacy media publishers like _the Times_and _the Post_? Remember that time when legacy media threw hundreds of millions into these companies to not be killed by them? Remember all the bombastic pronouncements of the digital publishing revolution? It feels like yesterday.
 
-It's ironic that the disruptors are dead, and the legacy media publishers are alive and, in most cases, thriving. T_he New York Times_ pulled off a successful transition to online subscriptions. Legacy publishers became BuzzFeed and Vice faster than they could become the new legacy publishers.
+It's ironic that the disruptors are dead, and the legacy media publishers are alive and, in most cases, thriving. T_he New York Times_pulled off a successful transition to online subscriptions. Legacy publishers became BuzzFeed and Vice faster than they could become the new legacy publishers.
 
 ![](/images/2023/09/untitled-61-650e946dcb670-1024x1024.webp) *[Visual Capitalist][244]* 
 
-_The Washington Post_ is struggling but still [standing][245]. _The Atlantic,_ in which another billionaire, Laurene Powell Jobs, owns a majority stake, is also [doing well][246].
+_The Washington Post_is struggling but still [standing][245]. _The Atlantic,_in which another billionaire, Laurene Powell Jobs, owns a majority stake, is also [doing well][246].
 
 I believe The Guardian had the most stunning transition from print to digital. The Guardian has a unique structure. It's owned by a trust whose sole duty is to ensure the independence of the publisher. The storied publisher, known for its legendary investigative exposes such as the news of the world hacking scandal, Snowden revelations, Paradise Papers, Panama Papers, and Wikileaks documents, had never made a profit since 1998. It first made a profit in 2019 after launching a membership program based on voluntary reader contributions. Today, it has over 1 million online paying users, a mix of digital subscriptions, and recurring voluntary contributions, all [without a paywall.][247]
 
-The _Financial Times_ and _The [Economist][248]_ are thriving and going from strength to strength. Legacy giants [Condé Nast][249] and [Hearst][250] were supposed to be put down with mercy but are doing better than ever.
+The _Financial Times_and _The [Economist][248]_are thriving and going from strength to strength. Legacy giants [Condé Nast][249] and [Hearst][250] were supposed to be put down with mercy but are doing better than ever.
 
 On the other end of the spectrum, as long-time media observer [Brian Morrissey][251] notes, the boring old-school publishing business did well:
 
@@ -1040,29 +1040,29 @@ Venture capital funds have a 10-year lifecycle, but it takes time to deploy capi
 
 The result of this delusion was that news and digital publishing became a game of scale. In the 2010s, digital media outlets believed that if they could achieve scale, they could sell that to advertisers. The problem was that they never owned the attention; they were renting it from Google, Facebook, Twitter, and other platforms. They were forced to jump from one burning building to the next in the race for scale.
 
-Remember the time when the [Kindle][257] was supposed to save newspapers? That was the beginning.
+Remember the time when the [Kindle][257] was supposed to _save_newspapers? That was the beginning.
 
-  The Apple [iPad](https://www.theguardian.com/media/pda/2010/jan/28/can-apple-ipad-save-newspapers) was going to save journalism.
+  The Apple [iPad](https://www.theguardian.com/media/pda/2010/jan/28/can-apple-ipad-save-newspapers) was going to _save_journalism.
 
-  Social media was going to save news and journalism.
+  Social media was going to _save_news and journalism.
 
-  Listicles, clickbait, and pandering to "millennial sensibilities" were going to save news and journalism.
+  Listicles, clickbait, and pandering to "millennial sensibilities" were going to _save_news and journalism.
 
-  User-generated content was going to save news and journalism.
+  User-generated content was going to _save_news and journalism.
 
-  Distributed publishing was going to save news and journalism.
+  Distributed publishing was going to _save_news and journalism.
 
-  [Micropayments](https://www.niemanlab.org/2023/08/the-poster-child-for-micropayments-for-news-is-getting-out-of-the-micropayments-business/) were going to save news and journalism.
+  [Micropayments](https://www.niemanlab.org/2023/08/the-poster-child-for-micropayments-for-news-is-getting-out-of-the-micropayments-business/) were going to _save_news and journalism.
 
-  Crowdsourcing was going to save news and journalism.
+  Crowdsourcing was going to _save_news and journalism.
 
-  Slideshows and autoplay videos were going to save news and journalism.
+  Slideshows and autoplay videos were going to _save_news and journalism.
 
-  Pivoting to video was going to save news and journalism.
+  Pivoting to video was going to _save_news and journalism.
 
-  Stories, reels, and shorts were going to save news and journalism.
+  Stories, reels, and shorts were going to _save_news and journalism.
 
-  In 2023, artificial intelligence (AI) is going to save journalism.
+  In 2023, artificial intelligence (AI) is going to _save_journalism.
 
 Nope.
 
@@ -1101,7 +1101,7 @@ Josh Marshall, the founder of Talking Points Memo,  a publication that has survi
 
 If VC money is bad, then what alternatives do media companies have?
 
-This is where my argument that VC money in media is a bad idea starts to look shaky. The short investment cycle of venture capital is incompatible with the media business, where it takes decades to build trust. It's easy to say _VC money in media_ is a bad idea, but there aren't a lot of alternatives for wannabe journalists and publishers. There are foundations, trusts, and billionaires, but they are a drop in the bucket. Media requires long-term patient capital.
+This is where my argument that VC money in media is a bad idea starts to look shaky. The short investment cycle of venture capital is incompatible with the media business, where it takes decades to build trust. It's easy to say _VC money in media_is a bad idea, but there aren't a lot of alternatives for wannabe journalists and publishers. There are foundations, trusts, and billionaires, but they are a drop in the bucket. Media requires long-term patient capital.
 
 Is raising money a sin?
 
@@ -1115,7 +1115,7 @@ It's unintuitive, but news is also a relationship business. If I like a publicat
 
 How many of the publishers had a brand that would be missed?
 
-Did BuzzFeed and Vice have the same strong brand as _The New York Times_ and _The Washington Post_?
+Did BuzzFeed and Vice have the same strong brand as _The New York Times_and _The Washington Post_?
 
 Nope.
 
@@ -1123,7 +1123,7 @@ Sure, they had some affinity with millennials, but not one worth paying for. The
 
 People who consume news on social media are different from those who search for or visit a homepage. Social media audiences are like mercenaries and aren't loyal to anything.
 
-I love publishers like _The Guardian_, _The New York Times_, _The Washington Post, The Atlantic_, Newslaundry, Scroll, _The Indian Express_, Aeon, The Ken, _The Economist,_ _Financial Times,_ and individual writers on Substack. I subscribe to some of them and pay even though I don't read them all because they make the world a better place. Can the same be said for the majority of these digital-first publishers? No.
+I love publishers like _The Guardian_, _The New York Times_, _The Washington Post, The Atlantic_, Newslaundry, Scroll, _The Indian Express_, Aeon, The Ken, _The Economist,__Financial Times,_and individual writers on Substack. I subscribe to some of them and pay even though I don't read them all because they make the world a better place. Can the same be said for the majority of these digital-first publishers? No.
 
 The moment they chose to debase themselves by focusing on quantity over quality, their eventual demise was assured. The debasement was a result of the burden of expectations imposed on them by the VC overlords.
 
@@ -1133,17 +1133,17 @@ Take the example of _The Guardian_. I love its mission, and I root for its succe
 
  [Renée Kaplan](https://www.niemanlab.org/2015/12/secrets-of-a-successful-relationship/), the head of audience engagement at the Financial Times
 
-A relationship doesn't mean long, intimate calls with journalists. It means knowing your audience and writing things that inform them and add value to their lives. It means building a publication that readers consider essential to their lives and root for to succeed. It means publishing inclusive things that give voice to the marginalized and the afflicted. It also means not being afraid to publish things readers disagree with, afraid they will cancel subscriptions. In short, it is the opposite of a _wham, bam, thank you, ma'am_ model of publishing.
+A relationship doesn't mean long, intimate calls with journalists. It means knowing your audience and writing things that inform them and add value to their lives. It means building a publication that readers consider essential to their lives and root for to succeed. It means publishing inclusive things that give voice to the marginalized and the afflicted. It also means not being afraid to publish things readers disagree with, afraid they will cancel subscriptions. In short, it is the opposite of a _wham, bam, thank you, ma'am_model of publishing.
 
 Did these publishers offer something worth paying for?
 
-Few did. BuzzFeed News was worth paying for, and so were _some_ of the things Vice published, but they had flawed business models. BuzzFeed subsidized BuzzFeed News when it didn't have a sustainable model to start with. Add this to the VC expectation—they were buggered very early on.
+Few did. BuzzFeed News was worth paying for, and so were _some_of the things Vice published, but they had flawed business models. BuzzFeed subsidized BuzzFeed News when it didn't have a sustainable model to start with. Add this to the VC expectation—they were buggered very early on.
 
 The return expectations of VCs and the return potential of news were never compatible. This [excerpt][266] from a postmortem of BuzzFeed News captures the sad reality of the news business well:
 
   "There was always the sword of Damocles hanging over BuzzFeed News," says a newsroom employee, one of about 60 who will be affected (120 jobs across other divisions are also being cut). "Everyone in news knew it wasn't profitable, the board hates it, Jonah kind of keeps it around 'cause he likes it, and eventually the day would come where it's a terrible line item in red. And, you know, I guess the day came."
 
-A [telling excerpt][267] from _Traffic,_ by Ben Smith, the former editor-in-chief of BuzzFeed News:
+A [telling excerpt][267] from _Traffic,_by Ben Smith, the former editor-in-chief of BuzzFeed News:
 
   "I've come to regret encouraging Jonah to see our news division as a worthy enterprise that shouldn't solely be evaluated as a business" Mr. Smith writes. "Jonah resented what seemed like ingratitude from people whose work he so valued that he was approaching $100 million in losses."
 
@@ -1171,7 +1171,7 @@ Building a good news business is like trying to ride a horse blindfolded at midn
 
 ##### Twilight of social media 1.0? 
 
-The phrase "end of an era" is overused, but the current moment does feel like the end of something. Social networks were fun when they started, but now they suck. Facebook had a messy divorce with news, and after the stupid detour into the metaverse, it's figuring out what its purpose is, like someone having a midlife crisis. Elon Musk asked himself, _What's the best way to blow $44 billion?_ His answer was to buy Twitter and destroy it in public, like an untalented performance artist. LinkedIn is probably the last weird but sane…ish platform. Instagram and TikTok continue to grow in dominance and are the go-to social platforms for young people.
+The phrase "end of an era" is overused, but the current moment does feel like the end of something. Social networks were fun when they started, but now they suck. Facebook had a messy divorce with news, and after the stupid detour into the metaverse, it's figuring out what its purpose is, like someone having a midlife crisis. Elon Musk asked himself, _What's the best way to blow $44 billion?_His answer was to buy Twitter and destroy it in public, like an untalented performance artist. LinkedIn is probably the last weird but sane…ish platform. Instagram and TikTok continue to grow in dominance and are the go-to social platforms for young people.
 
 Social traffic continues to decline, and Google is now once again the [largest source][270] of referral traffic to publishers.
 
@@ -1185,7 +1185,7 @@ The evil social media platforms might be destroying democracy, but more people g
 
 Younger people prefer Instagram and TikTok over Facebook. More people are getting news on YouTube, WhatsApp, TikTok, and Instagram than on other social platforms. The growth of TikTok is stunning, and it's no wonder publishers are making a beeline to produce short videos.
 
-Monetization on TikTok is still limited. I hope publishers have learned from the infamous _pivot to video_ and don't go overboard. If not, TikTok will giveth until it taketh. Publishers will learn the same old lessons about not relying on other platforms.
+Monetization on TikTok is still limited. I hope publishers have learned from the infamous _pivot to video_and don't go overboard. If not, TikTok will giveth until it taketh. Publishers will learn the same old lessons about not relying on other platforms.
 
 ![](/images/2023/09/untitled-66-650e94719a88a-1024x543.webp) 
 
@@ -1203,7 +1203,7 @@ The reality is that there's a hard ceiling on the number of people who can pay. 
 
   With household budgets under pressure and a significant part of the public satisfied with the news they can access for free, there are signs that the growth in online news payment may be levelling off. Across a basket of 20 richer countries, 17% paid for any online news – the same figure as last year. Norway (39%) has the highest proportion of those paying, with Japan (9%) and the United Kingdom (9%) amongst the lowest. Amongst those cancelling their subscription in the last year, the cost of living or the high price was cited most often as a reason. In the United States, Germany, and the United Kingdom, about half of non-subscribers say that nothing could persuade them to pay for online news, with lack of interest or perceived value remaining fundamental obstacles.
 
-What will get people to pay for news? Cheaper and more flexible pricing and valuable content. Most news publishers ignore younger users because they tend not to have a lot of money, but this is a missed opportunity. Publishers should remember that building a brand takes time. Creating affordable products for younger users can prime them to pay more as they grow older. Even large legacy publishers like _The New York Times_ have [realized this][273].
+What will get people to pay for news? Cheaper and more flexible pricing and valuable content. Most news publishers ignore younger users because they tend not to have a lot of money, but this is a missed opportunity. Publishers should remember that building a brand takes time. Creating affordable products for younger users can prime them to pay more as they grow older. Even large legacy publishers like _The New York Times_have [realized this][273].
 
 ![](/images/2023/09/untitled-69-650e9473ed7a2-1024x725.webp) 
 
@@ -1225,7 +1225,7 @@ There's a secular decline in trust in news. Trust is a subjective measure, and f
 
 Trust in news is important, but I also think that news organizations shouldn't concern themselves too much with the issue. If they go down the rabbit hole of trying to please everyone, they will be influenced by the whims and fancies of readers. While respecting the reader is important, it's also important to understand that they're not always right. Readers are easily aroused by the passions of the moment are often idiots—me included.
 
-The topic of trust and objectivity reminds me of this interaction between Alan Rusbridger, the former editor-in-chief of _The Guardian,_ and Marty Baron, the former editor of _The Washington Post_:
+The topic of trust and objectivity reminds me of this interaction between Alan Rusbridger, the former editor-in-chief of _The Guardian,_and Marty Baron, the former editor of _The Washington Post_:
 
   Alan Rusbrider: Do you think the Washington Post should be objective?
 
@@ -1235,7 +1235,7 @@ What Mr. Baron says is what news organizations should aspire to be.
 
 ### State of local news 
 
-Print newspapers are still stuck in an uncertain transition from print to digital, even after two decades of the internet. Except for the large publications like _NYT_ and _WaPo_, none of the regional and local papers have been able to convince readers to pay. It's a case of death by a thousand cuts.
+Print newspapers are still stuck in an uncertain transition from print to digital, even after two decades of the internet. Except for the large publications like _NYT_and _WaPo_, none of the regional and local papers have been able to convince readers to pay. It's a case of death by a thousand cuts.
 
 Private equity, hedge funds, and other investment vehicles [own over 50%][275] of all local and regional newspapers.
 
@@ -1293,7 +1293,7 @@ A functioning democracy needs a strong press. Given the dire straits of newspape
 
  Amanda Lotz
 
-Google and Facebook won't save journalism. It's not like Google and Facebook's [continued success][285] is guaranteed. Remember Yahoo, Myspace, Orkut, and countless other search and social platforms? In a world where Google and Facebook are no longer dominant—it's not an outlandish notion in the age of AI—who will newspapers extort? The bigger question is: for how long will these companies continue paying? The skeptic in me says not for long.
+Google and Facebook won't _save_journalism. It's not like Google and Facebook's [continued success][285] is guaranteed. Remember Yahoo, Myspace, Orkut, and countless other search and social platforms? In a world where Google and Facebook are no longer dominant—it's not an outlandish notion in the age of AI—who will newspapers extort? The bigger question is: for how long will these companies continue paying? The skeptic in me says not for long.
 
 ![](/images/2023/09/untitled-75-650e9477480c3-1024x805.webp) *[Axios][285]* 
 
@@ -1311,7 +1311,7 @@ Welcome to the age of shrunken ambitions.
 
 This might sound insensitive, but here's how I think about digital media in 2023. All the cuts and layoffs have shrunk digital media to its equilibrium—a barbell with few large publishers and lots of niche publishers. The end of the 2010s has shown what publishers should have realized at the beginning of the decade—the future of news is small. Having said that, just because these publishers have shrunk doesn't mean they are in a good spot. Most of them have cut some of their best and brightest reporters and are a shadow of their former selves. Without good writers and reporters, I don't know how they'll be able to build a sustainable business.
 
-The digital media company of the future will be small, focused, and audience-first. Publishers have learned the hard way that building companies that rely only on advertising is impossible. Small doesn't mean [smaller ambitions][286]—not all media brands want to remain small. There's a sensible middle ground between chasing scale and thoughtful expansion into other niches. The way the likes of The Information, Skift, _The New York Times,_ and The Ken have grown are good examples. A [series of niches][287] add up to a decent-sized business.
+The digital media company of the future will be small, focused, and audience-first. Publishers have learned the hard way that building companies that rely only on advertising is impossible. Small doesn't mean [smaller ambitions][286]—not all media brands want to remain small. There's a sensible middle ground between chasing scale and thoughtful expansion into other niches. The way the likes of The Information, Skift, _The New York Times,_and The Ken have grown are good examples. A [series of niches][287] add up to a decent-sized business.
 
 [This is poetry][288] by Rafat Ali, founder of Skift:
 
@@ -1387,7 +1387,7 @@ While more wealthy individuals, foundations, and nonprofits are [funding][308] j
 
 **Billions**
 
-More billionaires like Jeff Bezos (_The Washington Post_)_,_ Marc Benioff _(Time),_ Laurene Powell Jobs _(The Atlantic),_ John Henry _(The Boston Globe), a_nd Chatchaval Jiaravanon _(Fortune)_ own news outlets than ever. The issue is the interest of billionaires in media is cyclical. They think they can use the business acumen from other industries to save media companies but get punched in the face by the brutal economics of the media business. History is [littered with examples][309] of quick flings and messy breakups of media companies by billionaires, from _The New Republic_ to the Gothamist. We may soon have to add names to that list, given that _The Washington Post_ is set to lose about [$100 million][245] in 2023. Is there a limit to Jeff Bezos's patience? The same is the case with _[The Los Angeles Times,][310]_ owned by billionaire Patrick Soon-Shiong.
+More billionaires like Jeff Bezos (_The Washington Post_)_,_Marc Benioff _(Time),_Laurene Powell Jobs _(The Atlantic),_John Henry _(The Boston Globe), a_nd Chatchaval Jiaravanon _(Fortune)_own news outlets than ever. The issue is the interest of billionaires in media is cyclical. They think they can use the business acumen from other industries to _save_media companies but get punched in the face by the brutal economics of the media business. History is [littered with examples][309] of quick flings and messy breakups of media companies by billionaires, from _The New Republic_to the Gothamist. We may soon have to add names to that list, given that _The Washington Post_is set to lose about [$100 million][245] in 2023. Is there a limit to Jeff Bezos's patience? The same is the case with _[The Los Angeles Times,][310]_owned by billionaire Patrick Soon-Shiong.
 
 **Handouts from big tech**
 
@@ -1403,7 +1403,7 @@ There's no perfect business model; there are less terrible and more horrible mod
 
 ![](/images/2023/09/untitled-78-650e94792d85d-1024x447.webp) 
 
-If the apathy toward news wasn't scary enough, more people are avoiding news than ever. Political polarization seems to be the culprit, but I suspect the issue is more complex. Regardless of the reason, this isn't good for publishers. This is also a self-inflicted wound. The moment [news became entertainment][317], trust in news became collateral damage. 
+If the apathy toward news wasn't scary enough, more people are avoiding news than ever. Political polarization _seems_to be the culprit, but I suspect the issue is more complex. Regardless of the reason, this isn't good for publishers. This is also a self-inflicted wound. The moment [news became entertainment][317], trust in news became collateral damage. 
 
 So where does that leave us?
 
@@ -1450,7 +1450,7 @@ The story of the 2010s is all about the whirlwind romance and messy breakup betw
 
 But they didn't. From 2010 to 2016, they were high on social traffic—it was one helluva drug. Once social media platforms became raging dumpster fires after Trump, and they changed their minds about the value of news on their platforms, publishers were caught off guard. The visitors from social referrals were just that—visitors. They visited and then left. None of the digital-first publishers bothered to build direct relationships with their visitors. By the time they realized that, like Quartz, it was already too late,
 
-The digital media company of the future can only survive if it can convince readers that it matters. Publishers can only survive if they become part of readers' daily routines. Building businesses with high dependence on external referral traffic sources is a recipe for disaster. As if the example of the last decade weren't enough, Twitter (X) seems to be throttling traffic to [outbound links][318]. This is after it stopped Substack from embedding tweets and showing Substack links in Twitter search results. LinkedIn is following a similar strategy of [reducing engagement][319] for posts with links. TikTok seems to be the darling of the moment among publishers, but it's bound to disappoint—they always will. Building businesses around distributed models is like jumping from one burning building to another; you'll be burned at some point.
+The digital media company of the future can only survive if it can convince readers that it matters. Publishers can only survive if they become part of readers' daily routines. Building businesses with high dependence on external referral traffic sources is a recipe for disaster. As if the example of the last decade weren't enough, Twitter (X) _seems_to be throttling traffic to [outbound links][318]. This is after it stopped Substack from embedding tweets and showing Substack links in Twitter search results. LinkedIn is following a similar strategy of [reducing engagement][319] for posts with links. TikTok _seems_to be the darling of the moment among publishers, but it's bound to disappoint—they always will. Building businesses around distributed models is like jumping from one burning building to another; you'll be burned at some point.
 
 Referral traffic matters, but the priority has to be to own the distribution through newsletters, communities, chat apps, applications, events, etc.
 
@@ -1478,7 +1478,7 @@ When this didn't work, there was a shift to programmatic advertising, but it was
 
  [Confessions of an ad tech veteran on fraud](https://digiday.com/marketing/confessions-media-ad-tech-veteran-much-advertiser-apathy-toward-ad-fraud/)
 
-But there's still a place for advertising done well. For all the talk about the _NYT's_ shift from print to digital, it still generated [$73.8 million][320] in digital advertising revenues in Q2 2023. This was [possible in part][321] due to its focus on creating first-party data and direct advertising sales.
+But there's still a place for advertising done well. For all the talk about the _NYT's_shift from print to digital, it still generated [$73.8 million][320] in digital advertising revenues in Q2 2023. This was [possible in part][321] due to its focus on creating first-party data and direct advertising sales.
 
 The same is the case with Puck, the new upstart newsletter-focused publication. Despite having subscriptions from day one, advertising makes up a sizable chunk of [Puck's][322] revenues. Even [The Rebooting][323], a Substack newsletter by longtime media observer Brian Morrissey, is ad-supported because of its focused, high-intent, and niche audience. Packy McCormick's popular [Not Boring][324] follows the same approach. It works because such blogs and newsletters have a high-intent audience, which is valuable for advertisers. If done well, advertising can still be a meaningful part of a larger business model.
 
@@ -1500,13 +1500,13 @@ At the peak of the Substack mania around 2020–2021, there were endless think p
 
 Talent will continue to be unbundled from large publishers. I don't think it's going to be a deluge, but writers will continue to leave to start on their own. While legacy publishers hate for their brands to be outshined by large personalities, it's inevitable at some level. Some ambitions aren't compatible with a regular paycheck, and that's always been the case. What's different this time is that there's an entire ecosystem of tools and platforms, from Substack to that WEB3 stuff (don't roll your eyes), that enable people to go solo with ease.
 
-Publishers can either sit back and watch this happen or do something. _[The Atlantic][326]_ hired several writers in 2021 under a model that offered the best of being independent while having institutional support. Puck is the latest example of this transformative shift away from [institutions to individuals][327].
+Publishers can either sit back and watch this happen or do something. _[The Atlantic][326]_hired several writers in 2021 under a model that offered the best of being independent while having institutional support. Puck is the latest example of this transformative shift away from [institutions to individuals][327].
 
 **Pivot to quality**
 
-Brian Morrissey [summed][328] up the last decade well: "They were not writing for people; they were writing for algorithms." This stupidity is over. It's kinda shocking that people needed a decade to realize this, but publishers have learned that optimizing for the algorithms is a path to ruin. The era of _hacks_ is over.
+Brian Morrissey [summed][328] up the last decade well: "They were not writing for people; they were writing for algorithms." This stupidity is over. It's kinda shocking that people needed a decade to realize this, but publishers have learned that optimizing for the algorithms is a path to ruin. The era of _hacks_is over.
 
-The publisher of the future will focus on quality, delivering value, and building lasting relationships. I don't agree with the truism that _people don't pay_ _for stuff._ People will pay if they see value, as the examples I shared above have illustrated, but the proposition has to be damn good. It will be hard, but the media has always been hard.
+The publisher of the future will focus on quality, delivering value, and building lasting relationships. I don't agree with the truism that _people don't pay__for stuff._People will pay if they see value, as the examples I shared above have illustrated, but the proposition has to be damn good. It will be hard, but the media has always been hard.
 
 Publishers know that social distribution matters, but they have they can't rely only on that. Social distribution is the icing on the cake, not the cake itself. It has a role to play in helping publishers reach [new audiences][329]. But it can never be the primary distribution and monetization channel. If you play in other people's gardens, you play by their rules.
 
@@ -1528,15 +1528,15 @@ The other AI plotline to watch is how publishers react. Some publishers, like th
 
 While Web3—whatever that was—is a smoldering wreck, I don't think it's done with media yet. Publishers will have another tryst with Web3 or crypto technologies once again. What's different this time is the fact that crypto is [more legal][334] than it has ever been. Europe has taken the lead by [passing][335] the Markets in Crypto-Assets Regulation (MiCA), a comprehensive piece of legislation to regulate crypto. The US Securities and Exchange Commission (SEC) has taken a regulation by enforcement approach. Crypto is neither legal nor illegal in the US, but as the ambiguity persists, crypto has entered mainstream both on the retail and institutional side. The recent launch of a [stablecoin by PayPal][336] is an interesting development.
 
-During the last crypto bull run, publishers like _Time, The Economist_, AP, and CNN [dabbled with NFTs][337] and made _some_ money. They had to abandon the projects as the crypto bubble popped. Crypto is more mainstream than it has ever been. Whenever the next bull run comes, it will open up opportunities for publishers to make a buck. The [Civil Project][338] launched in 2016 that tried to fund news companies with token sales was an early sign. I don't know how it'll end, but it's something to watch.
+During the last crypto bull run, publishers like _Time, The Economist_, AP, and CNN [dabbled with NFTs][337] and made _some_money. They had to abandon the projects as the crypto bubble popped. Crypto is more mainstream than it has ever been. Whenever the next bull run comes, it will open up opportunities for publishers to make a buck. The [Civil Project][338] launched in 2016 that tried to fund news companies with token sales was an early sign. I don't know how it'll end, but it's something to watch.
 
 **Rebundling**
 
-Publishing always swings from unbundling to rebundling. Over the last two decades, we've seen the unbundling of everything from content to talent, but the pendulum always swings the other way. To some extent, you can already see this with the likes of _[NYT][339]_ bundling news, games, cooking, commerce, and sports. [Every][340] that bills itself as a "writers collective" is another example of rebundling. Substack is an obvious candidate in my head.
+Publishing always swings from unbundling to rebundling. Over the last two decades, we've seen the unbundling of everything from content to talent, but the pendulum always swings the other way. To some extent, you can already see this with the likes of _[NYT][339]_bundling news, games, cooking, commerce, and sports. [Every][340] that bills itself as a "writers collective" is another example of rebundling. Substack is an obvious candidate in my head.
 
 **Every company is a media company**
 
-Former A16Z partner [Benedict Evans][341] once said, "a16z is a media company that monetises through VC." The storied venture firm took that seriously and launched a publication called [Future][342] in 2021. The motivation was the increasingly _[negative and unfair][343]_ coverage that tech and Silicon Valley were getting. By the time Trump was elected, news publications had stopped writing glowing and optimistic puff pieces about tech companies and stopped treating them with kid gloves. The coverage became [critical][344]. The media had realized the power that tech companies wielded over society. Silicon Valley developed an adversarial relationship with the press in reaction to the critical coverage. Many of the _tech elites_ bypassed mainstream media publications and went direct on Twitter, YouTube, and podcasts. Marc Andreessen decided that the world needed a techno-optimist publication and launched Future, but it shut down in 2022.
+Former A16Z partner [Benedict Evans][341] once said, "a16z is a media company that monetises through VC." The storied venture firm took that seriously and launched a publication called [Future][342] in 2021. The motivation was the increasingly _[negative and unfair][343]_coverage that tech and Silicon Valley were getting. By the time Trump was elected, news publications had stopped writing glowing and optimistic puff pieces about tech companies and stopped treating them with kid gloves. The coverage became [critical][344]. The media had realized the power that tech companies wielded over society. Silicon Valley developed an adversarial relationship with the press in reaction to the critical coverage. Many of the _tech elites_bypassed mainstream media publications and went direct on Twitter, YouTube, and podcasts. Marc Andreessen decided that the world needed a techno-optimist publication and launched Future, but it shut down in 2022.
 
 If you follow the media industry, the launch of Future was a big deal. It also portended an important shift: every company is now a media company. This trend has exploded in the last couple of years. You will see companies invest considerable resources to produce content and own their messaging. I am happy about this trend because we'll see more idiotic puff pieces like the one Sequoia published on [Sam Bankman-Fried][345]. #NeverForget
 
@@ -1569,7 +1569,7 @@ Despite the dreariness, there are signs of hope. Seasoned and young crazy people
 
 It's hope that kills, but that's life.
 
-_**Ted** **Lasso**: So I've been hearing this phrase y'all got over here that I ain't too crazy about. "It's the hope that kills you." Y'all know that? I disagree, you know? I think it's the lack of hope that comes and gets you. See, I believe in hope. I believe in belief. Now, where I'm from, we got a saying too, yeah? A question, actually. "Do you believe in miracles?"_ 
+_**Ted** **Lasso**: So I've been hearing this phrase y'all got over here that I ain't too crazy about. "It's the hope that kills you." Y'all know that? I disagree, you know? I think it's the lack of hope that comes and gets you. See, I believe in hope. I believe in belief. Now, where I'm from, we got a saying too, yeah? A question, actually. "Do you believe in miracles?"_
 
 ### Why write this post? {#why.wp-block-heading}
 
@@ -1577,7 +1577,7 @@ If I can confidently say I'm a little less dumb in life, it's because I grew up 
 
 As I grow older, I have started to appreciate the value of things a lot of people, including me, take for granted. Things like good journalism, good books, public libraries, sharing knowledge without agenda, and the value of archives, among other things. As I mentioned at the beginning of the post, I had dreams of being a journalist. A few right turns instead of left, and I can imagine an alternate reality where I would've been a journalist.
 
-One thing that worries me the most is the slow and steady degradation of our information ecosystem. Nathan Robinson, the editor-in-chief of _Current Affairs_ magazine, summed it up in his post titled "[The truth is paywalled but the lies are free][365]." Paywalls are the most obvious symptom of this degradation. The number of publications implementing paywalls is increasing across the world. If the current trends in paywalls prevail, we'll have an information apartheid. I'm not saying that news should be free, but the fact remains that most people can't afford to pay for it. There have to be free alternatives, and this is where public funding can play a role. Sharp-eyed media observers like [Simon Owens][366] argue that there are still countless sources of free and quality news.
+One thing that worries me the most is the slow and steady degradation of our information ecosystem. Nathan Robinson, the editor-in-chief of _Current Affairs_magazine, summed it up in his post titled "[The truth is paywalled but the lies are free][365]." Paywalls are the most obvious symptom of this degradation. The number of publications implementing paywalls is increasing across the world. If the current trends in paywalls prevail, we'll have an information apartheid. I'm not saying that news should be free, but the fact remains that most people can't afford to pay for it. There have to be free alternatives, and this is where public funding can play a role. Sharp-eyed media observers like [Simon Owens][366] argue that there are still countless sources of free and quality news.
 
   Is it true that many of the premium publishers now feature some sort of paywall? Yes, but no matter your interest, there are a huge number of high-quality YouTube channels, podcasts, news sites, newsletters, and social media accounts dedicated to that niche. Some of the best economic analysis in the world is being disseminated on places like Substack and Twitter, and longform podcasts allow experts to go extremely deep on just about every topic. A half hour before I sat down to write this article, I watched a [20-minute video](https://youtu.be/sxRdKRORYoA) explaining how global warming has placed Greenland into the center of a geopolitical quagmire due to its proximity to melting oceans. It was free to view and just as good as any reporting you'll find at the Washington Post.
 
@@ -1585,7 +1585,7 @@ Such arguments miss the fact that journalism is still the dominant taproot of kn
 
 Then there's the question of scientific and academic research. A small number of companies control the output and have turned subscriptions into [extortion rackets][367]. The victory of book publishers over the Internet Archive's controlled digital lending was another [punch in the gut][368] for people who advocate for knowledge to be accessible. I'm not even getting into the issue of fake news and disinformation. This fraying of our information and knowledge systems has been bothering me for a long time.
 
-At the heart of all existential issues that plague humanity, from climate change to pandemics, is an information component. Good communication and information can make a difference. One of my favorite examples comes from South Africa. Faced with a dire water shortage and the prospect of taps running dry in 2018, Cape Town implemented one of the most successful behavioral change campaigns, [using good communication][369] to _nudge_ people to use less water.
+At the heart of all existential issues that plague humanity, from climate change to pandemics, is an information component. Good communication and information can make a difference. One of my favorite examples comes from South Africa. Faced with a dire water shortage and the prospect of taps running dry in 2018, Cape Town implemented one of the most successful behavioral change campaigns, [using good communication][369] to _nudge_people to use less water.
 
 A small number of gatekeepers choking off access to our collective knowledge is not good for society. A couple of months ago, I published a post titled "[A life well lived][370]." One aspect of a life well lived is living with purpose. If I look back ten years later, I'd ask myself if I did something about this problem. 
 

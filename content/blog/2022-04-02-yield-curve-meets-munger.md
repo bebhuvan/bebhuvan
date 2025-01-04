@@ -8,7 +8,7 @@ tags = ["odds and ends"]
 
 Here's what I learned this week. One thing is that I'm going to be poor, but here are a few other things. 
 
-Charlie Munger famously said, _"There are all kinds of tricks that I just got into by accident in life. One is to invert all the time."_ Looks like the US bond yield curves took his advice. 
+Charlie Munger famously said, _"There are all kinds of tricks that I just got into by accident in life. One is to invert all the time."_Looks like the US bond yield curves took his advice. 
 
 Isn't the greatest and the lamest opening to a blog post ever 😂
 
@@ -134,7 +134,7 @@ But there are nuances to the scary headlines about food grain shortages:
 
 Did you know George de Mestral came up with the [idea for Velcro][24] after he saw some spiky seeds stuck to his dog? I didn't. This is a fascinating story about the invention of Velcro. As with most inventions, Velcro had a [difficult path to adoption][25], filled with accidental moments that would've made Casablanca blush:
 
-  There were hitches: Velcro's CEO told Martha Hamilton at The Washington Post that the product wasn't always as sticky as one would hope. "We had petticoats falling off of gals and brassieres popping open," he said in 1983. And although De Mestral anticipated that his product would have widespread applications, including in the fashion industry, when Velcro finally made it to market it was a flop. Carmichael writes:    
+  There were hitches: Velcro's CEO told Martha Hamilton at _The Washington Post_that the product wasn't always as sticky as one would hope. "We had petticoats falling off of gals and brassieres popping open," he said in 1983. And although De Mestral anticipated that his product would have widespread applications, including in the fashion industry, when Velcro finally made it to market it was a flop. Carmichael writes:    
 
  Smithsonian Magazine
 

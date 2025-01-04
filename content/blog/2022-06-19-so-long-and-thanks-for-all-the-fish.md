@@ -31,7 +31,7 @@ Do you remember the opening monologue of The Hitchhiker's Guide to the Galaxy na
 
  The Hitchhiker's Guide to the Galaxy
 
-In the monologue, replace the _dolphin_ with all the sane people who warned investors not to go crazy, and the _man_ with traders and investors who ignored the same people and YOLO'd into penny stocks and weekly call options. Now, replay the monologue in your head, and it perfectly sums up the last decade and a half in the markets—especially the post-pandemic years.
+In the monologue, replace the _dolphin_with all the sane people who warned investors not to go crazy, and the _man_with traders and investors who ignored the same people and YOLO'd into penny stocks and weekly call options. Now, replay the monologue in your head, and it perfectly sums up the last decade and a half in the markets—especially the post-pandemic years.
 
 So, what's happening?
 
@@ -85,7 +85,7 @@ The US and Europe were the epicenters of the crisis, but the crisis rippled out 
 
 The 2008 crisis also exposed the deep-rooted problems in the structure of the Eurozone. The tranquility of the pre-2008 crisis period masked the structural and economic imbalances. But the severity of the 2008 crisis brought them to the fore all at once and triggered the Eurozone crisis. The credit-fuelled housing bubbles in the UK, Spain, Portugal, Greece and Ireland imploded spectacularly. This also triggered the sovereign debt crisis in Greece, which already had substantial levels of hidden debt. The policymakers in the US got their act together relatively quickly and took dramatic measures to stop the imminent implosion of the financial system, but the Europeans bungled the response. Their infighting and [myopic economic thinking][10] almost ripped apart the European Union. 
 
-In response to the crisis, technocratic central bankers transformed into mad monetary scientists. They turned the entire global economy into a laboratory for unconventional monetary policies to save the global economy that was teetering on the edge of oblivion. It started with slashing interest rates to zero, and the Europeans even took it to negative. Then came multiple rounds of asset purchases, quantitative easing in the US and Europe, and all the other efforts to generate growth and inflation.
+In response to the crisis, technocratic central bankers transformed into mad monetary scientists. They turned the entire global economy into a laboratory for unconventional monetary policies to _save_the global economy that was teetering on the edge of oblivion. It started with slashing interest rates to zero, and the Europeans even took it to negative. Then came multiple rounds of asset purchases, quantitative easing in the US and Europe, and all the other efforts to generate growth and inflation.
 
 14 years after the 2008 crisis, it's very easy to forget just how terrifying the crisis was. Perhaps nothing captures the severity of 2008 as this statement at the depth of the crisis by Ben Bernanke, the Fed chair, when asking Congress for a bailout fund for the banks:
 
@@ -109,15 +109,15 @@ But much like the post-pandemic period, there was [uneven economic recovery][13]
 
 ### Narrative violation 
 
-Of course, this chart poses a problem to everyone saying that we're in the _mother of all bubbles._ It's a good opportunity to bust some myths and clarify others.
+Of course, this chart poses a problem to everyone saying that we're in the _mother of all bubbles._It's a good opportunity to bust some myths and clarify others.
 
 **Narrative #1: The Federal Reserve is creating a stock market bubble**
 
-Macro soothsayers will take every opportunity to argue that the US markets went up because of a Fed-driven liquidity bubble. This is the dominant narrative. The Fed has apparently inflated a global stock market bubble by printing money and keeping the interest rates low. But the narrative quickly falls apart if you just spend a minute looking at the returns of the various markets. Much like the Fed, the ECB, BOE and BOJ too expanded their balance sheets massively through quantitative easing. But European equities have gone nowhere while Japan is relatively better. There isn't a _central bank-driven equity rally_ or an _everything bubble_—it's just a US rally. 
+Macro soothsayers will take every opportunity to argue that the US markets went up because of a Fed-driven liquidity bubble. This is the dominant narrative. The Fed has apparently inflated a global stock market bubble by printing money and keeping the interest rates low. But the narrative quickly falls apart if you just spend a minute looking at the returns of the various markets. Much like the Fed, the ECB, BOE and BOJ too expanded their balance sheets massively through quantitative easing. But European equities have gone nowhere while Japan is relatively better. There isn't a _central bank-driven equity rally_or an _everything bubble_—it's just a US rally. 
 
-Ok, if not the Fed _printing money_ and _inflating the mother of all stock market bubbles,_ why did the US markets rally so dramatically since 2008? 
+Ok, if not the Fed _printing money_and _inflating the mother of all stock market bubbles,_why did the US markets rally so dramatically since 2008? 
 
-Of course, this is in hindsight, but could it be that US markets had the best [fundamentals][15], robust earnings growth, and profits coming out of the 2008 crisis? Yes, but that's a dull narrative compared to the _money printing_ and _mother of all bubbles_ narrative. 
+Of course, this is in hindsight, but could it be that US markets had the best [fundamentals][15], robust earnings growth, and profits coming out of the 2008 crisis? Yes, but that's a dull narrative compared to the _money printing_and _mother of all bubbles_narrative. 
 
 ![](/images/2022/06/Global-earnings-1024x699.png) *[Guide to the Markets][16]* 
 
@@ -142,7 +142,7 @@ Surely, this is a cosmic conspiracy?
 
 ![](/images/2022/06/FAANG-earnigs.png) 
 
-To the surprise of absolutely nobody, tech companies had the largest [EPS growth][21] in the post-2008 period. But this is a very bland explanation compared to _10 stocks are responsible for all of S&P 500 returns_, _it's a narrow rally_ and whatnot. 
+To the surprise of absolutely nobody, tech companies had the largest [EPS growth][21] in the post-2008 period. But this is a very bland explanation compared to _10 stocks are responsible for all of S&P 500 returns_, _it's a narrow rally_and whatnot. 
 
 **Narrative #3: The equity flows are propping up the US markets**
 
@@ -153,9 +153,9 @@ The other narrative is that all the money flowing into US equities, especially t
 
 The theory is that the "permanent bid" through passive ETFs, mutual funds, 401k plans and pension funds are pushing the prices up. Since these automatic flows are mostly price agnostic, there's sustained upward pressure on stock prices. 
 
-There's a lot of nonsense in this debate. For one, there are a lot of definitional issues with what is _passive_ and what is _active._ Some people assume smart-beta funds as being passive, but they aren't. Some of those strategies tend to have higher turnover—it's basket-based trading, but they are by no means passive. The other assumption is that there's no trading, but advisors and institutions are increasingly using ETFs to express views like sector bets, thematic preferences etc. There are plenty of creations and redemptions happening all the time. Of course, there's also the argument that this basket trading is causing other distortions. 
+There's a lot of nonsense in this debate. For one, there are a lot of definitional issues with what is _passive_and what is _active._Some people assume smart-beta funds as being passive, but they aren't. Some of those strategies tend to have higher turnover—it's basket-based trading, but they are by no means passive. The other assumption is that there's no trading, but advisors and institutions are increasingly using ETFs to express views like sector bets, thematic preferences etc. There are plenty of creations and redemptions happening all the time. Of course, there's also the argument that this basket trading is causing other distortions. 
 
-The ultimate question, of course, is whether these _automatic flows_ are degrading price discovery? 
+The ultimate question, of course, is whether these _automatic flows_are degrading price discovery? 
 
 Flows absolutely impact prices and the market microstructure—there's no denying that. But are the US markets at the risk of being _zombified_? Not really. Dave Nadig wrote a [brilliant piece][23] recently, summarizing the debate and evidence of this debate. 
 
@@ -176,7 +176,7 @@ Since monetary policy was front and center, central banks have been in the spotl
 
 Now to the question at hand: What determines interest rates, and do central banks control interest rates? Central banks set the overnight interest rate or the rate at which banks lend to each other—that's it. Of course, you could argue that the overnight rates are the base rates that influence all the other rates and yields, but the evidence for that is [quite tenuous][25]. They don't control all the rates—the markets determine them. Of course, central bank actions like signalling, setting expectations, bond purchases etc., do make a difference but not to the extent of the kooky theories peddled by gold bugs and permabears. 
 
-[Economic conditions][26] and inflation [determine the interest rates][27] in an economy. The very simple reason interest rates around the developing economies have been low is because of the nonexistent economic growth and inflation. You don't have to look any further than the fact that inflation and growth remain low despite central banks adding trillions to their balance sheets. You can also look at what's happening right now. Central banks are raising rates in reaction to rising inflation and bond yields—not the other way around. But again, this is a boring narrative compared to the _central banks are creating asset bubbles by_ _keeping interest rates at zero._ 
+[Economic conditions][26] and inflation [determine the interest rates][27] in an economy. The very simple reason interest rates around the developing economies have been low is because of the nonexistent economic growth and inflation. You don't have to look any further than the fact that inflation and growth remain low despite central banks adding trillions to their balance sheets. You can also look at what's happening right now. Central banks are raising rates in reaction to rising inflation and bond yields—not the other way around. But again, this is a boring narrative compared to the _central banks are creating asset bubbles by__keeping interest rates at zero._
 
 People assume that low interest rates are a recent phenomenon, but they aren't. Interest rates in advanced economies have been gradually declining for [decades][28] and even [centuries][29]. Of course, the ultimate question is whether low interest rates impact asset prices and risk-taking? 
 
@@ -206,13 +206,13 @@ Thankfully, there are a growing number of studies on the impact of low interest 
 
   The impact of lower interest rates on market power and market concentration. [Atif Mian et al.](https://www.nber.org/papers/w25505), [Romain Duval et al.](https://blogs.imf.org/2021/07/21/taming-market-power-could-also-help-monetary-policy/), [Andy Haldane](https://www.bankofengland.co.uk/speech/2018/andy-haldane-speech-at-the-economic-policy-symposium-panel-jackson-hole), [Nathan Tankus](https://nathantankus.substack.com/p/low-interest-rates-dont-drive-market?s=r), [Jan Eeckout and Jan De Loecker, among others](https://www.janeeckhout.com/#WorkingPapers).
 
-These are just a few of the amazing people doing amazing work on the side effects of _throwing the kitchen sink_ monetary policy over the last decade. This short list doesn't nearly do enough justice to the others. 
+These are just a few of the amazing people doing amazing work on the side effects of _throwing the kitchen sink_monetary policy over the last decade. This short list doesn't nearly do enough justice to the others. 
 
 Hopefully, we'll learn more as more research comes out. Of course, it won't matter if that one guy who's been 100% in gold since 2008, betting on the imminent implosion of the modern financial system, turns out to be correct. 
 
 ### Ok, so there are no bubbles? 
 
-This question becomes relevant only if you agree with the premise that not everything is a bubble. If you don't, then right now, you have a full HD view of a slow-motion implosion of the greatest financial bubble in the history of humanity. But if you're a moron like me who believes in nonsense like nuance, you would have realized by now that not everything is a bubble_._ 
+This question becomes relevant only if you agree with the premise that not everything is a bubble. If you don't, then right now, you have a full HD view of a slow-motion implosion of the greatest financial bubble in the history of humanity. But if you're a moron like me who believes in nonsense like nuance, you would have realized by now that not everything is a bubble_._
 
 As an aside, the other issue with screaming there's a bubble is what exactly is a bubble, and how do you define it? On the one extreme, you have people like [Eugene Fama](http://economics-files.pomona.edu/garysmith/Econ156/Lectures/FamaOnBubbles.html) that are of the view that there's no such thing as a bubble. On the other extreme, you have people like [Robert Shiller](https://blogs.cfainstitute.org/investor/2019/01/07/robert-j-shiller-on-bubbles-reflexivity-and-narrative-economics/) that think otherwise. This is the exact debate that led both of them [to share a Nobel Prize](https://www.nobelprize.org/prizes/economic-sciences/2013/prize-announcement/). 
 
@@ -227,7 +227,7 @@ So, where are the bubbles?
 
 #### Growthy stonks 
 
-There was indeed some insanity on 10x leverage in some market segments, especially the growth stocks. Over the past decade, there were a record number of unprofitable IPOs, the bulk of which were the so-called _new-age tech companies._ These companies were sold on pitches of disruption, destruction and world domination. The fervor around these stocks was reminiscent of the dot-com bubble. As long as a company had something remotely to do with _tech,_ the IPO would be oversubscribed. Revenues and profitability didn't matter. The more the losses, the better it was. 
+There was indeed some insanity on 10x leverage in some market segments, especially the growth stocks. Over the past decade, there were a record number of unprofitable IPOs, the bulk of which were the so-called _new-age tech companies._These companies were sold on pitches of disruption, destruction and world domination. The fervor around these stocks was reminiscent of the dot-com bubble. As long as a company had something remotely to do with _tech,_the IPO would be oversubscribed. Revenues and profitability didn't matter. The more the losses, the better it was. 
 
 ![](/images/2022/06/Unprofitable-companies-IPOs.png) *Vanguard* 
 
@@ -247,16 +247,16 @@ The one stock that was symbolic of the growthy craziness that immediately comes 
 
 Why? 
 
-This glut of _growthy_ stocks was due to the incredible growth of venture capital in the US. Every year since 2010 has been a record-breaking year for venture capital, not just in the US but worldwide. There were a record number of new funds, deals, valuations and record records. Perhaps one of the most important developments in venture capital was the entry of price agnostic [non-traditional venture investors][40] like Tiger. Capital became a commodity, and valuations became an afterthought. 
+This glut of _growthy_stocks was due to the incredible growth of venture capital in the US. Every year since 2010 has been a record-breaking year for venture capital, not just in the US but worldwide. There were a record number of new funds, deals, valuations and record records. Perhaps one of the most important developments in venture capital was the entry of price agnostic [non-traditional venture investors][40] like Tiger. Capital became a commodity, and valuations became an afterthought. 
 
-In the last 2-3 years, FOMO took over as funds were investing as if they were throwing blind darts. They were increasingly piling into the same set of companies and rapidly marking up the valuations. Deals were being closed in hours and days, and due diligence was a dirty word, just like fundamentals. Founders went from pitching to VC funds to getting pitched by VC funds. You could ask your grandma to pitch an idea, and Tiger Global and Softbank would get into a cat fight to fund her. There was no difference between a pump and dump scheme, and venture investing_._ 
+In the last 2-3 years, FOMO took over as funds were investing as if they were throwing blind darts. They were increasingly piling into the same set of companies and rapidly marking up the valuations. Deals were being closed in hours and days, and due diligence was a dirty word, just like fundamentals. Founders went from pitching to VC funds to getting pitched by VC funds. You could ask your grandma to pitch an idea, and Tiger Global and Softbank would get into a cat fight to fund her. There was no difference between a pump and _dump_scheme, and venture investing_._
 
    4. VC firm FAKES signatures on the term sheet and threatens the startup with "nasty, public PR battles" and a "fight until the bitter end" if the startup doesn't take their $.5. Startup sues, gets a different kind of $ – settlement. full story: [https://t.co/5aCgnql04r](https://t.co/5aCgnql04r)
   &mdash; erin griffith (@eringriffith) 
   
   [June 1, 2022](https://twitter.com/eringriffith/status/1532078335290814464?ref_src=twsrc%5Etfw)
 
-All these stocks are now crashing twice as fast as they went up. I've been getting unconfirmed reports that the most heard song by the CEOs of these companies was _Livin' on a Prayer_ by Bon Jovi. 
+All these stocks are now crashing twice as fast as they went up. I've been getting unconfirmed reports that the most heard song by the CEOs of these companies was _Livin' on a Prayer_by Bon Jovi. 
 
    The Boom (2020) and Bust (2021-22) in High Growth Stocks&#8230;Data via [@ycharts](https://twitter.com/ycharts?ref_src=twsrc%5Etfw) [pic.twitter.com/D5lNmD9RIi](https://t.co/D5lNmD9RIi)
   &mdash; Charlie Bilello (@charliebilello) 
@@ -271,7 +271,7 @@ Every crazy market phase has a poster child. Nothing compared to the sheer insan
 
   Ohlrogge and Klausner, a professor at Stanford Law School, discovered that these costs quickly added up: The dilution from warrants issued in the IPO, along with virtually free shares for sponsors and banking fees for both the IPO and the merger that ended up being two to three times higher for a SPAC than for a traditional IPO, all ate into the amount of cash the companies had once the merger happened. Because the companies passed on these costs to the remaining shareholders, the companies ended up with about 40 percent less cash than they started with.
 
-SPACs became the go-to vehicle to take companies public over the last couple of years. But most of these companies were useless and downright fraudulent in some cases. Regular IPOs can't make projections or forward-looking statements in the US due to liability issues. But until March, SPACs could make projections because of a [safe harbor provision][41]. SPACs exploited this regulatory arbitrage to make wildly optimistic projections unsullied by reality to dump the stock of worthless companies on retail investors. SPACs raised over $250 billion in 2020 and 2021, but the party is over. Given the market sentiments, SPACs will have no choice but cancel, and [return the cash][43]. Companies that listed through SPACs have been getting a royal spanking, with most of them down by over 30-50% YTD. 
+SPACs became the go-to vehicle to take companies public over the last couple of years. But most of these companies were useless and downright fraudulent in some cases. Regular IPOs can't make projections or forward-looking statements in the US due to liability issues. But until March, SPACs could make projections because of a [safe harbor provision][41]. SPACs exploited this regulatory arbitrage to make wildly optimistic projections unsullied by reality to _dump_the stock of worthless companies on retail investors. SPACs raised over $250 billion in 2020 and 2021, but the party is over. Given the market sentiments, SPACs will have no choice but cancel, and [return the cash][43]. Companies that listed through SPACs have been getting a royal spanking, with most of them down by over 30-50% YTD. 
 
 ![](/images/2022/06/De-spac-ETF-3-1024x477.png) 
 
@@ -289,11 +289,11 @@ Every ~4 years, we see a new crypto hype cycle that always ends in tears, broken
 
 This time, the the rise of decentralized finance (DeFi) fuelled the mania. DeFi boosters believe that traditional financial institutions like banks, insurance companies, exchanges, and asset managers are overpriced, bureaucratic and incompetent entities. Their vision was to eliminate all these "rent-seeking" entities and replace them with smart contracts. Code is law became the mantra. This apparently would lead to borderless money and bring about financial inclusion on a scale never seen before. Sounds nice in theory, but most DeFi projects ended up being Ponzi schemes in reality. Charles Ponzi would've been proud of crypto; this is the dream he died for. 
 
-Here's how most DeFi projects worked. A developer would start a project that _claimed_ to _revolutionize XYZ.,_ and the project would launch by issuing a few tokens. It would also create a [liquidity pool][48] where token holders can deposit the tokens to earn interest in exchange for providing liquidity in the tokens. As an incentive for providing liquidity, the project would reward the holders with more tokens, which can be staked again in the liquidity pool to earn more rewards. This would cause the price of the tokens to rise, naturally attracting more people to buy the token. As more people piled in, more incentives would be paid out. This cycle could last as long as there were willing suckers. But the issue with the model is people bought the tokens for the rewards and not for their utility. A negative trigger like a fall in prices, hacks, vulnerabilities, or attacks would cause the projects to [spiral out of control and die][49] eventually. 
+Here's how most DeFi projects worked. A developer would start a project that _claimed_to _revolutionize XYZ.,_and the project would launch by issuing a few tokens. It would also create a [liquidity pool][48] where token holders can deposit the tokens to earn interest in exchange for providing liquidity in the tokens. As an incentive for providing liquidity, the project would reward the holders with more tokens, which can be staked again in the liquidity pool to earn more rewards. This would cause the price of the tokens to rise, naturally attracting more people to buy the token. As more people piled in, more incentives would be paid out. This cycle could last as long as there were willing suckers. But the issue with the model is people bought the tokens for the rewards and not for their utility. A negative trigger like a fall in prices, hacks, vulnerabilities, or attacks would cause the projects to [spiral out of control and die][49] eventually. 
 
 The speculative fervor wasn't just limited to DeFi. The mania was such that random tokens with zero utility would rise by 100-1000% in a span of weeks. Perhaps, nothing was more emblematic of this utter insanity than Dogecoin, a token that was created as a parody of crypto. At one point, the marketcap of Doge was over $40 billion; it's still around $7 billion. It wasn't just random shitcoins, the other poster child of this season's crypto madness was NFTs or "digital art", basically pictures of rocks, dogs and monkeys that sold for millions. 
 
-As long as you knew some basic coding, you could launch a token or create an NFT within 5 mins. There was an entire cottage industry dedicated to pumping crypto projects and NFTs on Telegram, WhatsApp, Reddit and Discord for a few dollars. Once the pump was in, you could dump them and [make easy money][50]. Rising crypto prices attracted more suckers, which fed the cycle, ensuring a limitless supply of victims. Crypto became a hunting ground for hackers and scammers. Unwitting investors have lost billions due to [hacks and exploits][51]. 
+As long as you knew some basic coding, you could launch a token or create an NFT within 5 mins. There was an entire cottage industry dedicated to pumping crypto projects and NFTs on Telegram, WhatsApp, Reddit and Discord for a few dollars. Once the pump was in, you could _dump_them and [make easy money][50]. Rising crypto prices attracted more suckers, which fed the cycle, ensuring a limitless supply of victims. Crypto became a hunting ground for hackers and scammers. Unwitting investors have lost billions due to [hacks and exploits][51]. 
 
 Naturally, the VCs saw an opening and co-opted crypto. They even rebranded it to "web3." A worldwide investigation is underway to ascertain the meaning of the term. Venture capital firms like a16z, Paradigm and exchanges like FTX, Coinbase and Binance invested billions in crypto and blockchain startups. 
 
@@ -338,7 +338,7 @@ Some projects have survived and thrived at the end of every crypto cycle. But th
 
 So what does this mean for crypto and DeFi? 
 
-I think crypto will eventually become far more boring than it seems today. This will be a deeply unpopular opinion, but DeFi has seen more innovation in a few months than traditional financial institutions in a decade. I mean, sure, the DeFi boys have channelled the spirit of innovation into finding the ultimate pump and dump scheme, but it's innovation nonetheless. Now, imagine if they channelled it productively? 
+I think crypto will eventually become far more boring than it _seems_today. This will be a deeply unpopular opinion, but DeFi has seen more innovation in a few months than traditional financial institutions in a decade. I mean, sure, the DeFi boys have channelled the spirit of innovation into finding the ultimate pump and _dump_scheme, but it's innovation nonetheless. Now, imagine if they channelled it productively? 
 
 Heck, even The Bank for International Settlements [thinks so][57]: 
 
@@ -454,7 +454,7 @@ Unlike public equities, private market [investing cycles are much longer][66], a
 
 #### A little bit of VC history 
 
-It's important to understand a bit of venture capital history to understand the growth of US private markets. Some people argue that Queen Isabella of Spain, who funded Christopher Columbus' voyage, was the [first venture capitalist][67]. Spain needed a faster route to Asia, and Columbus promised Isabella he would find one. So she gave him three ships and some men in return for 90% of the profits. Instead of Asia, Columbus discovered the Caribbean islands or the _new world_ and unleashed the golden age of exploration. The discovery eventually led to Spain's colonization of the Americas, and the investment paid off brilliantly. 
+It's important to understand a bit of venture capital history to understand the growth of US private markets. Some people argue that Queen Isabella of Spain, who funded Christopher Columbus' voyage, was the [first venture capitalist][67]. Spain needed a faster route to Asia, and Columbus promised Isabella he would find one. So she gave him three ships and some men in return for 90% of the profits. Instead of Asia, Columbus discovered the Caribbean islands or the _new world_and unleashed the golden age of exploration. The discovery eventually led to Spain's colonization of the Americas, and the investment paid off brilliantly. 
 
 Until the 19th century, whale oil was quite valuable, and America had emerged as the leader in whaling. Whaling ventures—finding and hunting whales—were long and costly, and banks didn't fund them. But some wealthy individuals were willing to take the risk, and on the other hand, you had ship captains who needed the capital—whaling agents emerged to intermediate these deals. As Tom Nicholas wrote in _[VC: An American History][68]_, the funding of whaling ventures, the structure of these partnerships and the return profiles were almost the same as modern-day venture funds. 
 
@@ -487,7 +487,7 @@ The other important factor that led to the explosive growth of venture capital w
 
     ![](/images/2022/06/Pension-funding-millman.png)
 
-For a long time, US pensions and endowments had a returns assumption of [8-10%][72]. This made sense at a time when treasury yields were high. But bond yields had been in a secular decline for well over two decades across the world. At the same time, pension liabilities have increased steadily. Pensions need to hit a certain return target to meet the liabilities, or they go bust. As bond yields fell, pensions had to supplement the returns. In order to hit their targeted returns, pension funds have substantially increased their allocation to alternatives such as venture capital, private equity, infrastructure and real estate over the last two decades. The average US pension allocation to private markets went from about 5% in 2000 to over [15% today][73]. It seems like a small number, but pensions manage trillions. Even a 1% change in allocation means billions in flows. 
+For a long time, US pensions and endowments had a returns assumption of [8-10%][72]. This made sense at a time when treasury yields were high. But bond yields had been in a secular decline for well over two decades across the world. At the same time, pension liabilities have increased steadily. Pensions need to hit a certain return target to meet the liabilities, or they go bust. As bond yields fell, pensions had to supplement the returns. In order to hit their targeted returns, pension funds have substantially increased their allocation to alternatives such as venture capital, private equity, infrastructure and real estate over the last two decades. The average US pension allocation to private markets went from about 5% in 2000 to over [15% today][73]. It _seems_like a small number, but pensions manage trillions. Even a 1% change in allocation means billions in flows. 
 
 ![](/images/2022/06/Alternative-asset-allocation-IMF.png) *[IMF][74]* 
 
@@ -537,7 +537,7 @@ The eye-popping growth of private equity and venture was also a result of two fa
 
 Today, private equity firms have emerged as the [biggest lenders][84] to companies in many segments that banks don't serve anymore. Specialized firms called venture debt firms have also emerged to provide credit to startups looking for alternatives to equity financing. Of course, all this isn't without risks. Shadow banking entities have lesser linkages to the banking system but can still cause serious mayhem. 
 
-We saw a first-hand demonstration when IL&FS declared bankruptcy in 2017 and caused the Indian bond markets to freeze. We saw an even bigger demonstration during the COVID-19 crash of 2020. The investor rush to cash or _dash for cash_ led to severe strains in treasury markets, corporate bond markets, bond funds, REITs, mortgage-backed securities and bond dealers in the US, UK and Europe. It started with the massive selling of bonds and equities as people increased their cash levels. The large-scale selling led to falling yields on bonds. This split over to hedge funds and other leverage actors who started getting hit with margin calls leading to forced liquidations, further intensifying the selling pressure, and severely [degrading the market][85]. 
+We saw a first-hand demonstration when IL&FS declared bankruptcy in 2017 and caused the Indian bond markets to freeze. We saw an even bigger demonstration during the COVID-19 crash of 2020. The investor rush to cash or _dash for cash_led to severe strains in treasury markets, corporate bond markets, bond funds, REITs, mortgage-backed securities and bond dealers in the US, UK and Europe. It started with the massive selling of bonds and equities as people increased their cash levels. The large-scale selling led to falling yields on bonds. This split over to hedge funds and other leverage actors who started getting hit with margin calls leading to forced liquidations, further intensifying the selling pressure, and severely [degrading the market][85]. 
 
 [Heightened redemptions][86] led to a [run on][87] money market funds, much like in 2008. Selling pressure in corporate bonds led to widening spreads, and large parts of markets froze. This stress spread to bond funds and ETFs. Bond ETFs were trading at substantial discounts compared to the same bond funds. If not for the significant intervention by the central banks across treasury markets, repo markets and corporate bonds markets (through corporate bond ETFs), these markets would've quite literally snapped like a twig. Shadow banking entities were at the heart of these dislocations. For many, the next big crisis lurks in private markets and shadow banks. It's not hard to see why. 
 
@@ -556,7 +556,7 @@ Now, back to the main point, why did the private markets grow so large? Well, pe
 
 VCs bet on unproven ideas and companies—a certain amount of irrationality is baked into the model. The default mental model that most people use to think about venture capital is to compare it to public markets investing—I don't think that necessarily works. But one aspect where venture capital and public markets are similar is that both are super-hit businesses. A small number of winners will deliver outsized gains and pay for the rest of the duds. 
 
-Given the informational asymmetries and the asymmetric payoffs in private markets, investing bets aren't just based on available data but a bit of irrational optimism. But much like public market cycles, every VC cycle starts with some semblance of sanity and ends with utter insanity. I think the tail end of the current cycle—which seems like it's over—feels much crazier than the dot-com madness, or at least on par with it. 
+Given the informational asymmetries and the asymmetric payoffs in private markets, investing bets aren't just based on available data but a bit of irrational optimism. But much like public market cycles, every VC cycle starts with some semblance of sanity and ends with utter insanity. I think the tail end of the current cycle—which _seems_like it's over—feels much crazier than the dot-com madness, or at least on par with it. 
 
 Over the years, the flood of capital in venture capital has also caused some serious FOMO and returns chasing among VC funds. In the later stages of a cycle, investments aren't driven by reasonable theses, but FOMO. The flood of capital into fads and frauds in crypto over the last 3 years is a prime example of this. With so much money chasing so few companies, we've had a record number of deals, a dramatic increase in funds raised and deployed, [record exits, and moon-high valuations][91]. 
 
@@ -683,9 +683,9 @@ Remember that old Chinese guy who said, "may you live in interesting times"? I h
 
 This might sound lame, but as I was writing this post, I couldn't help but wonder about the sheer amount of research that's available for free. Even if you want to learn about some weird and arcane corner of the markets, you'll find a ton of resources. I thought I'd highlight a few amazing papers, videos and podcasts I discovered as I was writing this. 
 
-None of what I've written is original. It's just a quick summary based on the amazing work done by academics, researchers, and journalists. Most of what I know about the 2008 crisis is based on Adam Tooze's _[Crashed][100],_ and the amazing research by Neil Fligstein[1](https://sociology.berkeley.edu/sites/default/files/faculty/fligstein/The%20Spread%20of%20the%20Worldwide%20Financial%20Crisis2.pdf),[2](https://www.researchgate.net/publication/323321286_The_Anatomy_of_the_Mortgage_Securitization_Crisis), [Darrel Duffie][101], [Gary Gorton and Andrew Metrik][102]. 
+None of what I've written is original. It's just a quick summary based on the amazing work done by academics, researchers, and journalists. Most of what I know about the 2008 crisis is based on Adam Tooze's _[Crashed][100],_and the amazing research by Neil Fligstein[1](https://sociology.berkeley.edu/sites/default/files/faculty/fligstein/The%20Spread%20of%20the%20Worldwide%20Financial%20Crisis2.pdf),[2](https://www.researchgate.net/publication/323321286_The_Anatomy_of_the_Mortgage_Securitization_Crisis), [Darrel Duffie][101], [Gary Gorton and Andrew Metrik][102]. 
 
-In November 2008, Queen Elizabeth, visiting the London School of Economics, asked the economists _why did no one see it coming?_ Andrew Hindmoor Allan Mcconnell had [a brilliant paper][103] looking at the messiness of heeding the warnings about crises in real time. 
+In November 2008, Queen Elizabeth, visiting the London School of Economics, asked the economists _why did no one see it coming?_Andrew Hindmoor Allan Mcconnell had [a brilliant paper][103] looking at the messiness of heeding the warnings about crises in real time. 
 
 The other paper that stood out for me was [_Fifty Shades of QE_][37] by Brian Fabo, Martina Jančoková, Elisabeth Kempf and Ľuboš Pástor. Just like gravity makes the Earth orbit the sun, incentives are by far the most powerful force that moves people. This paper is a masterclass on the power of incentives.
 

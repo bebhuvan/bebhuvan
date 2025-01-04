@@ -129,7 +129,7 @@ What explains the dramatic shift into private markets? The common reasons touted
 
 Is private equity a fairy tale? Before we jump to conclusions, let's unpack this. 
 
-The views about private equity fall on a broad spectrum. On one end of the spectrum, you have Elizabeth Warren, who likened private equity to vampires. Then you have Jeff Hooke, professor of finance at Johns Hopkins and author of _[The Myth of Private Equity][19],_ who says that believing in private equity outperformance is like believing in the tooth fairy. Ludovic Phalippou, the author of _[Private Equity Laid Bare][20]_ and professor of financial economics at the University of Oxford, calls private equity a billionaire factory. On the other end, you have people like Steve Kaplan and Steven Davis, both professors at the Chicago Booth School, who think private equity is a force for good. 
+The views about private equity fall on a broad spectrum. On one end of the spectrum, you have Elizabeth Warren, who likened private equity to vampires. Then you have Jeff Hooke, professor of finance at Johns Hopkins and author of _[The Myth of Private Equity][19],_who says that believing in private equity outperformance is like believing in the tooth fairy. Ludovic Phalippou, the author of _[Private Equity Laid Bare][20]_and professor of financial economics at the University of Oxford, calls private equity a billionaire factory. On the other end, you have people like Steve Kaplan and Steven Davis, both professors at the Chicago Booth School, who think private equity is a force for good. 
 
 If you're a public markets investor, you wouldn't think much about performance measurement because you have real-time pricing and easy access to historical data. You'd think this shouldn't be an issue for a $10 trillion asset class like private markets, but you'd be wrong. Something as basic as performance measurement is a nightmare. If you ask five people about the performance of private equity, you will get ten answers. 
 
@@ -169,7 +169,7 @@ Discussions about private equity lead to questions about performance, fees, whet
 
 Whether private markets outperform public markets has to be among the loudest debates in modern finance. Nobody agrees on anything because of the opaque nature of the asset class and the lack of accurate data. Publicly traded securities have time series data based on actual trades. This makes it easy to use models like CAPM and the Fama-French factor models to analyze risk and return characteristics. 
 
-But private equity funds don't have market values because the underlying companies are private. Even though private equity funds disclose their net asset values (NAV), the valuations of the underlying companies are based on the _opinions_ of the fund manager. The NAVs are published every quarter, but they tend to be stale. There's widespread evidence that private equity funds [manipulate returns][24] and [valuations][24]. Funds are also secretive about the returns. In 2003, Sequoia [terminated its relationship][25] with the University of Michigan after the endowment was forced to disclose the returns of its private market investments. 
+But private equity funds don't have market values because the underlying companies are private. Even though private equity funds disclose their net asset values (NAV), the valuations of the underlying companies are based on the _opinions_of the fund manager. The NAVs are published every quarter, but they tend to be stale. There's widespread evidence that private equity funds [manipulate returns][24] and [valuations][24]. Funds are also secretive about the returns. In 2003, Sequoia [terminated its relationship][25] with the University of Michigan after the endowment was forced to disclose the returns of its private market investments. 
 
 Researchers and academics use databases maintained by firms like Prequin, Burgiss, and Cambridge Associates to analyze private data, but they suffer from obvious self-selection and self-reporting issues. To give you a sense of how difficult it is to get PE data, Prequin [collects its data][26] through Freedom of Information Act (FOIA) requests to public pensions in the US and UK. To make matters worse, the fund cash flows are also irregular, and the valuations of company exits can only be determined after the exit. We're only talking about measuring returns.
 
@@ -237,7 +237,7 @@ On an interesting note, Tiger Global partner Scott Shleifer in a recent conferen
 
   "Returns on capital in India have sucked historically. If you look at the market-leading internet companies, whether it is Google, Facebook, Alibaba or Tencent, revenue for them got bigger than cost more than a decade ago. You had a great legacy of last 17-18 years of materially profitable internet companies. So returns on equity in the internet got really high and the returns for investors have been really high. But that did not happen in India,"
 
-It seems to me that the reason for the public markets vs. private markets is that people look at them from a public market lens. The private equity guys will have you believe that's wrong and that they're special. But what happens if you extend the same line of thinking? 
+It _seems_to me that the reason for the public markets vs. private markets is that people look at them from a public market lens. The private equity guys will have you believe that's wrong and that they're special. But what happens if you extend the same line of thinking? 
 
 A few studies take some interesting approaches to compare the performance of private equity to public markets.
 
@@ -277,7 +277,7 @@ The evidence of private equity alpha is mixed. As for diversification, if all or
 
  [Nicolas Rabener](https://blogs.cfainstitute.org/investor/2020/01/20/private-equity-fooling-some-of-the-people-all-of-the-time/)
 
-What if private equity is attractive because of its illiquidity? What if investors _know_ that private equity is levered public equity, _but_ they'd prefer not to wake up in the morning to see their portfolio down by 30%? What if there was a way to get public equity returns without real-time prices?
+What if private equity is attractive because of its illiquidity? What if investors _know_that private equity is levered public equity, _but_they'd prefer not to wake up in the morning to see their portfolio down by 30%? What if there was a way to get public equity returns without real-time prices?
 
 This is the theory of Cliff Asness, the founder of AQR. He even coined the term "volatility laundering," one of the greatest investing terms ever. 
 
@@ -285,7 +285,7 @@ If private equity investors are indeed paying for the lack of real-time prices, 
 
   Unlike Swensen's PE market, which was primarily about earning extra return, today's PE market is now seemingly as much about not having to report market prices. That kind of investment should return less over the long term than the appropriate levered public equity benchmark (and I haven't even gone into the fees on fees on fees). Admittedly, this is educated conjecture. The net of the above could be a smaller return premium for private versus public equity, as opposed to a deficit. But I do stand by my conjecture, and though the magnitude is impossible to be precise about, it's difficult to imagine the drop-off is not directionally right and nontrivial.
 
-On second thought, the assertion that private markets help you stay disciplined because of the lack of real-time pricing doesn't make sense. Do you want to invest with a manager who cannot handle facing reality, even if it induces acid reflux and loose motion daily? Isn't the whole point of being an investment professional that you are _smarter_ than regular people?
+On second thought, the assertion that private markets help you stay disciplined because of the lack of real-time pricing doesn't make sense. Do you want to invest with a manager who cannot handle facing reality, even if it induces acid reflux and loose motion daily? Isn't the whole point of being an investment professional that you are _smarter_than regular people?
 
 You might think that since institutional investors are goddamn smart, they won't be paying for someone to lie to them. Blake Jackson, David C. Ling, and Andy Naranjo [found that][59] private equity investors want to be lied to. 
 
@@ -345,7 +345,7 @@ Private equity firms charge 2% of the AUM and 20% as carry. If they understate t
 
 Yes, it matters if you are an investor. 
 
-We saw a real-life demonstration of _why_ this year. Blackstone Real Estate Income Trust (BREIT) is a non-traded real estate investment trust (REIT). On December 2nd, 2022, Blackstone limited redemptions in the fund after investors rushed to sell the REIT. The funny thing is, as of November 2022, Blackstone said that the fund had generated 8.4% while publicly-traded REITs were down 25-30%. 
+We saw a real-life demonstration of _why_this year. Blackstone Real Estate Income Trust (BREIT) is a non-traded real estate investment trust (REIT). On December 2nd, 2022, Blackstone limited redemptions in the fund after investors rushed to sell the REIT. The funny thing is, as of November 2022, Blackstone said that the fund had generated 8.4% while publicly-traded REITs were down 25-30%. 
 
    Missed this BREIT updateIn January the average real estate mutual fund returned 10.2%… the worst returned 5.72%BREIT lost -0.2%Looks like they are slowly marking to marketWould love to know if UC invested any of the $4B+ yet [https://t.co/yWZuwI7H2Z](https://t.co/yWZuwI7H2Z)
   &mdash; Jake (@EconomPic) 
@@ -379,11 +379,11 @@ My view is that the benefits of private equity have been overstated. The realiti
 
 Then there's the [carried interest loophole][74] in the United States. This taxation quirk allows private equity managers to treat carried interest or carry as capital gains instead of considering it as salary. Capital gains tax at 20% is far less than the individual tax rate of 37%. The private equity lobby has thwarted repeated attempts to close the loophole. 
 
-In the salaciously [titled paper][72] _An Inconvenient Fact: Private Equity Returns & The Billionaire Factory,_ Ludovic Pahlippou notes that PE firms made over $230 billion in carry that went to a small group of rich people:
+In the salaciously [titled paper][72] _An Inconvenient Fact: Private Equity Returns & The Billionaire Factory,_Ludovic Pahlippou notes that PE firms made over $230 billion in carry that went to a small group of rich people:
 
   Hence, although the latest decade of funds that terminated their investment period (2006-2015 vintages) returned about the same as public equity benchmarks (about 11% p.a.), their managers still received $230bn of Carry, alongside a lot of other fees. Most of this money went to a relatively few individuals, mostly founders of large PE firms (Ivashina and Lerner (2019)). I find that the number of PE multibillionaires rose from 3 in 2005 to 22 in 2020, and are mostly affiliated to large PE firms.
 
-One of the sales pitches of private equity is that it reduces the principal-agent problem rife in the public markets. But going by the numbers, it seems they've done a brilliant job of tilting the rents generated away from the principal towards the agent.
+One of the sales pitches of private equity is that it reduces the principal-agent problem rife in the public markets. But going by the numbers, it _seems_they've done a brilliant job of tilting the rents generated away from the principal towards the agent.
 
 Why haven't the goddamn fees come down? 
 
@@ -417,7 +417,7 @@ So, how does this solve the problem?
 
 In the same way, dipping your hand in a can of Fevicol fixes a broken hand. 
 
-In a [delightful talk][81], Mihir Desai, professor at Harvard Business School and author of _The Wisdom of Finance,_ summed it up better than I can: 
+In a [delightful talk][81], Mihir Desai, professor at Harvard Business School and author of _The Wisdom of Finance,_summed it up better than I can: 
 
   Private equity becomes a major asset class in the last 20 years. Why? In part, don't deal with all that garbage. I'll come along, I'll be one big owner. I will solve this for you, and I will sit on you like a hawk and watch you like a hawk. That's the private equity answer. Is that a salvation to this problem? Turns out they have their own problems cuz guess what? They're gonna monetize their investment by doing what taking their company public back into that game right there, and they're gonna make themselves look particularly good right before they do that.
 
@@ -552,7 +552,7 @@ Shadow banking has been around in one form or another for a long time, but the s
 
   The creation of securitization structures and derivatives like credit default swaps in the [1970s](https://irle.berkeley.edu/publications/working-papers/the-transformation-of-mortgage-finance-and-the-industrial-roots-of-the-mortgage-meltdown/) and [1980s](https://scholarship.law.cornell.edu/facpub/1021/)
 
-  The "neoliberal assault on the old traditional welfare state," as Daniel Gabor [terms it](https://youtu.be/xdwi14I7Iwk). This, along with the reduced capacity of the state to tax rich individuals and corporations, led to people relying on pensions and insurance companies to save for future uncertainties as opposed to the state. This led to the rise of institutional cash pools like large corporations, pensions, broker-dealers, and insurance companies.
+  The "neoliberal assault on the old traditional welfare state," as Daniel Gabor [terms it](https://youtu.be/xdwi14I7Iwk). This, along with the reduced capacity of the state to tax rich individuals and corporations, led to people relying on pensions and insurance companies to _save_for future uncertainties as opposed to the state. This led to the rise of institutional cash pools like large corporations, pensions, broker-dealers, and insurance companies.
 
   A [global hunt for yield](https://cepr.org/voxeu/columns/radar-rise-shadow-banking-europe).
 
@@ -586,7 +586,7 @@ The problem is, we don't care. This Saturday Night Live segment best summed up o
 
  Colin Jost
 
-The rich countries can afford to _do_ at least something. In the last few years, America and Europe have taken breaks from their year-long political carnivals, and clown shows to do something. The US passed the $370 billion [Inflation Reduction Act][114], while Europe announced the €210 billion [REPowerEU][115] plan. It's nowhere close to enough, but it's something. The poor countries, on the other hand, are buggered. According to an [OECD estimate][116], the gap between what low-income countries need and can afford runs to $3.7 trillion per year[.][116] Again, these are estimates; the actual funding needs are orders of magnitude higher.
+The rich countries can afford to _do_at least something. In the last few years, America and Europe have taken breaks from their year-long political carnivals, and clown shows to do something. The US passed the $370 billion [Inflation Reduction Act][114], while Europe announced the €210 billion [REPowerEU][115] plan. It's nowhere close to enough, but it's something. The poor countries, on the other hand, are buggered. According to an [OECD estimate][116], the gap between what low-income countries need and can afford runs to $3.7 trillion per year[.][116] Again, these are estimates; the actual funding needs are orders of magnitude higher.
 
 The rich countries owe the poor countries. In an ideal world, they would've helped the poor countries transition to greener economies and cope with the effects of global warming. Even though poor countries are least responsible for global warming but at the greatest risk from it, the rich countries have abdicated their responsibility.
 
@@ -664,7 +664,7 @@ This opens up the risk of [cherry-picking][132] the projects that asset managers
 
 If poorer countries follow the lead of the G20 and the World Bank, they risk subordinating their developmental needs and sovereignty to the need for returns of private finance. This will further entrench the [structural power of finance][133]. 
 
-Financialization also subjects poor countries to the [risks posed by hot money][134] flows. The same flows led to [devastating financial crises][135] in Latin America and Asia in the 1990s. These risks won't go away even if institutional investors finance these assets through local currency-denominated bonds. The _[original sin][136]_ will morph but won't go away. 
+Financialization also subjects poor countries to the [risks posed by hot money][134] flows. The same flows led to [devastating financial crises][135] in Latin America and Asia in the 1990s. These risks won't go away even if institutional investors finance these assets through local currency-denominated bonds. The _[original sin][136]_will morph but won't go away. 
 
   Major EME governments have gradually reduced their reliance on foreign currency debt by borrowing more in their own currencies overall. They have also encouraged foreign investment in their domestic market, especially in local currency bonds. As a result, EMEs now finance more of their external debt in their own currency than was the case in the early 2000s. At the same time, depreciations in EME currencies often reduce returns to foreign investors, who sell local currency bonds in periods of stress. Even when EMEs rely less on foreign currency borrowing, they continue to face volatile capital flows.
 
@@ -676,7 +676,7 @@ So, how's all this working out?
 
 Not great!
 
-Despite [increasing][137] [evidence][138] that private finance isn't an unalloyed good without strong governance, legal protection, local expertise, international regulatory frameworks, and domestic protections, rich countries continue to push market-based finance as the solution to save the planet. 
+Despite [increasing][137] [evidence][138] that private finance isn't an unalloyed good without strong governance, legal protection, local expertise, international regulatory frameworks, and domestic protections, rich countries continue to push market-based finance as the solution to _save_the planet. 
 
 #### Back to the asset managers 
 

@@ -10,9 +10,9 @@ A few things that made me go, _ooh, that's interesting_.
 
 ### What's old is new again 
 
-The _Lindy Effect_ is this notion that the longer something survives, the less likely it is to die. When it comes to frauds, pump and dump schemes are Lindy. Pump and dump schemes have been going strong for over 400+ years since the birth of the modern stock exchange. 
+The _Lindy Effect_is this notion that the longer something survives, the less likely it is to die. When it comes to frauds, pump and _dump_schemes are Lindy. Pump and _dump_schemes have been going strong for over 400+ years since the birth of the modern stock exchange. 
 
-It's a weird coincidence, but in the last month, several pump and dump schemes have come to light and surprisingly caught the attention of journos. It started in March when several popular people [started tweeting][1] that they were being offered money to promote a stock called [Salasar Techno][2]. 
+It's a weird coincidence, but in the last month, several pump and _dump_schemes have come to light and surprisingly caught the attention of journos. It started in March when several popular people [started tweeting][1] that they were being offered money to promote a stock called [Salasar Techno][2]. 
 
    Was approached by 2 different marketing agencies to write about Salasar Tech stock on Twitter for money (I Was shocked to see some big handles post about it in fact)Straight away said no!Don't want blood money and don't want to mislead anyone!Reputation >>>>> Money [pic.twitter.com/Py1RfPgjTi](https://t.co/Py1RfPgjTi)
   &mdash; Aditya Kondawar (@aditya_kondawar) 
@@ -23,7 +23,7 @@ It's a weird coincidence, but in the last month, several pump and dump schemes h
 
   He adds that such schemes often target stocks with a share count of less than 50 million, where promoters account for the majority of shares. Such stocks typically see more volatile, low-volume trading and are easier to manipulate through coordinated efforts. Marketing agencies are contacted, and usually given a mandate to promote the company online. It's unclear whether these agencies are contacted directly by companies or by brokers, operators, and promoters. 
 
-At the end of March, [SEBI pulled Ruchi Soya][4] when it discovered SMS tips promoting FPO and the discount. Then I saw this tweet last week about a pump and dump in a new stock called [Supreme Engineering][5]. 
+At the end of March, [SEBI pulled Ruchi Soya][4] when it discovered SMS tips promoting FPO and the discount. Then I saw this tweet last week about a pump and _dump_in a new stock called [Supreme Engineering][5]. 
 
    Seems like a lot of paid tweets going on the stock of Supreme EngineeringCheck out the hashtag [#SpaceCallingSupremeEng](https://twitter.com/hashtag/SpaceCallingSupremeEng?src=hash&ref_src=twsrc%5Etfw) – There are so many tweets. Be Careful of pump and dump! [pic.twitter.com/icDQrtaEYC](https://t.co/icDQrtaEYC)
   &mdash; Aditya Kondawar (@aditya_kondawar) 
@@ -34,25 +34,25 @@ Is it just a case of enterprising entrepreneurs responding to a market opportuni
 
 ![](/images/2022/04/stock-tips.png) *[Google Trends][6]* 
 
-As I mentioned, pump and dumps through stock tips are as old as the financial markets themselves. [Investor Amnesia][7] by Young [Jamie Catherwood][8] is probably the best blog about financial history on the internet. The site is like a time machine for financial markets. [Here's an excerpt][9] from a post about a pump and dump as far back as the 16th and 17th century in the Dutch stock exchange, the world's oldest stock exchange: 
+As I mentioned, pump and dumps through stock tips are as old as the financial markets themselves. [Investor Amnesia][7] by Young [Jamie Catherwood][8] is probably the best blog about financial history on the internet. The site is like a time machine for financial markets. [Here's an excerpt][9] from a post about a pump and _dump_as far back as the 16th and 17th century in the Dutch stock exchange, the world's oldest stock exchange: 
 
   One can readily imagine a 17th century pundit forecasting how political developments in Europe will effect the Indian economy, and 'What it Means for Your Portfolio'. On the Dutch stock exchange during this period, a small group of speculators realized how easily influenced their peers were by individual trader's decisions, and the short-term news cycle. Manipulating the market, therefore, was as simple as providing traders with the 'hot tip' that they scoured the exchange for each day. An effective system was quickly developed in which the savvy speculators accidentally dropped notes around the exchange that held misleading stock tips:"If it is of importance to spread a piece of news which has been invented by the speculators themselves, they have a letter written and [arrange to have] the letter dropped as if by chance at the right spot. The finder believes himself to possess a treasure, whereas he has really received a letter of Uriah which will lead him into ruin." — Joseph de la Vega (1688)
 
 Lindy!
 
-From "accidentally dropped notes", gossip, neighbours, [shoe shiners][10], SMS to influencers on YouTube, pump and dump schemes have evolved with the times. YouTube, in particular, has become a cesspool of pump and dump schemes. 
+From "accidentally dropped notes", gossip, neighbours, [shoe shiners][10], SMS to influencers on YouTube, pump and _dump_schemes have evolved with the times. YouTube, in particular, has become a cesspool of pump and _dump_schemes. 
 
 [The Ken published a piece on Indore][11], the stock tips capital of India. 
 
   "If lured once, customers end up spending between Rs 3,00,000 ($4,000) and Rs 4,00,000 ($5,200), typically," the executive adds, noting that advisors earn their service charges irrespective of whether the investment gains or loses. Other approaches can be as blatant as telling half the potential customers to buy something and telling the other half to sell. The subset of customers that benefit from the binary advice can then turn into consumers for more services. 
 
-Today, [Livemint had a feature][12] on pump and dump scams on Telegram channels. Legend 👇
+Today, [Livemint had a feature][12] on pump and _dump_scams on Telegram channels. Legend 👇
 
   Yet another channel is run by an individual in Bihar whose experience, before 2017, was solely marketing for retail chains. Before he began giving "super HNI calls" (tips that high networth individuals use), he was the CEO of a departmental store. Currently, his firm is dolling out stock calls to 31,000 subscribers for free. He also has a premium model—for ₹10,000, he would advise "buying the next multi bagger stock". 
 
-Of course, none of this is anything new. 2018 was a particularly busy year for stock tipsters, and there was a deluge. I had written a [small post][13] tracking the performance of some of these pump and dump episodes. [My boss wrote about pump and dumps and other stock market scams a couple of][14] years ago. 
+Of course, none of this is anything new. 2018 was a particularly busy year for stock tipsters, and there was a deluge. I had written a [small post][13] tracking the performance of some of these pump and _dump_episodes. [My boss wrote about pump and dumps and other stock market scams a couple of][14] years ago. 
 
-But with the popularity of Twitter, Telegram, Discord, and YouTube influencers, there are more places and more ways to run the scams than ever. It's scary how easy it is to run a pump and dump without getting caught. Using influencers to pump and dump stocks and crypto is proving to be by far the most effective outlet. It's a neat way for the scammers to leverage whatever trust these influencers have among their followers. 
+But with the popularity of Twitter, Telegram, Discord, and YouTube influencers, there are more places and more ways to run the scams than ever. It's scary how easy it is to run a pump and _dump_without getting caught. Using influencers to pump and _dump_stocks and crypto is proving to be by far the most effective outlet. It's a neat way for the scammers to leverage whatever trust these influencers have among their followers. 
 
 My gut says we'll see a dramatic increase in pump and dumps as our markets grow. Not just with stocks, but more and more things, including our very lives, become more financialized, the number of things that can be manipulated will go up. Up until a few years, it was just stocks, now we have crypto, and soon in a dystopian world, [it'll be humans][15] 😬 
  
@@ -76,9 +76,9 @@ Here's Richard Nieva, who wrote the Buzzfeed piece, talking about his experience
 
 #### Death by TDS 
 
-The new [Indian income tax regime][18] for crypto went live this month. Income from crypto will now be taxed at 30%, and a 1% TDS will be applicable on each transaction. As if that wasn't bad enough, crypto platforms are having a tough time finding payments partners willing to work with them. All the major crypto apps have disabled UPI payments; Coinswitch Kuber seems to have completely disabled all fund transfers. Mobikwik, which was a popular payment option to transfer funds to crypto wallets, also [stopped][19] supporting crypto payments. All this happened after Coinbase proudly announced its Indian launch and said it supported [UPI payments][20], and NPCI said it had no idea about it. 
+The new [Indian income tax regime][18] for crypto went live this month. Income from crypto will now be taxed at 30%, and a 1% TDS will be applicable on each transaction. As if that wasn't bad enough, crypto platforms are having a tough time finding payments partners willing to work with them. All the major crypto apps have disabled UPI payments; Coinswitch Kuber _seems_to have completely disabled all fund transfers. Mobikwik, which was a popular payment option to transfer funds to crypto wallets, also [stopped][19] supporting crypto payments. All this happened after Coinbase proudly announced its Indian launch and said it supported [UPI payments][20], and NPCI said it had no idea about it. 
 
-This month has been a case of _when it rains, it pours_ for Indian crypto. 
+This month has been a case of _when it rains, it pours_for Indian crypto. 
 
 [If this data is to believed][19], and I'd take it with a few spoons of salt, crypto volumes are apparently falling off the cliff: 
 
@@ -88,13 +88,13 @@ The only people who must be still buying are probably the true crypto believers 
 
 #### Death by a thousand laws 
 
-Crypto is too large and too noisy to ignore. It's also downright impossible to **effectively** impose total bans. So, that leaves the regulators with just one viable open—death by a thousand laws. This is what we're seeing across much of the world. But that doesn't mean that the crypto industry is sitting idly by. There seems to be a [concerted lobbying effort][22] to tilt the odds in their favour before federal laws are passed in the US. 
+Crypto is too large and too noisy to ignore. It's also downright impossible to **effectively** impose total bans. So, that leaves the regulators with just one viable open—death by a thousand laws. This is what we're seeing across much of the world. But that doesn't mean that the crypto industry is sitting idly by. There _seems_to be a [concerted lobbying effort][22] to tilt the odds in their favour before federal laws are passed in the US. 
 
 Crypto lobbyists have managed to get [several states to pass bills that they've crafted][23]: 
 
   The debate took less than four minutes. In the Florida House last month, legislators swiftly gave final approval to a bill that makes it easier to buy and sell cryptocurrency. The Senate followed, sending the bill to Gov. Ron DeSantis for his signature after 75 seconds of deliberations.At least [153 pieces of cryptocurrency-related legislation](https://www.ncsl.org/research/financial-services-and-commerce/cryptocurrency-2022-legislation.aspx) were pending this year in 40 states and Puerto Rico, according to an analysis by the National Conference of State Legislatures. While it was unclear how many were influenced by the crypto industry, some bills have used industry-proposed language almost word for word. One [bill pending](https://www.ilga.gov/legislation/fulltext.asp?DocName=&SessionId=110&GA=102&DocTypeId=SB&DocNum=3643&GAID=16&LegID=&SpecSess=&Session=) in Illinois lifted entire sentences from a [draft provided](https://int.nyt.com/data/documenttools/2022-legislation-data-center-amendments-to-add-crypto-mining/e16e0c4988a886d7/full.pdf) by [a lobbyist](https://ilsos.gov/departments/index/lobbyist/lobcross_reference.pdf#page=17).
 
-Things are much slower at the Federal level. The only major development so far has been the executive order by Joe Biden in March asking various regulatory bodies and agencies to explore consumer protection, financial stability, illicit transactions and innovation-related aspects of crypto. [Kevin Werbach_ _had a brilliant post][24] dissecting the order. 
+Things are much slower at the Federal level. The only major development so far has been the executive order by Joe Biden in March asking various regulatory bodies and agencies to explore consumer protection, financial stability, illicit transactions and innovation-related aspects of crypto. [Kevin Werbach__had a brilliant post][24] dissecting the order. 
 
 [SEC chair Gary Gensler's remarks][25] at the recent Penn Law Capital Markets Association Annual Conference, had some interesting hints. He reiterated that many of these tokens are "securities", meaning they fall under the SEC's regulatory purview. He also mentioned that the SEC is working on figuring out if crypto platforms should be registered and regulated as exchanges. 
 
@@ -126,7 +126,7 @@ Of course, like anything new, there will always be good and bad. But sometimes, 
 
 One of the biggest problems for e-commerce and other platforms is cart abandonment. Most people abandon their purchases simply because they can't afford the purchase, opaque terms and conditions or payments friction. Enter BNPL. By allowing users to pay for their purchases in instalments, often at 0% interest, BNPL has been shown to reduce cart abandonment rates. The really good UI/UX helps too. In just about 3-4 years, BNPL has quickly become a prominent payment option on shopping platforms worldwide. 
 
-Like with everything, the power of defaults can be harnessed both for good and bad. The most [famous examples][31] of using defaults for good are opting-in people to save for retirement in 401K plans and donate organs by default. In the US, people weren't saving for retirement. So Richard Thaler and Shlomo Benartzi changed the choice to opt-in people [to save by default][32] instead of employees having to opt-in. Thanks to this default, millions of people are saving for their retirement. 
+Like with everything, the power of defaults can be harnessed both for good and bad. The most [famous examples][31] of using defaults for good are opting-in people to _save_for retirement in 401K plans and donate organs by default. In the US, people weren't saving for retirement. So Richard Thaler and Shlomo Benartzi changed the choice to opt-in people [to _save_by default][32] instead of employees having to opt-in. Thanks to this default, millions of people are saving for their retirement. 
 
 The same defaults can be used for bad too. Most 401K plans tend to have target date funds as a default investment option. So if an employee doesn't choose how he wants to invest, target date funds will be used as the default. Target date funds might not be perfect, but they are better than nothing and get the job done for most people. Studies show that a vast majority of people stick to default choices. A lot of 401K retirement plans have used leveraged this tendency to peddle [costly and useless investments][33]. 
 
@@ -168,7 +168,7 @@ Buy now, burn now!
 
 Pieces on how social media is running the world are nothing new. But [**Jonathan Haidt's latest post**][39] presents a sweeping view of how social media makes us and our institutions unbearably stupid. There's nothing new that we don't know of in the piece. But what makes this post brilliant is the fact that it connects so many dots at once. Most pieces about the impact of social media quickly become polemical to the point of losing whatever semblance of objectivity they start with. But in this piece, Jonathan Haidt effortlessly swings between the left and the right and tears both the camps to shreds and backs up his assertions with research. The picture he paints by the end of the piece of just how profoundly polarized and stupid people have become doesn't inspire confidence that humanity is going to make it. Yet, unlike other pieces that stop at "we're going to hell in a handbasket, and people will retweet that," he offers some useful solutions. 
 
-  An autocracy can deploy propaganda or use fear to motivate the behaviors it desires, but a democracy depends on widely internalized acceptance of the legitimacy of rules, norms, and institutions. Blind and irrevocable trust in any particular individual or organization is never warranted. But when citizens lose trust in elected leaders, health authorities, the courts, the police, universities, and the integrity of elections, then every decision becomes contested; every election becomes a life-and-death struggle to save the country from the other side.
+  An autocracy can deploy propaganda or use fear to motivate the behaviors it desires, but a democracy depends on widely internalized acceptance of the legitimacy of rules, norms, and institutions. Blind and irrevocable trust in any particular individual or organization is never warranted. But when citizens lose trust in elected leaders, health authorities, the courts, the police, universities, and the integrity of elections, then every decision becomes contested; every election becomes a life-and-death struggle to _save_the country from the other side.
 
   Second, the dart guns of social media give more power and voice to the political extremes while reducing the power and voice of the moderate majority. 
 

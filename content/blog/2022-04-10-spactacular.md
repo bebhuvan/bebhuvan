@@ -47,7 +47,7 @@ Now that we are in an inflationary environment with rising interest rates, it's 
 
 Given the craziness on steroids and other drugs in the SPAC market, the SEC has been [expressing concerns][5] over the last couple of years. It looks like they've decided to finally do something. In March, the SEC [proposed new rules][6] that bring SPACs on part with IPOs, and increase liabilities for all the parties involved. In a way, this was long overdue. These rules Though SPACs may not vanish altogether like they did post-2008, issuance is bound to come down. SPACs have been deSPACed—pun intended. 
 
-There's also a story here about financialization and democratization. Contrary to what the "experts" say, increased democratization and financialization in the markets aren't an unalloyed good as they are made out to be. Some things should just be for the rich and the "sophisticated" investors to gamble. As I was reading more about SPACs, I learned that retail investors [aren't allowed][7] to trade in SPACs in Hong Kong, which seems sensible to me. I get the _"buyer beware"_ argument, but that argument in isolation stopped [making sense][8] sometime in the eighth century. 
+There's also a story here about financialization and democratization. Contrary to what the "experts" say, increased democratization and financialization in the markets aren't an unalloyed good as they are made out to be. Some things should just be for the rich and the "sophisticated" investors to gamble. As I was reading more about SPACs, I learned that retail investors [aren't allowed][7] to trade in SPACs in Hong Kong, which _seems_sensible to me. I get the _"buyer beware"_argument, but that argument in isolation stopped [making sense][8] sometime in the eighth century. 
 
 ### Micro funds 
 
@@ -55,7 +55,7 @@ Speaking of democratization, there was another interesting [Pitchbook note][9] a
 
 ![](/images/2022/04/Micro-VC-funds.png) 
 
-This seems to be a general trend across the world, [including India][10]. It also seems like everybody wants to make early-stage investments:
+This _seems_to be a general trend across the world, [including India][10]. It also _seems_like everybody wants to make early-stage investments:
 
   It would not be proper to discuss the rise of micro-funds without discussing the rise in US market seed deals. Today, large multi-stage funds are propagating seed more often than ever before. Andreessen Horowitz raised a $400.0 million fund for seed; Greylock Partners allocated $500.0 million out of its billions of dollars in dry powder for seed deals, offering up to $20 million for each financing. Additionally, many nontraditional institutions have invested in seed deals. These larger firms' participation in seed is more the exception than the rule. For micro-funds, on the other hand, seed is a core investment stage.
 
@@ -81,7 +81,7 @@ I haven't seen much data, but I can only assume that this trend of micro-funds i
 
 ### Russia 
 
-The Jain Family Institute [hosted a really interesting discussion on with Nicholas Mulder and Javier Blas][11] on the sanctions against Russia and the turmoil in global commodity markets. Nick Mulder is the author of _[The Economic Weapon,][12]_ a book about __the history of economic sanctions that I've been really looking forward to reading as soon as I'm done with my never-ending backlog of books 😢. Javier Blas is the co-author of [_The World for Sale_][13], a book about the global commodities markets. 
+The Jain Family Institute [hosted a really interesting discussion on with Nicholas Mulder and Javier Blas][11] on the sanctions against Russia and the turmoil in global commodity markets. Nick Mulder is the author of _[The Economic Weapon,][12]_a book about __the history of economic sanctions that I've been really looking forward to reading as soon as I'm done with my never-ending backlog of books 😢. Javier Blas is the co-author of [_The World for Sale_][13], a book about the global commodities markets. 
 
 A few interesting points: 
 
@@ -112,7 +112,7 @@ Here's [an excerpt from his latest piece][15] on how oil companies are finding w
 
  Javier Blas, Bloomberg
 
-The new normal in Russia. A really good thread on how the Russian economy seems to be adjusting to the sanctions. 
+The new normal in Russia. A really good thread on how the Russian economy _seems_to be adjusting to the sanctions. 
 
    1/ What would an Energy Embargo mean for Russia? We already expect a growth contraction of -15% in 2022, yet the financial system appears to be stabilizing and Ruble is nearly back to pre-war levels thanks to tight capital controls and CA surplus. w @BHilgenstockIIF [pic.twitter.com/p6RO1WNwwY](https://t.co/p6RO1WNwwY)
   &mdash; Elina Ribakova 🇺🇦 (@elinaribakova) 

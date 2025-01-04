@@ -68,7 +68,7 @@ Maybe he knew, maybe he didn't, but Malcom McLean had just changed shipping fore
 
 The story of Malcom McLean is an incredible rags-to-riches story. He was born in 1913 in North Carolina to a typical family that wasn't rich but managed to get by. Malcom was exposed to entrepreneurship from a young age. His first job was selling eggs from his mom for a commission. After graduating from high school, he started working in a grocery store in 1931 at the depths of the great depression.
 
-But the story really began when he started managing a gas station. He figured he could make five bucks by shipping oil and told the station manager he could do it—the manager agreed. Malcom was barely in his 20s at this point. The station manager lent him an old rusty trailer, and so began Malcom McLean's trucking empire. By 1934, he had saved enough money to buy another truck for $120 and hired a driver. He started transporting dirt for the government, and he was still able to save some money after paying the driver.
+But the story really began when he started managing a gas station. He figured he could make five bucks by shipping oil and told the station manager he could do it—the manager agreed. Malcom was barely in his 20s at this point. The station manager lent him an old rusty trailer, and so began Malcom McLean's trucking empire. By 1934, he had saved enough money to buy another truck for $120 and hired a driver. He started transporting dirt for the government, and he was still able to _save_some money after paying the driver.
 
 Maxton, North Carolina, was a farming community without proper transport. Malcom bought another truck with the savings to transport vegetables. By the age of 22, he already owned a few trucks.
 
@@ -238,7 +238,7 @@ In the breakbulk era, the housing for longshoremen was located around the ports.
 
 #### Labor arbitrage 
 
-Shipping containers made it possible for manufacturers to find the cheapest places to manufacture their goods. This meant that domestic manufacturing declined, leading to job losses, the decimation of manufacturing towns and communities, declining social mobility, and other economic spillovers.
+Shipping containers made it possible for manufacturers to find the cheapest places to _manufacture_their goods. This meant that domestic manufacturing declined, leading to job losses, the decimation of manufacturing towns and communities, declining social mobility, and other economic spillovers.
 
 [David Autor et al.][31] have vividly illustrated the impact of the China shock on US labor and [communities][32].
 

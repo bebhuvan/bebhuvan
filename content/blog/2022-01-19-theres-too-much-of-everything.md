@@ -8,7 +8,7 @@ tags = ["a little less dumb"]
 
 The amount of new content created every day on the internet is astounding. It goes without saying that a lot of it's nonsense, but there's plenty of good stuff. It probably takes a few months to consume what you liked and saved just today. It's either that or I'm bloody lazy 😅
 
-This has become such a problem that "_curation"_ has become the new buzzword and a business model unto itself. At the risk of sounding like a snobby douche, I'm fascinated by this "problem" of overload. I was reading _[Curation: The power of selection in a world of excess][1]_ by Michael Bhaskar, and here are a few quotes that kinda stuck with me:
+This has become such a problem that "_curation"_has become the new buzzword and a business model unto itself. At the risk of sounding like a snobby douche, I'm fascinated by this "problem" of overload. I was reading _[Curation: The power of selection in a world of excess][1]_by Michael Bhaskar, and here are a few quotes that kinda stuck with me:
 
   We solved the problem of insufficiency, only to find it was replaced by abundance. As a result we'll have to curate far more effectively. In order to prosper we'll start to appreciate the value of less, of simplicity in a complex world.
 

@@ -24,7 +24,7 @@ What I was interested in were his perspectives on crypto, money, and DeFi. Crypt
 
 Cryptocurrencies might just be a decade old, but history is littered with [private][3] and [alternative currencies][4]. Having a historical perspective is quite useful in understanding this moment when many people want to tear down the fiat money system and replace it with dog coins, ass coins, and cat coins.
 
-The Chinese guys are real pricks. They've been messing with us throughout history. It's not just them eating bats, causing a global pandemic, and almost wiping humanity sci-fi movie style. Remember that old guy who cast the _"may you live in interesting times"_ curse? What an asshole! 
+The Chinese guys are real pricks. They've been messing with us throughout history. It's not just them eating bats, causing a global pandemic, and almost wiping humanity sci-fi movie style. Remember that old guy who cast the _"may you live in interesting times"_curse? What an asshole! 
 
 There were a lot of interesting takeaways from the podcast, so I made some notes. I've added snippets from the conversation transcript and related links in italics.
 
@@ -48,7 +48,7 @@ If you take a sweeping look over hundreds of years, history is littered with fai
 
 ![](/images/2022/02/Weimar.jpg) *[FT Alphaville](https://www.ft.com/content/25f43ac1-1159-3723-a90f-94fcfc1b5276)* 
 
-_On a related note,_ _[Ray Dalio made a similar point](https://www.linkedin.com/pulse/where-we-big-cycle-money-credit-debt-economic-activity-ray-dalio/)_ _in a recent post about how most currencies throughout history have failed:_ 
+_On a related note,__[Ray Dalio made a similar point](https://www.linkedin.com/pulse/where-we-big-cycle-money-credit-debt-economic-activity-ray-dalio/)__in a recent post about how most currencies throughout history have failed:_
 
   Of the roughly 750 currencies that have existed since 1700, only about 20 percent remain, and all of them have been devalued. If you went back to 1850, as an example, the world's major currencies wouldn't look anything like the ones today. While the dollar, pound, and Swiss franc existed in 1850, the most important currencies of that era have died. In what is now Germany, you would have used the gulden or the thaler. There was no yen, so in Japan you might have used the koban or the ryo instead. In Italy you would have used one or more of six currencies. You would have used different currencies in Spain, China, and most other countries as well. Some were completely wiped out (in most cases they were in countries that had hyperinflation and/or lost wars and had large war debts) and replaced by entirely new currencies. Some were merged into currencies that replaced them (e.g., the individual European currencies were merged into the euro). And some remain in existence but were devalued, like the British pound and the US dollar.
 
@@ -90,7 +90,7 @@ The financial system that the west builds can't be similar to China, that's base
 
 Those were some of the highlights about money from the conversation. The rest of the conversation is about history, pandemics, politics, and philosophy. 
 
-One reason why he evokes such strong reactions among people is because of his counterfactual treatment of history—looking at history from a _what if_ lens. One counterfactual he talks about in this conversation is that if Britain had stayed out of World War 1 and Germany had won, it would've just been a European war and Hitler would've just been a failed artist. You need some heavy brass balls to make that argument. 
+One reason why he evokes such strong reactions among people is because of his counterfactual treatment of history—looking at history from a _what if_lens. One counterfactual he talks about in this conversation is that if Britain had stayed out of World War 1 and Germany had won, it would've just been a European war and Hitler would've just been a failed artist. You need some heavy brass balls to make that argument. 
 
 Similarly, his other controversial counterfactual, which isn't in this conversation, is that the British Empire was actually a force for good. Just thinking about the fact makes me squirm, but he's written a book on it. Here's his explanation from his conversation with [Tyler Cowen][6]:
 

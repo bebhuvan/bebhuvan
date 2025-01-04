@@ -18,7 +18,7 @@ I've been ruminating more and more about the industry ever since because the con
 
 In the same month, Condé Nast laid off key staffers at the legendary music publication [Pitchfork][2] and folded it into _GQ_. The _Los Angeles Times, Wall Street Journal, Time, Sports Illustrated, _Business Insider_, _and other publications laid off hundreds of employees. In India, Times Internet laid off several hundred employees.
 
-In 2023, there were over [3,000][3] layoffs in the US. 2024 seems to be on track to break that record. _The New Yorker _and several other [media observers][4] called the latest bout of media troubles an "[extinction-level event][5]." In 2024, people talk about news publishers with the enthusiasm and cheerfulness of funeral announcements.
+In 2023, there were over [3,000][3] layoffs in the US. 2024 _seems_to be on track to break that record. _The New Yorker _and several other [media observers][4] called the latest bout of media troubles an "[extinction-level event][5]." In 2024, people talk about news publishers with the enthusiasm and cheerfulness of funeral announcements.
 
 After following this bloodbath over the last 6 months, I couldn't help but wonder: are we closer than ever to a world without news?
 
@@ -26,7 +26,7 @@ It's very easy to say yes given all the pessimism, but I don't think this is a q
 
 In developed markets like the US, UK, Canada, and Australia, the news publishing industry resembles a wasteland. Local news has been decimated, and these outlets are being strip-mined for pennies by private equity and hedge funds. National news coverage is limited to a few sick but surviving publishers.
 
-While it's tempting to talk about India in the same breath as the US—something I've been guilty of—it's not all that bad…yet. India is an outlier where newspaper circulation _seems_ to be holding steady. It's hard to draw definite conclusions because the circulation data [sucks][6]!
+While it's tempting to talk about India in the same breath as the US—something I've been guilty of—it's not all that bad…yet. India is an outlier where newspaper circulation _seems_to be holding steady. It's hard to draw definite conclusions because the circulation data [sucks][6]!
 
 The available data shows that the print industry is growing at a slower rate compared to the overall media and entertainment industry, but growing nonetheless.
 
@@ -40,7 +40,7 @@ But a closer look at the numbers shows that there's trouble around the corner. A
 
 Having read the history of US newspapers, Indian newspapers look like they are in the same position as US newspapers were before the internet. US newspaper circulation and revenues rose for a few years after the advent of the internet and then nosedived.
 
-The story may not play out exactly as it did in the US because India is not a homogeneous market like the West. In fact, India is many small countries in one. The dynamics between English newspapers and regional newspapers are also different. The circulation of regional papers seems to be holding on far better than that of English papers. But the net effect on print will be the same as consumers move from print to digital.
+The story may not play out exactly as it did in the US because India is not a homogeneous market like the West. In fact, India is many small countries in one. The dynamics between English newspapers and regional newspapers are also different. The circulation of regional papers _seems_to be holding on far better than that of English papers. But the net effect on print will be the same as consumers move from print to digital.
 
 Coming back to my question, are we closer than ever to a world without news?
 
@@ -76,7 +76,7 @@ Singam Abswala would be the most famous news anchor in the country, with the mos
 
 A world without news is not good.
 
-How do you save news?
+How do you _save_news?
 
 The business model of news that worked for the last 200 years is incompatible with the digital age. Today, over 70% of the cost of a newspaper is printing and selling the paper. As print declines, these fixed costs become a noose. This is why print is no longer viable in developed countries, and it will eventually become unsustainable in India as well.
 
@@ -84,7 +84,7 @@ Before the internet, American newspapers also enjoyed the privileged position of
 
 Advertisers abandoned print for digital advertising because advertising platforms like Google, Facebook, and Amazon offer far superior targeting capabilities than a dumb print ad. A similar but nascent shift is underway in India. Print advertising is still big but won't be forever.
 
-As print advertising fell, US newspapers couldn't replace the lost dollars with digital revenues. Digital advertising revenues were a drop in the bucket. There was a saying that newspapers were trading "print dollars for digital cents." This seems to be the case so far in India as well. Digital advertising dollars will always be a fraction of print advertising.
+As print advertising fell, US newspapers couldn't replace the lost dollars with digital revenues. Digital advertising revenues were a drop in the bucket. There was a saying that newspapers were trading "print dollars for digital cents." This _seems_to be the case so far in India as well. Digital advertising dollars will always be a fraction of print advertising.
 
 The number of Indians who pay for digital news subscriptions is peanuts. I could be wrong, but people think of a newspaper subscription as a separate item in their budgets. But people think about a digital news subscription in the same vein as Netflix and Spotify. They choose one over the other.
 
@@ -96,7 +96,7 @@ As an amateur observer of the news industry, here are my thoughts:
 
 #### **Advertising** 
 
-It's impossible for newspapers to offer the same advertising propositions as Google and Facebook—publishers don't have the tech chops. So it's guaranteed that print advertising will continue to fall. But it's not impossible to pivot. Publishers like [The Independent][13] have shown that you can kill your printing operation and still thrive.__
+It's impossible for newspapers to offer the same advertising propositions as Google and Facebook—publishers don't have the tech chops. So it's guaranteed that print advertising will continue to fall. But it's not impossible to pivot. Publishers like [The Independent][13] have shown that you can kill your printing operation and still thrive.
 
 #### **End of mass delusion** 
 
@@ -124,13 +124,13 @@ The typical uppity attitude of media companies and journalists is a liability, a
 
 #### **Billionaires** 
 
-Billionaires are starting to regret their media purchases. _The Washington Post _lost $[100 million][16] last year and is at a crossroads. Marc Benioff, who owns _Time_ magazine, laid off [30 people][17]. _The Los Angeles Times,_ owned by billionaire Patrick Soon-Shiong, laid off [115 people][18]. There's no shortage of cautionary tales of billionaires trying to _save_ media, but they believe this time is always different.
+Billionaires are starting to regret their media purchases. _The Washington Post _lost $[100 million][16] last year and is at a crossroads. Marc Benioff, who owns _Time_magazine, laid off [30 people][17]. _The Los Angeles Times,_owned by billionaire Patrick Soon-Shiong, laid off [115 people][18]. There's no shortage of cautionary tales of billionaires trying to _save_media, but they believe this time is always different.
 
 My bet is that the rich people will cut their losses sooner or later, and these storied publishers will be back to square one. Media rarely has happy endings. It's either less horrible or more horrible.
 
 #### **Independents and collectives** 
 
-A few years ago, traditional news publications in the US had a mild case of _Substack panic_. For a minute, it seemed that all [star reporters][19] would leave to start their own paid newsletters. There were some success stories, like [Casey Newton][20] and [Matt Yglesias][21], but the trend seems to have died down. Reporters leaving to go solo isn't a thing in India, barring a few like Ravish Kumar and Barkha Dutt. I wouldn't be surprised if this trend picks up in India over the next five years.
+A few years ago, traditional news publications in the US had a mild case of _Substack panic_. For a minute, it seemed that all [star reporters][19] would leave to start their own paid newsletters. There were some success stories, like [Casey Newton][20] and [Matt Yglesias][21], but the trend _seems_to have died down. Reporters leaving to go solo isn't a thing in India, barring a few like Ravish Kumar and Barkha Dutt. I wouldn't be surprised if this trend picks up in India over the next five years.
 
 Collectives are a new model that I'm excited about. Sick and tired of precarious employment situations, journalists are banding together to form [collectives or cooperatives][22]. The writers own the collective and operate it like a media company. This ensures that the incentives are aligned in the right way. Several collectives, like Defector, Hell Gate, and Flaming Hydra, have popped up on the scene.
 
@@ -152,7 +152,7 @@ After some protest, both Google and Facebook started paying publishers in Austra
 
 Forcing these companies to pay for the right to send traffic to news publishers was always a stupid idea. The regulations are based on the flawed notion that internet companies destroyed news, [but that's a lie][27].
 
-News publishers are also cutting deals with AI companies to allow them to use news content to train models. OpenAI is reportedly offering between $1 million and $5 million a year to license news articles from publishers. Axel Springer, which owns Business Insider and Politico, and Associated Press are major publishers that have [cut deals][28].
+News publishers are also cutting deals with AI companies to allow them to use news content to train models. OpenAI is reportedly offering between $1 million and $5 million a year to license news articles from publishers. Axel Springer, which owns _Business Insider_and Politico, and Associated Press are major publishers that have [cut deals][28].
 
 The sad reality is that none of these things can fix the fundamental flaws at the heart of news publishing.
 
@@ -168,7 +168,7 @@ In a 2009 essay, media guru Clay Shirky has a [memorable line][32]:
 
   The answer is: Nothing will work, but everything might. Now is the time for experiments, lots and lots of experiments, each of which will seem as minor at launch as craigslist did, as Wikipedia did, as octavo volumes did.
 
-It's very hard, if not impossible for the media company of the future to survive and thrive on just one revenue line. Successful media companies such as _The New York Times_ (NYT), _The Economist_, _Financial Times_ (FT), and Condé Nast have their diversified revenue sources to thank for their survival.
+It's very hard, if not impossible for the media company of the future to survive and thrive on just one revenue line. Successful media companies such as _The New York Times_(NYT), _The Economist_, _Financial Times_(FT), and Condé Nast have their diversified revenue sources to thank for their survival.
 
 In the case of NYT, it's subscriptions and print, but the company has built a [phenomenal bundle][33] that includes news, games, audio, commerce, and cooking. _The Economist _generates revenues from subscriptions, courses, and research services.
 
@@ -180,7 +180,7 @@ I hate using this word, but bear with me. Quality in media is table stakes; it's
 
 Traditional media companies still operate like factories. They _manufacture _information and _dump _it on a website, expecting people to discover and pay for it without any consideration for what the readers want.
 
-I was listening to Anant Goenka, the Executive Director of _The Indian Express_ Group, on [a podcast,][36] and he said something that was stunning to me:
+I was listening to Anant Goenka, the Executive Director of _The Indian Express_Group, on [a podcast,][36] and he said something that was stunning to me:
 
   Ananth Goenka: I think one of the big wins, and it's tough to kind of say, but since it's a long conversation, we can get deep into things. I remember I had a session with my chief editor, my father, my CEO, and a bunch of us, kind of just four or five of us, sat down. I was just kind of saying that somewhere, the consumer, the reader, is not central to our decision making as a content producer. Somewhere, I mean, the user wants to talk about climate change, artificial intelligence, mental health, gender issues, and the taboos with being sexually experimental. That's kind of where the English-speaking, urban, Express profile reader is.
 
@@ -200,7 +200,7 @@ I can't.
 
 With very few exceptions, they all suck.
 
-Daily newsletters and podcasts are habit-building products. If they are good, users look forward to them. This is why _[The Daily][37]_ by _The New York Times _and _[The Intelligence][38]_ by _The Economist _have been so successful. Both publishers also have an amazing bouquet of newsletters.
+Daily newsletters and podcasts are habit-building products. If they are good, users look forward to them. This is why _[The Daily][37]_by _The New York Times _and _[The Intelligence][38]_by _The Economist _have been so successful. Both publishers also have an amazing bouquet of newsletters.
 
 _The Economist _also launched an app-based digital edition at a [cheaper price][39] to attract younger audiences. Even the _[Financial Times][40] _launched a similar app aimed at social followers who hadn't yet subscribed to anything. The Vox is another success story. They moved fast to build a brilliant [stable of podcasts][41].
 
