@@ -18,16 +18,18 @@ smart_punctuation = true
 
 [extra]
 theme_switcher = true
-skin = "teal"
+skin = "lowcontrast_peach"
 browser_theme_color = "#087e96"
 show_author = true
 show_reading_time = true
 show_date = true
+favicon_emoji = "😲"
 
 menu = [
     { name = "blog", url = "blog", trailing_slash = true },
     { name = "archive", url = "archive", trailing_slash = true },
-    { name = "tags", url = "tags", trailing_slash = true }
+    { name = "tags", url = "tags", trailing_slash = true },
+    { name = "projects", url = "projects", trailing_slash = true }  # No comma after the last item
 ]
 
 feed_icon = true
