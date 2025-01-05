@@ -1,11 +1,14 @@
-+++
-title = "Death to the banks; central bank accounts for all"
-date = 2023-05-27
-
-[taxonomies]
-tags = ["research"]
-+++
-
+---
+title: Death to the banks; central bank accounts for all
+date: 2023-05-27T12:15:24+00:00
+taxonomies:
+    tags: [
+        "banking",
+        "Central banks",
+        "Disintermediation",
+        "Financial inclusion"
+    ]
+---
 Throughout the history of modern banking, two narratives have been constant: "Banks are dead" and "Why do we need banks?"
 
 The "banks are dead" narrative is a favorite of the techno-optimist and fintech crowds. Whenever there are new technologies, regulatory changes, or market disruptions, two things happen: the likes of McKinsey and Deloitte publish "the future of banking" reports, and these people share them like they are gospel. In my head, these reports sound like: "Humans have domesticated pigeons; banks are dead because we can send money for free using pigeons!" 
@@ -14,55 +17,80 @@ You can also hear this narrative whenever fintech bois open their mouths at some
 
 The "why do we need banks" narrative becomes popular during banking and financial crises. If banks keep fucking up and have to be bailed out by taxpayers, why put up with the charade of private banks instead of regulating them as public utilities or cutting them to size?
 
-Neither of these two narratives has _[fully][1]_come to pass. Despite all the threats of fintechs and financial disintermediation, banks are alive, well&#8230;ish, and bigger than ever. 
+Neither of these two narratives has _[fully][1]_ come to pass. Despite all the threats of fintechs and financial disintermediation, banks are alive, well...ish, and bigger than ever. 
 
-![](/images/2023/05/NBFI-as-a-share-of-total-global-financial-assets-1.png) *Global financial assets | Financial Stability Board (FSB)* 
+<img loading="lazy" decoding="async" width="1386" height="820" src="https://www.bebhuvan.com/wp-content/uploads/2023/05/NBFI-as-a-share-of-total-global-financial-assets-1.png" alt="" class="wp-image-793" srcset="https://www.bebhuvan.com/wp-content/uploads/2023/05/NBFI-as-a-share-of-total-global-financial-assets-1.png 1386w, https://www.bebhuvan.com/wp-content/uploads/2023/05/NBFI-as-a-share-of-total-global-financial-assets-1-300x177.png 300w, https://www.bebhuvan.com/wp-content/uploads/2023/05/NBFI-as-a-share-of-total-global-financial-assets-1-1024x606.png 1024w, https://www.bebhuvan.com/wp-content/uploads/2023/05/NBFI-as-a-share-of-total-global-financial-assets-1-768x454.png 768w" sizes="auto, (max-width: 1386px) 100vw, 1386px" /> Global financial assets | Financial Stability Board (FSB) 
 
 But.
 
 Yes, there's always a but.
 
-Banks aren't dying, but thanks to [post-2008](https://www.bis.org/publ/cgfs60.htm) regulations, market failures, and other structural reasons, they have retreated from many business lines. At the same time, non-bank financial intermediaries, or shadow banking entities, have grown. You can see this even in India, where NBFCs have grown in size and compete with banks for deposits and credit. 
+Banks aren't dying, but thanks to <a rel="noreferrer noopener" href="https://www.bis.org/publ/cgfs60.htm" target="_blank">post-2008</a> regulations, market failures, and other structural reasons, they have retreated from many business lines. At the same time, non-bank financial intermediaries, or shadow banking entities, have grown. You can see this even in India, where NBFCs have grown in size and compete with banks for deposits and credit. 
 
-For the most part, the fintech promise is a bit like Leonardo DiCaprio trying to win an Oscar. Everybody knew he was talented, yet it took 20+ years, freezing his balls off, and eating raw bison liver in _The Revenant_to win an Oscar. Fintechs haven't murdered banks or brought about a glorious financial inclusion revolution. By and large, they've been co-opted by banks or are [competing](https://www.nber.org/papers/w31154) for the same set of users.
+For the most part, the fintech promise is a bit like Leonardo DiCaprio trying to win an Oscar. Everybody knew he was talented, yet it took 20+ years, freezing his balls off, and eating raw bison liver in _The Revenant_ to win an Oscar. Fintechs haven't murdered banks or brought about a glorious financial inclusion revolution. By and large, they've been co-opted by banks or are <a rel="noreferrer noopener" href="https://www.nber.org/papers/w31154" target="_blank">competing</a> for the same set of users.
 
 Non-bank entities today perform many of the same activities as banks, but there's more to that story. There isn't a clear separation between banks and non-bank entities because banks have direct and indirect linkages to non-bank entities. Banks tend to have other non-bank business lines like asset management, broking, and market making. Jumping to the conclusion that non-banks or shadow banking entities are eating the lunch of banks is tricky.
 
-I'm not saying all fintechs are failures. Success stories like [Revolut](https://techcrunch.com/2023/03/01/revolut-reports-first-full-year-of-profit/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAHuxiVAgc2Hho-b3eoAN3Hh9HO_tvzzC86_Kk77OkQvHK3PsjQjE8OEM3iauqGTlLDwN_oFaTZ3CSYAD6mST42kVdOqKBkMfM63eMiORzfbxIfewPHbZs8zTiI97QkRljgyAe9CCHt3Hai49tlj1ogzwr22tQvH9l8lcdcTq6YAw#:~:text=Revolut's%20financial%20success%20starts%20at,combined%20with%20a%20payment%20card.), [Starling Bank](https://www.pymnts.com/news/digital-banking/2023/starling-ceo-steps-aside-as-neobanks-revenues-double/), [Nubank](https://brazilian.report/liveblog/politics-insider/2023/05/16/nubank-money-platform/), [M-Pesa][2], Stripe, Wise, [Instamojo](https://the-ken.com/kaching/how-an-indian-fintech-is-trying-to-find-its-mojo-by-not-being-a-fintech/), [RocketMortage](https://www.imf.org/en/Publications/GFSR/Issues/2022/04/19/global-financial-stability-report-april-2022), [Altruist](https://www.riaintel.com/article/2bixfbqv9t43lphsceby8/wealth-management/insight-partners-and-adams-street-invest-in-ria-custody-disruptor), etc., come to mind. It may be that fintechs are expanding markets rather than stealing market share from incumbents in the developed markets, but the story _seems_different in emerging economies[ [1][3], [2][4], [3][5]]. So far, banks seem to have the [upper hand][2], but despite the recent bruising, new-age fintechs have proven to be a [scrappy bunch.][6] 
+I'm not saying all fintechs are failures. Success stories like <a rel="noreferrer noopener" href="https://techcrunch.com/2023/03/01/revolut-reports-first-full-year-of-profit/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAHuxiVAgc2Hho-b3eoAN3Hh9HO_tvzzC86_Kk77OkQvHK3PsjQjE8OEM3iauqGTlLDwN_oFaTZ3CSYAD6mST42kVdOqKBkMfM63eMiORzfbxIfewPHbZs8zTiI97QkRljgyAe9CCHt3Hai49tlj1ogzwr22tQvH9l8lcdcTq6YAw#:~:text=Revolut's%20financial%20success%20starts%20at,combined%20with%20a%20payment%20card." target="_blank">Revolut</a>, <a rel="noreferrer noopener" href="https://www.pymnts.com/news/digital-banking/2023/starling-ceo-steps-aside-as-neobanks-revenues-double/" target="_blank">Starling Bank</a>, <a rel="noreferrer noopener" href="https://brazilian.report/liveblog/politics-insider/2023/05/16/nubank-money-platform/" target="_blank">Nubank</a>, [M-Pesa][2], Stripe, Wise, <a rel="noreferrer noopener" href="https://the-ken.com/kaching/how-an-indian-fintech-is-trying-to-find-its-mojo-by-not-being-a-fintech/" target="_blank">Instamojo</a>, <a rel="noreferrer noopener" href="https://www.imf.org/en/Publications/GFSR/Issues/2022/04/19/global-financial-stability-report-april-2022" target="_blank">RocketMortage</a>, <a rel="noreferrer noopener" href="https://www.riaintel.com/article/2bixfbqv9t43lphsceby8/wealth-management/insight-partners-and-adams-street-invest-in-ria-custody-disruptor" target="_blank">Altruist</a>, etc., come to mind. It may be that fintechs are expanding markets rather than stealing market share from incumbents in the developed markets, but the story seems different in emerging economies[ [1][3], [2][4], [3][5]]. So far, banks seem to have the [upper hand][2], but despite the recent bruising, new-age fintechs have proven to be a [scrappy bunch.][6] 
 
-![](/images/2023/05/OFIs-share-of-credit-assets-1.png) *Credit by financial intermediary type | Financial Stability Board (FSB)* 
+<img loading="lazy" decoding="async" width="1597" height="906" src="https://www.bebhuvan.com/wp-content/uploads/2023/05/OFIs-share-of-credit-assets-1.png" alt="" class="wp-image-794" srcset="https://www.bebhuvan.com/wp-content/uploads/2023/05/OFIs-share-of-credit-assets-1.png 1597w, https://www.bebhuvan.com/wp-content/uploads/2023/05/OFIs-share-of-credit-assets-1-300x170.png 300w, https://www.bebhuvan.com/wp-content/uploads/2023/05/OFIs-share-of-credit-assets-1-1024x581.png 1024w, https://www.bebhuvan.com/wp-content/uploads/2023/05/OFIs-share-of-credit-assets-1-768x436.png 768w, https://www.bebhuvan.com/wp-content/uploads/2023/05/OFIs-share-of-credit-assets-1-1536x871.png 1536w" sizes="auto, (max-width: 1597px) 100vw, 1597px" /> Credit by financial intermediary type | Financial Stability Board (FSB) 
 
 With the mini-banking crisis in the US, the "why do we need banks?" narrative is again in vogue. The question isn't without merit. These excerpts from insightful posts by [Martin Wolf][7] and [Gillian Tett][8] get to the heart of the issues with modern banking:
 
-  So how does this industry create mayhem on this scale? And why is it allowed to do so? It does so — and is allowed to do so — because, as the Bank of England has explained, banks create money, which is an essential public good, as a byproduct of their lending, which is an important economic good. We want banks to have risky assets and safe liabilities. Yet the liabilities of a highly leveraged, risk-taking institution cannot be safe and will unavoidably seem least safe during a crisis. Yet it is then that people want their money — their reserve of purchasing power in a frightening world — to be at its safest.Worse, it is often easiest for banks to justify lending more just when they should lend less, because lending creates credit booms and asset-price bubbles, notably in property. The willingness of the public to treat bank liabilities as stores of safe purchasing power provides stable funding, until panic sets in. To reduce the likelihood of panic, governments insure bank deposits, liquidity and even solvency. That makes crises rarer, but bigger. The authorities are simultaneously supporting banks and reining in the excesses created by support. This is a system designed to fail.
+> 
 
- Martin Wolf
+    So how does this industry create mayhem on this scale? And why is it allowed to do so? It does so — and is allowed to do so — because, as the Bank of England has explained, banks create money, which is an essential public good, as a byproduct of their lending, which is an important economic good. We want banks to have risky assets and safe liabilities. Yet the liabilities of a highly leveraged, risk-taking institution cannot be safe and will unavoidably seem least safe during a crisis. Yet it is then that people want their money — their reserve of purchasing power in a frightening world — to be at its safest.
 
-  The SVB drama suggests that governments will indeed do this — if needed. But that raises two more big questions: if the only way to quell a Twitter panic is for governments to backstop depositors, does that mean banks must become utilities? And, most crucially, will governments also backstop non-banks such as money market funds if they fall prey to a Twitter run?
+Worse, it is often easiest for banks to justify lending more just when they should lend less, because lending creates credit booms and asset-price bubbles, notably in property. The willingness of the public to treat bank liabilities as stores of safe purchasing power provides stable funding, until panic sets in. To reduce the likelihood of panic, governments insure bank deposits, liquidity and even solvency. That makes crises rarer, but bigger. The authorities are simultaneously supporting banks and reining in the excesses created by support. This is a system designed to fail.
+  
 
- Gillian Tett
+  
+  
+— Martin Wolf
+
+> 
+
+    The SVB drama suggests that governments will indeed do this — if needed. But that raises two more big questions: if the only way to quell a Twitter panic is for governments to backstop depositors, does that mean banks must become utilities? And, most crucially, will governments also backstop non-banks such as money market funds if they fall prey to a Twitter run?
+  
+
+  
+  
+— Gillian Tett
 
 So, if you extend this line of thought, what will banks look like if you cut them to size? In the past few years, banking and legal scholars in the US have outlined several provocative proposals to make banking accessible, especially given the inability of the US government to distribute stimulus despite 90%+ of Americans having a bank account. These proposals share broad similarities but fall on a wide spectrum of radicalness.
 
 #### The People's Ledger: How to Democratize Money and Finance the Economy 
 
-Saule Omaroava, a professor of law at Cornell University, published the most far-reaching and radical proposal in a paper titled [The People's Ledger: How to Democratize Money and Finance the Economy](https://scholarship.law.vanderbilt.edu/vlr/vol74/iss5/1/). The paper starts with an explanation of how the banking system works, which I think is informative and important to understand the scope of the proposal. We've all heard and read these dominant views of how banks work:
+Saule Omaroava, a professor of law at Cornell University, published the most far-reaching and radical proposal in a paper titled <a rel="noreferrer noopener" href="https://scholarship.law.vanderbilt.edu/vlr/vol74/iss5/1/" target="_blank">The People's Ledger: How to Democratize Money and Finance the Economy</a>. The paper starts with an explanation of how the banking system works, which I think is informative and important to understand the scope of the proposal. We've all heard and read these dominant views of how banks work:
 
-  Banks intermediate the flow of funds from savers to borrowers.
+<ol class="wp-block-list">
+  <li>
+    Banks intermediate the flow of funds from savers to borrowers.
+  </li>
+  <li>
+     Banks take deposits from savers and lend a portion of them to borrowers.
+  </li>
+</ol>
 
-   Banks take deposits from savers and lend a portion of them to borrowers.
+This view of how banks work and how they create money is wrong. Professor Omarova describes banks as franchises that monetize the sovereign public’s full faith and credit.
 
-This view of how banks work and how they create money is wrong. Professor Omarova describes banks as franchises that monetize the sovereign public's full faith and credit.
+> 
 
-  The current U.S. financial system is in essence a public-private franchise arrangement for the distribution of a unique collective good: the monetized full faith and credit of the United States. At its core, it is a system for supplying and dispensing a uniform national currency and its credit equivalent, dollar-denominated debt. The sovereign public, acting through its central bank and fiscal authorities, is the ultimate creator, or issuer, of this critical collective good. Privately owned banks and other financial institutions, in turn, distribute sovereign credit-money throughout the economy, effectively collecting "privatized seigniorage" for their services. Thus, contrary to the widespread misconception, banks do not simply "intermediate" between private savers and borrowers by lending to the latter what the former have previously deposited. In practice, banks create deposits when they extend loans to creditworthy customers, as simply the liability-side entry offsetting the newly created asset on the bank's balance sheet. The real key to the spendability of these newly loaned funds as deposit-account "bank money" is, therefore, not their fictitious derivation from some privately pre-accumulated capital, but an act of the sovereign: the Fed accommodation and monetization of bank-created private liabilities.
+    The current U.S. financial system is in essence a public-private franchise arrangement for the distribution of a unique collective good: the monetized full faith and credit of the United States. At its core, it is a system for supplying and dispensing a uniform national currency and its credit equivalent, dollar-denominated debt. The sovereign public, acting through its central bank and fiscal authorities, is the ultimate creator, or issuer, of this critical collective good. Privately owned banks and other financial institutions, in turn, distribute sovereign credit-money throughout the economy, effectively collecting “privatized seigniorage” for their services. 
 
-This definition of banking comes from another paper she wrote with Robert Hockett titled [Fintech Franchise](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2820176) and it's a must-read.
+Thus, contrary to the widespread misconception, banks do not simply “intermediate” between private savers and borrowers by lending to the latter what the former have previously deposited. In practice, banks create deposits when they extend loans to creditworthy customers, as simply the liability-side entry offsetting the newly created asset on the bank’s balance sheet. The real key to the spendability of these newly loaned funds as deposit-account “bank money” is, therefore, not their fictitious derivation from some privately pre-accumulated capital, but an act of the sovereign: the Fed accommodation and monetization of bank-created private liabilities.
+
+This definition of banking comes from another paper she wrote with Robert Hockett titled <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2820176">Fintech Franchise</a> and it's a must-read.
 
 With that background, in the paper, she outlines a structure in which the Federal Reserve's balance sheet becomes the central platform for allocating money and credit. There's a degree of separation between ordinary people and the central banks, with commercial banks in the middle today. She proposes doing away with this separation by allowing people and businesses to open bank accounts with the Federal Reserve directly.
 
-This naturally leads to comparisons with central bank digital currency (CBDC), and she has an insightful perspective on the ineffectiveness of CBDCs. She contrasts the _technocratic_CBDC design proposals aimed at minimizing disruptions to the banking system with her "explicitly political—and consciously progressive take" on CBDCs.
+This naturally leads to comparisons with central bank digital currency (CBDC), and she has an insightful perspective on the ineffectiveness of CBDCs. She contrasts the _technocratic_ CBDC design proposals aimed at minimizing disruptions to the banking system with her "explicitly political—and consciously progressive take" on CBDCs.
 
-  To date, virtually all CBDC discussions proceed on an assumption that CBDC will be issued and administered alongside the existing forms of commercial bank money. Banks are generally presumed to continue offering deposits, combined with other financial services, even when CBDC goes live.Much of this "engineering" aims to make CBDC a less attractive alternative to private deposits, in order to avoid so-called "disintermediation" and lower the likelihood of more frequent and violent bank depositor runs—an inherently difficult balancing act. These attempts to minimize the inevitable structural disruption from introducing a universally available CBDC, in effect, significantly complicate the task of designing CBDC and slow down its implementation.
+> 
+
+    To date, virtually all CBDC discussions proceed on an assumption that CBDC will be issued and administered alongside the existing forms of commercial bank money. Banks are generally presumed to continue offering deposits, combined with other financial services, even when CBDC goes live.
+
+Much of this “engineering” aims to make CBDC a less attractive alternative to private deposits, in order to avoid so-called “disintermediation” and lower the likelihood of more frequent and violent bank depositor runs—an inherently difficult balancing act. These attempts to minimize the inevitable structural disruption from introducing a universally available CBDC, in effect, significantly complicate the task of designing CBDC and slow down its implementation.
 
 On the liability side, she proposes opening Fed accounts for all citizens and moving all bank deposits from banks to the Federal Reserve's balance sheet, rendering banks non-deposit-taking entities. Apart from "financial inclusion and democratizing access to financial services," this would disrupt the non-bank or shadow banking system, which is prone to runs and has been at the center of the 2020 COVID-induced financial shock and the 2008 crisis.
 
@@ -78,16 +106,21 @@ As she outlines, the proposal does not change the role of banks. For banks, depo
 
 [Pushback][10] against the proposal.
 
-   1/I don't know the whole story here, but there appears to be a group of people at the Cornell Law School, who think about radical ways to restructure central banking and the private banking system. Basically lawyers doing monetary economics. Omarova's ideas – and&#8230; [https://t.co/c0f7gG4Y0A](https://t.co/c0f7gG4Y0A)
-  &mdash; Stephen Williamson (@1954swilliamson) 
-  
-  [October 14, 2021](https://twitter.com/1954swilliamson/status/1448654303875395600?ref_src=twsrc%5Etfw)
+  > 
+
+      1/I don't know the whole story here, but there appears to be a group of people at the Cornell Law School, who think about radical ways to restructure central banking and the private banking system. Basically lawyers doing monetary economics. Omarova's ideas – and... <a href="https://t.co/c0f7gG4Y0A">https://t.co/c0f7gG4Y0A</a>
+    
+&mdash; Stephen Williamson (@1954swilliamson) 
+    
+    <a href="https://twitter.com/1954swilliamson/status/1448654303875395600?ref_src=twsrc%5Etfw">October 14, 2021</a>
+
+ 
 
 #### Digital Greenbacks 
 
-Robert Hockett, another professor of law at Cornell University and a frequent collaborator of Saule Omarova, published a [similar proposa](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3599419)l [[1](https://justmoney.org/r-hockett-the-inclusive-value-ledger-a-public-platform-for-digital-dollars-digital-payments-and-digital-public-banking/), [2](https://justmoney.org/r-hockett-the-democratic-digital-dollar-a-treasury-direct-option/)] to offer free basic banking to all Americans. The proposal has two versions: a wallet offered by the Treasury Department and the Federal Reserve. Professor Hockett published this proposal in the wake of the COVID-19 pandemic. Unlike the proposal by Saule Omarova, this is less radical in its original intent and _seems_to be motivated by the desire to ensure all citizens have access to free and fair basic banking services rather than upending the banking system, but the end result of the proposal is the same. Both proposals also share many of the same radical ideas.
+Robert Hockett, another professor of law at Cornell University and a frequent collaborator of Saule Omarova, published a <a rel="noreferrer noopener" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3599419" target="_blank">similar proposa</a>l [<a rel="noreferrer noopener" href="https://justmoney.org/r-hockett-the-inclusive-value-ledger-a-public-platform-for-digital-dollars-digital-payments-and-digital-public-banking/" target="_blank">1</a>, <a rel="noreferrer noopener" href="https://justmoney.org/r-hockett-the-democratic-digital-dollar-a-treasury-direct-option/" target="_blank">2</a>] to offer free basic banking to all Americans. The proposal has two versions: a wallet offered by the Treasury Department and the Federal Reserve. Professor Hockett published this proposal in the wake of the COVID-19 pandemic. Unlike the proposal by Saule Omarova, this is less radical in its original intent and seems to be motivated by the desire to ensure all citizens have access to free and fair basic banking services rather than upending the banking system, but the end result of the proposal is the same. Both proposals also share many of the same radical ideas.
 
-The US Treasury Department operates a platform called [TreasuryDirect](https://www.treasurydirect.gov/) that allows US citizens to invest directly in Treasury bonds. On the platform, you can also hold cash in a zero-percent certificate of indebtedness. These are zero coupon instruments for parking cash to buy Treasury bonds later. Professor Hockett proposes turning TreasuryDirect into a wallet with peer-to-peer (P2P) payment capabilities.
+The US Treasury Department operates a platform called <a rel="noreferrer noopener" href="https://www.treasurydirect.gov/" target="_blank">TreasuryDirect</a> that allows US citizens to invest directly in Treasury bonds. On the platform, you can also hold cash in a zero-percent certificate of indebtedness. These are zero coupon instruments for parking cash to buy Treasury bonds later. Professor Hockett proposes turning TreasuryDirect into a wallet with peer-to-peer (P2P) payment capabilities.
 
 He also proposes conferring legal tender on zero-percent certificates of indebtedness, turning them into digital dollars, or "digital greenbacks." To address financial stability issues arising out of a deposit flight, he says that a cap on account balances could serve the purpose.
 
@@ -99,11 +132,17 @@ Lev Menand, Morgan Ricks, and John Crawford, all law professors at Columbia Law 
 
 As the authors envision, free Fed accounts would enhance financial inclusion since the poorest are excluded and exploited from the banking system.
 
-  Banks find it unprofitable to service low-balance accounts. Moreover, when banks do maintain such accounts, they often use questionable tactics to generate revenue, such as overdraft "protection" fees averaging thirty-five dollars per overdraft. These fees exploit behavioral biases (among other things, many people "who incur overdraft fees do not expect to overdraw their accounts") and fall disproportionately on low-balance households. In 2013, one in ten Americans reported paying such fees. Estimates of annual overdraft fees vary, ranging from $14 billion to as much as $32 billion.This Article does not fault for-profit institutions for pursuing profits (although abusively exploiting behavioral biases should be off limits). But this Article does question whether this resource—the mainstream, account-based money-and-payments system—should be left to "market" provisioning in the first place. Money is often described as a public good, and FedAccount would bring this conception to full realization by transforming the U.S. account-money system into public infrastructure akin to roads, sidewalks, public libraries, the judicial system, and law enforcement. These resources are usually funded in whole or in part out of general revenue.
+> 
+
+    Banks find it unprofitable to service low-balance accounts. Moreover, when banks do maintain such accounts, they often use questionable tactics to generate revenue, such as overdraft “protection” fees averaging thirty-five dollars per overdraft. These fees exploit behavioral biases (among other things, many people “who incur overdraft fees do not expect to overdraw their accounts”) and fall disproportionately on low-balance households. In 2013, one in ten Americans reported paying such fees. Estimates of annual overdraft fees vary, ranging from $14 billion to as much as $32 billion.
+
+This Article does not fault for-profit institutions for pursuing profits (although abusively exploiting behavioral biases should be off limits). But this Article does question whether this resource—the mainstream, account-based money-and-payments system—should be left to “market” provisioning in the first place. Money is often described as a public good, and FedAccount would bring this conception to full realization by transforming the U.S. account-money system into public infrastructure akin to roads, sidewalks, public libraries, the judicial system, and law enforcement. These resources are usually funded in whole or in part out of general revenue.
 
 This would also enhance financial stability by "crowding out" run-prone shadow monies and deposit substitutes, which originated in part due to deposit insurance limits. If large companies and institutions had access to non-defaultable central bank money that earns a competitive interest rate, they would have no reason to seek privately issued shadow monies like repo, money market funds, and other instruments.
 
-  Although deposit insurance basically ended runs on deposits, modern panics have involved runs on institutional deposit substitutes. The 2008 financial crisis featured a run on dollar-denominated cash equivalents such as asset-backed and financial commercial paper, repo, Eurodollars, auction-rate securities, prime brokerage free credit balances, and money market mutual fund shares. The Swedish and Japanese episodes just mentioned were similar. It is important to understand that, like deposits and redeemable bank notes, these other types of financial sector short-term debt are privately issued "money": they satisfy money demand. Accounting standards classify them as cash equivalents, and central banks often include some of them in their broad measures of the money supply. Leading economists refer to these short-term debt instruments as "forms of money" or "private money." A Fed governor recently acknowledged that their "private creation . . . is, at least to some degree, the creation of money."
+> 
+
+    Although deposit insurance basically ended runs on deposits, modern panics have involved runs on institutional deposit substitutes. The 2008 financial crisis featured a run on dollar-denominated cash equivalents such as asset-backed and financial commercial paper, repo, Eurodollars, auction-rate securities, prime brokerage free credit balances, and money market mutual fund shares. The Swedish and Japanese episodes just mentioned were similar. It is important to understand that, like deposits and redeemable bank notes, these other types of financial sector short-term debt are privately issued “money”: they satisfy money demand. Accounting standards classify them as cash equivalents, and central banks often include some of them in their broad measures of the money supply. Leading economists refer to these short-term debt instruments as “forms of money” or “private money.” A Fed governor recently acknowledged that their “private creation . . . is, at least to some degree, the creation of money.”
 
 The authors note that the proposal would simplify banking regulations and shrink the size of the banking and financial system, which has become ["too big to supervise][12]." They also point out that the system would more than pay for itself from the seigniorage revenues from the Fed's asset portfolio.
 
@@ -111,27 +150,39 @@ Just like the other two proposals, the authors propose that the Fed's discount w
 
 Saule Omarova critiques this proposal on similar lines in her paper:
 
-  Notably, Ricks et al. frame their proposal as a variation on the public banking idea, rather than a straightforward CBDC plan. Ultimately, however, these parallel conversations—one on CBDC and another one on FedAccounts—run into the same conceptual problem. In both cases, the crucial question is: What would, or should, happen on the asset side of the central bank balance sheet, in order to accommodate the proposed expansion of central bank liabilities?
+> 
 
- [The People's Ledger: How t s Ledger: How to Democr o Democratize Money and Finance the y and Finance the Economy — Saule T. Omarova. ](https://scholarship.law.vanderbilt.edu/vlr/vol74/iss5/1/)
+    Notably, Ricks et al. frame their proposal as a variation on the public banking idea, rather than a straightforward CBDC plan. Ultimately, however, these parallel conversations—one on CBDC and another one on FedAccounts—run into the same conceptual problem. In both cases, the crucial question is: What would, or should, happen on the asset side of the central bank balance sheet, in order to accommodate the proposed expansion of central bank liabilities?
+  
+
+  
+  
+— <a href="https://scholarship.law.vanderbilt.edu/vlr/vol74/iss5/1/">The People's Ledger: How t s Ledger: How to Democr o Democratize Money and Finance the y and Finance the Economy — Saule T. Omarova. </a>
 
 #### Into the future 
 
-All these radical ideas evoke red visions of communism and socialism; as things stand, none are in the realm of possibility. Given that they threaten to upend the very structure of modern commercial banking, the incumbent banks will fight these proposals tooth and nail. We saw a live demonstration of this when Saule Omarova was nominated in 2021 by Joe Biden to head the Office of the Comptroller of the Currency (OCC), which regulates banks. She was labeled a communist and subjected to red-baiting. The banking lobby mounted a [vicious campaign](https://www.npr.org/2021/12/13/1063767973/saule-omarova-gets-candid-banks-sank-her-nomination-to-head-occ) to sink her nomination.
+All these radical ideas evoke red visions of communism and socialism; as things stand, none are in the realm of possibility. Given that they threaten to upend the very structure of modern commercial banking, the incumbent banks will fight these proposals tooth and nail. We saw a live demonstration of this when Saule Omarova was nominated in 2021 by Joe Biden to head the Office of the Comptroller of the Currency (OCC), which regulates banks. She was labeled a communist and subjected to red-baiting. The banking lobby mounted a <a rel="noreferrer noopener" href="https://www.npr.org/2021/12/13/1063767973/saule-omarova-gets-candid-banks-sank-her-nomination-to-head-occ" target="_blank">vicious campaign</a> to sink her nomination.
 
-One useful heuristic to think about such radical proposals is the Overton window. Political analyst Joseph Overton [created](https://www.mackinac.org/OvertonWindow) the concept to illustrate the range of possible political policy possibilities. Policymakers rarely pursue policies at the extremes or outside the window. In other words, our society is hardwired to be inert. The window shifts over time with changes in attitudes and beliefs.
+One useful heuristic to think about such radical proposals is the Overton window. Political analyst Joseph Overton <a rel="noreferrer noopener" href="https://www.mackinac.org/OvertonWindow" target="_blank">created</a> the concept to illustrate the range of possible political policy possibilities. Policymakers rarely pursue policies at the extremes or outside the window. In other words, our society is hardwired to be inert. The window shifts over time with changes in attitudes and beliefs.
 
-  The Overton window is an approach to identifying the ideas that define the spectrum of acceptability of governmental policies. It says politicians can act only within the acceptable range. Shifting the Overton window involves proponents of policies outside the window persuading the public to expand the window. Proponents of current policies, or similar ones within the window, seek to convince people that policies outside it should be deemed unacceptable. According to Lehman, who coined the term, "The most common misconception is that lawmakers themselves are in the business of shifting the Overton window. That is absolutely false. Lawmakers are actually in the business of detecting where the window is, and then moving to be in accordance with it."According to Lehman, the concept is just a description of how ideas work, not advocacy of extreme policy proposals.
+> 
 
- [Wikipedia](https://en.wikipedia.org/wiki/Overton_window)
+    The Overton window is an approach to identifying the ideas that define the spectrum of acceptability of governmental policies. It says politicians can act only within the acceptable range. Shifting the Overton window involves proponents of policies outside the window persuading the public to expand the window. Proponents of current policies, or similar ones within the window, seek to convince people that policies outside it should be deemed unacceptable. According to Lehman, who coined the term, "The most common misconception is that lawmakers themselves are in the business of shifting the Overton window. That is absolutely false. Lawmakers are actually in the business of detecting where the window is, and then moving to be in accordance with it."According to Lehman, the concept is just a description of how ideas work, not advocacy of extreme policy proposals.
+  
 
-Central banks opening accounts for all is a fringe idea, but centrist progressives like Matt Yglesias have taken a [liking to the idea](https://www.slowboring.com/p/fed-accounts). The debates and soul-searching over the need and role of banks are mostly limited to the US and, to a small extent, Europe. Contrary to popular perception, the US financial system, despite its purported sophistication, is stuck in the Stone Age. It's not only archaic but also exploitative. This excerpt from the paper by [Ricks et al. (2020)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3192162) is telling:
+  
+  
+— <a href="https://en.wikipedia.org/wiki/Overton_window">Wikipedia</a>
 
-  Many Americans lack access to basic banking services. Whereas bank account penetration in other advanced economies like Canada, France, Germany, Japan, and the United Kingdom exceeds 97%, about "6.5 percent of U.S. households [are] 'unbanked,' meaning that no one in the household had a [bank] account." Another 18.7% of U.S. households are "underbanked," meaning that, despite having a bank account, they rely to some degree on expensive nonbank services—such as nonbank money orders, check cashing, and payday loans—for payments and other financial needs. Un- and underbanked individuals use a mishmash of products and services to make and receive payments. They cash checks at retail stores (such as grocery, drug, or convenience stores) and standalone check-cashing businesses. These providers typically charge 1.5% to 3.5% of face value.
+Central banks opening accounts for all is a fringe idea, but centrist progressives like Matt Yglesias have taken a <a rel="noreferrer noopener" href="https://www.slowboring.com/p/fed-accounts" target="_blank">liking to the idea</a>. The debates and soul-searching over the need and role of banks are mostly limited to the US and, to a small extent, Europe. Contrary to popular perception, the US financial system, despite its purported sophistication, is stuck in the Stone Age. It's not only archaic but also exploitative. This excerpt from the paper by <a rel="noreferrer noopener" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3192162" target="_blank">Ricks et al. (2020)</a> is telling:
 
-The other laughable fact is that the US still doesn't have real-time payments. It's even more laughable when you consider that Japan introduced real-time payments in [1973](https://www.prove.com/blog/moving-money-faster-a-quick-look-at-some-popular-real-time-payments-systems-across-the-world).
+> 
 
-These debates are less relevant in India, considering that the RBI has never allowed a bank to fail. Thanks to real-time peer-to-peer payments (P2P) and Jan Dhan accounts, over 90% of Indians have access to free basic banking and payments. But the issue of [exploitative][13] hidden charges, [misselling](https://www.bqprime.com/business/the-curious-case-of-alleged-at-1-bonds-misselling-by-hdfc-bank), and [rent-seeking][14] is [universal][15].
+    Many Americans lack access to basic banking services. Whereas bank account penetration in other advanced economies like Canada, France, Germany, Japan, and the United Kingdom exceeds 97%, about “6.5 percent of U.S. households [are] ‘unbanked,’ meaning that no one in the household had a [bank] account.” Another 18.7% of U.S. households are “underbanked,” meaning that, despite having a bank account, they rely to some degree on expensive nonbank services—such as nonbank money orders, check cashing, and payday loans—for payments and other financial needs. Un- and underbanked individuals use a mishmash of products and services to make and receive payments. They cash checks at retail stores (such as grocery, drug, or convenience stores) and standalone check-cashing businesses. These providers typically charge 1.5% to 3.5% of face value.
+
+The other laughable fact is that the US still doesn't have real-time payments. It's even more laughable when you consider that Japan introduced real-time payments in <a target="_blank" href="https://www.prove.com/blog/moving-money-faster-a-quick-look-at-some-popular-real-time-payments-systems-across-the-world" rel="noreferrer noopener">1973</a>.
+
+These debates are less relevant in India, considering that the RBI has never allowed a bank to fail. Thanks to real-time peer-to-peer payments (P2P) and Jan Dhan accounts, over 90% of Indians have access to free basic banking and payments. But the issue of [exploitative][13] hidden charges, <a rel="noreferrer noopener" href="https://www.bqprime.com/business/the-curious-case-of-alleged-at-1-bonds-misselling-by-hdfc-bank" target="_blank">misselling</a>, and [rent-seeking][14] is [universal][15].
 
 With time, banking systems grow in complexity, and so do the risks to financial stability. Instead of root-and-branch banking system reform, policymakers in advanced economies have resorted to piecemeal solutions and put band-aids on septic wounds. As we face more banking crises, which we inevitably will, the Overton window for such ideas should shift. Only time will tell if banks will be disintermediated by tech advancements (fintech) or if policymakers will take a hockey bat to the sclerotic knees of traditional banks.
 
@@ -149,25 +200,30 @@ Any talk of bank disintermediation is incomplete without a mention of central ba
 
 I also publish these posts on that Substack thing
 
-  [Read this on that Substack thing.](https://alittlelessdumb.substack.com/p/death-to-the-banks-central-bank-accounts)
+  
+    <a class="wp-block-button__link has-vivid-red-background-color has-background has-text-align-center wp-element-button" href="https://alittlelessdumb.substack.com/p/death-to-the-banks-central-bank-accounts">Read this on that Substack thing.</a>
+  
+
+---
 
 The title was inspired by this song I came across by accident.
-[1]: https://www.fsb.org/2022/12/global-monitoring-report-on-non-bank-financial-intermediation-2022/
-[2]: https://blogs.lse.ac.uk/businessreview/2021/01/19/from-fintechs-to-banking-as-a-service-global-trends-banks-cannot-ignore/
-[3]: https://www.fsb.org/work-of-the-fsb/financial-innovation-and-structural-change/fintech/
-[4]: https://www.imf.org/en/Publications/Departmental-Papers-Policy-Papers/Issues/2020/06/29/The-Promise-of-Fintech-Financial-Inclusion-in-the-Post-COVID-19-Era-48623
-[5]: https://www.imf.org/en/Topics/fintech
-[6]: https://www.linkedin.com/pulse/fintech-food-15-trillion-reasons-love-simon-taylor-/
-[7]: https://www.ft.com/content/d27b000e-6810-11e8-8cf3-0c230fa67aec
-[8]: https://www.ft.com/content/a60e543d-c950-4ebb-8da9-d6b0b359ad7b
-[9]: https://bpi.com/discount-window-stigma-we-have-met-the-enemy-and-he-is-us/
-[10]: https://twitter.com/1954swilliamson/status/1448654303875395600?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1448654303875395600%7Ctwgr%5E0c8d35195a7c2c2a04d2bf1d56ac26d46b01d483%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.bebhuvan.com%2Fwp-admin%2Fpost.php%3Fpost%3D791action%3Dedit
-[11]: https://scholarship.law.columbia.edu/faculty_scholarship/3118/
-[12]: https://scholarship.law.cornell.edu/clr/vol103/iss6/8/
-[13]: http://www.math.iitb.ac.in/~ashish/paper.htm
-[14]: https://www.theguardian.com/business/economics-blog/2013/sep/23/brain-drain-unproductive-financial-sector
-[15]: https://epod.cid.harvard.edu/publications/rent-seeking-and-corruption-financial-markets
-[16]: https://rooseveltinstitute.org/publications/central-bank-digital-currency/
-[17]: https://www.bis.org/publ/othp33.htm
-[18]: https://www.bis.org/publ/arpdf/ar2021e3.htm
-[19]: https://www.nber.org/papers/w27634
+
+ [1]: https://www.fsb.org/2022/12/global-monitoring-report-on-non-bank-financial-intermediation-2022/
+ [2]: https://blogs.lse.ac.uk/businessreview/2021/01/19/from-fintechs-to-banking-as-a-service-global-trends-banks-cannot-ignore/
+ [3]: https://www.fsb.org/work-of-the-fsb/financial-innovation-and-structural-change/fintech/
+ [4]: https://www.imf.org/en/Publications/Departmental-Papers-Policy-Papers/Issues/2020/06/29/The-Promise-of-Fintech-Financial-Inclusion-in-the-Post-COVID-19-Era-48623
+ [5]: https://www.imf.org/en/Topics/fintech
+ [6]: https://www.linkedin.com/pulse/fintech-food-15-trillion-reasons-love-simon-taylor-/
+ [7]: https://www.ft.com/content/d27b000e-6810-11e8-8cf3-0c230fa67aec
+ [8]: https://www.ft.com/content/a60e543d-c950-4ebb-8da9-d6b0b359ad7b
+ [9]: https://bpi.com/discount-window-stigma-we-have-met-the-enemy-and-he-is-us/
+ [10]: https://twitter.com/1954swilliamson/status/1448654303875395600?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1448654303875395600%7Ctwgr%5E0c8d35195a7c2c2a04d2bf1d56ac26d46b01d483%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.bebhuvan.com%2Fwp-admin%2Fpost.php%3Fpost%3D791action%3Dedit
+ [11]: https://scholarship.law.columbia.edu/faculty_scholarship/3118/
+ [12]: https://scholarship.law.cornell.edu/clr/vol103/iss6/8/
+ [13]: http://www.math.iitb.ac.in/~ashish/paper.htm
+ [14]: https://www.theguardian.com/business/economics-blog/2013/sep/23/brain-drain-unproductive-financial-sector
+ [15]: https://epod.cid.harvard.edu/publications/rent-seeking-and-corruption-financial-markets
+ [16]: https://rooseveltinstitute.org/publications/central-bank-digital-currency/
+ [17]: https://www.bis.org/publ/othp33.htm
+ [18]: https://www.bis.org/publ/arpdf/ar2021e3.htm
+ [19]: https://www.nber.org/papers/w27634
