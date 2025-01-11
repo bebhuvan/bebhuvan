@@ -53,7 +53,11 @@ What follows is an outline of what I learned about the delightful, fascinating, 
 
 Whenever the topic of swearing comes up, the first thing that always comes to mind is George Carlin's [legendary bit](https://youtu.be/kyBH5oNQOS0) "The Seven Words You Can Never Say on Television."
 
-> **George Carlin:** That's what I was trying to figure out—those words that are always dirty. Not just sometimes, but fully, completely filthy.In looking for these words, I kept finding new categories. We have so many ways of describing these "dirty" words—it's fascinating. In fact, we seem to have more ways to *describe* dirty words than we actually have dirty words. Doesn't that seem a little strange? It suggests that someone, somewhere, has been very interested in these words. They couldn't stop referring to them.They've called them bad words, dirty, filthy, foul, vile, vulgar, coarse, in poor taste, unseemly. Street talk, gutter talk, locker room language, barrack talk. Bawdy, naughty, saucy, raunchy, rude, crude, lewd, lascivious, indecent, profane, obscene. Blue, off-color, risqué, suggestive. Cursing, cussing, swearing.And after all that, all I could think of was: **shit, piss, fuck, cunt, cocksucker, motherfucker, and tits.**Double click to interact with video
+> **George Carlin:** That's what I was trying to figure out—those words that are always dirty. Not just sometimes, but fully, completely filthy.
+>
+> In looking for these words, I kept finding new categories. We have so many ways of describing these "dirty" words—it's fascinating. In fact, we seem to have more ways to *describe* dirty words than we actually have dirty words. Doesn't that seem a little strange? It suggests that someone, somewhere, has been very interested in these words. They couldn't stop referring to them.
+>
+> They've called them bad words, dirty, filthy, foul, vile, vulgar, coarse, in poor taste, unseemly. Street talk, gutter talk, locker room language, barrack talk. Bawdy, naughty, saucy, raunchy, rude, crude, lewd, lascivious, indecent, profane, obscene. Blue, off-color, risqué, suggestive. Cursing, cussing, swearing.And after all that, all I could think of was: **shit, piss, fuck, cunt, cocksucker, motherfucker, and tits.**
 
 The bit is just fucking brilliant! It’s pure fucking genius!
 
@@ -126,7 +130,15 @@ He rejects a biological basis for language and instead posits that language evol
 
 Here’s an excerpt from [Levitin’s conversation](https://youtu.be/TvtNElAmVqU) with Neil deGrasse Tyson:
 
-> **Daniel Levitin**: Think about the transmission of information within a culture and across generations. We do that by talking, but we also write things down. We've only had written language on this planet for about 5,000 years.**Neil deGrasse Tyson:** In fact, it almost defines history.**Daniel Levitin**: Well, that's right. Absolutely. But, you know, humans have been on the planet for 40,000 to 100,000 or 200,000 years longer than that, depending on how you define 'human.' So, for most of the time, we didn't have writing. What we believe, from studying contemporary hunter-gatherer societies that are cut off from Western civilization and industrialization, is that they lived the way humans might have 20,000 years ago.We believe they used music to encode knowledge. For example, they would have a song that encodes, 'This is the route to the well,' or 'This is the route you take to the other well if this one goes dry.' Or a song that says, 'Don't go over that mountain because great-grandfather OG went there and the neighboring tribe killed him.' Or, 'This is how you make a watertight canoe,' or 'This is how you boil a plant so it's not poisonous.'Why music? Because, first of all, the available evidence from my lab, and now many others around the world... The available evidence is that the neural structures that encode music are phylogenetically older than those that encode speech.**Chuck**: Wow. So, evolutionarily, we were musicians before we were talking to one another?**Daniel Levitin**: Yes, from a brain development standpoint, that's what it seems.
+> **Daniel Levitin**: Think about the transmission of information within a culture and across generations. We do that by talking, but we also write things down. We've only had written language on this planet for about 5,000 years.
+>
+> **Neil deGrasse Tyson:** In fact, it almost defines history.
+>
+> **Daniel Levitin**: Well, that's right. Absolutely. But, you know, humans have been on the planet for 40,000 to 100,000 or 200,000 years longer than that, depending on how you define 'human.' So, for most of the time, we didn't have writing. What we believe, from studying contemporary hunter-gatherer societies that are cut off from Western civilization and industrialization, is that they lived the way humans might have 20,000 years ago.We believe they used music to encode knowledge. For example, they would have a song that encodes, 'This is the route to the well,' or 'This is the route you take to the other well if this one goes dry.' Or a song that says, 'Don't go over that mountain because great-grandfather OG went there and the neighboring tribe killed him.' Or, 'This is how you make a watertight canoe,' or 'This is how you boil a plant so it's not poisonous.'Why music? Because, first of all, the available evidence from my lab, and now many others around the world... The available evidence is that the neural structures that encode music are phylogenetically older than those that encode speech.
+>
+> **Chuck**: Wow. So, evolutionarily, we were musicians before we were talking to one another?
+>
+> **Daniel Levitin**: Yes, from a brain development standpoint, that's what it seems.
 
 These are just a few perspectives I was able to learn about in the last couple of weeks that give you a sense of the diversity of viewpoints. The bottom line is we don't know how language evolved because we can't go back in time to observe and speak to our ancestors.
 
@@ -134,11 +146,21 @@ Sadly, our distant ancestors thousands of years ago were fucking terrible at doc
 
 Even if we merge all these perspectives, it's not a stretch to say that language is a random collection of symbols and sounds that we have assigned some meaning to. Here are various [definitions of language](https://www.ijllnet.com/journals/Vol_4_No_3_September_2017/9.pdf) by scholars:
 
-> "Language is a purely human and non-instinctive method of communicating ideas, emotions and desires by means of voluntary produced symbols." (Edward Sapir, 1921)"A language is a system of arbitrary vocal symbols by means of which a social group cooperates." (B.Bloch and G.Trager, 1942)"From now on I will consider a language to be a set of sentences, each finite in length and constructed out of a finite set of elements." (Noam Chomsky, 1957)"We can define language as a system of communication using sounds or symbols that enable us to express our feelings, thoughts, ideas and experiences." (E.Bruce Goldstein, 2008)"Language is succinctly defined in our glossary as a human system of communication that uses arbitrary signals such as voice sounds, gestures, or written symbols. But frankly language is far too complicated, intriguing, and mysterious to be adequately explained by a brief definition." (Richard Nordquist, 2016)
+> "Language is a purely human and non-instinctive method of communicating ideas, emotions and desires by means of voluntary produced symbols." (Edward Sapir, 1921)"A language is a system of arbitrary vocal symbols by means of which a social group cooperates." (B.Bloch and G.Trager, 1942)
+>
+> "From now on I will consider a language to be a set of sentences, each finite in length and constructed out of a finite set of elements." (Noam Chomsky, 1957)
+>
+> "We can define language as a system of communication using sounds or symbols that enable us to express our feelings, thoughts, ideas and experiences." (E.Bruce Goldstein, 2008)
+>
+> "Language is succinctly defined in our glossary as a human system of communication that uses arbitrary signals such as voice sounds, gestures, or written symbols. But frankly language is far too complicated, intriguing, and mysterious to be adequately explained by a brief definition." (Richard Nordquist, 2016)
 
 Here's what [Steven Pinker](https://stevenpinker.com/files/pinker/files/edinburgh.pdf) has to say about language:
 
-> Language fascinates people for many reasons, but for me the most striking property is its vast expressive power. **People can sit for hours listening to other people make noise as they exhale, because those hisses and squeaks contain information about some message the speaker wishes to convey. The set of messages that can be encoded and decoded through language is, moreover, unfathomably vast**; it includes everything from theories of the origin of the universe to the latest twists of a soap opera plot. Accounting for this universal human talent, more impressive than telepathy, is in my mind the primary challenge for the science of language.**What is the trick behind our species' ability to cause each other to think specific thoughts by means of the vocal channel? There is not one trick, but two, and they were identified in the 19th century by continental linguists.**The first principle was articulated by Ferdinand de Saussure (1960), and lies behind the mental dictionary, a finite list of memorized words. A word is an arbitrary symbol, a connection between a signal and an idea shared by all members of a community. The word duck, for example, doesn't look like a duck, walk like a duck or quack like a duck, but we can use it to convey the idea of a duck because we all have, in our developmental history, formed the same connection between the sound and the meaning. Therefore, any of us can convey the idea virtually instantaneously simply by making that noise. The ability depends on speaker and hearer sharing a memory entry for the association, and in caricature that entry might look like this:
+> Language fascinates people for many reasons, but for me the most striking property is its vast expressive power. People can sit for hours listening to other people make noise as they exhale, because those hisses and squeaks contain information about some message the speaker wishes to convey. The set of messages that can be encoded and decoded through language is, moreover, unfathomably vast; it includes everything from theories of the origin of the universe to the latest twists of a soap opera plot. Accounting for this universal human talent, more impressive than telepathy, is in my mind the primary challenge for the science of language.
+
+What is the trick behind our species' ability to cause each other to think specific thoughts by means of the vocal channel? There is not one trick, but two, and they were identified in the 19th century by continental linguists.
+
+The first principle was articulated by Ferdinand de Saussure (1960), and lies behind the mental dictionary, a finite list of memorized words. A word is an arbitrary symbol, a connection between a signal and an idea shared by all members of a community. The word duck, for example, doesn't look like a duck, walk like a duck or quack like a duck, but we can use it to convey the idea of a duck because we all have, in our developmental history, formed the same connection between the sound and the meaning. Therefore, any of us can convey the idea virtually instantaneously simply by making that noise. The ability depends on speaker and hearer sharing a memory entry for the association, and in caricature that entry might look like this.
 
 ## What makes words offensive?
 
@@ -152,11 +174,15 @@ How do we know?
 
 Aphasia, a terrible brain disorder that affects the language-producing regions of the brain, offers some clues. Patients with aphasia lose their ability to speak, but they can often curse fluently—even better than seasoned rappers and Bengaluru auto drivers.
 
-> Swearing aloud, like hearing the swear words of others, taps the deeper and older parts of the brain. Aphasia, a loss of articulate language, is typically caused by damage to the cortex and the underlying white matter along the horizontal cleft (the Sylvian fissure) in the brain's left hemisphere. For almost as long as neurologists have studied aphasia, they have noticed that patients can retain the ability to swear.A case study of a British aphasic recorded him as repeatedly saying "Bloody hell," "Fuck off," "Fucking fucking hell cor blimey," and "Oh you bugger." The neurologist Norman Geschwind studied an American patient whose entire left hemisphere had been surgically removed because of brain cancer. The patient couldn't name pictures, produce or understand sentences, or repeat polysyllabic words, yet in the course of a five-minute interview he said "Goddammit" seven times, and "God!" and "Shit" once apiece. — From *[The Stuff of Thought: Language as a Window into Human Nature](https://www.amazon.in/Stuff-Thought-Language-Window-Nature/dp/0143114247/)* by Steven Pinker
+> Swearing aloud, like hearing the swear words of others, taps the deeper and older parts of the brain. Aphasia, a loss of articulate language, is typically caused by damage to the cortex and the underlying white matter along the horizontal cleft (the Sylvian fissure) in the brain's left hemisphere. For almost as long as neurologists have studied aphasia, they have noticed that patients can retain the ability to swear.
+>
+> A case study of a British aphasic recorded him as repeatedly saying "Bloody hell," "Fuck off," "Fucking fucking hell cor blimey," and "Oh you bugger." The neurologist Norman Geschwind studied an American patient whose entire left hemisphere had been surgically removed because of brain cancer. The patient couldn't name pictures, produce or understand sentences, or repeat polysyllabic words, yet in the course of a five-minute interview he said "Goddammit" seven times, and "God!" and "Shit" once apiece. — From *[The Stuff of Thought: Language as a Window into Human Nature](https://www.amazon.in/Stuff-Thought-Language-Window-Nature/dp/0143114247/)* by Steven Pinker
 
 Similarly, Tourette's syndrome, a neurodevelopmental disorder affecting the basal ganglia, often involves involuntary verbal tics. About 10% of people with Tourette's develop coprolalia—a condition characterized by uncontrollable swearing:
 
-> Coprolalia shows off the full range of taboo terms, and embraces similar meanings in different languages, suggesting that swearing really is a coherent neurobiological phenomenon. A recent literature review lists the following words from American Tourette’s patients, from most to least frequent:fuck, shit, cunt, motherfucker, prick, dick, cocksucker, nigger, cockey, bitch, pregnant-mother, bastard, tits, whore, doody, penis, queer, pussy, coitus, cock, ass, bowel movement, fangu (fuck in Italian), homosexual, screw, fag, faggot, schmuck, blow me, wopPatients may also produce longer expressions like Goddammit, You fucking idiot, Shit on you, and Fuck your fucking fucking cunt. A list from Spanishspeaking patients includes puta (whore), mierda (shit), cono (cunt), joder (fuck), maricon (fag), cojones (balls), hijo de puta (son of a whore), and hostia (host, the wafer in a communion ceremony). A list from Japan includes sukebe (lecherous), chin chin (cock), bakatara (stupid), dobusu (ugly), kusobaba (shitty old woman), chikusho (son of a whore), and an empty space in the list discreetly identified as “female sexual parts.” There has even been a report of a deaf sufferer of Tourette’s who produced “fuck” and “shit” in American Sign Language.— From *[The Stuff of Thought: Language as a Window into Human Nature](https://www.amazon.in/Stuff-Thought-Language-Window-Nature/dp/0143114247/ref=sr_1_1?crid=2R9O94RV59EK&dib=eyJ2IjoiMSJ9.ENYpPRkjxFUN6NFXTaL_vrfB779ZP2gX3F1guEcjhpwQiY9oqcrbGk7nm2ARxNJ-rWzehGrX29zBvrkVZDBTp08cfGhxgS5tDy6lTjvgIs2AH-unt_j7XzPJUbSRSWGbPpzv_fQ7TIWLo0hlVyWsRG1y9v0po6AOhI0lIJkt8H0F6XDmRbZWqLHju97Lqa2lLXx7CclswEtXibat7xG7FCErxF-SfOtrXeZeMtaA5yQ.Mr2V-WfG7EcRJj-JhIws5fvh9U3lfVSpZkawEO3HSFg&dib_tag=se&keywords=stuff+of+thought&qid=1734183858&sprefix=Stuff+of+th%2Caps%2C241&sr=8-1)* by Steven Pinker
+> Coprolalia shows off the full range of taboo terms, and embraces similar meanings in different languages, suggesting that swearing really is a coherent neurobiological phenomenon. A recent literature review lists the following words from American Tourette’s patients, from most to least frequent: fuck, shit, cunt, motherfucker, prick, dick, cocksucker, nigger, cockey, bitch, pregnant-mother, bastard, tits, whore, doody, penis, queer, pussy, coitus, cock, ass, bowel movement, fangu (fuck in Italian), homosexual, screw, fag, faggot, schmuck, blow me, wop.
+>
+> Patients may also produce longer expressions like Goddammit, You fucking idiot, Shit on you, and Fuck your fucking fucking cunt. A list from Spanishspeaking patients includes puta (whore), mierda (shit), cono (cunt), joder (fuck), maricon (fag), cojones (balls), hijo de puta (son of a whore), and hostia (host, the wafer in a communion ceremony). A list from Japan includes sukebe (lecherous), chin chin (cock), bakatara (stupid), dobusu (ugly), kusobaba (shitty old woman), chikusho (son of a whore), and an empty space in the list discreetly identified as “female sexual parts.” There has even been a report of a deaf sufferer of Tourette’s who produced “fuck” and “shit” in American Sign Language. — From *[The Stuff of Thought: Language as a Window into Human Nature](https://www.amazon.in/Stuff-Thought-Language-Window-Nature/dp/0143114247/ref=sr_1_1?crid=2R9O94RV59EK&dib=eyJ2IjoiMSJ9.ENYpPRkjxFUN6NFXTaL_vrfB779ZP2gX3F1guEcjhpwQiY9oqcrbGk7nm2ARxNJ-rWzehGrX29zBvrkVZDBTp08cfGhxgS5tDy6lTjvgIs2AH-unt_j7XzPJUbSRSWGbPpzv_fQ7TIWLo0hlVyWsRG1y9v0po6AOhI0lIJkt8H0F6XDmRbZWqLHju97Lqa2lLXx7CclswEtXibat7xG7FCErxF-SfOtrXeZeMtaA5yQ.Mr2V-WfG7EcRJj-JhIws5fvh9U3lfVSpZkawEO3HSFg&dib_tag=se&keywords=stuff+of+thought&qid=1734183858&sprefix=Stuff+of+th%2Caps%2C241&sr=8-1)* by Steven Pinker
 
 Of course, this is a simplification. The relationship between speech, language, and brain regions is more nuanced than a simple left-hemisphere versus right-hemisphere dichotomy. Still, it's fascinating that swearing taps into the brain's older, more primitive systems.
 
@@ -192,21 +218,33 @@ Rebecca Roache [articulates it beautifully](https://aeon.co/essays/where-does-sw
 
 The [inimitable George Carlin](https://youtu.be/mUvdXxhLPa8) again:
 
-> There are so many words you "can't say." Can't say fruit, can't say faggot, can't say Nancy boy, can't say pansy. Can't say nigger, boogie, jig, jungle bunny, molly, or schwartze. Can't say yid, heeb, kike, dago, guinea, wap, greaser, greaseball, spic, beaner, or PR. Can't say Mick, donkey, limey, frog, squarehead, kraut, Jerry, honky, chink, jack, nip, slope, zipperhead, gook—the list goes on.But here's the thing: there is absolutely nothing wrong with any of those words in and of themselves. They're just words. It's the *context* that counts. It's the *user*, the *intention* behind the words, that makes them good or bad. Words are neutral. Words are innocent.I get so tired of people going on about "bad words" or "bad language." That's bullshit. It's the context that matters. It's always the context.Take the word "nigger." There is absolutely nothing wrong with the word itself. It's just a combination of sounds. The problem lies with the racist asshole using it. That's who you ought to be concerned about.Think about it: we don't get upset when Richard Pryor or Eddie Murphy say it. Why? Because we know they're not racist—they're using it in a completely different way. *Context.* That's what makes all the difference.
+> There are so many words you "can't say." Can't say fruit, can't say faggot, can't say Nancy boy, can't say pansy. Can't say nigger, boogie, jig, jungle bunny, molly, or schwartze. Can't say yid, heeb, kike, dago, guinea, wap, greaser, greaseball, spic, beaner, or PR. Can't say Mick, donkey, limey, frog, squarehead, kraut, Jerry, honky, chink, jack, nip, slope, zipperhead, gook—the list goes on.
+>
+> But here's the thing: there is absolutely nothing wrong with any of those words in and of themselves. They're just words. It's the *context* that counts. It's the *user*, the *intention* behind the words, that makes them good or bad. Words are neutral. Words are innocent.
+>
+> I get so tired of people going on about "bad words" or "bad language." That's bullshit. It's the context that matters. It's always the context. Take the word "nigger." There is absolutely nothing wrong with the word itself. It's just a combination of sounds. The problem lies with the racist asshole using it. That's who you ought to be concerned about.Think about it: we don't get upset when Richard Pryor or Eddie Murphy say it. Why? Because we know they're not racist—they're using it in a completely different way. *Context.* That's what makes all the difference.
 
 Philosopher [Ernie Lepore](https://www.cambridge.org/core/journals/royal-institute-of-philosophy-supplements/article/inflammatory-language/747DD6C43BB2DEBF8CDD4639802D87E6) echoes this sentiment in the context of slurs:
 
-> I am not claiming that the speaker who tokens a slur term is blameworthy (or not), that any offense taken is warranted (or not). Nor am I claiming that the tokening was apt or inapt, necessary or gratuitous in achieving a particular point (whether it be rhetorical, pedagogical, artistic, etc.). These questions are downstream from the presence or absence of any offense effect. That is, first comes the offensive speech and then its moral assessment.**No one should deny that typical tokenings of slur terms can give rise to negative associations rooted in socio-historical, cultural, and psychological factors; these are open-ended, and so, not content-like. However, what I am claiming is that the trigger of these negative associations is not the word itself, but rather standard articulations of the word.**Note that on this proposal it becomes quite easy to account for the Hyper-projectivity Constraint. **You cannot token a slur term without articulating it. But if I am right that it is standard articulations of slur terms which cause the offensive sting, then regardless of where that articulation occurs so does the potential to offend, even inside quotes or meaning attributions or even homonyms.** And as far as meaning goes, as was illustrated above, we are able to deny any particular negative content without fear of linguistic incoherence because we are not appealing to meaning in order to account for an offensive sting. Indeed, for our purposes, slur terms may turn out be synonymous with their neutral counterparts.
+> I am not claiming that the speaker who tokens a slur term is blameworthy (or not), that any offense taken is warranted (or not). Nor am I claiming that the tokening was apt or inapt, necessary or gratuitous in achieving a particular point (whether it be rhetorical, pedagogical, artistic, etc.). These questions are downstream from the presence or absence of any offense effect. That is, first comes the offensive speech and then its moral assessment.
+>
+> **No one should deny that typical tokenings of slur terms can give rise to negative associations rooted in socio-historical, cultural, and psychological factors; these are open-ended, and so, not content-like. However, what I am claiming is that the trigger of these negative associations is not the word itself, but rather standard articulations of the word.** Note that on this proposal it becomes quite easy to account for the Hyper-projectivity Constraint.
+>
+> **You cannot token a slur term without articulating it. But if I am right that it is standard articulations of slur terms which cause the offensive sting, then regardless of where that articulation occurs so does the potential to offend, even inside quotes or meaning attributions or even homonyms.** And as far as meaning goes, as was illustrated above, we are able to deny any particular negative content without fear of linguistic incoherence because we are not appealing to meaning in order to account for an offensive sting. Indeed, for our purposes, slur terms may turn out be synonymous with their neutral counterparts.
 
 ### Words hurt
 
 On the other hand, one could argue that swear words force us to consider the unpleasant connotations, regardless of the context or articulation. In her delightful and brilliant book *[Holy Sh*t: A Brief History of Swearing](https://www.amazon.in/Holy-Sh-Brief-History-Swearing/dp/019049168X/)*, Melissa Mohr explores two aspects of words: their denotations (literal meanings) and their connotations (emotional and historical baggage). Here is a passage from her book:
 
-> Linguistically, a swearword is one that "kidnaps our attention and forces us to consider its unpleasant connotations," as Steven Pinker puts it. Connotation is a word's baggage, the emotional associations that go along with it, as opposed to its denotation, its dictionary definition. Cognitive psychologist Timothy Jay saw this distinction summed up in an exchange of graffiti on a bathroom wall. "You are all a bunch of fucking nymphomaniacs," one line read. Someone had circled "fucking" and added below, "There ain't no other kind."The second writer chose to interpret "fucking" as a denotative use, not a connotative one. The literal definition is, according to the Oxford English Dictionary, "that engages in or is engaged in sexual intercourse." It can have many connotations, however, from "really bad" to "extraordinarily good." "Fucking nymphomaniacs" could be either, really—it is difficult to tell whether the tone is one of admiration or exasperation. Swearwords are almost all connotation—they carry an emotional charge that exceeds the taboo status of their referents.
+> Linguistically, a swearword is one that "kidnaps our attention and forces us to consider its unpleasant connotations," as Steven Pinker puts it. Connotation is a word's baggage, the emotional associations that go along with it, as opposed to its denotation, its dictionary definition. Cognitive psychologist Timothy Jay saw this distinction summed up in an exchange of graffiti on a bathroom wall. "You are all a bunch of fucking nymphomaniacs," one line read. Someone had circled "fucking" and added below, "There ain't no other kind.
+>
+> "The second writer chose to interpret "fucking" as a denotative use, not a connotative one. The literal definition is, according to the Oxford English Dictionary, "that engages in or is engaged in sexual intercourse." It can have many connotations, however, from "really bad" to "extraordinarily good." "Fucking nymphomaniacs" could be either, really—it is difficult to tell whether the tone is one of admiration or exasperation. Swearwords are almost all connotation—they carry an emotional charge that exceeds the taboo status of their referents.
 
 One could also argue that since swear words are processed in the more primitive and emotional parts of the brain, their connotations bypass our perceptual filters and hit us with all their vivid and descriptive meanings:
 
-> **If you're an English speaker, you can't hear the words nigger or cunt or fucking without calling to mind what they mean to an implicit community of speakers, including the emotions that cling to them. To hear nigger is to try on, however briefly, the thought that there is something contemptible about African Americans, and thus to be complicit in a community that standardized that judgment by putting it into a word**.The same thing happens with other taboo imprecations: just hearing the words feels morally corrosive, so we consider them not just unpleasant to think but not to be thought at all—that is, taboo. None of this means that the words should be banned, only that their effects on listeners should be understood and anticipated. — Steven Pinker, *[The Stuff of Thought](https://www.amazon.in/Stuff-Thought-Language-Window-Nature/dp/0143114247/)*
+> **If you're an English speaker, you can't hear the words nigger or cunt or fucking without calling to mind what they mean to an implicit community of speakers, including the emotions that cling to them. To hear nigger is to try on, however briefly, the thought that there is something contemptible about African Americans, and thus to be complicit in a community that standardized that judgment by putting it into a word**.
+>
+> The same thing happens with other taboo imprecations: just hearing the words feels morally corrosive, so we consider them not just unpleasant to think but not to be thought at all—that is, taboo. None of this means that the words should be banned, only that their effects on listeners should be understood and anticipated. — Steven Pinker, *[The Stuff of Thought](https://www.amazon.in/Stuff-Thought-Language-Window-Nature/dp/0143114247/)*
 
 I guess there's something to this line of thinking. That said, I can't help but think of something that I heard the brilliant comedian [Ricky Gervais say](https://www.youtube.com/watch?v=qXLv1PHLilU):
 
@@ -220,11 +258,15 @@ Before I get to the *why*, it's impossible to talk about swearing without consid
 
 American linguist John McWhorter captures this madness perfectly in his book *[Nine Nasty Words: English in the Gutter](https://www.amazon.in/Nine-Nasty-Words-English-Forever/dp/0593188799):*
 
-> "Oh, jolly shit!" is funny first in that a woman—a mother, no less—was saying something with such a smutty feel in front of her kids but also in that it shows how our urge to curse often bypasses our fundamental instinct to make sense. What did "Oh, jolly shit!" mean, and if the answer is nothing, then why do we say such things?**"What the fuck is that?" is subject to similar questions—what part of speech, exactly, is fuck in that sentence? Profanity channels our essence without always making sense.**
+> "Oh, jolly shit!" is funny first in that a woman—a mother, no less—was saying something with such a smutty feel in front of her kids but also in that it shows how our urge to curse often bypasses our fundamental instinct to make sense. What did "Oh, jolly shit!" mean, and if the answer is nothing, then why do we say such things?
+>
+> **"What the fuck is that?" is subject to similar questions—what part of speech, exactly, is fuck in that sentence? Profanity channels our essence without always making sense.**
 
 A few more illustrations from Steven Pinker's *[The Stuff of Thought](https://www.amazon.in/Stuff-Thought-Language-Window-Nature/dp/0143114247/)*:
 
-> As it happens, taboo expletives aren't genuine adverbs, either. Another "study out in left field" notes that while you can say That's too fucking bad and That's no bloody good, you can't say That's too very bad or That's no really good. Also, as the linguist Geoffrey Nunberg has pointed out, while you can imagine the dialogue How brilliant was it? Very, you would never hear the dialogue How brilliant was it? Fucking.**Most anarchically of all, expletives can appear in the middle of a word or compound, as in in-fucking-credible, hot fucking dog, Rip van Fucking Winkel, cappu-fucking-ccino, and Christ al-fucking-mighty—the only known case in English of the morphological process known as infixation.** Bloody also may be infixed, as in abso-bloody-lutely and fan-bloody-tastic. In his memoir Portrait of the Artist as a Young Dog, Dylan Thomas writes, "You can always tell a cuckoo from Bridge End . . . it goes cuck-BLOODY-oo, cuck-BLOODY-oo, cuck-BLOODY-oo."
+> As it happens, taboo expletives aren't genuine adverbs, either. Another "study out in left field" notes that while you can say That's too fucking bad and That's no bloody good, you can't say That's too very bad or That's no really good. Also, as the linguist Geoffrey Nunberg has pointed out, while you can imagine the dialogue How brilliant was it? Very, you would never hear the dialogue How brilliant was it? Fucking.
+>
+> **Most anarchically of all, expletives can appear in the middle of a word or compound, as in in-fucking-credible, hot fucking dog, Rip van Fucking Winkel, cappu-fucking-ccino, and Christ al-fucking-mighty—the only known case in English of the morphological process known as infixation.** Bloody also may be infixed, as in abso-bloody-lutely and fan-bloody-tastic. In his memoir Portrait of the Artist as a Young Dog, Dylan Thomas writes, "You can always tell a cuckoo from Bridge End . . . it goes cuck-BLOODY-oo, cuck-BLOODY-oo, cuck-BLOODY-oo."
 
 One of my favorite examples of the grammatical anarchy of profanity comes from *[Holy Sh*t](https://www.amazon.in/Holy-Sh-Brief-History-Swearing/dp/019049168X/)*:
 
@@ -240,7 +282,7 @@ How do we know this?
 
 Benjamin Bergen, author of *What the F*, captures this idea perfectly:
 
-> Well it's demonstrably true that the only reason these words have power is because of how we treat them. A child who's punished for using a word or who sees caregivers avoid it in public is learning about the social rules governing rules. And those lessons are hard to unlearn. The word "fuck" wouldn't have the power it does if it weren't for all the people trying to get you not to say it.— [Benjamin Bergen](https://www.reddit.com/r/IAmA/comments/565p7j/comment/d8gp5oo/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button), author of *[WHAT THE F](https://amazon.in/WHAT-F-Benjamin-K-Bergen/dp/0465060919)*
+> Well it's demonstrably true that the only reason these words have power is because of how we treat them. A child who's punished for using a word or who sees caregivers avoid it in public is learning about the social rules governing rules. And those lessons are hard to unlearn. The word "fuck" wouldn't have the power it does if it weren't for all the people trying to get you not to say it. — [Benjamin Bergen](https://www.reddit.com/r/IAmA/comments/565p7j/comment/d8gp5oo/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button), author of *[WHAT THE F](https://amazon.in/WHAT-F-Benjamin-K-Bergen/dp/0465060919)*
 
 It’s remarkable that these words, which are nothing more than socio-cultural constructions, can have such a strong hold on us and evoke such a variety of reactions.
 
@@ -268,25 +310,33 @@ We sometimes use profanity as a weapon to abuse, intimidate, or humiliate others
 
 When someone bumps into you in traffic, you don't say "crap," you scream "motherfucker," or if you have the misfortune of having to drive in Bengaluru, then "gandu," "chooth," and "laude" tend to be at the tip of your tongue.
 
-> **Steven Pinker:** For example, you can liken people to effluvia and their associated organs and accessories when you refer to someone as a piece of shit, an asshole, or a dickhead. You can advise them to engage in undignified activities such as "eat shit," "shove it up your ass," or "fuck yourself." You can accuse them of having engaged in undignified sexual activities, and every undignified sexual activity has an obscene imprecation: incest as in "motherfucker," sodomy as in "bugger," fellatio as in "cocksucker," masturbation as in "jerk" and "wanker."**And my favorite comes from bestiality - a curse that was last used in 1585, but I suggest should be revived. The next time someone cuts you off in traffic, instead of using one of those hackneyed clichés, I suggest you advise the person to kiss the cunt of a cow, which would at least bring some fresh imagery to the situation.**
+> **Steven Pinker:** For example, you can liken people to effluvia and their associated organs and accessories when you refer to someone as a piece of shit, an asshole, or a dickhead. You can advise them to engage in undignified activities such as "eat shit," "shove it up your ass," or "fuck yourself." You can accuse them of having engaged in undignified sexual activities, and every undignified sexual activity has an obscene imprecation: incest as in "motherfucker," sodomy as in "bugger," fellatio as in "cocksucker," masturbation as in "jerk" and "wanker."
+>
+> **And my favorite comes from bestiality - a curse that was last used in 1585, but I suggest should be revived. The next time someone cuts you off in traffic, instead of using one of those hackneyed clichés, I suggest you advise the person to kiss the cunt of a cow, which would at least bring some fresh imagery to the situation.**
 
 **Idiomatic swearing**
 
 This is the mildest form of swearing. We often use taboo words to convey context about a situation rather than the literal meaning of the word. For example, I use "my ass" heavily when I'm with friends and colleagues and need to say no or point out the absurdity or improbability of some assertion.
 
-> Idiomatic swearing uses words like "shit," "piss," and "fuck" in expressions that don't always make literal sense but serve other functions. Phrases like "shit out of luck," "get your shit together," "piss-poor," "pissed off," "my ass," "a pain in the ass," and "sweet fuck-all" rely on these swear words, yet it's puzzling exactly what those words are doing in these contexts. These words are used not for their direct meaning but for their ability to grab attention and shock the listener.Swearing in this way also serves other social purposes. It can be a way to assert a "macho" or "cool" persona, or it might be used more casually among friends to express informality. In these settings, the use of swear words signals that you're in an environment where you don't have to censor yourself, creating a sense of ease or camaraderie.
+> Idiomatic swearing uses words like "shit," "piss," and "fuck" in expressions that don't always make literal sense but serve other functions. Phrases like "shit out of luck," "get your shit together," "piss-poor," "pissed off," "my ass," "a pain in the ass," and "sweet fuck-all" rely on these swear words, yet it's puzzling exactly what those words are doing in these contexts. These words are used not for their direct meaning but for their ability to grab attention and shock the listener.
+>
+> Swearing in this way also serves other social purposes. It can be a way to assert a "macho" or "cool" persona, or it might be used more casually among friends to express informality. In these settings, the use of swear words signals that you're in an environment where you don't have to censor yourself, creating a sense of ease or camaraderie.
 
 **Emphatic swearing**
 
 There are moments when we need to emphasize or call attention to something:
 
-> The taboo word is often used to draw a listener's attention, emphasizing the following noun or adjective. For example: "This is really, really fucking brilliant," or "He thinks he's a fucking scoutmaster, Rip Van fuckin' Winkle."When emphatic and idiomatic swearing is overused, it can lead to a form of English sometimes referred to as "fuck patois." This is a style where swearing is so pervasive that it becomes almost a defining feature of the language. An example of this can be found in the story of a soldier who says, "I come home to my fucking house after three fucking years in the fucking war, and what do I fucking well find? My wife in bed, engaged in illicit sexual relations with a male!"
+> The taboo word is often used to draw a listener's attention, emphasizing the following noun or adjective. For example: "This is really, really fucking brilliant," or "He thinks he's a fucking scoutmaster, Rip Van fuckin' Winkle.
+>
+> "When emphatic and idiomatic swearing is overused, it can lead to a form of English sometimes referred to as "fuck patois." This is a style where swearing is so pervasive that it becomes almost a defining feature of the language. An example of this can be found in the story of a soldier who says, "I come home to my fucking house after three fucking years in the fucking war, and what do I fucking well find? My wife in bed, engaged in illicit sexual relations with a male!"
 
 **Cathartic swearing**
 
 Perhaps the most universal reason to swear: expressing pain, frustration, or anger. When you hit your finger while closing the door or stub your toe, you don’t pray to God; you let out a good and throaty *fuck*. In similar situations, animals react in fury and make a range of noises, but in humans, the language system is triggered.
 
-> The great sociologist Erving Goffman argued that cathartic swearing is not just an overflow of emotion; it's a form of communication. When someone swears in a cathartic way, they are signaling to a real or virtual audience that they are experiencing intense emotions—emotions so strong that they can't fully control them. Despite this, the act of swearing clearly conveys the specific emotion being felt.In this context, swearing becomes a tool for expressing the depth of one's feelings, providing a kind of emotional transparency. It's a way of letting others know, "I'm overwhelmed, and this is how I'm processing it right now." This communicative function of swearing helps others understand the emotional state of the speaker, even if they don't directly articulate the emotion.
+> The great sociologist Erving Goffman argued that cathartic swearing is not just an overflow of emotion; it's a form of communication. When someone swears in a cathartic way, they are signaling to a real or virtual audience that they are experiencing intense emotions—emotions so strong that they can't fully control them. Despite this, the act of swearing clearly conveys the specific emotion being felt.
+>
+> In this context, swearing becomes a tool for expressing the depth of one's feelings, providing a kind of emotional transparency. It's a way of letting others know, "I'm overwhelmed, and this is how I'm processing it right now." This communicative function of swearing helps others understand the emotional state of the speaker, even if they don't directly articulate the emotion.
 
 Apart from these five types of swearing that Pinker proposes, swearing performs a wide variety of roles. Swearing helps people express emotions and sentiments that ordinary language cannot:
 
@@ -301,13 +351,19 @@ Swearing serves numerous social functions:
 
 This reminded me of something I heard on this brilliant [Freakonomics podcast episode](https://freakonomics.com/podcast/swearing-is-more-important-than-you-think-uncensored/):
 
-> **Stephen Dubner:** As to the why, the purpose of swearing — and obviously, it differs from person to person, situation to situation — even I can think of a lot of different reasons. You might be angry. You might be disgusted. You might be trying to elicit humor from someone else. You might be trying to bond. You might be trying to show that you are your own person and I won't be bound by society's rules. If I ask you to give the answer to the title of this one book of yours, [Why We Curse](https://amzn.to/3MX28I4) — why do we? How answerable is that question?**Timothy Jay:** You just answered it. Stephen, you just elaborated a lot of the reasons why people swear. Now, we're the only animal with emotional architecture in the physiological that can express our emotions abstractly with words. I regard this as an evolutionary leap, that instead of fighting tooth and nail when we're angry with someone, we can say, "I hate you," or a variety of other words.
+> **Stephen Dubner:** As to the why, the purpose of swearing — and obviously, it differs from person to person, situation to situation — even I can think of a lot of different reasons. You might be angry. You might be disgusted. You might be trying to elicit humor from someone else. You might be trying to bond. You might be trying to show that you are your own person and I won't be bound by society's rules. If I ask you to give the answer to the title of this one book of yours, [Why We Curse](https://amzn.to/3MX28I4) — why do we? How answerable is that question?
+>
+> **Timothy Jay:** You just answered it. Stephen, you just elaborated a lot of the reasons why people swear. Now, we're the only animal with emotional architecture in the physiological that can express our emotions abstractly with words. I regard this as an evolutionary leap, that instead of fighting tooth and nail when we're angry with someone, we can say, "I hate you," or a variety of other words.
 
 The other way of trying to understand the role of profanity is to look at it from an evolutionary lens. Most human features we have evolved over thousands of years due to evolutionary pressures, and language is no exception. If that is the case, then what evolutionary purpose does profanity serve?
 
 This is the same question that cognitive scientist and podcaster Scott Barry Kaufman [asked linguist John McWhorter:](https://youtu.be/vJ_I0bir0yM)
 
-> **Scott Barry Kaufman**: I'm also just interested in the evolutionary origins of why curse words exist, in the sense that every language has profanity. I mean, it ticks the boxes in terms of something evolutionary—maybe a spandrel. I’ll say it's probably a spandrel, not an adaptation. But yeah, what is that? What is the spandrel of it? What’s the underlying human drive or human need? It’s a similar question to why every culture has religion. What function does that serve from an evolutionary survival or reproduction point of view?**John McWhorter**: Well, I think… what do you think? I think, in terms of the spandrel, what happens is that you use something that started as a word in order to transgress, or to have certain things that are taboo. Because that’s part of what unites a society together: what things you consider taboo. And that kind of odd respect for those taboos. So yeah, the spandrel analogy is very apt. There is probably—though I haven’t checked all of them—no language where there aren’t things you're not supposed to say, but are said anyway. The only question is, what domain are those words going to cluster around? It depends on what horrifies or concerns the society.So yeah, that's part of what it is to be human.
+> **Scott Barry Kaufman**: I'm also just interested in the evolutionary origins of why curse words exist, in the sense that every language has profanity. I mean, it ticks the boxes in terms of something evolutionary—maybe a spandrel. I’ll say it's probably a spandrel, not an adaptation. But yeah, what is that? What is the spandrel of it? What’s the underlying human drive or human need? It’s a similar question to why every culture has religion. What function does that serve from an evolutionary survival or reproduction point of view?
+>
+> **John McWhorter**: Well, I think… what do you think? I think, in terms of the spandrel, what happens is that you use something that started as a word in order to transgress, or to have certain things that are taboo. Because that’s part of what unites a society together: what things you consider taboo. And that kind of odd respect for those taboos. So yeah, the spandrel analogy is very apt. There is probably—though I haven’t checked all of them—no language where there aren’t things you're not supposed to say, but are said anyway. The only question is, what domain are those words going to cluster around? It depends on what horrifies or concerns the society.
+>
+> So yeah, that's part of what it is to be human.
 
 I asked ChatGPT to explain what a spandrel is:
 
@@ -335,12 +391,27 @@ So that means the history of swearing begins with the written word. A quick Goog
 
 Here’s one [such example](https://janes.scholasticahq.com/article/2238-humor-and-cuneiform-literature/attachment/6179.pdf):
 
-> The next section of the preserved text is a parody of a menology, where for each month, the **aluzinnu** (a trickster or buffoon figure) humorously provides a menu, supposedly quoting a prescriptive original:**In Tasritu**, what is your diet?“Thou shalt eat spoiled oil on onions
-> And plucked chicken feathers in porridge.”**In Arahshamna**, what is your diet?“Thou shalt eat weeds in turnips
-> And … [text unclear].”**In Kislimu**, what is your diet?“Thou shalt eat donkey dung in bitter garlic
-> And emmer chaff in sour milk.”**In Tebitu**, what is your diet?“Thou shalt eat in butter the eggs of a caged goose,
-> Stored in sand and cumin infused with Euphrates water.”**In Sabatu**, what is your diet?“Thou shalt eat whole a jackass’ anus,
-> Stuffed with dog turds and fly dirt.
+> The next section of the preserved text is a parody of a menology, where for each month, the aluzinnu (a trickster or buffoon figure) humorously provides a menu, supposedly quoting a prescriptive original:
+>
+> In Tasritu, what is your diet?
+“Thou shalt eat spoiled oil on onions
+And plucked chicken feathers in porridge.”
+> 
+> In Arahshamna, what is your diet?
+“Thou shalt eat weeds in turnips
+And … [text unclear].”
+> 
+> In Kislimu, what is your diet?
+“Thou shalt eat donkey dung in bitter garlic
+And emmer chaff in sour milk.”
+>
+> In Tebitu, what is your diet?
+“Thou shalt eat in butter the eggs of a caged goose,
+Stored in sand and cumin infused with Euphrates water.”
+> In Sabatu, what is your diet?
+“Thou shalt eat whole a jackass’ anus,
+Stuffed with dog turds and fly dirt.
+>
 > You won’t have worn out the teeth of a threshing board…”
 
 That’s quite funny.
@@ -361,7 +432,9 @@ This is a brilliant frame for thinking about the evolution of profanity, one tha
 
 The Roman notions about what was obscene and profane share many similarities with English:
 
-> Linguists generally agree that the worst words in English are the “Big Six”: *cunt, fuck, cock* (or *dick*), *ass, shit,* and *piss*. Ancient Latin had a “Big Ten”: *cunnus* (cunt), *futuō* (to fuck), *mentula* (cock), *verpa* (erect or circumcised cock), *landica* (clit), *culus* (ass), *pedicō* (to bugger), *cacō* (to shit), *irrumo,* and *fellō*.Some of these words are very similar in English and Latin—*cunnus* and *cacō* are equally bad in both languages and used in similar ways. Some, such as *futuō* and *landica,* start to reveal some differences. *Landica* was a horrible obscenity in Latin, while *clit* is barely on the radar in English. And then there are words such as *irrūmatio* that English just doesn’t have, which point to ways in which the Romans were really different from us. **The ancient Romans didn’t think about sexuality in terms of heterosexual or homosexual—they divided people up by whether they were active or passive during sex. This (to us) unusual schema gives rise to a very different obscene vocabulary.**
+> Linguists generally agree that the worst words in English are the “Big Six”: *cunt, fuck, cock* (or *dick*), *ass, shit,* and *piss*. Ancient Latin had a “Big Ten”: *cunnus* (cunt), *futuō* (to fuck), *mentula* (cock), *verpa* (erect or circumcised cock), *landica* (clit), *culus* (ass), *pedicō* (to bugger), *cacō* (to shit), *irrumo,* and *fellō*.
+>
+> Some of these words are very similar in English and Latin—*cunnus* and *cacō* are equally bad in both languages and used in similar ways. Some, such as *futuō* and *landica,* start to reveal some differences. *Landica* was a horrible obscenity in Latin, while *clit* is barely on the radar in English. And then there are words such as *irrūmatio* that English just doesn’t have, which point to ways in which the Romans were really different from us. **The ancient Romans didn’t think about sexuality in terms of heterosexual or homosexual—they divided people up by whether they were active or passive during sex. This (to us) unusual schema gives rise to a very different obscene vocabulary.**
 
 The swear words mentioned above are in the order of the least offensive to the most. Before I give you a brief description of these Roman obscenities, there are notable differences given that Romans had a modern attitude towards sex.
 
@@ -383,11 +456,19 @@ There were also numerous religious ceremonies and festivals where people would e
 
 Most Roman cities were full of graffiti. We know this because the eruption of Vesuvius preserved some spectacular insults. *Cunnus* and cunt mean the same thing and were offensive in Rome then, as they are in English today. Much like the British today, the Romans put the word to spectacular use:
 
-> "Corus licks cunt" (Corus cunnum lingit)"Jucundus licks the cunt of Rustica" (Iucundus cunum lingit Rusticae)"It is much better to fuck a hairy cunt than one which is smooth; it holds in the steam and stimulates the cock" (Futuitur cunnus pilossus multo melius quam glaber / eadem continet vaporem et eadem verrit mentulam)
+> "Corus licks cunt" (Corus cunnum lingit)"
+>
+> Jucundus licks the cunt of Rustica" (Iucundus cunum lingit Rusticae)"
+>
+> It is much better to fuck a hairy cunt than one which is smooth; it holds in the steam and stimulates the cock" (Futuitur cunnus pilossus multo melius quam glaber / eadem continet vaporem et eadem verrit mentulam)
 
 And perhaps my favorite involves a possibly jilted lover:
 
-> "Here I bugger Rufus, dear to ... :despair, you girls.Arrogant cunt, farewell!"
+> "Here I bugger Rufus, dear to ... :
+>
+> despair, you girls.
+>
+> Arrogant cunt, farewell!"
 
 Mohr writes that *caco*, the Latin term for shit, was a vulgar term in Rome but not obscene. Barring the wealthy, most Romans used open and public toilets with no walls or curtains to shield their modesty. Some of these public toilets were massive, with up to a hundred seats:
 
@@ -397,7 +478,9 @@ Mohr writes that *caco*, the Latin term for shit, was a vulgar term in Rome but 
 
 Profanity could be put to [spectacular use](https://en.wikipedia.org/wiki/Glaphyra_(hetaera)) in politics and warfare. The Perusine War (41–40 BCE) was a civil conflict that erupted after the assassination of Julius Caesar in 44 BCE. The war was fought between forces loyal to the future Roman emperor Octavian against the forces loyal to Mark Antony and his wife Fulvia.
 
-> Glaphyra appeared to be a powerful lady at the Royal Court and was involved in internal politics in Cappadocia. Her powerful influence can be demonstrated by contemporary invective about the time of the [Perusine War](https://en.wikipedia.org/wiki/Perusine_War) in 41 BC, by certain frank and famous verses which [Triumvir Octavian](https://en.wikipedia.org/wiki/Augustus) composed about Antony. Antony had fallen in love with her. Allegedly Octavian wrote a vulgar squib about the affair, referring to Antony's wife [Fulvia](https://en.wikipedia.org/wiki/Fulvia):"Because Antony fucks Glaphyra, Fulvia has arrangedthis punishment for me: that I fuck her too.That I fuck Fulvia? What if Manius begged meto bugger him? Would I? I don't think so, if I were sane.'Either fuck or let's fight,' she says. Doesn't she knowmy prick is dearer to me than life itself? Let the trumpets blare!"
+> Glaphyra appeared to be a powerful lady at the Royal Court and was involved in internal politics in Cappadocia. Her powerful influence can be demonstrated by contemporary invective about the time of the [Perusine War](https://en.wikipedia.org/wiki/Perusine_War) in 41 BC, by certain frank and famous verses which [Triumvir Octavian](https://en.wikipedia.org/wiki/Augustus) composed about Antony. Antony had fallen in love with her. Allegedly Octavian wrote a vulgar squib about the affair, referring to Antony's wife [Fulvia](https://en.wikipedia.org/wiki/Fulvia):
+>
+> "Because Antony fucks Glaphyra, Fulvia has arrangedthis punishment for me: that I fuck her too.That I fuck Fulvia? What if Manius begged meto bugger him? Would I? I don't think so, if I were sane.'Either fuck or let's fight,' she says. Doesn't she knowmy prick is dearer to me than life itself? Let the trumpets blare!"
 
 The quoted excerpt below is even funnier. Imagine the dedication required to engrave bullets with insults about your enemies. That’s some next-level warfare right there:
 
@@ -417,7 +500,7 @@ This poem was so hardcore it wasn't even [translated](https://theconversation.co
 
 The Roman senator Decimus Valerius Asiaticus faced a similar accusation of being a bit too "soft" and “girly” by Senator Publius Suillius Rufus. Asiaticus is said to [have replied](https://muse.jhu.edu/pub/306/article/730523), Ask your sons if I am too "girly,” and they’ll tell you:
 
-> Tacitus, for instance, describes the reaction of the Roman senator Decimus Valerius Asiaticus, accused by Senator Publius Suillius Rufus of *mollitiam corporis* (literally "softness of the body" or sexual effeminacy): **"'Question thy sons, Suillius,' he broke out; 'they will confess me a man!' "[80](https://muse.jhu.edu/pub/306/article/730523#f80) Asiaticus affirms his threatened masculinity by bragging of his prowess in penetrating his accuser's sons, again demonstrating that penetration—rather than the partner's gender—defined masculinity.**
+> Tacitus, for instance, describes the reaction of the Roman senator Decimus Valerius Asiaticus, accused by Senator Publius Suillius Rufus of *mollitiam corporis* (literally "softness of the body" or sexual effeminacy): **'Question thy sons, Suillius,' he broke out; 'they will confess me a man!' "[80](https://muse.jhu.edu/pub/306/article/730523#f80) Asiaticus affirms his threatened masculinity by bragging of his prowess in penetrating his accuser's sons, again demonstrating that penetration—rather than the partner's gender—defined masculinity.**
 
 What a man, this Asiaticus. 
 
@@ -431,7 +514,9 @@ The Romans considered the mouth one of the most sacred parts of the body, and pe
 
 One of the funniest anecdotes in Mohr's book is about penises. The Romans loved phallic symbolism, which makes sense when you consider that sex was an act of dominance. The Romans wielded their dicks much like swords:
 
-> Walking around in ancient Rome, one saw a lot of penises. There were erect penises sculpted, painted, and scratched over door frames, on chariot wheels, in gardens, on the borders of fields, in elaborate murals in reception rooms of fancy villas, hung around the necks of prepubescent boys. Even the Forum of Augustus, the center of Roman political and military life, was designed in the shape of an erection. Some scholars argue that it is an example of architecture parlante—a building whose form speaks to its purpose.The forum was where military triumphs were celebrated, where law cases were argued, where boys came to put aside their childish clothing and assume the toga virilis, the garment that marked them out as full Roman citizens, as men. Something that today we see only in private was displayed prominently in public in ancient Rome.
+> Walking around in ancient Rome, one saw a lot of penises. There were erect penises sculpted, painted, and scratched over door frames, on chariot wheels, in gardens, on the borders of fields, in elaborate murals in reception rooms of fancy villas, hung around the necks of prepubescent boys. Even the Forum of Augustus, the center of Roman political and military life, was designed in the shape of an erection. Some scholars argue that it is an example of architecture parlante—a building whose form speaks to its purpose.
+>
+> The forum was where military triumphs were celebrated, where law cases were argued, where boys came to put aside their childish clothing and assume the toga virilis, the garment that marked them out as full Roman citizens, as men. Something that today we see only in private was displayed prominently in public in ancient Rome.
 
 [](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4bc4afce-9191-4982-b979-ce0d9988abcb_1200x799.jpeg)
 
@@ -442,7 +527,9 @@ Despite the ubiquity of dick pics, sculptures, and symbolism, *mentula*, the Lat
 Perplexingly, the obscene also had protective power. Victorious generals would be serenaded with obscene and vulgar songs to protect them. When Caesar returned to Rome after vanquishing the Gauls, he was mocked for being a *cinaedus* (cocksucker):
 
 > **"Gallias Caesar subegit, Nicomedes Caesarem"**
-> ("Caesar conquered Gaul, Nicomedes conquered Caesar.")During Caesar's Gallic [Triumph](https://en.wikipedia.org/wiki/Roman_triumph) a popular verse began: "*Gallias Caesar subegit, Caesarem Nicomedes*," (Caesar laid the Gauls low, Nicomedes laid Caesar low), suggesting that Caesar was the submissive [receiving partner](https://en.wikipedia.org/wiki/Top,_bottom_and_versatile) in the relationship. It is unknown if a sexual relationship existed or was only a story told by his opponents, and Caesar vigorously denied its truthfulness. — [Wiki](https://en.wikipedia.org/wiki/Nicomedes_IV_of_Bithynia)
+> ("Caesar conquered Gaul, Nicomedes conquered Caesar.")
+>
+> During Caesar's Gallic [Triumph](https://en.wikipedia.org/wiki/Roman_triumph) a popular verse began: "*Gallias Caesar subegit, Caesarem Nicomedes*," (Caesar laid the Gauls low, Nicomedes laid Caesar low), suggesting that Caesar was the submissive [receiving partner](https://en.wikipedia.org/wiki/Top,_bottom_and_versatile) in the relationship. It is unknown if a sexual relationship existed or was only a story told by his opponents, and Caesar vigorously denied its truthfulness. — [Wiki](https://en.wikipedia.org/wiki/Nicomedes_IV_of_Bithynia)
 
 You may have noticed that I’ve used the terms swearing, cursing, obscenity, and vulgarity interchangeably. This is deliberate because that’s how we use them today. But in Rome and the Middle Ages, these words carried distinct meanings.
 
@@ -463,7 +550,14 @@ To get another taste of the use of obscenities and insults, one can look to the 
 
 And [these gems](https://www.poetryintranslation.com/PITBR/Latin/Martial.php):
 
-> He’s quite well, Charinus, still he’s pale.Hardly drinks, Charinus, still he’s pale.A fine digestion too, Charinus, still he’s pale.He takes the sun, Charinus, still he’s pale.He dyes his skin, Charinus, still he’s pale.Eats pussy, yet, Charinus, still he’s pale.-Chloe, I could live without your face,without your neck, and hands, and legswithout your breasts, and ass, and hips,and Chloe, not to labour over details,I could live without the whole of you.
+> He’s quite well, Charinus, still he’s pale.
+> Hardly drinks, Charinus, still he’s pale.
+> A fine digestion too, Charinus, still he’s pale.
+> He takes the sun, Charinus, still he’s pale.
+> He dyes his skin, Charinus, still he’s pale.
+> Eats pussy, yet, Charinus, still he’s pale.
+--
+> -Chloe, I could live without your face,without your neck, and hands, and legswithout your breasts, and ass, and hips,and Chloe, not to labour over details,I could live without the whole of you.
 
 As we leave ancient Rome and its cornucopia of penises adorning it’s walls and citizens' necks, we now journey back further to biblical times to explore another crucial dimension of swearing—its religious origins.
 
@@ -503,7 +597,7 @@ God is also very detail-oriented. Right from the beginning, he gives detailed in
 
 Then he posts another divine clarification:
 
-> You shall not swear by my name falsely, and so profane the name of your God: I am the Lord. (Leviticus 19:12)
+> You shall not swear by my name falsely, and so profane the name of your God: I am the Lord. — **(Leviticus 19:12)**
 
 Scholars disagree that these were the earliest tweets, to which I say, fuck the scholars.
 
@@ -523,7 +617,9 @@ But the New Testament isn’t so liberal. Here’s a passage from Paul’s lette
 
 Surely Paul was a hit at parties. But why is he so concerned about words? Melissa Mohr explains:
 
-> This is not so much because the words involved are themselves foul—greed, for instance, is not a bad word—but because saying the word leads to thinking about what the word represents, which can all too easily lead to action. Just as when God forbids people even to mention the names of other gods, lest they be inspired to worship them, the author of Ephesians seems to fear a chain reaction in which you mention fornication, then you begin thinking about fornicating, and pretty soon you're "fucking like any furious fornicator," in the immortal words of sixteenth-century Scottish poet Sir David Lyndsay.The theory of language that motivates this fear is the same one that linguists and other scholars often use to understand swearing. Swearwords are thought to have a deeper connection to the things they represent than do other words; implicit in the Letter to the Ephesians is a similar claim about all words. In Ephesians, the link between word and referent is almost magical, so strong that merely saying a word seems almost inevitably to lead to the doing of the thing to which it refers.
+> This is not so much because the words involved are themselves foul—greed, for instance, is not a bad word—but because saying the word leads to thinking about what the word represents, which can all too easily lead to action. Just as when God forbids people even to mention the names of other gods, lest they be inspired to worship them, the author of Ephesians seems to fear a chain reaction in which you mention fornication, then you begin thinking about fornicating, and pretty soon you're "fucking like any furious fornicator," in the immortal words of sixteenth-century Scottish poet Sir David Lyndsay.
+>
+> The theory of language that motivates this fear is the same one that linguists and other scholars often use to understand swearing. Swearwords are thought to have a deeper connection to the things they represent than do other words; implicit in the Letter to the Ephesians is a similar claim about all words. In Ephesians, the link between word and referent is almost magical, so strong that merely saying a word seems almost inevitably to lead to the doing of the thing to which it refers.
 
 Huh, that’s some magical thinking. One utterance of “fuck” and you’ll soon be fucking anything that moves like a rabbit? I’d bet a lot of people wish obscene words had this genie-like ability.
 
@@ -612,7 +708,9 @@ Another one that would’ve gotten him cancelled in 2024:
 > **Middle English**
 > And prively he caughte her by the queynte,
 > And seyde, ‘Ywis, but if ich have my wille,
-> For deerne love of thee, lemman, I spille.**Modern English Translation**
+> For deerne love of thee, lemman, I spille.
+>
+> **Modern English Translation**
 > And secretly he grabbed her by the crotch,
 > And said, ‘Truly, unless I get my wish,
 > I’ll die from my hidden love for you, my darling.
@@ -682,7 +780,9 @@ The law of the time relied heavily on oaths. People were judged innocent or guil
 
 As I mentioned earlier, people not only swore on God or Christ but also on different parts of their bodies, such as "by God's teeth," "God's nails," and "by God's wounds." And my favorite, "by God's balls," is supposedly attributed to Chaucer, though I was able to verify that:
 
-> Most of you will be unsurprised that I find the history of swearing in the English language a fascinating topic. A lot of modern English "swear" words were actually just everyday words in Old English (Sh*t being the obvious example) that became regarded as vulgar with the English language itself after the Norman conquest. The "c" word today is regarded as probably the worst swear word you can say, but in the middle ages it seems to have been more acceptable: You can find it in many places in the works of Chaucer and many English cities, including London and Oxford, in medieval times had a "Grope c**t" Street or Lane, believed to denote the "red light" districts. "Swearing" in those days was a religious matter, with the worst thing you could possibly say being something like "God's Blood and bowels". **I once used the term "God's balls" in a novel set in medieval times and a lot of folk thought I was trying to be funny, but its a direct quote from Chaucer. — [Goodreads](https://www.goodreads.com/topic/show/719214-roman-empire-to-476ad?page=6)**
+> Most of you will be unsurprised that I find the history of swearing in the English language a fascinating topic. A lot of modern English "swear" words were actually just everyday words in Old English (Sh*t being the obvious example) that became regarded as vulgar with the English language itself after the Norman conquest. The "c" word today is regarded as probably the worst swear word you can say, but in the middle ages it seems to have been more acceptable: You can find it in many places in the works of Chaucer and many English cities, including London and Oxford, in medieval times had a "Grope c**t" Street or Lane, believed to denote the "red light" districts.
+>
+> "Swearing" in those days was a religious matter, with the worst thing you could possibly say being something like "God's Blood and bowels". **I once used the term "God's balls" in a novel set in medieval times and a lot of folk thought I was trying to be funny, but its a direct quote from Chaucer. — [Goodreads](https://www.goodreads.com/topic/show/719214-roman-empire-to-476ad?page=6)**
 
 Church officials were concerned by such oaths because Christians believed that Jesus ascended to heaven in his human form. To swear false oaths was seen as literally hurting Jesus. wearing on Christ’s arm and then breaking your promise was like, well, ripping his arm off.
 
@@ -690,7 +790,9 @@ Damn, that’s some dramatic shit.
 
 Here’s an interesting excerpt from John McWhorter’s *[Nine Nasty Words](https://www.amazon.in/Nine-Nasty-Words-English-Forever/dp/0593188799).*
 
-> Hold up: Swearing is what this whole book is about, right? But our use of swear as a synonym for profanity is actually a holdover from an earlier usage that made more sense. After all, one might ask just what swearing in its literal meaning—affirming your belief in something—has to do with what you yell when you stub your toe. To the medievals, swearing was about swearing—in the actual sense—to God and Jesus, and was taken seriously to an extent difficult for most of us to wrap our heads around today. John McWhorterTo the ancients, swearing actually was this weighted and performative. In societies where language was mainly oral and few were literate, the swear was equivalent to the signature, and thus to do it without sincerity threatened the foundations of society. Swearing insincerely to God was especially egregious. To swear to God for trivial reasons, or worse, disingenuously, was regarded as morally repellent at best, sinful at worst. Here emerged the condemnation of taking the Lord’s name “in vain.” Other transgressions were calling upon God to damn someone, or taking a personal role in the direction of someone to reside in hell, when that assignment is God’s decision to make.**Not for nothing is the instruction to avoid taking the Lord’s name in vain the second of the Commandments, before murder and adultery.**
+> Hold up: Swearing is what this whole book is about, right? But our use of swear as a synonym for profanity is actually a holdover from an earlier usage that made more sense. After all, one might ask just what swearing in its literal meaning—affirming your belief in something—has to do with what you yell when you stub your toe. To the medievals, swearing was about swearing—in the actual sense—to God and Jesus, and was taken seriously to an extent difficult for most of us to wrap our heads around today.
+>
+> John McWhorterTo the ancients, swearing actually was this weighted and performative. In societies where language was mainly oral and few were literate, the swear was equivalent to the signature, and thus to do it without sincerity threatened the foundations of society. Swearing insincerely to God was especially egregious. To swear to God for trivial reasons, or worse, disingenuously, was regarded as morally repellent at best, sinful at worst. Here emerged the condemnation of taking the Lord’s name “in vain.” Other transgressions were calling upon God to damn someone, or taking a personal role in the direction of someone to reside in hell, when that assignment is God’s decision to make.**Not for nothing is the instruction to avoid taking the Lord’s name in vain the second of the Commandments, before murder and adultery.**
 
 Swearing in vain was so bad that it ranked higher among the [ten commandments](https://en.wikipedia.org/wiki/Ten_Commandments) than swearing, adultery, murder and greed.
 
