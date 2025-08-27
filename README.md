@@ -1,28 +1,36 @@
-# Bhuvan's Blog Theme
+# Bhuvan's Personal Website
 
-A clean, minimal Astro blog theme for long-form writing with a micro-blog feed. Typography-focused, modern design with personality without being corporate.
+My personal website and blog built with Astro. A clean, minimal design for sharing long-form writing, quick updates, and project showcases.
+
+**Live Site**: [bebhuvan.com](https://bebhuvan.com)
 
 ## Features
 
-- **Clean Typography**: Source Sans Pro font throughout
-- **Minimal Design**: Lots of whitespace, orange accents (#ff6b35)
+- **Modern Typography**: Inter font for readability
+- **Clean Design**: Minimal layout with orange accents (#ff6b35) 
 - **Multiple Content Types**:
-  - Long-form blog posts
-  - Quick updates/micro-blog
+  - Long-form blog posts about finance, markets, and random thoughts
+  - Quick updates and interesting links
   - Project showcase
-- **Link Previews**: Support for link previews in updates feed
-- **PagesCMS Integration**: Content management with `.pages.yml` configuration
-- **SEO Optimized**: Meta tags, Open Graph, Twitter cards
-- **RSS Feeds**: Separate feeds for blog posts and updates
-- **Static Generation**: Fast performance with Astro
+- **SEO Optimized**: Meta tags, Open Graph, Twitter cards, JSON-LD structured data
+- **Combined RSS Feed**: Single feed for all content types
+- **Static Generation**: Fast performance with Astro and Cloudflare Workers
 - **Mobile Responsive**: Works great on all devices
+- **😲 Favicon**: Because why not?
 
-## Quick Start
+## About
+
+This is my personal website where I share:
+
+- Long-form writing about finance, economics, markets, and whatever else bothers me
+- Quick updates and interesting links I discover
+- Projects I'm working on like [Paper Lanterns](https://paperlanterns.ink/) and [Rabbit Holes](https://www.rabbitholes.garden/)
+
+I work at [Zerodha](https://zerodha.com/) doing [hard to describe things] and occasionally write on [Z-Connect](https://zerodha.com/z-connect/author/bhuvanesh-r).
+
+## Development
 
 ```bash
-# Clone or download the theme
-cd bhuvan-blog-theme
-
 # Install dependencies
 npm install
 
@@ -31,6 +39,9 @@ npm run dev
 
 # Build for production
 npm run build
+
+# Deploy to Cloudflare Workers
+wrangler deploy
 ```
 
 ## Project Structure
@@ -53,6 +64,7 @@ src/
 │   └── Layout.astro          # Base page layout
 ├── pages/
 │   ├── index.astro           # Homepage
+│   ├── about.astro          # About page
 │   ├── blog/
 │   │   ├── index.astro       # Blog listing
 │   │   └── [slug].astro      # Individual blog posts
@@ -60,23 +72,21 @@ src/
 │   │   ├── index.astro       # Updates listing
 │   │   └── [slug].astro      # Individual updates
 │   ├── projects.astro        # Projects page
-│   ├── rss.xml.ts           # Blog RSS feed
-│   └── updates-rss.xml.ts   # Updates RSS feed
+│   ├── rss.xml.ts           # Combined RSS feed
+│   └── updates-rss.xml.ts   # Updates RSS feed (legacy)
 └── styles/
     └── global.css            # Global styles
 ```
 
+## Tech Stack
+
+- **Framework**: [Astro](https://astro.build/) for static site generation
+- **Hosting**: [Cloudflare Workers](https://workers.cloudflare.com/) with static assets
+- **Fonts**: [Inter](https://rsms.me/inter/) for clean, readable typography
+- **Styling**: Custom CSS with CSS custom properties
+- **Content**: Markdown files with frontmatter
+
 ## Content Management
-
-### Using PagesCMS
-
-The theme includes PagesCMS configuration (`.pages.yml`) for easy content management:
-
-1. Deploy your site to a hosting platform
-2. Set up PagesCMS following their documentation
-3. Use the web interface to manage your content
-
-### Manual Content Creation
 
 #### Blog Posts
 
@@ -177,37 +187,17 @@ The theme supports link previews in the updates feed. To enable rich link previe
 2. Update `src/components/LinkPreview.astro` with API calls
 3. Add environment variables for API keys
 
-## RSS Feeds
+## RSS Feed
 
-The theme generates two RSS feeds:
-- `/rss.xml` - Blog posts
-- `/updates-rss.xml` - Updates/micro-blog
+The site has a combined RSS feed at `/rss.xml` that includes both blog posts and updates.
 
-## SEO Features
+## Contact
 
-- Automatic meta tags and Open Graph data
-- Sitemap generation
-- RSS feed auto-discovery
-- Canonical URLs
-- Twitter card support
+- **Email**: [bhuvan@bebhuvan.com](mailto:bhuvan@bebhuvan.com)
+- **Twitter**: [@bebhuvan](https://twitter.com/bebhuvan)  
+- **LinkedIn**: [bebhuvan](https://www.linkedin.com/in/bebhuvan/)
+- **Substack**: [bhuvan.substack.com](https://bhuvan.substack.com/)
 
-## Deployment
+---
 
-### Netlify/Vercel/GitHub Pages
-```bash
-npm run build
-# Deploy the dist/ folder
-```
-
-## Development
-
-```bash
-# Start dev server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
-```
+*Welcome to my small little corner on the dumpster fire that is the interweb where I share the things I do, write and discover.*

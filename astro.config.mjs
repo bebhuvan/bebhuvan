@@ -4,6 +4,6 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com', // Replace with your actual domain
+  site: 'https://bebhuvan.com',
   integrations: [sitemap()],
 });

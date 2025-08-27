@@ -48,6 +48,76 @@ body {
     color: var(--text-dark);
     background: var(--bg-white);
     font-feature-settings: 'liga', 'kern';
+}
+
+/* RSS Icon Styles */
+.list-title-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rss-icon {
+    color: var(--text-light);
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.rss-icon:hover {
+    color: var(--primary-orange);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-rss {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s ease;
+}
+
+.footer-rss:hover {
+    color: var(--primary-orange);
+}
+
+.footer-rss-link {
+    color: var(--primary-orange);
+    text-decoration: underline;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.footer-rss-link:hover {
+    color: var(--primary-hover);
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;

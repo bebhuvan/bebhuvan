@@ -25,7 +25,14 @@ const formatDate = (date: Date) => {
 };
 ---
 
-<Layout title={entry.data.title} description={entry.data.description} image={entry.data.image}>
+<Layout 
+  title={entry.data.title} 
+  description={entry.data.description} 
+  image={entry.data.image}
+  type="article"
+  publishDate={entry.data.publishDate}
+  keywords={entry.data.tags || []}
+>
   <Header />
   
   <article class="article">
