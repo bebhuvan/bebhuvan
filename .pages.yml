@@ -97,7 +97,7 @@ content:
         label: External Link
         type: string
         description: "Link to article, video, or resource (optional)"
-        pattern: "^https?://.+"
+        required: false
       - name: linkTitle
         label: Link Title
         type: text
