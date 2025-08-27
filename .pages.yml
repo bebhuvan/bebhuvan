@@ -56,10 +56,11 @@ content:
         label: Status
         type: select
         options:
-          - active
-          - completed
-          - paused
-          - archived
+          values:
+            - active
+            - completed
+            - paused
+            - archived
         default: active
       - name: link
         label: Project Link
