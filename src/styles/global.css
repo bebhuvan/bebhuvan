@@ -427,6 +427,67 @@ a:hover {
     word-wrap: break-word;
 }
 
+/* Rich text formatting in updates */
+.micro-content h1,
+.micro-content h2,
+.micro-content h3,
+.micro-content h4,
+.micro-content h5,
+.micro-content h6 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.micro-content h1 { font-size: 1.1rem; }
+.micro-content h2 { font-size: 1.05rem; }
+.micro-content h3 { font-size: 1rem; }
+
+.micro-content ul,
+.micro-content ol {
+    margin-left: 1.25rem;
+    margin-bottom: 0.75rem;
+    padding-left: 0;
+}
+
+.micro-content li {
+    margin-bottom: 0.25rem;
+}
+
+.micro-content blockquote {
+    padding-left: 0.75rem;
+    border-left: 2px solid var(--primary-orange);
+    margin: 0.75rem 0;
+    font-style: italic;
+    color: var(--text-light);
+}
+
+.micro-content code {
+    background: var(--code-bg);
+    padding: 0.125rem 0.25rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+.micro-content pre {
+    background: var(--code-bg);
+    padding: 0.75rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin: 0.75rem 0;
+    font-size: 0.9rem;
+}
+
+.micro-content strong {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.micro-content em {
+    font-style: italic;
+}
+
 .micro-link {
     color: var(--primary-orange);
     text-decoration: none;

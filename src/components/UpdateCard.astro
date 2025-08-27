@@ -38,7 +38,7 @@ const formatTimeAgo = (date: Date) => {
     <a href={`/updates/${slug}`}>{title}</a>
   </h3>
   <div class="micro-content">
-    <p set:html={content.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="micro-link">$1</a>')} />
+    <div set:html={content} />
     {link && linkTitle && (
       <LinkPreview url={link} title={linkTitle} />
     )}
