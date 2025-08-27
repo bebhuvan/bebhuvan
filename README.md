@@ -2,7 +2,7 @@
 
 My personal website and blog built with Astro. A clean, minimal design for sharing long-form writing, quick updates, and project showcases.
 
-**Live Site**: [bebhuvan.com](https://bebhuvan.com)
+**Live Site**: [bebhuvan.com](https://bebhuvan.com) | **Worker**: [bhuvan-blog.r-bhuvanesh2007.workers.dev](https://bhuvan-blog.r-bhuvanesh2007.workers.dev)
 
 ## Features
 
