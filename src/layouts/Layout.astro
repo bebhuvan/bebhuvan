@@ -35,6 +35,10 @@ const fullImageUrl = new URL(defaultImage, Astro.site);
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     
+    <!-- Performance Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
     <!-- SEO Meta Tags -->
     <meta name="author" content={author} />
     <meta name="robots" content="index, follow" />
