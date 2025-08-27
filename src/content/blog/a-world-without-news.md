@@ -27,9 +27,9 @@ In developed markets like the US, UK, Canada, and Australia, the news publishing
 
 While it’s tempting to talk about India in the same breath as the US—something I’ve been guilty of—it’s not all that bad…yet. India is an outlier where newspaper circulation _seems_ to be holding steady. It’s hard to draw definite conclusions because the circulation data [sucks][6]!
 
-The available data shows that the print industry is growing at a slower rate compared to the overall media and entertainment industry, but growing nonetheless.![](https://www.bebhuvan.com/images/2024/03/Indian-print-industry-revneues-and-circulation-1.webp) ![](https://www.bebhuvan.com/images/2024/03/Indian-print-industry-revneues-and-circulation-2.webp) 
+The available data shows that the print industry is growing at a slower rate compared to the overall media and entertainment industry, but growing nonetheless.![](/blog-images/Indian-print-industry-revneues-and-circulation-1.webp) ![](/blog-images/Indian-print-industry-revneues-and-circulation-2.webp) 
 
-For comparison, here’s what the US newspaper industry [looks like][7]. I’m contrasting India and the US because the US news industry is in terminal decline, and the same trends could play out in India as well.![](https://www.bebhuvan.com/images/2024/03/US-print-circulation-and-revenues.webp) 
+For comparison, here’s what the US newspaper industry [looks like][7]. I’m contrasting India and the US because the US news industry is in terminal decline, and the same trends could play out in India as well.![](/blog-images/US-print-circulation-and-revenues.webp) 
 
 But a closer look at the numbers shows that there’s trouble around the corner. According to ICRA, print as a percentage of the media and entertainment industry has fallen from 23% in 2016 to 12% in 2022. Digital media has been the biggest beneficiary of this shift away from print.
 
@@ -209,7 +209,7 @@ While fewer people visit the homepages of news publishers, a sizable audience st
 
 With LLMs, everybody on the planet has access to the collective knowledge of humanity at their fingertips. All they have to do is type into a chat box. The way we search for information will never be the same. I’ve been using ChatGPT, Perplexity, and Claude, and my Googling has reduced quite a bit.
 
-Then there’s Google’s own Search Generative Experience (SGE). Whenever you Google something, you’ll see a box with AI-powered summaries. Now that social referral traffic has all but [vanished][43], Google is once again the dominant source of referral traffic. If Google starts showing AI summaries instead of just links, publishers will be affected.![](https://www.bebhuvan.com/images/2024/03/Google-SGE.webp) 
+Then there’s Google’s own Search Generative Experience (SGE). Whenever you Google something, you’ll see a box with AI-powered summaries. Now that social referral traffic has all but [vanished][43], Google is once again the dominant source of referral traffic. If Google starts showing AI summaries instead of just links, publishers will be affected.![](/blog-images/Google-SGE.webp) 
 
 The bigger question is: what will happen to media brands if people start getting their news and information from a chat box? AI enables everyone to build their own curated and personalized news streams. Perplexity’s AI-powered [daily podcast ][44]is a sign of things to come.
 

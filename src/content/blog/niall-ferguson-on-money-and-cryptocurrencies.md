@@ -32,7 +32,7 @@ There were a lot of interesting takeaways from the podcast, so I made some notes
 
 The origins of money can be traced back 5000 years to ancient Mesopotamia. Clay tablets were used to record transactions between debtors and creditors.
 
-_You can check out images of these Cuneiform tablets on [The Metropolitan Museum's website][5]._![](https://www.bebhuvan.com/images/2022/02/Cuneiform-tablets.jpg) 
+_You can check out images of these Cuneiform tablets on [The Metropolitan Museum's website][5]._![](/blog-images/Cuneiform-tablets.jpg) 
 
 Trust is what makes money work. Anything can be money as long as it can be used to record a relationship between a debtor and a creditor. Ultimately, money is a manifestation of trust. Money crystallizes the relationship between debtors and creditors. 
 
@@ -42,7 +42,7 @@ The shortage of coinage after the Black Death in the 1300s led to the birth of b
 
 One of the highlights of the conversation was about monetary stability. He made a fascinating point about how the current stability of the global monetary—barring the occasional crises, of course, system—is an aberration. It’s an interesting notion, given that we’re living through a moment in history where we’ve probably never seen monetary policy experiments on such a scale.
 
-If you take a sweeping look over hundreds of years, history is littered with failed monetary systems and currencies. Over the past 500 years, multiple currencies and coinage systems have been decimated because of wars and inflation. Several currencies in Europe, including the Russian, German, Polish, Serbian and Austrian failed in the 1900s during World War 1.![](https://www.bebhuvan.com/images/2022/02/Weimar.jpg) 
+If you take a sweeping look over hundreds of years, history is littered with failed monetary systems and currencies. Over the past 500 years, multiple currencies and coinage systems have been decimated because of wars and inflation. Several currencies in Europe, including the Russian, German, Polish, Serbian and Austrian failed in the 1900s during World War 1.![](/blog-images/Weimar.jpg) 
 
 _On a related note,_ _<a rel="noreferrer noopener" href="https://www.linkedin.com/pulse/where-we-big-cycle-money-credit-debt-economic-activity-ray-dalio/" target="_blank">Ray Dalio made a similar point</a>_ _in a recent post about how most currencies throughout history have failed:_ 
 

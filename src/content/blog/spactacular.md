@@ -20,11 +20,11 @@ The rules and regulations for going public in the US are quite cumbersome. But S
 
 Companies that IPO typically don't include future projections in their offer documents because they can be sued if investors don't like them. But SPACs, on the other hand, can make projections because they aren't IPOs. US mergers have a safe harbor provision that shields them from liability over forward-looking statements. SPACs take advantage of this. In general, there's also less liability risk for all the parties involved in SPACs. And SPACs have made full use of this arbitrage opportunity to make [reality-defying][1] projections that would make astrologers look like scientists and statisticians.
 
-And SPACs have made full use of this arbitrage opportunity to make [reality-defying][1] projections that would make astrologers look like scientists and statisticians. Given the lesser hassles in 2020 and 2021, we saw a SPAC boom, the likes of which we've never seen before. ![](https://www.bebhuvan.com/images/2022/04/SPACS-vs-IPOs.png) 
+And SPACs have made full use of this arbitrage opportunity to make [reality-defying][1] projections that would make astrologers look like scientists and statisticians. Given the lesser hassles in 2020 and 2021, we saw a SPAC boom, the likes of which we've never seen before. ![](/blog-images/SPACS-vs-IPOs.png) 
 
 The reason for the boom? Another arbitrage opportunity—opaque vs transparent and dumb vs smart, i.e., wealth transfer from the informed to the uninformed. The typical narrative is that SPACs are faster and cheaper than traditional IPOs, but that's just that—a narrative. The reality is that SPACs are complex structures. They're much costlier than IPOs and much more lucrative for the sponsors of SPACs, investment bankers, lawyers, PIPE financiers, and pretty much everybody except retail investors<sup><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3720919">1</a>, <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3775847">2</a>, <a href="https://www.axios.com/spac-boom-investors-f54067a6-48c5-4b2f-a4ae-6e467fe692fa.html">3</a></sup>. In most SPACs, retail investors typically get heavily [diluted][3] right out of the gate. 
 
-Predictably, this hasn't worked out well for most investors. Pitchbook published [a note][4] on SPAC performance, and this chart is a sight to behold. It should probably be sold as an NFT because it's art! ![](https://www.bebhuvan.com/images/2022/04/SPAC-index-Pitchbook.png) 
+Predictably, this hasn't worked out well for most investors. Pitchbook published [a note][4] on SPAC performance, and this chart is a sight to behold. It should probably be sold as an NFT because it's art! ![](/blog-images/SPAC-index-Pitchbook.png) 
 
 Typically, sponsors of SPACs have about two years to find a deal. The other important thing is that SPAC sponsors get 20% of the SPAC shares for almost free for taking the trouble of creating the SPAC and finding deals. 
 
@@ -34,7 +34,7 @@ Typically, sponsors of SPACs have about two years to find a deal. The other impo
 
 So, the incentives are heavily skewed right from the start. What ended up happening is that SPACs became the go-to vehicles to take worthless and, in some cases, downright fraudulent companies public. If you look at SPACs that have acquired or merged, you'll see companies with wildly optimistic projections, flawed business models, and multiples that were high on drugs. There have also been downright frauds. Most of these companies wouldn't have been able to pull off a traditional IPO. 
 
-Now that we are in an inflationary environment with rising interest rates, it's the perfect storm for these companies, and they've been massacred. Growth investing has fallen all the way from the moon into the Grand Canyon. ![](https://www.bebhuvan.com/images/2022/04/SPAC-etfs.png) 
+Now that we are in an inflationary environment with rising interest rates, it's the perfect storm for these companies, and they've been massacred. Growth investing has fallen all the way from the moon into the Grand Canyon. ![](/blog-images/SPAC-etfs.png) 
 
 Given the craziness on steroids and other drugs in the SPAC market, the SEC has been [expressing concerns][5] over the last couple of years. It looks like they've decided to finally do something. In March, the SEC [proposed new rules][6] that bring SPACs on part with IPOs, and increase liabilities for all the parties involved. In a way, this was long overdue. These rules Though SPACs may not vanish altogether like they did post-2008, issuance is bound to come down. SPACs have been deSPACed—pun intended. 
 
@@ -43,7 +43,7 @@ There's also a story here about financialization and democratization. Contrary t
 <hr class="wp-block-separator has-css-opacity" />
 
 ### Micro funds
-Speaking of democratization, there was another interesting [Pitchbook note][9] analyzing the growth of micro VC funds. Interestingly, over half of these micro funds are by first-time VCs. ![](https://www.bebhuvan.com/images/2022/04/Micro-VC-funds.png) 
+Speaking of democratization, there was another interesting [Pitchbook note][9] analyzing the growth of micro VC funds. Interestingly, over half of these micro funds are by first-time VCs. ![](/blog-images/Micro-VC-funds.png) 
 
 This seems to be a general trend across the world, [including India][10]. It also seems like everybody wants to make early-stage investments:
 
@@ -101,7 +101,7 @@ The other issue is that Shanghai is also a vital part of the global economy and 
 
 For the global economy, it has been a case of when it rains, it pours. 
 
-Shanghai port is more congested than my nose in winter right now, with [477 bulk cargo ships waiting to unload][18]. Inevitably, these delays will end up increasing inflationary pressures:![](https://www.bebhuvan.com/images/2022/04/Shanghai-port.png) 
+Shanghai port is more congested than my nose in winter right now, with [477 bulk cargo ships waiting to unload][18]. Inevitably, these delays will end up increasing inflationary pressures:![](/blog-images/Shanghai-port.png) 
 
 <hr class="wp-block-separator has-css-opacity" />
 

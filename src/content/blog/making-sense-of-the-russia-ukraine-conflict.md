@@ -35,13 +35,13 @@ The fact that Russia had built a reserve chest of ~$630 is one probable reason w
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/03/Russian-foreign-reserves-compsition-and-location-1.png)
+ - ![](/blog-images/Russian-foreign-reserves-compsition-and-location-1.png)
 
- - ![](https://www.bebhuvan.com/images/2022/03/Russian-reserves.jpg)
+ - ![](/blog-images/Russian-reserves.jpg)
 
- - ![](https://www.bebhuvan.com/images/2022/03/Russia-FX-swaps.png)
+ - ![](/blog-images/Russia-FX-swaps.png)
 
- - ![](https://www.bebhuvan.com/images/2022/03/Russia-reserves.webp)
+ - ![](/blog-images/Russia-reserves.webp)
 
  
 
@@ -67,11 +67,11 @@ In one fell swoop, the Russian central bank lost access to 40-50% of its reserve
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/03/RUssia-markets.png)
+ - ![](/blog-images/RUssia-markets.png)
 
- - ![](https://www.bebhuvan.com/images/2022/03/Russia-interest-rates.png)
+ - ![](/blog-images/Russia-interest-rates.png)
 
- - ![](https://www.bebhuvan.com/images/2022/03/Russia-CDS.png)
+ - ![](/blog-images/Russia-CDS.png)
 
  
 
@@ -86,7 +86,7 @@ In one fell swoop, the Russian central bank lost access to 40-50% of its reserve
 The Russian 10-year bond yield shot up from about 9% to 19.8% and Russian credit default swaps (CDS) shot through the roof. The central bank hiked the interest rate from 8.5% to 20% given that it doesn't have the reserves to defend the Ruble. It also imposed capital controls—withdrawals above $10,000 have to be in Rubles, which are quickly becoming worthless. In about a week, Russia went from a relatively important part of the global economy to a basket case. 
 
 ### Fallout
-Russia is the world's [11th][3] largest economy. It's a small economy, but a crucial cog for the global economy in certain sectors like food and energy. ![](https://www.bebhuvan.com/images/2022/03/Top-20-economies-of-world-gdp.png) 
+Russia is the world's [11th][3] largest economy. It's a small economy, but a crucial cog for the global economy in certain sectors like food and energy. ![](/blog-images/Top-20-economies-of-world-gdp.png) 
 
 #### Russian imports and exports
 [OEC has a brilliant visualisation][4] of Russian exports. 
@@ -95,9 +95,9 @@ Russia is the world's [11th][3] largest economy. It's a small economy, but a cru
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/03/Exports-2019-Click-to-Select-a-Product.png)
+ - ![](/blog-images/Exports-2019-Click-to-Select-a-Product.png)
 
- - ![](https://www.bebhuvan.com/images/2022/03/Imports.png)
+ - ![](/blog-images/Imports.png)
 
  
 
@@ -121,19 +121,19 @@ So far, the Russian energy sector and the banks like Sberbank and Gazprom bank w
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/03/Eu-energy-consumption.png)
+ - ![](/blog-images/Eu-energy-consumption.png)
 
- - ![](https://www.bebhuvan.com/images/2022/03/Russia-Europe-Energy-1.jpg)
+ - ![](/blog-images/Russia-Europe-Energy-1.jpg)
 
- - ![](https://www.bebhuvan.com/images/2022/03/Moscow-Oil-1.jpg)
+ - ![](/blog-images/Moscow-Oil-1.jpg)
 
- - ![](https://www.bebhuvan.com/images/2022/03/Russia-Europe-1.png)
+ - ![](/blog-images/Russia-Europe-1.png)
 
- - ![](https://www.bebhuvan.com/images/2022/03/EU-RUssia-1.png)
+ - ![](/blog-images/EU-RUssia-1.png)
 
- - ![](https://www.bebhuvan.com/images/2022/03/Russia-Oil-1.png)
+ - ![](/blog-images/Russia-Oil-1.png)
 
- - ![](https://www.bebhuvan.com/images/2022/03/Russoa-Oil-1.png)
+ - ![](/blog-images/Russoa-Oil-1.png)
 
  
 
@@ -147,16 +147,16 @@ So far, the Russian energy sector and the banks like Sberbank and Gazprom bank w
 
 If Russia cuts off oil and gas to Europe, people will quite literally freeze to death. 
 
-Oil and gas prices would shoot up even more than they already have, and they have shot up substantially already. ![](https://www.bebhuvan.com/images/2022/03/Power-futures.png) 
+Oil and gas prices would shoot up even more than they already have, and they have shot up substantially already. ![](/blog-images/Power-futures.png) 
 
 And the irony is that Russia is having a bonanza as energy prices shoot up due to the war. Given the energy flows have been carved out of the sanctions, Russia is making about $650-750 million a day. 
 
 Though the situation is dramatically changing every day, it's very hard to imagine the Europeans banning Russian energy imports. Energy is one of the biggest components of household budgets. The reason why politicians worry about rising energy costs compared to generalized inflation is that energy consumption is front and center in everyday life—every time people switch on the heating or refuel a car or a bike, they pay and get angry because of high prices. People don't care if it's a supply issue or a war, they always blame the people in power for rising energy costs.
 
-In the last few weeks, the Europeans have said a lot about reducing the [energy dependence][5] on the Russians. The situation has become so dire that [US officials met][6] Venezuelan President Nicolás Maduro a couple of weeks ago to work out an oil deal. The other problem is that the global oil & gas CAPEX is hitting record lows. ![](https://www.bebhuvan.com/images/2022/03/Energy-spending.png) 
+In the last few weeks, the Europeans have said a lot about reducing the [energy dependence][5] on the Russians. The situation has become so dire that [US officials met][6] Venezuelan President Nicolás Maduro a couple of weeks ago to work out an oil deal. The other problem is that the global oil & gas CAPEX is hitting record lows. ![](/blog-images/Energy-spending.png) 
 
 #### Commodities
-While energy prices are getting all the headlines, Russia and Ukraine are [large exporters of other commodities][8] like coal, nickel, steel, aluminum, and other metals and derivatives. Along with oil prices, coal, and nickel prices have shot up dramatically. ![](https://www.bebhuvan.com/images/2022/03/Metal-futures-1.png) 
+While energy prices are getting all the headlines, Russia and Ukraine are [large exporters of other commodities][8] like coal, nickel, steel, aluminum, and other metals and derivatives. Along with oil prices, coal, and nickel prices have shot up dramatically. ![](/blog-images/Metal-futures-1.png) 
 
 The historic volatility in the commodity markets is causing all sorts of headaches. On March 8th, there was an epic short squeeze in nickel futures on the [London Metal Exchange (LME)][9]. The price of nickel shot up 250% from ~$20,000 to $100,000 and LME in a weird move decided to cancel $3.9 billion worth of trades. The heightened volatility is causing a drop in volumes and widening spreads in [key commodities][10] like crude and aluminum. 
 
@@ -181,9 +181,9 @@ Last but not the least, the conflict will have an outsized impact on food produc
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/03/Ukraine-Exports.png)
+ - ![](/blog-images/Ukraine-Exports.png)
 
- - ![](https://www.bebhuvan.com/images/2022/03/Ukraine-Imports.png)
+ - ![](/blog-images/Ukraine-Imports.png)
 
  
 
@@ -195,11 +195,11 @@ Last but not the least, the conflict will have an outsized impact on food produc
  </div>
 </div> 
 
-The problem isn't that Russia and Ukraine are large exporters of grain, the problem is who they export to. The biggest buyers of Russian and Ukrainian wheat and other grains are poor developing countries in Africa and the Middle East. These countries are already heavily indebted, and COVID-19 made it even worse. ![](https://www.bebhuvan.com/images/2022/03/Russian-and-Ukranian-wheat-export.webp) 
+The problem isn't that Russia and Ukraine are large exporters of grain, the problem is who they export to. The biggest buyers of Russian and Ukrainian wheat and other grains are poor developing countries in Africa and the Middle East. These countries are already heavily indebted, and COVID-19 made it even worse. ![](/blog-images/Russian-and-Ukranian-wheat-export.webp) 
 
-Ukraine has already [banned the export][11] of wheat, oats, and other staples.![](https://www.bebhuvan.com/images/2022/03/Agri-futurrs.png) 
+Ukraine has already [banned the export][11] of wheat, oats, and other staples.![](/blog-images/Agri-futurrs.png) 
 
-Emerging markets will [take a disproportionate hit][12] if food prices spike. ![](https://www.bebhuvan.com/images/2022/03/Food-inflation-EM.jpg) 
+Emerging markets will [take a disproportionate hit][12] if food prices spike. ![](/blog-images/Food-inflation-EM.jpg) 
 
 For the privileged few of us living in India or the west, it's hard to imagine food being so important, but they can cause revolutions and topple regimes. 
 
@@ -209,7 +209,7 @@ For the privileged few of us living in India or the west, it's hard to imagine f
  
  <a href="https://foreignpolicy.com/2020/05/20/food-price-spikes-and-social-unrest-the-dark-side-of-the-feds-crisis-fighting/">Food Price Spikes and Social Unrest: The Dark Side of the Fed’s Crisis-Fighting</a>
 
-Food shortages will hit the most vulnerable of countries like Yemen the hardest. The crisis is already pushing countries to start hoarding. ![](https://www.bebhuvan.com/images/2022/03/Hungry-people.png) 
+Food shortages will hit the most vulnerable of countries like Yemen the hardest. The crisis is already pushing countries to start hoarding. ![](/blog-images/Hungry-people.png) 
 
 > Since the Russian invasion, Indonesia has set new limits on palm oil exports to control prices. Hungary banned all grain exports last week; Serbia on Wednesday said it would ban exports of wheat, corn, flour and cooking oil. On Thursday, Egypt — a country 80 percent reliant on Russian and Ukrainian wheat — imposed controls on grain exports as the price of subsidized bread has already started to creep up.
  
@@ -220,14 +220,14 @@ The other worry is fertilizers. Russia is the largest exporter of fertilizers. B
  In broad terms, Russia accounts for almost 13% of global trade for key fertilizer intermediates (ammonia, phosphate rock, sulphur) and for almost 16% of global trade in the key finished fertilizers
  
  <a href="https://ihsmarkit.com/research-analysis/russia-ukraine-impact-of-escalating-tensions-grains-fertilizers.html">IHS Markit</a>
-![](https://www.bebhuvan.com/images/2022/03/Russia-fertilizer.png) 
+![](/blog-images/Russia-fertilizer.png) 
 
 Fertilizer prices had already been spiking even before the invasion, but things just got a whole lot worse. With Russia temporarily suspending fertilizer exports, farmers around the world are in for a rough time. Fertilizers account for anywhere between 15% to [35%][15] of farm input costs. Rising fertilizer prices could lead to lesser use of fertilizers, lower yields, and perversely, higher food prices. The hungriest, will get even hungrier. 
 
 The impact of the conflict will inevitably feed into inflation, compounding the problem caused by strained supply chains around the world. This conflict is probably the final nail in the coffin of the _inflation is transitory_ narrative. Transitory inflation is dead, long live transitory inflation.
 
 ### Will the sanctions work?
-It's important not to overstate what sanctions can do. While sanctions will certainly kneecap the Russian economy, they will adjust to a new normal after a while, j[ust like Iran did][16]: ![](https://www.bebhuvan.com/images/2022/03/Iran-sanctions.png) 
+It's important not to overstate what sanctions can do. While sanctions will certainly kneecap the Russian economy, they will adjust to a new normal after a while, j[ust like Iran did][16]: ![](/blog-images/Iran-sanctions.png) 
 
 > Even if Russia must accept lower prices for its oil as the markets begin to shun its crude, economists expect Moscow to be able to run a similar siege economy, using hard currency from oil and gas sales to buy imports from countries and companies willing to supply the country.
  

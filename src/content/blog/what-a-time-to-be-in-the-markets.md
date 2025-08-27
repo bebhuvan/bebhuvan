@@ -6,15 +6,15 @@ tags: ["Markets"]
 draft: false
 ---
 
-Today was a bad day for smallcaps. The Nifty Smallcap 250 index was down by 2.59%. No, this isn't a post about "smallcaps are risky". Although, I don't who reads this thing, but I'll say it &#8211; smallcaps are super risky. DSP Smallcap Fund was down 65% at the depths of the 2008 bear market. ![](https://www.bebhuvan.com/images/2021/08/DSP-smallcap.png) 
+Today was a bad day for smallcaps. The Nifty Smallcap 250 index was down by 2.59%. No, this isn't a post about "smallcaps are risky". Although, I don't who reads this thing, but I'll say it &#8211; smallcaps are super risky. DSP Smallcap Fund was down 65% at the depths of the 2008 bear market. ![](/blog-images/DSP-smallcap.png) 
 
 But anyway, what was funny about today was that, for the first time I've been on Twitter, I saw the <a rel="noreferrer noopener" href="https://twitter.com/search?q=%23smallcap&src=typeahead_click" target="_blank">#smallcap</a> trending. I've seen #Nifty trend multiple times in the past couple of years.
 
 <div class="wp-block-image">
-  ![](https://www.bebhuvan.com/images/2021/08/smallcap-2.jpg)
+  ![](/blog-images/smallcap-2.jpg)
 </div>
 
-This was quite surprising given that the smallcap index is down just about 5%+ over the last week. ![](https://www.bebhuvan.com/images/2021/08/small-index.png) 
+This was quite surprising given that the smallcap index is down just about 5%+ over the last week. ![](/blog-images/small-index.png) 
 
 To put that into perspective, the Nifty Smallcap 250 index is up nearly 170% since its March lows. Even considering the fact that indices hide some of the sharper falls in individual smallcap names, this was funny. 
 

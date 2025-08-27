@@ -17,7 +17,7 @@ May 2021: We’re going to hell.
 
 It’s stunning how the sentiment changed from absolute joy to despair in a matter of months. Unlike the 2020 crash, the current market fall feels different. It looks like we’re in the midst of a regime shift in the market—I don’t know what this means. I always wanted to use “regime shift” in a sentence. 
 
-The markets, especially the US, are looking bad right now. All the craziness and the frothiness of the past 2 to 3 years have disappeared in the span of weeks. Just a brief spike in inflation (hopefully) was enough for the markets to fall like dominoes. ![](https://www.bebhuvan.com/images/2022/06/dominoes.jpg) 
+The markets, especially the US, are looking bad right now. All the craziness and the frothiness of the past 2 to 3 years have disappeared in the span of weeks. Just a brief spike in inflation (hopefully) was enough for the markets to fall like dominoes. ![](/blog-images/dominoes.jpg) 
 
 What’s happening? How did we get here? What happens to stonks from here on? Are we still going to the moon?
 
@@ -56,7 +56,7 @@ US commercial banks were facing an existential crisis in the 90s. They were just
 
 Commercial banks typically sold off the mortgages they originated to government-sponsored enterprises like Fannie Mae and Freddie Mac. As securitization grew, banks saw they could generate lucrative fee revenues, but regulations didn’t allow these banks to get in on this action. Luckily, the Clinton administration under Robert Rubin and Larry Summers heavily deregulated Wall Street in the 90s. In the aftermath, commercial banks quickly became vertically integrated mortgage producers. They were involved in everything from origination and securitization to investing in Mortgage-Backed Securities (MBS) and collateralized debt obligations (CDO) on their balance sheets. 
 
-Investment banks like Goldman Sachs and Bear Sterns were scrappy outfits, and they couldn’t grow as fast as they would’ve liked due to regulatory constraints and the lack of cheap funding like deposits. But thanks to the rise of money market funds, they now had a cheap funding source. With securitization, they could repackage risk, and with CDS, they could insure it. [Deregulation][4] was the final piece of the puzzle and gave them the license to enter new businesses and unleashed a spectacular wave of [consolidation][5]. Investment banks quickly got in on the action and became dominant actors in mortgage origination, securitization and trading. ![](https://www.bebhuvan.com/images/2022/06/Deregulation.png) 
+Investment banks like Goldman Sachs and Bear Sterns were scrappy outfits, and they couldn’t grow as fast as they would’ve liked due to regulatory constraints and the lack of cheap funding like deposits. But thanks to the rise of money market funds, they now had a cheap funding source. With securitization, they could repackage risk, and with CDS, they could insure it. [Deregulation][4] was the final piece of the puzzle and gave them the license to enter new businesses and unleashed a spectacular wave of [consolidation][5]. Investment banks quickly got in on the action and became dominant actors in mortgage origination, securitization and trading. ![](/blog-images/Deregulation.png) 
 
 Investment banks tapped short-term funding in wholesale money markets like money market funds and repo markets to fund their securitization businesses. These loans ranged from overnight in the case of repurchase agreements (repo) to a few days to months in the case of commercial papers sold to money market funds. It was classic maturity transformation—borrow short term and lend long term. Eventually, European banks wanted a piece of the action, and they quickly became dominant players in the securitization business by setting up US affiliates. 
 
@@ -64,7 +64,7 @@ US housing prices were booming, and European and US banks were generating massiv
 
 Wholesale funding markets froze, and banks couldn’t borrow to service their liabilities. In a traditional bank run, depositors rush to withdraw their deposits, but 2008 was a bank run on the [wholesale funding markets][6]—money markets, repo, interbank lending and prime broking. It started in the money markets and then spread to the entire global financial system as US and European banks could not roll over their short-term debt. It’s this run on the repo markets that made the crisis so devastating. Given that banks had low equity cushions and an astonishing amount of leverage, even a tiny fall in housing prices and the vanishing of short-term funding markets were enough to turn them insolvent. 
 
-It turned out that the European banks were just as [big players][7] in the securitization business as the US banks. Their local branches were borrowing [heavily in US money markets][8] to produce mortgage-backed securities on an industrial scale. ![](https://www.bebhuvan.com/images/2022/06/US-to-europe-funding.jpg) 
+It turned out that the European banks were just as [big players][7] in the securitization business as the US banks. Their local branches were borrowing [heavily in US money markets][8] to produce mortgage-backed securities on an industrial scale. ![](/blog-images/US-to-europe-funding.jpg) 
 
 Given the high returns, they were also holding a significant chunk of the riskiest tranches of MBS on their balance sheets. As the money markets froze, European banks could not roll over their debt and had to resort to fire sales of their best assets to fund liabilities. The dollar funding gap ran into trillions, and this rippled out through the European banking system. As John Cochrane and Adam Tooze have pointed out, people lost more money in the dot-com crash compared to the losses from the decline in housing prices in 2008. The fall in housing prices, on its own, wasn’t enough to cause a global financial crisis. The complete disappearance of wholesale funding markets made the crisis so destructive.
 
@@ -98,7 +98,7 @@ This marked a turning point in the Eurozone crisis saga. The advanced economies 
 
 One key story that most people don’t know is that China unleashed [massive fiscal spending][11] as the global financial system was imploding. It is this gigantic stimulus that was responsible for softening the blow of the 2008 crisis. Without the Chinese stimulus, the world would’ve been a much different. The scale of this stimulus spending can be seen in the fact that China has accounted for over [30-40% of world GDP][12] since 2008.
 
-But much like the post-pandemic period, there was [uneven economic recovery][13]. Emerging and developing economies, particularly commodity exporters, recovered the fastest, while European growth flatlined. The US didn’t grow as fast as some emerging markets, but it still saw a decent recovery compared to Europe. The stock markets too mirrored the uneven recovery. The US has been the undisputed king since 2010, while much of the world had unsuccessfully played catch-up. ![](https://www.bebhuvan.com/images/2022/06/Global-markets-performance-since-2008.png) 
+But much like the post-pandemic period, there was [uneven economic recovery][13]. Emerging and developing economies, particularly commodity exporters, recovered the fastest, while European growth flatlined. The US didn’t grow as fast as some emerging markets, but it still saw a decent recovery compared to Europe. The stock markets too mirrored the uneven recovery. The US has been the undisputed king since 2010, while much of the world had unsuccessfully played catch-up. ![](/blog-images/Global-markets-performance-since-2008.png) 
 
 ### Narrative violation
 Of course, this chart poses a problem to everyone saying that we’re in the _mother of all bubbles._ It’s a good opportunity to bust some myths and clarify others.
@@ -109,23 +109,23 @@ Macro soothsayers will take every opportunity to argue that the US markets went 
 
 Ok, if not the Fed _printing money_ and _inflating the mother of all stock market bubbles,_ why did the US markets rally so dramatically since 2008? 
 
-Of course, this is in hindsight, but could it be that US markets had the best [fundamentals][15], robust earnings growth, and profits coming out of the 2008 crisis? Yes, but that’s a dull narrative compared to the _money printing_ and _mother of all bubbles_ narrative. ![](https://www.bebhuvan.com/images/2022/05/Global-earnings.png) 
+Of course, this is in hindsight, but could it be that US markets had the best [fundamentals][15], robust earnings growth, and profits coming out of the 2008 crisis? Yes, but that’s a dull narrative compared to the _money printing_ and _mother of all bubbles_ narrative. ![](/blog-images/Global-earnings.png) 
 
-US free cash flow margins are [twice][17] that of other developed markets. ![](https://www.bebhuvan.com/images/2022/06/US-free-cash-flows.png) 
+US free cash flow margins are [twice][17] that of other developed markets. ![](/blog-images/US-free-cash-flows.png) 
 
-Of course, that isn’t to say that the US market [isn’t expensive][18], but it’s expensive on the back of solid earnings and record [corporate profits][19].![](https://www.bebhuvan.com/images/2022/06/Forward-PEs.png) 
+Of course, that isn’t to say that the US market [isn’t expensive][18], but it’s expensive on the back of solid earnings and record [corporate profits][19].![](/blog-images/Forward-PEs.png) 
 
 **Narrative #2: The US markets went up because of 10 stocks**
 
 The moment you say US markets have done well, people will jump like a hungry cat and tell you it’s because of the FAANG stocks. This narrative isn’t incorrect, but it needs some clarification. US markets indeed went up because of the FAANG stocks. If you remove the top 10 stocks from the S&P 500, the returns aren’t that great. But by some weird coincidence, the top 10 stocks in the S&P 500 had record [earnings growth][20] and were the largest contributors to total S&P earnings. 
 
-Surely, this is a cosmic conspiracy?![](https://www.bebhuvan.com/images/2022/05/FAANG-earnigs.png) 
+Surely, this is a cosmic conspiracy?![](/blog-images/FAANG-earnigs.png) 
 
 To the surprise of absolutely nobody, tech companies had the largest [EPS growth][21] in the post-2008 period. But this is a very bland explanation compared to _10 stocks are responsible for all of S&P 500 returns_, _it’s a narrow rally_ and whatnot. 
 
 **Narrative #3: The equity flows are propping up the US markets**
 
-The other narrative is that all the money flowing into US equities, especially through passive funds, is propping up the US bubble. Umm, US bond mutual funds and ETFs have seen cumulative flows of ~$3.4 trillion, while US equity mutual funds and ETFs have had flows of ~$560 billion. There is money going into US equities, but not as much as people assume. ![](https://www.bebhuvan.com/images/2022/05/US-equity-and-bond-flows.jpg) 
+The other narrative is that all the money flowing into US equities, especially through passive funds, is propping up the US bubble. Umm, US bond mutual funds and ETFs have seen cumulative flows of ~$3.4 trillion, while US equity mutual funds and ETFs have had flows of ~$560 billion. There is money going into US equities, but not as much as people assume. ![](/blog-images/US-equity-and-bond-flows.jpg) 
 
 The theory is that the “permanent bid” through passive ETFs, mutual funds, 401k plans and pension funds are pushing the prices up. Since these automatic flows are mostly price agnostic, there’s sustained upward pressure on stock prices. 
 
@@ -186,16 +186,16 @@ This question becomes relevant only if you agree with the premise that not every
 
 <pre class="wp-block-verse has-regular-font-size"><em>As an aside, the other issue with screaming there's a bubble is what exactly is a bubble, and how do you define it? On the one extreme, you have people like </em><em><a href="http://economics-files.pomona.edu/garysmith/Econ156/Lectures/FamaOnBubbles.html">Eugene Fama</a></em><em> that are of the view that there's no such thing as a bubble. On the other extreme, you have people like </em><em><a href="https://blogs.cfainstitute.org/investor/2019/01/07/robert-j-shiller-on-bubbles-reflexivity-and-narrative-economics/">Robert Shiller</a></em><em> that think otherwise. This is the exact debate that led both of them </em><em><a href="https://www.nobelprize.org/prizes/economic-sciences/2013/prize-announcement/">to share a Nobel Prize</a></em><em>. </em></pre> 
 
-So, where are the bubbles? ![](https://www.bebhuvan.com/images/2022/06/Biggest-bubbles.webp) 
+So, where are the bubbles? ![](/blog-images/Biggest-bubbles.webp) 
 
 #### Growthy stonks
-There was indeed some insanity on 10x leverage in some market segments, especially the growth stocks. Over the past decade, there were a record number of unprofitable IPOs, the bulk of which were the so-called _new-age tech companies._ These companies were sold on pitches of disruption, destruction and world domination. The fervor around these stocks was reminiscent of the dot-com bubble. As long as a company had something remotely to do with _tech,_ the IPO would be oversubscribed. Revenues and profitability didn’t matter. The more the losses, the better it was. ![](https://www.bebhuvan.com/images/2022/05/Unprofitable-companies-IPOs.png) 
+There was indeed some insanity on 10x leverage in some market segments, especially the growth stocks. Over the past decade, there were a record number of unprofitable IPOs, the bulk of which were the so-called _new-age tech companies._ These companies were sold on pitches of disruption, destruction and world domination. The fervor around these stocks was reminiscent of the dot-com bubble. As long as a company had something remotely to do with _tech,_ the IPO would be oversubscribed. Revenues and profitability didn’t matter. The more the losses, the better it was. ![](/blog-images/Unprofitable-companies-IPOs.png) 
 
-Things got a little more unhinged after the pandemic. Tech and internet stocks became the new darlings due to the shift to remote work. Hundreds of tech, internet, disruptive tech, biotech, robotics, space, AI, next-gen tech and other nonsensically labelled ETFs were launched to take advantage of the demand. Nothing was more emblematic of this fetish for growthiness than Cathie Wood’s ARK ETFs. These funds are now falling as if there’s no bottom. ![](https://www.bebhuvan.com/images/2022/06/Internet-ETFs.png) 
+Things got a little more unhinged after the pandemic. Tech and internet stocks became the new darlings due to the shift to remote work. Hundreds of tech, internet, disruptive tech, biotech, robotics, space, AI, next-gen tech and other nonsensically labelled ETFs were launched to take advantage of the demand. Nothing was more emblematic of this fetish for growthiness than Cathie Wood’s ARK ETFs. These funds are now falling as if there’s no bottom. ![](/blog-images/Internet-ETFs.png) 
 
-Jeremy Grantham found that half of the growth stocks in the Russel 3000 index had negative earnings. He had been screaming about a bubble since 2010 and wanted a crash so badly that GMO created a composite growth metric, just so that he could make this [scary chart][38] 😂 No, I kid. ![](https://www.bebhuvan.com/images/2022/05/Growth-stocks.png) 
+Jeremy Grantham found that half of the growth stocks in the Russel 3000 index had negative earnings. He had been screaming about a bubble since 2010 and wanted a crash so badly that GMO created a composite growth metric, just so that he could make this [scary chart][38] 😂 No, I kid. ![](/blog-images/Growth-stocks.png) 
 
-Until this year, the markets didn’t care. Buying a basket of companies with the worst possible fundamentals was the best trade. Talking about earnings and fundamentals was the surest way to look foolish. ![](https://www.bebhuvan.com/images/2022/05/Growth-stocks-vanguard.png) 
+Until this year, the markets didn’t care. Buying a basket of companies with the worst possible fundamentals was the best trade. Talking about earnings and fundamentals was the surest way to look foolish. ![](/blog-images/Growth-stocks-vanguard.png) 
 
 The one stock that was symbolic of the growthy craziness that immediately comes to mind is Rivian, the electric car startup. At one point after its IPO, the company had a market cap of $100 billion+, which was higher than General Motors and Ford despite having zero revenue. The other bubbly segment was SaaS companies. Some of these companies were trading at over 25 times their revenues, but as of May 2022, the median revenue multiple has fallen to [~5 times][39]. 
 
@@ -205,14 +205,14 @@ This glut of _growthy_ stocks was due to the incredible growth of venture capita
 
 In the last 2-3 years, FOMO took over as funds were investing as if they were throwing blind darts. They were increasingly piling into the same set of companies and rapidly marking up the valuations. Deals were being closed in hours and days, and due diligence was a dirty word, just like fundamentals. Founders went from pitching to VC funds to getting pitched by VC funds. You could ask your grandma to pitch an idea, and Tiger Global and Softbank would get into a cat fight to fund her. There was no difference between a pump and dump scheme, and venture investing_._ 
 
-All these stocks are now crashing twice as fast as they went up. I’ve been getting unconfirmed reports that the most heard song by the CEOs of these companies was _Livin’ on a Prayer_ by Bon Jovi. ![](https://www.bebhuvan.com/images/2022/05/IPO-ETF.png) 
+All these stocks are now crashing twice as fast as they went up. I’ve been getting unconfirmed reports that the most heard song by the CEOs of these companies was _Livin’ on a Prayer_ by Bon Jovi. ![](/blog-images/IPO-ETF.png) 
 
 #### SPACtacular implosion
 Every crazy market phase has a poster child. Nothing compared to the sheer insanity of the [special purpose acquisition company (SPAC)][41]. SPACs are blank check companies that raise money to acquire or merge with other companies. They are similar to IPOs, but with lesser regulatory hassles. The problem is that they are also costly, opaque and heavily dilute retail investors. They’re also quite lucrative for the sponsors of SPACs, who typically get 20% of the post-IPO shares for free. These skewed [incentives attracted everybody][42], from shady operators to Hollywood celebrities. 
 
 > Ohlrogge and Klausner, a professor at Stanford Law School, discovered that these costs quickly added up: The dilution from warrants issued in the IPO, along with virtually free shares for sponsors and banking fees for both the IPO and the merger that ended up being two to three times higher for a SPAC than for a traditional IPO, all ate into the amount of cash the companies had once the merger happened. Because the companies passed on these costs to the remaining shareholders, the companies ended up with about 40 percent less cash than they started with.
 
-SPACs became the go-to vehicle to take companies public over the last couple of years. But most of these companies were useless and downright fraudulent in some cases. Regular IPOs can’t make projections or forward-looking statements in the US due to liability issues. But until March, SPACs could make projections because of a [safe harbor provision][41]. SPACs exploited this regulatory arbitrage to make wildly optimistic projections unsullied by reality to dump the stock of worthless companies on retail investors. SPACs raised over $250 billion in 2020 and 2021, but the party is over. Given the market sentiments, SPACs will have no choice but cancel, and [return the cash][43]. Companies that listed through SPACs have been getting a royal spanking, with most of them down by over 30-50% YTD. ![](https://www.bebhuvan.com/images/2022/05/De-spac-ETF-3.png) 
+SPACs became the go-to vehicle to take companies public over the last couple of years. But most of these companies were useless and downright fraudulent in some cases. Regular IPOs can’t make projections or forward-looking statements in the US due to liability issues. But until March, SPACs could make projections because of a [safe harbor provision][41]. SPACs exploited this regulatory arbitrage to make wildly optimistic projections unsullied by reality to dump the stock of worthless companies on retail investors. SPACs raised over $250 billion in 2020 and 2021, but the party is over. Given the market sentiments, SPACs will have no choice but cancel, and [return the cash][43]. Companies that listed through SPACs have been getting a royal spanking, with most of them down by over 30-50% YTD. ![](/blog-images/De-spac-ETF-3.png) 
 
 In recent weeks, 25 companies that went public through SPACs have [issued warnings][44] that they may die in the next 12 months. I think this is just the beginning. Most companies that went public through SPACs have no business models and will die eventually. 
 
@@ -233,7 +233,7 @@ The speculative fervor wasn’t just limited to DeFi. The mania was such that ra
 
 As long as you knew some basic coding, you could launch a token or create an NFT within 5 mins. There was an entire cottage industry dedicated to pumping crypto projects and NFTs on Telegram, WhatsApp, Reddit and Discord for a few dollars. Once the pump was in, you could dump them and [make easy money][50]. Rising crypto prices attracted more suckers, which fed the cycle, ensuring a limitless supply of victims. Crypto became a hunting ground for hackers and scammers. Unwitting investors have lost billions due to [hacks and exploits][51]. 
 
-Naturally, the VCs saw an opening and co-opted crypto. They even rebranded it to “web3.” A worldwide investigation is underway to ascertain the meaning of the term. Venture capital firms like a16z, Paradigm and exchanges like FTX, Coinbase and Binance invested billions in crypto and blockchain startups. ![](https://www.bebhuvan.com/images/2022/06/crypt-funding.png) 
+Naturally, the VCs saw an opening and co-opted crypto. They even rebranded it to “web3.” A worldwide investigation is underway to ascertain the meaning of the term. Venture capital firms like a16z, Paradigm and exchanges like FTX, Coinbase and Binance invested billions in crypto and blockchain startups. ![](/blog-images/crypt-funding.png) 
 
 Of course, this wasn’t without side effects. 
 
@@ -251,7 +251,7 @@ When you question the crypto boosters about the shortcomings of web3, you’ll t
 
 Not even the most ardent crypto fanatics can deny all these things. Despite sounding negative, I’m deeply ambivalent about crypto. Maybe this is how “innovation” works, I don’t know.
 
-As things stand, crypto is getting [shellacked][55]. We’ve seen several high-profile blow-ups in a span of weeks. It started with the spectacular implosion of the $40+ billion Terra stablecoin project. Celsius, a platform that paid high interest rates on crypto deposits with over $12 billion in assets, was next—last week, it froze all withdrawals. This week, crypto venture/hedge fund Three Arrows Capital collapsed after the recent rout in crypto prices, and the demise of Terra [led to margin calls][56] it couldn’t fulfil. ![](https://www.bebhuvan.com/images/2022/06/crypto-marketcap.png) 
+As things stand, crypto is getting [shellacked][55]. We’ve seen several high-profile blow-ups in a span of weeks. It started with the spectacular implosion of the $40+ billion Terra stablecoin project. Celsius, a platform that paid high interest rates on crypto deposits with over $12 billion in assets, was next—last week, it froze all withdrawals. This week, crypto venture/hedge fund Three Arrows Capital collapsed after the recent rout in crypto prices, and the demise of Terra [led to margin calls][56] it couldn’t fulfil. ![](/blog-images/crypto-marketcap.png) 
 
 Some projects have survived and thrived at the end of every crypto cycle. But this time around, the risk for crypto is that it’s mainstream. They now mimic traditional financial institutions like banks, asset managers and exchanges without any oversight and billions in assets. Regulators have been spectacularly incoherent in dealing with crypto so far, but things are changing. More often than not, the preferred policy option has been to make life extraordinarily difficult for crypto, like imposing high taxes than outright banning them. But we’ll have more coherent regulations in the years to come. 
 
@@ -272,7 +272,7 @@ Maybe all these crazy people thought this could go on forever or at the least fo
 
 But in 2020, it was different. As the pandemic hit, countries around the world—especially the developed countries—unleashed economic stimulus programs on a scale never seen before to stop the global economy from going back to the dark ages. Advanced countries threw the kitchen sink, including handing out free cash to people, to put a floor under the economy. Countries unveiled [trillions][58] worth of programs in weeks. 
 
-Here’s a stunning chart that shows the total savings of Americans. US consumers got [~$2 trillion][59] for free from the government. This stimulus was designed to bridge the economic output gap due to the shutdowns. With the luxury of hindsight, people now argue that the stimulus was way too much and inflation is a direct result. ![](https://www.bebhuvan.com/images/2022/06/COvid-stimuls-US.jpg) 
+Here’s a stunning chart that shows the total savings of Americans. US consumers got [~$2 trillion][59] for free from the government. This stimulus was designed to bridge the economic output gap due to the shutdowns. With the luxury of hindsight, people now argue that the stimulus was way too much and inflation is a direct result. ![](/blog-images/COvid-stimuls-US.jpg) 
 
 As the economies around the world reopened, there was a tremendous rebound in consumer spending. But the world wasn’t prepared to deal with it. 
 
@@ -290,13 +290,13 @@ As the economies around the world reopened, there was a tremendous rebound in co
 
  7. This manifested in shortages of everything from critical manufacturing inputs like semiconductors to toilet paper.
 
-The advanced economies have been praying for inflation since 2008, and their prayers went unanswered for well over a decade. But thanks to the idiosyncratic global reopening, the simultaneous spike in demand for goods, fall in supply, and energy shocks, [inflation showed up][60] with a vengeance. ![](https://www.bebhuvan.com/images/2022/05/global-inflation.png) 
+The advanced economies have been praying for inflation since 2008, and their prayers went unanswered for well over a decade. But thanks to the idiosyncratic global reopening, the simultaneous spike in demand for goods, fall in supply, and energy shocks, [inflation showed up][60] with a vengeance. ![](/blog-images/global-inflation.png) 
 
 Governments and central banks initially assumed that inflation would be transitory, and it would pass—it didn’t. Even I assumed this would be transitory, and boy was I wrong. The Russian invasion of Ukraine further intensified the inflationary pressures. The Fed and the ECB, which had kept interest rates low, could no longer sit idle. The Fed is now hiking rates aggressively, and the ECB will follow suit in July. The central banks in emerging markets had started hiking much earlier. 
 
-A decade of low interest rates, increased retail participation, and pandemic stimulus cheques had led to excesses building up in some segments of the markets. But this rising rate environment has become a nightmare for these frothy corners of the markets. We’re seeing massive bloodletting across the board, but it’s particularly gory for growth stocks. It’s like popping a balloon. ![](https://www.bebhuvan.com/images/2022/05/global-indices.png) 
+A decade of low interest rates, increased retail participation, and pandemic stimulus cheques had led to excesses building up in some segments of the markets. But this rising rate environment has become a nightmare for these frothy corners of the markets. We’re seeing massive bloodletting across the board, but it’s particularly gory for growth stocks. It’s like popping a balloon. ![](/blog-images/global-indices.png) 
 
-The [craziest segments][61] of the market, such as meme stocks, unprofitable companies and crypto, are in free fall. ![](https://www.bebhuvan.com/images/2022/06/meme-stocks-unporfitable-index.png) 
+The [craziest segments][61] of the market, such as meme stocks, unprofitable companies and crypto, are in free fall. ![](/blog-images/meme-stocks-unporfitable-index.png) 
 
 Here’s a shocking titbit. 
 
@@ -304,7 +304,7 @@ The pace of multiple compression has been brutal.
 
 All the analyst estimates that missed earnings are now getting revised. If earnings [take a hit][62], will things get [even uglier][63]? 
 
-Meanwhile, thee yoots (youths) have discovered Buffett ![](https://www.bebhuvan.com/images/2022/06/Buffett-ark-penny-stocks.png) 
+Meanwhile, thee yoots (youths) have discovered Buffett ![](/blog-images/Buffett-ark-penny-stocks.png) 
 
 ### Private markets
 The US private markets (venture capital & private equity) are tiny compared to US public markets. But over the last decade, much of the action has been in the private markets. The public markets were largely a sideshow. Companies have [raised more capital in private markets][64] over the last decade than in the public markets. 
@@ -313,7 +313,7 @@ The US private markets (venture capital & private equity) are tiny compared to U
  
  Public to Private Equity in the United States: A Long-Term Look
 
-The Cambrian explosion in US tech and software startups over the last decade is because of the [phenomenal growth][40] of US venture capital. Venture activity had declined significantly after the dot-com bubble in 2000-2001 but recovered spectacularly after the 2008 crisis. Without the easy availability of risk capital, the US startup scene would’ve been a pale shadow of today. We can see the counterfactual in Europe, which doesn’t even come close to the US in terms of new startup formation, let alone successful tech startups. This is largely because European Venture capital is still tiny, and the availability of risk capital is directly [correlated with][65] startup formation. ![](https://www.bebhuvan.com/images/2022/05/Global-venture-capital.png) 
+The Cambrian explosion in US tech and software startups over the last decade is because of the [phenomenal growth][40] of US venture capital. Venture activity had declined significantly after the dot-com bubble in 2000-2001 but recovered spectacularly after the 2008 crisis. Without the easy availability of risk capital, the US startup scene would’ve been a pale shadow of today. We can see the counterfactual in Europe, which doesn’t even come close to the US in terms of new startup formation, let alone successful tech startups. This is largely because European Venture capital is still tiny, and the availability of risk capital is directly [correlated with][65] startup formation. ![](/blog-images/Global-venture-capital.png) 
 
 Why did US venture capital grow so large compared to the rest of the world? 
 
@@ -349,11 +349,11 @@ The other important factor that led to the explosive growth of venture capital w
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/06/Pension-funding.png)
+ - ![](/blog-images/Pension-funding.png)
 
- - ![](https://www.bebhuvan.com/images/2022/06/Pension-funding-gap.png)
+ - ![](/blog-images/Pension-funding-gap.png)
 
- - ![](https://www.bebhuvan.com/images/2022/06/Pension-funding-millman.png)
+ - ![](/blog-images/Pension-funding-millman.png)
 
  
 
@@ -365,14 +365,14 @@ The other important factor that led to the explosive growth of venture capital w
  </div>
 </div>
 
-For a long time, US pensions and endowments had a returns assumption of [8-10%][72]. This made sense at a time when treasury yields were high. But bond yields had been in a secular decline for well over two decades across the world. At the same time, pension liabilities have increased steadily. Pensions need to hit a certain return target to meet the liabilities, or they go bust. As bond yields fell, pensions had to supplement the returns. In order to hit their targeted returns, pension funds have substantially increased their allocation to alternatives such as venture capital, private equity, infrastructure and real estate over the last two decades. The average US pension allocation to private markets went from about 5% in 2000 to over [15% today][73]. It seems like a small number, but pensions manage trillions. Even a 1% change in allocation means billions in flows. ![](https://www.bebhuvan.com/images/2022/06/Alternative-asset-allocation-IMF.png) 
+For a long time, US pensions and endowments had a returns assumption of [8-10%][72]. This made sense at a time when treasury yields were high. But bond yields had been in a secular decline for well over two decades across the world. At the same time, pension liabilities have increased steadily. Pensions need to hit a certain return target to meet the liabilities, or they go bust. As bond yields fell, pensions had to supplement the returns. In order to hit their targeted returns, pension funds have substantially increased their allocation to alternatives such as venture capital, private equity, infrastructure and real estate over the last two decades. The average US pension allocation to private markets went from about 5% in 2000 to over [15% today][73]. It seems like a small number, but pensions manage trillions. Even a 1% change in allocation means billions in flows. ![](/blog-images/Alternative-asset-allocation-IMF.png) 
 
-It’s not just pensions—[endowments][75], sovereign wealth funds, and family offices have also dramatically ratcheted up private market exposure. This is the biggest reason behind the dramatic increase in [funds raised][76] by private equity and venture capital. ![](https://www.bebhuvan.com/images/2022/06/Global-VC-fund-raise.png) 
+It’s not just pensions—[endowments][75], sovereign wealth funds, and family offices have also dramatically ratcheted up private market exposure. This is the biggest reason behind the dramatic increase in [funds raised][76] by private equity and venture capital. ![](/blog-images/Global-VC-fund-raise.png) 
 
 #### Richie rich 🤑
 Over the last decade, the [number of billionaires][77] around the world has increased dramatically. These people combined control trillions in wealth. Along with the existing rich people that inherited generational wealth, the newly minted billionaires over the last decade control substantial wealth. Rich people typically operate in family office structures because it has fewer regulatory hassles than other structures. From being sleepy outfits, family offices are now twice the [size of hedge funds][78]. 
 
-Given the sizable pool of money, they’ve become serious players in the financial markets. We saw this first hand with the [spectacular implosion][79] of Bill Hwang’s Archegos. ![](https://www.bebhuvan.com/images/2022/06/Billionnaries-around-the-world.png) 
+Given the sizable pool of money, they’ve become serious players in the financial markets. We saw this first hand with the [spectacular implosion][79] of Bill Hwang’s Archegos. ![](/blog-images/Billionnaries-around-the-world.png) 
 
 Inevitably, this wealth has also flown into [venture capital and private equity][80]. The typical family office allocation to private markets ranges from 10% to 25%. Family offices are also increasingly becoming sophisticated, employing some of the best and brightest talent. They can go toe to toe with established VC outfits for deals. 
 
@@ -385,9 +385,9 @@ These factors, in turn, have created a feedback loop, and companies stayed priva
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/06/Public-vs-private-companies.png)
+ - ![](/blog-images/Public-vs-private-companies.png)
 
- - ![](https://www.bebhuvan.com/images/2022/06/Public-vs-private-companies-by-revnue.png)
+ - ![](/blog-images/Public-vs-private-companies-by-revnue.png)
 
  
 
@@ -404,9 +404,9 @@ These factors, in turn, have created a feedback loop, and companies stayed priva
 #### Rising from the shadows
 Most importantly, the rise of private equity and venture capital should also be seen through the lens of [the growth of shadow banking][81]. Although the term “shadow banking” sounds foreboding, it’s just an umbrella term for non-bank firms that engage in banking activities like lending etc. Broadly speaking, entities such as private equity, private credit, hedge funds, money market funds, asset managers, insurance companies, securitization vehicles and broker-dealers fall under the umbrella. Shadow banking came into the spotlight during 2008 when people discovered that money market funds, prime brokers, repo dealers, and securitization vehicles were at the heart of the crisis. 
 
-After 2008, regulators in advanced economies woke up and tightened the screws on banks by increasing capital requirements, passing new regulations and oversight. Steadily, banks retreated from many lending and trading activities in the post-2008 period. At the same time, institutional pools of money from pensions, endowments, sovereign wealth funds, and family offices grew larger than ever. They were hungry for yield, given the low interest rates. ![](https://www.bebhuvan.com/images/2022/06/Institutional-investors-private.webp) 
+After 2008, regulators in advanced economies woke up and tightened the screws on banks by increasing capital requirements, passing new regulations and oversight. Steadily, banks retreated from many lending and trading activities in the post-2008 period. At the same time, institutional pools of money from pensions, endowments, sovereign wealth funds, and family offices grew larger than ever. They were hungry for yield, given the low interest rates. ![](/blog-images/Institutional-investors-private.webp) 
 
-Here are the biggest [limited partners][82] (LPs) in the US. ![](https://www.bebhuvan.com/images/2022/06/Venture-capital-LPs.png) 
+Here are the biggest [limited partners][82] (LPs) in the US. ![](/blog-images/Venture-capital-LPs.png) 
 
 The eye-popping growth of private equity and venture was also a result of two factors: the shrinking bank lending after 2008 and the rise of large institutional investors. PE and VC firms stepped in to [intermediate][83] the flow of money from institutional investors to private markets through various forms of equity and debt. 
 
@@ -414,9 +414,9 @@ The eye-popping growth of private equity and venture was also a result of two fa
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/06/Private-funding-by-type-1.webp)
+ - ![](/blog-images/Private-funding-by-type-1.webp)
 
- - ![](https://www.bebhuvan.com/images/2022/06/Priivate-Global-capital-type.webp)
+ - ![](/blog-images/Priivate-Global-capital-type.webp)
 
  
 
@@ -439,7 +439,7 @@ Ok, all that’s well and good. But why are we looking at this US-centric versio
 The US exports 3 crucial things: 
 1. **Trash** &#8211; both [actual trash][88] and white trash. 
 2. **Treasuries** &#8211; US treasuries are the preferred safe asset for both governments and the private sector. So, it [manufactures and exports][89] US Govt bonds. 
-3. **Venture capital** &#8211; Given the depth of its institutional capital pools, it’s also the world’s largest exporter of venture capital, [accounting for][90] well over half of global venture capital. The story of the growth of venture capital and private markets is a US story because it underwrote most of it. ![](https://www.bebhuvan.com/images/2022/06/US-venture-capital-as-a-percentage-of-global-venture-capital.png) 
+3. **Venture capital** &#8211; Given the depth of its institutional capital pools, it’s also the world’s largest exporter of venture capital, [accounting for][90] well over half of global venture capital. The story of the growth of venture capital and private markets is a US story because it underwrote most of it. ![](/blog-images/US-venture-capital-as-a-percentage-of-global-venture-capital.png) 
 
 Now, back to the main point, why did the private markets grow so large? Well, people will quickly jump up like they have a lizard on their neck and tell you that it was the central banks, low interest rates and “money printing.” Sure, these were secondary factors, but not the primary causes. The growth of the venture capital and private markets has been in the making for well over 4 decades. Things rarely happen overnight. The structural changes that create or destroy trends take decades to form and mature. But who cares about nuance? 
 
@@ -454,13 +454,13 @@ Over the years, the flood of capital in venture capital has also caused some ser
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/06/VC-global-pre-money-valuations.png)
+ - ![](/blog-images/VC-global-pre-money-valuations.png)
 
- - ![](https://www.bebhuvan.com/images/2022/06/VC-global-sizes.png)
+ - ![](/blog-images/VC-global-sizes.png)
 
- - ![](https://www.bebhuvan.com/images/2022/06/VC-valuations.png)
+ - ![](/blog-images/VC-valuations.png)
 
- - ![](https://www.bebhuvan.com/images/2022/06/VC-global-median-deal-size.png)
+ - ![](/blog-images/VC-global-median-deal-size.png)
 
  
 
@@ -478,13 +478,13 @@ All the lines started sloping upward sharply around 2019, and the 3 ensuing year
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/06/Nontraditional-VC-investments-deals.png)
+ - ![](/blog-images/Nontraditional-VC-investments-deals.png)
 
- - ![](https://www.bebhuvan.com/images/2022/06/Nontraditional-investor-participation.png)
+ - ![](/blog-images/Nontraditional-investor-participation.png)
 
- - ![](https://www.bebhuvan.com/images/2022/06/Nontraditional-VC-investments.png)
+ - ![](/blog-images/Nontraditional-VC-investments.png)
 
- - ![](https://www.bebhuvan.com/images/2022/06/Nontraditional-VC-investments-valuations.png)
+ - ![](/blog-images/Nontraditional-VC-investments-valuations.png)
 
  
 
@@ -497,13 +497,13 @@ All the lines started sloping upward sharply around 2019, and the 3 ensuing year
 </div>
 
 #### The great detox
-Things were looking good until non-transitory inflation finally showed up. Central bankers who had been chilling for the past decade woke up suddenly and started hiking rates—something they had forgotten how to do. Since the start of the year, the US markets, especially the tech and growthy segments of the markets, have taken a brutal knock. It doesn’t look like the bloodletting is done yet. ![](https://www.bebhuvan.com/images/2022/06/YTF.png) 
+Things were looking good until non-transitory inflation finally showed up. Central bankers who had been chilling for the past decade woke up suddenly and started hiking rates—something they had forgotten how to do. Since the start of the year, the US markets, especially the tech and growthy segments of the markets, have taken a brutal knock. It doesn’t look like the bloodletting is done yet. ![](/blog-images/YTF.png) 
 
-The crazy multiples these stocks used to command have [shrunk quite a bit][93] in a short span of time. Analysts that had discounted cash flows of 2097 are opening the Excel sheets and changing the dates. ![](https://www.bebhuvan.com/images/2022/06/Public-markets-Software-Forward-Revenue-Multiples.webp) 
+The crazy multiples these stocks used to command have [shrunk quite a bit][93] in a short span of time. Analysts that had discounted cash flows of 2097 are opening the Excel sheets and changing the dates. ![](/blog-images/Public-markets-Software-Forward-Revenue-Multiples.webp) 
 
-All the worthless companies that IPO’d in the last few years have been infected with gravity. ![](https://www.bebhuvan.com/images/2022/06/VC-spac-pitchbook-index.png) 
+All the worthless companies that IPO’d in the last few years have been infected with gravity. ![](/blog-images/VC-spac-pitchbook-index.png) 
 
-It’s a bittersweet moment for VCs. Given the mindless appetite for growthiness in the last few years, VCs had a record number of [exits][94]. But they are still stuck with plenty of private companies in their portfolios whose values are falling fast. ![](https://www.bebhuvan.com/images/2022/06/Global-VC-exits.png) 
+It’s a bittersweet moment for VCs. Given the mindless appetite for growthiness in the last few years, VCs had a record number of [exits][94]. But they are still stuck with plenty of private companies in their portfolios whose values are falling fast. ![](/blog-images/Global-VC-exits.png) 
 
 One of the advantages of private markets is that investments don’t need to be marked to market. This allows VCs, pensions, endowments and other large private market investors to show artificially inflated returns when compared to public market equivalents. Cliff Asness of AQR calls this “volatility laundering.” VCs often use this to raise new funds. In theory, the lack of mark to market accounting in private markets was supposed to solve the short-termism that plagues the public markets. But on the flip side, VCs don’t have an incentive to quickly mark down their investments even when public market equivalent stocks are down 50%+ as they are now. 
 
@@ -543,7 +543,7 @@ Though private markets time to come back to reality, we’re already seeing the 
 
 The one thing I keep hearing is that there’s a lot of money on the sidelines. In some sense, it is true, given that venture funds had record distributions in the last 3 years. All of this money has to be put to work somewhere. So, does this mean that even if the public markets tank, venture activity won’t fall as badly as it could have in the absence of this dry powder? I don’t know. 
 
-This [Bain report][97] put the total private markets dry powder at $3.4 trillion. [Pitchbook][98] estimates $222 billion of this dry power in venture capital alone, while [Prequin][99] puts it at $478 billion. But not all of this capital will be called by the VC funds and deployed. More importantly, if this market crash becomes as bad as 2008 or 2020, limited partners may default even if the capital is called. ![](https://www.bebhuvan.com/images/2022/06/Dry-powder-VC-PE.png) 
+This [Bain report][97] put the total private markets dry powder at $3.4 trillion. [Pitchbook][98] estimates $222 billion of this dry power in venture capital alone, while [Prequin][99] puts it at $478 billion. But not all of this capital will be called by the VC funds and deployed. More importantly, if this market crash becomes as bad as 2008 or 2020, limited partners may default even if the capital is called. ![](/blog-images/Dry-powder-VC-PE.png) 
 
 ### More craziness?
 Venture capital and private equity aren’t the only crazy segments of the private markets. 

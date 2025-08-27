@@ -49,11 +49,11 @@ These companies have a serious case of Attention-deficit/hyperactivity disorder 
 2021: Revolutionizing everything all at once  
 2022: <s>Revolutionizing predatory lending</s>, sorry, fintech lending
 
-**Fintechs, as it turned out, were just glorified call centers with good-looking apps.** ![](https://www.bebhuvan.com/images/2022/07/Dilbert.jpeg) 
+**Fintechs, as it turned out, were just glorified call centers with good-looking apps.** ![](/blog-images/Dilbert.jpeg) 
 
 There’s a long-running joke that fintech is just regulatory arbitrage. It’s a tired trope, but it’s largely true.   
 
-Jamie Dimon had written about this in his [2020 letter][6]:![](https://www.bebhuvan.com/images/2022/07/Fintech-regulatory-arbitrage.png) 
+Jamie Dimon had written about this in his [2020 letter][6]:![](/blog-images/Fintech-regulatory-arbitrage.png) 
 
 We saw this just a few weeks ago when RBI issued a notification saying credit lines can’t be loaded onto prepaid payment instruments (PPIs). Fintech companies had found a sneaky way to simulate credit cards without issuing credit cards to offer Buy Now Pay Later (BNPL) loans. They had partnered with banks to issue prepaid cards and with NBFCs to issue credit lines which would be loaded onto the card, and voila, you have a credit...ish card. Several startups were doing serious business, and in one fell swoop, RBI [killed][7] the model.
 

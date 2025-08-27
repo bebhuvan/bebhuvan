@@ -22,13 +22,13 @@ But before that, how often do sovereigns default? Here's [a history][3] of globa
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/05/Sovereign-Foreign-Currency-Selective-Defaults-By-Year.png)
+ - ![](/blog-images/Sovereign-Foreign-Currency-Selective-Defaults-By-Year.png)
 
- - ![](https://www.bebhuvan.com/images/2022/04/sovereign-debt-in-default-by-creditor.png)
+ - ![](/blog-images/sovereign-debt-in-default-by-creditor.png)
 
- - ![](https://www.bebhuvan.com/images/2022/04/Sovereign-default-rates.png)
+ - ![](/blog-images/Sovereign-default-rates.png)
 
- - ![](https://www.bebhuvan.com/images/2022/04/Sovereign-debt-banking-currency-crises.png)
+ - ![](/blog-images/Sovereign-debt-banking-currency-crises.png)
 
  
 
@@ -40,9 +40,9 @@ But before that, how often do sovereigns default? Here's [a history][3] of globa
  </div>
 </div>
 
-Emerging markets saw a series of sovereign debt crises from the 1970s to the early 2000s. The first wave of crises occurred between 1970-80 in Latin America. In the early 1970s, real interest rates were low and even negative. At the same time, thanks to the OPEC oil shocks, oil-exporting countries were enjoying record surpluses. Since oil was denominated in dollars, these surpluses were mostly parked with US banks looking for yield. During the 70s, Latin American economies were growing at a fast clip. Thanks to the low real rates, dollar funding was cheap. US banks were more than happy to lend these petrodollars to Latin American countries that wanted to invest in infrastructure, military and other public spending. These countries borrowed heavily. They were running large fiscal deficits and could sustain them since the GDP growth was high. External debt in Latin America shot up from $32 billion in 1970 to $332 billion in 1983. Latin American debt accounted for [176%][4] of the capital of the 9 of the largest US banks. ![](https://www.bebhuvan.com/images/2022/05/Latin-american-debt-crisis.png) 
+Emerging markets saw a series of sovereign debt crises from the 1970s to the early 2000s. The first wave of crises occurred between 1970-80 in Latin America. In the early 1970s, real interest rates were low and even negative. At the same time, thanks to the OPEC oil shocks, oil-exporting countries were enjoying record surpluses. Since oil was denominated in dollars, these surpluses were mostly parked with US banks looking for yield. During the 70s, Latin American economies were growing at a fast clip. Thanks to the low real rates, dollar funding was cheap. US banks were more than happy to lend these petrodollars to Latin American countries that wanted to invest in infrastructure, military and other public spending. These countries borrowed heavily. They were running large fiscal deficits and could sustain them since the GDP growth was high. External debt in Latin America shot up from $32 billion in 1970 to $332 billion in 1983. Latin American debt accounted for [176%][4] of the capital of the 9 of the largest US banks. ![](/blog-images/Latin-american-debt-crisis.png) 
 
-The 70s and 80s were a stubbornly high inflationary period in the US. In 1979, Paul Volcker was appointed as the Fed chair to tame inflation. Volcker promptly raised the interest rates to 20%, which put the US in recession and caused a global slowdown. Most of the debt of the Latin American countries were short-term floating rate loans. Suddenly, the debt servicing costs for Latin American counties shot up, currencies saw sharp devaluations, and they had to [default][6]. ![](https://www.bebhuvan.com/images/2022/04/US-interest-rates-debt-crises.webp) 
+The 70s and 80s were a stubbornly high inflationary period in the US. In 1979, Paul Volcker was appointed as the Fed chair to tame inflation. Volcker promptly raised the interest rates to 20%, which put the US in recession and caused a global slowdown. Most of the debt of the Latin American countries were short-term floating rate loans. Suddenly, the debt servicing costs for Latin American counties shot up, currencies saw sharp devaluations, and they had to [default][6]. ![](/blog-images/US-interest-rates-debt-crises.webp) 
 
 The next major episode of the sovereign debt crisis was the Asian Financial crisis. South Korea, Indonesia and Thailand were at the heart of the crisis. Philippines, Malaysia, and Hong Kong suffered collateral damage. The 90s were a low interest rate environment and investors in developing countries were starved for yield. At the same time, Asian countries were growing rapidly, and investors made a beeline to these countries. Foreign capital inflows to Asian countries rose from $9 billion in 1990 to about $80 billion by 1996. The flows were arbitraging interest rate differentials—borrow in a low interest rate country and invest in a high rate country. At the heart of the crisis was the good old maturity mismatch. Asian banks were borrowing short term in dollars and lending long term in their local currencies. 
 
@@ -66,13 +66,13 @@ Global credit ratings have progressively worsened since the global financial cri
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/05/Global-sovereign-rating-distribution.png)
+ - ![](/blog-images/Global-sovereign-rating-distribution.png)
 
- - ![](https://www.bebhuvan.com/images/2022/05/Global-sovereign-rating-history.png)
+ - ![](/blog-images/Global-sovereign-rating-history.png)
 
- - ![](https://www.bebhuvan.com/images/2022/05/Global-sovereign-rating-outlook-by-region.png)
+ - ![](/blog-images/Global-sovereign-rating-outlook-by-region.png)
 
- - ![](https://www.bebhuvan.com/images/2022/05/Global-sovereign-rating-outlook.png)
+ - ![](/blog-images/Global-sovereign-rating-outlook.png)
 
  
 
@@ -91,11 +91,11 @@ Global credit ratings have progressively worsened since the global financial cri
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/05/EMEA-Emerging-Markets-Sovereign-Ratings.png)
+ - ![](/blog-images/EMEA-Emerging-Markets-Sovereign-Ratings.png)
 
- - ![](https://www.bebhuvan.com/images/2022/05/EMEA-Emerging-Markets-Sovereign-Ratings-history.png)
+ - ![](/blog-images/EMEA-Emerging-Markets-Sovereign-Ratings-history.png)
 
- - ![](https://www.bebhuvan.com/images/2022/05/EMEA-Emerging-Markets-Sovereign-outlook-balance.png)
+ - ![](/blog-images/EMEA-Emerging-Markets-Sovereign-outlook-balance.png)
 
  
 
@@ -116,11 +116,11 @@ But the balance sheets of these countries have deteriorated significantly post t
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/05/Asia-sovereign-rating-distribution.png)
+ - ![](/blog-images/Asia-sovereign-rating-distribution.png)
 
- - ![](https://www.bebhuvan.com/images/2022/05/Asia-sovereign-rating-history.png)
+ - ![](/blog-images/Asia-sovereign-rating-history.png)
 
- - ![](https://www.bebhuvan.com/images/2022/05/Asia-sovereign-rating-outlook.png)
+ - ![](/blog-images/Asia-sovereign-rating-outlook.png)
 
  
 
@@ -138,9 +138,9 @@ So, the reason why are crying wolf over a debt crisis in emerging markets is bec
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/05/Global-debt-1.png)
+ - ![](/blog-images/Global-debt-1.png)
 
- - ![](https://www.bebhuvan.com/images/2022/05/global-debt-increase.jpg)
+ - ![](/blog-images/global-debt-increase.jpg)
 
  
 
@@ -152,15 +152,15 @@ So, the reason why are crying wolf over a debt crisis in emerging markets is bec
  </div>
 </div>
 
-A [more granular look][14]:![](https://www.bebhuvan.com/images/2022/05/Global-public-and-private-debt.png) 
+A [more granular look][14]:![](/blog-images/Global-public-and-private-debt.png) 
 
 These scenarios are what permabears live and die for. They've been screaming that all this debt and money printing would lead to hyperinflation, rising interest payments, high taxes and that developed and developing economies will become fifth world countries. But a high debt-to-GDP ratio on its own [is quite meaningless][15]. It's a bit like saying the stock market is high. No two countries are the same, and comparing debt to GDP ratios is a fraught exercise. The composition of the debt, the economic growth rates, structure of the economy, institutions, the rule of law, central bank independence, interest rates, and inflation matter more. Just ask the exotic creatures who've been predicting the end for the US and Japan because of the rising debt-to-GDP ratios since the 2000s.
 
 Anyway, given the record low interest rates around the world since 2008, debt wasn't a problem. Low interest rates in developed markets caused a hunt for yield, and emerging market debt saw huge [inflows][16]. Except for the 2013 taper tantrum, the 2015 China shock and the 2020 COVID-19 crash, EM flows remained positive. But now that inflation is back in the US, the Federal Reserve has started to hike rates and is expected to continue hiking aggressively. More worryingly, for the emerging markets, the dollar has been strengthening, and this is bad news.
 
-A [strong dollar][17] is bad for emerging markets because it increases the price of imports in dollar terms and can kill demand. It also increases the interest costs on dollar-denominated debt and makes refinancing costlier.![](https://www.bebhuvan.com/images/2022/05/Dollar-vs-EM-flows.jpg) 
+A [strong dollar][17] is bad for emerging markets because it increases the price of imports in dollar terms and can kill demand. It also increases the interest costs on dollar-denominated debt and makes refinancing costlier.![](/blog-images/Dollar-vs-EM-flows.jpg) 
 
-Boris Hofmann and Taejin Park had published [an analysis in the BIS][18] analyzing the impact of a stronger dollar. They showed that a rising dollar has a more pronounced effect on emerging markets with higher dollar debt and foreign ownership of local currency bonds.![](https://www.bebhuvan.com/images/2022/05/dollar-vs-EM-growth.jpg) 
+Boris Hofmann and Taejin Park had published [an analysis in the BIS][18] analyzing the impact of a stronger dollar. They showed that a rising dollar has a more pronounced effect on emerging markets with higher dollar debt and foreign ownership of local currency bonds.![](/blog-images/dollar-vs-EM-growth.jpg) 
 
 Since the rates in the US stayed low for a long time, the emerging markets sovereign debt doomsayers had to find a second job. But now, the US is finally in a rate hike cycle, these people have rediscovered their purpose in life. But there's some nuance here. 
 
@@ -168,13 +168,13 @@ Jasper Hoek, Emre Yoldas, and Steve Kamin [published a paper][19] looking at the
 
 A strong dollar is [negatively correlated with global trade][20] and also leads to lower commodity prices. As emerging market currencies depreciate, [demand takes a hit,][21] leading to lower trade.
 
-And this is where the problem is. There's a [significant divergence][22] in post-pandemic economic recovery in emerging and developing economies.![](https://www.bebhuvan.com/images/2022/05/Emerging-markets-and-developed-economies-COVI-19-recovery.png) 
+And this is where the problem is. There's a [significant divergence][22] in post-pandemic economic recovery in emerging and developing economies.![](/blog-images/Emerging-markets-and-developed-economies-COVI-19-recovery.png) 
 
 Commodity exporting emerging countries like Brazil, Mexico, Chile, Saudi Arabia etc., are seeing windfalls due to rising commodity prices. But commodity importing countries like Bangladesh, Vietnam, Thailand, and India have taken a hit. Tourism dependent countries like Turkey, Thailand etc., have been [hit the hardest.][23] Their economic recoveries are significantly off the pre-pandemic trend.
 
 At this point, it's important to remember that not all emerging and developing economies (EMDE) are the same.
 
-Several Asian EMDEs like India, Thailand, South Korea, and Malaysia are in a significantly better place having built substantial [FX reserves][24]. But low-income developing countries aren't in such good shape. In the recent [World Economic Outlook][25], the IMF noted that _“60 percent of low-income developing countries are already in debt distress or at high risk of distress.”_![](https://www.bebhuvan.com/images/2022/05/Low-income-countries-debt.jpg) 
+Several Asian EMDEs like India, Thailand, South Korea, and Malaysia are in a significantly better place having built substantial [FX reserves][24]. But low-income developing countries aren't in such good shape. In the recent [World Economic Outlook][25], the IMF noted that _“60 percent of low-income developing countries are already in debt distress or at high risk of distress.”_![](/blog-images/Low-income-countries-debt.jpg) 
 
 > Among the 41 DSSI countries at high risk of or in debt distress, Chad, Ethiopia, Somalia (under the HIPC framework) and Zambia have already requested a debt treatment. Around 20 others exhibit significant breaches of applicable high-risk thresholds, half of which also have low reserves, rising gross financing needs, or a combination of the two in 2022.
  
@@ -186,9 +186,9 @@ For a lot of these emerging and developing countries, [debt servicing costs][2] 
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/05/Emerging-markets-interest-coverage.jpg)
+ - ![](/blog-images/Emerging-markets-interest-coverage.jpg)
 
- - ![](https://www.bebhuvan.com/images/2022/05/Emerging-markets-interest-coverage-range.jpg)
+ - ![](/blog-images/Emerging-markets-interest-coverage-range.jpg)
 
  
 
@@ -200,7 +200,7 @@ For a lot of these emerging and developing countries, [debt servicing costs][2] 
  </div>
 </div>
 
-The IMF In the report highlighted that lower growth prospects, especially for China, rising geopolitical tensions, rising energy prices and food prices are creating severe headwinds for these economies. In the [April 2022 Global Financial Stability Report,][26] the IMF noted that several emerging markets have already come under severe pressure. 25% of foreign currency (hard currency) issuing emerging economies are trading in the distressed territory.![](https://www.bebhuvan.com/images/2022/05/Emerging-markets-spreads.png) 
+The IMF In the report highlighted that lower growth prospects, especially for China, rising geopolitical tensions, rising energy prices and food prices are creating severe headwinds for these economies. In the [April 2022 Global Financial Stability Report,][26] the IMF noted that several emerging markets have already come under severe pressure. 25% of foreign currency (hard currency) issuing emerging economies are trading in the distressed territory.![](/blog-images/Emerging-markets-spreads.png) 
 
 The World Bank also raised the alarm [on the rising variable (floating) rate debt][1] among the 74 of the poorest economies. Variable rate debt has increased from 20% in 2008 to 31% in 2022
 
@@ -210,9 +210,9 @@ To sum up, here's a quick overview of emerging and developing economies by vulne
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/05/Emerging-markets-vulnerable-to-rising-US-interest-rates.png)
+ - ![](/blog-images/Emerging-markets-vulnerable-to-rising-US-interest-rates.png)
 
- - ![](https://www.bebhuvan.com/images/2022/05/Emerging-markets-vulnerable-to-Ukraine.jpg)
+ - ![](/blog-images/Emerging-markets-vulnerable-to-Ukraine.jpg)
 
  
 
@@ -230,9 +230,9 @@ The other perennial worry for emerging market watchers is foreign currency-denom
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/05/Foreign-currency-borrwing-emerging-markets-by-country.jpg)
+ - ![](/blog-images/Foreign-currency-borrwing-emerging-markets-by-country.jpg)
 
- - ![](https://www.bebhuvan.com/images/2022/05/Foreign-currency-borrwing-emerging-markets.jpg)
+ - ![](/blog-images/Foreign-currency-borrwing-emerging-markets.jpg)
 
  
 
@@ -249,12 +249,12 @@ Just about 26% of the emerging market debt is denominated in foreign currency, m
 This didn't eliminate the _original sin_, it just shifted the risk from borrowers to lenders. Foreign investors have to worry about the appreciation and depreciation of emerging market currencies. If the currency appreciates, it increases the value of emerging market debt investments and flows increase. But if the currency depreciates, it lowers the value of their investments, forcing these investors to sell, leading to outflows and widening spreads. This selling creates a feedback loop of further selling due to portfolio limits, risk limits, and further widening of spreads<sup><a href="https://www.bis.org/publ/othp32.pdf">1</a>,<a href="https://www.bis.org/speeches/sp211111.pdf">2</a>,<a href="https://www.bis.org/publ/bppdf/bispap113_h.pdf">3</a></sup>.
 
 #### Sovereign piggybanks
-The other risk is the substantial increase in sovereign bond holdings by the emerging market banks post COVID-19. This was highlighted in the IMF's recent [Global Financial Stability Report.][26]![](https://www.bebhuvan.com/images/2022/05/Sovereign-bank-nexus.png) 
+The other risk is the substantial increase in sovereign bond holdings by the emerging market banks post COVID-19. This was highlighted in the IMF's recent [Global Financial Stability Report.][26]![](/blog-images/Sovereign-bank-nexus.png) 
 
 Banks have financed a large part of the pandemic deficit spending by emerging market countries. Bank holding of sovereign debt is highest among countries with higher debt-to-GDP ratios. The worry is that this link between sovereigns and banks could become a problem if growth slows. Slowing growth could lead to widening sovereign spreads, increased govt borrowing costs, losses for banks holding the bonds, higher financing conditions for corporates and other macroeconomic spillovers.
 
 #### Sovereign payday lender
-The other issue is the fact that China is now the [biggest lender][30] to many small countries across Asia and Africa. It has overtaken the IMF, World Bank and the Paris Club as the [largest creditor to nations][31]. The exact numbers are anybody's guess, but some estimates put total Chinese lending between $100 and-200 billion.This difficulty in assessing the true scale of Chinese lending is due to the [confidentiality clauses][32] in the debt agreements.![](https://www.bebhuvan.com/images/2022/05/China-lending.png) 
+The other issue is the fact that China is now the [biggest lender][30] to many small countries across Asia and Africa. It has overtaken the IMF, World Bank and the Paris Club as the [largest creditor to nations][31]. The exact numbers are anybody's guess, but some estimates put total Chinese lending between $100 and-200 billion.This difficulty in assessing the true scale of Chinese lending is due to the [confidentiality clauses][32] in the debt agreements.![](/blog-images/China-lending.png) 
 
 Given the scale of lending, It has been accused of _debt diplomacy_—a honey trap for countries by offering cheap and concessional loans. Some studies even estimate that there might be unreported debts of around [$385 billion,][33] given the lack of transparency. China has come under increasing criticism and has been blamed for the recent default in Sri Lanka. But not everyone agrees with the notion that China is entrapping countries through debt<sup><a href="https://www.theatlantic.com/international/archive/2021/02/china-debt-trap-diplomacy/617953/">1</a>,<a href="https://www.chathamhouse.org/2020/08/debunking-myth-debt-trap-diplomacy">2</a></sup>.
 
@@ -312,11 +312,11 @@ But so far, corporate default rates have remained low. In fact, they are lower t
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/05/EM-default-rates-SP.jpg.png)
+ - ![](/blog-images/EM-default-rates-SP.jpg.png)
 
- - ![](https://www.bebhuvan.com/images/2022/05/EM-default-rates.jpg)
+ - ![](/blog-images/EM-default-rates.jpg)
 
- - ![](https://www.bebhuvan.com/images/2022/05/EM-speculative-default-rate.png)
+ - ![](/blog-images/EM-speculative-default-rate.png)
 
  
 
@@ -328,7 +328,7 @@ But so far, corporate default rates have remained low. In fact, they are lower t
  </div>
 </div>
 
-The reason for concerns over emerging market corporate debt is because of the pace at which it has grown since 2008 and the COVID-19 shock to corporate balance sheets. ![](https://www.bebhuvan.com/images/2022/05/EM-DM-corporate-debt.jpg) 
+The reason for concerns over emerging market corporate debt is because of the pace at which it has grown since 2008 and the COVID-19 shock to corporate balance sheets. ![](/blog-images/EM-DM-corporate-debt.jpg) 
 
 But much of that growth is due to the stunning growth of debt levels [in China][42]. Corporate debt in China has grown faster than all the [other EMs combined][43]—madness! 
 
@@ -336,9 +336,9 @@ But much of that growth is due to the stunning growth of debt levels [in China][
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/05/Emerging-market-financial-and-non-financial-debt-by-ratings.jpg-1.png)
+ - ![](/blog-images/Emerging-market-financial-and-non-financial-debt-by-ratings.jpg-1.png)
 
- - ![](https://www.bebhuvan.com/images/2022/05/total-debt-to-non-financial-sector.jpg)
+ - ![](/blog-images/total-debt-to-non-financial-sector.jpg)
 
  
 
@@ -356,11 +356,11 @@ This has been the case [since 2008][44] when China unleashed a [massive stimulus
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/05/Emerging-Market-Corporate-Interest-Coverage-ratio.png)
+ - ![](/blog-images/Emerging-Market-Corporate-Interest-Coverage-ratio.png)
 
- - ![](https://www.bebhuvan.com/images/2022/05/Net-leverage-EM.png)
+ - ![](/blog-images/Net-leverage-EM.png)
 
- - ![](https://www.bebhuvan.com/images/2022/05/Rating-agency-upgrades.png)
+ - ![](/blog-images/Rating-agency-upgrades.png)
 
  
 
@@ -372,20 +372,20 @@ This has been the case [since 2008][44] when China unleashed a [massive stimulus
  </div>
 </div>
 
-Having said that, not all emerging markets are made the same. Aggregates mask substantial variation among emerging market corporates. But the consensus here is that corporates in [China, Latin America][47] and other riskier emerging markets are at the highest risk of defaults. [S&P simulated][48] a 300bps interest rate hike and inflation shock on a sample of 24,445 corporates. The results showed that loss-making companies would increase to 7%, double that of last decade. Regionally, Chinese companies would be the most affected.![](https://www.bebhuvan.com/images/2022/05/Corporate-debt-and-earnings-emerging-markets.png) 
+Having said that, not all emerging markets are made the same. Aggregates mask substantial variation among emerging market corporates. But the consensus here is that corporates in [China, Latin America][47] and other riskier emerging markets are at the highest risk of defaults. [S&P simulated][48] a 300bps interest rate hike and inflation shock on a sample of 24,445 corporates. The results showed that loss-making companies would increase to 7%, double that of last decade. Regionally, Chinese companies would be the most affected.![](/blog-images/Corporate-debt-and-earnings-emerging-markets.png) 
 
-The other perennial worry was over the rise of [zombie firms][49]—entities that couldn't cover their interest payments from their earnings and profits. The argument was that a decade of low interest rates had created a massive horde of undead companies because they were able to raise cheap debt by issuing high yield debt. But that doesn't seem to be the case, at least in the [United States][50]. Zombie companies are being upgraded at twice the rate as they are being downgraded. Of course, not everybody thinks that [this will last][50].![](https://www.bebhuvan.com/images/2022/05/Zombie-companies.png) 
+The other perennial worry was over the rise of [zombie firms][49]—entities that couldn't cover their interest payments from their earnings and profits. The argument was that a decade of low interest rates had created a massive horde of undead companies because they were able to raise cheap debt by issuing high yield debt. But that doesn't seem to be the case, at least in the [United States][50]. Zombie companies are being upgraded at twice the rate as they are being downgraded. Of course, not everybody thinks that [this will last][50].![](/blog-images/Zombie-companies.png) 
 
 The bottom line is that it's highly improbable that we are set to witness a wave of corporate bankruptcies in the emerging markets. The highly levered and speculative companies will probably go bankrupt if the Fed aggressively hikes rates. But we are quite some time away from a corporate version of the great depression.
 
-So far, the Fed has hiked by 75 basis points and several EMs started way before the Fed. If you look at emerging market bond spreads, the high yield spreads have shot up quite a bit, almost to the levels seen during the COVID-19 crash. So the most speculative and leveraged companies are at the most risk of default. The broader spreads have largely remained in line with historical averages. ![](https://www.bebhuvan.com/images/2022/05/Emerging-markets-bond-spreads.png) 
+So far, the Fed has hiked by 75 basis points and several EMs started way before the Fed. If you look at emerging market bond spreads, the high yield spreads have shot up quite a bit, almost to the levels seen during the COVID-19 crash. So the most speculative and leveraged companies are at the most risk of default. The broader spreads have largely remained in line with historical averages. ![](/blog-images/Emerging-markets-bond-spreads.png) 
 
-US high yield spreads also haven't blowout exactly. ![](https://www.bebhuvan.com/images/2022/05/US-high-yield-spreads.png) ![](https://www.bebhuvan.com/images/2022/05/US-Junk-bond-ETFs.png) 
+US high yield spreads also haven't blowout exactly. ![](/blog-images/US-high-yield-spreads.png) ![](/blog-images/US-Junk-bond-ETFs.png) 
 
-Looking broadly at the spreads as based on emerging market dollar-denominated sovereign bond indexes (EMBI) and emerging market dollar-denominated corporate bond indexes (CEMBI) from this [UBS report][51].![](https://www.bebhuvan.com/images/2022/05/Emerging-market-credit-spreads.png) 
+Looking broadly at the spreads as based on emerging market dollar-denominated sovereign bond indexes (EMBI) and emerging market dollar-denominated corporate bond indexes (CEMBI) from this [UBS report][51].![](/blog-images/Emerging-market-credit-spreads.png) 
 
 ### Emerging markets investing
-Emerging markets account for 60% of the world GDP. 80%+ of the world's population lives in emerging markets. They have grown at a faster rate compared to developed economies, the growth premium is 2-3%. Developed markets are ageing and increasingly resemble old-age nursing homes, while emerging markets are full of young people in a playground. These are sales pitches you hear as reasons to invest in emerging markets. Has it worked? [Not in a long time][52]. The US has been the undisputed king for well over a decade.![](https://www.bebhuvan.com/images/2022/05/Emerging-markets-and-developed-markets-performace-EM-DM.png) 
+Emerging markets account for 60% of the world GDP. 80%+ of the world's population lives in emerging markets. They have grown at a faster rate compared to developed economies, the growth premium is 2-3%. Developed markets are ageing and increasingly resemble old-age nursing homes, while emerging markets are full of young people in a playground. These are sales pitches you hear as reasons to invest in emerging markets. Has it worked? [Not in a long time][52]. The US has been the undisputed king for well over a decade.![](/blog-images/Emerging-markets-and-developed-markets-performace-EM-DM.png) 
 
 Is the cycle turning and will emerging markets make a comeback? It's not simple. Maybe that's a topic for another day,
 

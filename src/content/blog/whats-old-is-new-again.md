@@ -21,7 +21,7 @@ It's a weird coincidence, but in the last month, several pump and dump schemes h
 
 At the end of March, [SEBI pulled Ruchi Soya][4] when it discovered SMS tips promoting FPO and the discount. Then I saw this tweet last week about a pump and dump in a new stock called [Supreme Engineering][5]. 
 
-Is it just a case of enterprising entrepreneurs responding to a market opportunity?![](https://www.bebhuvan.com/images/2022/04/stock-tips.png) 
+Is it just a case of enterprising entrepreneurs responding to a market opportunity?![](/blog-images/stock-tips.png) 
 
 As I mentioned, pump and dumps through stock tips are as old as the financial markets themselves. [Investor Amnesia][7] by Young [Jamie Catherwood][8] is probably the best blog about financial history on the internet. The site is like a time machine for financial markets. [Here's an excerpt][9] from a post about a pump and dump as far back as the 16th and 17th century in the Dutch stock exchange, the world's oldest stock exchange: 
 
@@ -135,13 +135,13 @@ There's also a behavioral explanation here. Studies have shown that [people tend
  The cashless effect <strong>describes our tendency to be more willing to pay when there is no physical money involved in a transaction</strong>. It means that we are more likely to purchase something on a credit card than if we have to pay for it with cash.
  </p>
 
-Though BNPL is new, some preliminary data from large markets like Australia and the UK show that some people are becoming more indebted. [Data from the Australian Securities & Investments Commission (ASIC)][37] shows that people are cutting back on essentials to pay their BNPL dues. Some people are also taking more debt to pay back BNPL dues. Perhaps, the scariest thing is that over 50% of these users are in the age group of 18-29. Catch em young?![](https://www.bebhuvan.com/images/2022/04/BNPL-ASIC.png) 
+Though BNPL is new, some preliminary data from large markets like Australia and the UK show that some people are becoming more indebted. [Data from the Australian Securities & Investments Commission (ASIC)][37] shows that people are cutting back on essentials to pay their BNPL dues. Some people are also taking more debt to pay back BNPL dues. Perhaps, the scariest thing is that over 50% of these users are in the age group of 18-29. Catch em young?![](/blog-images/BNPL-ASIC.png) 
 
 A [working paper][38] looking at BNPL in the UK had similar findings. A lot of people are repaying BNPL with their credit cards. The sentence “some consumers may be entering a debt spiral” gave me the heebie-jeebies: 
 
 > We find UK credit cardholders charge a BNPL transaction to their credit card: 19.5% of active credit cards in December 2021 have at least one transaction by a BNPL firm on their credit card during 2021. Charging BNPL debt to credit cards is a warning flag for consumer financial protection regulators as it raises doubts on some consumers’ ability to pay for BNPL. Some consumers may be entering a debt spiral transforming a 0% interest BNPL debt that amortizes over a few instalments transforming into credit card debt that typically incurs 20% credit card interest rates and has decades-long amortization schedules if they only pay the credit card minimum payment.
 
-But it looks like there's trouble in paradise. Most Australian BNPL stocks have fallen as much as 80-90%. This can be largely explained by rising interest rates and the cloudy regulatory environment.![](https://www.bebhuvan.com/images/2022/04/BNPL-stocks.png) 
+But it looks like there's trouble in paradise. Most Australian BNPL stocks have fallen as much as 80-90%. This can be largely explained by rising interest rates and the cloudy regulatory environment.![](/blog-images/BNPL-stocks.png) 
 
 I have a feeling we'll see a wave of shutdowns, fire sales, mergers and acquisitions. Regulatory arbitrage isn't a moat. 
 

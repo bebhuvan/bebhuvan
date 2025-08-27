@@ -10,7 +10,7 @@ Can you think of some of the greatest inventions and innovations in human histor
 
 90%
 
-I’m sure you thought about things like the printing press, steam engine, and electricity. Sure, these innovations permanently altered the course of human progress. But what if I told a simple box was just as consequential in tilting the arc of human progress upwards?![](https://www.bebhuvan.com/images/2022/09/shipping.jpeg) 
+I’m sure you thought about things like the printing press, steam engine, and electricity. Sure, these innovations permanently altered the course of human progress. But what if I told a simple box was just as consequential in tilting the arc of human progress upwards?![](/blog-images/shipping.jpeg) 
 
 If you asked 10 people the same question, I’m 100% sure that 9 out of 10 people wouldn’t think of the shipping container. But the humble steel box has played as big a role as anything in changing our lives for the better.
 
@@ -20,7 +20,7 @@ The manager I reported to was a brilliant guy, and he handled procurement. His j
 
 A few years later, a friend and I tried the same business. It flopped miserably, but we still managed to fulfill a few orders. I remember going to Avenue Road to get a few diaries customized and selling them to some startup—we made a decent profit. That was the first time I appreciated the world of logistics, and I’ve had a passing interest in it ever since.
 
-If you’ve accidentally paid attention to the news, you might have heard about the global supply chain crisis. The only time most “normal” people used the phrase “supply chain” was when they had to mug up this nonsense to pass exams in MBA. Remember the bill of getting laid?![](https://www.bebhuvan.com/images/2022/09/Supply-chain-google-trends.png) 
+If you’ve accidentally paid attention to the news, you might have heard about the global supply chain crisis. The only time most “normal” people used the phrase “supply chain” was when they had to mug up this nonsense to pass exams in MBA. Remember the bill of getting laid?![](/blog-images/Supply-chain-google-trends.png) 
 
 Or was it a bill of lading?
 
@@ -36,9 +36,9 @@ When we have a mild heart attack, we collapse. But when global shipping has a he
 
 Remember the _Ever Given_? It was a 400-meter ship with over 18000 containers that got stuck in the Suez Canal in March 2021. The Suez Canal is a vital artery of global trade—12% of all global trade flows through it. _Ever Given_ was stuck for a week and at one point, over 350 ships with hundreds of billions of goods were blocked, throwing a wrench into global trade.
 
-For the first time, shipping became a meme and entered mainstream consciousness.![](https://www.bebhuvan.com/images/2022/09/evergiven.gif) 
+For the first time, shipping became a meme and entered mainstream consciousness.![](/blog-images/evergiven.gif) 
 
-Otherwise, the only thing I remember about ships is this iconic scene from _Pirates of the Caribbean._<a rel="noreferrer noopener" href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F4d48039d-9ff5-4f63-89ce-84fadb0bdb2e_631x381.gif" target="_blank"></a>![](https://www.bebhuvan.com/images/2022/09/Pirates-of-the-Caribbean.gif) 
+Otherwise, the only thing I remember about ships is this iconic scene from _Pirates of the Caribbean._<a rel="noreferrer noopener" href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F4d48039d-9ff5-4f63-89ce-84fadb0bdb2e_631x381.gif" target="_blank"></a>![](/blog-images/Pirates-of-the-Caribbean.gif) 
 
 The simple box has revolutionized the world, so much so that[ Human Progress named Malcom McLean][2], the father of container shipping, one of the _Heroes of Progress._ Forbes Magazine called Malcom McLean _“one of the few men who changed the world.”_
 
@@ -50,7 +50,7 @@ These two excerpts are perhaps the best descriptions of the shipping container:
  
  <em><a href="https://www.wired.com/1999/10/ports/">Wired</a></em>
 
-The history of contemporary shipping began on April 26th, 1956, when the _Ideal X_, an old modified World War II T-2 oil tanker, sailed with 58 33ft aluminum truck bodies from Port Newark, New Jersey, to the Port of Houston, Texas. The brain behind this operation was Malcom McLean—the father of containerization.![](https://www.bebhuvan.com/images/2022/09/SS-Ideal-X.jpeg) 
+The history of contemporary shipping began on April 26th, 1956, when the _Ideal X_, an old modified World War II T-2 oil tanker, sailed with 58 33ft aluminum truck bodies from Port Newark, New Jersey, to the Port of Houston, Texas. The brain behind this operation was Malcom McLean—the father of containerization.![](/blog-images/SS-Ideal-X.jpeg) 
 
 As the Ideal X sailed, Malcom McLean walked up to a couple of people watching and asked them what they thought, without revealing that he owned the ship. Freddy Fields, a top official of the longshoremen’s association, reportedly said, _“I think they ought to sink the sonofabitch.”_
 
@@ -68,7 +68,7 @@ The two defining traits of Malcom were his audaciousness and his eye for detail.
 
 But thanks to the dramatic World War 2 spending in the 1940s and the ensuing economic boom, there were nearly 9 million trucks on the roads from a million in the 1920s. By the 1950s, the traffic was getting worse, and the roads weren’t built to handle the traffic. Around this time, several states had started to impose tolls on out-of-state trucks and weight restrictions, making it hard to do business.
 
-Pre-containerization, shipping was called breakbulk shipping, and the ship itself was a shipping container. Breakbulk was slow and tedious. Every individual item had to be shipped on a truck or train and stored at the dock warehouses. Each item had to be manually loaded onto the ship by dockworkers and had to be stored in several levels of empty spaces below the decks.![](https://www.bebhuvan.com/images/2022/09/Stevedores.jpeg) 
+Pre-containerization, shipping was called breakbulk shipping, and the ship itself was a shipping container. Breakbulk was slow and tedious. Every individual item had to be shipped on a truck or train and stored at the dock warehouses. Each item had to be manually loaded onto the ship by dockworkers and had to be stored in several levels of empty spaces below the decks.![](/blog-images/Stevedores.jpeg) 
 
 Ships used to transport thousands of items; some of the large ships would even transport up to 200,000 items.
 
@@ -86,9 +86,9 @@ The [story][5] Malcom McLean told was that he had the lightbulb moment for a s
 
 Marc Levinson, the author of _[The Box][6]_, the definitive book on the history of the shipping container, thinks Malcom made up the story for the press. He says Malcom had the idea for the shipping container much later in his life.
 
-The shipping container wasn’t an invention as much as an innovation. I mean, it’s just a box. Containers have been used in some form or the other for centuries. You can trace the usage of some form of standardized containers to the [Mediterranean basin][7] going back 5000 years. The Greeks and the Roman used ceramic containers called _[Amphorae][8] _to transport wine, oil, nuts, and herbs going as far back as the 3rd century BC.![](https://www.bebhuvan.com/images/2022/09/Amphoras.jpeg) 
+The shipping container wasn’t an invention as much as an innovation. I mean, it’s just a box. Containers have been used in some form or the other for centuries. You can trace the usage of some form of standardized containers to the [Mediterranean basin][7] going back 5000 years. The Greeks and the Roman used ceramic containers called _[Amphorae][8] _to transport wine, oil, nuts, and herbs going as far back as the 3rd century BC.![](/blog-images/Amphoras.jpeg) 
 
-There were several precursors to the modern shipping container in the early 1990s in Europe and the US, but they were very limited. Both shippers and railway companies had some version of containers. In the 1940s, the US army started using small containers called [CONEX][10] boxes. They were 8 ft 6 in long, 6 ft 3 in wide, and 6 ft 10 in high. The White Pass and Yukon Corporation of Canada, a railway company, had built its own ship for coastal shipping small 8’ x 8’ x 7’ sized containers. It was one of the first relatively [large-scale container operations][11].![](https://www.bebhuvan.com/images/2022/09/CONEX-Box.png) 
+There were several precursors to the modern shipping container in the early 1990s in Europe and the US, but they were very limited. Both shippers and railway companies had some version of containers. In the 1940s, the US army started using small containers called [CONEX][10] boxes. They were 8 ft 6 in long, 6 ft 3 in wide, and 6 ft 10 in high. The White Pass and Yukon Corporation of Canada, a railway company, had built its own ship for coastal shipping small 8’ x 8’ x 7’ sized containers. It was one of the first relatively [large-scale container operations][11].![](/blog-images/CONEX-Box.png) 
 
 ### The revolution begins
 By the 1950s, Malcom McLean had two problems:
@@ -105,7 +105,7 @@ He later acquired Waterman itself in what was probably one of the first leverage
 
 Again, to reiterate how bold he was before the acquisition, Waterman was a debt-free company, but it had $22 million in debt post the acquisition. He later realized that lifting entire trucks onto ships with their wheels was pointless, and detaching their trailers was the best way to go about it. He bought two World War II oil tankers from the Govt for cheap and modified them to carry the truck trailers detached from their chassis and wheels. Malcom figured if this didn’t work, he could use the tankers to carry oil.
 
-With the help of Keith Tantlinger, an engineer at Brown Industries, he figured 33ft aluminum containers would work for the maiden voyage. They were several other issues, but by 1955 McLean was ready to sail, but they had to delay to convince the ICC and the coast guard. But finally, after much drama, the _Ideal-X _set sail on April 26th, 1956, and so began the containerization revolution.![](https://www.bebhuvan.com/images/2022/09/Malcom-McLean.jpeg) 
+With the help of Keith Tantlinger, an engineer at Brown Industries, he figured 33ft aluminum containers would work for the maiden voyage. They were several other issues, but by 1955 McLean was ready to sail, but they had to delay to convince the ICC and the coast guard. But finally, after much drama, the _Ideal-X _set sail on April 26th, 1956, and so began the containerization revolution.![](/blog-images/Malcom-McLean.jpeg) 
 
 ### Revolution delayed
 The revolution would take a few more years to take hold. Shipping containers were obviously a good idea, and they were steadily proliferating. But the problem was that people in both the US and Europe had their own dimensions, and there was no standardization. Some containers were 7ft wide in Europe and 8ft in the US. If everybody had their own dimension, multimodal shipping—using the same container on boats, trucks, and railways—wouldn’t be possible, and containers would never become mainstream.
@@ -116,7 +116,7 @@ It was 1962, and along with the dimensions of the container, there was also a ba
 
 Keith Tantlinger, the engineer who designed the first container that sailed on _Ideal-X _had designed Sea-Land’s patented corner fitting. He convinced Malcom to release the patents to break the deadlock. Malcom saw the bigger picture and released Sea-Land’s patents. It took up until the 1970s for the standards on the dimensions of containers to be agreed upon after hundreds of committees, back-alley deals, and fights in congress.
 
-Eventually, 20 ft and 40 ft containers became the standard across the world.![](https://www.bebhuvan.com/images/2022/09/Euromed.jpeg) 
+Eventually, 20 ft and 40 ft containers became the standard across the world.![](/blog-images/Euromed.jpeg) 
 
 Now that the containers were standardized, they could easily be shipped on boats, trucks, and trains without the need for any modifications. Standardization is what really led to shipping containers becoming the operating system of global trade. This was Malcom’s greatest contribution.
 
@@ -140,13 +140,13 @@ Containerization arguably kickstarted globalization by shrinking the world and r
 
  > *The effects of containerization have also been measured by the reduction of transport at ion costs across the globe. For example, controlling for fluctuations in fuel costs, Hummels (2007: 142) provides a con servative estimate that the price of bulk shipping, measured in real dollars per ton, is roughly half than it had been in 1960, and a third of its price in 1952. However, Levinson ( [ 2006 ] 2016) estimates that the decline in shipping costs was much larger. Whereas the cost of shipping cargo was roughly $5.83 per ton in 1956, on the maiden voyage of the first container ship, McLean’s Ideal-X, the cost of shipping cargo was merely $0.16 per ton (Levinson [2006] 2016: 68).*
 
-Without the shipping container and the dramatic reduction in transport costs, it’s hard to imagine today’s [globalized world][16].![](https://www.bebhuvan.com/images/2022/09/World-merchandise-trade.png) 
+Without the shipping container and the dramatic reduction in transport costs, it’s hard to imagine today’s [globalized world][16].![](/blog-images/World-merchandise-trade.png) 
 
 Daniel M. Bernhofen, Zouheir El-Sahl, and Richard Kneller [analyzed][17] the impact of containerization. Their conclusions were stunning:
 
  > *Looking at 22 industrialised countries, it found that containerisation was associated with a 320% increase in bilateral trade over the first five years and 790% over 20 years. A bilateral free-trade agreement, by contrast, boosted trade by 45% over 20 years, and membership of GATT raised it by 285%. In other words, containers have boosted globalisation more than all trade agreements in the past 50 years put together. Not bad for a simple box. — <a href="https://www.economist.com/the-economist-explains/2013/05/21/why-have-containers-boosted-trade-so-much">Economist</a>*
 
-[Trade cost][18] is a broad measure that includes everything from tariffs, freight, and communication to distribution costs. [20% of the fall][19] in trade costs came after 1960. [The 2nd image][20] shows the cost of shipping dry bulk such as oil, coal, and ore. It’s been on a steady downtrend since 1850-60. You can extrapolate that to container costs.![](https://www.bebhuvan.com/images/2022/09/trade-costs.png) 
+[Trade cost][18] is a broad measure that includes everything from tariffs, freight, and communication to distribution costs. [20% of the fall][19] in trade costs came after 1960. [The 2nd image][20] shows the cost of shipping dry bulk such as oil, coal, and ore. It’s been on a steady downtrend since 1850-60. You can extrapolate that to container costs.![](/blog-images/trade-costs.png) 
 
 The abstract of [this book][21] goes as far as to say that globalization would’ve been a pipe dream without the shipping container:
 
@@ -154,14 +154,14 @@ The abstract of [this book][21] goes as far as to say that globalization would
 
 At the very least, the shipping container has an outsized impact on shrinking distance across countries and enabling low-cost trade.
 
-Check out [this stunning visual][22] of global shipping to get a sense of the scale: ![](https://www.bebhuvan.com/images/2022/09/Exports-to-GDP.png) ![](https://www.bebhuvan.com/images/2022/09/merchadise-trades-as-percentage-of-GDP.png) 
+Check out [this stunning visual][22] of global shipping to get a sense of the scale: ![](/blog-images/Exports-to-GDP.png) ![](/blog-images/merchadise-trades-as-percentage-of-GDP.png) 
 
-Without containers, we probably wouldn’t have seen this [dramatic growth][25] in trade.<a rel="noreferrer noopener" href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F3d2f7118-f434-4b23-a8cc-117773b68d8d_1161x589.png" target="_blank"></a><a rel="noreferrer noopener" href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F257d3eb3-7d16-49c6-bd98-95ee106de62f_595x290.png" target="_blank"></a>![](https://www.bebhuvan.com/images/2022/09/Container-volumes.png) 
+Without containers, we probably wouldn’t have seen this [dramatic growth][25] in trade.<a rel="noreferrer noopener" href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F3d2f7118-f434-4b23-a8cc-117773b68d8d_1161x589.png" target="_blank"></a><a rel="noreferrer noopener" href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F257d3eb3-7d16-49c6-bd98-95ee106de62f_595x290.png" target="_blank"></a>![](/blog-images/Container-volumes.png) 
 
 We probably wouldn’t have seen the rise of China, and we probably wouldn’t be enjoying all the cheap goods we enjoy today. Containers dramatically shrunk the price of per-unit costs from a few dollars to cents. To imagine that we can import a few 100 t-shirts from China for peanuts—that’s stunning.
 
 ### Global supply chains
-Here’s a [map of][26] all the shipping routes and ports.![](https://www.bebhuvan.com/images/2022/09/shipping-routes-and-ports.png) 
+Here’s a [map of][26] all the shipping routes and ports.![](/blog-images/shipping-routes-and-ports.png) 
 
 The shipping container, by dramatically reducing shipping costs, has enabled sprawling and mind-bending complex global supply chains. For example, an Apple iPhone has[ components][27] from 43 countries across 6 continents. The supply chains of auto manufacturers are even mind-blowing. [Ford][28] has over 11,000 suppliers across 40 countries.
 
@@ -169,10 +169,10 @@ Containerization enabled Just-in-time (JIT) manufacturing, and it made the old-s
 
 Before containerization, manufacturers used to be mostly situated alongside ports because it made importing raw materials and shipping finished goods easier. But containerization made it possible for manufacturers to move anywhere and enabled the diffusion of industry. They could move where the land and labor are cheap. Containers led to the rise of new industry clusters like China.
 
-With containers, it’s hard to imagine China becoming the world’s factory.![](https://www.bebhuvan.com/images/2022/09/Global-container-trade.png) 
+With containers, it’s hard to imagine China becoming the world’s factory.![](/blog-images/Global-container-trade.png) 
 
 ## Bittersweet
-The humble container box has had a [dramatic impact][30] on the world.![](https://www.bebhuvan.com/images/2022/09/global-trade.png) 
+The humble container box has had a [dramatic impact][30] on the world.![](/blog-images/global-trade.png) 
 
  1. It led to the diffusion of industry, creating millions of jobs and lifting millions out of poverty.
 
@@ -209,7 +209,7 @@ The shipping industry is one of the biggest polluters—it’s responsible for a
 It’s so bad that shipping emissions are changing the weather on major shipping lanes. [Researchers observed][36] twice the number of lightning strikes on shipping lanes compared to other areas.
 
 ## It’s not just containers
-Containers unleashed a revolution, but they still needed a few other ingredients. As I was writing this post, I just realized just how important pallets were. Yes, these boring wooden thingies.![](https://www.bebhuvan.com/images/2022/09/pallets.jpeg) 
+Containers unleashed a revolution, but they still needed a few other ingredients. As I was writing this post, I just realized just how important pallets were. Yes, these boring wooden thingies.![](/blog-images/pallets.jpeg) 
 
 Similarly, communication technologies enabled the real-time coordination of global supply chains.
 

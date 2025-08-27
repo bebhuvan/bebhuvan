@@ -14,12 +14,12 @@ If you listen to Steven Pinker, he'll tell you the world has never been a <a rel
 
 But if you open Zerohedge for just 20 seconds, you'll not only find that the markets apparently will go to zero, even humanity. The battle between the optimists and the pessimists is a bit like the argument between cigar butt value investors and moving average quants. It'll never end. 
 
-But, if you were to believe the liberal dishrag that is The Economist, <a rel="noreferrer noopener" href="https://www.economist.com/graphic-detail/2021/06/24/which-countries-are-becoming-less-peaceful" target="_blank">certain parts of the world are getting worse </a>by some measures:![](https://www.bebhuvan.com/images/2021/06/Peace-index.png) 
+But, if you were to believe the liberal dishrag that is The Economist, <a rel="noreferrer noopener" href="https://www.economist.com/graphic-detail/2021/06/24/which-countries-are-becoming-less-peaceful" target="_blank">certain parts of the world are getting worse </a>by some measures:![](/blog-images/Peace-index.png) 
 
 The number of people being displaced are at <a href="https://www.economist.com/graphic-detail/2021/06/18/the-number-of-forcibly-displaced-people-reaches-another-record-high" target="_blank" rel="noreferrer noopener">an all-time high</a>:
 
 > People from just five countries account for about half of those displaced abroad (see chart). The biggest share have left Syria, where the civil war which began in 2011 has settled into a bloody stalemate. Almost 5m Venezuelans have escaped an economic crisis and political repression in their home country. Afghans subject to terrorism and insurgency, and South Sudanese caught in the middle of fighting have also fled their homes. In Myanmar, more than 1m people have escaped civil war and the genocide of the Rohingyas.
-![](https://www.bebhuvan.com/images/2021/06/Refugees.png) 
+![](/blog-images/Refugees.png) 
 
 The other problem with such profound issues is the tyranny of the aggregates. 
 

@@ -22,7 +22,7 @@ In non-PhD terms, there are bonds of various maturities from 1-month to 30-year.
 
 But right now in the US, [the yields][1] on short-term Treasuries from 2-year to 7-year maturities are higher compared to the 10-year Treasury yield. This is weird and shouldn't happen normally. Inversions are a sign that the economy is likely to slow down and maybe enter a recession. Yield curve watchers are worried that the curve is inverting so early into a rate hike cycle. Yield curves usually take time to invert once a rate hike cycle starts. But this time around, they are inverting when the Fed has hiked rates only once so far. “Experts” are predicting 5-7 more rate hikes.
 
-The reason why people are freaking out is that inverted yield curves have predicted every recession since 1955. There's a loud debate about causality. Do inverted yield curves signal a recession or cause recessions? Like a married couple, nobody agrees on anything. ![](https://www.bebhuvan.com/images/2022/04/Yield-curve.png) 
+The reason why people are freaking out is that inverted yield curves have predicted every recession since 1955. There's a loud debate about causality. Do inverted yield curves signal a recession or cause recessions? Like a married couple, nobody agrees on anything. ![](/blog-images/Yield-curve.png) 
 
 So, a lot of people, including some Indian fund managers, have been screaming from their rooftops to their 73 followers on Twitter that a recession is coming. 
 
@@ -75,7 +75,7 @@ Michael Cembalest of JP Morgan had a [really interesting note][21] surveying the
  <p>
  Russia’s invasion of Ukraine is projected to result in one of the largest refugee crises in decades with 4-5 million people displaced<sup><a href="https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/eye-on-the-market/surveying-the-damage/#1"></a><a href="https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/eye-on-the-market/surveying-the-damage/#1">1</a></sup>; long-lasting water, air and ground pollution in Ukraine; and 90% of Ukraine’s population facing poverty and extreme economic hardship if the war drags on to the end of 2022<sup><a href="https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/eye-on-the-market/surveying-the-damage/#2"></a><a href="https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/eye-on-the-market/surveying-the-damage/#2">2</a></sup>.For anyone surprised that Russia is imposing this brutal misery on Ukraine, don’t be: there’s ample precedent for it. As shown below, the Holodomor famine imposed by Russia on Ukraine in the 1930’s dwarfs other famines in terms of severity and is another example of Russian subjugation of Ukraine by any means necessary<sup><a href="https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/eye-on-the-market/surveying-the-damage/#3"></a><a href="https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/eye-on-the-market/surveying-the-damage/#3">3</a></sup>.
  </p>
-![](https://www.bebhuvan.com/images/2022/04/holodmor.jpg) 
+![](/blog-images/holodmor.jpg) 
 
 I first learned about the brutality of Holodomor when I wrote [this post][17] a few weeks ago. 
 

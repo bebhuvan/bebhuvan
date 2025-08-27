@@ -8,9 +8,9 @@ draft: false
 
 Microsoft hit $2 trillion in marketcap a few days ago. There was a time when a trillion meant something, but it doesn't seem so anymore. Microsoft and Apple now are worth over $2 trillion. It's a silly comparison, but for context, the market cap of all listed companies on NSE is a little over $3 trillion.
 
-![](https://www.bebhuvan.com/images/2021/06/Big-tech.png) 
+![](/blog-images/Big-tech.png) 
 
-The growth of big tech companies has been phenomenal. Here's a look at the <a rel="noreferrer noopener" href="https://www.indexologyblog.com/2021/03/05/celebrating-64-years-of-the-sp-500/" target="_blank">historical sector composition</a> of the S&P 500. The way they've replaced the old economy and staid old names is remarkable. ![](https://www.bebhuvan.com/images/2021/06/SP-500.png) 
+The growth of big tech companies has been phenomenal. Here's a look at the <a rel="noreferrer noopener" href="https://www.indexologyblog.com/2021/03/05/celebrating-64-years-of-the-sp-500/" target="_blank">historical sector composition</a> of the S&P 500. The way they've replaced the old economy and staid old names is remarkable. ![](/blog-images/SP-500.png) 
 
 Not just the indices, these big tech companies now dominate our lives. From the phones we use to the entertainment we consume, the big tech companies, particularly the <a rel="noreferrer noopener" href="https://www.dimensional.com/us-en/insights/fanmag-because-faangs-are-so-yesterday" target="_blank">FANMAG</a> companies (Facebook, Amazon, Netflix, Microsoft, Apple, and Google are dominant. 
 

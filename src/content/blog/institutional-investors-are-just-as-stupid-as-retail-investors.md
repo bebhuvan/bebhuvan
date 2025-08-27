@@ -55,7 +55,7 @@ Some smart money this is.
  
  <em>— Swami Bhuvan.</em>
 
-The rise of private markets has been one of the biggest trends in the financial markets over the last two decades. The United States and Europe account for most of the AUM, but Asia has grown faster.![](https://www.bebhuvan.com/images/2022/11/Private-vs-public-markets.png) ![](https://www.bebhuvan.com/images/2022/11/Asia-Private-equity.png) 
+The rise of private markets has been one of the biggest trends in the financial markets over the last two decades. The United States and Europe account for most of the AUM, but Asia has grown faster.![](/blog-images/Private-vs-public-markets.png) ![](/blog-images/Asia-Private-equity.png) 
 
 <pre class="wp-block-verse"><strong>Notes</strong>
 1. PE and VC are also called "alternatives." 
@@ -82,15 +82,15 @@ What were the factors that led to the rise of the private markets?
 
 So what does this all mean? 
 
-One way of looking at this is how these factors change the way institutions invest. Based on certain return assumptions, analysts at [Callan][15] looked at what it would take to earn a 7% nominal return (5% real return). ![](https://www.bebhuvan.com/images/2023/03/7-percent-nominal-callan.jpeg) 
+One way of looking at this is how these factors change the way institutions invest. Based on certain return assumptions, analysts at [Callan][15] looked at what it would take to earn a 7% nominal return (5% real return). ![](/blog-images/7-percent-nominal-callan.jpeg) 
 
 > The graphic below shows that the pattern of increasing complexity over time remains similar over the 30-year period, although the level of additional risk is lower. Today investors need to take on roughly 2½ times the volatility as they did 30 years ago to earn a 5% real expected return, versus over 5 times the risk when matching nominal return expectations.
 
 Things have become even trickier since the piece was published, with inflation at 7-8%.
 
-All these factors have led to institutional investors increasing their allocation to private equity, venture capital, real estate, and other alternative investments. On average, the allocation to private markets by institutional investors ranges from 10%-50% across the developed world. ![](https://www.bebhuvan.com/images/2022/11/Pension-fund-allocations-to-alternativesjpg.jpeg) 
+All these factors have led to institutional investors increasing their allocation to private equity, venture capital, real estate, and other alternative investments. On average, the allocation to private markets by institutional investors ranges from 10%-50% across the developed world. ![](/blog-images/Pension-fund-allocations-to-alternativesjpg.jpeg) 
 
-This shift from equities and bonds to a mix of other private assets is called the endowment model. David Swensen pioneered it at Yale and inspired a generation of allocators who've tried to emulate him, with <a rel="noreferrer noopener" href="https://www.institutionalinvestor.com/article/b1gj523tmfl2tt/David-Swensen-Is-Great-for-Yale-Is-He-Horrible-for-Investing" target="_blank">mixed results</a>.![](https://www.bebhuvan.com/images/2022/11/insitutions-asset-allocation.png) 
+This shift from equities and bonds to a mix of other private assets is called the endowment model. David Swensen pioneered it at Yale and inspired a generation of allocators who've tried to emulate him, with <a rel="noreferrer noopener" href="https://www.institutionalinvestor.com/article/b1gj523tmfl2tt/David-Swensen-Is-Great-for-Yale-Is-He-Horrible-for-Investing" target="_blank">mixed results</a>.![](/blog-images/insitutions-asset-allocation.png) 
 
 Falling interest rates and the other structural issues I mentioned above have pushed pensions to increase allocations to private markets. If you still think this is a small allocation, consider that pension funds in the 22 largest countries manage over [$56 trillion][17] in assets. When you include other large investors in private markets, such as sovereign wealth funds, endowments, asset managers, and insurance companies, the number goes up to $175 trillion. Even a 1% allocation moves billions. 
 
@@ -98,11 +98,11 @@ Falling interest rates and the other structural issues I mentioned above have pu
  
  <a href="https://cepr.org/publications/books-and-reports/when-tailwind-stops-private-equity-industry-new-interest-rate">When the Tailwind Stops: The Private Equity Industry in the New Interest Rate Environment &#8211; CEPR</a>
 
-Pension fund asset allocation in the 7 largest pension markets—Australia, Canada, Japan, the Netherlands, Switzerland, the UK, and the US.![](https://www.bebhuvan.com/images/2022/11/Pensions-asset-allocation.png) 
+Pension fund asset allocation in the 7 largest pension markets—Australia, Canada, Japan, the Netherlands, Switzerland, the UK, and the US.![](/blog-images/Pensions-asset-allocation.png) 
 
-It's not just pensions and endowments; even [sovereign wealth funds][18] have dived head-first into private markets. ![](https://www.bebhuvan.com/images/2022/12/SWF-Private-markets-1.png) 
+It's not just pensions and endowments; even [sovereign wealth funds][18] have dived head-first into private markets. ![](/blog-images/SWF-Private-markets-1.png) 
 
-The rush to private markets is only getting started. ![](https://www.bebhuvan.com/images/2022/11/Private-equity-survey-1.jpeg) 
+The rush to private markets is only getting started. ![](/blog-images/Private-equity-survey-1.jpeg) 
 
 What explains the dramatic shift into private markets? The common reasons touted by allocators are:
 
@@ -124,7 +124,7 @@ Why the disconnect?
 
 As a refresher, a private equity fund is like a closed-end fund. Private equity firms say they can acquire existing companies and improve their performance. 
 
-Structure of a private equity fund.![](https://www.bebhuvan.com/images/2022/12/PE-Fund-structure.jpeg) 
+Structure of a private equity fund.![](/blog-images/PE-Fund-structure.jpeg) 
 
 **Fund**
 
@@ -136,7 +136,7 @@ The fund then raises money from investors such as pension funds, endowments, and
 
 **Management**
 
-Much like a mutual fund, a private equity fund will have a manager(s) whose job is to identify companies, acquire them, improve them, and sell them. The fund manager in a PE fund is called a general partner (GP). Unlike a mutual fund, all the money isn't invested right at the start. LPs commit money to the fund, but the GP calls for the money as and when he identifies opportunities. The GP invests the capital in the first 5 years and then starts selling the companies after, returning the money to the LPs after fees. The sales can be through IPOs, secondary sales to other companies, or private equity firms. ![](https://www.bebhuvan.com/images/2022/12/PE-fund-lifecycle.png) 
+Much like a mutual fund, a private equity fund will have a manager(s) whose job is to identify companies, acquire them, improve them, and sell them. The fund manager in a PE fund is called a general partner (GP). Unlike a mutual fund, all the money isn't invested right at the start. LPs commit money to the fund, but the GP calls for the money as and when he identifies opportunities. The GP invests the capital in the first 5 years and then starts selling the companies after, returning the money to the LPs after fees. The sales can be through IPOs, secondary sales to other companies, or private equity firms. ![](/blog-images/PE-fund-lifecycle.png) 
 
 **Fees**
 
@@ -157,9 +157,9 @@ But private equity funds don't have market values because the underlying compani
 Researchers and academics use databases maintained by firms like Prequin, Burgiss, and Cambridge Associates to analyze private data, but they suffer from obvious self-selection and self-reporting issues. To give you a sense of how difficult it is to get PE data, Prequin [collects its data][26] through Freedom of Information Act (FOIA) requests to public pensions in the US and UK. To make matters worse, the fund cash flows are also irregular, and the valuations of company exits can only be determined after the exit. We're only talking about measuring returns.
 
 #### So how has private equity performed?
-Private equity became mainstream only in the [1980s][27]. If you remove the first 5 years and the last 5 years because that's usually the fund formation and termination stage, the industry is only 30 years old. If you only consider the period where the assets start increasing, that would further reduce the time period to just about 20+ years. The industry hasn't even seen a proper inflationary economic cycle. ![](https://www.bebhuvan.com/images/2023/03/pe-cycle-1.jpeg) 
+Private equity became mainstream only in the [1980s][27]. If you remove the first 5 years and the last 5 years because that's usually the fund formation and termination stage, the industry is only 30 years old. If you only consider the period where the assets start increasing, that would further reduce the time period to just about 20+ years. The industry hasn't even seen a proper inflationary economic cycle. ![](/blog-images/pe-cycle-1.jpeg) 
 
-But anyway, this is the typical image you see when people talk about private equity, especially those from the industry. The common view is that high PE returns are a compensation for holding an illiquid asset in which you're locked in for 10 years.![](https://www.bebhuvan.com/images/2022/12/PE-performance.webp) 
+But anyway, this is the typical image you see when people talk about private equity, especially those from the industry. The common view is that high PE returns are a compensation for holding an illiquid asset in which you're locked in for 10 years.![](/blog-images/PE-performance.webp) 
 
 3X the returns with half the volatility of the public markets. What more do you want in life?
 
@@ -176,7 +176,7 @@ One of the best descriptions of the absurdity of using IRR was from a [presentat
  </p>
  
  Ludovic Pahlippou
-![](https://www.bebhuvan.com/images/2023/03/Ludovic-Phalippou-1.jpeg) 
+![](/blog-images/Ludovic-Phalippou-1.jpeg) 
 
 The other popular measure is money multiple, or total value to paid-in capital (TVPI). It measures the multiple of capital paid out to the capital paid in. But this measure doesn't consider the time taken for the cash to be paid out. The public market equivalent (PME) is another alternative; it measures the performance of an equivalent investment in a public market like the S&P 500. Even though PME has its [shortcomings][31], it's a much more reasonable measure of PE performance compared to all the other metrics. One of the biggest issues with PME is the selection of the wrong benchmarks to make PE performance look good, like in the image above, but we'll get to that later. 
 
@@ -186,11 +186,11 @@ The results of studies analyzing the performance of private markets are all over
  <div class="wp-block-jetpack-slideshow_container swiper-container">
  
 
- - ![](https://www.bebhuvan.com/images/2022/12/annurev-financial-110118-123057-1-03.jpg)
+ - ![](/blog-images/annurev-financial-110118-123057-1-03.jpg)
 
- - ![](https://www.bebhuvan.com/images/2022/12/1-Kortweg.png)
+ - ![](/blog-images/1-Kortweg.png)
 
- - ![](https://www.bebhuvan.com/images/2022/12/2-Kortweg.png)
+ - ![](/blog-images/2-Kortweg.png)
 
  
 
@@ -204,7 +204,7 @@ The results of studies analyzing the performance of private markets are all over
 
 [Steve Kaplan][33], [Antoinette Schoar][34], [David Robinson][35], [Arthur Kortweg][36], [Greg Brown][37], among others, believe private equity outperformed public markets. The alpha estimates range from 0.01% to 9.3%, and the market beta estimates range from 0.7 to 2.8. But others like [Ludovic Phalippou][38], [Jeff Hooke][39], [Richard Ennis][40], [Antti Ilmanen][41], and [Narasimhan Jegadeesh][42] disagree.
 
-But there's broad agreement that private equity returns since the 2008 crisis have [been declining][43]. This [is visible][44] even when using a flawed measure like IRR and when compared with the wrong benchmark like the S&P 500. ![](https://www.bebhuvan.com/images/2022/12/PE-returns-dropping.png) ![](https://www.bebhuvan.com/images/2023/01/Private-equity-performance-dispersion.png) 
+But there's broad agreement that private equity returns since the 2008 crisis have [been declining][43]. This [is visible][44] even when using a flawed measure like IRR and when compared with the wrong benchmark like the S&P 500. ![](/blog-images/PE-returns-dropping.png) ![](/blog-images/Private-equity-performance-dispersion.png) 
 
 The disagreement on private equity performance is in part due to data sources, methodological differences in terms of risk adjustments, leverage adjustments, pre-fee calculations, and the choice of benchmarks. But some clever studies have tried to untangle these issues in interesting ways. 
 
@@ -212,11 +212,11 @@ Let's look at the issue of benchmarks first.
 
 Most studies use the S&P 500 as the benchmark, but private equity investments are akin to small-cap companies. There's a growing body of literature [[1][45],[2][46],[3][47],[4][48],[5][49],[6][50]] that shows that private equity is just a leveraged [small-cap][51] investment. A study by D[an Rasmussen][48] showed that you can replicate private equity returns with a basket of small-cap stocks mirroring the characteristics of those acquired by private equity firms. Another [study by Erik Stafford][46] showed that you can replicate private equity by levering up small and micro-caps with leverage from your brokerage account.
 
-Studies that have tried to decompose the [factor loadings][52] of private equity have shown that private equity tends to have higher loadings toward size and value factors. ![](https://www.bebhuvan.com/images/2023/01/Private-equity-factor-expsoure.png) 
+Studies that have tried to decompose the [factor loadings][52] of private equity have shown that private equity tends to have higher loadings toward size and value factors. ![](/blog-images/Private-equity-factor-expsoure.png) 
 
-[Ilmanen et al., 2019][50] tackle this issue of benchmark selection by comparing private equity returns against the Russell 2000 small-cap index by levering it by 1.2X. When compared against this levered small-cap, the outperformance of PE all but vanishes. It's the same when you compare PE to the S&P 600 small-cap index adjusted for leverage and sector exposure. ![](https://www.bebhuvan.com/images/2023/01/Private-equity-returns-and-valuation-gap.png) 
+[Ilmanen et al., 2019][50] tackle this issue of benchmark selection by comparing private equity returns against the Russell 2000 small-cap index by levering it by 1.2X. When compared against this levered small-cap, the outperformance of PE all but vanishes. It's the same when you compare PE to the S&P 600 small-cap index adjusted for leverage and sector exposure. ![](/blog-images/Private-equity-returns-and-valuation-gap.png) 
 
-Eric Johnson, the creator of the Modified Public Market Equivalent (mPME) methodology, published a [comprehensive study][53] of PE performance. His conclusions were similar, that the outperformance of private equity all but vanishes when compared to mid-cap, small-cap, and equal-weighted indices. You could argue that combining buyout, venture, and real estate is wrong. But [Ilmanen et al. (2019)][50] show that unlisted real estate has underperformed listed REITs. As for venture capital, if you remove the dot-com bubble period, the [performance][54] is similar to Nasdaq Composite. ![](https://www.bebhuvan.com/images/2023/01/private-equity-performance-across-vintages.png) ![](https://www.bebhuvan.com/images/2023/01/Private-equity-eric-johnson.jpeg) 
+Eric Johnson, the creator of the Modified Public Market Equivalent (mPME) methodology, published a [comprehensive study][53] of PE performance. His conclusions were similar, that the outperformance of private equity all but vanishes when compared to mid-cap, small-cap, and equal-weighted indices. You could argue that combining buyout, venture, and real estate is wrong. But [Ilmanen et al. (2019)][50] show that unlisted real estate has underperformed listed REITs. As for venture capital, if you remove the dot-com bubble period, the [performance][54] is similar to Nasdaq Composite. ![](/blog-images/private-equity-performance-across-vintages.png) ![](/blog-images/Private-equity-eric-johnson.jpeg) 
 
 On an interesting note, Tiger Global partner Scott Shleifer in a recent conference, [had this to say][55] about their venture capital returns in India:
 
@@ -226,11 +226,11 @@ It seems to me that the reason for the public markets vs. private markets is tha
 
 A few studies take some interesting approaches to compare the performance of private equity to public markets.
 
-Unlike public markets, private markets don't have a deep and liquid secondary market. Though the secondary market for private equity grew to $130+ billion in 2021, it's still tiny compared to the AUM. ![](https://www.bebhuvan.com/images/2023/01/Private-equity-secondaries.png.png) 
+Unlike public markets, private markets don't have a deep and liquid secondary market. Though the secondary market for private equity grew to $130+ billion in 2021, it's still tiny compared to the AUM. ![](/blog-images/Private-equity-secondaries.png.png) 
 
 To get around the issues with private equity data, [Boyer et al. (2019)][56] used secondary deals data to build private equity indices. They find that private equity is much riskier than public equities, with a beta of over 2 and negative alpha in contrast to indices based on NAVs. 
 
-This matches the recent evidence from secondary sales, even though LPs have been reluctant to mark down their portfolios. ![](https://www.bebhuvan.com/images/2023/03/gta-2q22-43-1.png) 
+This matches the recent evidence from secondary sales, even though LPs have been reluctant to mark down their portfolios. ![](/blog-images/gta-2q22-43-1.png) 
 
 <a rel="noreferrer noopener" href="https://www.nber.org/papers/w15335" target="_blank">Jegadeesh et al. (2009)</a> analyzed listed fund of funds (FOFs) and listed private equity companies (LPE) that invest in private equity. They found that private equity FOFs and LPEs have negative alpha, beta close to one, and positive factor loading towards small and value factors. 
 
@@ -290,7 +290,7 @@ In the last 5-10 years, there's been a mad rush into private equity, so much so 
  <p>
  This isn't a secret, either. Everybody knows, but nobody cares. Here are the responses when an all-star cast of finance professors, including Sheridan Titman, Stefan Nagel, Steve Kaplan, Janice Eberly, John Cochrane, and Campbell Harvey, were asked <a href="https://www.igmchicago.org/surveys/public-and-private-equities/">if PE had lower volatility</a> compared to public markets.
  </p>
-![](https://www.bebhuvan.com/images/2023/01/PPrivate-equity-return-smoothign-survey.png) 
+![](/blog-images/PPrivate-equity-return-smoothign-survey.png) 
 
 Not everybody agrees that private equity is "laundering volatility." There was a lively debate in the comments section of FT Alphaville recently. Cyril Demaria, an affiliate professor for private capital at EDHEC Business School, published a piece defending private equity's valuation practices and made t[his jaw-dropping assertion][61], I presume, with a straight face. But I cannot independently verify if Cyril had a straight face when writing the post.
 
@@ -298,7 +298,7 @@ Not everybody agrees that private equity is "laundering volatility." There was a
  
 > Is this approach wrong? It’s pretty clear that public markets overreact to information, and can diverge substantially and durably from their fundamentals. Instead of calling it “laundering volatility”, perhaps private market NAVs actually bring a healthy dose of prudence and reason to an otherwise wildly gyrating financial system? I’d argue that these NAVs should even be seen as a valuable source of independent financial information — although still available on average with a three- to six-month delay.
 
-As luck would have it, Cliff Asness decided to engage in the comments section, and it's glorious:![](https://www.bebhuvan.com/images/2022/11/2023-03-04-20.01.23-www.ft_.com-698b1ab92525.png) 
+As luck would have it, Cliff Asness decided to engage in the comments section, and it's glorious:![](/blog-images/2023-03-04-20.01.23-www.ft_.com-698b1ab92525.png) 
 
 In summary, there's reasonable evidence that private equity is nothing but unlisted small and microcaps with a 2% and 20% fee structure. It's fair to assume you can replicate private equity returns using publicly listed stocks with leverage. Private equity is also similar to public markets in many ways. Like in public markets, there will always be some private equity fund managers that generate abnormal alpha. But just like in public markets, it's almost impossible to identify those managers in advance [[1][62], [2][14]]. 
 
@@ -313,7 +313,7 @@ No, it doesn't matter to the private equity funds.
 
 By manipulating returns, private equity funds hide their actual volatility. If you agree that private equity is levered small and mid-cap equities, then how the hell can it fall less than listed equities?
 
-Private equity firms charge 2% of the AUM and 20% as carry. If they understate the volatility, the AUM doesn't change much. This means they can continue charging a 2% fee on a higher AUM base than they would have if all the assets were market-to-market. Genius! ![](https://www.bebhuvan.com/images/2023/01/Private-equity-drawdowns.png) 
+Private equity firms charge 2% of the AUM and 20% as carry. If they understate the volatility, the AUM doesn't change much. This means they can continue charging a 2% fee on a higher AUM base than they would have if all the assets were market-to-market. Genius! ![](/blog-images/Private-equity-drawdowns.png) 
 
 Yes, it matters if you are an investor. 
 
@@ -352,7 +352,7 @@ One of the sales pitches of private equity is that it reduces the principal-agen
 
 Why haven't the goddamn fees come down? 
 
-In the last 15 years, fee compression in [mutual funds, ETFs][75], and [hedge funds][76] has been like the law of gravity. ![](https://www.bebhuvan.com/images/2023/02/Fee-compression.webp) 
+In the last 15 years, fee compression in [mutual funds, ETFs][75], and [hedge funds][76] has been like the law of gravity. ![](/blog-images/Fee-compression.webp) 
 
 But private equity fees have bucked this trend because of the [sheer demand][78]: 
 
@@ -410,21 +410,21 @@ But at the risk of stating the obvious, such broad analyses hide substantial var
 #### Healthcare
 Since the 2008 crisis, the healthcare industry has been a favorite of private equity firms. [Studies][83] by Eileen Appelbaum and Rosemary Batt [have shown][84] that PE firms have been buying up hospitals, emergency rooms, physician staffing firms, medical debt collection agencies, and hospital management software providers and rolling them up. This has had a devastating impact. A study by Gupta et al. (2021) found that private equity owned nursing facilities have higher deaths, higher charges, fewer caregivers, an increased prescription of antipsychotic medication, and a precipitous decline in the quality of care. This [investigative piece][85] in the New Yorker by Yasmin Rafiei on private equity owned nursing homes is heartbreaking.
 
-[Other studies][86] have come to similar conclusions. Private equity ownership leads to higher insurance claims, higher costs, lower quality care, and more injuries. This is depressing considering the fact that US citizens [spend the most][87] on healthcare.![](https://www.bebhuvan.com/images/2023/01/life-expectancy-vs-health-expenditure-per-capita-1.png) 
+[Other studies][86] have come to similar conclusions. Private equity ownership leads to higher insurance claims, higher costs, lower quality care, and more injuries. This is depressing considering the fact that US citizens [spend the most][87] on healthcare.![](/blog-images/life-expectancy-vs-health-expenditure-per-capita-1.png) 
 
 #### Housing
 The recent inflationary surge led to a dramatic increase in the cost of living worldwide. Along with everything, housing prices and rents rose sharply, affecting the poor and low-income households the most. Since housing is one of the biggest household expenditures, there was widespread outrage over rising rents. As people looked for the cause, private equity firms like Blackstone, Brookfield, and KKR emerged as the villains. They were subject to intense scorn, so much so that BlackRock had to release a [statement][88]. 
 
-Unlike healthcare, private equity involvement in housing is still [small][44]. ![](https://www.bebhuvan.com/images/2023/03/Global-buyout-deal-count-by-secto.png) 
+Unlike healthcare, private equity involvement in housing is still [small][44]. ![](/blog-images/Global-buyout-deal-count-by-secto.png) 
 
-Private equity firms have long been in real estate since it's the largest asset class on the planet. ![](https://www.bebhuvan.com/images/2023/01/Housing-1.png) 
+Private equity firms have long been in real estate since it's the largest asset class on the planet. ![](/blog-images/Housing-1.png) 
 
 But they started getting involved in housing after the [2008 crisis][89]. As home foreclosures hit a record high, private equity firms bought single-family and multifamily rentals. Contrary to all the headlines about institutional investors gobbling up housing, institutional investors own just [1-5%][90] of rental homes in advanced economies. They might be big in some sub-regions, but they're still small overall.
 
 But the rate at which they are acquiring homes has been rising, and given the ever-increasing pools of large investors, this will only grow over time. The affordability crisis in housing isn't new; it's been decades in the making. The crisis has many country-specific causes involving a toxic mix of politics, regulations, taxation, and supply issues. But of the houses private equity firms own and manage, they've become institutional slumlords. They've jacked up rents, introduced hidden charges, exorbitant fines, cut costs on maintenance, and forced [evictions][91]. 
 
 ### Media
-The moment the internet unbundled news and the audience, traditional news media began its [death spiral][92]. Digital media was supposed to be the savior, but news media could not compete with Google and Facebook. The result is that newspaper circulation and revenues have been in a secular downtrend across much of the world, especially in local news media. There have been countless closures, [layoffs][93], mergers, and acquisitions. ![](https://www.bebhuvan.com/images/2023/03/Web-capture_4-3-2023_202858_deliverypdf.ssrn_.com-1.jpeg) 
+The moment the internet unbundled news and the audience, traditional news media began its [death spiral][92]. Digital media was supposed to be the savior, but news media could not compete with Google and Facebook. The result is that newspaper circulation and revenues have been in a secular downtrend across much of the world, especially in local news media. There have been countless closures, [layoffs][93], mergers, and acquisitions. ![](/blog-images/Web-capture_4-3-2023_202858_deliverypdf.ssrn_.com-1.jpeg) 
 
 Private equity tends to be active in distressed industries, and media is no different. Private equity ownership of US newspapers increased from 5% in 2001 to [23%][95] in 2019. [Ewens et al. (2022)][96] analyzed the impact of private equity ownership of newspapers, and the results are depressing. Private equity ownership leads to a reduction in local news stories, a decline in circulation, and increased layoffs of reporters and editors. The fallout of this is that voter turnout is low in local body elections.
 
@@ -483,7 +483,7 @@ Except for academics and interested observers, most discussions about private eq
 
 It took some time, but there's widespread acceptance, even among skeptics, that we're all going to die from climate change. If we are to have a fighting chance of not dying, we have to transition away from carbon-intensive fuels to green energy. Both the public and private sectors have critical roles to play in this transition, and this is where asset managers like private equity come into the picture. Before we get to the role of asset managers in us not dying, I think it's important to understand how asset managers and private equity, in particular, became such important actors in our society. 
 
-With the doubling of global assets under management (AUM) in the last decade to over $100 trillion, asset managers have become the new masters of the universe. The growth is the result of several well-known factors, such as rising incomes, the growing penetration of retirement saving vehicles, the growth of the rich, the shift away from defined benefit pensions to defined contribution pensions, and the rise of large cash pools such as sovereign wealth funds, family offices, and corporate treasuries.![](https://www.bebhuvan.com/images/2023/02/Global-asset-manager-AUM.jpeg) 
+With the doubling of global assets under management (AUM) in the last decade to over $100 trillion, asset managers have become the new masters of the universe. The growth is the result of several well-known factors, such as rising incomes, the growing penetration of retirement saving vehicles, the growth of the rich, the shift away from defined benefit pensions to defined contribution pensions, and the rise of large cash pools such as sovereign wealth funds, family offices, and corporate treasuries.![](/blog-images/Global-asset-manager-AUM.jpeg) 
 
 But there are also several structural reasons. Across much of the developed and developing world, there has been a shift from bank-based finance to shadow banking or [market-based finance][100], where security markets take center stage in [credit creation][101] and new forms of shadow money. This long-term structural change accelerated after the 2008 financial crisis as [regulators forced banks][102] to shrink their footprint. 
 
@@ -507,9 +507,9 @@ Shadow banking has been around in one form or another for a long time, but the s
 
  8. A deliberate <a href="https://youtu.be/xdwi14I7Iwk">political project</a> to export the American model of market-based finance around the world.
 
-But coming back to the topic, there's a profound contradiction at the heart of the green transition. The rich countries got rich because they [burned their way][106] to prosperity. They are now trying to push poor and developing countries that are starting their development journeys to cut emissions aggressively and green their economies. ![](https://www.bebhuvan.com/images/2023/02/Cumulative-CO2-treemap-1.png) 
+But coming back to the topic, there's a profound contradiction at the heart of the green transition. The rich countries got rich because they [burned their way][106] to prosperity. They are now trying to push poor and developing countries that are starting their development journeys to cut emissions aggressively and green their economies. ![](/blog-images/Cumulative-CO2-treemap-1.png) 
 
-The [irony][107] is that the poorest countries, which have to grow the most and are financially the weakest, [face][108] the [disproportionate][109] burden of climate change.![](https://www.bebhuvan.com/images/2023/02/impact-of-climate-chnage.jpg) 
+The [irony][107] is that the poorest countries, which have to grow the most and are financially the weakest, [face][108] the [disproportionate][109] burden of climate change.![](/blog-images/impact-of-climate-chnage.jpg) 
 
 All the promises made by the rich countries to provide finance to help the poor countries have been [just lip service][110]. We've known about the devastating impact of climate change [for decades][111], but we chose to bury our heads in the sand. We kept delaying action, and the bills have now come due. 
 
@@ -517,7 +517,7 @@ The cost of transitioning to a low-carbon economy is astounding. The best estima
 
 So, how much are we spending currently? 
 
-A drop in Varthur Lake! ![](https://www.bebhuvan.com/images/2023/02/cost-of-climate-transition-1.jpeg) 
+A drop in Varthur Lake! ![](/blog-images/cost-of-climate-transition-1.jpeg) 
 
 The problem is, we don't care. This Saturday Night Live segment best summed up our collective apathy towards dying:
 
@@ -541,7 +541,7 @@ Institutional investors will be more than happy to invest indevelopment projects
 
 How? 
 
-By providing guarantees against political, demand, climate, currency, and bond market risks for institutional investors by moving them to their [own balance sheets.][125] Daniel Gabor dubs this the "de-risking state" in the _[Wall Street Consensus][104]._![](https://www.bebhuvan.com/images/2023/02/Wall-Street-consensus-1.jpeg) 
+By providing guarantees against political, demand, climate, currency, and bond market risks for institutional investors by moving them to their [own balance sheets.][125] Daniel Gabor dubs this the "de-risking state" in the _[Wall Street Consensus][104]._![](/blog-images/Wall-Street-consensus-1.jpeg) 
 
 Here's an [excerpt from the IMF's][126] sustainability advisory group:
 
@@ -623,9 +623,9 @@ Despite [increasing][137] [evidence][138] that private finance isn't an unalloye
 #### Back to the asset managers
 By virtue of their ownership of fossil fuel assets, asset managers like private equity firms are at the heart of the green transition. While there's growing literature [[1][139],[2][140],[3][141],[4][142]] on the effects of increasing ownership of public equities by asset managers, little attention has been paid to private equity, and I hope this changes. With ~$10 trillion in assets, private equity is no longer a marginal player in the global economy. The popular yet sterile view of private equity funds as buyers and sellers of private companies and as non-bank lenders is incomplete. 
 
-[Semieniuk et al.][143] (2022) traced the ultimate ownership of 43,439 oil and gas assets. They found that investors, through funds and pensions, are at risk of significant losses. In this image, private equity and pensions are broken out separately, but pensions, in turn, [allocate to private equity funds][144].![](https://www.bebhuvan.com/images/2023/02/Private-ownership.webp) 
+[Semieniuk et al.][143] (2022) traced the ultimate ownership of 43,439 oil and gas assets. They found that investors, through funds and pensions, are at risk of significant losses. In this image, private equity and pensions are broken out separately, but pensions, in turn, [allocate to private equity funds][144].![](/blog-images/Private-ownership.webp) 
 
-Oil and gas companies are under intense pressure from shareholders to stop choking the planet. The pressure is forcing these companies to sell assets to appease shareholders. As of last year, assets worth [$140 billion][145] were up for sale. In 2021 and 2022 alone, private equity firms acquired oil, gas, and coal assets worth over $60 billion. According to the [Private Equity Stakeholder Project][146] (PESP), private equity firms have invested $1.1 trillion in energy assets since 2010, mostly in fossil fuels.![](https://www.bebhuvan.com/images/2023/02/Private-equity-oil-assets-1.jpeg) 
+Oil and gas companies are under intense pressure from shareholders to stop choking the planet. The pressure is forcing these companies to sell assets to appease shareholders. As of last year, assets worth [$140 billion][145] were up for sale. In 2021 and 2022 alone, private equity firms acquired oil, gas, and coal assets worth over $60 billion. According to the [Private Equity Stakeholder Project][146] (PESP), private equity firms have invested $1.1 trillion in energy assets since 2010, mostly in fossil fuels.![](/blog-images/Private-equity-oil-assets-1.jpeg) 
 
 According to some estimates, [$1][148]&#8211;[11.8][149] trillion worth of oil, gas, coal, and untapped reserves are at risk of being stranded. Assets that cannot earn economic returns due to changes in regulations, demand, supply, or disasters are called "stranded assets." The risk is that private equity firms are sizable investors in distressed companies and assets.
 
@@ -653,7 +653,7 @@ This is from a [2015 article][153] on the same topic:
 
 > We should acknowledge that our view of the benefits of finance is inflated. Although there is no doubt that a developed economy needs a sophisticated financial sector, there is also no theoretical reason or empirical evidence to support the notion that all the growth in the financial sector in the last 40 years has been beneficial to society. In fact, we have both theoretical reasons and empirical evidence to claim that a component has been pure rent-seeking. By defending all forms of finance, by being unwilling to separate the wheat from the chaff, we have lost credibility in defending the real contributions of finance.
 
-### Funny, until it isn't! ![](https://www.bebhuvan.com/images/2023/02/PE-takeover-1.jpeg)
+### Funny, until it isn't! ![](/blog-images/PE-takeover-1.jpeg)
 ### References and further reading
 **Papers and articles**
 
