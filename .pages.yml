@@ -10,7 +10,6 @@ content:
         label: Title
         type: text
         required: true
-        width: half
         description: "Keep it concise and compelling"
       - name: description
         label: Description
@@ -48,7 +47,6 @@ content:
         label: Title
         type: text
         required: true
-        width: half
       - name: description
         label: Description
         type: textarea
@@ -89,7 +87,6 @@ content:
         label: Title
         type: text
         required: true
-        width: half
         description: "Short, descriptive title"
       - name: publishDate
         label: Publish Date
