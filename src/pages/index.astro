@@ -1,16 +1,116 @@
 ---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import BlogCard from '../components/BlogCard.astro';
+import UpdateCard from '../components/UpdateCard.astro';
+import ProjectCard from '../components/ProjectCard.astro';
 
+// Get recent blog posts (limit to 3)
+const blogPosts = (await getCollection('blog'))
+  .filter(post => !post.data.draft)
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+  .slice(0, 3);
+
+// Get recent updates (limit to 5)
+const updates = (await getCollection('updates'))
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+  .slice(0, 5);
+
+// Get projects
+const projects = (await getCollection('projects'))
+  .sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Bhuvan - Long-form writing and quick updates">
+  <Header />
+  
+  <section class="hero">
+    <div class="container">
+      <div class="hero-wrapper">
+        <div class="hero-content">
+          <h1 class="hero-title">Hi 👋 I'm Bhuvan</h1>
+          <p class="hero-tagline">Doer of random things. Diver of weird rabbit holes. Sharer of weird and fascinating things. Writer of things nobody reads.</p>
+          <div class="hero-description">
+            <p>Welcome to my small little corner on the dumpster fire that is the interweb where I share the things I do, write and discover. Scroll down to check out my latest fascinations and obsessions.</p>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="/profile-pic.webp" alt="Bhuvan" class="profile-pic" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">✍️ Featured Posts</h2>
+      </div>
+      <div class="posts-grid">
+        {blogPosts.map((post) => (
+          <BlogCard
+            title={post.data.title}
+            slug={post.slug}
+            description={post.data.description}
+            publishDate={post.data.publishDate}
+            readingTime={post.data.readingTime}
+          />
+        ))}
+      </div>
+      <div class="section-footer">
+        <a href="/blog" class="view-all">View all posts →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="updates" id="updates">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">📝 Quick Updates</h2>
+      </div>
+      <div class="micro-posts">
+        {updates.map(async (update) => {
+          const { Content } = await update.render();
+          return (
+            <UpdateCard
+              title={update.data.title}
+              content={update.body}
+              publishDate={update.data.publishDate}
+              slug={update.slug}
+              link={update.data.link}
+              linkTitle={update.data.linkTitle}
+            />
+          );
+        })}
+      </div>
+      <div class="micro-footer">
+        <a href="/updates" class="view-all-link">View all updates →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">🚀 Projects</h2>
+      </div>
+      <div class="project-list">
+        {projects.map((project) => (
+          <ProjectCard
+            title={project.data.title}
+            description={project.data.description}
+            link={project.data.link}
+            status={project.data.status}
+          />
+        ))}
+      </div>
+      <div class="section-footer">
+        <a href="/projects" class="view-all">View all projects →</a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

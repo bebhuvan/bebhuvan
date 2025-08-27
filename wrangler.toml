@@ -1,0 +1,7 @@
+name = "bhuvan-blog"
+compatibility_date = "2024-12-19"
+main = "src/worker.js"
+
+[assets]
+directory = "dist"
+binding = "ASSETS"

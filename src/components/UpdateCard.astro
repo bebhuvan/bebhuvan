@@ -1,0 +1,46 @@
+---
+import LinkPreview from './LinkPreview.astro';
+
+export interface Props {
+  title: string;
+  content: string;
+  publishDate: Date;
+  slug: string;
+  link?: string;
+  linkTitle?: string;
+}
+
+const { title, content, publishDate, slug, link, linkTitle } = Astro.props;
+
+const formatTimeAgo = (date: Date) => {
+  const now = new Date();
+  const diffMs = now.getTime() - date.getTime();
+  const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
+  const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+  
+  if (diffDays >= 1) {
+    return `${diffDays} day${diffDays > 1 ? 's' : ''} ago`;
+  } else if (diffHours >= 1) {
+    return `${diffHours} hour${diffHours > 1 ? 's' : ''} ago`;
+  } else {
+    return 'just now';
+  }
+};
+---
+
+<article class="micro-post">
+  <div class="micro-meta">
+    <time datetime={publishDate.toISOString()}>
+      {formatTimeAgo(publishDate)}
+    </time>
+  </div>
+  <h3 class="micro-title">
+    <a href={`/updates/${slug}`}>{title}</a>
+  </h3>
+  <div class="micro-content">
+    <p set:html={content.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="micro-link">$1</a>')} />
+    {link && linkTitle && (
+      <LinkPreview url={link} title={linkTitle} />
+    )}
+  </div>
+</article>

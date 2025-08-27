@@ -1,0 +1,113 @@
+---
+export interface Props {
+  url: string;
+  title?: string;
+}
+
+const { url, title } = Astro.props;
+
+// You can integrate with services like:
+// - Microlink API (https://microlink.io/)
+// - Open Graph scraping
+// - Custom metadata fetching
+
+// For now, we'll show a simple link preview with the provided title
+// In production, you'd want to fetch actual metadata
+
+const getDomain = (url: string) => {
+  try {
+    return new URL(url).hostname.replace('www.', '');
+  } catch {
+    return url;
+  }
+};
+---
+
+{url && (
+  <div class="link-preview">
+    <a href={url} target="_blank" rel="noopener noreferrer" class="link-preview-card">
+      <div class="link-preview-content">
+        <div class="link-preview-title">
+          {title || url}
+        </div>
+        <div class="link-preview-domain">
+          {getDomain(url)}
+        </div>
+      </div>
+      <div class="link-preview-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+          <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+        </svg>
+      </div>
+    </a>
+  </div>
+)}
+
+<style>
+  .link-preview {
+    margin-top: 1rem;
+  }
+
+  .link-preview-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    background: var(--bg-off-white);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s ease;
+  }
+
+  .link-preview-card:hover {
+    border-color: var(--primary-orange);
+  }
+
+  .link-preview-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .link-preview-title {
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .link-preview-domain {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .link-preview-icon {
+    margin-left: 1rem;
+    color: var(--text-light);
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 768px) {
+    .link-preview-card {
+      padding: 0.75rem;
+    }
+    
+    .link-preview-title,
+    .link-preview-domain {
+      word-break: break-word;
+      white-space: normal;
+      overflow-wrap: break-word;
+    }
+    
+    .link-preview-icon {
+      margin-left: 0.5rem;
+    }
+  }
+</style>

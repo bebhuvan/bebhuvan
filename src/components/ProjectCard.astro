@@ -1,0 +1,23 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  link?: string;
+  status?: string;
+}
+
+const { title, description, link, status } = Astro.props;
+---
+
+<div class="project-item">
+  <div class="project-header">
+    <h3 class="project-title">
+      {link ? (
+        <a href={link} target="_blank" rel="noopener noreferrer">{title}</a>
+      ) : (
+        title
+      )}
+    </h3>
+  </div>
+  <p class="project-description">{description}</p>
+</div>

@@ -1,0 +1,38 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import UpdateCard from '../../components/UpdateCard.astro';
+
+const updates = (await getCollection('updates'))
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+---
+
+<Layout title="Updates - Bhuvan" description="Quick updates, links, and thoughts from Bhuvan">
+  <Header />
+  
+  <div class="list-page">
+    <div class="container">
+      <div class="list-header">
+        <h1 class="list-title">Updates</h1>
+        <p class="list-description">Quick thoughts, interesting links, and other stuff I'm sharing across the web.</p>
+      </div>
+      
+      <div class="micro-posts">
+        {updates.map((update) => (
+          <UpdateCard
+            title={update.data.title}
+            content={update.body}
+            publishDate={update.data.publishDate}
+            slug={update.slug}
+            link={update.data.link}
+            linkTitle={update.data.linkTitle}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+  
+  <Footer />
+</Layout>

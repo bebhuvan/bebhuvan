@@ -1,0 +1,38 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import BlogCard from '../../components/BlogCard.astro';
+
+const blogPosts = (await getCollection('blog'))
+  .filter(post => !post.data.draft)
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+---
+
+<Layout title="Writing - Bhuvan" description="All blog posts from Bhuvan - long-form writing on various topics">
+  <Header />
+  
+  <div class="list-page">
+    <div class="container">
+      <div class="list-header">
+        <h1 class="list-title">Writing</h1>
+        <p class="list-description">All the long-form pieces, rants, and deep dives into topics I find interesting or annoying.</p>
+      </div>
+      
+      <div class="posts-grid">
+        {blogPosts.map((post) => (
+          <BlogCard
+            title={post.data.title}
+            slug={post.slug}
+            description={post.data.description}
+            publishDate={post.data.publishDate}
+            readingTime={post.data.readingTime}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+  
+  <Footer />
+</Layout>

@@ -1,0 +1,47 @@
+---
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const updateEntries = await getCollection('updates');
+  return updateEntries.map(entry => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+};
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+const formatDate = (date: Date) => {
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit'
+  });
+};
+---
+
+<Layout title={`${entry.data.title} - Bhuvan`} description={entry.body.substring(0, 150)}>
+  <Header />
+  
+  <article class="article">
+    <header class="article-header">
+      <h1 class="article-title">{entry.data.title}</h1>
+      <div class="article-meta">
+        {formatDate(entry.data.publishDate)}
+      </div>
+    </header>
+
+    <div class="article-content">
+      <Content />
+    </div>
+  </article>
+  
+  <Footer />
+</Layout>

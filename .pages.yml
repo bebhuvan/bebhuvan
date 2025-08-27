@@ -1,0 +1,84 @@
+media: public/blog-images
+
+content:
+  - name: blog
+    label: Blog Posts
+    path: src/content/blog
+    type: collection
+    fields:
+      - name: title
+        label: Title
+        type: text
+        required: true
+      - name: description
+        label: Description
+        type: text
+        required: true
+      - name: publishDate
+        label: Publish Date
+        type: datetime
+        required: true
+      - name: readingTime
+        label: Reading Time
+        type: text
+      - name: draft
+        label: Draft
+        type: boolean
+        default: false
+      - name: image
+        label: Featured Image
+        type: image
+      - name: body
+        label: Content
+        type: markdown
+        required: true
+
+  - name: projects
+    label: Projects
+    path: src/content/projects
+    type: collection
+    fields:
+      - name: title
+        label: Title
+        type: text
+        required: true
+      - name: description
+        label: Description
+        type: text
+        required: true
+      - name: link
+        label: Link
+        type: text
+      - name: status
+        label: Status
+        type: text
+      - name: order
+        label: Order
+        type: number
+      - name: body
+        label: Content
+        type: markdown
+
+  - name: updates
+    label: Updates
+    path: src/content/updates
+    type: collection
+    fields:
+      - name: title
+        label: Title
+        type: text
+        required: true
+      - name: publishDate
+        label: Publish Date
+        type: datetime
+        required: true
+      - name: link
+        label: External Link
+        type: text
+      - name: linkTitle
+        label: Link Title
+        type: text
+      - name: body
+        label: Content
+        type: markdown
+        required: true

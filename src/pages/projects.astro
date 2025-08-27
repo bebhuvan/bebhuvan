@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+
+const projects = (await getCollection('projects'))
+  .sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
+---
+
+<Layout title="Projects - Bhuvan" description="Projects and things built by Bhuvan">
+  <Header />
+  
+  <div class="list-page">
+    <div class="container">
+      <div class="list-header">
+        <h1 class="list-title">Projects</h1>
+        <p class="list-description">Things I've built when I got tired of complaining about other people's solutions.</p>
+      </div>
+      
+      <div class="project-list">
+        {projects.map((project) => (
+          <ProjectCard
+            title={project.data.title}
+            description={project.data.description}
+            link={project.data.link}
+            status={project.data.status}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+  
+  <Footer />
+</Layout>

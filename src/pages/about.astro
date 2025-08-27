@@ -1,0 +1,171 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="About - Bhuvan">
+  <Header />
+  
+  <div class="about-page">
+    <div class="container">
+      <div class="about-header">
+        <h1>About Me</h1>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <p>Hi, I am Bhuvan and welcome to my small little corner on the dumpster fire that is the interweb, where I share the things I do, write, and discover. I share everything I write, do, and discover here on this site.</p>
+          
+          <p>I currently work at Zerodha as [hard to describe] and I write (try to) about things that bother me on <a href="https://zerodha.com/z-connect/author/bhuvanesh-r" target="_blank" rel="noopener noreferrer">Z-Connect</a>.</p>
+          
+          <p>You can find me in these places:</p>
+          
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/bebhuvan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://bhuvan.substack.com/" target="_blank" rel="noopener noreferrer">Substack</a>
+            <a href="https://twitter.com/bebhuvan" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="mailto:bhuvan@bebhuvan.com">Email</a>
+          </div>
+        </div>
+        
+        <div class="about-image">
+          <img src="/profile-pic.webp" alt="Bhuvan" class="about-profile-pic" />
+          <p class="image-caption">Just me, doing my thing in this corner of the interweb</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <Footer />
+</Layout>
+
+<style>
+.about-page {
+  padding: 4rem 0;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text-dark);
+  margin-bottom: 0;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+}
+
+.about-text h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2.5rem 0 1rem;
+  color: var(--text-dark);
+}
+
+.about-text ul {
+  margin: 1rem 0 2rem 2rem;
+}
+
+.about-text li {
+  margin-bottom: 0.5rem;
+  color: var(--text-medium);
+}
+
+.about-text strong {
+  color: var(--primary-orange);
+  font-weight: 600;
+}
+
+.about-image {
+  text-align: center;
+  position: sticky;
+  top: 2rem;
+}
+
+.about-profile-pic {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 1rem;
+}
+
+.image-caption {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-image {
+    order: -1;
+    position: static;
+  }
+  
+  .about-profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .about-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .about-text {
+    font-size: 1rem;
+  }
+}
+
+.contact-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  color: var(--primary-orange);
+  text-decoration: underline;
+  text-decoration-color: var(--primary-orange);
+  text-underline-offset: 2px;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.contact-links a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+  .contact-links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+</style>
