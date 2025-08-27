@@ -33,8 +33,11 @@ content:
         description: "Optional cover image"
       - name: body
         label: Content
-        type: richtext
+        type: rich-text
         required: true
+        options:
+          path: blog-images
+          extensions: [jpg, jpeg, png, webp, gif]
 
   - name: projects
     label: Projects
@@ -62,8 +65,9 @@ content:
         default: active
       - name: link
         label: Project Link
-        type: url
+        type: string
         description: "GitHub, demo, or project URL"
+        pattern: "^https?://.+"
       - name: order
         label: Display Order
         type: number
@@ -71,7 +75,10 @@ content:
         description: "Lower numbers appear first"
       - name: body
         label: Detailed Description
-        type: richtext
+        type: rich-text
+        options:
+          path: project-images
+          extensions: [jpg, jpeg, png, webp]
 
   - name: updates
     label: Quick Updates
@@ -91,14 +98,18 @@ content:
         default: today
       - name: link
         label: External Link
-        type: url
+        type: string
         description: "Link to article, video, or resource (optional)"
+        pattern: "^https?://.+"
       - name: linkTitle
         label: Link Title
         type: text
         description: "Display name for the external link"
       - name: body
         label: Your Thoughts
-        type: richtext
+        type: rich-text
         required: true
         description: "Your commentary, thoughts, or quick notes"
+        options:
+          path: update-images
+          extensions: [jpg, jpeg, png, webp]
