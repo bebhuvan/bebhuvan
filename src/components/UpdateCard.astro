@@ -1,5 +1,6 @@
 ---
 import LinkPreview from './LinkPreview.astro';
+import { marked } from 'marked';
 
 export interface Props {
   title: string;
@@ -11,6 +12,9 @@ export interface Props {
 }
 
 const { title, content, publishDate, slug, link, linkTitle } = Astro.props;
+
+// Convert markdown to HTML
+const htmlContent = marked(content);
 
 const formatTimeAgo = (date: Date) => {
   const now = new Date();
@@ -38,7 +42,7 @@ const formatTimeAgo = (date: Date) => {
     <a href={`/updates/${slug}`}>{title}</a>
   </h3>
   <div class="micro-content">
-    <div set:html={content} />
+    <div set:html={htmlContent} />
     {link && linkTitle && (
       <LinkPreview url={link} title={linkTitle} />
     )}
