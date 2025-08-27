@@ -10,27 +10,30 @@ content:
         label: Title
         type: text
         required: true
+        width: half
+        description: "Keep it concise and compelling"
       - name: description
         label: Description
-        type: text
+        type: textarea
         required: true
+        description: "Brief summary for SEO and previews"
       - name: publishDate
         label: Publish Date
-        type: datetime
+        type: date
         required: true
-      - name: readingTime
-        label: Reading Time
-        type: text
+        default: today
       - name: draft
         label: Draft
         type: boolean
         default: false
+        description: "Uncheck to publish"
       - name: image
         label: Featured Image
         type: image
+        description: "Optional cover image"
       - name: body
         label: Content
-        type: markdown
+        type: richtext
         required: true
 
   - name: projects
@@ -42,25 +45,36 @@ content:
         label: Title
         type: text
         required: true
+        width: half
       - name: description
         label: Description
-        type: text
+        type: textarea
         required: true
-      - name: link
-        label: Link
-        type: text
+        description: "Brief project summary"
       - name: status
         label: Status
-        type: text
+        type: select
+        options:
+          - active
+          - completed
+          - paused
+          - archived
+        default: active
+      - name: link
+        label: Project Link
+        type: url
+        description: "GitHub, demo, or project URL"
       - name: order
-        label: Order
+        label: Display Order
         type: number
+        default: 1
+        description: "Lower numbers appear first"
       - name: body
-        label: Content
-        type: markdown
+        label: Detailed Description
+        type: richtext
 
   - name: updates
-    label: Updates
+    label: Quick Updates
     path: src/content/updates
     type: collection
     fields:
@@ -68,17 +82,23 @@ content:
         label: Title
         type: text
         required: true
+        width: half
+        description: "Short, descriptive title"
       - name: publishDate
         label: Publish Date
-        type: datetime
+        type: date
         required: true
+        default: today
       - name: link
         label: External Link
-        type: text
+        type: url
+        description: "Link to article, video, or resource (optional)"
       - name: linkTitle
         label: Link Title
         type: text
+        description: "Display name for the external link"
       - name: body
-        label: Content
-        type: markdown
+        label: Your Thoughts
+        type: richtext
         required: true
+        description: "Your commentary, thoughts, or quick notes"
