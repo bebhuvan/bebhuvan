@@ -20,26 +20,22 @@
 
 <style>
   .theme-toggle {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    background: var(--card-bg);
-    border: 2px solid var(--border-light);
+    position: static;
+    background: transparent;
+    border: 1px solid var(--border-light);
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: all 0.3s ease;
-    z-index: 999;
-    box-shadow: 0 4px 8px var(--shadow-light);
   }
 
   .theme-toggle:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px var(--shadow-medium);
+    background: var(--card-bg);
+    border-color: var(--text-dark);
   }
 
   .sun-icon,
@@ -67,10 +63,8 @@
 
   @media (max-width: 768px) {
     .theme-toggle {
-      bottom: 1.5rem;
-      right: 1.5rem;
-      width: 45px;
-      height: 45px;
+      width: 36px;
+      height: 36px;
     }
   }
 </style>

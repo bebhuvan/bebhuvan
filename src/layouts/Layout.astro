@@ -1,6 +1,5 @@
 ---
 import '../styles/global.css';
-import ThemeToggle from '../components/ThemeToggle.astro';
 
 export interface Props {
   title: string;
@@ -131,7 +130,6 @@ const fullImageUrl = new URL(defaultImage, Astro.site);
     </script>
   </head>
   <body>
-    <ThemeToggle />
     <slot />
   </body>
 </html>
