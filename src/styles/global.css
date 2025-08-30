@@ -648,8 +648,8 @@ a:hover {
 
 .article-content blockquote {
     border-left: 3px solid var(--primary-orange);
-    padding: 1rem 0 1rem 2rem;
-    margin: 2rem 0;
+    padding: 1rem 2rem;
+    margin: 1.5rem 0;
     font-style: italic;
     color: var(--text-medium);
 }
