@@ -38,7 +38,7 @@ I asked Claude for the difference between speculation and gambling:
 
 ![](/blog-images/speculation-vs-gambling.png)
 
-## The COVID catalyst
+### The COVID catalyst
 
 The trigger that unleashed the ravenous desire to speculate among millions of Indians was ironically made in China, probably in a lab or in the stomach of that fellow who ate that undercooked bat or pangolin or the unholy lovechild of a muskrat and pangolin—COVID-19.
 
@@ -96,7 +96,7 @@ Take derivatives. In the post-COVID period, there was a spectacular increase in 
 
 ![](/blog-images/derivatives-turnover-india-1.png)
 
-\[Capital Markets Yearbook\]([http://Capital](http://Capital) Markets Yearbook)
+[Capital Markets Yearbook](https://zerodha.com/z-connect/updates/the-capital-markets-yearbook)
 
 Given the speculative fervor and losses among retail investors, SEBI became concerned and implemented a [series](https://zerodha.com/z-connect/kite/a-short-brief-on-the-new-sebi-measures-for-the-fo-space) of [measures](https://zerodha.com/z-connect/business-updates/reviewing-2024-a-year-of-transitions) in the last couple of years to make trading F&O unattractive. In a sense they worked, and F&O volumes are down significantly.
 
