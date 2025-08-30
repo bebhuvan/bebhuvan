@@ -1,5 +1,5 @@
 ---
-title: Speculation Is like water—it always finds a way
+title: Speculation is like water—it always finds a way
 description: I argue that speculation is like water—it never stops, it just
   finds new channels. Using India’s gaming ban and global examples, I show why
   prohibition shrinks what’s visible but pushes play offshore or underground,
