@@ -1,5 +1,5 @@
 ---
-title: Speculation Is Like Water—it always finds a way
+title: Speculation Is like water—it always finds a way
 description: I argue that speculation is like water—it never stops, it just
   finds new channels. Using India’s gaming ban and global examples, I show why
   prohibition shrinks what’s visible but pushes play offshore or underground,
@@ -96,7 +96,7 @@ Take derivatives. In the post-COVID period, there was a spectacular increase in 
 
 ![](/blog-images/derivatives-turnover-india-1.png)
 
-[Capital Markets Yearbook](http://Capital Markets Yearbook)
+\[Capital Markets Yearbook\]([http://Capital](http://Capital) Markets Yearbook)
 
 Given the speculative fervor and losses among retail investors, SEBI became concerned and implemented a [series](https://zerodha.com/z-connect/kite/a-short-brief-on-the-new-sebi-measures-for-the-fo-space) of [measures](https://zerodha.com/z-connect/business-updates/reviewing-2024-a-year-of-transitions) in the last couple of years to make trading F&O unattractive. In a sense they worked, and F&O volumes are down significantly.
 
