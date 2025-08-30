@@ -6,11 +6,11 @@ description: I argue that speculation is like water—it never stops, it just
   and why channelization with smart, coordinated regulation works better.
 publishDate: 2025-08-30
 draft: false
-image: /public/blog-images/1027px-Georges_de_La_Tour_035.jpg
+image: /blog-images/1027px-Georges_de_La_Tour_035.jpg
 ---
 We saw a spectacular explosion in speculative activities in the aftermath of the COVID lockdowns, the likes of which we have never seen in our lifetimes. Old-timers in the markets tell me there were a few crazy phases in the 90s, but we're talking analog craziness, not digital craziness—that's an apples-to-Paragon-slippers comparison.
 
-![](/public/blog-images/post-covid-speculation.jpg)
+![](/blog-images/post-covid-speculation.jpg)
 
 In the years since COVID, there's been a great deal of concern, debate, and shrill noise about speculative activities and their societal impact in India. These debates have reached fever pitch in the last couple of years, so much so that politicians have gotten in on the action.
 
@@ -20,7 +20,7 @@ Instead of sharing a hot take on the betting apps ban, I want to approach this i
 
 The concerns around betting apps and F&O came to the fore around the same time and follow a similar narrative arc because both became popular after COVID. You can trace the popularity of betting apps alongside the popularity of trading and investing apps.
 
-![](/public/blog-images/post-covid-gambling-speculation.jpg)
+![](/blog-images/post-covid-gambling-speculation.jpg)
 
 The factors that enabled the popularity of both these speculative avenues are the same. In watching the Indian stock market transform, I've also followed the evolution of the very nature of speculation both in capital markets and outside.
 
@@ -36,7 +36,7 @@ Ultimately though, there's a large degree of chance and luck involved in anythin
 
 I asked Claude for the difference between speculation and gambling:
 
-![](/public/blog-images/speculation-vs-gambling.png)
+![](/blog-images/speculation-vs-gambling.png)
 
 ## The COVID catalyst
 
@@ -94,7 +94,7 @@ But here's the thing: **speculation is like water, it always flows downhill. Reg
 
 Take derivatives. In the post-COVID period, there was a spectacular increase in derivatives trading. There was a massive influx of uninformed retail investors, and [90% of them lost money](https://www.sebi.gov.in/media-and-notifications/press-releases/sep-2024/updated-sebi-study-reveals-93-of-individual-traders-incurred-losses-in-equity-fando-between-fy22-and-fy24-aggregate-losses-exceed-1-8-lakh-crores-over-three-years_86906.html) in F&O.
 
-![](/public/blog-images/derivatives-turnover-india-1.png)
+![](/blog-images/derivatives-turnover-india-1.png)
 
 [Capital Markets Yearbook](http://Capital Markets Yearbook)
 
@@ -102,15 +102,15 @@ Given the speculative fervor and losses among retail investors, SEBI became conc
 
 However, the urge to speculate is like water, and it always finds an outlet. After it became unattractive for many traders to trade F&O, crypto derivatives have become popular in the last year or so. Now, crypto derivatives exist in a legal vacuum, and without any oversight, they're openly advertising leverages of [100-200X](https://www.delta.exchange/contracts#XRPUSD).
 
-![](/public/blog-images/delta-exchange.png)
+![](/blog-images/delta-exchange.png)
 
-![](/public/blog-images/coindcx.png)
+![](/blog-images/coindcx.png)
 
 Where there are gamblers, there are dealers.
 
 It's not just crypto derivatives, but a whole host of shady forex platforms are trying to attract the traders who want lower margins and higher leverage. The regulatory vacuum around crypto derivatives has created exactly what regulators were trying to prevent, just in a different channel.
 
-![](/public/blog-images/forex-sebi-tweet.jpg)
+![](/blog-images/forex-sebi-tweet.jpg)
 
 [Tweet](https://x.com/saketh1998/status/1960555844212548014?t=UI8Rt_FhD6hQruN2KH8Pmg&s=19)
 
