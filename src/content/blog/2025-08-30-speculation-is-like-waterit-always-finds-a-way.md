@@ -90,7 +90,7 @@ True story.
 
 But here's the thing: **speculation is like water, it always flows downhill. Regulators can build dams and barriers, but the water just finds new channels.**
 
-### **Exhibit A: Where the Action Goes**
+### **Exhibit A: where the action goes**
 
 Take derivatives. In the post-COVID period, there was a spectacular increase in derivatives trading. There was a massive influx of uninformed retail investors, and [90% of them lost money](https://www.sebi.gov.in/media-and-notifications/press-releases/sep-2024/updated-sebi-study-reveals-93-of-individual-traders-incurred-losses-in-equity-fando-between-fy22-and-fy24-aggregate-losses-exceed-1-8-lakh-crores-over-three-years_86906.html) in F&O.
 
@@ -140,7 +140,7 @@ Indians wouldn't be spending Rs 10,000 crores a month on gaming and betting with
 
 These numbers don’t fully capture the money that goes into shadier apps, would be my guess. So that number will probably be much higher.
 
-**You Can't Have It Both Ways**
+### **You can't have it both ways**
 
 Looking globally makes this clearer. The US has some of the biggest, deepest financial markets in the world. It's also a gambling paradise. For the most part, you can't have one without the other.
 
