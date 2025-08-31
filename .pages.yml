@@ -1,4 +1,4 @@
-media: blog-images
+media: public/blog-images
 
 content:
   - name: blog
@@ -35,7 +35,7 @@ content:
         type: rich-text
         required: true
         options:
-          path: blog-images
+          path: public/blog-images
           extensions: [jpg, jpeg, png, webp, gif]
 
   - name: projects
@@ -76,7 +76,7 @@ content:
         label: Detailed Description
         type: rich-text
         options:
-          path: project-images
+          path: public/project-images
           extensions: [jpg, jpeg, png, webp]
 
   - name: updates
@@ -109,5 +109,5 @@ content:
         required: true
         description: "Your commentary, thoughts, or quick notes"
         options:
-          path: update-images
+          path: public/update-images
           extensions: [jpg, jpeg, png, webp]
