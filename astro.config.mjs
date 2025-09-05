@@ -8,11 +8,15 @@ export default defineConfig({
   integrations: [sitemap()],
   vite: {
     build: {
-      cssCodeSplit: true,
+      cssCodeSplit: false,
       rollupOptions: {
         output: {
-          manualChunks: {
-            critical: ['./src/styles/critical.css']
+          assetFileNames: (assetInfo) => {
+            // Force inline all CSS
+            if (assetInfo.name?.endsWith('.css')) {
+              return 'inline/[name].[hash][extname]';
+            }
+            return 'assets/[name].[hash][extname]';
           }
         }
       }
