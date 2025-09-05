@@ -6,4 +6,16 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://bebhuvan.com',
   integrations: [sitemap()],
+  vite: {
+    build: {
+      cssCodeSplit: true,
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            critical: ['./src/styles/critical.css']
+          }
+        }
+      }
+    }
+  }
 });
