@@ -3,7 +3,7 @@ title: Philosophy of life and Seneca’s letters
 description: A site for Seneca's letters.
 publishDate: 2025-09-21
 draft: false
-image: /public/blog-images/1024px-Manuel_Domínguez_Sánchez_-_El_suicidio_de_Séneca.webp
+image: /blog-images/1024px-Manuel_Domínguez_Sánchez_-_El_suicidio_de_Séneca.webp
 ---
 Philosophy—such a loaded word, isn’t it?
 
