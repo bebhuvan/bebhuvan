@@ -44,9 +44,12 @@ const formatDate = (date: Date) => {
     </header>
 
     {entry.data.image && (
-      <div class="article-image">
+      <figure class="article-image">
         <img src={entry.data.image} alt={entry.data.title} loading="lazy" />
-      </div>
+        {entry.data.imageCaption && (
+          <figcaption class="article-image-caption">{entry.data.imageCaption}</figcaption>
+        )}
+      </figure>
     )}
 
     <div class="article-content">

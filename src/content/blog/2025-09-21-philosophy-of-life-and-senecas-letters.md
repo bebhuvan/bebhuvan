@@ -4,6 +4,7 @@ description: A site for Seneca's letters.
 publishDate: 2025-09-21
 draft: false
 image: /blog-images/1024px-Manuel_Domínguez_Sánchez_-_El_suicidio_de_Séneca.webp
+imageCaption: '“The Death of Seneca” by Manuel Domínguez Sánchez (1871)'
 ---
 Philosophy—such a loaded word, isn’t it?
 
