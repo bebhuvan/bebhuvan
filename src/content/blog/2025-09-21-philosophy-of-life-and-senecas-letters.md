@@ -123,8 +123,6 @@ The reason why I am reading the Stoics is because I don’t think I’m built to
 
 With that said, by the second letter it became abundantly clear to me that these letters have a wealth of wisdom to impart. What you get out of them depends on when you read them, the stage of life you’re reading them in, your mental state, and overall life context.
 
-Image: [_"The Death of Seneca" by Manuel Domínguez Sánchez (1871)_](https://en.wikipedia.org/wiki/Manuel_Dom%C3%ADnguez_S%C3%A1nchez)
-
 * * *
 
 _Check out_ [_Seneca’s Letters_](https://seneca.ink/) _and_ [_Paper Lanterns_](https://paperlanterns.ink/) _for more philosophical and literary treasures from the public domain._
