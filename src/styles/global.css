@@ -731,9 +731,9 @@ a:hover {
     margin-top: 0.5rem;
 }
 
-/* Add spacing to definition-style content in blockquotes */
-.article-content blockquote p strong::before {
-    content: '  ';
+/* Add indentation to strong elements that come after line breaks in blockquotes */
+.article-content blockquote p br + strong::before {
+    content: '    ';
     white-space: pre;
 }
 
