@@ -695,6 +695,7 @@ a:hover {
     position: relative;
     background: var(--quote-bg);
     border-radius: 4px;
+    white-space: pre-wrap;
 }
 
 .article-content blockquote::before {
@@ -723,6 +724,7 @@ a:hover {
 
 .article-content blockquote p {
     margin-bottom: 0;
+    white-space: pre-wrap;
 }
 
 .article-content pre {
