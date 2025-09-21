@@ -68,7 +68,7 @@ He then goes on to write:
 
 Again, I agree.
 
-The reason why I am writing this post is because I’ve been playing around with AI coding tools and I’m having a ton of fun. These tools are so good that I can now build all the side projects I ever wanted to build on my own without knowing a lick of coding. All it takes to be a coder now is the ability to double-click an icon and then type English sentences. Wild times.
+The reason why I am writing this post is because I’ve been playing around with AI coding tools, and I’m having a ton of fun. These tools are so good that I can now build all the side projects I ever wanted to build on my own without knowing a lick of coding. All it takes to be a coder now is the ability to double-click an icon and then type English sentences. Wild times.
 
 Anyway, one thing I always wanted to build is a site similar to Project Gutenberg but for India. Even with AI coding tools, this is complex. So I figured I’d start small. One other thing I wanted to do was collect and publish letters, speeches, essays, and lectures from the public domain, inspired by [Shaun Usher](https://open.substack.com/users/1508639-shaun-usher?utm_source=mentions) of [Letters of Note](https://news.lettersofnote.com/) fame.
 
@@ -76,11 +76,11 @@ Claude Code is so good that it helped me build a site for it in no time, and tha
 
 I read the first couple of letters and didn’t think much of them. Maybe because I was sleep-deprived, I thought, “Eh, another white Roman guy with abs from having a stick up his ass, trying hard to say prophetic stuff to pander to his ancient Roman Instagram audience.” I posted a few random letters on Paper Lanterns and quickly forgot about them.
 
-After a few weeks, I came across the letters again for reasons I can’t remember and started reading them again. This time I was paying full attention. I was floored by the second letter at how good these letters were. The practical wisdom, the timelessness of the advice, and the clarity with which old man Seneca writes about issues of practical significance in everyday life is, well, I can’t think of any other word than beautiful. At their heart, the letters are about what it means to live a good life, what it takes, and how.
+After a few weeks, I came across the letters again for reasons I can’t remember and started reading them again. This time I was paying full attention. I was floored by the second letter at how good these letters were. The practical wisdom, the timelessness of the advice, and the clarity with which old man Seneca writes about issues of practical significance in everyday life are, well, I can’t think of any other word than beautiful. At their heart, the letters are about what it means to live a good life, what it takes, and how.
 
 By the end of the second letter, I had this strong urge to get as many people as I could to read them. Then, as [Eminem](https://www.eminem.com/song/lose-yourself-soundtrack-version/) once said, I _snapped back to reality_ and realized that all those people are swiping reels. But I still figured there might be other people who would love the letters if they were easily accessible and readable, like I did.
 
-These letters are in the public domain and are easy to [read and download](https://en.wikisource.org/wiki/Moral_letters_to_Lucilius) on WikiSource, but they still felt a bit unreadable to me there. So I downloaded all the letters and built this [simple site](https://seneca.ink/) to make it easy to discover and read the letters. Please do check it out. I hope you like reading the letters as much as I am right now.
+These letters are in the public domain and are easy to [read and download](https://en.wikisource.org/wiki/Moral_letters_to_Lucilius) on WikiSource, but they still felt a bit unreadable to me there. So I downloaded all the letters and built this [simple site](https://seneca.ink/) to make it easy to discover and read the letters. Please do check it out. I hope you like reading the letters as much as I do right now.
 
 Along with that, I started reading the letters and bought [this translation](https://www.amazon.in/Letters-Ethics-Lucilius-Complete-Annaeus-ebook/dp/B017P31O3G/ref=tmm_kin_swatch_0) of the letters by Margaret Graver and A. A. Long, and I highly recommend it. The introduction is brilliant and helped me get a sense of who Seneca was and why his letters are so popular.
 
@@ -90,7 +90,7 @@ Seneca, alongside Epictetus and Marcus Aurelius, is one of the most popular Stoi
 
 My own journey with philosophy started just a few years ago with the reading of [this book](https://www.amazon.in/Socrates-Sartre-Philosophic-Quest/dp/0553251619), and that’s how I discovered Stoicism. It immediately had a certain appeal to me. Attracted to the Stoic style of thought, I wanted to learn more and bought a few books about Stoicism by [Massimo Pigliucci](https://www.amazon.in/stores/Massimo-Pigliucci/author/B001IU0D3K?ref=sr_ntt_srch_lnk_1&qid=1757767256&sr=8-1&isDramIntegrated=true&shoppingPortalEnabled=true)—which, naturally, I haven’t read yet.
 
-Like the content creators of the diarrheal discharge variety, I have a superficial understanding of Stoicism, which is some version of “stop bitching, shut up, and accept things.” There’s a universe of nuance there and that’s what I intend to discover over the coming years.
+Like the content creators of the diarrheal discharge variety, I have a superficial understanding of Stoicism, which is some version of “stop bitching, shut up, and accept things.” There’s a universe of nuance there, and that’s what I intend to discover over the coming years.
 
 Another reason why I’m starting to like philosophy is because of the nature of the Stoic characters. Marcus Aurelius was an emperor who knew power like no other but preached about the unimportance of external things. Seneca wrote extensively about the virtues of simple living while being one of the richest men in Rome, with wealth estimated at 300 million sesterces. Then there’s Epictetus, my favorite Stoic. He was born into slavery, earned his freedom, and taught people to focus on what is in one’s control and to ignore the rest.
 
