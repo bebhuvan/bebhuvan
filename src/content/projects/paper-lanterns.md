@@ -1,6 +1,6 @@
 ---
 title: "Paper Lanterns"
-description: "Here I aggregate letters, speeches, and essays in public domain."
+description: "A curated digital archive of timeless letters, speeches, and essays from history's most influential voices."
 link: "https://paperlanterns.ink/"
 order: 1
 ---
