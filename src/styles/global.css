@@ -725,6 +725,7 @@ a:hover {
 
 .article-content blockquote p {
     margin-bottom: 0;
+    white-space: pre-wrap;
 }
 
 .article-content blockquote p + p {
