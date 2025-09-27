@@ -16,13 +16,10 @@ media:
     extensions: [jpg, jpeg, png, webp]
 
 components:
-  markdown_body:
-    label: Markdown Body
-    type: text
+  rich_body:
+    label: Rich Text Body
+    type: rich-text
     required: true
-    options:
-      rows: 24
-      autoresize: true
   summary_text:
     label: Summary Text
     type: text
@@ -74,8 +71,10 @@ content:
           media: blog_media
       - name: body
         label: Content
-        component: markdown_body
-        description: 'Write using Markdown. Headings, links, quotes, and code are supported.'
+        component: rich_body
+        description: 'Write using the rich-text editor. Slash commands and Markdown shortcuts are supported.'
+        options:
+          media: blog_media
 
   - name: projects
     label: Projects
@@ -108,8 +107,10 @@ content:
           media: project_media
       - name: body
         label: Details
-        component: markdown_body
-        description: 'Longer description and background. Markdown only.'
+        component: rich_body
+        description: 'Longer description and background. Slash commands available for headings and lists.'
+        options:
+          media: project_media
 
   - name: updates
     label: Quick Updates
@@ -142,5 +143,7 @@ content:
           media: update_media
       - name: body
         label: Update
-        component: markdown_body
-        description: 'Keep it concise. Markdown formatting is supported.'
+        component: rich_body
+        description: 'Use the rich-text editor for quick notes. Slash commands enabled.'
+        options:
+          media: update_media
