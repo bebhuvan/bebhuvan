@@ -1,4 +1,40 @@
-media: blog-images
+media:
+  - name: blog_media
+    label: Blog Images
+    input: public/blog-images
+    output: /blog-images
+    extensions: [jpg, jpeg, png, webp, gif]
+  - name: project_media
+    label: Project Images
+    input: public/project-images
+    output: /project-images
+    extensions: [jpg, jpeg, png, webp]
+  - name: update_media
+    label: Update Images
+    input: public/update-images
+    output: /update-images
+    extensions: [jpg, jpeg, png, webp]
+
+components:
+  markdown_body:
+    label: Markdown Body
+    type: text
+    required: true
+    options:
+      rows: 24
+      autoresize: true
+  summary_text:
+    label: Summary Text
+    type: text
+    options:
+      rows: 6
+      autoresize: false
+  external_link:
+    label: External Link
+    type: string
+    pattern:
+      regex: '^https?://.+$'
+      message: 'Use a full URL starting with http:// or https://'
 
 content:
   - name: blog
@@ -8,14 +44,13 @@ content:
     fields:
       - name: title
         label: Title
-        type: text
+        type: string
         required: true
-        description: "Keep it concise and compelling"
       - name: description
-        label: Description
-        type: textarea
+        label: Summary
+        component: summary_text
         required: true
-        description: "Brief summary for SEO and previews"
+        description: 'Short excerpt used on listings and SEO.'
       - name: publishDate
         label: Publish Date
         type: date
@@ -25,18 +60,22 @@ content:
         label: Draft
         type: boolean
         default: false
-        description: "Uncheck to publish"
+        description: 'Leave checked while you are editing. Uncheck to publish.'
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+        description: 'Optional keywords, one per line.'
       - name: image
         label: Featured Image
         type: image
-        description: "Optional cover image"
+        description: 'Optional hero image shown on the blog listing and detail page.'
+        options:
+          media: blog_media
       - name: body
         label: Content
-        type: rich-text
-        required: true
-        options:
-          path: blog-images
-          extensions: [jpg, jpeg, png, webp, gif]
+        component: markdown_body
+        description: 'Write using Markdown. Headings, links, quotes, and code are supported.'
 
   - name: projects
     label: Projects
@@ -45,39 +84,32 @@ content:
     fields:
       - name: title
         label: Title
-        type: text
+        type: string
         required: true
       - name: description
-        label: Description
-        type: textarea
+        label: Summary
+        component: summary_text
         required: true
-        description: "Brief project summary"
-      - name: status
-        label: Status
-        type: select
-        options:
-          values:
-            - active
-            - completed
-            - paused
-            - archived
-        default: active
+        description: 'One-sentence pitch that appears in the projects list.'
       - name: link
         label: Project Link
-        type: string
-        description: "GitHub, demo, or project URL"
-        pattern: "^https?://.+"
+        component: external_link
+        required: true
       - name: order
         label: Display Order
         type: number
         default: 1
-        description: "Lower numbers appear first"
-      - name: body
-        label: Detailed Description
-        type: rich-text
+        description: 'Lower numbers appear first.'
+      - name: image
+        label: Project Image
+        type: image
+        description: 'Optional visual used on the project card.'
         options:
-          path: project-images
-          extensions: [jpg, jpeg, png, webp]
+          media: project_media
+      - name: body
+        label: Details
+        component: markdown_body
+        description: 'Longer description and background. Markdown only.'
 
   - name: updates
     label: Quick Updates
@@ -86,9 +118,8 @@ content:
     fields:
       - name: title
         label: Title
-        type: text
+        type: string
         required: true
-        description: "Short, descriptive title"
       - name: publishDate
         label: Publish Date
         type: date
@@ -96,18 +127,20 @@ content:
         default: today
       - name: link
         label: External Link
-        type: string
-        description: "Link to article, video, or resource (optional)"
+        component: external_link
         required: false
+        description: 'Optional source or related reading.'
       - name: linkTitle
         label: Link Title
-        type: text
-        description: "Display name for the external link"
-      - name: body
-        label: Your Thoughts
-        type: rich-text
-        required: true
-        description: "Your commentary, thoughts, or quick notes"
+        type: string
+        description: 'Text to display for the external link.'
+      - name: image
+        label: Update Image
+        type: image
+        description: 'Optional image to accompany the update.'
         options:
-          path: update-images
-          extensions: [jpg, jpeg, png, webp]
+          media: update_media
+      - name: body
+        label: Update
+        component: markdown_body
+        description: 'Keep it concise. Markdown formatting is supported.'
