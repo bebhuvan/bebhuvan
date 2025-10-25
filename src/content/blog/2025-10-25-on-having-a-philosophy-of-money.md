@@ -28,7 +28,7 @@ Now, I don’t want to judge this person. It’s entirely possible he just trade
 
 This depressing phone call got me thinking about why people do dumb shit with their money.
 
-And of course, this isn’t a secret, and we all know why. We have tons of books, podcasts with bloviating hosts, and those idiotic personal finance books with authors standing with arms folded, grinning. The same smile that hostages held by the Taliban and ISIS put on when forced to smile for international media. We know the usual list: overconfidence, greed, illusion of control, ego, dopamine-chasing, social contagion, and a hundred biases— (which \[I disagree with\]([https://zerodha.com/z-connect/subtext/investing-is-a-problem-that-has-been-solved](https://zerodha.com/z-connect/subtext/investing-is-a-problem-that-has-been-solved))—that list of 300 biases is stupid, but nonetheless, we are “flawed”).
+And of course, this isn't a secret, and we all know why. We have tons of books, podcasts with bloviating hosts, and those idiotic personal finance books with authors standing with arms folded, grinning. The same smile that hostages held by the Taliban and ISIS put on when forced to smile for international media. We know the usual list: overconfidence, greed, illusion of control, ego, dopamine-chasing, social contagion, and a hundred biases— (which [I disagree with](https://zerodha.com/z-connect/subtext/investing-is-a-problem-that-has-been-solved)—that list of 300 biases is stupid, but nonetheless, we are "flawed").
 
 But here’s my theory, and it’s not a grand revelation: **people do dumb shit with their money because they lack a philosophy of money.**
 
@@ -116,15 +116,15 @@ I keep stressing “basics” because basics are all you need. You don’t need 
 
 Here are a few resources:
 
-1\. \[Varsity\]([https://zerodha.com/varsity/](https://zerodha.com/varsity/))
+1. [Varsity](https://zerodha.com/varsity/)
 
-2\. \[Freefincal\]([https://freefincal.com/](https://freefincal.com/))
+2. [Freefincal](https://freefincal.com/)
 
-If you don’t want to learn, get a financial advisor. How do you get one? Tricky, but there are good directories with people who charge a small fee to take care of your finances. Here are a few links:
+If you don't want to learn, get a financial advisor. How do you get one? Tricky, but there are good directories with people who charge a small fee to take care of your finances. Here are a few links:
 
-1\. \[Fee-only India\]([https://www.feeonlyindia.com/](https://www.feeonlyindia.com/))
+1. [Fee-only India](https://www.feeonlyindia.com/)
 
-2\. \[The Financialist\]([https://thefinancialist.co/](https://thefinancialist.co/))
+2. [The Financialist](https://thefinancialist.co/)
 
 **4\. Pay off costly debt.**
 
@@ -134,9 +134,9 @@ This should be your top priority. Most people forget that the interest on their 
 
 I’m talking about insurance. Get adequate life and health insurance. Not those garbage LIC policies, ULIPs, or bank-sold insurance products. Pure term life insurance and good health insurance for you and your loved ones if you have dependents.
 
-Term life is like bike insurance. You pay premiums. You die, someone gets the money. Otherwise you get nothing. You might think that’s a waste, but all those policies that promise both insurance and returns are scams masquerading as financial products. They give you lower returns than fixed deposits while offering horribly low coverage. You’re neither protected nor earning returns. It’s just a bad scam.
+Term life is like bike insurance. You pay premiums. You die, someone gets the money. Otherwise you get nothing. You might think that's a waste, but all those policies that promise both insurance and returns are scams masquerading as financial products. They give you lower returns than fixed deposits while offering horribly low coverage. You're neither protected nor earning returns. It's just a bad scam.
 
-\[Speak to these guys\]([https://joinditto.in/](https://joinditto.in/)).
+[Speak to these guys](https://joinditto.in/).
 
 **6\. Set aside money for emergencies.**
 
@@ -152,7 +152,7 @@ But here’s the thing: all you need are 4 to 5 funds. All of them should be ind
 
 Pick simple index funds. A mix of Nifty 50 and Nifty Midcap 150 low-cost index funds is good enough. Add a government bond fund for diversification. If you think gold is a good investment, add some gold.
 
-How much to invest in each? This is as much a psychological number as a mathematical one. You can run a mean variance optimizer, an efficient frontier, and a hundred other things. But ultimately, pick a combination between stocks, bonds, and gold that \[lets you sleep well at night\]([https://zerodha.com/varsity/chapter/asset-allocation-an-introduction/](https://zerodha.com/varsity/chapter/asset-allocation-an-introduction/)). Start with 50-50 or 50-40-10 or 50-30-20, whatever works. Optimize later.
+How much to invest in each? This is as much a psychological number as a mathematical one. You can run a mean variance optimizer, an efficient frontier, and a hundred other things. But ultimately, pick a combination between stocks, bonds, and gold that [lets you sleep well at night](https://zerodha.com/varsity/chapter/asset-allocation-an-introduction/). Start with 50-50 or 50-40-10 or 50-30-20, whatever works. Optimize later.
 
 You’ll constantly be tempted to buy “higher yielding” products. People will constantly tell you index funds are bad, that they can generate better returns, and that they can beat Jim Simons and Warren Buffett and make them look like street dogs.
 
@@ -194,7 +194,7 @@ In my case: resilience first.
 
 I come from a typical middle-class Indian family, which means money was always a source of problems and deprivations. So for me, avoiding financial shocks carries more weight than generating “maximum returns.” Being financially bulletproof became core to my philosophy—whether I realized it or not. My first priority was always resilience rather than wealth. They might seem like the same thing, but being financially resilient means being able to absorb shocks first and foremost—to survive all the random, chaotic things life throws at you.
 
-Jared Diamond calls this “\[constructive paranoia\]([https://www.youtube.com/results?search\_query=jared+diamond+world+knowlede+forum)”](https://www.youtube.com/results?search_query=jared+diamond+world+knowlede+forum\)%E2%80%9D):
+Jared Diamond calls this "[constructive paranoia](https://www.youtube.com/results?search_query=jared+diamond+world+knowlede+forum)":
 
 \> “I’m paranoid. I think of everything that could go wrong, but I try to benefit from it.” That’s exactly it. Constantly thinking about the worst that could happen and being prepared for most of those inevitabilities is what makes me, ironically, peaceful.
 
@@ -224,4 +224,4 @@ And that’s a tragedy that’s entirely preventable.
 
 * * *
 
-Image: \[“The Banker and His Wife” by Marinus van Reymerswaele (1538)\]([https://en.wikipedia.org/wiki/Marinus\_van\_Reymerswaele](https://en.wikipedia.org/wiki/Marinus_van_Reymerswaele))
+Image: ["The Banker and His Wife" by Marinus van Reymerswaele (1538)](https://en.wikipedia.org/wiki/Marinus_van_Reymerswaele)
