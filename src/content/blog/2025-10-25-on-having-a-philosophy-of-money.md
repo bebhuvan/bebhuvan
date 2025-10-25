@@ -10,7 +10,7 @@ image: /blog-images/1279px-Marinus_Claesz._van_Reymerswaele_001.jpeg
 ---
 _This post was more stream of consciousness than deliberately structured, but I’m publishing it to stake out a thinking space. This is a topic I intend to return to in the future._
 
-\----------
+* * *
 
 Our ability to do stupid things is only exceeded by our ability to rationalize that stupidity.
 
@@ -42,7 +42,7 @@ No matter how douchey you find my usage of the word, we all have a philosophy of
 
 Most people have an unconscious philosophy borrowed from others—a thin philosophy that doesn’t stand up to scrutiny. We imitate what we see in real life and movies, allowing ourselves to be shackled by the expectations of society, friends, family, and culture. As Oscar Wilde said:
 
-\> “Most people are other people. Their thoughts are someone else’s opinions, their lives a mimicry, their passions a quotation.” ― Oscar Wilde, De Profundis
+> “Most people are other people. Their thoughts are someone else’s opinions, their lives a mimicry, their passions a quotation.” ― Oscar Wilde, De Profundis
 
 But some people deliberately create a philosophy of life. This philosophy is like—to use computer parlance—your operating system, the foundational layer that all your thoughts and decisions run on. It’s etched on your soul. This is what you rely on whenever you face a tricky moment, a deliberate moment, or a contemplative moment.
 
@@ -116,15 +116,17 @@ I keep stressing “basics” because basics are all you need. You don’t need 
 
 Here are a few resources:
 
-1. [Varsity](https://zerodha.com/varsity/)
-
-2. [Freefincal](https://freefincal.com/)
+1.  [Varsity](https://zerodha.com/varsity/)
+    
+2.  [Freefincal](https://freefincal.com/)
+    
 
 If you don't want to learn, get a financial advisor. How do you get one? Tricky, but there are good directories with people who charge a small fee to take care of your finances. Here are a few links:
 
-1. [Fee-only India](https://www.feeonlyindia.com/)
-
-2. [The Financialist](https://thefinancialist.co/)
+1.  [Fee-only India](https://www.feeonlyindia.com/)
+    
+2.  [The Financialist](https://thefinancialist.co/)
+    
 
 **4\. Pay off costly debt.**
 
@@ -196,7 +198,7 @@ I come from a typical middle-class Indian family, which means money was always a
 
 Jared Diamond calls this "[constructive paranoia](https://www.youtube.com/results?search_query=jared+diamond+world+knowlede+forum)":
 
-\> “I’m paranoid. I think of everything that could go wrong, but I try to benefit from it.” That’s exactly it. Constantly thinking about the worst that could happen and being prepared for most of those inevitabilities is what makes me, ironically, peaceful.
+> “I’m paranoid. I think of everything that could go wrong, but I try to benefit from it.” That’s exactly it. Constantly thinking about the worst that could happen and being prepared for most of those inevitabilities is what makes me, ironically, peaceful.
 
 That’s exactly it. Constantly thinking about the worst that could happen and being prepared for most of it is what makes me, ironically, peaceful.
 
@@ -210,11 +212,11 @@ Having a philosophy shrinks the scope of money in my head. It reduces the mental
 
 Maybe it’s a miserable way to live. That’s fine. We never have a perfectly calibrated philosophy of life. These philosophies evolve and have to evolve. As Heraclitus said:
 
-\> “No man ever steps in the same river twice, for it’s not the same river and he’s not the same man.”
+> “No man ever steps in the same river twice, for it’s not the same river and he’s not the same man.”
 
 The same applies to a philosophy of money.
 
-\----------
+* * *
 
 Your philosophy won’t look like mine. It shouldn’t. But having _something_—some coherent framework that extends from how you think about life to how you think about money—is what separates deliberate financial decisions from spectacularly dumb ones.
 
