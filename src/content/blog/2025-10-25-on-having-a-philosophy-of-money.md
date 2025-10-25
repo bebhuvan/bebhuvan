@@ -28,7 +28,7 @@ Now, I don’t want to judge this person. It’s entirely possible he just trade
 
 This depressing phone call got me thinking about why people do dumb shit with their money.
 
-And of course, this isn’t a secret, and we all know why. We have tons of books, podcasts with bloviating hosts, and those idiotic personal finance books with authors standing with arms folded, grinning. The same smile that hostages held by the Taliban and ISIS put on when forced to smile for international media. We know the usual list: overconfidence, greed, illusion of control, ego, dopamine-chasing, social contagion, and a hundred biases (which \[I disagree with\]([https://zerodha.com/z-connect/subtext/investing-is-a-problem-that-has-been-solved)—that](https://zerodha.com/z-connect/subtext/investing-is-a-problem-that-has-been-solved\)—that) list of 300 biases is stupid, but nonetheless, we are “flawed”).
+And of course, this isn’t a secret, and we all know why. We have tons of books, podcasts with bloviating hosts, and those idiotic personal finance books with authors standing with arms folded, grinning. The same smile that hostages held by the Taliban and ISIS put on when forced to smile for international media. We know the usual list: overconfidence, greed, illusion of control, ego, dopamine-chasing, social contagion, and a hundred biases— (which \[I disagree with\]([https://zerodha.com/z-connect/subtext/investing-is-a-problem-that-has-been-solved](https://zerodha.com/z-connect/subtext/investing-is-a-problem-that-has-been-solved))—that list of 300 biases is stupid, but nonetheless, we are “flawed”).
 
 But here’s my theory, and it’s not a grand revelation: **people do dumb shit with their money because they lack a philosophy of money.**
 
@@ -194,7 +194,7 @@ In my case: resilience first.
 
 I come from a typical middle-class Indian family, which means money was always a source of problems and deprivations. So for me, avoiding financial shocks carries more weight than generating “maximum returns.” Being financially bulletproof became core to my philosophy—whether I realized it or not. My first priority was always resilience rather than wealth. They might seem like the same thing, but being financially resilient means being able to absorb shocks first and foremost—to survive all the random, chaotic things life throws at you.
 
-Jared Diamond calls this “\[constructive paranoia\]([https://www.youtube.com/results?search\_query=jared+diamond+world+knowlede+forum)”](https://www.youtube.com/results?search_query=jared+diamond+world+knowlede+forum\)”):
+Jared Diamond calls this “\[constructive paranoia\]([https://www.youtube.com/results?search\_query=jared+diamond+world+knowlede+forum)”](https://www.youtube.com/results?search_query=jared+diamond+world+knowlede+forum\)%E2%80%9D):
 
 \> “I’m paranoid. I think of everything that could go wrong, but I try to benefit from it.” That’s exactly it. Constantly thinking about the worst that could happen and being prepared for most of those inevitabilities is what makes me, ironically, peaceful.
 
