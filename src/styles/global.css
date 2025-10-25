@@ -7,8 +7,8 @@
 }
 
 :root {
-    --primary-orange: #ff6b35;
-    --primary-hover: #ff5722;
+    --primary-orange: #e85d2a;
+    --primary-hover: #d04a1a;
     --text-dark: #1a1a1a;
     --text-medium: #4a4a4a;
     --text-light: #6a6a6a;
@@ -659,6 +659,14 @@ a:hover {
     font-weight: 400;
 }
 
+.article-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 3.5rem 0 1.25rem;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
 .article-content h2 {
     font-size: 1.75rem;
     font-weight: 700;
@@ -670,6 +678,28 @@ a:hover {
     font-size: 1.4rem;
     font-weight: 600;
     margin: 2.5rem 0 0.75rem;
+    letter-spacing: -0.01em;
+}
+
+.article-content h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 2rem 0 0.5rem;
+    letter-spacing: -0.01em;
+}
+
+.article-content h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.article-content h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .article-content p {
@@ -696,54 +726,47 @@ a:hover {
 }
 
 .article-content blockquote {
-    border-left: 3px solid var(--primary-orange);
-    padding: 1.5rem 1.5rem 1rem;
-    margin: 1.5rem 0;
+    border: none;
+    border-left: 3px solid rgba(232, 93, 42, 0.5);
+    padding: 1.75rem 2rem 1.75rem 2.25rem;
+    margin: 2.5rem 0;
+    font-size: 1.125em;
     font-style: italic;
     color: var(--text-medium);
+    background: linear-gradient(to right, rgba(232, 93, 42, 0.025) 0%, rgba(232, 93, 42, 0.005) 50%, transparent 100%);
+    border-radius: 0 6px 6px 0;
+    line-height: 1.85;
     position: relative;
-    background: var(--quote-bg);
-    border-radius: 4px;
-    white-space: pre-wrap;
+    box-shadow: none;
+    font-weight: 400;
 }
 
 .article-content blockquote::before {
-    content: '"';
+    content: '\201C';
     position: absolute;
-    top: -0.2rem;
-    left: 0.75rem;
-    font-size: 3rem;
-    font-weight: 700;
-    color: rgba(255, 107, 53, 0.35);
-    font-family: Georgia, serif;
+    left: -0.15rem;
+    top: -0.5rem;
+    font-size: 4.5rem;
+    font-weight: 300;
+    color: var(--primary-orange);
+    opacity: 0.12;
+    font-family: Georgia, 'Times New Roman', serif;
     line-height: 1;
-}
-
-.article-content blockquote::after {
-    content: '"';
-    position: absolute;
-    bottom: -0.8rem;
-    right: 0.75rem;
-    font-size: 3rem;
-    font-weight: 700;
-    color: rgba(255, 107, 53, 0.35);
-    font-family: Georgia, serif;
-    line-height: 1;
+    z-index: 0;
 }
 
 .article-content blockquote p {
+    margin-bottom: 0.75rem;
+    position: relative;
+    z-index: 1;
+}
+
+.article-content blockquote p:last-child {
     margin-bottom: 0;
-    white-space: pre-wrap;
 }
 
 .article-content blockquote p + p {
-    margin-top: 0.5rem;
-}
-
-/* Add indentation to strong elements that come after line breaks in blockquotes */
-.article-content blockquote p br + strong::before {
-    content: '    ';
-    white-space: pre;
+    margin-top: 0.75rem;
 }
 
 .article-content pre {
@@ -768,6 +791,45 @@ a:hover {
     background: transparent;
     padding: 0;
     border: none;
+}
+
+/* Tables */
+.article-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.95em;
+}
+
+.article-content th,
+.article-content td {
+    padding: 0.75rem;
+    border: 1px solid var(--border-light);
+    text-align: left;
+}
+
+.article-content th {
+    background: var(--bg-light);
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.article-content tr:hover {
+    background: var(--bg-light);
+}
+
+/* Horizontal rules (separators) */
+.article-content hr {
+    border: none;
+    border-top: 1.5px solid var(--border-light);
+    margin: 2rem 0;
+    opacity: 0.6;
+    height: 0;
+}
+
+/* Ensure proper spacing for elements after HR */
+.article-content hr + * {
+    margin-top: 0 !important;
 }
 
 /* List Pages */
@@ -941,7 +1003,27 @@ a:hover {
     }
 
     .article-content {
-        font-size: 1rem;
+        font-size: 1.05rem;
+    }
+
+    .article-content h1 {
+        font-size: 1.75rem;
+        margin: 3rem 0 1rem;
+    }
+
+    .article-content h2 {
+        font-size: 1.5rem;
+        margin: 2.5rem 0 0.75rem;
+    }
+
+    .article-content h3 {
+        font-size: 1.25rem;
+        margin: 2rem 0 0.5rem;
+    }
+
+    .article-content h4 {
+        font-size: 1.1rem;
+        margin: 1.75rem 0 0.5rem;
     }
 
     .about-content {

@@ -10,7 +10,7 @@ tags: ["A little less dumb", "Musings"]
 draft: false
 ---
 
-<p class="has-medium-font-size">
+<p>
  “Good times become good memories, but bad times become good lessons.”
  </p>
  
@@ -122,13 +122,13 @@ Since the American media market is the largest in the world, with the richest co
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 
 #### Once upon a time… {#once-upon-a-time.wp-block-heading}
- <p class="has-medium-font-size">
+ <p>
  Those who cannot remember the past are condemned to repeat it. —George Santayana
  </p>
 
 It’s always easy to say something was obvious in hindsight, and it almost never is, with the exception of the news publishing industry.
 
- <p class="has-medium-font-size">
+ <p>
  I've got news for Mr. Santayana: we're doomed to repeat the past no matter what. That's what it is to be alive. ― Kurt Vonnegut
  </p>
 
@@ -136,7 +136,7 @@ The troubles facing digital media outlets aren’t new. The news business has al
 
 As Mark Twain famously [never said][3]:
 
- <p class="has-medium-font-size">
+ <p>
 > History doesn’t repeat itself, but it often rhymes.
  </p>
 
@@ -150,7 +150,7 @@ The modern, regularly published newspapers as we know them were not possible unt
 
 While it’s easy to write about the history of news in a neat sequential order, the evolution of news was anything but. It's messy, chaotic, and unpredictable. To give an example, soon after the invention of the Gutenberg press, one of the earliest things to have been published was [erotica][19]:
 
- <p class="has-medium-font-size">
+ <p>
 > Among the early books printed on a Gutenberg press was a 16th-century collection of sex positions based on the sonnets of the man considered the first pornographer, Aretino—a book banned by the pope.
  </p>
 
@@ -174,15 +174,15 @@ Colonial-era printers made most of their money from job printing or on-demand pr
 
 Benjamin Franklin was a true pioneer of the newspaper business and was the most successful printer, thanks to his keen business sense. Here’s Joseph Adelman, the author of _[Revolutionary Networks,][35]_ [describing][36] the savviness of Ben Franklin:
 
- <p class="has-medium-font-size">
+ <p>
 > If you want type of any decent quality it really has to come from England that had to be imported so it's an expense on its own and then it has to be imported which adds an expense. And so many printers when they're first starting out will start out with a hand-me-down for lack of a better word set of type from a master or from someone in town who just died and they're having an estate sale to get rid of that printers belongings. So you'll buy to the cheap secondhand type that means that people are often seeking partnerships when they're trying to start an office that could be with a former master.
  </p>
 
- <p class="has-medium-font-size">
+ <p>
 > That's actually something Benjamin Franklin excels at, that's part of what makes him such a success is he takes his own printing office and turns it into a training ground to send out printers to various other places. He retires himself from the printing trade in 1748 but well into the 1760s and even after the Revolution he's got printing partnerships not only in Philadelphia where he had been but in New York in New Haven Connecticut in Maryland in Charleston South Carolina in a couple of different places in the Caribbean where he's populating his former apprentices getting them out of Philadelphia so they can't compete with him and then setting up partnerships where he pays to get them set up because he has that financial capability and then takes a share of the profits.
  </p>
 
- <p class="has-medium-font-size">
+ <p>
 > Benjamin Franklin was an avid ad-pitchman, using his sharp wit to craft ads for his customers. (One general was trying to convince citizens to donate horse carts to him; a Franklin-penned ad helped the general acquire over 200.) “He was the original ‘Mad Men,’” says Julie Hedgepeth Williams, a journalism professor at Samford University.
  </p>
  
@@ -190,11 +190,11 @@ Benjamin Franklin was a true pioneer of the newspaper business and was the most 
 
 Newspapers weren’t meant for the masses but rather for a small elite. Newspapers were supported by ads because most people didn’t pay for their subscriptions. 30–50% of the paper was dedicated to advertisements. Unpaid dues were such a problem that newspapers would print the names of people who hadn’t paid, [begging][37] them to pay or threatening to cancel the subscription. The advertisements were usually for runaway slaves, adultery, government notices, etc. Here’s an [example][38]:![](/blog-images/untitled-2-650e94419f620.webp) 
 
- <p class="has-medium-font-size">
+ <p>
  Newspapers were produced really for a small, relatively elite audience, people middle class and above. Each issue contained advertisements, which usually took up a third to half of the total space. These could include merchants and vendors, government notices, and notices searching for runaways (which included servants, the enslaved, horses and other animals, and the occasional wife). The rest of the paper was devoted to political and commercial news from the British empire, in particular from London, other colonies, and a small section devoted to local news. — <a href="https://www.fromthedesk.org/10-questions-with-joseph-m-adelman/">Joseph Adelman</a>
  </p>
 
- <p class="has-medium-font-size">
+ <p>
  Papers weren’t always profitable, or even often so. Readers failed to pay subscriptions; some journals died after only a few issues. One early financial lifeline was text-based ads, which read like Craigslist for a slaveholding public: “I wish to buy a few negroes, of both sexes, and will pay fair prices in cash,” one typical ad read. Citizens purchased ads to talk, in Twitteresque fashion, to the world. In 1751, William Beasley took out a Virginia Gazette classified to complain about his cheating wife—“I am really of [the] opinion she has lost her senses”—and warn people not to consort with her. — <a href="https://www.smithsonianmag.com/innovation/history-newspapers-reveal-always-been-like-buzzfeed-180958789/">Clive Thompson/Smithsonian Magazine</a>
  </p>
 
@@ -212,7 +212,7 @@ In 1791, the United States ratified the Bill of Rights, which included the First
 
 There's always a temptation to superimpose trends from the West on complex markets like India, but I will resist that. Having said that, looking at what's happening to American publishers is informative. Indian media and U.S. media might not be mirror images. Still, many broader challenges and trends, like the decline of print, the growth of digital, and the preference for online and social news sources among young people, [are the same][43].![](/blog-images/untitled-3-650e9442dd270.webp) 
 
- <p class="has-medium-font-size">
+ <p>
 > Media observers often hold out the scenario of an ‘Americanisation’ or convergence upon a United States-like media system (Davis 2002; Hallin and Mancini 2004). Little in the evidence reviewed here suggests that this is a likely outcome of current developments. In fact, many American commercial legacy news organisations seem to be facing a more serious crisis than their counterparts elsewhere, and it is by no means certain that this is simply a precursor for things to come around the world. The United States may well be more of an exception and less of a forerunner than is sometimes assumed in discussions of international media developments.
  </p>
  
@@ -234,17 +234,17 @@ This early phase of the development of America gave a preview of the treacherous
 
 The naked partisanship wasn’t the only difference between newspapers in the 1800s and today. The early newspapers were colorful and didn’t subscribe to the notion of civility. The election of the 1800s was one of the [dirtiest][55] election campaigns in the history of the United States. The political distrust and animosity played out in the press, leading to some memorable insults. Our politics today could use a bit of the color of the 1800s.
 
- <p class="has-medium-font-size">
+ <p>
  Things got ugly fast. Jefferson's camp accused President Adams of having a "hideous hermaphroditical character, which has neither the force and firmness of a man, nor the gentleness and sensibility of a woman."
  </p>
  
- <p class="has-medium-font-size">
+ <p>
  In return, Adams' men called Vice President Jefferson "a mean-spirited, low-lived fellow, the son of a half-breed Indian squaw, sired by a Virginia mulatto father." <br /><br />As the slurs piled on, Adams was labeled a fool, a hypocrite, a criminal, and a tyrant, while Jefferson was branded a weakling, an atheist, a libertine, and a coward.
  </p>
  
  <a href="http://edition.cnn.com/2008/LIVING/wayoflife/08/22/mf.campaign.slurs.slogans/index.html">CNN</a>
 
- <p class="has-medium-font-size">
+ <p>
  John Adams and his people for their part were already spreading rumors that Thomas Jefferson was sleeping with slaves in Monticello (which in fact he was). They also used one of my favorite all-time slurs in American election campaigns by simply saying, ‘Well, you can’t vote for Thomas Jefferson because he’s dead. And how can you vote for a dead man?’”
  </p>
  
@@ -260,7 +260,7 @@ The spread of fake news on the internet has become a major concern today, but it
 
 In _Pirates of the Caribbean: Dead Man's Chest,_ there’s a scene where Tom Hollander, who plays Cutler Beckett, tries to coerce William Turner to find Jack Sparrow and recover the compass from him. Beckett says:
 
- <p class="has-medium-font-size">
+ <p>
  <strong>Will Turner</strong>: Somehow I doubt Jack will consider employment the same as being free. Lord <strong>Cutler Beckett</strong>: Freedom! Jack Sparrow is a dying breed. The world is shrinking. The blank edges of the map filled in. Jack must find his place in the new world or perish.
  </p>
 
@@ -268,7 +268,7 @@ In _Pirates of the Caribbean: Dead Man's Chest,_ there’s a scene where Tom Hol
 
 That was the first telegraph message sent by [Samuel Morse][63]. With that message, the world became a [smaller place][64]. This reminds me of another scene from _Pirates of the Caribbean: At World's End_:
 
- <p class="has-medium-font-size">
+ <p>
  <strong>Barbossa</strong>: The world used to be a bigger place. Jack Sparrow : World's still the same. There's just less in it.
  </p>
 ![](/blog-images/untitled-650e943f1535e.webp) 
@@ -335,7 +335,7 @@ In reading the history, it wasn’t surprising to me that the role of women in n
 
 Despite the conservative views, several [trailblazing women][90] worked as investigative reporters, writing about important issues under pseudonyms:
 
- <p class="has-medium-font-size">
+ <p>
 > The young woman was one of the nation’s so-called girl stunt reporters, female newspaper writers in the 1880s and ’90s who went undercover and into danger to reveal institutional urban ills: stifling factories, child labor, unscrupulous doctors, all kinds of scams and cheats. In first-person stories that stretched over weeks, like serialized novels, the heroines offered a vision of womanhood that hadn’t appeared in newspapers before—brave and charming, fiercely independent, professional and ambitious, yet unabashedly female.
  </p>
 
@@ -343,7 +343,7 @@ Throughout the history of the United States, you can see the tension between the
 
 As circulation and advertising revenues grew, so did competition. Commercial interests forced newspapers to be less partisan. Rising advertising demand and revenues forced newspapers to appeal to the masses. Newspapers couldn't afford to alienate their readers with partisan takes. From the late 1900s, the American press began its slow journey toward professionalization.
 
- <p class="has-medium-font-size">
+ <p>
  The share of political newspapers that claimed to be independent rose from 11 percent in 1870 to 62 percent in 1920.3 Another measure of bias is the use of charged language by the press. Negative words such as “slander,” “liar,” and “villainous” are used by papers to dismiss undesirable statements; words such as “honest,” “honorable,” and “irreproachable” are used to defend political heroes. Using textual analysis, we find a substantial drop in partisan and charged language across the late nineteenth and early twentieth centuries. <a href="https://scholar.harvard.edu/goldin/publications/rise-fourth-estate-how-newspapers-became-informative-and-why-it-mattered">The Rise of the Fourth Estate: How Newspapers Became Informative and Why It Mattered</a>
  </p>
 
@@ -353,7 +353,7 @@ But the roots of their troubles today can also be traced to this period. Like th
 
 Though absolute circulation rose, the great depression of the 1930s was a death knell for many newspapers as advertising [revenues fell][112] by 40–45%. Several newspapers shut down; others slashed costs, cut salaries, and merged. The slow decline of newspapers started around this time.
 
- <p class="has-medium-font-size">
+ <p>
  U.S. advertising expenditures as a share of National Income had declined from a peak of more than four per cent in the 1920s to 1.5 per cent in 1945, then recovered in the post WWII era to just under three per cent in 1957, still shy of the pre-Great Depression peak
  </p>
  
@@ -367,7 +367,7 @@ Like the telegraph and the radio, the invention of television was the result of 
 
 By 1955, 60–70% of US households had a television. From $128 million in 1951, [TV advertising][117] spending hit $1 billion in 1955. Television started to take some advertising away from newspapers. It's easy to overextend this assumption of TV hurting newspapers, but one has to be careful. It's important to remember that television advertising and newspaper advertising are imperfect substitutes. 
 
- <p class="has-medium-font-size">
+ <p>
 > In 1952, 6 percent of all advertising spending, or $454 million, went to television ads; by 1960, $1.6 billion, or 13 percent, did.
  </p>
  
@@ -390,14 +390,14 @@ The scale of the consolidation was stunning from the 1960s. In 1920, 92% of Amer
 
 Large chains like Gannett, Knight Ridder, and McClatchy gobbled up these newspapers.
 
- <p class="has-medium-font-size">
+ <p>
 > Between 1960 and 1980, 57 newspaper owners sold their properties to Gannett Co. By 1977, 170 newspaper groups owned two-thirds of the country’s 1,700 daily papers. From 1969 to 1973, 10 newspaper companies went public, including the Washington Post Co., New York Times Co., and Times Mirror Co.
  </p>
  
  <a href="https://sgp.fas.org/crs/misc/R40700.pdf">The U.S. Newspaper Industry in Transition</a>
 ![](/blog-images/untitled-15-650e944ef1ae5.webp) 
 
- <p class="has-medium-font-size">
+ <p>
 > At the beginning of the twentieth century, eight groups controlled just 27 journals. Led by Hearst and Edward Scripps that number climbed to 63 groups owning 328 papers by 1935. In the final decade of the century, 135 chains controlled 1,228 journals.
  </p>
  
@@ -405,11 +405,11 @@ Large chains like Gannett, Knight Ridder, and McClatchy gobbled up these newspap
 
 Wall Street took note of the ludicrous profit margins and wanted a piece of the action.
 
- <p class="has-medium-font-size">
+ <p>
  Exactly how profitable are newspapers? At least as measured by operating margins, the answer is very profitable. (Operating margin is profit divided by revenue, before taxes. It is a way to define a company’s efficiency.) Using this measure, newspapers achieve profit margins about two to three times the average for U.S. manufacturing industries. (This is the category that newspapers are placed in by the Census Bureau.)
  </p>
  
- <p class="has-medium-font-size">
+ <p>
 > The average operating margin for a U.S. manufacturing company in 1997 was 7.6 percent. The comparable average for publicly traded newspaper companies in 1997, according to Veronis, Suhler & Associates, Inc., was 19.5 percent. Gannett, often cited as an industry benchmark for profitability, achieved 26.6 percent in 1997. Some newspaper companies, such as The Buffalo News, owned by investor Warren Buffett, had margins that were in the 30’s. With the exception of television stations, which often enjoy operating margins of more than 45 percent, newspapers are hard to match for profitability among U.S. media investments. In the mid-1990’s, newspapers outperformed consumer magazine and book publishers, direct mail and promotional services, radio broadcasters, cable and pay-per-view networks.
  </p>
  
@@ -417,13 +417,13 @@ Wall Street took note of the ludicrous profit margins and wanted a piece of the 
 
 The acquired papers were no longer owned by family owners with ties to their communities. They were Lego blocks in large listed corporations run by managers seeking _efficiencies_. Since they were listed on the stock exchanges, shareholders demanded continued profits. The American newspaper industry took a sharp left turn. Profits took center stage, and the quality of news became a distant priority. This quote by an analyst at Drexel Burnham in [1986 was telling][130]:
 
- <p class="has-medium-font-size">
+ <p>
  John Reidy, who follows the newspaper industry for the securities firm Drexel Burnham Lambert Inc., said, "Properties in the right market are very attractive businesses on a long-term basis. . . . There is an increasing recognition that there is no electronic replacement for newspapers, and many see the attraction of doing business as the only newspaper in town."
  </p>
 
 The US Congress [passed][131] the Newspaper Preservation Act in 1970 to ensure the survival of newspapers. The law provided exemptions to antitrust laws by allowing newspapers to merge their production and commercial capabilities as long as they maintained separate editorial operations. The intuition was that this would maintain a plurality of voices and stop the inexorable rise of one-paper towns. The law essentially allowed papers to collude and fix prices with a legal sanction. It wasn’t [enough][132].
 
- <p class="has-medium-font-size">
+ <p>
 > The Act grants participants in JOAs immunity from general antitrust laws and permits them to engage in such otherwise illicit practices as price-fixing, profit-pooling, and market allocation.
  </p>
  
@@ -439,7 +439,7 @@ As I mentioned earlier, the newspaper industry's troubles predate the internet. 
 
 Tech observer and venture capitalist Benedict Evans had done [yeoman's work][134] going back in time to collect numbers of American newspapers. Here’s the real story: newspaper circulation peaked in 1984 at 63.3 million copies and has been falling ever since. But the real story is that newspaper circulation per capita peaked around 1945. In other words, a smaller percentage of the population bought newspapers, even as the population grew.![](/blog-images/untitled-17-650e944f65d51.webp) 
 
- <p class="has-medium-font-size">
+ <p>
 > On one hand, the dominance of newspapers has been diminishing for a long time. From 1940 to 2010, the number of daily newspaper subscriptions in America rose by 2 million—but the number of households increased by 83 million. Here is another way of looking at it: about as many Americans subscribe to newspapers today as did in the early 1940s, even though the number of households is more than three times larger.
  </p>
  
@@ -451,14 +451,14 @@ US advertising spending by medium: Newspapers had been losing advertising share 
 
 As circulation flatlined, newspapers had to choose between lower profits and sacrificing quality. By the 1970s, the choice was made—[newspapers sacrificed quality for profits][135]. First, the newspapers cut editorial budgets, circulation, and production costs and fired reporters. Then, they cut the volume of news and increased the number of advertisements and advertising prices to maintain those ridiculous profit margins and please shareholders.
 
- <p class="has-medium-font-size">
+ <p>
 > It no longer is a business, as publishers once joked, in which even the brain dead could make money.
  </p>
  
  <a href="https://www.academia.edu/34225780/Greatly_Exaggerated_The_Myth_of_the_Death_of_Newspapers">Lou Ureneck</a>
 ![](/blog-images/untitled-20-650e94511a1c1.webp) 
 
- <p class="has-medium-font-size">
+ <p>
  As competition disappeared, surviving newspapers raised ad rates. Between 1965 and 1975, ad rates rose 67 percent (remaining below the inflation rate); but between 1975 and 1990, as more newspapers became monopolies, rates skyrocketed 253 percent (compared with 141 percent for general consumer prices). — <a href="https://www.fcc.gov/general/information-needs-communities">FCC</a> Newspapers raised their ad rates three times as fast as inflation from the early 1970s to the late 1980s, the newspaper analyst John Morton told <em>Barron’s</em> in 1990.
  </p>
  
@@ -471,7 +471,7 @@ Even with the competition from radio and television, newspapers were still the o
 
 Even with the competition from radio and television, newspapers were still the only choice for targeted local advertising and classifieds. Despite declining circulation, newspapers commanded immense pricing power and continued increasing advertising rates from the 1970s to the 1990s. In this period, the large chains and conglomerates had a single-minded focus on maximizing margins and revenues. Newspapers had become brittle, and when the internet arrived, they were like a tin can caught in a hurricane.
 
- <p class="has-medium-font-size">
+ <p>
  As Kathryn Weymouth, the last Graham family publisher of the Washington Post, <a href="https://www.washingtonpost.com/national/washington-post-to-be-sold-to-jeff-bezos/2013/08/05/ca537c9e-fe0c-11e2-9711-3708310f6f4d_story.html?utm_term=.530b4eae4f83">remarked</a> when she passed the baton to Bezos: “If journalism is the mission, given the pressures to cut costs and make profits, maybe [a publicly traded company] is not the best place for the Post.”
  </p>
  
@@ -480,7 +480,7 @@ Even with the competition from radio and television, newspapers were still the o
 ### Unbundling {#unbundling.wp-block-heading}
 Newspapers enjoyed a privileged position as gatekeepers between readers and advertisers before the Internet. A newspaper was a bundle of news, sports, entertainment, weather, and games. You had to buy the entire paper regardless of your interests, and everybody got what they wanted. This is crucial to understanding how newspapers lost the plot. On the one hand, they aggregated advertisers; on the other, they aggregated readers' attention.![](/blog-images/untitled-23-650e9452b5e3b.webp) 
 
- <p class="has-medium-font-size">
+ <p>
  So a key starting point for understanding the problem, which I think actually is a core part of the problem, is that the problem has been misunderstood, is that newspaper, the newspaper crisis, at least in places like the US and Australia, results from them no longer being as effective as a tool for attracting attention. And that really gets to the core, <strong>that the core business of newspapers was not to actually inform or provide news, but it was to attract attention for advertisers</strong>.
  </p>
  
@@ -494,11 +494,11 @@ Advertisers didn't have to rely on newspapers to reach audiences because the new
 
 The readers no longer had to buy the entire newspaper bundle; they could read whatever they wanted online. The internet stripped the news bundle to its atomic unit—the news story. Readers no longer had to rely on publishers like _The New York Times_ and Gannett to assemble a news bundle. In a sense, everybody on the internet could be their own publisher. They could build their own bundle of what they wanted to read, watch, and listen to. They could read about politics in _The New York Times_, sports on ESPN, and entertainment on _Variety_. This was a boon for readers, not so much for newspapers.
 
- <p class="has-medium-font-size">
+ <p>
 > Publishers also typically engage in horizontal integration, bundling hard news with horoscopes, gossip, recipes, sports. Simple inertia meant anyone who had tuned into a broadcast or picked up a publication for one particular story would keep watching or reading whatever else was in the bundle. Though this was often called loyalty, in most cases it was just laziness—the path of least resistance meant that reading another good-enough story in the local paper was easier than seeking out an excellent story in a separate publication.
  </p>
  
- <p class="has-medium-font-size">
+ <p>
 > The web wrecks horizontal integration. Prior to the web, having a dozen goodbut-not-great stories in one bundle used to be enough to keep someone from hunting for the dozen best stories in a dozen different publications. In a world of links and feeds, however, it is often easier to find the next thing you read, watch or listen to from your friends than it is to stick with any given publication. Laziness now favors unbundling; for many general interest news sites, the most common category of reader is one who views a single article in a month.
  </p>
  
@@ -510,7 +510,7 @@ Any industry that saw 40–50% of its revenues vanish should have died, but the 
 
 As Professor Amanda Lotz put it, the internet stripped away the profitable parts of the newspaper bundle and left the publishers with the most expensive part—the news.
 
- <p class="has-medium-font-size">
+ <p>
 > Internet communication technologies have unbundled the newspaper the internet has improved replaced or at least affected just about every part of the bundle and done so in different ways. The key here, where i'm kind of going with this argument is that it used to be that an accumulation of things added value to a newspaper and bit by bit the internet has stripped many of them away and what is left is largely the most expensive part and what is missing are all the different ways that used to pay for it.
  </p>
  
@@ -520,7 +520,7 @@ Newspaper readership was declining long before the internet, as radio, televisio
 
 By the turn of the century, Americans had more media competing for their attention than at any point in history. Sure, news mattered, but videos and movies mattered more.![](/blog-images/untitled-25-650e94555ce01.webp) 
 
- <p class="has-medium-font-size">
+ <p>
 > Within the span of a single human generation, people's access to information has shifted from relative scarcity to surplus.
  </p>
  
@@ -559,7 +559,7 @@ In the early 1990s, Roger Fiddler [conceptualized][151] a tablet for reading new
 
 This excerpt from a [phenomenal study][157] by Iris Chyi, a media scholar, further illustrates how nimble newspapers were:
 
- <p class="has-medium-font-size">
+ <p>
 > Contrary to general impressions, most U.S. newspapers were not slow in adopting Internet technologies for news delivery. The Web did not become publicly accessible until 1991. Soon after Mosaic (one of the earliest Web browsers) was released in 1993, the Palo Alto Weekly went online in January 1994 as the first Web-based newspaper. By May 1995, as many as 150 U.S. dailies offered online services—when less than 1% of the U.S. population had Web access (Carlson, 2003). The New York Times went online in January 1996, and numerous newspapers followed suit. By 1999, more than 2,600 U.S. newspapers were providing online services (Editor & Publisher Interactive, 1999). However, by 2003, the industry consensus was that no business model had been found (Carlson, 2003).
  </p>
  
@@ -574,7 +574,7 @@ The question then is, How dedicated were the newspapers toward going digital? Ev
 ### Narrative 2
 The newspaper publishers, driven by lust, fell for the siren song of the internet. They ignored their faithful print editions and cheated on the print editions. Online editions earned pennies compared to print dollars. Newspapers ended up in limbo where print was fast dying, and digital was disappointing. The newspaper industry made a mistake by going all in on digital. Despite the sharp declines, print was still generating all the revenues. This is the provocative view of some media studies scholars like Iris Chyi and industry observers.
 
- <p class="has-medium-font-size">
+ <p>
 > As newspaper firms were amazed by (and obsessed with) each and every digital technology, the recession hit and put many companies in serious financial difficulty. Driven primarily by fear and uncertainties at this stage, newspaper firms acted upon the unchecked assumption about the all-digital future and responded to their financial woes by slashing resources for their print product to continue their incomplete transition online. But the truth is, most newspapers are stuck between an unsuccessful experiment (for their digital product) and a shrinking market (for their print product). Even more embarrassing is the fact that the (supposedly dying) print edition still outperforms the (supposedly hopeful) digital product by almost every standard, be it readership, engagement, advertising revenue, or paying intent.
  </p>
 
@@ -603,7 +603,7 @@ Some newspapers did try. In 2011, the Tribune, Gannett, Hearst, and _The New Yor
 
 As the internet arrived, newspapers were flush with cash. They had a chance to build advertising offerings that could've, at the very least, been distant alternatives to Google and Yahoo.
 
- <p class="has-medium-font-size">
+ <p>
 > The disastrous error that newspapers made early in our digital lives was treating online advertising as a throw-in or upsell for their print advertisers. Helping businesses connect with customers was always our business. We were facing new technology and new opportunities and we did next to nothing to explore how we might use this new technology to help businesses connect with customers.
  </p>
  
@@ -611,15 +611,15 @@ As the internet arrived, newspapers were flush with cash. They had a chance to b
 
 Not all experiments were in earnest. In response to the internet, newspapers just started to upload articles online in a haphazard way. They were too scared that digital would cannibalize print. In 2017, Melissa Bell, the co-founder of Vox Media, gave the [Reuters Memorial Lecture][166] on how we broke news and how to fix it. During the discussion, the legendary Marty Baron, the former editor of _The Washington Post_ and _The Boston Globe_, made some interesting comments:
 
- <p class="has-medium-font-size">
+ <p>
 > I'm not sure that if we had done any one thing, things would have turned out all that differently, to be honest with you. There were a lot of efforts to deal with the internet.
  </p>
  
- <p class="has-medium-font-size">
+ <p>
 > So there were a lot of efforts, I mean not all that we should do, certainly with regard to classified advertising, people were aware of what Craig Newmark was doing. There were a lot of people saying, why aren't we doing this? And obviously in classic fashion, the industry was worried about doing that, going full bore because they were worried about undermining their pre-existing business model, which is the classic story of disruption, right? So, so, I think it's, we made a lot of mistakes.
  </p>
  
- <p class="has-medium-font-size">
+ <p>
 > I think I always say that what we're talking about here is a new medium. It's not the same medium, all right? So we had print, then we had radio. It's different. The way you communicate on radio is different from the way you communicate in print. Then we had television. The way you communicate on television is different from the way that you communicate on radio and the way you communicate in print. And along came the web, and what did we do? We just put up print stories. And then that didn't work. And then we said, well, okay, let's put them up faster. And we put them up faster and that didn't really work. And what we're talking about now is just a different way of communicating.
  </p>
  
@@ -635,7 +635,7 @@ Newspapers enjoyed tremendous pricing power throughout the 20th century. Owning 
 
 Speaking in a panel titled “[Will there be journalists in 2030?][167]” at the International Journalism Festival in 2017, here’s what George Brock, a former journalist and professor of journalism, said:
 
- <p class="has-medium-font-size">
+ <p>
 > In the late twentieth century, we had a period in journalism in which income from print and terrestrial television was very solid and relatively assured. It convinced an entire generation of journalists, my generation, roughly speaking, that all this would continue roll forward on wheels indefinitely. That is historically complete nonsense. Every other area of journalism has been improvisational, volatile, risky and littered with the wrecks of projects that don't work. So we have to be weird to get used to threats coming at us might be artificial intelligence. It might be virtual reality. It might be ad blockers. It might be anything. They will come at us in a regular stream. Get over it.
  </p>
 
@@ -648,11 +648,11 @@ Another report from Rasmus Nielsen and Meera Selva found <a style="cursor: point
 
 The fact that most people don't care about news was an open secret. In the early 2000s, even as newspapers were touting page views that numbered in the millions, they were making peanut from them. Notice I use “peanut” and not “peanuts.”
 
- <p class="has-medium-font-size">
+ <p>
 > For a long time, longer than anyone in the newspaper business has been alive in fact, print journalism has been intertwined with these economics. The expense of printing created an environment where Wal- Mart was willing to subsidize the Baghdad bureau. This wasn’t because of any deep link between advertising and reporting, nor was it about any real desire on the part of Wal-Mart to have their marketing budget go to international correspondents. It was just an accident.
  </p>
  
- <p class="has-medium-font-size">
+ <p>
 > Advertisers had little choice other than to have their money used that way, since they didn’t really have any other vehicle for display ads. The competition-deflecting effects of printing cost got destroyed by the internet, where everyone pays for the infrastructure, and then everyone gets to use it. And when Wal-Mart, and the local Maytag dealer, and the law firm hiring a secretary, and that kid down the block selling his bike, were all able to use that infrastructure to get out of their old relationship with the publisher, they did. They’d never really signed up to fund the Baghdad bureau anyway.
  </p>
  
@@ -677,11 +677,11 @@ In 2005, Arianna Huffington, Ken Lerer, and Jonah Peretti launched the Huffingto
 
 Blogs had become [popular][178] by 2005, but mainstream media publications and traditional journalists [looked down on them][179] as amateur rabble-rousers. Joshua Benton of the Nieman Journalism Lab summed up attitudes about blogging in an [amazing 2010 talk][180]:
 
- <p class="has-medium-font-size">
+ <p>
 > They don't know what they're talking about, these bloggers. They are a bunch of idiots. As if many of the people who were writing blogs were not the same people that reporters would call to get expert testimony on a given question in many cases. “They're they're not burning up the shoe leather”, “they're not going to the scene”, “there they don't have smoke in their hair after a fire” as if of course all newspaper stories were Watergate and as if many were not or maybe even most we're not based on press releases and press conferences any number of arrangements that are handed to journalists in which they perform a bit of journalistic magic on, but for the most part is hardly the stuff that Pulitzer Prizes are given for.
  </p>
  
- <p class="has-medium-font-size">
+ <p>
 > I found these attitudes, I mean some of these attitudes have weakened, but they've certainly not gone away. I find them strange because I saw bloggers and news reporters as kindred spirits as people who had similar a similar set of instincts about wanting to find out information and share it with others and be heard. I also found it interesting because aggregation and reuse are utterly intertwined into the DNA of modern American journalism, aggregation is at the very center of what every journalist does. Even the ones who shiver in disdain at the mention of The Huffington Post.
  </p>
 
@@ -693,7 +693,7 @@ The 2008 financial crisis hit newspapers like a category-five hurricane. Newspap
 
 This is how profitable newspapers were despite the grim times:
 
- <p class="has-medium-font-size">
+ <p>
 > Despite the tough economic times, the average profit level of U.S. daily newspapers in 2008 and 2009 was still almost 16 percent, according to industry data. That was more than three times the historical average 4.7 percent profitability of a Fortune 500 company.25 It was modest, however, compared to newspaper profit margins in previous years, which had exceeded 20 percent on average every year from 1993 until 2007, peaking at more than 28 percent in 1999 and 2000. Even in the depths of a recession in 2002, U.S. newspaper profits averaged 27.7 percent.
  </p>
  
@@ -710,7 +710,7 @@ Newspapers jumped on the social media bandwagon with trepidation, even as the sa
 
 The news publishing scene in the early 2010s.
 
- <p class="has-medium-font-size">
+ <p>
 > At places where editors and publishers gather, the mood these days is funereal. Editors ask one another, "How are you?" in that sober tone one employs with friends who have just emerged from rehab or a messy divorce.
  </p>
  
@@ -720,7 +720,7 @@ _The New York Times_ was representative of the challenges faced by all “legacy
 
 It entered the 2010s with falling print advertising revenues, declining circulation, mounting losses, and a massive debt load. The situation was so bad that _The_ _Times_ had to [borrow $250 million][187] from Mexican billionaire Carlos Slim at an interest rate of 14%. _The Washington Post_ was in a similar boat and was [bleeding money][188].
 
- <p class="has-medium-font-size">
+ <p>
  Neither company could stop the bleeding. The Times lost <a href="https://s1.q4cdn.com/156149269/files/doc_financials/annual/2008NYTannual.pdf">$543 million</a> in 2006, <a href="https://s1.q4cdn.com/156149269/files/doc_financials/annual/2008NYTannual.pdf">$58 million in 2008</a>, and <a href="https://s1.q4cdn.com/156149269/files/doc_financials/annual/2011NYTannual.pdf">$40 million in 2011</a>. The Post lost $165 million in 2009. Petrified of falling into corporate hands, the two instituted multiple rounds of layoffs to stay solvent. Fears of bankruptcy loomed. — <a href="https://www.latimes.com/books/la-ca-jc-jill-abramson-merchants-of-truth-20190204-story.html">Jill Abramson, <em>The</em> <em>Los Angeles Times</em></a>
  </p>
 ![](/blog-images/untitled-50-650e946574031.webp) 
@@ -733,7 +733,7 @@ It wasn’t.
 
 Many papers tried to charge online, and all the experiments failed miserably. In 2011, _The New York Times_ decided to [erect a][192] paywall, a move that was met with skepticism. In the ensuing years, a team of 8 led by Arthur Sulzberger (The Sulzbergers owned _The Times_) prepared a 96-page internal report that laid bare the dramatic challenges _The Times_ was facing in adapting to the digital age. The report name-checked all the leading digital publishers like BuzzFeed, Huffington Post, and Vox. BuzzFeed, in particular, was mentioned 23 times, and in a profound twist of irony, BuzzFeed News [leaked][193] the report. Things couldn't have gotten any worse for the embattled Times.
 
- <p class="has-medium-font-size">
+ <p>
  Arthur Greg Sulzberger had just written “The Innovation Report,” and my sense was that it dripped with a fair amount of envy for both BuzzFeed and Vice, especially because of ... They were ahead of the Times in an area called audience development. — <a href="https://www.vox.com/2019/1/31/18204418/jill-abramson-merchants-truth-book-new-york-times-buzzfeed-layoffs-recode-media-peter-kafka-podcast">Jill Abramson, former managig editor of <em>The New York Times.</em></a>
  </p>
 
@@ -765,13 +765,13 @@ I didn't know who coined the term “BuzzFeed Envy," but it best captured the vi
 
 In 2015, an anonymous person in the media [wrote a letter][203] to the advice column at The Awl saying, “I hate myself because I can’t work for BuzzFeed.”
 
- <p class="has-medium-font-size">
+ <p>
  BuzzFeed is the most successful media company of our time. BuzzFeed is the future of the media business. BuzzFeed is the most widely recognized media brand among young people and will inevitably eclipse the major media organizations and one day become a super-hegemonic media power the likes of which we’ve never seen. They’re past being just a website/media organization. They’re a cultural institution. BuzzFeed is so powerful they can make the president use a selfie stick
  </p>
 
 In 2015, Ben Thompson, founder of Stratechery, called [BuzzFeed][204] “the most important news organization in the world.”
 
- <p class="has-medium-font-size">
+ <p>
 > In short, by not making money from display ads, and by extension deprioritizing page views, BuzzFeed incentivizes its writers to fully embrace Internet assumptions, and just as importantly disincentivizes pure sensationalism. There is no self-editing or consideration of whether or not a particular post will make money, or if it will play well on the home page, or dishonestly writing a headline just to drive clicks. The only goal is to create – or find – something that resonates.
  </p>
 
@@ -779,7 +779,7 @@ The world was BuzzFeed’s oyster.
 
 In contrast to BuzzFeed, there was Gawker—a loud and boisterous publication with a take-no-prisoners approach that took pride in defiling journalistic traditions. Gawker had a vehement disdain for those in power and prided itself on dragging them through the gutter. It wasn’t just a lurid gossip site; it had built a successful network of sites covering sports, technology, women, gaming, and productivity.
 
- <p class="has-medium-font-size">
+ <p>
  In the twenty-first century, the laws of traffic make demands, and we just follow. — <a href="https://www.newyorker.com/magazine/2023/05/15/traffic-ben-smith-book-review">Nathan Heller, <em>The New Yorker</em></a>.
  </p>
 
@@ -793,7 +793,7 @@ The stunt might have been a [parody][206] of what other publishers were doing at
 
 Future media historians will remember 2015 because that was the year _The New York Times_ invited Jonah Peretti for advice:
 
- <p class="has-medium-font-size">
+ <p>
  Jonah Peretti, the <em>BuzzFeed</em> CEO, was asked to address the <em>New York Times</em> board and give them advice. And then Cliff Levy, who's one of the senior editors, interviewed him and asked him, "If we hired you tomorrow to be CEO of <em>The New York Times</em>, what would you do?" And Jonah says to them, with a straight face, "Well first I would ask you for a raise. And then I would go into my office, lock my door, and cry." Just to give you a sense of sort of the arrogance and sense that we had the wind at our back and these guys were screwed. — <a href="https://reason.com/2023/08/27/ben-smiths-one-neat-trick-for-going-viral/">Ben Smith speaking to Nick Gillespie, editor at large at <em>Reason</em></a>
  </p>
 
@@ -818,7 +818,7 @@ As Trump was making America great again, things were taking a turn for the worse
 ### Pivot {#pivot-to-video.wp-block-heading}
 Video had become big, and YouTube, Instagram, and Snapchat were ascendant by 2015. The advertising dollars were also moving to video, and Facebook wanted a piece of the action. Months after deprioritizing news articles in the feed, Facebook announced the launch of Facebook Live. In 2016, Mark Zuckerberg made an announcement that would change the fortunes of digital publishers forever. In an interview with [BuzzFeed,][215] he said:
 
- <p class="has-medium-font-size">
+ <p>
 > We’re entering this new golden age of video. I wouldn’t be surprised if you fast-forward five years and most of the content that people see on Facebook and are sharing on a day-to-day basis is video.
  </p>
 
@@ -844,7 +844,7 @@ By 2017, major publishers had stopped publishing on the platform after making pe
 
 In an effort to compete with Facebook, Google introduced Google Accelerated Mobile Pages (Google AMP). Much like Instant Articles, AMP rendered mobile sites faster by stripping them to the bare essentials and hosting them on Google’s servers. But as David Pierce, Editor-at-Large at The Verge, [wrote in a brilliant piece][222], Google AMP was driven more by desperation to not lose out on mobile advertising than “an altruistic move.”
 
- <p class="has-medium-font-size">
+ <p>
  “If Google said, ‘you must have your homepage colored bright pink on Tuesdays to be the result in Google,’ everybody would do it, because that’s what they need to do to survive,” says Terence Eden, a web standards expert and a former member of the Google AMP Advisory Committee. One media executive who worked on AMP projects but who, like other sources in this story, requested anonymity to speak about Google, framed the tradeoff even more simply: “you want access to this audience, you need to play by these rules.” — The Verge
  </p>
 
@@ -864,7 +864,7 @@ Fool me once; shame on you. Fool me 37 times, shame on, well, weather! It’s th
 
 Journalists and writers became the [precariat][224].
 
- <p class="has-medium-font-size">
+ <p>
 > The precariat, a mass class defined by unstable labor arrangements, lack of identity, and erosion of rights, is emerging as today’s “dangerous class.” As its demands cannot be met within the current system, the precariat carries transformative potential. To realize that potential, however, the precariat must awaken to its status as a class and fight for a radically changed income distribution that reclaims the commons and guarantees a livable income for all. Without transformative action, a dark political era looms.
  </p>
 
@@ -899,11 +899,11 @@ Quartz had a culture of innovation and experimentation. Its advertising was top-
 
 As an outside observer, there were two moments in 2018 that signaled the end of the scale and the social era. The first was when Disney [wrote off][229] its entire $400 million investment in Vice Media. The second moment was when Jonah Peretti [pitched consolidation][230] with other digital media publishers as a way to wring some dollars from Google and Facebook:
 
- <p class="has-medium-font-size">
+ <p>
  The better solution, he said, would require a much more audacious effort: a series of mergers with five or six top internet publishers. “You have Vice and Vox Media and Group Nine and Refinery,” Mr. Peretti said. “There’s tons of them that are doing interesting work.”
  </p>
  
- <p class="has-medium-font-size">
+ <p>
 > Mr. Peretti extolled the logic of combining forces: A larger entity could lobby for better business terms from Facebook and Google, and in turn supply them with videos and articles safe for users and friendlier for advertisers.
  </p>
 
@@ -911,7 +911,7 @@ Vice was the other darling of the social era like BuzzFeed. In contrast to BuzzF
 
 The ambitions of Vice were never compatible with reality. But that doesn’t mean they were all fluff and had no substance. With BuzzFeed, they did more to break the old-school sclerotic notions about how “news” should be reported. Like BuzzFeed, they appealed to underserved millennials who had different tastes and sensibilities. But the fact remains that they were in a low-margin media business, and the VC-imposed expectations were incompatible with reality.
 
- <p class="has-medium-font-size">
+ <p>
  I want us to be the next MTV, ESPN and CNN rolled into one. — Shane Smith
  </p>
 
@@ -935,7 +935,7 @@ In February 2020, Vox Media raised $100 million at a 50% [discount][239] to its 
 
 In April 2023, BuzzFeed announced that it was [firing 150 people][240] and shutting down the award-winning BuzzFeed News. In hindsight, maybe Ben Smith (the former editor of BuzzFeed News) [quitting][241] was a sign. It was a sad end to a newsroom that punched above its weight and published some remarkable stories, including the [Pulitzer-winning][242] expose of the mass internment camps of Uighur Muslims in China.
 
- <p class="has-medium-font-size">
+ <p>
 > Additionally, I made the decision to overinvest in BuzzFeed News because I love their work and mission so much. This made me slow to accept that the big platforms wouldn't provide the distribution or financial support required to support premium, free journalism purpose-built for social media.
  </p>
  
@@ -943,7 +943,7 @@ In April 2023, BuzzFeed announced that it was [firing 150 people][240] and shutt
 
 Nick Denton’s comment 11 years later seems prophetic:
 
- <p class="has-medium-font-size">
+ <p>
 > Ben Smith's quick-hit campaign "scoops" are about as viral as cat videos. That fits with Buzzfeed. But I suspect Smith has too much respect for journalistic accuracy to be comfortable with Jonah Peretti's stunts. Remember that Buzzfeed's founder made his name with fake news, like the Nike letter. And Peretti's craving for the quick viral fix will not be satisfied by the nourishing fare put out by prestige hires like Doree Shafrir and Matt Buchanan. Either before or after acquisition, Buzzfeed will collapse under the weight of its own contradictions.
  </p>
  
@@ -951,7 +951,7 @@ Nick Denton’s comment 11 years later seems prophetic:
 
 Vice Media, which was valued at $5.7 billion in its last round, filed for bankruptcy in May 2023. It was bought out by a consortium for $225 million. Just to be clear, $225 million is wayyy less than even a billion, let alone $5.7. The Vice hustle of somehow always raising another round came to an end. Vice’s fate was sealed in 2017 when it raised $450 million from TPG, which would make moneylenders look like sweethearts.
 
- <p class="has-medium-font-size">
+ <p>
 > TPG’s and Sixth Street’s money came in the form of preferred stock rather than common shares. The preferred stock paid a 12 per cent dividend in the form of additional stock and junior debt rather than cash and had other rights for priority payment which contributed to a “complex and restrictive equity structure”, according to bankruptcy filings. This investment, however, did leave room for higher priority senior loans to be undertaken by Vice in future years.
  </p>
  
@@ -971,7 +971,7 @@ The _Financial Times_ and _The [Economist][248]_ are thriving and going from str
 
 On the other end of the spectrum, as long-time media observer [Brian Morrissey][251] notes, the boring old-school publishing business did well:
 
- <p class="has-medium-font-size">
+ <p>
 > The “winners” of the last decade were not BuzzFeed, Vice, Vox et al, but more “boring” SEO businesses like Dotdash, Future, Red Ventures and Ziff Davis.
  </p>
 
@@ -1018,7 +1018,7 @@ Let me be clear.
 
 I’m saying taking money to start a business is bad. Of course not. Few can afford to start a digital media business on their own dime. But the problem was that digital media outlets took the wrong kind of money from the wrong people. This quote sums up the issues with venture money:
 
- <p class="has-medium-font-size">
+ <p>
  “Big problems have occurred when you have founders who have unwillingly or unknowingly signed on for an outcome they didn’t know they were signing on for,” said Josh Kopelman, a venture investor at First Round Capital, an early backer of Uber, Warby Parker and Ring. He said he was happy that companies were embracing alternatives to venture capital. “I sell jet fuel,” he said, “and some people don’t want to build a jet.”
  </p>
  
@@ -1026,7 +1026,7 @@ I’m saying taking money to start a business is bad. Of course not. Few can aff
 
 Media was never a jet fuel business. News was profitable for a brief period in the 20th century because newspapers were monopolies until the internet. That was an aberration.
 
- <p class="has-medium-font-size">
+ <p>
  As long as a newspaper was the only one in its community, its profits were certain to be extraordinary; whether it was managed well or poorly made little difference. (As one Southern publisher famously confessed, “I owe my exalted position in life to two great American institutions – nepotism and monopoly.”)
  </p>
  
@@ -1037,13 +1037,13 @@ The original sin of digital media publishers was being convinced by VCs that new
 
 For a brief moment, VCs and publishers bought into the delusion that digital publishing was a tech business—it wasn’t. Changing the form and medium of publishing words doesn’t change the economics of the news business. It still boggles my mind that BuzzFeed and Vice could raise hundreds of millions on the fantasy that news publishing could be a tech business. The other wrinkle, as I alluded to earlier, is that few people care about news. This is why news has never been profitable on its own and has always been subsidized.
 
- <p class="has-medium-font-size">
+ <p>
 > Building a profitable serious news channel suffers from the somewhat intractable fact that serious news has never been profitable, moderator James Fallows said. Instead, it's always attached itself to a "host body," like the Travel Section of the Los Angeles Times, or the car and real estate sections of other big papers. Perhaps the problem with TV news isn't that the networks aren't giving audiences what they want. It's that TV news is giving audiences exactly what they want, and some people don't like the outcome. The most profitable networks aren't "serious," and the most "serious" networks aren't profitable.
  </p>
  
  Derek Thompson
 
- <p class="has-medium-font-size">
+ <p>
  Media is often a terrible standalone business but is good support for other businesses. The TV business is now dominated by tech companies, a trend likely to continue. That isn’t particularly new. “Media has historically been owned by non-media businesses,” Joe notes, going back to early radio and then cable systems owning TV networks. “The business of media has outsized influence but undersized monetization.” The result: “I don’t know the media business works at scale without alternative models.”
  </p>
  
@@ -1081,13 +1081,13 @@ Nope.
 
 It’s a cliché to blame the woes of digital publishers on all these things, but that’s not what I mean. Experimenting is not a bad thing. I understand that it’s easy to write such things with the privilege of never having been a journalist or run a news business. If I were a publisher, I would’ve done the same. Two quotes come to mind. The first by [Clay Shirky][258]:
 
- <p class="has-medium-font-size">
+ <p>
 > People committed to saving newspapers demanding to know "If the old model is broken, what will work in its place?" To which the answer is: Nothing. Nothing will work. There is no general model for newspapers to replace the one the internet just broke.
  </p>
 
 And this from [Troy Young][259], the former president of Hearst Magazines:
 
- <p class="has-medium-font-size">
+ <p>
 > Publishing, sadly, is bit of a perpetual hackathon. You are always looking for the next vein in this pockmark drug addict arm to find like a new source of revenue.
  </p>
 
@@ -1099,7 +1099,7 @@ Before Facebook, there was Google, which updated its algorithm at regular interv
 
 You have to hand it to the original bloggers; [they knew][263] this from the start of the social era:
 
- <p class="has-medium-font-size">
+ <p>
 > I guess my point is, if you’re one of these people considering giving up on blogging in exchange for paying more attention to Facebook, Twitter, YouTube and MySpace, or whatever they throw at us mere mortals, bear in mind you are giving up on something rather unique and wonderful.
  </p>
  
@@ -1111,7 +1111,7 @@ News has always been a [small part][264] of the content shared on Facebook but h
 
 Josh Marshall, the founder of Talking Points Memo, a publication that has survived and thrived since the dot-com bubble, [summed it up best][265]:
 
- <p class="has-medium-font-size">
+ <p>
 > All of this is to say that news publishing is a tough business. It requires finding an unserved niche, providing some unique service, and building a durable relationship with a specific customer base. But that’s really no different from most forms of commerce: doable, but hard; potentially profitable, but usually not wildly so. In digital publishing, scale was the god that failed. And thousands of journalists went along for the roller-coaster ride, without anyone warning them how it was bound to end.
  </p>
 
@@ -1156,19 +1156,19 @@ Few did. BuzzFeed News was worth paying for, and so were _some_ of the things Vi
 
 The return expectations of VCs and the return potential of news were never compatible. This [excerpt][266] from a postmortem of BuzzFeed News captures the sad reality of the news business well:
 
- <p class="has-medium-font-size">
+ <p>
  “There was always the sword of Damocles hanging over BuzzFeed News,” says a newsroom employee, one of about 60 who will be affected (120 jobs across other divisions are also being cut). “Everyone in news knew it wasn’t profitable, the board hates it, Jonah kind of keeps it around ’cause he likes it, and eventually the day would come where it’s a terrible line item in red. And, you know, I guess the day came.”
  </p>
 
 A [telling excerpt][267] from _Traffic,_ by Ben Smith, the former editor-in-chief of BuzzFeed News:
 
- <p class="has-medium-font-size">
+ <p>
  “I’ve come to regret encouraging Jonah to see our news division as a worthy enterprise that shouldn’t solely be evaluated as a business” Mr. Smith writes. “Jonah resented what seemed like ingratitude from people whose work he so valued that he was approaching $100 million in losses.”
  </p>
 
 The fundamental flaw among all these publishers was their ridiculous expectations. They all started with good intentions, but when the reality of the news business didn't meet their expectations, they sacrificed quality for quantity. They became content factories, republishing the same thing I could find on a hundred other websites. They started cramming their web pages with all the ads and autoplay videos they could.![](/blog-images/untitled-79-650e9479a0e1a.webp) ![](/blog-images/untitled-63-650e946ee4f3d.webp) 
 
- <p class="has-medium-font-size">
+ <p>
  Publications in general cultivate a kind of intimacy. Readers identify with them, see their perspectives reflected in them. That’s why there’s a sense of grief when they disappear. I’ve been thinking about the loyalty we have to one particular publication or another. Social media made us disloyal consumers since we read whatever floated up in our feeds. The general-interest media companies that survived, though, had a lot of built-up loyalty, in both brand and editorial perspective: NYT, New York Magazine, The New Yorker, The Atlantic. They translated that loyalty into paywalls and digital subscriptions. Readers paid because they couldn’t <em>not</em> read the publications. Turns out that’s a good business model. <a href="https://kylechayka.substack.com/p/the-meaning-of-digital-media">Kyle Chayka</a>, writer and author
  </p>
  
@@ -1176,17 +1176,17 @@ The fundamental flaw among all these publishers was their ridiculous expectation
 
 Building a good news business is like trying to ride a horse blindfolded at midnight while drunk and naked. It’s hard. Publishers are [competing][269] against everything from Netflix to Kim Kardashian. It takes something special to even have a chance of survival, let alone success.
 
- <p class="has-medium-font-size">
+ <p>
 > Media continues to compete with every single app on your phone. 2021 will require you to go deeper in building a direct relationship — with not just your users or audiences, but with your true believers. Unless you’re able to capture attention and build a relationship, you can’t monetize, and therefore, you don’t have a business.
  </p>
  
- <p class="has-medium-font-size">
+ <p>
  We really mean <em>believer</em>, because these people are often buying into a mission they believe in, not just a subscription to a media product.
  </p>
  
  <a href="https://www.niemanlab.org/2020/12/from-direct-to-consumer-to-direct-to-believers/">Rishad Patel</a>, co-founder of Splice Media
 
- <p class="has-medium-font-size">
+ <p>
  “There was this era at the beginning when it was considered smart and prescient to be mobile-first. Then there was the Facebook era where we and a whole lot of other digital publishers were able to really dramatically expand our audience and introduce our brands to the world on the backs of this distribution of social media. That era is clearly over. The way I would describe the new era we’ve entered is one where publishers are going to live or die based on their relationship with readers.”
  </p>
  
@@ -1208,7 +1208,7 @@ Monetization on TikTok is still limited. I hope publishers have learned from the
 
 An interesting trend is that people no longer share news on open social platforms. I’d wager that this trend will continue to grow. Social media platforms have become performative hellscapes filled with bots, grifters, and people shilling useless things. Being on social media is no longer fun, and people will continue to move away from open social platforms to private spaces.
 
- <p class="has-medium-font-size">
+ <p>
 > Online participation has shifted to some extent into closed networks such as WhatsApp, Signal, Telegram, and Discord, where people can have private or semi-private conversations with trusted friends in a less toxic atmosphere.
  </p>
 ![](/blog-images/untitled-67-650e9472d286d.webp) 
@@ -1217,7 +1217,7 @@ Only 17% of users paid for news in 2022, the same as in 2022 across 20 rich coun
 
 The reality is that there's a hard ceiling on the number of people who can pay. As everything becomes a subscription, people will have to choose between important things. There aren't enough people who care enough about news to pay. There's also a [power law distribution][272] at play with news subscriptions. Most publications won't make enough to have a pizza once a week. We're seeing this with the creator economy. So, things will only continue to get worse for publishers and creators.![](/blog-images/untitled-68-650e9473ce41d.webp) 
 
- <p class="has-medium-font-size">
+ <p>
  With household budgets under pressure and a significant part of the public satisfied with the news they can access for free, there are signs that the growth in online news payment may be levelling off. Across a basket of 20 richer countries, 17% paid for any online news – the same figure as last year. Norway (39%) has the highest proportion of those paying, with Japan (9%) and the United Kingdom (9%) amongst the lowest. Amongst those cancelling their subscription in the last year, the cost of living or the high price was cited most often as a reason. In the United States, Germany, and the United Kingdom, about half of non-subscribers say that <em>nothing</em> could persuade them to pay for online news, with lack of interest or perceived value remaining fundamental obstacles.
  </p>
 
@@ -1238,11 +1238,11 @@ Trust in news is important, but I also think that news organizations shouldn’t
 
 The topic of trust and objectivity reminds me of this interaction between Alan Rusbridger, the former editor-in-chief of _The Guardian,_ and Marty Baron, the former editor of _The Washington Post_:
 
- <p class="has-medium-font-size">
+ <p>
  <strong>Alan Rusbrider:</strong> Do you think the Washington Post should be objective?
  </p>
  
- <p class="has-medium-font-size">
+ <p>
  <strong>Marty Baron:</strong> I think we should be, I don't like, that's not the word that I would use. What word do you use? We should be independent, we should be fair, we should be honest, we should be honorable, and then we should do our work, do our research, and whatever we find, if we've done it all properly we should tell people what we've found, in a straightforward, direct, unvarnished, unflinching manner, and that that's what we ought to do. And whatever the facts tell us, the story is, I mean, the obligation is for us to do the work properly and thoroughly, and then to tell people what we found and not hesitate to do that.
  </p>
 
@@ -1255,14 +1255,14 @@ Private equity, hedge funds, and other investment vehicles [own over 50%][275] o
 
 These financial groups buy newspapers, cut staff to the bone, and try to wring out as much cash as possible. The death of local newspapers had a [devastating impact][150] on the civic life of American towns and cities.
 
- <p class="has-medium-font-size">
+ <p>
  What threatens local newspapers now is not just digital disruption or abstract market forces. They’re being targeted by investors who have figured out how to get rich by strip-mining local-news outfits. The model is simple: Gut the staff, sell the real estate, jack up subscription prices, and wring as much cash as possible out of the enterprise until eventually enough readers cancel their subscriptions that the paper folds, or is reduced to a desiccated husk of its former self. — <a href="https://www.theatlantic.com/magazine/archive/2021/11/alden-global-capital-killing-americas-newspapers/620171/">McKay Coppins/The Atlantic</a>
  </p>
 
 ### Extortion rackets {#extortion-rackets.wp-block-heading}
 The greatest trick the newspaper industry pulled was to convince the world that Google, Facebook, and the internet caused their demise. As I showed above, they didn't, but facts are inconvenient opinions. But as newspapers began their terminal decline after the internet, they managed to seed the idea that the internet and tech companies were the cause of their woes—it wasn’t their corporatized shortsightedness, rent-seeking, or inability to innovate. It’s one of the greatest PR moves in history.
 
- <p class="has-medium-font-size">
+ <p>
  The illusory truth effect is the tendency to believe false information to be true after repeated exposure. The Big Lie works through indoctrination. If a lie is repeated enough, people believe it. The repetition becomes the support for the lie. — <a href="https://en.wikipedia.org/wiki/Illusory_truth_effect">Wikipedia</a>
  </p>
 
@@ -1294,7 +1294,7 @@ These regulations boggle my mind.
 
 Here’s the reality: news has very little value for Facebook. In fact, considering the amount of grief that news causes Facebook, it’s better off without it on the platform, and the [data bears this out][283]. Facebook's usage has remained unaffected despite the news being blocked. You could argue that Google needs news to show better results, but that still doesn’t change the fact that publishers get far more value from Google’s traffic than Google gets from news content. I hate to say the platforms are [in the right,][90] but it's a fact.
 
- <p class="has-medium-font-size">
+ <p>
  There is no evidence that shows news outlets are worse off because of Google, Facebook and other aggregators. If anything, evidence (and lots of it) shows that, overall, news outlets would be in worse shape without these digital platforms. That’s what I found in <a href="https://dx.doi.org/10.2139/ssrn.2837553">a study I undertook with economist Joan Calzada</a> of the “link tax” imposed by Spain (before the EU-wide directive was instituted in 2019).
  </p>
  
@@ -1304,7 +1304,7 @@ These are [terrible laws][284]. Why should only Google and Facebook pay? Why not
 
 A functioning democracy needs a strong press. Given the dire straits of newspapers, I believe in any and every solution, even the most extreme. Despite that, I can’t bring myself to agree with these extortion rackets.
 
- <p class="has-medium-font-size">
+ <p>
 > Commercial news organisations no longer offer value to advertisers. Instead of searching for ways to make an obsolete business solvent, efforts should focus on alternative ways to fund public-interest journalism.
  </p>
  
@@ -1329,14 +1329,14 @@ The digital media company of the future will be small, focused, and audience-fir
 
 [This is poetry][288] by Rafat Ali, founder of Skift:
 
- <p class="has-medium-font-size">
+ <p>
 > It should be harder than just coming up with some bullshit idea to start a millennial media outlet, whatever that means. It shouldn’t be easy to get two full floors in World Trade Center building as your office, when you’re running on borrowed money and time. It should be hard to call yourself the Condé Nast of the next generation, harder to even build one. It should be harder than starting with clickbait and then pivoting to quality, and then raise up hands when that is hard to do. It should be hard to replicate your success in one vertical to others.
  </p>
 
 ##### Let a thousand niches bloom.
 The media company of the future will have diversified revenue streams such as subscriptions, ads, events, and commerce. The 2010s also showed that building scale-oriented general interest publications is a fool's errand. It’s not easy to compete against the likes of _The New York Times, The Guardian_, BBC, _Nikkei_, _Australian, Le Monde_, etc. [The Reuters Digital News Report][271] found that people across most countries pay for one national publication:
 
- <p class="has-medium-font-size">
+ <p>
 > As in previous years, we find that a large proportion of digital subscriptions go to just a few upmarket national brands – reinforcing the winner takes most dynamics that are often associated with digital media. But in a number of countries, including the United States, we are now seeing the majority of those paying taking out more than one subscription. This reflects the increased supply of discounted offers as well as the introduction of all-access bundles in some markets.
  </p>
 
@@ -1346,15 +1346,15 @@ Then there’s the question of artificial intelligence (AI)—the 8,000-pound go
 
 What does that mean for media brands if people adopt AI chat interfaces where they ask questions instead of browsing search results? How will [generative audio][291] and video shape digital publishing? Predictions are a fool's errand, but it’s safe to say that an age of disruption is upon us. Having said that, there’s also a risk of overcorrecting in response to AI. Richard Tofel, the former president of ProPublica, captured the [tradeoffs succinctly][292]:
 
- <p class="has-medium-font-size">
+ <p>
  Having said that a revolution is soon upon us, that doesn’t mean that everything is changing everywhere all at once. One of the things I most noticed in looking back at the Nineties was that the technologists, and especially those with the arrogance to label themselves “futurists,” were often directionally right about change, but frequently far off in predicting its pace. Indeed, as I wrote,
  </p>
 
- <p class="has-medium-font-size">
+ <p>
  it was often so long before they were right that they proved poor guides to people in business who needed to make decisions today… [T]o know where your industry is going is never enough in business. You also need to know when it is going to get there.
  </p>
 
- <p class="has-medium-font-size">
+ <p>
  This dynamic may also apply in our own moment. In the last revolution, Xerox PARC, the early Apple (up through <a href="https://www.wired.com/2013/08/remembering-the-apple-newtons-prophetic-failure-and-lasting-ideals/">Newton</a>), <a href="https://www.poynter.org/archive/2003/before-the-web-there-was-viewtron/">Knight Ridder’s Viewtron</a> and Boulder Design Lab, Prodigy and AltaVista—brilliant innovators all&#8211; proved to be ahead of their time. That may yet repeat itself with AI. The imperative, again, is therefore to become familiar with new tools, to bolster capabilities and to imagine a different future, rather than to bet the farm on someone’s particular speculative prediction.
  </p>
 
@@ -1363,7 +1363,7 @@ I also think that AI is a golden opportunity for news publishers to build trust.
 ### Where’s the silver lining? {#silver-lining.wp-block-heading}
 In 2023, the legacy news media companies must accept that the “[golden age][295]” of news is over. No matter how many goats they sacrifice to the heathen gods, the monopolies and the grotesque margins of the old are not coming back. Digital publishers must accept that bundling eyeballs while relying on the charity of platforms and aggregators is a recipe for disaster.
 
- <p class="has-medium-font-size">
+ <p>
 > In the newspaper industry and television industry 20 years ago success was a a return of 20 or 30% today success might be a return of 8 or 10 percent which is still better than most businesses but for those people that are used to very successful media businesses is not quite the same so what they're having to do today is work harder get money from more places than they did before and this is uncomfortable for many people in media particularly in the news parts of medium.
  </p>
  
@@ -1377,13 +1377,13 @@ It’s also true that readers have never had access to so much [quality news][29
 
 Given the woes of news publishers, media scholars like Victor Pickard have been arguing that news is a “[public good,][298]” like schools and roads. Victor Pickard, in particular, has been arguing that, left to its whims, a free market system can never provide the news required for a well-functioning democracy. He calls it a “[market failure][299]”:
 
- <p class="has-medium-font-size">
+ <p>
  But this coming year, as advertising-dependent journalism continues its slow death, as <a href="https://www.thenation.com/article/meet-the-vulture-capitalists-who-savaged-the-denver-post/">vulture capitalists continue to pick over the bones</a>, as news rooms continue to <a href="http://www.niemanlab.org/2018/09/what-will-happen-when-newspapers-kill-print-and-go-online-only-most-of-that-print-audience-will-just-disappear/">hollow-out</a>, we will come to see <a href="https://nca.tandfonline.com/doi/full/10.1080/15295036.2014.919404#.XBEo2DF7m4Q">systemic market failure</a> for what it is. We will acknowledge that no entrepreneurial solution lies just around the bend. We will give up the ghost of discovering a magical technological fix or a market panacea. Instead, we will begin to look more aggressively for non-market-based alternatives.
  </p>
 
 Any mention of state funding immediately leads to red visions of communism and state-controlled media, especially in a country like America, which celebrates the virtues of free markets and is allergic to big government.
 
- <p class="has-medium-font-size">
+ <p>
 > Another favorite argument Pickard takes on suggests that the problem would be solved if only newsrooms had adapted faster or were more open to innovations that would monetize their content. This idea, Pickard contends, misses the fact that the crisis is systemic: a new business model isn’t out there waiting to be discovered, because it’s all of capitalism that’s the problem. Those who take this technocratic line—as if all news organizations need is a visit from McKinsey consultants—see journalism as just another product and portray its collapse as beyond our control. The effect is to ignore the market fundamentalism that caused the problem in the first place. Pickard contends instead that the problem with the business model for news in this country is that we haven’t fully embraced the fact that news is a public good, and thus, like other public goods—schools, for instance—cannot be adequately provided by the market.
  </p>
  
@@ -1419,11 +1419,11 @@ More billionaires like Jeff Bezos (_The Washington Post_)_,_ Marc Benioff _(Time
 
 While publishers rail against Facebook and Google, the irony is that they are among the largest funders of news. [Google][311] and [Facebook][312] have [committed][313] well over a billion dollars to support news organizations across the world. In the absence of support from the government, they’ve become key supporters of news organizations. You and I can argue their intent: whether they are doing this from the goodness of their hearts, if it’s PR, lobbying, or moves to head of government interventions.
 
- <p class="has-medium-font-size">
+ <p>
 > Google and Facebook have been very effective in achieving two goals in the United States. One of these goals is that they have been the most generous and consistent funders of local newsrooms over the past five years.
  </p>
  
- <p class="has-medium-font-size">
+ <p>
  Should we leave it to the platforms, etc.? I have always been an advocate of formalizing these arrangements under legislation, but I also recognize that I am talking about America here, and that there are other parts of the world where, without the support of non-governmental actors, journalism would be in a much more dire position. So, I guess what I would wish from the platforms is better regulation in countries where the regulation will actually help independent press. In countries where it won't help independent press, if the platforms are really earnest in their endeavors, they now need to align their practices on the ground. — <a href="https://www.youtube.com/live/5RxODACYLJU?si=e6fh955ZmPZjXg4Y">Emily Bell</a>
  </p>
 
@@ -1444,13 +1444,13 @@ Let me be clear: I have no idea what the future holds, but you can make reasonab
 
 For a brief moment in the 2010s, there was the belief that if you built enough scale, you could aggregate that attention and sell it to advertisers. This idea underpinned BuzzFeed, Vice, and pretty much all the digital native upstarts. That’s over. The problem was that these digital publishers never owned the audience but were rather renting them. They were at the mercy of the platforms and had to dance like monkeys to their tunes.
 
- <p class="has-medium-font-size">
+ <p>
  “Every publisher with that model is facing a potential problem, especially if their journalistic focus is too random that they can’t secure direct advertising deals. It’s not that advertising is failing as such. It’s the model of what we call ‘low-intent micro-moment’ traffic from social platforms monetised by random ads,” says Baekdal, who defines low-intent moments as when readers consume ‘snackable’ or entertainment content they’re unlikely to pay for. — <a href="https://pressgazette.co.uk/publishers/digital-news-startups/">Thomas Baekdal, media analyst.</a>
  </p>
 
 Building an advertising-funded, scale-oriented publishing operation without social traffic is almost impossible.
 
- <p class="has-medium-font-size">
+ <p>
  Actually, I think you do see certain general journalism outlets being more sustainable now through reader revenues, and I think that that’s definitely a model for some of them. We don’t know much about payment mechanisms yet, how they will develop, and what people will pay for. So I don’t think that there is a viable advertising-supported model for free journalism — there just isn’t. It’s not going to happen. — <a href="https://www.niemanlab.org/2018/04/emily-bell-thinks-public-service-media-today-has-its-most-important-role-to-play-since-world-war-ii/">Emily Bell</a>
  </p>
 
@@ -1466,7 +1466,7 @@ The news publisher of the future will be small and focused. Here are a few examp
 
  5. <a href="https://www.mediapart.fr/en/english">Mediapart</a> is a French subscription-oriented publication that only does <a href="https://gijn.org/france-mediapart-successful-model-investigative-journalism/">deep investigations</a>. It has been <a href="https://gijn.org/france-mediapart-successful-model-investigative-journalism/">profitable</a> since 2011, with over 200,000 paying subscribers.
 
- <p class="has-medium-font-size">
+ <p>
  “Unless you’re the New York Times, you are not going to succeed if you don’t have a clearly defined understanding of who your audience is. Niche media is picking a lane and knowing exactly who is the consumer of that content.”
  </p>
  
@@ -1482,19 +1482,19 @@ The digital media company of the future can only survive if it can convince read
 
 Referral traffic matters, but the priority has to be to own the distribution through newsletters, communities, chat apps, applications, events, etc.
 
- <p class="has-medium-font-size">
+ <p>
  What is clear, though, is that the only way to build a thriving business in a space dominated by an Aggregator is to go around them, not to work with them. In the case of publishers, that means subscriptions, or finding ways to monetize, <strong><a href="https://www.wsj.com/articles/for-bill-simmonss-the-ringer-podcasting-is-the-main-event-11548673244">like the Ringer</a></strong>, beyond text. For web properties it means building destination sites that are not completely reliant on Google. For manufacturers it means building relationships with retailers other than Amazon and building brands that compel customers to go elsewhere. And for digital content providers…well, this is why I view Apple’s policies as the most egregious of all.
  </p>
  
  <a href="https://stratechery.com/2019/the-buzzfeed-lesson/?utm_source=pocket_saves">Ben Thompson/Stratechery</a>
 
- <p class="has-medium-font-size">
+ <p>
 > I’ve lived through Yahoo going away; I’ve lived through Facebook going away; I’ve lived through a very strange moment of Snapchat going away. I feel like we would be making a mistake if we didn’t envision what it would look like if Google went away. I don’t think it’s going away tomorrow, but I do worry that every media executive that I’ve ever spoken to is deeply aware of how much Google drives the top of the funnel, how much the entire architecture of the internet is organized around Google’s wants and needs, and how little self-awareness there is about this being critical dependency instead of a benign relationship.
  </p>
  
  <a href="https://www.theverge.com/23651323/new-york-times-ceo-meredith-kopit-levien-wordle-the-athletic-sports-cooking">Nilay Patel, editor-in-chief of the Verge</a>
 
- <p class="has-medium-font-size">
+ <p>
 > In hindsight, the twenty-tens saw the emergence, growth, dominance, and incipient decay of the largest social networks. All of us users have had the opportunity to learn the same lessons that Peretti did: we can’t rely on large digital platforms that are motivated by profit above all, and there is no guarantee they will protect or support us or work to deliver the best experiences possible. Instead, they will continue to encourage us to churn out content for free; they will work ruthlessly to capture our attention and then commodify it through every possible avenue. Those huge, public networks are growing riskier, messier, and less enticing by the day; the rocket that drove their explosive growth is faltering.
  </p>
  
@@ -1506,7 +1506,7 @@ A big problem in publishing is that people often talk as if there’s one type o
 
 When this didn’t work, there was a shift to programmatic advertising, but it was rife with fraud. Everybody went along as if everything was okay, and publishers lost out once again.
 
- <p class="has-medium-font-size">
+ <p>
  They’ll say 50 percent of our marketing isn’t working anyway, therefore we’re used to that and still get good performance. If it works and looks like it’s performing everyone pats themselves on the back. The funniest conversation I’ve ever had with an agency was when I told them a campaign they had run was 90 percent fraudulent, and their reply was: ‘Oh, I know, but it really performed well. The click-through rates were phenomenal.’ I re-emphasized that those click-throughs were fraudulent; the ads weren’t seen by humans, and their response was ‘The client is happy. We’re renewing the contract.’
  </p>
  
@@ -1522,7 +1522,7 @@ One of the defining trends of the last five years has been the rise of the indiv
 
 Jarrod Dicker, a media executive at The Chernin Group, put it best when he compared a media business to a record label—it’s all about the talent baby:
 
- <p class="has-medium-font-size">
+ <p>
 > Media companies have always been talent companies but their business models don’t necessarily reflect that. That’s because while talent was a driving force behind their business, the financial focus was tied closer to content ownership and distribution; two things media companies once had complete control over.
  </p>
 
@@ -1530,7 +1530,7 @@ The future media business will be inclusive of its foundation of advertising, su
 
 At the peak of the Substack mania around 2020–2021, there were endless think pieces about how all the [talented writers][325] would flee legacy organizations. That always sounded far-fetched to me. Being a solo creator means having to do the grunt work of everything from copyediting and accounting to filing your taxes. You also lose the institutional perks of legal support and insurance, among other benefits. It’s for some people, but not for everyone.
 
- <p class="has-medium-font-size">
+ <p>
  What Substack has done is a great example of a media business in a box. You and I are both using slightly different models than a lot of others, but I think what Substack has enabled is the ability for people to set up a media business in just 10 minutes. You can hook up a Stripe account and have a media business with all the necessary infrastructure and minimal costs. When you can lower your costs, you have a lot of upside. To some degree, it's hard because you have to do everything, and I don't think it's for everyone. Many people don't have the privilege to go off on their own and make it work, but for those who have some traction, reputation, and particularly expertise in an area, it's very attractive. —
  </p>
  
@@ -1548,7 +1548,7 @@ The publisher of the future will focus on quality, delivering value, and buildin
 
 Publishers know that social distribution matters, but they have they can't rely only on that. Social distribution is the icing on the cake, not the cake itself. It has a role to play in helping publishers reach [new audiences][329]. But it can never be the primary distribution and monetization channel. If you play in other people’s gardens, you play by their rules.
 
- <p class="has-medium-font-size">
+ <p>
 > I think digital publishing, when it first started, the main issue was the artificial constraint on the ability to publish. In many cases, you needed a printing press. Now, the internet has changed that and it has led to all kinds of new publications. Anyone can create content and there are no gatekeepers. In some ways, this happened in the early internet. However, the problem was that it was impossible to find and it was impossible to make money from. So, algorithms became necessary. The original algorithm was the search algorithm. SEO popped up as a way to solve the problem of discoverability. What happened was that everyone started writing for algorithms instead of people.
  </p>
  
@@ -1606,7 +1606,7 @@ As I grow older, I have started to appreciate the value of things a lot of peopl
 
 One thing that worries me the most is the slow and steady degradation of our information ecosystem. Nathan Robinson, the editor-in-chief of _Current Affairs_ magazine, summed it up in his post titled "[The truth is paywalled but the lies are free][365]." Paywalls are the most obvious symptom of this degradation. The number of publications implementing paywalls is increasing across the world. If the current trends in paywalls prevail, we'll have an information apartheid. I'm not saying that news should be free, but the fact remains that most people can't afford to pay for it. There have to be free alternatives, and this is where public funding can play a role. Sharp-eyed media observers like [Simon Owens][366] argue that there are still countless sources of free and quality news.
 
- <p class="has-medium-font-size">
+ <p>
  Is it true that many of the premium publishers now feature some sort of paywall? Yes, but no matter your interest, there are a huge number of high-quality YouTube channels, podcasts, news sites, newsletters, and social media accounts dedicated to that niche. Some of the best economic analysis in the world is being disseminated on places like Substack and Twitter, and longform podcasts allow experts to go extremely deep on just about every topic. A half hour before I sat down to write this article, I watched a <a href="https://youtu.be/sxRdKRORYoA">20-minute video</a> explaining how global warming has placed Greenland into the center of a geopolitical quagmire due to its proximity to melting oceans. It was free to view and just as good as any reporting you’ll find at the Washington Post.
  </p>
 

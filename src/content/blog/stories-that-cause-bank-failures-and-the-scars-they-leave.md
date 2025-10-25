@@ -50,7 +50,7 @@ But I'm digressing.
 
 Economists have been analyzing the impact of stories on markets for a long time [<a rel="noreferrer noopener" href="https://business.columbia.edu/faculty/people/paul-tetlock" target="_blank">1</a>, <a rel="noreferrer noopener" href="https://www.ineteconomics.org/perspectives/blog/revealed-new-insight-into-what-really-drives-the-stock-market" target="_blank">2</a>, <a rel="noreferrer noopener" href="https://www.frontiersin.org/articles/10.3389/fpsyg.2022.892829/full" target="_blank">3</a>, <a rel="noreferrer noopener" href="https://klementoninvesting.substack.com/p/narratives-matter" target="_blank">4</a>]. However, the topic received long overdue and much-deserved attention when Nobel laureate and one of the founding fathers of behavioral economics, Robert Shiller, published "[Narrative Economics][14]," summarizing his [decades of work][15]. Professor Shiller likens stories or narratives to [viruses][16] (going viral) and says similar to viruses, stories are contagious and mutate as they spread, affecting markets and economies in unpredictable ways.
 
- <p class="has-medium-font-size">
+ <p>
 > The form of the narrative varies through time and across tellings, but maintains a core contagious element, in the forms that are successful in spreading. Why an element is contagious, when it may even “go viral,” may be hard to understand, unless we reflect carefully on the reason people like to spread the narrative. Mutations in narratives spring up randomly, just as in organisms in evolutionary biology, and when they are contagious, the mutated narratives generate seemingly unpredictable changes in the economy.
  </p>
  
@@ -74,7 +74,7 @@ Multiple people were spreading numerous narratives, each with their own unique m
 
 As the doom and gloom narratives spread, smaller regional banks sold off. Depositors started fleeing [smaller banks][21] and rushed into larger banks and [money market funds][22]. It [may][23] or [may not][24] have sped up the long pending demise of Credit Suisse. 
 
- <p class="has-medium-font-size">
+ <p>
 > With the click of an iPhone, $US42 billion left one bank in one day. To give you a sense of the order of magnitude, in the financial crisis of ’08, one bank lost $US17 billion in a week,” he said. “So the rate of withdrawal was twenty times what it was then.
  </p>
  
@@ -84,7 +84,7 @@ You can trace all popular narratives to what [Jean Tirole and Armin Falk][25] ca
 
 Rajkamal Iyer and Manju Puri used epidemiological models similar to Robert Shiller in _Narrative Economics_ to [analyze a bank run][29] and how the contagion spreads. They analyzed a run on a cooperative bank in Gujarat in 2001, which led to a run on a different bank that had no connection to the bank facing the run. They found that social networks played an important role in causing runs:
 
- <p class="has-medium-font-size">
+ <p>
 > We further want to understand how contagion effects of bank run behavior spreads among depositors. For this purpose we explore and employ methods from the rich epidemiology literature that spends considerable effort in examining how diseases spread. We further want to understand how contagion effects of bank run behavior spreads among depositors. For this purpose we explore and employ methods from the rich epidemiology literature that spends considerable effort in examining how diseases spread. Using these models we are able to estimate and quantify transmission probabilities. We estimate the average transmission probability is 3% via social groups (introducer network) and 5% via neighborhood (neighborhood based network). We also find that contagion due to social networks peaks in the second day of the crisis. We discuss implications in terms of timing of regulatory or preventive measures.
  </p>
  
@@ -131,7 +131,7 @@ Critics have been shouting that guaranteeing all the deposits of Signature Bank 
 
 Forget the 2023 season of bank bailouts; we're still arguing 15 years later about whether bailing out the big banks in 2008 was the right decision. This crisis has once again highlighted the centrality of banks, not just as custodians of people's money but as central nodes through which all the money in a system flows. This reminds me of Matt Taibbi's evocative [description][43] of Goldman Sachs in 2010:
 
- <p class="has-medium-font-size">
+ <p>
 > The first thing you need to know about Goldman Sachs is that it’s everywhere. The world’s most powerful investment bank is a great vampire squid wrapped around the face of humanity, relentlessly jamming its blood funnel into anything that smells like money.
  </p>
 
@@ -141,7 +141,7 @@ Bailing out banks is never an easy decision, especially when the rich are presum
 
 Everybody is debating whether bailing out banks was right or wrong, so there's no point in beating a dead horse. Beating dead horses is not good. What was missing in this debate was the impact of bank failures on society. Even a cursory look at the history of bank failures shows that banking failures can have a devastating impact. Of course, the SVB crisis isn't systemic, but it's not hard to imagine an alternate reality where the regulators didn't act and the contagion spread to other banks. 
 
- <p class="has-medium-font-size">
+ <p>
 > As many of the theoretical models and some evidence suggest, even if the bank is fundamentally solvent, bank runs can still occur because depositors can run in anticipation of a run.
  </p>
  
@@ -153,7 +153,7 @@ Ok, how bad can bank failures really be?
 
 In a [2019 study][45], Sebastian Doerr and co-authors found that the German banking crisis starting in 1931 played a crucial role in the popularity of Hitler:
 
- <p class="has-medium-font-size">
+ <p>
 > Greater economic collapse was one important mechanism that links the banking crisis to Nazi voting. While unemployment did not affect Nazi votes, income declines driven by exposure to Danatbank and Dresdner Bank (DD) strongly increased support for the Nazi party (NSDAP) – a one standard deviation decline in income caused by DD was associated with a 4.3% rise in Nazi support (while the average change in NSDAP vote share from 1930 to 1933 was 22%). In contrast, a one standard deviation change in income (not predicted by DD exposure) increased Nazi votes by only 1.1%.
  </p>
  
@@ -165,7 +165,7 @@ In his magisterial book "[Crashed][46]," historian Adam Tooze paints a [sordid p
 
 This is corroborated by [other evidence][49] as well: 
 
- <p class="has-medium-font-size">
+ <p>
 > When the imposition of the 1933 U.S. Silver Purchase program drained Chinese banks of silver, firms reliant on those banks that were more exposed to silver outflow experienced more labor unrest and Communist Party membership growth among their workforce Braggion et al. (2020).
  </p>
 
@@ -204,11 +204,11 @@ I would love to see more studies specifically looking at the impact of the exper
 
 As I was writing this post, I came across this wonderful paper bu Carola Frydman and Chenzi Xu. Here's an excerpt: 
 
- <p class="has-medium-font-size">
+ <p>
 > Banking crises have large negative effects on the real economy. Shocks to financial institutions affect a wide range of outcomes, from employment and output to political participation. Although the magnitudes of the effects of disruptions to credit intermediation on real outcomes are hard to contrast across studies, they are often large and long-lasting.
  </p>
  
- <p class="has-medium-font-size">
+ <p>
 > Living through a banking crisis may also affect long-term outcomes by shaping the risk preferences of a generation. Individuals that experienced low stock market returns throughout their lives report in survey data to be less willing to take financial risk and to participate in the stock market (Malmendier and Nagel, 2011). Koudijs and Voth (2016) lever a historical event to validate this view. In 1772, an investor syndicate speculating in Amsterdam went bankrupt. While distress was publicly known, lenders who were exposed but did not lose any money altered their behavior relative to unexposed ones, asking for much higher haircuts after this experience.
  </p>
  

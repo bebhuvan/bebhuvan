@@ -62,11 +62,11 @@ On average, banks with higher deposit outflows and maturity mismatches pre-crisi
 ##### How crises spread
 The geographical proximity of banks and interbank bank funding networks were key nodes for the propagation of crises. Emerging markets' sovereign debt is a common vector through which crises spread internationally as forced fire sales create a vicious feedback loop. Hot money inflows into emerging markets also _import _financial instability. The other important node is overseas funding sources. This was the route through which the 2008 financial crisis spread to Europe. The European banks were funding themselves in the US wholesale funding markets.
 
- <p class="has-medium-font-size">
+ <p>
 > Following the collapse of a major interbank lender in 1866 London, 17% of international banks headquartered there failed, many of which had to close their subsidiary operations abroad. Xu (2022) shows that these failures not only had a direct impact on the supply of credit where operations ended, but also that bank connections transmitted the heightened cost of credit in the London interbank market to other countries.
  </p>
  
- <p class="has-medium-font-size">
+ <p>
 > Crises are often transmitted to institutions that themselves were not exposed to asset value declines. For example, runs on trust companies—the shadow banks of the era—during the 1907 Panic were triggered by fears that a few trust company directors were involved in a speculation scandal that was unrelated to their corporate clients. Frydman et al. (2015) show that non-financial firms that had board interlocks with the most affected trust companies experienced worse outcomes. These affiliations alone can account for more than 18 percent of the aggregate decline in corporate investment in the U.S. in 1908. The effects were worse and more persistent for smaller firms, pointing to a potential role for asymmetries of information in aggravating the economic contraction.
  </p>
  
@@ -93,7 +93,7 @@ One of the earlier examples was the intervention of the Bank of Amsterdam. In 17
 
 A consistent theme across history is that as central banks learn from crises, they have become unhesitant to intervene and stabilize financial markets. The growing interventions of central banks have led to the topic of moral hazard becoming a permanent topic of debate among banking observers. The authors note that despite the concerns about moral hazard, there isn't much quantitative evidence.
 
- <p class="has-medium-font-size">
+ <p>
  Early central bank interventions often targeted specific institutions and were in that sense more akin to specialized rescue missions than widespread liquidity injections. For example, when the Comptoir d’Escompte found itself in financial difficulties in 1889, the Banque de France promptly provided liquidity and ensured an orderly liquidation of what was clearly an insolvent institution (Hautcoeur et al., 2014). To counter moral hazard, the Bank applied severe and observable penalties to managers and directors
  </p>
  
@@ -128,7 +128,7 @@ You could point out the GameStop and AMC Entertainment <a rel="noreferrer noope
 
 To be fair, there have been historical instances of banking panic affecting sound banks, but that wasn't the case with Silicon Valley Bank.
 
- <p class="has-medium-font-size">
+ <p>
 > The way a panic unfolds can also inform models of bank runs. The failure of a savings bank triggered runs on the EISB in 1854. Although there was no evidence of insolvency, uninformed depositors were more likely to close their accounts (O Gráda and White, 2003). Once the panic unfolded, more sophisticated depositors joined in, consistent with selffulfilling runs without fundamental shocks to bank solvency (Diamond and Dybvig, 1983). Yet during widespread runs across the country in 1857, informed depositors were the first to run on the EISB. This latter case is instead suggestive that changes in bank health information in an environment with incomplete information, as in Gorton (1985) or Chari and Jagannathan (1988), may play an important role in diffusing financial instability.
  </p>
  
@@ -148,7 +148,7 @@ I also loved [this money shot by Gillian Tett][7].
 ### Curse of specialization?
 One of the criticisms of Silicon Valley Bank was that it specialized in catering to a narrow set of tech startups, and this concentrated business model played a role in its demise. This begs the question: is specialization uncommon, and is it bad? [Kristian Blickle, Cecilia Parlatore, and Anthony Saunders][9] analyzed the loan portfolios of 40 stress-tested US banks. They find that most banks develop a specialization in lending to certain industries and lend more to such industries.
 
- <p class="has-medium-font-size">
+ <p>
  The average bank invests 8% more of its portfolio in its most favored industry than a fully diversified bank. Moreover, banks have – on average – one or two preferred industries, in which they are over-invested to a significant degree. In all other industries, they are either not invested or invested in accordance with diversification expectations.<br /><br />Moreover, banks have – on average – one or two preferred industries, in which they are over-invested to a significant degree. In all other industries, they are either not invested or invested in accordance with diversification expectations.<br /><br />We can see that specialization is associated with differences in loan terms and loan performance. It appears that loans in favored industries are larger, with lower rates, have a longer maturity and – perhaps most importantly – are less likely to become non-performing. This would imply that specialized banks may have an advantage in selecting or monitoring loans in industries in which they have specialized.
  </p>
 ![](/blog-images/Specialized-banking.jpeg) 

@@ -15,9 +15,9 @@ There was a brief moment when I stopped following the industry, about 4-5 years 
 
 I've been ruminating more and more about the industry ever since because the constant drumbeat of negative news keeps getting louder. From the time I published the long ass post, shit's been getting more real. [The Messenger][1], a news site started by veteran media executives, raised $50 million and shut down in January 2024 after burning it all in 8 months.
 
-In the same month, Condé Nast laid off key staffers at the legendary music publication [Pitchfork][2] and folded it into _GQ_. The _Los Angeles Times, Wall Street Journal, Time, Sports Illustrated, _Business Insider_, _and other publications laid off hundreds of employees. In India, Times Internet laid off several hundred employees.
+In the same month, Condé Nast laid off key staffers at the legendary music publication [Pitchfork][2] and folded it into *GQ*. The *Los Angeles Times, Wall Street Journal, Time, Sports Illustrated,* *Business Insider,* and other publications laid off hundreds of employees. In India, Times Internet laid off several hundred employees.
 
-In 2023, there were over [3,000][3] layoffs in the US. 2024 seems to be on track to break that record. _The New Yorker _and several other [media observers][4] called the latest bout of media troubles an “[extinction-level event][5].” In 2024, people talk about news publishers with the enthusiasm and cheerfulness of funeral announcements.
+In 2023, there were over [3,000][3] layoffs in the US. 2024 seems to be on track to break that record. *The New Yorker* and several other [media observers][4] called the latest bout of media troubles an "[extinction-level event][5]." In 2024, people talk about news publishers with the enthusiasm and cheerfulness of funeral announcements.
 
 After following this bloodbath over the last 6 months, I couldn't help but wonder: are we closer than ever to a world without news?
 
@@ -46,7 +46,7 @@ But as a thought experiment, let's assume there was no print or digital news. Wh
 #### Tin-pot republic
 Democracy would choke and gag in the darkness as it’s slowly BDSM’d to death. We’d watch this spectacle on shorts and reels with catchy Bollywood background music. Nobody would agree on anything, and we'd all have our own special versions of the truth.
 
-Our world would look something like a version of the movie _[Idiocracy][9]—_the greatest movie ever made_. _It’s a parody set in the year 2505. Joe Bauers, played by Luke Wilson, signs up for a secret army experiment that goes wrong. He wakes up 500 years in the future in a world that has become spectacularly dumb.
+Our world would look something like a version of the movie *[Idiocracy][9]*—the greatest movie ever made. It's a parody set in the year 2505. Joe Bauers, played by Luke Wilson, signs up for a secret army experiment that goes wrong. He wakes up 500 years in the future in a world that has become spectacularly dumb.
 
 The president of the United States is a wrestler and a porn star. The economy has cratered, and cities have become dust bowls with mountains of garbage everywhere. People live on junk food and entertain themselves by watching shows with titles like “Ow! My Balls!” The US is also facing a famine because they water the crops with an energy drink called “Brawndo.” People have become so dumb that all it takes to become the smartest person in the world is to identify basic shapes and answer questions like 2+5.
 
@@ -57,7 +57,7 @@ Of course, it goes without saying that news publishers aren’t always good at t
 #### **Massaged news**
 Indian media is more concentrated than it ever was. Many of the major outlets are now owned by billionaires. Mukesh Ambani owns [Network18][10], which owns properties like CNBC, CNN-News18, Moneycontrol, and Firstpost. Gautam Adani now owns NDTV, Quint, and IANS.
 
-This isn’t just an Indian phenomenon. Jeff Bezos owns _The Washington Post, _Laurene Powell Jobs owns _The Atlantic, _Marc Benioff _owns Time, _and there are plenty of other examples. As much as we romanticize the idea of a benevolent billionaire, rich people owning media is not [without issues][11]. Anyone who thinks otherwise is deluded. Media companies have to dance to the tunes of their masters—that’s the price of not going out of business.
+This isn't just an Indian phenomenon. Jeff Bezos owns *The Washington Post*, Laurene Powell Jobs owns *The Atlantic*, Marc Benioff owns *Time*, and there are plenty of other examples. As much as we romanticize the idea of a benevolent billionaire, rich people owning media is not [without issues][11]. Anyone who thinks otherwise is deluded. Media companies have to dance to the tunes of their masters—that's the price of not going out of business.
 
 As tragic as it sounds, I’d rather have a news outlet owned by a billionaire than a bankrupt one. That’s how bad the news business is.
 
@@ -111,12 +111,12 @@ Media companies will do well to learn from individual creators. Channels like Th
 The typical uppity attitude of media companies and journalists is a liability, and it will be their undoing.
 
 #### **Billionaires**
-Billionaires are starting to regret their media purchases. _The Washington Post _lost $[100 million][16] last year and is at a crossroads. Marc Benioff, who owns _Time_ magazine, laid off [30 people][17]. _The Los Angeles Times,_ owned by billionaire Patrick Soon-Shiong, laid off [115 people][18]. There's no shortage of cautionary tales of billionaires trying to _save_ media, but they believe this time is always different.
+Billionaires are starting to regret their media purchases. *The Washington Post* lost $[100 million][16] last year and is at a crossroads. Marc Benioff, who owns *Time* magazine, laid off [30 people][17]. *The Los Angeles Times*, owned by billionaire Patrick Soon-Shiong, laid off [115 people][18]. There's no shortage of cautionary tales of billionaires trying to *save* media, but they believe this time is always different.
 
 My bet is that the rich people will cut their losses sooner or later, and these storied publishers will be back to square one. Media rarely has happy endings. It's either less horrible or more horrible.
 
 #### **Independents and collectives**
-A few years ago, traditional news publications in the US had a mild case of _Substack panic_. For a minute, it seemed that all [star reporters][19] would leave to start their own paid newsletters. There were some success stories, like [Casey Newton][20] and [Matt Yglesias][21], but the trend seems to have died down. Reporters leaving to go solo isn’t a thing in India, barring a few like Ravish Kumar and Barkha Dutt. I wouldn’t be surprised if this trend picks up in India over the next five years.
+A few years ago, traditional news publications in the US had a mild case of *Substack panic*. For a minute, it seemed that all [star reporters][19] would leave to start their own paid newsletters. There were some success stories, like [Casey Newton][20] and [Matt Yglesias][21], but the trend seems to have died down. Reporters leaving to go solo isn't a thing in India, barring a few like Ravish Kumar and Barkha Dutt. I wouldn't be surprised if this trend picks up in India over the next five years.
 
 Collectives are a new model that I’m excited about. Sick and tired of precarious employment situations, journalists are banding together to form [collectives or cooperatives][22]. The writers own the collective and operate it like a media company. This ensures that the incentives are aligned in the right way. Several collectives, like Defector, Hell Gate, and Flaming Hydra, have popped up on the scene.
 
@@ -148,31 +148,27 @@ Government involvement in media comes with its own issues, but it's better than 
 #### **Throw the kitchen sink**
 In a 2009 essay, media guru Clay Shirky has a [memorable line][32]:
 
- <p>
- The answer is: <strong>Nothing will work, but everything might</strong>. Now is the time for experiments, lots and lots of experiments, each of which will seem as minor at launch as craigslist did, as Wikipedia did, as octavo volumes did.
- </p>
+> The answer is: **Nothing will work, but everything might**. Now is the time for experiments, lots and lots of experiments, each of which will seem as minor at launch as craigslist did, as Wikipedia did, as octavo volumes did.
 
-It’s very hard, if not impossible for the media company of the future to survive and thrive on just one revenue line. Successful media companies such as _The New York Times_ (NYT), _The Economist_, _Financial Times_ (FT), and Condé Nast have their diversified revenue sources to thank for their survival.
+It's very hard, if not impossible for the media company of the future to survive and thrive on just one revenue line. Successful media companies such as *The New York Times* (NYT), *The Economist*, *Financial Times* (FT), and Condé Nast have their diversified revenue sources to thank for their survival.
 
-In the case of NYT, it’s subscriptions and print, but the company has built a [phenomenal bundle][33] that includes news, games, audio, commerce, and cooking. _The Economist _generates revenues from subscriptions, courses, and research services.
+In the case of NYT, it's subscriptions and print, but the company has built a [phenomenal bundle][33] that includes news, games, audio, commerce, and cooking. *The Economist* generates revenues from subscriptions, courses, and research services.
 
 The FT generates [revenues][34] from subscriptions, consulting, events, and recently launched a venture investing arm. Building diversified revenue streams is an existential imperative for media companies. [Condé Nast][35] generates over 40% of its revenues from subscriptions and commerce. I think it’s possible to generate revenue streams by solving the problems of audiences.
 
 #### **Innovation**
 I hate using this word, but bear with me. Quality in media is table stakes; it’s the least that publishers have to ensure to be even considered by readers. But it isn’t enough to ensure survival.
 
-Traditional media companies still operate like factories. They _manufacture _information and _dump _it on a website, expecting people to discover and pay for it without any consideration for what the readers want.
+Traditional media companies still operate like factories. They *manufacture* information and *dump* it on a website, expecting people to discover and pay for it without any consideration for what the readers want.
 
-I was listening to Anant Goenka, the Executive Director of _The Indian Express_ Group, on [a podcast,][36] and he said something that was stunning to me:
+I was listening to Anant Goenka, the Executive Director of *The Indian Express* Group, on [a podcast,][36] and he said something that was stunning to me:
 
- <p>
- <strong>Ananth Goenka:</strong> I think one of the big wins, and it's tough to kind of say, but since it's a long conversation, we can get deep into things. I remember I had a session with my chief editor, my father, my CEO, and a bunch of us, kind of just four or five of us, sat down. <strong>I was just kind of saying that somewhere, the consumer, the reader, is not central to our decision making as a content producer.</strong> Somewhere, I mean, the user wants to talk about climate change, artificial intelligence, mental health, gender issues, and the taboos with being sexually experimental. That's kind of where the English-speaking, urban, Express profile reader is.
- </p>
- 
+> **Ananth Goenka:** I think one of the big wins, and it's tough to kind of say, but since it's a long conversation, we can get deep into things. I remember I had a session with my chief editor, my father, my CEO, and a bunch of us, kind of just four or five of us, sat down. **I was just kind of saying that somewhere, the consumer, the reader, is not central to our decision making as a content producer.** Somewhere, I mean, the user wants to talk about climate change, artificial intelligence, mental health, gender issues, and the taboos with being sexually experimental. That's kind of where the English-speaking, urban, Express profile reader is.
+>
 > However, we're kind of, in a sense, still trying to make them read about our politics, which is great and a super thing, but we're also trying to make them read about over-investing resources and covering, you know, that bus accident in a random rural part of India. These are all important to uncover, but somewhere we're not addressing these needs, and some people are kind of missing this, missing them.
- 
+>
 > Even if we do address their needs and even if we do get the content that we want to get them, we're not quite able to consistently engage with that user base enough for them to recognize that, hey, in this crowded market of one lakh registered newspapers and 500 news channels, there is one Indian Express which is consistently giving me high-quality, credible news and information on climate change. That hasn't yet happened.
- 
+>
 > The reason it hasn't happened is because we're not really thinking about the consumer.
 
 The fact that media executives have to say this out loud is tragic. The old-school model of manufacturing content to maximize advertising inventory is over. It won’t work, partly because few media companies have invested in building first-party data and good ad products. Most of them rely on programmatic advertising, which generates peanuts.
@@ -185,22 +181,20 @@ I can’t.
 
 With very few exceptions, they all suck.
 
-Daily newsletters and podcasts are habit-building products. If they are good, users look forward to them. This is why _[The Daily][37]_ by _The New York Times _and _[The Intelligence][38]_ by _The Economist _have been so successful. Both publishers also have an amazing bouquet of newsletters.
+Daily newsletters and podcasts are habit-building products. If they are good, users look forward to them. This is why *[The Daily][37]* by *The New York Times* and *[The Intelligence][38]* by *The Economist* have been so successful. Both publishers also have an amazing bouquet of newsletters.
 
-_The Economist _also launched an app-based digital edition at a [cheaper price][39] to attract younger audiences. Even the _[Financial Times][40] _launched a similar app aimed at social followers who hadn’t yet subscribed to anything. The Vox is another success story. They moved fast to build a brilliant [stable of podcasts][41].
+*The Economist* also launched an app-based digital edition at a [cheaper price][39] to attract younger audiences. Even the *[Financial Times][40]* launched a similar app aimed at social followers who hadn't yet subscribed to anything. The Vox is another success story. They moved fast to build a brilliant [stable of podcasts][41].
 
 It’s a tragedy that Indian media companies have ignored white spaces that require minimal investment, like newsletters, podcasts, and curated products aimed at younger audiences.
 
 #### **Curators**
 In a 2007 blog post, the famous media guru Jeff Jarvis wrote, “Cover what you do best. Link to the rest.” 17 years later, I think this is brilliant advice. Every media company tries to rehash the same news story in 100 different ways, and that’s a waste of resources. They do it because of SEO imperatives, but AI might make SEO less relevant.
 
-Publishers have a golden opportunity to specialize in a few areas and then become aggregators for the rest. The problem is that this is an unnatural way of thinking, but publishers have always been aggregators. Opinion pages are an example of it. I think there’s a brilliant opportunity for a new media company that is both a creator and a curator. The new CEO of _The Washington Post _[said as much recently][42]:
+Publishers have a golden opportunity to specialize in a few areas and then become aggregators for the rest. The problem is that this is an unnatural way of thinking, but publishers have always been aggregators. Opinion pages are an example of it. I think there's a brilliant opportunity for a new media company that is both a creator and a curator. The new CEO of *The Washington Post* [said as much recently][42]:
 
- <p>
- <strong>So you’re looking to go to make the Post’s footprint bigger, not to drill into smaller Washington lanes?</strong>
- </p>
- 
-> One of the many things we’re blessed with is that we’re probably one of the few mastheads in America that can help other news organizations and can think about aggregation. The fundamental challenge for the news industry is how, how do you deliver ever more specific verticals — people really, really want to know about the widget industry, but there’s only 1000 of them. How do I charge them enough? This is the fundamental challenge we’re facing and no one’s cracked it yet. We can play at an aggregation level.
+> **So you're looking to go to make the Post's footprint bigger, not to drill into smaller Washington lanes?**
+>
+> One of the many things we're blessed with is that we're probably one of the few mastheads in America that can help other news organizations and can think about aggregation. The fundamental challenge for the news industry is how, how do you deliver ever more specific verticals — people really, really want to know about the widget industry, but there's only 1000 of them. How do I charge them enough? This is the fundamental challenge we're facing and no one's cracked it yet. We can play at an aggregation level.
 
 #### Artificial intelligence
 My default frame of thinking about artificial intelligence is that it’s going to disrupt a lot of things, especially the media. In fact, it’s safe to assume that the information economy will never be the same.
@@ -220,17 +214,9 @@ It’s going to get harder for news publishers to build trust because of coordin
 
 Trust is going to become even more important as the tsunami of AI-generated crap gets bigger. It’s still early days, and Google is already [swamped ][45]with AI-generated bullshit, and it’ll only get worse. In such an environment, publishers have a golden opportunity to stand out as trusted voices.
 
-<hr class="wp-block-separator has-alpha-channel-opacity" />
+---
 
 **What do you think?**
-
-<div id="respond" class="comment-respond wp-block-post-comments-form">
- <h3 id="reply-title" class="comment-reply-title">
- Leave a Reply<small><a rel="nofollow" id="cancel-comment-reply-link" href="/wp-admin/export.php?type=hugo#respond" style="display:none;">Cancel reply</a></small>
- </h3>
-</div>
-
-<input type="hidden" name="comment_parent" id="comment_parent" value="" />
 
  [1]: https://www.semafor.com/article/01/30/2024/news-startup-the-messenger-decision
  [2]: https://www.semafor.com/article/02/04/2024/inside-conde-nasts-breakup-with-pitchfork

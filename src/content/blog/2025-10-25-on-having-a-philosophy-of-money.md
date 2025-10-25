@@ -8,9 +8,9 @@ tags:
   - Philosophy
 image: /blog-images/1279px-Marinus_Claesz._van_Reymerswaele_001.jpeg
 ---
-_This post was more stream of consciousness than deliberately structured, but I’m publishing it to stake out a thinking space. This is a topic I intend to return to in the future._
+_This post was more stream of consciousness than deliberately structured, but I'm publishing it to stake out a thinking space. This is a topic I intend to return to in the future._
 
-* * *
+---
 
 Our ability to do stupid things is only exceeded by our ability to rationalize that stupidity.
 
@@ -40,9 +40,9 @@ Philosophy has become a douchey word. Using “philosophy” in conversation is 
 
 No matter how douchey you find my usage of the word, we all have a philosophy of life, whether consciously or unconsciously. I don’t mean philosophy in some grand metaphysical or ontological sense (I just wanted to use those words—I still don’t know what they mean). I use philosophy in the colloquial sense: a shorthand for our beliefs, values, ethics, morals, and frameworks.
 
-Most people have an unconscious philosophy borrowed from others—a thin philosophy that doesn’t stand up to scrutiny. We imitate what we see in real life and movies, allowing ourselves to be shackled by the expectations of society, friends, family, and culture. As Oscar Wilde said:
+Most people have an unconscious philosophy borrowed from others—a thin philosophy that doesn't stand up to scrutiny. We imitate what we see in real life and movies, allowing ourselves to be shackled by the expectations of society, friends, family, and culture. As Oscar Wilde said:
 
-> “Most people are other people. Their thoughts are someone else’s opinions, their lives a mimicry, their passions a quotation.” ― Oscar Wilde, De Profundis
+> "Most people are other people. Their thoughts are someone else's opinions, their lives a mimicry, their passions a quotation." ― Oscar Wilde, De Profundis
 
 But some people deliberately create a philosophy of life. This philosophy is like—to use computer parlance—your operating system, the foundational layer that all your thoughts and decisions run on. It’s etched on your soul. This is what you rely on whenever you face a tricky moment, a deliberate moment, or a contemplative moment.
 
@@ -66,9 +66,9 @@ Isn’t this the same as beating the shit out of a kid and kneecapping their fut
 
 And yes, one might easily retort, “Oh, it’s only uneducated people who make these mistakes.” Nothing could be farther from the truth. In my experience, there’s absolutely no correlation between financial success and formal education. Some people I consider financial role models, including my mom, have only primary school education.
 
-Financial stupidity is also not limited by age either. Anybody is capable of doing spectacularly stupid things—whether you’re a 65-year-old retiree, a rocket scientist, or a 27-year-old working on artificial intelligence.
+Financial stupidity is also not limited by age either. Anybody is capable of doing spectacularly stupid things—whether you're a 65-year-old retiree, a rocket scientist, or a 27-year-old working on artificial intelligence.
 
-\## So what does a philosophy of money look like?
+## So what does a philosophy of money look like?
 
 Simple: your financial philosophy should be an extension of your life philosophy. Your values about money should mirror your values about life. If you’re deliberate about life, be deliberate about money. If ethics matter to you in life, they should matter in money decisions.”
 
@@ -116,17 +116,15 @@ I keep stressing “basics” because basics are all you need. You don’t need 
 
 Here are a few resources:
 
-1.  [Varsity](https://zerodha.com/varsity/)
-    
-2.  [Freefincal](https://freefincal.com/)
-    
+1. [Varsity](https://zerodha.com/varsity/)
+
+2. [Freefincal](https://freefincal.com/)
 
 If you don't want to learn, get a financial advisor. How do you get one? Tricky, but there are good directories with people who charge a small fee to take care of your finances. Here are a few links:
 
-1.  [Fee-only India](https://www.feeonlyindia.com/)
-    
-2.  [The Financialist](https://thefinancialist.co/)
-    
+1. [Fee-only India](https://www.feeonlyindia.com/)
+
+2. [The Financialist](https://thefinancialist.co/)
 
 **4\. Pay off costly debt.**
 
@@ -198,9 +196,9 @@ I come from a typical middle-class Indian family, which means money was always a
 
 Jared Diamond calls this "[constructive paranoia](https://www.youtube.com/results?search_query=jared+diamond+world+knowlede+forum)":
 
-> “I’m paranoid. I think of everything that could go wrong, but I try to benefit from it.” That’s exactly it. Constantly thinking about the worst that could happen and being prepared for most of those inevitabilities is what makes me, ironically, peaceful.
+> "I'm paranoid. I think of everything that could go wrong, but I try to benefit from it."
 
-That’s exactly it. Constantly thinking about the worst that could happen and being prepared for most of it is what makes me, ironically, peaceful.
+That's exactly it. Constantly thinking about the worst that could happen and being prepared for most of it is what makes me, ironically, peaceful.
 
 Another core aspect of my philosophy is to “sandbox” money. In technical terms, a sandbox is an environment where you test code without worrying about damage to other systems. For me, money is a means to an end. It enables me to do things and gives me freedom to think about things other than money. It’s an enabler—not an end, but a means.
 
@@ -210,15 +208,15 @@ Money is elastic. It’s not just physical—it’s imaginary, mental, and elast
 
 Having a philosophy shrinks the scope of money in my head. It reduces the mental space money occupies and leaves room for other things that matter—things that improve the odds of thinking about what it means to be human and to live a meaningful life the way I define it.
 
-Maybe it’s a miserable way to live. That’s fine. We never have a perfectly calibrated philosophy of life. These philosophies evolve and have to evolve. As Heraclitus said:
+Maybe it's a miserable way to live. That's fine. We never have a perfectly calibrated philosophy of life. These philosophies evolve and have to evolve. As Heraclitus said:
 
-> “No man ever steps in the same river twice, for it’s not the same river and he’s not the same man.”
+> "No man ever steps in the same river twice, for it's not the same river and he's not the same man."
 
 The same applies to a philosophy of money.
 
-* * *
+---
 
-Your philosophy won’t look like mine. It shouldn’t. But having _something_—some coherent framework that extends from how you think about life to how you think about money—is what separates deliberate financial decisions from spectacularly dumb ones.
+Your philosophy won't look like mine. It shouldn't. But having _something_—some coherent framework that extends from how you think about life to how you think about money—is what separates deliberate financial decisions from spectacularly dumb ones.
 
 Because the alternative is what I witnessed on that phone call: a 65-year-old person gambling away years of work because he never stopped to think about what money actually means to him.
 

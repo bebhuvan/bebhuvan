@@ -8,18 +8,14 @@ media:
     label: Project Images
     input: public/project-images
     output: /project-images
-    extensions: [jpg, jpeg, png, webp]
+    extensions: [jpg, jpeg, png, webp, gif]
   - name: update_media
     label: Update Images
     input: public/update-images
     output: /update-images
-    extensions: [jpg, jpeg, png, webp]
+    extensions: [jpg, jpeg, png, webp, gif]
 
 components:
-  rich_body:
-    label: Rich Text Body
-    type: rich-text
-    required: true
   summary_text:
     label: Summary Text
     type: text
@@ -71,10 +67,25 @@ content:
           media: blog_media
       - name: body
         label: Content
-        component: rich_body
+        type: rich-text
+        required: false
         description: 'Write using the rich-text editor. Slash commands and Markdown shortcuts are supported.'
         options:
-          media: blog_media
+          media: true
+          path: public/blog-images
+          extensions: [jpg, jpeg, png, webp, gif]
+          toolbar:
+            - bold
+            - italic
+            - heading
+            - link
+            - code
+            - quote
+            - ul
+            - ol
+            - image
+            - table
+            - hr
 
   - name: projects
     label: Projects
@@ -107,10 +118,25 @@ content:
           media: project_media
       - name: body
         label: Details
-        component: rich_body
+        type: rich-text
+        required: false
         description: 'Longer description and background. Slash commands available for headings and lists.'
         options:
-          media: project_media
+          media: true
+          path: public/project-images
+          extensions: [jpg, jpeg, png, webp, gif]
+          toolbar:
+            - bold
+            - italic
+            - heading
+            - link
+            - code
+            - quote
+            - ul
+            - ol
+            - image
+            - table
+            - hr
 
   - name: updates
     label: Quick Updates
@@ -143,7 +169,22 @@ content:
           media: update_media
       - name: body
         label: Update
-        component: rich_body
+        type: rich-text
+        required: false
         description: 'Use the rich-text editor for quick notes. Slash commands enabled.'
         options:
-          media: update_media
+          media: true
+          path: public/update-images
+          extensions: [jpg, jpeg, png, webp, gif]
+          toolbar:
+            - bold
+            - italic
+            - heading
+            - link
+            - code
+            - quote
+            - ul
+            - ol
+            - image
+            - table
+            - hr

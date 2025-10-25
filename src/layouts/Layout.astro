@@ -1,5 +1,6 @@
 ---
 // All CSS will be inlined in the head for maximum performance
+import '../styles/global.css';
 
 export interface Props {
   title: string;
@@ -42,11 +43,7 @@ const fullImageUrl = new URL(defaultImage, Astro.site);
     
     <!-- Preload LCP image -->
     <link rel="preload" as="image" href="/profile-pic.webp" />
-    
-    <!-- Load all CSS asynchronously to avoid render blocking -->
-    <link rel="preload" href="/global-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/global-styles.css"></noscript>
-    
+
     <!-- Minimal critical CSS inline -->
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
