@@ -17,6 +17,11 @@ const blogPosts = (await getCollection('blog'))
 // Get RSS updates from all sites (limit to 5)
 const rssUpdates = await aggregateRSSFeeds(5);
 
+// Get recent manual updates (limit to 5)
+const manualUpdates = (await getCollection('updates'))
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+  .slice(0, 5);
+
 // Get projects
 const projects = (await getCollection('projects'))
   .sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
@@ -90,6 +95,35 @@ const projects = (await getCollection('projects'))
             </a>
           </article>
         ))}
+      </div>
+      <div class="section-footer">
+        <a href="/all-updates" class="view-all">View all updates →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="manual-updates" id="manual-updates">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">📌 Notes & Thoughts</h2>
+      </div>
+      <div class="micro-posts">
+        {manualUpdates.map(async (update) => {
+          const { Content } = await update.render();
+          return (
+            <UpdateCard
+              title={update.data.title}
+              content={update.body}
+              publishDate={update.data.publishDate}
+              slug={update.slug}
+              link={update.data.link}
+              linkTitle={update.data.linkTitle}
+            />
+          );
+        })}
+      </div>
+      <div class="micro-footer">
+        <a href="/updates" class="view-all-link">View all notes →</a>
       </div>
     </div>
   </section>

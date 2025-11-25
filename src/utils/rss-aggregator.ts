@@ -7,7 +7,6 @@ const RSS_FEEDS = [
   { url: 'https://bhuvan.substack.com/feed', source: 'Substack' },
   { url: 'https://fromthedumpsterfire.com/rss.xml', source: 'FromTheDumpsterFire' },
   { url: 'https://rabbitholes.garden/rss.xml', source: 'Rabbit Holes' },
-  { url: 'https://collections.paperlanterns.ink/rss.xml', source: 'Collections' },
   { url: 'https://paperlanterns.ink/rss.xml', source: 'Paper Lanterns' },
 ];
 
