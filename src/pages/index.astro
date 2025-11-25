@@ -6,6 +6,7 @@ import Footer from '../components/Footer.astro';
 import BlogCard from '../components/BlogCard.astro';
 import UpdateCard from '../components/UpdateCard.astro';
 import ProjectCard from '../components/ProjectCard.astro';
+import { aggregateRSSFeeds } from '../utils/rss-aggregator';
 
 // Get recent blog posts (limit to 3)
 const blogPosts = (await getCollection('blog'))
@@ -13,10 +14,8 @@ const blogPosts = (await getCollection('blog'))
   .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
   .slice(0, 3);
 
-// Get recent updates (limit to 5)
-const updates = (await getCollection('updates'))
-  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
-  .slice(0, 5);
+// Get RSS updates from all sites (limit to 5)
+const rssUpdates = await aggregateRSSFeeds(5);
 
 // Get projects
 const projects = (await getCollection('projects'))
@@ -69,24 +68,28 @@ const projects = (await getCollection('projects'))
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">📝 Quick Updates</h2>
+        <p class="section-subtitle">Latest from across my projects</p>
       </div>
-      <div class="micro-posts">
-        {updates.map(async (update) => {
-          const { Content } = await update.render();
-          return (
-            <UpdateCard
-              title={update.data.title}
-              content={update.body}
-              publishDate={update.data.publishDate}
-              slug={update.slug}
-              link={update.data.link}
-              linkTitle={update.data.linkTitle}
-            />
-          );
-        })}
-      </div>
-      <div class="micro-footer">
-        <a href="/updates" class="view-all-link">View all updates →</a>
+      <div class="rss-updates">
+        {rssUpdates.map((update) => (
+          <article class="rss-update-card">
+            <div class="update-header">
+              <span class="update-source">{update.source}</span>
+              <time class="update-date">
+                {update.pubDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+              </time>
+            </div>
+            <h3 class="update-title">
+              <a href={update.link} target="_blank" rel="noopener noreferrer">
+                {update.title}
+              </a>
+            </h3>
+            <p class="update-excerpt">{update.excerpt}</p>
+            <a href={update.link} target="_blank" rel="noopener noreferrer" class="update-link">
+              Read more →
+            </a>
+          </article>
+        ))}
       </div>
     </div>
   </section>
