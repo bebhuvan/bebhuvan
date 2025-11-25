@@ -36,4 +36,13 @@ const projects = defineCollection({
   }),
 });
 
-export const collections = { blog, updates, projects };
+const now = defineCollection({
+  type: 'content',
+  schema: z.object({
+    date: z.coerce.date(),
+    category: z.enum(['thinking', 'working', 'mindlog']),
+    title: z.string().optional(),
+  }),
+});
+
+export const collections = { blog, updates, projects, now };

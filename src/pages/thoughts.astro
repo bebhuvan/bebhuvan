@@ -1,0 +1,148 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+// Get all thoughts sorted by date
+const allThoughts = await getCollection('now');
+const thoughts = allThoughts
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+// Format date for display
+function formatDate(date: Date) {
+  return date.toISOString().split('T')[0];
+}
+---
+
+<Layout
+  title="Thoughts - Bhuvan"
+  description="A running log of things on my mind"
+>
+  <Header />
+
+  <div class="thoughts-page">
+    <div class="container">
+      <div class="page-header">
+        <h1>All Thoughts</h1>
+        <p class="page-description">A running log of what's on my mind, in reverse chronological order.</p>
+      </div>
+
+      <div class="thoughts-content">
+        {thoughts.map(async (thought) => {
+          const { Content } = await thought.render();
+          return (
+            <article class="thought-entry">
+              <time class="thought-date">{formatDate(thought.data.date)}</time>
+              <div class="thought-body">
+                <Content />
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </div>
+  </div>
+
+  <Footer />
+</Layout>
+
+<style>
+.thoughts-page {
+  padding: 3rem 0 5rem;
+  min-height: calc(100vh - 200px);
+}
+
+.page-header {
+  margin-bottom: 4rem;
+  border-bottom: 2px solid var(--primary-orange);
+  padding-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.page-description {
+  font-size: 1.1rem;
+  color: var(--text-medium);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.thoughts-content {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.thought-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.thought-entry:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.thought-date {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-family: monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.thought-date::before {
+  content: '→ ';
+  color: var(--primary-orange);
+  margin-right: 0.25rem;
+}
+
+.thought-body {
+  font-size: 1.05rem;
+  color: var(--text-dark);
+  line-height: 1.7;
+}
+
+.thought-body p {
+  margin: 0 0 1rem 0;
+}
+
+.thought-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .thoughts-page {
+    padding: 2rem 0 3rem;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .page-description {
+    font-size: 1rem;
+  }
+
+  .thoughts-content {
+    gap: 2rem;
+  }
+
+  .thought-entry {
+    padding-bottom: 2rem;
+  }
+}
+</style>

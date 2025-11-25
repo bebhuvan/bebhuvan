@@ -1,8 +1,9 @@
 ---
 title: "Rabbit Holes"
-description: "Wonderful things I discover on the internet."
-link: "https://www.rabbitholes.garden/"
-order: 2
+description: "Deep dives into interesting topics, tangents, and explorations worth getting lost in."
+link: "https://rabbitholes.garden"
+status: "active"
+order: 4
 ---
 
-A garden of fascinating discoveries from the depths of the internet. Rabbit Holes is where I collect the weird, wonderful, and thought-provoking things that make me go down endless internet rabbit holes.
+A garden of curiosity where interesting topics branch into fascinating tangents. For when you want to fall down the rabbit hole and see where it leads.

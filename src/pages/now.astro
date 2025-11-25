@@ -1,0 +1,537 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+// Get recent thoughts from content collection (limit to 5 most recent)
+const allThoughts = await getCollection('now');
+const recentThoughts = allThoughts
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 5);
+
+// Auto-generate last updated date from most recent thought
+const lastUpdatedDate = recentThoughts.length > 0
+  ? recentThoughts[0].data.date
+  : new Date();
+const lastUpdated = lastUpdatedDate.toLocaleDateString('en-US', {
+  month: 'long',
+  year: 'numeric'
+});
+
+const activeProjects = [
+  {
+    name: "Dhwani",
+    description: "Curating and preserving Indian literary works",
+    link: "https://dhwani.bebhuvan.com"
+  },
+  {
+    name: "Paper Lanterns",
+    description: "Collections of fascinating internet finds",
+    link: "https://paperlanterns.ink"
+  },
+  {
+    name: "Collections.PaperLanterns",
+    description: "Curated collections of historical letters and correspondence",
+    link: "https://collections.paperlanterns.ink"
+  },
+  {
+    name: "FromTheDumpsterFire",
+    description: "Salvaging good things from the internet chaos",
+    link: "https://fromthedumpsterfire.com"
+  },
+  {
+    name: "Rabbit Holes",
+    description: "Deep dives into interesting topics and tangents",
+    link: "https://rabbitholes.garden"
+  },
+  {
+    name: "Seneca.ink",
+    description: "Seneca's Letters to Lucilius - a complete collection",
+    link: "https://seneca.ink"
+  }
+];
+
+const links = [
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/bebhuvan/",
+    description: "Professional stuff"
+  },
+  {
+    name: "Twitter",
+    url: "https://twitter.com/bebhuvan",
+    description: "Random thoughts and rants"
+  },
+  {
+    name: "Substack",
+    url: "https://bhuvan.substack.com/",
+    description: "Occasional long-form writing"
+  },
+  {
+    name: "Z-Connect",
+    url: "https://zerodha.com/z-connect/author/bhuvanesh-r",
+    description: "Work writing at Zerodha"
+  },
+  {
+    name: "Email",
+    url: "mailto:bhuvan@bebhuvan.com",
+    description: "Old-school communication"
+  }
+];
+
+// Format date for display
+function formatDate(date: Date) {
+  return date.toISOString().split('T')[0];
+}
+---
+
+<Layout
+  title="Now - Bhuvan"
+  description="What I'm doing now, what I'm thinking about, and what's on my mind"
+>
+  <Header />
+
+  <div class="now-page">
+    <div class="container">
+
+      <div class="page-meta">
+        <span class="page-label">/now</span>
+        <time class="last-updated">{lastUpdated}</time>
+      </div>
+
+      <div class="now-content">
+
+        <div class="intro">
+          <p>Currently juggling projects, wrestling with ideas, and occasionally having coherent thoughts about the internet.</p>
+        </div>
+
+        <!-- Projects -->
+        <section class="section">
+          <h2 class="section-number">01</h2>
+          <div class="section-content">
+            <h3 class="section-title">Projects I'm Running</h3>
+            <div class="item-list">
+              {activeProjects.map((project) => (
+                <div class="item">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" class="item-title">
+                    {project.name}
+                  </a>
+                  <p class="item-description">{project.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <!-- Thoughts -->
+        <section class="section">
+          <h2 class="section-number">02</h2>
+          <div class="section-content">
+            <h3 class="section-title">On My Mind</h3>
+            <div class="thoughts">
+              {recentThoughts.map(async (thought) => {
+                const { Content } = await thought.render();
+                return (
+                  <div class="thought">
+                    <p class="thought-text"><Content /></p>
+                    <time class="thought-date">{formatDate(thought.data.date)}</time>
+                  </div>
+                );
+              })}
+            </div>
+            <div class="section-footer">
+              <a href="/thoughts" class="archive-link">See all thoughts →</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Connect -->
+        <section class="section">
+          <h2 class="section-number">03</h2>
+          <div class="section-content">
+            <h3 class="section-title">Connect</h3>
+            <div class="link-grid">
+              {links.map((link) => (
+                <a href={link.url} target="_blank" rel="noopener noreferrer" class="connect-link">
+                  <span class="link-name">{link.name}</span>
+                  <span class="link-arrow">→</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer note -->
+        <footer class="page-footer">
+          <p>This is a <a href="https://nownownow.com/about" target="_blank" rel="noopener noreferrer">now page</a> — updated whenever something significant changes.</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <Footer />
+</Layout>
+
+<style>
+.now-page {
+  padding: 2rem 0 6rem;
+  min-height: calc(100vh - 200px);
+}
+
+/* Page Meta */
+.page-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--primary-orange);
+  position: relative;
+}
+
+.page-label {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  font-family: monospace;
+  letter-spacing: -0.02em;
+  position: relative;
+}
+
+.page-label::before {
+  content: '●';
+  color: var(--primary-orange);
+  margin-right: 0.5rem;
+  font-size: 0.8em;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.last-updated {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+/* Content */
+.now-content {
+  max-width: 700px;
+}
+
+/* Intro */
+.intro {
+  margin-bottom: 4rem;
+}
+
+.intro p {
+  font-size: 1.25rem;
+  line-height: 1.65;
+  color: var(--text-medium);
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Sections */
+.section {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.section:last-of-type {
+  margin-bottom: 3rem;
+}
+
+.section-number {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-orange);
+  margin: 0;
+  font-family: monospace;
+  padding-top: 0.15rem;
+}
+
+.section-content {
+  min-width: 0;
+}
+
+.section-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0 0 2.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.9;
+}
+
+/* Items (Projects) */
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.item-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline;
+  width: fit-content;
+  position: relative;
+  letter-spacing: -0.01em;
+}
+
+.item-title::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-orange);
+  transition: width 0.3s ease;
+}
+
+.item-title:hover {
+  color: var(--primary-orange);
+  transform: translateX(2px);
+}
+
+.item-title:hover::after {
+  width: 100%;
+}
+
+.item-description {
+  font-size: 0.95rem;
+  color: var(--text-medium);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Thoughts */
+.thoughts {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.thought {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  padding-left: 0;
+  border-left: none;
+  transition: all 0.2s ease;
+}
+
+.thought-text {
+  font-size: 1.05rem;
+  color: var(--text-dark);
+  line-height: 1.75;
+  margin: 0;
+}
+
+.thought-text :global(p) {
+  margin: 0;
+}
+
+.thought-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-family: monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+.thought-date::before {
+  content: '↳ ';
+  color: var(--primary-orange);
+  margin-right: 0.35rem;
+}
+
+/* Connect Links */
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.connect-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background: transparent;
+  border: 2px solid var(--border-color);
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--text-dark);
+  position: relative;
+  overflow: hidden;
+}
+
+.connect-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--primary-orange);
+  opacity: 0.08;
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.connect-link:hover {
+  border-color: var(--primary-orange);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.connect-link:hover::before {
+  width: 100%;
+}
+
+.link-name {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.link-arrow {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  transition: transform 0.2s ease;
+}
+
+.connect-link:hover .link-arrow {
+  transform: translateX(4px);
+  color: var(--primary-orange);
+}
+
+/* Section Footer (for archive link) */
+.section-footer {
+  margin-top: 3rem;
+  padding-top: 0;
+  border-top: none;
+}
+
+.archive-link {
+  color: var(--primary-orange);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  opacity: 0.8;
+}
+
+.archive-link:hover {
+  opacity: 1;
+  transform: translateX(3px);
+}
+
+/* Footer */
+.page-footer {
+  margin-top: 6rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.page-footer p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.page-footer a {
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+}
+
+.page-footer a:hover {
+  color: var(--primary-orange);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .now-page {
+    padding: 1.5rem 0 4rem;
+  }
+
+  .page-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
+
+  .page-label {
+    font-size: 1.3rem;
+  }
+
+  .intro p {
+    font-size: 1.1rem;
+  }
+
+  .section {
+    grid-template-columns: 40px 1fr;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .section-number {
+    font-size: 0.8rem;
+  }
+
+  .item-title {
+    font-size: 1.1rem;
+  }
+
+  .link-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .connect-link {
+    padding: 0.875rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .section-number {
+    padding-top: 0;
+  }
+}
+</style>
