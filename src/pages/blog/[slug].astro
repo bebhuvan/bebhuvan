@@ -138,14 +138,17 @@ const wordCount = post.body ? post.body.split(/\s+/).filter(Boolean).length : 0;
   /* Article body */
   .article-body { position: relative; }
   .article-body :global(p) { font-family: var(--serif); font-size: 1.05rem; font-weight: 300; line-height: 1.84; color: var(--ink-mid); margin-bottom: 1.5rem; font-variation-settings: 'opsz' 14; }
-  .article-body :global(p:first-of-type::first-letter) { font-size: 3.2rem; font-weight: 600; float: left; line-height: 0.85; margin-right: 0.08em; margin-top: 0.05em; padding-right: 0.02em; color: var(--ink); font-variation-settings: 'opsz' 72; }
+  .article-body > :global(p:first-of-type::first-letter) { font-size: 3.2rem; font-weight: 600; float: left; line-height: 0.85; margin-right: 0.08em; margin-top: 0.05em; padding-right: 0.02em; color: var(--ink); font-variation-settings: 'opsz' 72; }
+  .article-body :global(blockquote p::first-letter) { float: none !important; font-size: inherit !important; font-weight: inherit !important; margin: 0 !important; padding: 0 !important; }
+  .article-body :global(li p::first-letter) { float: none !important; font-size: inherit !important; font-weight: inherit !important; margin: 0 !important; padding: 0 !important; }
   .article-body :global(p strong) { font-weight: 500; color: var(--ink); }
   .article-body :global(h2) { font-family: var(--serif); font-size: 1.3rem; font-weight: 500; letter-spacing: -0.02em; color: var(--ink); margin: 3rem 0 1.2rem; font-variation-settings: 'opsz' 24; }
   .article-body :global(h3) { font-family: var(--serif); font-size: 1.1rem; font-weight: 500; letter-spacing: -0.01em; margin: 2.5rem 0 1rem; }
 
   /* Blockquote */
-  .article-body :global(blockquote) { margin: 1.5rem 0; padding-left: 1.3rem; border-left: 2px solid var(--flame-line); }
-  .article-body :global(blockquote p) { font-style: italic; color: var(--ink-soft); }
+  .article-body :global(blockquote) { margin: 2rem 0; padding: 1.2rem 0 1.2rem 1.5rem; border-left: 2px solid var(--flame-line); }
+  .article-body :global(blockquote p) { font-style: italic; color: var(--ink-soft); font-size: 1rem; line-height: 1.75; font-variation-settings: 'opsz' 18; }
+  .article-body :global(blockquote p:last-child) { margin-bottom: 0; }
 
   /* Links */
   .article-body :global(a) { color: var(--flame); text-decoration: none; border-bottom: 1px solid var(--flame-line); transition: border-color 0.2s; }
