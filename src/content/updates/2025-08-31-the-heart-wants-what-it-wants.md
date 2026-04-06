@@ -3,6 +3,7 @@ title: The heart wants what it wants
 publishDate: 2025-08-31
 link: https://paperlanterns.ink/letter/dickinson-mary-bowles-1862/
 linkTitle: A consoling letter to Mary Bowles by Emily Dickinson
+marginNote: "Woody Allen ruined this quote for everyone. Dickinson deserves it back."
 ---
 I learned that the famous line "The heart wants what it wants" is from a famous letter by Emily Dickinson and not Woody Allen.
 

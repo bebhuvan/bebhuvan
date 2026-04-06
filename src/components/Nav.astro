@@ -1,0 +1,19 @@
+---
+export interface Props {
+  active?: 'writing' | 'marginalia' | 'trails' | 'projects' | 'books' | 'now';
+}
+
+const { active } = Astro.props;
+---
+
+<nav>
+  <a href="/" class="n-brand">Bhuvan.</a>
+  <div class="n-links">
+    <a href="/writing" class:list={[{ active: active === 'writing' }]}>Writing</a>
+    <a href="/marginalia" class:list={[{ active: active === 'marginalia' }]}>Marginalia</a>
+    <a href="/trails" class:list={[{ active: active === 'trails' }]}>Trails</a>
+    <a href="/projects" class:list={[{ active: active === 'projects' }]}>Projects</a>
+    <a href="/books" class:list={[{ active: active === 'books' }]}>Books</a>
+    <a href="/now" class:list={['now-link', { active: active === 'now' }]}>Now</a>
+  </div>
+</nav>

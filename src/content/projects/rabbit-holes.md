@@ -1,8 +1,11 @@
 ---
 title: "Rabbit Holes"
-description: "Deep dives into interesting topics, tangents, and explorations worth getting lost in."
+description: "A garden of curiosity. Deep dives into things that fascinate me — the bizarre history of index funds, how ancient libraries organized knowledge, why certain ideas persist for millennia."
 link: "https://rabbitholes.garden"
-status: "active"
+url: rabbitholes.garden
+icon: "🐇"
+status: active
+story: "the name says it all"
 order: 4
 ---
 

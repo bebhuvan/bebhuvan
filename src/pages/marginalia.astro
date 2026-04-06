@@ -1,0 +1,165 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import PageHeader from '../components/PageHeader.astro';
+
+const updates = (await getCollection('updates'))
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+
+const updatesByMonth = updates.reduce((acc, update) => {
+  const key = update.data.publishDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+  if (!acc[key]) acc[key] = [];
+  acc[key].push(update);
+  return acc;
+}, {} as Record<string, typeof updates>);
+
+const months = Object.keys(updatesByMonth);
+---
+
+<Layout title="Marginalia — Bhuvan" description="Notes in the margins — thoughts, observations, and loose threads.">
+  <Nav active="marginalia" />
+  <main class="wrap">
+    <div class="col">
+      <PageHeader
+        numeral="II"
+        title='<em>Marginalia</em>'
+        subtitle="notes in the margins — thoughts, observations, and loose threads"
+      />
+
+      {months.map(month => (
+        <section>
+          <h2 class="month-h">{month}</h2>
+          {updatesByMonth[month].map(async (update) => {
+            const { Content } = await update.render();
+            const isVoice = update.data.category === 'voice';
+            const cat = update.data.category || 'thinking';
+            return (
+              <div class="note">
+                <div class="note-header">
+                  <span class="note-time">{update.data.publishDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
+                  {isVoice && (
+                    <span class="note-voice">
+                      <span class="v"></span><span class="v"></span><span class="v"></span><span class="v"></span><span class="v"></span>
+                    </span>
+                  )}
+                  {cat && <span class="note-cat">{cat}</span>}
+                </div>
+                <div class="note-body">
+                  <Content />
+                </div>
+                {update.data.link && (
+                  <a href={update.data.link} class="note-link" target="_blank" rel="noopener">{update.data.linkTitle || update.data.link} &#8599;</a>
+                )}
+                {update.data.marginNote && (
+                  <span class="note-aside">{update.data.marginNote}</span>
+                )}
+              </div>
+            );
+          })}
+        </section>
+      ))}
+    </div>
+  </main>
+  <Footer
+    meta="Zerodha · Bangalore · The Internet<br>Thoughts captured before they could escape."
+    hand="The best marginalia outlives the text it was scribbled on."
+  />
+</Layout>
+
+<style>
+  .note {
+    border-left: 2px solid var(--flame-line);
+    padding: 0.2rem 0 0.2rem 1.4rem;
+    margin-bottom: 2.5rem;
+    transition: border-left-color 0.2s;
+  }
+
+  .note:hover {
+    border-left-color: var(--flame);
+  }
+
+  .note-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .note-time {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    color: var(--ink-faint);
+  }
+
+  .note-voice {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .note-voice .v {
+    width: 2px;
+    border-radius: 1px;
+    background: var(--flame-warm);
+    opacity: 0.5;
+  }
+
+  .note-voice .v:nth-child(1) { height: 4px; }
+  .note-voice .v:nth-child(2) { height: 8px; }
+  .note-voice .v:nth-child(3) { height: 12px; }
+  .note-voice .v:nth-child(4) { height: 7px; }
+  .note-voice .v:nth-child(5) { height: 3px; }
+
+  .note-cat {
+    font-family: var(--mono);
+    font-size: 0.58rem;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .note-body {
+    font-family: var(--serif);
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.75;
+    color: var(--ink-mid);
+  }
+
+  .note-body :global(strong) { font-weight: 500; color: var(--ink); }
+  .note-body :global(p) { margin: 0; font-variation-settings: 'opsz' 14; }
+  .note-body :global(p + p) { margin-top: 0.5rem; text-indent: 1.2em; }
+  .note-body :global(a) { color: var(--flame); text-decoration: none; }
+  .note-body :global(blockquote) {
+    font-style: italic;
+    color: var(--ink-light);
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid var(--flame-line);
+  }
+
+  .note-link {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    color: var(--flame);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.6rem;
+    transition: color 0.2s;
+  }
+
+  .note-link:hover {
+    color: var(--ink);
+  }
+
+  .note-aside {
+    font-family: var(--hand);
+    font-size: 1.05rem;
+    color: var(--flame-warm);
+    display: inline-block;
+    margin-top: 0.5rem;
+    transform: rotate(-0.3deg);
+  }
+</style>

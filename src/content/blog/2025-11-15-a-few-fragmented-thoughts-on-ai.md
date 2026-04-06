@@ -6,9 +6,9 @@ draft: false
 image: /blog-images/Johann_Heinrich_Füssli-The_Nightmare.webp
 ---
 
-I'm reliably told that we are in the age of artificial intelligence. I've also been informed that nobody gives a shit whether you think these systems are artificial or whether they are intelligent. I've also been told that these are debates for philosophers, linguists, and other people with way too much time on their hands. I'm not saying they're jobless, but there's a certain horniness for these debates among these people.
+I'm reliably told that we are in the age of artificial intelligence.<span class="sn">I started writing this in September 2025. By the time you read it, half of this will probably be wrong. That's the point.</span> I've also been informed that nobody gives a shit whether you think these systems are artificial or whether they are intelligent. I've also been told that these are debates for philosophers, linguists, and other people with way too much time on their hands. I'm not saying they're jobless, but there's a certain horniness for these debates among these people.
 
-Look, regardless of what you call them (artificial intelligence, generative AI, or just large language models) and whether you agree or disagree that they are intelligent, the fact is that in a vast majority of domains, these models are much better than human beings. That's just the reality. You may not like it, and you may not accept it—that's fine. All I can say is that facts don't give a shit about your feelings.
+Look, regardless of what you call them (artificial intelligence, generative AI, or just large language models) and whether you agree or disagree that they are intelligent, the fact is that in a vast majority of domains, these models are much better than human beings.<span class="sn">Better at what, exactly? Pattern matching, synthesis, speed. Not better at caring, or knowing when to stop.</span> That's just the reality. You may not like it, and you may not accept it—that's fine. All I can say is that facts don't give a shit about your feelings.
 
 The other fundamental reality is that not thinking about generative AI is a luxury that very few people can afford. Not thinking about how it affects our profession, our lives, our world, and what it means for our personal trajectory is a costly mistake.
 

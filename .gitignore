@@ -17,6 +17,10 @@ pnpm-debug.log*
 .env
 .env.production
 
+# claude
+CLAUDE.md
+HANDOFF.md
+
 # macOS-specific files
 .DS_Store
 

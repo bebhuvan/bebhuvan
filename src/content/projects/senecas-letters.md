@@ -1,8 +1,11 @@
 ---
 title: "Seneca's Letters"
-description: "A beautifully designed collection showcasing the timeless wisdom of Seneca's brilliant letters."
+description: "A beautiful digital collection of Stoic philosophy. All 124 moral letters to Lucilius, designed to be read the way Seneca intended — slowly, carefully, one at a time."
 status: active
 link: https://seneca.ink/
+url: seneca.ink
+icon: "📜"
+story: "my proudest project — the one I'd want to be remembered for"
 order: 1
 ---
 

@@ -1,0 +1,56 @@
+---
+export interface Props {
+  text: string;
+  side?: 'left' | 'right';
+  top?: string;
+}
+
+const { text, side = 'right', top = '2.5rem' } = Astro.props;
+---
+
+<div class={`mn-positioned mn-${side}`} style={`top: ${top}`}>
+  {text}
+</div>
+<div class="mn-collapsed">
+  {text}
+</div>
+
+<style>
+  .mn-positioned {
+    position: absolute;
+    width: var(--margin);
+    font-family: var(--hand);
+    font-size: 1.15rem;
+    color: var(--ink-soft);
+    line-height: 1.4;
+    transform: rotate(1.5deg);
+  }
+
+  .mn-right {
+    right: calc(-1 * (var(--margin) + var(--gap)));
+  }
+
+  .mn-left {
+    left: calc(-1 * (var(--margin) + var(--gap)));
+    text-align: right;
+    transform: rotate(-1.5deg);
+  }
+
+  .mn-collapsed {
+    display: none;
+    font-family: var(--hand);
+    font-size: 1.15rem;
+    color: var(--ink-soft);
+    line-height: 1.4;
+    background: var(--flame-whisper);
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    margin: 0.6rem 0;
+    border-left: 3px solid var(--flame-line);
+  }
+
+  @media (max-width: 1400px) {
+    .mn-positioned { display: none; }
+    .mn-collapsed { display: block; }
+  }
+</style>

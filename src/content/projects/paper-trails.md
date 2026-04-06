@@ -1,10 +1,12 @@
 ---
 title: Paper Trails
-description: A curated RSS aggregator featuring essays worth your time from 135+
-  publications across culture, economics, politics, science, and technology.
+description: "RSS aggregator of 135+ quality publications I actually read. Economics, politics, science, culture, long-form journalism. A one-man wire service for essays worth your time."
 status: active
 link: https://papertrails.rabbitholes.garden/
-order: 3
+url: papertrails.rabbitholes.garden
+icon: "📰"
+story: "do people still use RSS? just me? okay cool"
+order: 6
 ---
 Paper Trails is a thoughtfully curated RSS aggregator that helps intellectually curious readers discover high-quality essays and long-form writing without the noise.
 

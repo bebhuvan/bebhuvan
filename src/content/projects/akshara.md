@@ -1,8 +1,10 @@
 ---
-title: Akshara.ink
-description: Digitizing and preserving India's public domain literary heritage
+title: Akshara
+description: "Using OCR and LLMs to digitize Indian public domain books — Kannada, Sanskrit, texts that exist in exactly one crumbling copy somewhere in a government archive."
 status: active
 link: https://akshara.ink/
+url: akshara.ink
+icon: "अ"
 order: 2
 ---
 Akshara.ink is a passion project dedicated to rescuing India's written heritage trapped in poorly scanned PDFs and making it readable and accessible.

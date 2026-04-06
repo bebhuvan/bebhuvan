@@ -1,0 +1,24 @@
+---
+export interface Props {
+  numeral?: string;
+  title: string;
+  subtitle?: string;
+  subtitleFont?: 'hand' | 'serif-italic';
+  count?: string;
+  date?: string;
+  meta?: string;
+}
+
+const { numeral, title, subtitle, subtitleFont = 'hand', count, date, meta } = Astro.props;
+---
+
+<div class="page-header">
+  {numeral && <span class="ph-num">{numeral}</span>}
+  <h1 set:html={title} />
+  {subtitle && <span class:list={[subtitleFont === 'serif-italic' ? 'ph-sub-serif' : 'ph-sub']}>{subtitle}</span>}
+  {count && <span class="ph-count">{count}</span>}
+  {date && <span class="ph-date">{date}</span>}
+  {meta && <span class="ph-count">{meta}</span>}
+  <slot />
+</div>
+<div class="sec-rule"></div>

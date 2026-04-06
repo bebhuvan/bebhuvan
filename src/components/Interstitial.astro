@@ -1,0 +1,70 @@
+---
+export interface Props {
+  quote: string;
+  attribution: string;
+  annotation?: string;
+  bg?: 'warm' | 'aged';
+}
+
+const { quote, attribution, annotation } = Astro.props;
+---
+
+<div class="interstitial">
+  <div class="interstitial-rule"></div>
+  <blockquote>{quote}</blockquote>
+  <div class="bq-attr">&mdash; {attribution}</div>
+  {annotation && <span class="bq-aside">{annotation}</span>}
+  <div class="interstitial-rule"></div>
+</div>
+
+<style>
+  .interstitial {
+    padding: 6rem 0;
+    text-align: center;
+    position: relative;
+  }
+
+  .interstitial-rule {
+    width: 40px;
+    height: 1px;
+    background: var(--ink-ghost);
+    margin: 0 auto;
+  }
+
+  blockquote {
+    font-family: var(--serif);
+    font-size: clamp(1.3rem, 2.5vw, 1.85rem);
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.55;
+    letter-spacing: -0.005em;
+    color: var(--ink-mid);
+    max-width: 520px;
+    margin: 2.5rem auto;
+    font-variation-settings: 'opsz' 48;
+  }
+
+  .bq-attr {
+    font-family: var(--mono);
+    font-size: 0.58rem;
+    color: var(--ink-faint);
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .bq-aside {
+    font-family: var(--hand);
+    font-size: 1rem;
+    color: var(--ink-ghost);
+    position: absolute;
+    right: 0;
+    bottom: 3rem;
+    transform: rotate(1.5deg);
+  }
+
+  @media (max-width: 700px) {
+    .interstitial { padding: 3.5rem 0; }
+    .bq-aside { display: none; }
+  }
+</style>

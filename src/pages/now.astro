@@ -1,634 +1,290 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
+import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 
-// Get recent thoughts from content collection (limit to 5 most recent)
-const allThoughts = await getCollection('now');
-const recentThoughts = allThoughts
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .slice(0, 5);
+const nowEntries = (await getCollection('now'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
-// Auto-generate last updated date from most recent thought
-const lastUpdatedDate = recentThoughts.length > 0
-  ? recentThoughts[0].data.date
-  : new Date();
-const lastUpdated = lastUpdatedDate.toLocaleDateString('en-US', {
-  month: 'long',
-  year: 'numeric'
-});
-
-const activeProjects = [
-  {
-    name: "Akshara",
-    description: "Digitizing India's public domain literary heritage",
-    link: "https://akshara.ink"
-  },
-  {
-    name: "Dhwani",
-    description: "A digital home for timeless Indian literary voices",
-    link: "https://dhwani.bebhuvan.com"
-  },
-  {
-    name: "Paper Lanterns",
-    description: "Historically significant letters and speeches from the public domain",
-    link: "https://paperlanterns.ink"
-  },
-  {
-    name: "Collections.PaperLanterns",
-    description: "Intimate letters from history's greatest minds",
-    link: "https://collections.paperlanterns.ink"
-  },
-  {
-    name: "FromTheDumpsterFire",
-    description: "Rescuing signal from the algorithmic inferno",
-    link: "https://fromthedumpsterfire.com"
-  },
-  {
-    name: "Rabbit Holes",
-    description: "Curating the best and weirdest ideas worth exploring",
-    link: "https://rabbitholes.garden"
-  },
-  {
-    name: "Seneca.ink",
-    description: "2,000-year-old Stoic wisdom for modern life",
-    link: "https://seneca.ink"
-  }
-];
-
-const links = [
-  {
-    name: "LinkedIn",
-    url: "https://www.linkedin.com/in/bebhuvan/",
-    description: "Professional stuff"
-  },
-  {
-    name: "Twitter",
-    url: "https://twitter.com/bebhuvan",
-    description: "Random thoughts and rants"
-  },
-  {
-    name: "Substack",
-    url: "https://bhuvan.substack.com/",
-    description: "Occasional long-form writing"
-  },
-  {
-    name: "Z-Connect",
-    url: "https://zerodha.com/z-connect/author/bhuvanesh-r",
-    description: "Work writing at Zerodha"
-  },
-  {
-    name: "Email",
-    url: "mailto:bhuvan@bebhuvan.com",
-    description: "Old-school communication"
-  }
-];
-
-// Format date for display
-function formatDate(date: Date) {
-  return date.toISOString().split('T')[0];
-}
+const latestDate = nowEntries[0]?.data.date;
+const categoryLabels: Record<string, string> = {
+  thinking: "what I'm thinking about",
+  working: "what I'm working on",
+  reading: "what I'm reading",
+  building: "what I'm building",
+};
 ---
 
-<Layout
-  title="Now - Bhuvan"
-  description="What I'm doing now, what I'm thinking about, and what's on my mind"
->
-  <Header />
+<Layout title="Now — Bhuvan" description="What I'm doing right now — a /now page, updated when things change.">
+  <Nav active="now" />
 
-  <div class="now-page">
-    <div class="container">
+  <div class="wrap now-wrap">
+    <div class="col">
 
-      <div class="page-meta">
-        <span class="page-label">/now</span>
-        <time class="last-updated">{lastUpdated}</time>
+      <div class="now-header">
+        <span class="nh-label">/now</span>
+        <h1>What I&apos;m Doing <em>Now</em></h1>
+        <p class="nh-sub">A snapshot, not a r&eacute;sum&eacute;. Updated when things change.</p>
+        {latestDate && (
+          <span class="nh-date">
+            Last updated {latestDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })} · Bangalore
+          </span>
+        )}
       </div>
 
-      <div class="now-content">
+      <div class="now-rule"></div>
 
-        <div class="intro">
-          <p>Building things on the internet, thinking about ideas, and writing when the mood strikes.</p>
-        </div>
+      {nowEntries.map(async (entry, i) => {
+        const { Content } = await entry.render();
+        const cat = entry.data.category || 'thinking';
+        const label = categoryLabels[cat] || cat;
+        const dateStr = entry.data.date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+        return (
+          <>
+            <section class="now-entry">
+              <div class="ne-head">
+                <span class="ne-cat">{label}</span>
+                <span class="ne-date">{dateStr}</span>
+              </div>
+              <div class="ne-body">
+                <Content />
+              </div>
+            </section>
+            {i < nowEntries.length - 1 && <div class="now-sep"></div>}
+          </>
+        );
+      })}
 
-        <!-- Projects -->
-        <section class="section">
-          <div class="section-header">
-            <h2 class="section-title">Projects I'm Running</h2>
-            <span class="section-count">{activeProjects.length}</span>
-          </div>
-          <div class="item-list">
-            {activeProjects.map((project, index) => (
-              <a href={project.link} target="_blank" rel="noopener noreferrer" class="item-card">
-                <div class="item-header">
-                  <span class="item-number">{String(index + 1).padStart(2, '0')}</span>
-                  <span class="item-name">{project.name}</span>
-                  <span class="item-arrow">↗</span>
-                </div>
-                <p class="item-description">{project.description}</p>
-              </a>
-            ))}
-          </div>
-        </section>
-
-        <!-- Thoughts -->
-        <section class="section">
-          <div class="section-header">
-            <h2 class="section-title">Recent Thoughts</h2>
-            <span class="section-count">{recentThoughts.length}</span>
-          </div>
-          <div class="thoughts">
-            {recentThoughts.map(async (thought) => {
-              const { Content } = await thought.render();
-              return (
-                <div class="thought">
-                  <div class="thought-text"><Content /></div>
-                  <time class="thought-date">{formatDate(thought.data.date)}</time>
-                </div>
-              );
-            })}
-          </div>
-          <div class="section-footer">
-            <a href="/thoughts" class="archive-link">
-              <span>View all</span>
-              <span class="archive-arrow">→</span>
-            </a>
-          </div>
-        </section>
-
-        <!-- Writing -->
-        <section class="section">
-          <div class="section-header">
-            <h2 class="section-title">Writing</h2>
-          </div>
-          <div class="writing-content">
-            <p class="writing-description">
-              I write regularly on <a href="https://bhuvan.substack.com" target="_blank" rel="noopener noreferrer" class="inline-link">Substack</a> —
-              exploring ideas both half-baked and well-done, from internet culture to existential tangents.
-            </p>
-          </div>
-        </section>
-
-        <!-- Connect -->
-        <section class="section">
-          <div class="section-header">
-            <h2 class="section-title">Connect</h2>
-            <span class="section-count">{links.length}</span>
-          </div>
-          <div class="link-grid">
-            {links.map((link) => (
-              <a href={link.url} target="_blank" rel="noopener noreferrer" class="connect-link">
-                <span class="link-name">{link.name}</span>
-                <span class="link-arrow">→</span>
-              </a>
-            ))}
-          </div>
-        </section>
-
-        <!-- Footer note -->
-        <footer class="page-footer">
-          <p>This is a <a href="https://nownownow.com/about" target="_blank" rel="noopener noreferrer">now page</a> — updated whenever something significant changes.</p>
-        </footer>
+      <div class="colophon">
+        <p>This is a <a href="https://nownownow.com/about">/now page</a>, a concept popularized by Derek Sivers. The idea is to share what you'd tell a good friend if they asked what you've been up to.</p>
+        <p>Updated irregularly, whenever something changes significantly enough to matter.</p>
       </div>
+
+      <Footer
+        meta='Zerodha &middot; Bangalore &middot; The Internet<br>A small corner on the dumpster fire since 2019'
+        hand="This is me, right now. Ask me again in a month."
+      />
     </div>
   </div>
-
-  <Footer />
 </Layout>
 
 <style>
-.now-page {
-  padding: 2rem 0 6rem;
-  min-height: calc(100vh - 200px);
-}
-
-/* Page Meta */
-.page-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 5rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--border-color);
-  position: relative;
-}
-
-.page-label {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--text-dark);
-  font-family: monospace;
-  letter-spacing: -0.04em;
-  position: relative;
-}
-
-.page-label::before {
-  content: '●';
-  color: var(--primary-orange);
-  margin-right: 0.625rem;
-  font-size: 0.6em;
-  animation: pulse 3s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
-}
-
-.last-updated {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  opacity: 0.7;
-}
-
-/* Content */
-.now-content {
-  max-width: 720px;
-}
-
-/* Intro */
-.intro {
-  margin-bottom: 6rem;
-}
-
-.intro p {
-  font-size: 1.25rem;
-  line-height: 1.75;
-  color: var(--text-medium);
-  margin: 0;
-  font-weight: 400;
-  letter-spacing: -0.015em;
-}
-
-/* Sections */
-.section {
-  margin-bottom: 6rem;
-}
-
-.section:last-of-type {
-  margin-bottom: 4rem;
-}
-
-.section-header {
-  display: flex;
-  align-items: baseline;
-  gap: 0.875rem;
-  margin-bottom: 2.5rem;
-  padding-bottom: 0;
-  border-bottom: none;
-}
-
-.section-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--text-dark);
-  margin: 0;
-  letter-spacing: -0.025em;
-  flex: 1;
-}
-
-.section-count {
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: var(--primary-orange);
-  font-family: monospace;
-  padding: 0.2rem 0.5rem;
-  background: rgba(255, 107, 53, 0.06);
-  border: 1px solid rgba(255, 107, 53, 0.15);
-  border-radius: 3px;
-  letter-spacing: 0.05em;
-  opacity: 0.8;
-}
-
-/* Items (Projects) */
-.item-list {
-  display: grid;
-  gap: 0.75rem;
-}
-
-.item-card {
-  display: block;
-  padding: 1.5rem 1.75rem;
-  background: transparent;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.item-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 2px;
-  height: 0;
-  background: var(--primary-orange);
-  transition: height 0.2s ease;
-}
-
-.item-card:hover {
-  border-color: rgba(255, 107, 53, 0.25);
-  background: rgba(255, 107, 53, 0.02);
-}
-
-.item-card:hover::before {
-  height: 100%;
-}
-
-.item-header {
-  display: flex;
-  align-items: center;
-  gap: 0.875rem;
-  margin-bottom: 0.75rem;
-}
-
-.item-number {
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: var(--text-muted);
-  font-family: monospace;
-  opacity: 0.35;
-  transition: opacity 0.2s ease;
-}
-
-.item-card:hover .item-number {
-  opacity: 0.6;
-}
-
-.item-name {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--text-dark);
-  letter-spacing: -0.02em;
-  flex: 1;
-}
-
-.item-arrow {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  opacity: 0.25;
-  transition: all 0.2s ease;
-}
-
-.item-card:hover .item-arrow {
-  opacity: 0.5;
-  transform: translate(2px, -2px);
-}
-
-.item-description {
-  font-size: 0.9rem;
-  color: var(--text-medium);
-  line-height: 1.7;
-  margin: 0;
-  padding-left: 1.875rem;
-  opacity: 0.75;
-}
-
-/* Thoughts */
-.thoughts {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.thought {
-  display: flex;
-  flex-direction: column;
-  gap: 0.875rem;
-  padding: 1.75rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-}
-
-.thought:first-child {
-  padding-top: 0;
-}
-
-.thought:last-child {
-  border-bottom: none;
-}
-
-.thought-text {
-  font-size: 1rem;
-  color: var(--text-dark);
-  line-height: 1.75;
-  margin: 0;
-  letter-spacing: -0.01em;
-}
-
-.thought-text :global(p) {
-  margin: 0;
-}
-
-.thought-date {
-  font-size: 0.7rem;
-  color: var(--text-muted);
-  font-family: monospace;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-weight: 600;
-  opacity: 0.5;
-}
-
-.thought-date::before {
-  content: '— ';
-  color: var(--text-muted);
-  margin-right: 0.25rem;
-  opacity: 0.5;
-}
-
-/* Writing Section */
-.writing-content {
-  max-width: 650px;
-}
-
-.writing-description {
-  font-size: 1rem;
-  line-height: 1.75;
-  color: var(--text-medium);
-  margin: 0;
-  letter-spacing: -0.01em;
-}
-
-.inline-link {
-  color: var(--text-dark);
-  text-decoration: underline;
-  text-decoration-color: var(--primary-orange);
-  text-decoration-thickness: 1.5px;
-  text-underline-offset: 3px;
-  transition: all 0.2s ease;
-  font-weight: 500;
-}
-
-.inline-link:hover {
-  color: var(--primary-orange);
-}
-
-/* Connect Links */
-.link-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 0.875rem;
-}
-
-.connect-link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.125rem 1.375rem;
-  background: transparent;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  color: var(--text-dark);
-}
-
-.connect-link:hover {
-  border-color: rgba(255, 107, 53, 0.3);
-  background: rgba(255, 107, 53, 0.015);
-}
-
-.link-name {
-  font-size: 0.875rem;
-  font-weight: 600;
-  letter-spacing: 0;
-}
-
-.link-arrow {
-  font-size: 1rem;
-  color: var(--text-muted);
-  opacity: 0.3;
-  transition: all 0.2s ease;
-}
-
-.connect-link:hover .link-arrow {
-  transform: translateX(3px);
-  opacity: 0.6;
-}
-
-/* Section Footer (for archive link) */
-.section-footer {
-  margin-top: 2.5rem;
-  padding-top: 0;
-  border-top: none;
-}
-
-.archive-link {
-  color: var(--text-muted);
-  text-decoration: none;
-  font-size: 0.8rem;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.375rem;
-  opacity: 0.6;
-  letter-spacing: 0.01em;
-}
-
-.archive-link:hover {
-  opacity: 1;
-  color: var(--primary-orange);
-}
-
-.archive-arrow {
-  transition: transform 0.2s ease;
-  font-size: 0.9em;
-}
-
-.archive-link:hover .archive-arrow {
-  transform: translateX(3px);
-}
-
-/* Footer */
-.page-footer {
-  margin-top: 7rem;
-  padding-top: 2.5rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
-}
-
-.page-footer p {
-  color: var(--text-muted);
-  font-size: 0.85rem;
-  line-height: 1.7;
-  margin: 0;
-  letter-spacing: 0;
-  opacity: 0.7;
-}
-
-.page-footer a {
-  color: var(--text-muted);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
-  transition: all 0.2s ease;
-}
-
-.page-footer a:hover {
-  color: var(--primary-orange);
-  text-decoration-color: var(--primary-orange);
-  opacity: 1;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .now-page {
-    padding: 1.5rem 0 4rem;
+  .now-wrap .col {
+    max-width: 580px;
   }
 
-  .page-meta {
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: flex-start;
-    margin-bottom: 3rem;
+  /* --- Header --- */
+  .now-header {
+    padding: 8.5rem 0 2rem;
+    text-align: center;
   }
 
-  .page-label {
+  .nh-label {
+    font-family: var(--hand);
+    font-size: 1.8rem;
+    color: var(--flame-warm);
+    display: block;
+    margin-bottom: 0.3rem;
+    transform: rotate(-1deg);
+    opacity: 0.7;
+  }
+
+  .now-header h1 {
+    font-family: var(--serif);
+    font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+    font-weight: 200;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+    margin-bottom: 0.6rem;
+    font-variation-settings: 'opsz' 72;
+  }
+
+  .now-header h1 em {
+    font-style: italic;
+    color: var(--flame);
+    font-weight: 300;
+  }
+
+  .nh-sub {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 0.92rem;
+    font-weight: 300;
+    color: var(--ink-faint);
+    letter-spacing: 0.01em;
+    font-variation-settings: 'opsz' 14;
+  }
+
+  .nh-date {
+    font-family: var(--mono);
+    font-size: 0.56rem;
+    color: var(--ink-faint);
+    display: block;
+    margin-top: 0.8rem;
+  }
+
+  .now-rule {
+    width: 40px;
+    height: 1px;
+    background: var(--ink-ghost);
+    margin: 1.5rem auto 3rem;
+  }
+
+  /* --- Entries --- */
+  .now-entry {
+    margin-bottom: 0;
+  }
+
+  .ne-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule-faint);
+  }
+
+  .ne-cat {
+    font-family: var(--hand);
     font-size: 1.3rem;
+    color: var(--ink-light);
+    transform: rotate(-0.5deg);
+    display: inline-block;
   }
 
-  .intro p {
-    font-size: 1.1rem;
+  .ne-date {
+    font-family: var(--mono);
+    font-size: 0.5rem;
+    color: var(--ink-ghost);
+    letter-spacing: 0.03em;
   }
 
-  .section {
-    grid-template-columns: 40px 1fr;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-    padding-bottom: 3rem;
+  .ne-body {
+    font-family: var(--serif);
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.78;
+    color: var(--ink-mid);
+    font-variation-settings: 'opsz' 14;
+    border-left: 2px solid var(--flame-line);
+    padding-left: 1.4rem;
   }
 
-  .section-number {
-    font-size: 0.8rem;
+  .ne-body :global(p) {
+    margin: 0 0 0.8rem;
   }
 
-  .item-title {
-    font-size: 1.1rem;
+  .ne-body :global(p:last-child) {
+    margin-bottom: 0;
   }
 
-  .link-grid {
-    grid-template-columns: 1fr;
+  .ne-body :global(p + p) {
+    text-indent: 1.2em;
   }
 
-  .connect-link {
-    padding: 0.875rem 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .section {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+  .ne-body :global(strong) {
+    font-weight: 500;
+    color: var(--ink);
   }
 
-  .section-number {
-    padding-top: 0;
+  .ne-body :global(em) {
+    font-style: italic;
   }
-}
+
+  .ne-body :global(a) {
+    color: var(--flame);
+    text-decoration: none;
+    border-bottom: 1px solid var(--flame-line);
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .ne-body :global(a:hover) {
+    color: var(--ink);
+    border-color: var(--ink-light);
+  }
+
+  .ne-body :global(ul) {
+    list-style: none;
+    padding: 0;
+  }
+
+  .ne-body :global(li) {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--rule-faint);
+    display: flex;
+    align-items: baseline;
+    gap: 0.7rem;
+  }
+
+  .ne-body :global(li::before) {
+    content: '→';
+    color: var(--flame-line);
+    flex-shrink: 0;
+  }
+
+  .ne-body :global(li:last-child) {
+    border-bottom: none;
+  }
+
+  /* --- Separator --- */
+  .now-sep {
+    width: 40px;
+    height: 1px;
+    background: var(--ink-ghost);
+    margin: 3rem auto;
+  }
+
+  /* --- Colophon --- */
+  .colophon {
+    background: var(--paper-tint);
+    border: 1px solid var(--rule-faint);
+    border-radius: 6px;
+    padding: 1.8rem 2rem;
+    margin-top: 4rem;
+    position: relative;
+  }
+
+  .colophon::before {
+    content: 'about this page';
+    font-family: var(--hand);
+    font-size: 1rem;
+    color: var(--flame-warm);
+    position: absolute;
+    top: -0.75rem;
+    left: 1.2rem;
+    background: var(--paper-tint);
+    padding: 0 0.4rem;
+  }
+
+  .colophon :global(p) {
+    font-family: var(--serif);
+    font-size: 0.88rem;
+    font-weight: 300;
+    color: var(--ink-light);
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+  }
+
+  .colophon :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .colophon :global(a) {
+    color: var(--flame);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .colophon :global(a:hover) {
+    color: var(--ink);
+  }
+
+  @media (max-width: 700px) {
+    .now-wrap .col {
+      max-width: 100%;
+    }
+    .now-header { padding: 7rem 0 1.5rem; }
+    .now-header h1 { font-size: clamp(1.5rem, 6vw, 1.8rem); }
+  }
 </style>

@@ -1,0 +1,213 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import PageHeader from '../components/PageHeader.astro';
+import { aggregateRSSFeeds } from '../utils/rss-aggregator';
+
+let rssItems: any[] = [];
+try {
+  rssItems = await aggregateRSSFeeds(20);
+} catch (e) {}
+
+const itemsByDate = rssItems.reduce((acc, item) => {
+  const d = new Date(item.pubDate);
+  const key = d.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+  if (!acc[key]) acc[key] = [];
+  acc[key].push(item);
+  return acc;
+}, {} as Record<string, typeof rssItems>);
+
+const dates = Object.keys(itemsByDate);
+---
+
+<Layout title="Paper Trails — Bhuvan" description="A one-man wire service — 135+ feeds, zero algorithms, pure editorial judgment.">
+  <Nav active="trails" />
+
+  <div class="wrap">
+    <div class="col">
+      <PageHeader
+        numeral="III"
+        title='Paper <em>Trails</em>'
+        subtitleFont="serif-italic"
+        subtitle="things worth keeping — curated from 135+ publications I actually read"
+      />
+
+      <div class="ph-stats">
+        <div class="ph-stat">
+          <span class="ph-stat-n">135+</span>
+          <span class="ph-stat-l">feeds</span>
+        </div>
+        <div class="ph-stat">
+          <span class="ph-stat-n">6</span>
+          <span class="ph-stat-l">categories</span>
+        </div>
+        <div class="ph-stat">
+          <span class="ph-stat-n">{rssItems.length}+</span>
+          <span class="ph-stat-l">articles indexed</span>
+        </div>
+      </div>
+
+      {(() => { let counter = 0; return null; })()}
+      {dates.map((date, di) => {
+        let localCounter = 0;
+        if (di === 0) { localCounter = 0; }
+        return (
+          <>
+            <h2 class:list={['date-h', { 'date-h-first': di === 0 }]}>{date}</h2>
+            {itemsByDate[date].map((item, ii) => {
+              const num = rssItems.indexOf(item) + 1;
+              return (
+                <a href={item.link} class="trail" target="_blank" rel="noopener">
+                  <span class="trail-num">{String(num).padStart(2, '0')}</span>
+                  <div class="trail-content">
+                    <span class="trail-meta">
+                      <span class="trail-source">{item.source}</span>
+                      <span class="trail-date">{new Date(item.pubDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
+                    </span>
+                    <span class="trail-title">{item.title}</span>
+                    {item.excerpt && <span class="trail-desc">{item.excerpt}</span>}
+                  </div>
+                </a>
+              );
+            })}
+          </>
+        );
+      })}
+
+      <Footer
+        meta="Zerodha · Bangalore · The Internet<br>135+ feeds. Curated because algorithms can't care."
+        hand="One man's wire service for essays worth your time."
+      />
+    </div>
+  </div>
+</Layout>
+
+<style>
+  /* Stats strip */
+  .ph-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1.6rem 0;
+    border-top: 1px solid var(--rule-faint);
+    border-bottom: 1px solid var(--rule-faint);
+    margin-bottom: 3rem;
+  }
+  .ph-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  .ph-stat-n {
+    font-family: var(--serif); font-size: 1.4rem; font-weight: 200;
+    color: var(--ink-mid); letter-spacing: -0.02em; line-height: 1;
+  }
+  .ph-stat-l {
+    font-family: var(--mono); font-size: 0.5rem; color: var(--ink-faint);
+    text-transform: uppercase; letter-spacing: 0.06em;
+  }
+
+  /* Date header */
+  .date-h {
+    font-family: var(--serif); font-size: 1.3rem; font-weight: 300;
+    color: var(--ink-soft); margin-top: 4.5rem; margin-bottom: 0;
+    padding-bottom: 0.6rem; border-bottom: 1px solid var(--rule);
+    letter-spacing: -0.02em; font-variation-settings: 'opsz' 48;
+  }
+  .date-h-first { margin-top: 0; }
+
+  /* Trail items — numbered reading list */
+  .trail {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    gap: 0.8rem;
+    align-items: baseline;
+    padding: 1.2rem 0 1.2rem 0.8rem;
+    margin-left: -0.8rem;
+    border-bottom: 1px solid var(--rule-faint);
+    border-left: 2px solid transparent;
+    text-decoration: none;
+    transition: border-left-color 0.25s var(--ease);
+  }
+
+  .trail:hover {
+    border-left-color: var(--flame-line);
+  }
+
+  .trail:last-child {
+    border-bottom: none;
+  }
+
+  .trail-num {
+    font-family: var(--mono);
+    font-size: 0.58rem;
+    color: var(--ink-ghost);
+    transition: color 0.2s;
+  }
+
+  .trail:hover .trail-num {
+    color: var(--flame);
+  }
+
+  .trail-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .trail-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .trail-source {
+    font-family: var(--mono);
+    font-size: 0.55rem;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .trail-date {
+    font-family: var(--mono);
+    font-size: 0.5rem;
+    color: var(--ink-ghost);
+  }
+
+  .trail-title {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.35;
+    font-variation-settings: 'opsz' 20;
+    transition: color 0.2s;
+  }
+
+  .trail:hover .trail-title {
+    color: var(--flame);
+  }
+
+  .trail-desc {
+    font-family: var(--serif);
+    font-size: 0.86rem;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--ink-light);
+    line-height: 1.55;
+    max-width: 520px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-variation-settings: 'opsz' 14;
+    margin-top: 0.1rem;
+  }
+
+  @media (max-width: 700px) {
+    .ph-stats { gap: 1rem; flex-wrap: wrap; }
+  }
+</style>

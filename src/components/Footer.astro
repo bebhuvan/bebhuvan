@@ -1,21 +1,17 @@
 ---
+export interface Props {
+  meta?: string;
+  hand?: string;
+}
+
+const {
+  meta = 'Zerodha &middot; Bangalore &middot; The Internet<br>A small corner on the dumpster fire since 2019',
+  hand = "You read all the way to the footer? That's more commitment than most of my drafts get."
+} = Astro.props;
 ---
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-content">
-      <p class="footer-text">
-        <span class="footer-copyright">&copy; 2025 Bhuvan</span>
-        <span class="footer-easter-egg">What kind of sociopath or unemployed person reads text in the footer?</span>
-      </p>
-      <a href="/rss.xml" class="footer-rss-link" title="Subscribe via RSS">
-        <svg class="rss-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M4 11a9 9 0 0 1 9 9"></path>
-          <path d="M4 4a16 16 0 0 1 16 16"></path>
-          <circle cx="5" cy="19" r="1"></circle>
-        </svg>
-        <span>RSS</span>
-      </a>
-    </div>
-  </div>
+<footer>
+  <span class="ft-brand">Bhuvan.</span>
+  <div class="ft-meta" set:html={meta} />
+  <span class="ft-hand">{hand}</span>
 </footer>
