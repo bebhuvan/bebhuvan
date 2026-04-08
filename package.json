@@ -12,11 +12,16 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.12",
     "@astrojs/sitemap": "^3.5.1",
+    "@fontsource-variable/literata": "^5.2.8",
+    "@fontsource/caveat": "^5.2.8",
+    "@fontsource/fira-code": "^5.2.7",
+    "@fontsource/manrope": "^5.2.8",
     "astro": "^5.13.3",
     "marked": "^16.2.0",
     "rss-parser": "^3.13.0"
   },
   "devDependencies": {
+    "lightningcss": "^1.32.0",
     "wrangler": "^4.34.0"
   }
 }

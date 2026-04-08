@@ -6,7 +6,7 @@ draft: false
 tags:
   - Money
   - Philosophy
-image: /blog-images/1279px-Marinus_Claesz._van_Reymerswaele_001.jpeg
+image: /blog-images/1279px-Marinus_Claesz._van_Reymerswaele_001.webp
 ---
 _This post was more stream of consciousness than deliberately structured, but I'm publishing it to stake out a thinking space. This is a topic I intend to return to in the future._
 

@@ -1,0 +1,53 @@
+# Cloudflare Pages headers
+# Aggressive caching for hashed/static assets, conservative for HTML.
+
+# Hashed Astro assets (content hashes in filename, safe forever)
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/inline/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Self-hosted fontsource files
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images — long cache, not immutable since filenames may change
+/blog-images/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/project-images/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/update-images/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/profile-pic*.webp
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/favicon.svg
+  Cache-Control: public, max-age=2592000
+
+# RSS / sitemap — short cache so updates propagate
+/rss.xml
+  Cache-Control: public, max-age=600, stale-while-revalidate=3600
+
+/updates-rss.xml
+  Cache-Control: public, max-age=600, stale-while-revalidate=3600
+
+/sitemap*.xml
+  Cache-Control: public, max-age=3600
+
+# HTML pages — short cache, revalidate often
+/*.html
+  Cache-Control: public, max-age=600, stale-while-revalidate=3600
+
+/
+  Cache-Control: public, max-age=600, stale-while-revalidate=3600
+
+# Security headers, applied to everything
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: interest-cohort=()

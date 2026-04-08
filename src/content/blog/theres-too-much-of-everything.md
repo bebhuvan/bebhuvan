@@ -2,7 +2,7 @@
 title: "There’s too much of everything"
 description: "The amount of new content created every day on the internet is astounding. It goes without saying that a lot of it’s nonsense, but there’s plenty of good stuff...."
 publishDate: 2022-01-19
-image: "/blog-images/Theres-too-much-of-everything.jpg"
+image: "/blog-images/Theres-too-much-of-everything.webp"
 tags: ["A little less dumb"]
 draft: false
 ---

@@ -4,12 +4,35 @@ import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import Interstitial from '../components/Interstitial.astro';
-import ProjectIcon from '../components/ProjectIcon.astro';
 import { aggregateRSSFeeds } from '../utils/rss-aggregator';
 
 const blogPosts = (await getCollection('blog'))
   .filter(post => !post.data.draft)
   .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+
+// Quotes for the rotator. Pure CSS cycler — no JS.
+const quotes = [
+  {
+    text: 'It is not that we have a short time to live, but that we waste a great deal of it.',
+    by: 'Seneca, Letter I',
+  },
+  {
+    text: 'I have always imagined that Paradise will be a kind of library.',
+    by: 'Borges, Ficciones',
+  },
+  {
+    text: 'A classic is a book that has never finished saying what it has to say.',
+    by: 'Italo Calvino',
+  },
+  {
+    text: 'How we spend our days is, of course, how we spend our lives.',
+    by: 'Annie Dillard, The Writing Life',
+  },
+  {
+    text: 'We are made of stories, not atoms.',
+    by: 'Muriel Rukeyser',
+  },
+];
 
 const featuredPost = blogPosts[0];
 const morePosts = blogPosts.slice(1, 5);
@@ -29,267 +52,322 @@ try {
     .slice(0, 4);
 } catch (e) {}
 
+const featuredBook = books[0];
+const otherBooks = books.slice(1, 4);
+
 let rssItems: any[] = [];
 try {
   rssItems = (await aggregateRSSFeeds(4));
 } catch (e) {}
 
-const iconMap: Record<string, string> = {
-  "Seneca's Letters": "scroll-text",
-  "Akshara": "languages",
-  "Paper Lanterns": "lamp",
-  "Rabbit Holes": "rabbit",
-  "Dhawani": "mic",
-  "Paper Trails": "rss",
-  "From The Dumpster Fire": "fire",
-  "Collections": "sparkles",
-};
-
 const coverStyles: Record<string, { bg: string; spine: string }> = {
-  flame: {
-    bg: 'linear-gradient(170deg, #B84430 0%, #C45638 45%, #9A3A28 100%)',
-    spine: '#7A2E1E',
-  },
-  blue: {
-    bg: 'linear-gradient(170deg, #2E4B78 0%, #3D6098 45%, #253E68 100%)',
-    spine: '#1C3050',
-  },
-  green: {
-    bg: 'linear-gradient(170deg, #336B45 0%, #448B5A 45%, #2A5838 100%)',
-    spine: '#1E4030',
-  },
-  gold: {
-    bg: 'linear-gradient(170deg, #8B6E35 0%, #A8864A 45%, #73592A 100%)',
-    spine: '#5A4520',
-  },
+  flame: { bg: 'linear-gradient(170deg, #B84430 0%, #C45638 45%, #9A3A28 100%)', spine: '#7A2E1E' },
+  blue:  { bg: 'linear-gradient(170deg, #2E4B78 0%, #3D6098 45%, #253E68 100%)', spine: '#1C3050' },
+  green: { bg: 'linear-gradient(170deg, #336B45 0%, #448B5A 45%, #2A5838 100%)', spine: '#1E4030' },
+  gold:  { bg: 'linear-gradient(170deg, #8B6E35 0%, #A8864A 45%, #73592A 100%)', spine: '#5A4520' },
 };
 const colorKeys = ['flame', 'blue', 'green', 'gold'];
+
+const fmtFull = (d: Date) => d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+const fmtShort = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
 ---
 
 <Layout title="Bhuvan — The Folio">
   <Nav />
 
-  <!-- ===== OPENING + WRITING ===== -->
+  <!-- ============================================================
+       MASTHEAD
+       ============================================================ -->
   <div class="wrap">
     <div class="col">
+      <header class="masthead">
+        <h1 class="nameplate">
+          Bhuvan<span class="np-stop">.</span>
+        </h1>
 
-      <section class="opening">
-        <div class="opening-hero">
-          <img src="/blog-images/Bhuvan profile pic.webp" alt="Bhuvan" class="opening-photo" width="88" height="88" />
-          <h1 class="nameplate">Bhuvan<em>.</em></h1>
-        </div>
-        <p class="strapline">Doer of random things. Diver of weird rabbit holes.<br />Sharer of weird and fascinating things. Writer of things nobody reads.</p>
+        <p class="strapline">
+          Doer of random things, diver of weird rabbit holes,<br />
+          sharer of fascinating things, writer of things nobody reads.
+        </p>
 
-        <div class="opening-rule"></div>
-
-        <div class="details">
-          <div class="detail-row">
-            <span class="detail-label">work</span>
-            <span class="detail-value"><a href="https://zerodha.com">Zerodha</a> — markets, data, thinking about curation</span>
+        <!-- colophon body — replaces the work/now/made detail rows -->
+        <dl class="bio">
+          <div class="bio-row">
+            <dt>Day</dt>
+            <dd><a href="https://zerodha.com">Zerodha</a> &mdash; markets, data, thinking about curation</dd>
           </div>
-          <div class="detail-row">
-            <span class="detail-label">now</span>
-            <span class="detail-value">OCR pipeline for 1860s Kannada texts at <a href="https://akshara.ink">Akshara</a>. Reading Borges again.</span>
+          <div class="bio-row">
+            <dt>Now</dt>
+            <dd>Thinking about all the treasures hiding in the public domain &mdash; and what on earth to do with them.</dd>
           </div>
-          <div class="detail-row">
-            <span class="detail-label">made</span>
-            <span class="detail-value">
-              <span class="detail-links">
-                {projects.map((p, i) => (
-                  <>
-                    <a href={p.data.link || '#'}>{p.data.url || p.data.title}</a>
-                    {i < projects.length - 1 && <span class="link-sep">&middot;</span>}
-                  </>
-                ))}
-              </span>
-            </span>
+          <div class="bio-row">
+            <dt>Made</dt>
+            <dd class="bio-made">
+              {projects.map((p, i) => (
+                <>
+                  <a href={p.data.link || '#'}>{p.data.url || p.data.title}</a>{i < projects.length - 1 && <span class="sep" aria-hidden="true">,</span>}
+                </>
+              ))}
+            </dd>
           </div>
-        </div>
-        <span class="opening-hand">ideas, loose threads, and the occasional rabbit hole</span>
-      </section>
-
-      <!-- ===== WRITING (I) ===== -->
-      <section class="sec">
-        <header class="sec-header">
-          <span class="sec-num">I</span>
-          <h2 class="sec-title">Writing</h2>
-        </header>
-
-        {featuredPost && (
-          <div class="essay-featured">
-            <div class="ef-meta">
-              {featuredPost.data.publishDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
-              {featuredPost.data.readingTime && ` · ${featuredPost.data.readingTime}`}
-              <span class="ef-badge">latest</span>
-            </div>
-            <h3 class="ef-title">
-              <a href={`/blog/${featuredPost.slug}/`}>{featuredPost.data.title}</a>
-            </h3>
-            {featuredPost.data.description && (
-              <p class="ef-body">{featuredPost.data.description}</p>
-            )}
-            <a href={`/blog/${featuredPost.slug}/`} class="ef-read">Read the essay &rarr;</a>
-          </div>
-        )}
-
-        {morePosts.map(post => (
-          <div class="essay-row">
-            <a href={`/blog/${post.slug}/`} class="er-title">{post.data.title}</a>
-            <span class="er-meta">
-              {post.data.publishDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
-              {post.data.tags?.[0] && <span class="er-tag"> · {post.data.tags[0]}</span>}
-            </span>
-          </div>
-        ))}
-
-        <a href="/writing" class="sec-more">See all writing &rarr;</a>
-      </section>
-
-      <!-- ===== INTERSTITIAL (Seneca) ===== -->
-      <Interstitial
-        quote="It is not that we have a short time to live, but that we waste a great deal of it."
-        attribution="Seneca, Letter I · from seneca.ink"
-        annotation="built a whole website for this guy ↗"
-      />
-
+        </dl>
+      </header>
     </div>
   </div>
 
-  <!-- ===== NOTES (II) ===== -->
+  <!-- ============================================================
+       I. THE FEATURED ESSAY — magazine cover treatment
+       ============================================================ -->
   <div class="wrap">
     <div class="col">
-      <section class="sec">
-        <header class="sec-header">
-          <span class="sec-num">II</span>
-          <h2 class="sec-title">Marginalia</h2>
-        </header>
+      {featuredPost && (
+        <article class="featured">
+          <!-- left margin: dateline + reading time + a single hand bracket -->
+          <aside class="featured-meta">
+            <span class="fm-kicker">The Essay</span>
+            <span class="fm-date">{fmtFull(featuredPost.data.publishDate)}</span>
+            {featuredPost.data.readingTime && (
+              <span class="fm-time">{featuredPost.data.readingTime}</span>
+            )}
+            <svg class="fm-bracket" viewBox="0 0 28 80" aria-hidden="true">
+              <path d="M22 4 Q4 6 4 40 Q4 74 22 76" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+            </svg>
+          </aside>
 
-        {updates.map(async (update) => {
-          const { Content } = await update.render();
-          return (
-            <div class="note">
-              <div class="note-header">
-                <span class="note-time">{update.data.publishDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
-                {update.data.category === 'voice' && (
-                  <span class="note-voice">
-                    <span class="v"></span><span class="v"></span><span class="v"></span><span class="v"></span><span class="v"></span>
-                  </span>
-                )}
-                {update.data.category && <span class="note-cat">{update.data.category}</span>}
-              </div>
-              <div class="note-body">
-                <Content />
-              </div>
-            </div>
-          );
-        })}
+          <h2 class="featured-title">
+            <a href={`/blog/${featuredPost.slug}/`}>{featuredPost.data.title}</a>
+          </h2>
 
-        <a href="/marginalia" class="sec-more">See all marginalia &rarr;</a>
-      </section>
+          {featuredPost.data.description && (
+            <p class="featured-lede">{featuredPost.data.description}</p>
+          )}
 
-      <!-- ===== TRAILS (III) + PROJECTS (IV) ===== -->
+          <a href={`/blog/${featuredPost.slug}/`} class="featured-cta">
+            <span class="cta-line"></span>Begin reading
+          </a>
 
-      {rssItems.length > 0 && (
-        <section class="sec">
-          <header class="sec-header">
-            <span class="sec-num">III</span>
-            <h2 class="sec-title">Trails</h2>
+          <!-- the one handwritten aside on the page (besides the footer) -->
+          <span class="featured-hand">written between trains, mostly</span>
+        </article>
+      )}
+
+      <!-- ============================================================
+           Recent writing — editorial index, not a card grid
+           ============================================================ -->
+      {morePosts.length > 0 && (
+        <section class="index">
+          <header class="index-head">
+            <span class="index-label">Also in this issue</span>
           </header>
 
-          <div class="trails-list">
-            {rssItems.map((item, i) => (
-              <a href={item.link} class="trail">
-                <span class="trail-num">{String(i + 1).padStart(2, '0')}</span>
-                <div class="trail-content">
-                  <span class="trail-source">{item.source}</span>
-                  <span class="trail-title">{item.title}</span>
-                </div>
-              </a>
+          <ol class="index-list">
+            {morePosts.map(post => (
+              <li class="index-row">
+                <span class="ix-date">{fmtShort(post.data.publishDate)}</span>
+                <a href={`/blog/${post.slug}/`} class="ix-title">{post.data.title}</a>
+                {post.data.tags?.[0] && (
+                  <span class="ix-tag">{post.data.tags[0]}</span>
+                )}
+              </li>
             ))}
-          </div>
+          </ol>
 
-          <a href="/trails" class="sec-more">See all trails &rarr;</a>
+          <a href="/writing" class="index-more">The full archive</a>
+        </section>
+      )}
+    </div>
+  </div>
+
+  <!-- ============================================================
+       II. SUPPORTING ACTS — marginalia, trails, projects
+       Three quieter sections, deliberately compressed.
+       ============================================================ -->
+  <div class="wrap">
+    <div class="col">
+
+      <!-- ---- Marginalia ---- -->
+      <section class="quiet quiet--marginalia">
+        <header class="quiet-head">
+          <span class="quiet-eyebrow">Notebook</span>
+          <h3 class="quiet-title">Marginalia</h3>
+          <span class="quiet-sub">Half-formed things, kept on purpose.</span>
+        </header>
+
+        <div class="notes">
+          {updates.map(async (update) => {
+            const { Content } = await update.render();
+            return (
+              <article class="note">
+                <span class="note-date">{fmtShort(update.data.publishDate)}</span>
+                <div class="note-body">
+                  {update.data.category === 'voice' && (
+                    <span class="note-voice" aria-label="voice memo">
+                      <span class="v"></span><span class="v"></span><span class="v"></span><span class="v"></span><span class="v"></span><span class="v"></span><span class="v"></span>
+                    </span>
+                  )}
+                  <Content />
+                </div>
+              </article>
+            );
+          })}
+        </div>
+
+        <a href="/marginalia" class="quiet-more">More marginalia</a>
+      </section>
+
+      <!-- ---- Trails ---- -->
+      {rssItems.length > 0 && (
+        <section class="quiet quiet--trails">
+          <header class="quiet-head">
+            <span class="quiet-eyebrow">Reading</span>
+            <h3 class="quiet-title">Trails</h3>
+            <span class="quiet-sub">Where I've been clicking lately.</span>
+          </header>
+
+          <ul class="trails">
+            {rssItems.map((item) => (
+              <li class="trail">
+                <a href={item.link}>
+                  <span class="tr-source">{item.source}</span>
+                  <span class="tr-title">{item.title}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          <a href="/trails" class="quiet-more">The whole thicket</a>
         </section>
       )}
 
-      <section class="sec">
-        <header class="sec-header">
-          <span class="sec-num">IV</span>
-          <h2 class="sec-title">Projects</h2>
+      <!-- ---- Projects ---- -->
+      <section class="quiet quiet--projects">
+        <header class="quiet-head">
+          <span class="quiet-eyebrow">Workshop</span>
+          <h3 class="quiet-title">Things I've built</h3>
+          <span class="quiet-sub">Mostly to scratch my own itches.</span>
         </header>
 
-        {projects.map(project => (
-          <div class="proj">
-            <div class="proj-icon">
-              <ProjectIcon name={iconMap[project.data.title] || 'sparkles'} size={28} />
-            </div>
-            <div>
-              <div class="proj-name"><a href={project.data.link || '#'}>{project.data.title}</a></div>
-              {project.data.url && <span class="proj-url">{project.data.url}</span>}
-              <div class="proj-desc">{project.data.description}</div>
-              {project.data.story && (
-                <span class="proj-hand">&larrhk; {project.data.story}</span>
+        <div class="projects">
+          {projects.map(project => (
+            <article class="project">
+              <h4 class="pr-name">
+                <a href={project.data.link || '#'}>{project.data.title}</a>
+              </h4>
+              {project.data.url && (
+                <span class="pr-url">{project.data.url}</span>
               )}
-            </div>
-          </div>
-        ))}
+              <p class="pr-desc">{project.data.description}</p>
+            </article>
+          ))}
+        </div>
 
-        <a href="/projects" class="sec-more">See all projects &rarr;</a>
+        <a href="/projects" class="quiet-more">All the projects</a>
       </section>
 
     </div>
   </div>
 
-  <!-- ===== INTERSTITIAL (Borges) ===== -->
+  <!-- ============================================================
+       Interstitial — CSS-only quote rotator. Each quote fades in
+       for ~7s, total cycle is N * 8s. prefers-reduced-motion
+       falls back to a single static quote.
+       ============================================================ -->
   <div class="wrap">
     <div class="col">
-      <Interstitial
-        quote="I have always imagined that Paradise will be a kind of library."
-        attribution="Borges, Ficciones"
-        annotation="same, honestly"
-      />
+      <section class="rotator" style={`--rot-count: ${quotes.length}; --rot-step: 8s;`} aria-label="A rotating quotation">
+        <div class="rot-rule"></div>
+        <div class="rot-stage">
+          {quotes.map((q, i) => (
+            <figure class="rot-quote" style={`--i: ${i};`}>
+              <blockquote>{q.text}</blockquote>
+              <figcaption>&mdash; {q.by}</figcaption>
+            </figure>
+          ))}
+        </div>
+        <div class="rot-rule"></div>
+      </section>
     </div>
   </div>
 
-  <!-- ===== BOOKS (V) ===== -->
-  {books.length > 0 && (
+  <!-- ============================================================
+       III. BOOKS — second headline act
+       Featured book gets a real cover treatment with the pull
+       quote running beside it. Three siblings on a shelf below,
+       with deliberately uneven baselines so they feel arranged.
+       ============================================================ -->
+  {featuredBook && (
     <div class="wrap">
       <div class="col">
-        <section class="sec">
-          <header class="sec-header">
-            <span class="sec-num">V</span>
-            <h2 class="sec-title">Books</h2>
+        <section class="library">
+          <header class="library-head">
+            <span class="quiet-eyebrow">The Stack</span>
+            <h3 class="library-title">A small library</h3>
+            <span class="quiet-sub">What's been worth the time.</span>
           </header>
 
-          <div class="books-grid">
-            {books.map((book, i) => {
-              const color = book.data.coverColor || colorKeys[i % colorKeys.length];
-              const style = coverStyles[color] || coverStyles.flame;
-              return (
-                <a href={`/books/${book.slug}/`} class="book-card">
-                  <div class="bc-cover" style={`--cover-bg: ${style.bg}; --cover-spine: ${style.spine};`}>
-                    <div class="bc-cover-inner">
-                      <span class="bc-cover-author">{book.data.author}</span>
-                      <span class="bc-cover-title">{book.data.title}</span>
-                    </div>
-                  </div>
-                  <div class="bc-meta">
-                    <span class="bc-title">{book.data.title}</span>
-                    {book.data.pull && (
-                      <span class="bc-pull">{book.data.pull}</span>
-                    )}
-                  </div>
-                </a>
-              );
-            })}
-          </div>
+          <!-- Featured book: cover + pull quote -->
+          <article class="featured-book">
+            <a href={`/books/${featuredBook.slug}/`} class="fb-cover-link">
+              <div
+                class="fb-cover"
+                style={`--cover-bg: ${(coverStyles[featuredBook.data.coverColor] || coverStyles.flame).bg}; --cover-spine: ${(coverStyles[featuredBook.data.coverColor] || coverStyles.flame).spine};`}
+              >
+                <div class="fb-cover-inner">
+                  <span class="fb-cover-author">{featuredBook.data.author}</span>
+                  <span class="fb-cover-title">{featuredBook.data.title}</span>
+                </div>
+              </div>
+            </a>
 
-          <a href="/books" class="sec-more">See all books &rarr;</a>
+            <div class="fb-text">
+              <span class="fb-kicker">Most recent</span>
+              <h4 class="fb-title">
+                <a href={`/books/${featuredBook.slug}/`}>{featuredBook.data.title}</a>
+              </h4>
+              <span class="fb-author">by {featuredBook.data.author}</span>
+              {featuredBook.data.pull && (
+                <blockquote class="fb-pull">{featuredBook.data.pull}</blockquote>
+              )}
+            </div>
+          </article>
+
+          <!-- Sibling books on a shelf -->
+          {otherBooks.length > 0 && (
+            <div class="shelf">
+              {otherBooks.map((book, i) => {
+                const color = book.data.coverColor || colorKeys[(i + 1) % colorKeys.length];
+                const style = coverStyles[color] || coverStyles.flame;
+                // Slight baseline variation: book 0 sits flush, 1 nudged down,
+                // 2 nudged up. Real shelves are never perfectly even.
+                const offsets = ['0px', '6px', '-4px'];
+                return (
+                  <a
+                    href={`/books/${book.slug}/`}
+                    class="sh-book"
+                    style={`--cover-bg: ${style.bg}; --cover-spine: ${style.spine}; --baseline: ${offsets[i] || '0px'};`}
+                  >
+                    <div class="sh-cover">
+                      <div class="sh-cover-inner">
+                        <span class="sh-author">{book.data.author}</span>
+                        <span class="sh-title">{book.data.title}</span>
+                      </div>
+                    </div>
+                    <span class="sh-meta">{book.data.title}</span>
+                  </a>
+                );
+              })}
+            </div>
+          )}
+
+          <a href="/books" class="quiet-more">The whole library</a>
         </section>
       </div>
     </div>
   )}
 
+  <!-- ============================================================
+       Footer
+       ============================================================ -->
   <div class="wrap">
     <div class="col">
       <Footer hand="What kind of sociopath reads footer text? Oh wait, you just did." />
@@ -298,577 +376,718 @@ const colorKeys = ['flame', 'blue', 'green', 'gold'];
 </Layout>
 
 <style>
-  /* ===== OPENING ===== */
-  .opening {
-    padding: 8.5rem 0 2rem;
+  /* ================================================================
+     HOMEPAGE — folio re-pace
+     Intent: real hierarchy, deliberate use of the side margin,
+     scale jumps that create life, restraint with handwritten type.
+     ================================================================ */
+
+  /* ---- shared utilities ---- */
+  .col { position: relative; } /* anchor margin elements */
+
+  /* ===== MASTHEAD ============================================== */
+  .masthead {
+    padding: 4.5rem 0 2.5rem;
     text-align: center;
-  }
-
-  .opening-hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.4rem;
-    margin-bottom: 0.9rem;
-  }
-
-  .opening-photo {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-    flex-shrink: 0;
+    position: relative;
   }
 
   .nameplate {
     font-family: var(--serif);
-    font-size: clamp(3.8rem, 7.5vw, 5.2rem);
-    font-weight: 700;
-    line-height: 0.9;
-    letter-spacing: -0.045em;
+    font-size: clamp(3.4rem, 6.8vw, 4.6rem);
+    font-weight: 300;
+    line-height: 0.92;
+    letter-spacing: -0.04em;
     color: var(--ink);
-    font-variation-settings: 'opsz' 72;
+    font-variation-settings: 'opsz' 144;
+    font-feature-settings: 'kern', 'liga', 'dlig';
+    margin-bottom: 1.1rem;
   }
-
-  .nameplate em {
-    font-style: normal;
+  .np-stop {
     color: var(--flame);
-    font-size: 1.1em;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: -0.04em;
   }
 
   .strapline {
     font-family: var(--serif);
-    font-size: clamp(0.98rem, 1.6vw, 1.12rem);
-    font-weight: 300;
+    font-size: clamp(0.95rem, 1.6vw, 1.06rem);
     font-style: italic;
+    font-weight: 300;
+    line-height: 1.65;
     color: var(--ink-soft);
-    line-height: 1.6;
-    font-variation-settings: 'opsz' 20;
-  }
-
-  .opening-rule {
-    width: 40px;
-    height: 1px;
-    background: var(--ink-ghost);
-    margin: 2rem auto 1.6rem;
-  }
-
-  .details {
-    display: flex;
-    flex-direction: column;
-    gap: 0.65rem;
-    text-align: left;
-    max-width: 440px;
+    max-width: 42ch;
     margin: 0 auto;
+    font-variation-settings: 'opsz' 18;
+    text-wrap: pretty;
   }
 
-  .detail-row {
-    display: flex;
+  /* colophon */
+  .bio {
+    margin: 2.4rem auto 0;
+    max-width: 460px;
+    text-align: left;
+    border-top: 1px solid var(--rule-faint);
+    padding-top: 1.4rem;
+  }
+  .bio-row {
+    display: grid;
+    grid-template-columns: 60px 1fr;
     align-items: baseline;
     gap: 0.9rem;
+    padding: 0.45rem 0;
   }
-
-  .detail-label {
-    font-family: var(--hand);
-    font-size: 1.05rem;
+  .bio dt {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
     color: var(--ink-light);
-    width: 48px;
-    flex-shrink: 0;
-    transform: rotate(-0.3deg);
-    display: inline-block;
+    padding-top: 0.18rem;
   }
-
-  .detail-value {
+  .bio dd {
     font-family: var(--serif);
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 300;
-    color: var(--ink-soft);
-    line-height: 1.55;
-    font-variation-settings: 'opsz' 16;
+    line-height: 1.6;
+    color: var(--ink-mid);
+    font-variation-settings: 'opsz' 14;
+  }
+  .bio dd a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: var(--rule);
+    text-underline-offset: 3px;
+    transition: color 0.2s, text-decoration-color 0.2s;
+  }
+  .bio dd a:hover {
+    color: var(--flame);
+    text-decoration-color: var(--flame);
+  }
+  .bio-made { font-family: var(--mono); font-size: 0.82rem; letter-spacing: 0.01em; }
+  .bio-made a { color: var(--ink-mid); }
+  .bio-made .sep { color: var(--ink-ghost); margin-right: 0.4rem; }
+
+  /* ===== I. FEATURED ESSAY ===================================== */
+  .featured {
+    position: relative;
+    padding: 6rem 0 4rem;
   }
 
-  .detail-value a {
+  /* left margin element — visible only on wide screens */
+  .featured-meta {
+    position: absolute;
+    right: calc(100% + var(--gap));
+    top: 6.4rem;
+    width: var(--margin);
+    text-align: right;
+    color: var(--ink-light);
+  }
+  .fm-kicker {
+    display: block;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--flame);
+    margin-bottom: 0.9rem;
+    font-weight: 500;
+  }
+  .fm-date {
+    display: block;
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--ink-mid);
+    line-height: 1.4;
+  }
+  .fm-time {
+    display: block;
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    color: var(--ink-light);
+    letter-spacing: 0.04em;
+    margin-top: 0.4rem;
+  }
+  .fm-bracket {
+    width: 22px;
+    height: 64px;
+    color: var(--flame-line);
+    margin: 1.4rem 0 0 auto;
+    display: block;
+  }
+
+  .featured-title {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 4.2vw, 3rem);
+    font-weight: 300;
+    line-height: 1.06;
+    letter-spacing: -0.026em;
+    color: var(--ink);
+    font-variation-settings: 'opsz' 72;
+    text-wrap: balance;
+    margin-bottom: 1.6rem;
+  }
+  .featured-title a {
+    color: inherit;
+    text-decoration: none;
+    background-image: linear-gradient(var(--flame-line), var(--flame-line));
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    transition: background-size 0.5s var(--ease);
+  }
+  .featured-title a:hover {
+    background-size: 100% 1px;
+  }
+
+  .featured-lede {
+    font-family: var(--serif);
+    font-size: 1.12rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    max-width: 56ch;
+    font-variation-settings: 'opsz' 24;
+    text-wrap: pretty;
+    margin-bottom: 1.8rem;
+  }
+
+  /* CTA — a hairline that becomes a line of type */
+  .featured-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--ink);
+    text-decoration: none;
+    transition: color 0.3s, gap 0.3s;
+    font-weight: 500;
+  }
+  .cta-line {
+    display: inline-block;
+    width: 28px;
+    height: 1px;
+    background: var(--ink);
+    transition: width 0.3s var(--ease), background 0.3s;
+  }
+  .featured-cta:hover { color: var(--flame); gap: 0.95rem; }
+  .featured-cta:hover .cta-line { width: 44px; background: var(--flame); }
+
+  /* the one handwritten flourish on the homepage */
+  .featured-hand {
+    position: absolute;
+    right: -0.5rem;
+    bottom: 4.4rem;
+    font-family: var(--hand);
+    font-size: 1.15rem;
+    color: var(--flame-warm);
+    transform: rotate(-1.5deg);
+    max-width: 180px;
+    text-align: center;
+    line-height: 1.2;
+  }
+  .featured-hand::before {
+    content: '';
+    display: block;
+    width: 38px;
+    height: 1px;
+    background: var(--flame-line);
+    margin: 0 auto 0.35rem;
+    transform: rotate(-2deg);
+  }
+
+  /* ===== Recent writing — editorial index ===================== */
+  .index {
+    margin-top: 1.5rem;
+    padding-top: 2.2rem;
+    border-top: 1px solid var(--rule-faint);
+  }
+  .index-head { margin-bottom: 1.4rem; }
+  .index-label {
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--ink-light);
+    font-weight: 500;
+  }
+  .index-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid var(--rule-faint);
+  }
+  .index-row {
+    display: grid;
+    grid-template-columns: 64px 1fr auto;
+    align-items: baseline;
+    gap: 1.2rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--rule-faint);
+    transition: padding 0.3s var(--ease);
+  }
+  .index-row:hover { padding-left: 0.4rem; }
+  .ix-date {
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    color: var(--ink-light);
+    letter-spacing: 0.04em;
+  }
+  .ix-title {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.35;
+    color: var(--ink);
+    text-decoration: none;
+    text-wrap: balance;
+    transition: color 0.2s;
+  }
+  .ix-title:hover { color: var(--flame); }
+  .ix-tag {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 0.92rem;
+    color: var(--ink-light);
+    font-variation-settings: 'opsz' 14;
+    white-space: nowrap;
+  }
+  .index-more {
+    display: inline-block;
+    margin-top: 1.8rem;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
     color: var(--ink-mid);
     text-decoration: none;
     border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.2rem;
     transition: color 0.2s, border-color 0.2s;
-  }
-
-  .detail-value a:hover {
-    color: var(--flame);
-    border-color: var(--flame-line);
-  }
-
-  .detail-links {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.3rem 0;
-  }
-
-  .detail-links a {
-    font-family: var(--mono);
-    font-size: 0.6rem;
-    color: var(--ink-light);
-    text-decoration: none;
-    border-bottom: 1px solid var(--rule-faint);
-    padding-bottom: 0.05em;
-    transition: color 0.2s, border-color 0.2s;
-  }
-
-  .detail-links a:hover {
-    color: var(--flame);
-    border-color: var(--flame-line);
-  }
-
-  .link-sep {
-    font-family: var(--mono);
-    font-size: 0.6rem;
-    color: var(--ink-ghost);
-    margin: 0 0.35rem;
-    user-select: none;
-  }
-
-  .opening-hand {
-    font-family: var(--hand);
-    font-size: 1.05rem;
-    color: var(--ink-light);
-    display: block;
-    margin-top: 1.5rem;
-    text-align: center;
-    transform: rotate(-0.5deg);
-  }
-
-  /* ===== SECTIONS ===== */
-  .sec {
-    margin-top: 4.5rem;
-    padding-top: 2rem;
-    position: relative;
-  }
-
-  .sec::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 1px;
-    background: var(--ink-ghost);
-  }
-
-  .sec-header {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-
-  .sec-num {
-    font-family: var(--serif);
-    font-size: 1.6rem;
-    font-weight: 200;
-    color: var(--rule);
-    letter-spacing: -0.04em;
-    display: block;
-    line-height: 1;
-    margin-bottom: 0.3rem;
-  }
-
-  .sec-title {
-    font-family: var(--serif);
-    font-size: clamp(1.4rem, 2.5vw, 1.7rem);
-    font-weight: 300;
-    color: var(--ink);
-    letter-spacing: -0.03em;
-    line-height: 1.1;
-    font-variation-settings: 'opsz' 48;
-  }
-
-  .sec-more {
-    font-family: var(--mono);
-    font-size: 0.62rem;
-    color: var(--ink-soft);
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    margin-top: 2rem;
-    transition: color 0.2s;
-  }
-
-  .sec-more:hover {
-    color: var(--flame);
-  }
-
-  /* ===== FEATURED ESSAY ===== */
-  .essay-featured {
-    padding: 0 0 2.5rem;
-    margin-bottom: 0.5rem;
-    border-bottom: 1px solid var(--rule);
-  }
-
-  .ef-meta {
-    display: flex;
-    align-items: center;
-    gap: 0.65rem;
-    font-family: var(--mono);
-    font-size: 0.6rem;
-    color: var(--ink-faint);
-    margin-bottom: 1.2rem;
-  }
-
-  .ef-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-    font-size: 0.55rem;
     font-weight: 500;
-    color: var(--flame);
-    background: var(--flame-wash);
-    padding: 0.12rem 0.5rem;
-    border-radius: 3px;
   }
+  .index-more:hover { color: var(--flame); border-color: var(--flame); }
 
-  .ef-badge::before {
-    content: '';
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: var(--flame);
-    animation: pulse 2s ease infinite;
+  /* ===== II. QUIET SECTIONS =================================== */
+  .quiet {
+    padding: 3.8rem 0 0;
+    margin-top: 1.5rem;
   }
-
-  .ef-title {
-    font-family: var(--serif);
-    font-size: clamp(1.6rem, 3vw, 2.2rem);
-    font-weight: 400;
-    line-height: 1.18;
-    letter-spacing: -0.025em;
-    margin-bottom: 1.4rem;
-    font-variation-settings: 'opsz' 48;
+  .quiet-head {
+    margin-bottom: 1.8rem;
+    max-width: 480px;
   }
-
-  .ef-title a {
-    color: var(--ink);
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-
-  .ef-title a:hover {
-    color: var(--flame);
-  }
-
-  .ef-body {
-    font-family: var(--serif);
-    font-size: 0.95rem;
-    font-weight: 300;
-    font-style: italic;
-    line-height: 1.78;
-    color: var(--ink-soft);
-    border-left: 2px solid var(--flame-line);
-    padding-left: 1.2rem;
-    max-width: 500px;
-    margin-bottom: 1.4rem;
-  }
-
-  .ef-read {
+  .quiet-eyebrow {
+    display: block;
     font-family: var(--mono);
-    font-size: 0.62rem;
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
     color: var(--flame);
-    text-decoration: none;
-    transition: color 0.2s;
+    margin-bottom: 0.6rem;
+    font-weight: 500;
   }
-
-  .ef-read:hover {
+  .quiet-title {
+    font-family: var(--serif);
+    font-size: 1.55rem;
+    font-weight: 300;
+    letter-spacing: -0.018em;
     color: var(--ink);
+    line-height: 1.1;
+    font-variation-settings: 'opsz' 36;
+    margin-bottom: 0.45rem;
   }
+  .quiet-sub {
+    display: block;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 0.96rem;
+    font-weight: 300;
+    color: var(--ink-light);
+    line-height: 1.55;
+    font-variation-settings: 'opsz' 14;
+  }
+  .quiet-more {
+    display: inline-block;
+    margin-top: 1.8rem;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-mid);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.2rem;
+    transition: color 0.2s, border-color 0.2s;
+    font-weight: 500;
+  }
+  .quiet-more:hover { color: var(--flame); border-color: var(--flame); }
 
-  /* ===== ESSAY ROWS ===== */
-  .essay-row {
-    padding: 1.1rem 0;
+  /* ---- marginalia ---- */
+  .notes {
+    border-top: 1px solid var(--rule-faint);
+  }
+  .note {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 1.2rem;
+    padding: 1.4rem 0;
     border-bottom: 1px solid var(--rule-faint);
   }
-
-  .essay-row:last-child {
-    border-bottom: none;
-  }
-
-  .er-title {
-    font-family: var(--serif);
-    font-size: 1.05rem;
-    font-weight: 400;
-    color: var(--ink);
-    text-decoration: none;
-    line-height: 1.35;
-    letter-spacing: -0.01em;
-    display: block;
-    transition: color 0.2s;
-    font-variation-settings: 'opsz' 16;
-  }
-
-  .er-title:hover {
-    color: var(--flame);
-  }
-
-  .er-meta {
+  .note-date {
     font-family: var(--mono);
-    font-size: 0.6rem;
+    font-size: 0.74rem;
     color: var(--ink-light);
-    display: block;
-    margin-top: 0.25rem;
+    letter-spacing: 0.04em;
+    padding-top: 0.45rem;
   }
-
-  .er-tag {
-    font-family: var(--hand);
-    font-size: 1.05rem;
-    color: var(--ink-ghost);
-  }
-
-  /* ===== NOTES ===== */
-  .note {
-    border-left: 2px solid var(--flame-line);
-    padding: 0.2rem 0 0.2rem 1.4rem;
-    margin-bottom: 2.5rem;
-    transition: border-left-color 0.2s;
-  }
-
-  .note:last-child {
-    margin-bottom: 0;
-  }
-
-  .note:hover {
-    border-left-color: var(--flame);
-  }
-
-  .note-header {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .note-time {
-    font-family: var(--mono);
-    font-size: 0.6rem;
-    color: var(--ink-faint);
-  }
-
-  .note-voice {
-    display: inline-flex;
-    align-items: center;
-    gap: 2px;
-  }
-
-  .note-voice .v {
-    width: 2px;
-    border-radius: 1px;
-    background: var(--flame-warm);
-    opacity: 0.5;
-  }
-
-  .note-voice .v:nth-child(1) { height: 4px; }
-  .note-voice .v:nth-child(2) { height: 8px; }
-  .note-voice .v:nth-child(3) { height: 12px; }
-  .note-voice .v:nth-child(4) { height: 7px; }
-  .note-voice .v:nth-child(5) { height: 3px; }
-
-  .note-cat {
-    font-family: var(--mono);
-    font-size: 0.58rem;
-    color: var(--ink-faint);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-  }
-
   .note-body {
     font-family: var(--serif);
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 300;
-    line-height: 1.75;
+    line-height: 1.7;
     color: var(--ink-mid);
+    font-variation-settings: 'opsz' 14;
+    text-wrap: pretty;
   }
-
-  .note-body :global(strong) { font-weight: 500; color: var(--ink); }
   .note-body :global(p) { margin: 0; }
-  .note-body :global(p + p) { margin-top: 0.5rem; }
-  .note-body :global(a) { color: var(--flame); text-decoration: none; }
+  .note-body :global(p + p) { margin-top: 0.45rem; }
+  .note-body :global(strong) { font-weight: 500; color: var(--ink); }
+  .note-body :global(a) {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: var(--flame-line);
+    text-underline-offset: 2px;
+    transition: color 0.2s;
+  }
+  .note-body :global(a:hover) { color: var(--flame); }
   .note-body :global(blockquote) {
     font-style: italic;
     color: var(--ink-light);
     margin: 0.5rem 0;
-    padding-left: 1rem;
+    padding-left: 0.9rem;
     border-left: 2px solid var(--flame-line);
   }
-
-  /* ===== TRAILS ===== */
-  .trails-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+  .note-voice {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 2px;
+    margin-right: 0.4rem;
+    vertical-align: -1px;
+    height: 0.7rem;
   }
+  .note-voice .v {
+    width: 2px;
+    border-radius: 1px;
+    background: var(--flame-warm);
+    opacity: 0.55;
+  }
+  .note-voice .v:nth-child(1) { height: 4px; }
+  .note-voice .v:nth-child(2) { height: 9px; }
+  .note-voice .v:nth-child(3) { height: 12px; }
+  .note-voice .v:nth-child(4) { height: 7px; }
+  .note-voice .v:nth-child(5) { height: 10px; }
+  .note-voice .v:nth-child(6) { height: 5px; }
+  .note-voice .v:nth-child(7) { height: 3px; }
 
+  /* ---- trails — single column of typographic links ---- */
+  .trails {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--rule-faint);
+  }
   .trail {
-    display: grid;
-    grid-template-columns: 2rem 1fr;
-    gap: 0.8rem;
-    align-items: baseline;
-    padding: 1.1rem 0;
     border-bottom: 1px solid var(--rule-faint);
+  }
+  .trail a {
+    display: block;
+    padding: 1rem 0;
     text-decoration: none;
-    transition: background 0.2s;
+    transition: padding-left 0.3s var(--ease);
   }
-
-  .trail:last-child {
-    border-bottom: none;
-  }
-
-  .trail-num {
+  .trail a:hover { padding-left: 0.4rem; }
+  .tr-source {
+    display: block;
     font-family: var(--mono);
-    font-size: 0.58rem;
-    color: var(--ink-ghost);
-    transition: color 0.2s;
-  }
-
-  .trail:hover .trail-num {
-    color: var(--flame);
-  }
-
-  .trail-content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.15rem;
-  }
-
-  .trail-source {
-    font-family: var(--mono);
-    font-size: 0.55rem;
-    color: var(--ink-faint);
+    font-size: 0.78rem;
     text-transform: uppercase;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.12em;
+    color: var(--ink-light);
+    margin-bottom: 0.35rem;
+    font-weight: 500;
   }
-
-  .trail-title {
+  .tr-title {
     font-family: var(--serif);
-    font-size: 1rem;
+    font-size: 1.06rem;
     font-weight: 400;
-    color: var(--ink);
     line-height: 1.35;
-    font-variation-settings: 'opsz' 20;
+    color: var(--ink);
+    text-wrap: balance;
     transition: color 0.2s;
   }
+  .trail a:hover .tr-title { color: var(--flame); }
+  .trail a:hover .tr-source { color: var(--flame); }
 
-  .trail:hover .trail-title {
-    color: var(--flame);
+  /* ---- projects — typographic specimen, no icons ---- */
+  .projects {
+    border-top: 1px solid var(--rule-faint);
   }
-
-  /* ===== PROJECTS ===== */
-  .proj {
-    display: grid;
-    grid-template-columns: 40px 1fr;
-    gap: 1.2rem;
-    align-items: start;
-    padding: 2rem 0;
+  .project {
+    padding: 1.5rem 0;
     border-bottom: 1px solid var(--rule-faint);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 1.4rem;
+    row-gap: 0.4rem;
+    align-items: baseline;
   }
-
-  .proj:last-child {
-    border-bottom: none;
-  }
-
-  .proj-icon {
-    font-size: 1.8rem;
-    line-height: 1;
-    transition: transform 0.3s var(--ease);
-  }
-
-  .proj:hover .proj-icon {
-    transform: scale(1.1) rotate(-3deg);
-  }
-
-  .proj-name {
+  .pr-name {
     font-family: var(--serif);
-    font-size: 1.12rem;
-    font-weight: 500;
+    font-size: 1.22rem;
+    font-weight: 400;
+    letter-spacing: -0.014em;
     color: var(--ink);
-    letter-spacing: -0.015em;
-    margin-bottom: 0.1rem;
     font-variation-settings: 'opsz' 28;
+    line-height: 1.2;
+    grid-column: 1;
   }
-
-  .proj-name a {
+  .pr-name a {
     color: inherit;
     text-decoration: none;
     transition: color 0.2s;
   }
-
-  .proj-name a:hover {
-    color: var(--flame);
-  }
-
-  .proj-url {
+  .pr-name a:hover { color: var(--flame); }
+  .pr-url {
     font-family: var(--mono);
-    font-size: 0.6rem;
+    font-size: 0.78rem;
+    text-transform: none;
+    letter-spacing: 0.01em;
     color: var(--flame);
-    display: block;
-    margin-bottom: 0.4rem;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
   }
-
-  .proj-desc {
+  .pr-desc {
+    grid-column: 1 / -1;
     font-family: var(--serif);
-    font-size: 0.92rem;
+    font-style: italic;
+    font-size: 1rem;
     font-weight: 300;
     color: var(--ink-soft);
-    line-height: 1.65;
+    line-height: 1.6;
+    font-variation-settings: 'opsz' 14;
+    max-width: 52ch;
+    text-wrap: pretty;
   }
 
-  .proj-hand {
-    font-family: var(--hand);
-    font-size: 1.05rem;
-    color: var(--flame-warm);
-    display: inline-block;
-    margin-top: 0.35rem;
-    transform: rotate(-0.5deg);
+  /* ===== III. LIBRARY ========================================== */
+  .library {
+    padding: 4.5rem 0 1rem;
+  }
+  .library-head {
+    margin-bottom: 2.4rem;
+    max-width: 480px;
+  }
+  .library-title {
+    font-family: var(--serif);
+    font-size: clamp(1.6rem, 2.6vw, 2rem);
+    font-weight: 300;
+    letter-spacing: -0.022em;
+    color: var(--ink);
+    line-height: 1.1;
+    font-variation-settings: 'opsz' 48;
+    margin-bottom: 0.5rem;
   }
 
-  /* ===== BOOKS GRID ===== */
-  .books-grid {
+  /* Featured book — cover left, prose right */
+  .featured-book {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: 160px 1fr;
+    gap: 2.4rem;
+    align-items: start;
+    padding: 1.5rem 0 3rem;
+    border-top: 1px solid var(--rule-faint);
+    border-bottom: 1px solid var(--rule-faint);
   }
-
-  .book-card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
+  .fb-cover-link {
+    display: block;
     text-decoration: none;
   }
+  .fb-cover {
+    aspect-ratio: 2/3;
+    background: var(--cover-bg);
+    border-radius: 1px 4px 4px 1px;
+    position: relative;
+    box-shadow:
+      -3px 0 0 var(--cover-spine),
+      -4px 0 0 rgba(0,0,0,0.05),
+      2px 2px 5px rgba(0,0,0,0.12),
+      6px 10px 24px rgba(0,0,0,0.10);
+    overflow: hidden;
+    transform: rotate(-1.2deg);
+    transform-origin: center bottom;
+    transition: transform 0.6s var(--ease), box-shadow 0.6s var(--ease);
+  }
+  .fb-cover-link:hover .fb-cover {
+    transform: rotate(0deg) translateY(-4px);
+    box-shadow:
+      -3px 0 0 var(--cover-spine),
+      -4px 0 0 rgba(0,0,0,0.05),
+      3px 6px 12px rgba(0,0,0,0.12),
+      8px 14px 32px rgba(0,0,0,0.09);
+  }
+  .fb-cover::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.14) 0%, transparent 40%, rgba(0,0,0,0.10) 100%);
+    z-index: 2;
+  }
+  .fb-cover::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='1' height='1' fill='%23fff' fill-opacity='0.035'/%3E%3C/svg%3E"),
+      radial-gradient(ellipse at 30% 18%, rgba(255,255,255,0.07) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 82%, rgba(0,0,0,0.10) 0%, transparent 55%);
+    pointer-events: none;
+    z-index: 1;
+  }
+  .fb-cover-inner {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.1rem 1rem;
+    gap: 0.2rem;
+    z-index: 3;
+  }
+  .fb-cover-author {
+    font-family: var(--sans);
+    font-size: 0.5rem;
+    font-weight: 400;
+    color: rgba(255,255,255,0.55);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+  .fb-cover-title {
+    font-family: var(--serif);
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.94);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    font-variation-settings: 'opsz' 18;
+  }
 
-  .bc-cover {
+  .fb-text { padding-top: 0.4rem; }
+  .fb-kicker {
+    display: block;
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--flame);
+    margin-bottom: 0.7rem;
+    font-weight: 500;
+  }
+  .fb-title {
+    font-family: var(--serif);
+    font-size: clamp(1.4rem, 2.6vw, 1.85rem);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.018em;
+    color: var(--ink);
+    font-variation-settings: 'opsz' 48;
+    text-wrap: balance;
+    margin-bottom: 0.35rem;
+  }
+  .fb-title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .fb-title a:hover { color: var(--flame); }
+  .fb-author {
+    display: block;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 0.92rem;
+    font-weight: 300;
+    color: var(--ink-light);
+    margin-bottom: 1.1rem;
+  }
+  .fb-pull {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    border-left: 2px solid var(--flame-line);
+    padding-left: 1rem;
+    max-width: 44ch;
+    text-wrap: pretty;
+    font-variation-settings: 'opsz' 18;
+  }
+
+  /* Sibling shelf */
+  .shelf {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2.6rem;
+    padding-bottom: 0.5rem;
+    align-items: end;
+  }
+  .sh-book {
+    text-decoration: none;
+    transform: translateY(var(--baseline));
+    display: block;
+  }
+  .sh-cover {
     aspect-ratio: 2/3;
     background: var(--cover-bg);
     border-radius: 1px 3px 3px 1px;
     position: relative;
     box-shadow:
-      -3px 0 0 var(--cover-spine),
-      -4px 0 0 rgba(0,0,0,0.05),
-      1px 1px 3px rgba(0,0,0,0.1),
+      -2px 0 0 var(--cover-spine),
+      -3px 0 0 rgba(0,0,0,0.05),
+      1px 1px 3px rgba(0,0,0,0.10),
       3px 5px 14px rgba(0,0,0,0.08);
-    transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
     overflow: hidden;
+    transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
   }
-
-  .bc-cover::before {
+  .sh-book:hover .sh-cover {
+    transform: rotate(-1deg) translateY(-4px);
+    box-shadow:
+      -2px 0 0 var(--cover-spine),
+      -3px 0 0 rgba(0,0,0,0.05),
+      2px 4px 8px rgba(0,0,0,0.10),
+      4px 8px 18px rgba(0,0,0,0.07);
+  }
+  .sh-cover::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
+    top: 0; left: 0; bottom: 0;
     width: 2px;
     background: linear-gradient(180deg, rgba(255,255,255,0.12) 0%, transparent 40%, rgba(0,0,0,0.08) 100%);
     z-index: 2;
   }
-
-  .bc-cover::after {
+  .sh-cover::after {
     content: '';
     position: absolute;
     inset: 0;
@@ -879,93 +1098,155 @@ const colorKeys = ['flame', 'blue', 'green', 'gold'];
     pointer-events: none;
     z-index: 1;
   }
-
-  .book-card:hover .bc-cover {
-    transform: rotate(-1deg) translateY(-3px);
-    box-shadow:
-      -3px 0 0 var(--cover-spine),
-      -4px 0 0 rgba(0,0,0,0.05),
-      2px 4px 8px rgba(0,0,0,0.1),
-      4px 8px 20px rgba(0,0,0,0.07);
-  }
-
-  .bc-cover-inner {
+  .sh-cover-inner {
     position: absolute;
     inset: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0.9rem;
+    padding: 0.7rem 0.65rem;
     gap: 0.15rem;
     z-index: 3;
   }
-
-  .bc-cover-author {
+  .sh-author {
     font-family: var(--sans);
-    font-size: 0.48rem;
+    font-size: 0.42rem;
     font-weight: 400;
     color: rgba(255,255,255,0.55);
     text-transform: uppercase;
     letter-spacing: 0.1em;
   }
-
-  .bc-cover-title {
+  .sh-title {
     font-family: var(--serif);
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 600;
     color: rgba(255,255,255,0.92);
-    line-height: 1.25;
-    letter-spacing: -0.01em;
+    line-height: 1.2;
+    letter-spacing: -0.005em;
   }
-
-  .bc-meta {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-  }
-
-  .bc-title {
+  .sh-meta {
+    display: block;
+    margin-top: 0.8rem;
     font-family: var(--serif);
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: var(--ink);
-    line-height: 1.25;
-    font-variation-settings: 'opsz' 20;
-  }
-
-  .bc-pull {
-    font-family: var(--serif);
-    font-size: 0.78rem;
+    font-size: 0.92rem;
     font-style: italic;
     font-weight: 300;
+    color: var(--ink-soft);
+    line-height: 1.35;
+    text-wrap: balance;
+    font-variation-settings: 'opsz' 14;
+  }
+
+  /* ===== ROTATOR (CSS-only quote cycler) ====================== */
+  .rotator {
+    padding: 5.5rem 0;
+    text-align: center;
+    position: relative;
+  }
+  .rot-rule {
+    width: 40px;
+    height: 1px;
+    background: var(--ink-ghost);
+    margin: 0 auto;
+  }
+  .rot-stage {
+    position: relative;
+    margin: 2.4rem auto;
+    /* reserve enough vertical room for the longest quote */
+    min-height: 11rem;
+    max-width: 560px;
+  }
+  .rot-quote {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    opacity: 0;
+    animation: rot-cycle calc(var(--rot-count) * var(--rot-step)) infinite ease-in-out;
+    animation-delay: calc(var(--i) * var(--rot-step));
+    will-change: opacity, transform;
+  }
+  .rot-quote blockquote {
+    font-family: var(--serif);
+    font-size: clamp(1.25rem, 2.4vw, 1.7rem);
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.5;
+    letter-spacing: -0.005em;
+    color: var(--ink-mid);
+    font-variation-settings: 'opsz' 48;
+    margin: 0 0 1.4rem;
+    text-wrap: balance;
+  }
+  .rot-quote figcaption {
+    font-family: var(--mono);
+    font-size: 0.74rem;
     color: var(--ink-light);
-    line-height: 1.45;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
   }
 
-  /* ===== ANIMATIONS ===== */
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.2; }
+  /* Each quote: window = 1/N of cycle. With 5 quotes that's 20%.
+     0–3% fade in, 3–17% hold, 17–20% fade out. The next quote starts
+     its fade-in exactly when this one finishes its fade-out. */
+  @keyframes rot-cycle {
+    0%   { opacity: 0; transform: translateY(8px); }
+    3%   { opacity: 1; transform: translateY(0); }
+    17%  { opacity: 1; transform: translateY(0); }
+    20%  { opacity: 0; transform: translateY(-6px); }
+    100% { opacity: 0; transform: translateY(-6px); }
   }
 
+  /* Reduced motion: just show the first quote, statically. */
   @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-      animation-duration: 0.01ms !important;
-      transition-duration: 0.01ms !important;
-    }
+    .rot-quote { animation: none; opacity: 0; }
+    .rot-quote:first-child { opacity: 1; position: relative; }
+    .rot-quote:not(:first-child) { display: none; }
+    .rot-stage { min-height: 0; }
   }
 
-  /* ===== RESPONSIVE ===== */
+  /* ===== RESPONSIVE =========================================== */
+  @media (max-width: 1400px) {
+    .featured-meta {
+      position: static;
+      width: auto;
+      text-align: left;
+      margin-bottom: 1.2rem;
+    }
+    .fm-bracket { display: none; }
+    .featured-meta { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+    .fm-kicker { margin-bottom: 0; }
+    .featured-hand { display: none; }
+  }
+
   @media (max-width: 700px) {
-    .opening { padding: 6rem 0 2rem; }
-    .opening-hero { gap: 1rem; }
-    .opening-photo { width: 56px; height: 56px; }
-    .nameplate { font-size: clamp(2.8rem, 11vw, 3.6rem); }
-    .sec { margin-top: 3.5rem; padding-top: 1.5rem; }
-    .sec-num { font-size: 1.2rem; }
-    .detail-label { width: 42px; font-size: 1rem; }
-    .books-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
-    .bc-cover-title { font-size: 0.7rem; }
-    .bc-cover-inner { padding: 0.6rem; }
+    .masthead { padding: 6.5rem 0 2rem; }
+    .colo { font-size: 0.5rem; gap: 0.4rem; flex-wrap: wrap; justify-content: center; }
+    .nameplate { font-size: clamp(2.6rem, 11vw, 3.4rem); }
+    .bio { max-width: 100%; }
+    .bio-row { grid-template-columns: 50px 1fr; gap: 0.7rem; }
+
+    .featured { padding: 4rem 0 3rem; }
+    .featured-title { max-width: 100%; }
+
+    .index-row { grid-template-columns: 56px 1fr; gap: 0.8rem; }
+    .ix-tag { display: none; }
+
+    .quiet { padding-top: 3rem; }
+    .note { grid-template-columns: 56px 1fr; gap: 0.8rem; }
+
+    .featured-book {
+      grid-template-columns: 1fr;
+      gap: 1.6rem;
+      padding: 1.4rem 0 2rem;
+    }
+    .fb-cover-link { max-width: 140px; }
+    .shelf { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .sh-book { transform: none; }
+  }
+
+  @media (max-width: 480px) {
+    .shelf { grid-template-columns: repeat(2, 1fr); }
+    .shelf .sh-book:nth-child(3) { display: none; }
   }
 </style>

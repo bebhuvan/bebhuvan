@@ -2,7 +2,7 @@
 title: "Hello, world!"
 description: "Yay! I am now another pretentious idiot on the internet with a blog. The reason why I started this blog is I love writing and learning about things, but I am to..."
 publishDate: 2021-06-24
-image: "/blog-images/1.png"
+image: "/blog-images/1.webp"
 tags: ["Me"]
 draft: false
 ---

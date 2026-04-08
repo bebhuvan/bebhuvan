@@ -1,5 +1,25 @@
 /* ===== THE FOLIO — DESIGN SYSTEM ===== */
 
+/* --- Self-hosted fonts (via fontsource, served from our origin) --- */
+/* Literata: variable font with optical size + weight axes (one woff2 each) */
+@import '@fontsource-variable/literata/opsz.css';
+@import '@fontsource-variable/literata/opsz-italic.css';
+
+/* Manrope: only the weights we use, latin subset */
+@import '@fontsource/manrope/latin-300.css';
+@import '@fontsource/manrope/latin-400.css';
+@import '@fontsource/manrope/latin-500.css';
+
+/* Caveat: only the weights we use, latin subset */
+@import '@fontsource/caveat/latin-400.css';
+@import '@fontsource/caveat/latin-500.css';
+@import '@fontsource/caveat/latin-600.css';
+@import '@fontsource/caveat/latin-700.css';
+
+/* Fira Code: only what's actually used */
+@import '@fontsource/fira-code/latin-400.css';
+@import '@fontsource/fira-code/latin-500.css';
+
 /* --- Tokens --- */
 
 :root {
@@ -23,7 +43,7 @@
   --rule: #E8E5DE;
   --rule-faint: #F0EDE6;
 
-  --serif: 'Literata', Georgia, serif;
+  --serif: 'Literata Variable', 'Literata', Georgia, serif;
   --sans: 'Manrope', sans-serif;
   --hand: 'Caveat', cursive;
   --mono: 'Fira Code', monospace;
@@ -59,41 +79,21 @@ body {
 
 ::selection { background: var(--flame); color: white; }
 
-/* --- Nav --- */
+/* --- Nav (in-flow, not sticky) --- */
 
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  height: 52px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 860px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 1.6rem 2rem 0;
   background: transparent;
-}
-
-nav::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 52px;
-  background: rgba(254,253,251,0.9);
-  backdrop-filter: blur(20px) saturate(1.5);
-  -webkit-backdrop-filter: blur(20px) saturate(1.5);
-  border-bottom: 1px solid var(--rule-faint);
-  z-index: -1;
 }
 
 .n-brand {
   font-family: var(--serif);
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--ink);
   letter-spacing: -0.04em;
@@ -103,18 +103,18 @@ nav::before {
 .n-links {
   display: flex;
   align-items: center;
-  gap: 0.1rem;
+  gap: 0.2rem;
 }
 
 nav a:not(.n-brand) {
   font-family: var(--sans);
-  font-size: 0.62rem;
+  font-size: 0.78rem;
   font-weight: 400;
   color: var(--ink-light);
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 0.3rem 0.6rem;
+  letter-spacing: 0.06em;
+  padding: 0.4rem 0.7rem;
   border-radius: 3px;
   transition: color 0.2s, background 0.2s;
 }
@@ -200,18 +200,20 @@ nav a.now-link { color: var(--flame); font-weight: 500; }
 
 .ph-count {
   font-family: var(--mono);
-  font-size: 0.58rem;
-  color: var(--ink-faint);
+  font-size: 0.74rem;
+  color: var(--ink-light);
   display: block;
   margin-top: 0.8rem;
+  letter-spacing: 0.04em;
 }
 
 .ph-date {
   font-family: var(--mono);
-  font-size: 0.56rem;
-  color: var(--ink-faint);
+  font-size: 0.72rem;
+  color: var(--ink-light);
   display: block;
   margin-top: 0.7rem;
+  letter-spacing: 0.04em;
 }
 
 /* --- Section Rule --- */
@@ -243,9 +245,10 @@ nav a.now-link { color: var(--flame); font-weight: 500; }
 
 .year-h .yh-count {
   font-family: var(--mono);
-  font-size: 0.52rem;
-  color: var(--ink-faint);
+  font-size: 0.7rem;
+  color: var(--ink-light);
   font-weight: 400;
+  letter-spacing: 0.04em;
 }
 
 .year-h:first-of-type { margin-top: 0; }
@@ -271,14 +274,15 @@ nav a.now-link { color: var(--flame); font-weight: 500; }
 
 .tag-pill {
   font-family: var(--mono);
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   color: var(--ink-light);
   background: var(--paper-tint);
   border: 1px solid var(--rule-faint);
-  padding: 0.1rem 0.5rem;
+  padding: 0.2rem 0.65rem;
   border-radius: 100px;
   display: inline-block;
   transition: border-color 0.3s, color 0.3s;
+  letter-spacing: 0.02em;
 }
 
 .tag-pill:hover { border-color: var(--flame-line); color: var(--flame); }
@@ -318,28 +322,33 @@ footer::after {
 
 .ft-brand {
   font-family: var(--serif);
-  font-size: 1.3rem;
+  font-size: 1.45rem;
   font-weight: 600;
   letter-spacing: -0.03em;
   display: block;
-  margin-bottom: 0.5rem;
-  color: var(--ink-mid);
+  margin-bottom: 0.7rem;
+  color: var(--ink);
 }
 
 .ft-meta {
   font-family: var(--mono);
-  font-size: 0.58rem;
-  color: var(--ink-faint);
+  font-size: 0.78rem;
+  color: var(--ink-light);
   line-height: 1.9;
+  letter-spacing: 0.02em;
 }
 
 .ft-hand {
   font-family: var(--hand);
-  font-size: 1.1rem;
-  color: var(--ink-ghost);
+  font-size: 1.45rem;
+  color: var(--flame-warm);
   display: block;
-  margin-top: 1.5rem;
+  margin-top: 1.6rem;
   transform: rotate(-0.8deg);
+  line-height: 1.3;
+  max-width: 30ch;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* --- Animations --- */

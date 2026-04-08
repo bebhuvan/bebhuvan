@@ -2,16 +2,16 @@
 title: "It’s your grandfather’s banking crisis"
 description: "In the previous post, I wrote about a few underappreciated aspects of banking panics in the wake of the Silicon Valley Bank collapse. Since publishing the post,..."
 publishDate: 2023-05-08
-image: "/blog-images/bank-panic-1.jpeg"
+image: "/blog-images/bank-panic-1.webp"
 tags: ["A little less dumb"]
 draft: false
 ---
 
 In the previous post, I wrote about a few underappreciated aspects of banking panics in the wake of the Silicon Valley Bank collapse. Since publishing the post, the _not-so-serious_ banking crisis seems to be getting serious. 
 
-First Republic Bank, which was experiencing a bank jog, found its white knight in Jamie Dimon. After frantic attempts, banking regulators were able to cajole J.P. Morgan into acquiring the almost-dead bank. By size, First Republic now has the distinct honor of being the second-largest bank failure in Amrika.![](/blog-images/Bank-failures-by-size.jpeg) 
+First Republic Bank, which was experiencing a bank jog, found its white knight in Jamie Dimon. After frantic attempts, banking regulators were able to cajole J.P. Morgan into acquiring the almost-dead bank. By size, First Republic now has the distinct honor of being the second-largest bank failure in Amrika.![](/blog-images/Bank-failures-by-size.webp) 
 
-Other regional banks are experiencing wild stock moves as investors figure out the next domino to fall. ![](/blog-images/koyfin_20230506_090301144-1.png) 
+Other regional banks are experiencing wild stock moves as investors figure out the next domino to fall. ![](/blog-images/koyfin_20230506_090301144-1.webp) 
 
 As the banking crisis metastasizes from a bruise to a pus-oozing wound, traders also seem to be struggling with banks with "Pacific" in their names. They can't seem to figure out the good Pacifcs from the bad. 
 
@@ -28,7 +28,7 @@ Well, obviously, the causes and context vary around the world.
 
 Despite the differences between banking crises, there are surprising similarities across history. Looking closely, you can identify a common set of causes and factors in almost all banking and financial crises. <a rel="noreferrer noopener" href="https://www.nber.org/people/carola_frydman?page=1&perPage=50" target="_blank">Carola Frydman</a>, a research associate at Northwestern University, and <a rel="noreferrer noopener" href="https://www.nber.org/people/chenzi_xu?page=1&perPage=50" target="_blank">Chenzi Xu</a>, Chenzi Xu, a research fellow at Stanford University, published a <a rel="noreferrer noopener" href="https://www.nber.org/papers/w31092" target="_blank">wonderful paper</a> reviewing studies published in the last 20 years about banking and financial crises from 1800 to 1980.
 
-In the literature review, they tease out the common characteristics of banking crises throughout history. The paper is also peppered with fascinating historical anecdotes that you will enjoy if you're a banking geek. The one issue, as they note, is that most studies focus on banking crises in advanced economies, given the size of the banking systems and the easy availability of data. It's sad that there aren't a lot of studies on banking crises in emerging economies, but they include the available studies. What's surprising is that a disproportionate number of studies focus on the Great Depression of the 1930s.![](/blog-images/Number-of-publications-studying-a-year-and-historical-banking-crises-patterns-1.jpeg) 
+In the literature review, they tease out the common characteristics of banking crises throughout history. The paper is also peppered with fascinating historical anecdotes that you will enjoy if you're a banking geek. The one issue, as they note, is that most studies focus on banking crises in advanced economies, given the size of the banking systems and the easy availability of data. It's sad that there aren't a lot of studies on banking crises in emerging economies, but they include the available studies. What's surprising is that a disproportionate number of studies focus on the Great Depression of the 1930s.![](/blog-images/Number-of-publications-studying-a-year-and-historical-banking-crises-patterns-1.webp) 
 
 Stylized descriptions of past crises are helpful in understanding not just the crises but also the structure of financial systems. A case in point is the thousands of <a rel="noreferrer noopener" href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=2008+financial+crisis&btnG=&oq=2008+fina" target="_blank">research papers</a> and books that were published in the wake of the 2008 financial crisis. All the papers and books have done more to sensitize people about modern finance than anything else. The polarized views about the financial services industry are a sign of that.
 
@@ -43,7 +43,7 @@ What causes leverage to build up?
 
 Correlative evidence shows that prolonged periods of stability and low volatility lead to increased leverage and end with banking crises. This is the exact thing Hyman Minsky wrote about in his <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Hyman_Minsky#Minsky's_financial_instability-hypothesis" target="_blank">financial instability hypothesis</a>: stability breeds instability.
 
-Downturns with higher leverage following financial crises are much sharper and prolonged than regular crises. In crises with low leverage, economic stagnation is shallower, and growth returns to the trend by the end of the fifth year; this isn't the case with crises caused by high leverage.![](/blog-images/The-evolution-of-real-GDP-growth-around-financial-crises-1.jpeg) 
+Downturns with higher leverage following financial crises are much sharper and prolonged than regular crises. In crises with low leverage, economic stagnation is shallower, and growth returns to the trend by the end of the fifth year; this isn't the case with crises caused by high leverage.![](/blog-images/The-evolution-of-real-GDP-growth-around-financial-crises-1.webp) 
 
 The level of public debt to GDP affects the subsequent recovery through the private sector's deleveraging and the fiscal space of governments. 
 
@@ -106,7 +106,7 @@ I understand that you have an attention span of 60 seconds, but I recommend skim
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 
 ### The age of social media bank runs
-As the Silicon Valley Bank saga unfolded, a curious narrative took hold on Twitter: Silicon Valley Bank collapse was the first Twitter-fueled bank run. If you read my <a rel="noreferrer noopener" href="https://www.bebhuvan.com/musings/stories-that-cause-bank-failures-and-the-scars-they-leave/" target="_blank">previous post</a>, you know how simple stories can spread rapidly.![](/blog-images/social-media-bank-run-1-1-1.jpeg) 
+As the Silicon Valley Bank saga unfolded, a curious narrative took hold on Twitter: Silicon Valley Bank collapse was the first Twitter-fueled bank run. If you read my <a rel="noreferrer noopener" href="https://www.bebhuvan.com/musings/stories-that-cause-bank-failures-and-the-scars-they-leave/" target="_blank">previous post</a>, you know how simple stories can spread rapidly.![](/blog-images/social-media-bank-run-1-1.webp) 
 
 [Anthony Cookson, Corbin Fox, Javier Gil-Bazo, Juan Felipe Imbet, and Christoph Schiller][2] published a paper showing how Twitter _fueled_ the SVB bank run. 
 
@@ -141,7 +141,7 @@ I also loved [this money shot by Gillian Tett][7].
  </p>
  
  Wake up to the dangers of digital bank runs
-![](/blog-images/Tweet-by-Phil-Bak-🎩.png) 
+![](/blog-images/Tweet-by-Phil-Bak-🎩.webp) 
 
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 
@@ -151,7 +151,7 @@ One of the criticisms of Silicon Valley Bank was that it specialized in catering
  <p>
  The average bank invests 8% more of its portfolio in its most favored industry than a fully diversified bank. Moreover, banks have – on average – one or two preferred industries, in which they are over-invested to a significant degree. In all other industries, they are either not invested or invested in accordance with diversification expectations.<br /><br />Moreover, banks have – on average – one or two preferred industries, in which they are over-invested to a significant degree. In all other industries, they are either not invested or invested in accordance with diversification expectations.<br /><br />We can see that specialization is associated with differences in loan terms and loan performance. It appears that loans in favored industries are larger, with lower rates, have a longer maturity and – perhaps most importantly – are less likely to become non-performing. This would imply that specialized banks may have an advantage in selecting or monitoring loans in industries in which they have specialized.
  </p>
-![](/blog-images/Specialized-banking.jpeg) 
+![](/blog-images/Specialized-banking.webp) 
 
 <hr class="wp-block-separator has-alpha-channel-opacity" />
 
