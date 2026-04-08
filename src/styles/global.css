@@ -108,13 +108,12 @@ nav {
 
 nav a:not(.n-brand) {
   font-family: var(--sans);
-  font-size: 0.78rem;
+  font-size: 0.92rem;
   font-weight: 400;
   color: var(--ink-light);
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  padding: 0.4rem 0.7rem;
+  letter-spacing: -0.005em;
+  padding: 0.4rem 0.75rem;
   border-radius: 3px;
   transition: color 0.2s, background 0.2s;
 }

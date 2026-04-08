@@ -74,10 +74,9 @@ const heroSrcset = buildHeroSrcset(post.data.image);
           <span class="ah-label">about this essay</span>
           <span class="ah-row">{date}</span>
           <span class="ah-row">{post.data.readingTime || ''}{post.data.readingTime && wordCount > 0 ? ' · ' : ''}{wordCount > 0 ? `${wordCount.toLocaleString()} words` : ''}</span>
-          <br />
-          {tags.map(tag => (
-            <span class="ah-tag">{tag}</span>
-          ))}
+          {tags.length > 0 && (
+            <span class="ah-row ah-tags">{tags.join(' · ')}</span>
+          )}
         </div>
 
         <div class="breadcrumb">
@@ -120,9 +119,8 @@ const heroSrcset = buildHeroSrcset(post.data.image);
 
       {tags.length > 0 && (
         <div class="article-tags">
-          {tags.map(tag => (
-            <span class="tag-pill">{tag}</span>
-          ))}
+          <span class="article-tags-label">Filed under</span>
+          <span class="article-tags-list">{tags.join(' · ')}</span>
         </div>
       )}
 
@@ -150,9 +148,17 @@ const heroSrcset = buildHeroSrcset(post.data.image);
   /* Margin metadata */
   .ah-margin { position: absolute; right: calc(100% + var(--gap)); top: 10rem; width: var(--margin); text-align: right; }
   .ah-label { font-family: var(--hand); font-size: 0.95rem; color: var(--flame-warm); display: block; margin-bottom: 0.8rem; transform: rotate(-0.5deg); }
-  .ah-row { font-family: var(--mono); font-size: 0.54rem; color: var(--ink-faint); display: block; line-height: 2.1; }
-  .ah-tag { display: inline-block; font-family: var(--mono); font-size: 0.5rem; color: var(--ink-light); background: var(--paper-tint); border: 1px solid var(--rule-faint); padding: 0.1rem 0.5rem; border-radius: 100px; margin-top: 0.5rem; margin-right: 0.2rem; transition: border-color 0.3s, color 0.3s; }
-  .ah-tag:hover { border-color: var(--flame-line); color: var(--flame); }
+  .ah-row { font-family: var(--mono); font-size: 0.66rem; color: var(--ink-light); display: block; line-height: 2; letter-spacing: 0.04em; }
+  .ah-row.ah-tags {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: var(--ink-light);
+    margin-top: 0.7rem;
+    letter-spacing: 0;
+    font-variation-settings: 'opsz' 14;
+  }
 
   /* Breadcrumb */
   .breadcrumb { font-family: var(--mono); font-size: 0.54rem; color: var(--ink-ghost); margin-bottom: 1.8rem; display: flex; align-items: center; gap: 0.5rem; }
@@ -411,8 +417,32 @@ const heroSrcset = buildHeroSrcset(post.data.image);
   .article-body :global(.an) { border-bottom: 1.5px dashed var(--flame-line); cursor: default; transition: border-color 0.3s; }
   .article-body :global(.an:hover) { border-color: var(--flame); }
 
-  /* Tags */
-  .article-tags { margin-top: 2rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  /* Tags — italic serif inline list, no pills */
+  .article-tags {
+    margin-top: 2.4rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--rule-faint);
+    display: flex;
+    align-items: baseline;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+  }
+  .article-tags-label {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-light);
+    font-weight: 500;
+  }
+  .article-tags-list {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.02rem;
+    font-weight: 300;
+    color: var(--ink-mid);
+    font-variation-settings: 'opsz' 16;
+  }
 
   /* Article end */
   .article-end { margin-top: 5rem; padding-top: 3rem; border-top: 1px solid var(--rule-faint); }

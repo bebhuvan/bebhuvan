@@ -81,24 +81,38 @@ const fmtShort = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', da
   <div class="wrap">
     <div class="col">
       <header class="masthead">
-        <h1 class="nameplate">
-          Bhuvan<span class="np-stop">.</span>
-        </h1>
+        <div class="masthead-hero">
+          <img
+            src="/blog-images/Bhuvan profile pic.webp"
+            alt="Bhuvan"
+            class="masthead-photo"
+            width="88"
+            height="88"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+          />
+          <h1 class="nameplate">
+            Bhuvan<span class="np-stop">.</span>
+          </h1>
+        </div>
+
+        <div class="masthead-rule" aria-hidden="true"></div>
 
         <p class="strapline">
           Doer of random things, diver of weird rabbit holes,<br />
           sharer of fascinating things, writer of things nobody reads.
         </p>
 
-        <!-- colophon body — replaces the work/now/made detail rows -->
+        <!-- colophon: day / now / made rows -->
         <dl class="bio">
           <div class="bio-row">
             <dt>Day</dt>
-            <dd><a href="https://zerodha.com">Zerodha</a> &mdash; markets, data, thinking about curation</dd>
+            <dd>Working at <a href="https://zerodha.com">Zerodha</a> on markets, data, and curation.</dd>
           </div>
           <div class="bio-row">
             <dt>Now</dt>
-            <dd>Thinking about all the treasures hiding in the public domain &mdash; and what on earth to do with them.</dd>
+            <dd>Lost in all the treasures hiding in the public domain &mdash; and what on earth to do with them.</dd>
           </div>
           <div class="bio-row">
             <dt>Made</dt>
@@ -112,6 +126,11 @@ const fmtShort = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', da
           </div>
         </dl>
       </header>
+
+      <!-- Cover ends, magazine begins. A short hairline break that
+           marks the transition from centered frontispiece to the
+           left-aligned reading content. -->
+      <div class="masthead-break" aria-hidden="true"></div>
     </div>
   </div>
 
@@ -143,11 +162,11 @@ const fmtShort = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', da
           )}
 
           <a href={`/blog/${featuredPost.slug}/`} class="featured-cta">
-            <span class="cta-line"></span>Begin reading
+            <span class="cta-line"></span>Read the essay
           </a>
 
           <!-- the one handwritten aside on the page (besides the footer) -->
-          <span class="featured-hand">written between trains, mostly</span>
+          <span class="featured-hand">Written between filter coffees.</span>
         </article>
       )}
 
@@ -157,7 +176,7 @@ const fmtShort = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', da
       {morePosts.length > 0 && (
         <section class="index">
           <header class="index-head">
-            <span class="index-label">Also in this issue</span>
+            <span class="index-label">More writing</span>
           </header>
 
           <ol class="index-list">
@@ -165,9 +184,6 @@ const fmtShort = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', da
               <li class="index-row">
                 <span class="ix-date">{fmtShort(post.data.publishDate)}</span>
                 <a href={`/blog/${post.slug}/`} class="ix-title">{post.data.title}</a>
-                {post.data.tags?.[0] && (
-                  <span class="ix-tag">{post.data.tags[0]}</span>
-                )}
               </li>
             ))}
           </ol>
@@ -392,6 +408,52 @@ const fmtShort = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', da
     position: relative;
   }
 
+  .masthead-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 0.4rem;
+  }
+
+  /* Photo: matted in a paper "ring", slight hand-placed tilt that
+     straightens on hover. Subtle and editorial. */
+  .masthead-photo {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--rule);
+    padding: 3px;
+    background: var(--paper);
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.06);
+    flex-shrink: 0;
+    transform: rotate(-1.8deg);
+    transition: transform 0.6s var(--ease);
+  }
+  .masthead-hero:hover .masthead-photo {
+    transform: rotate(0deg);
+  }
+
+  /* A double-rule chapter break beneath the nameplate row.
+     Two short hairlines, 4px apart — quiet, distinctly editorial. */
+  .masthead-rule {
+    width: 36px;
+    height: 5px;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    margin: 1.1rem auto 1.4rem;
+  }
+
+  /* Section-break between the (centered) masthead and the
+     (left-aligned) reading content. Thin, centered, restrained. */
+  .masthead-break {
+    width: 40px;
+    height: 1px;
+    background: var(--ink-ghost);
+    margin: 0.8rem auto 0;
+  }
+
   .nameplate {
     font-family: var(--serif);
     font-size: clamp(3.4rem, 6.8vw, 4.6rem);
@@ -401,7 +463,7 @@ const fmtShort = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', da
     color: var(--ink);
     font-variation-settings: 'opsz' 144;
     font-feature-settings: 'kern', 'liga', 'dlig';
-    margin-bottom: 1.1rem;
+    margin: 0;
   }
   .np-stop {
     color: var(--flame);
@@ -412,63 +474,73 @@ const fmtShort = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', da
 
   .strapline {
     font-family: var(--serif);
-    font-size: clamp(0.95rem, 1.6vw, 1.06rem);
+    font-size: clamp(0.98rem, 1.7vw, 1.12rem);
     font-style: italic;
     font-weight: 300;
-    line-height: 1.65;
+    line-height: 1.6;
     color: var(--ink-soft);
-    max-width: 42ch;
+    max-width: 40ch;
     margin: 0 auto;
-    font-variation-settings: 'opsz' 18;
+    font-variation-settings: 'opsz' 24;
     text-wrap: pretty;
   }
 
-  /* colophon */
+  /* Colophon: day / now / made rows. Labels in italic small caps,
+     descriptors in upright serif so the rows don't blur with the
+     italic strapline above. */
   .bio {
-    margin: 2.4rem auto 0;
-    max-width: 460px;
+    margin: 1.9rem auto 0;
+    max-width: 540px;
     text-align: left;
-    border-top: 1px solid var(--rule-faint);
-    padding-top: 1.4rem;
+    padding-top: 0.2rem;
   }
   .bio-row {
     display: grid;
-    grid-template-columns: 60px 1fr;
+    grid-template-columns: 64px 1fr;
     align-items: baseline;
-    gap: 0.9rem;
-    padding: 0.45rem 0;
+    column-gap: 1.6rem;
+    padding: 0.4rem 0;
   }
   .bio dt {
-    font-family: var(--mono);
-    font-size: 0.72rem;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
+    font-family: var(--serif);
+    font-feature-settings: 'smcp', 'c2sc', 'kern';
+    text-transform: lowercase;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.96rem;
+    letter-spacing: 0.05em;
     color: var(--ink-light);
-    padding-top: 0.18rem;
+    text-align: right;
   }
   .bio dd {
     font-family: var(--serif);
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.6;
     color: var(--ink-mid);
-    font-variation-settings: 'opsz' 14;
+    font-variation-settings: 'opsz' 16;
+    text-wrap: pretty;
   }
   .bio dd a {
     color: var(--ink);
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-decoration-color: var(--rule);
-    text-underline-offset: 3px;
-    transition: color 0.2s, text-decoration-color 0.2s;
+    text-decoration: none;
+    background-image: linear-gradient(var(--rule), var(--rule));
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    background-position: 0 100%;
+    transition: color 0.2s, background-image 0.3s;
   }
   .bio dd a:hover {
     color: var(--flame);
-    text-decoration-color: var(--flame);
+    background-image: linear-gradient(var(--flame-line), var(--flame-line));
   }
-  .bio-made { font-family: var(--mono); font-size: 0.82rem; letter-spacing: 0.01em; }
-  .bio-made a { color: var(--ink-mid); }
-  .bio-made .sep { color: var(--ink-ghost); margin-right: 0.4rem; }
+  .bio-made a {
+    color: var(--ink-mid);
+  }
+  .bio-made .sep {
+    color: var(--ink-ghost);
+    margin: 0 0.5rem 0 0.1rem;
+  }
 
   /* ===== I. FEATURED ESSAY ===================================== */
   .featured {
@@ -627,7 +699,7 @@ const fmtShort = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', da
   }
   .index-row {
     display: grid;
-    grid-template-columns: 64px 1fr auto;
+    grid-template-columns: 64px 1fr;
     align-items: baseline;
     gap: 1.2rem;
     padding: 1rem 0;
@@ -886,7 +958,7 @@ const fmtShort = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', da
     color: var(--ink-soft);
     line-height: 1.6;
     font-variation-settings: 'opsz' 14;
-    max-width: 52ch;
+    max-width: 56ch;
     text-wrap: pretty;
   }
 
@@ -1220,8 +1292,9 @@ const fmtShort = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', da
   }
 
   @media (max-width: 700px) {
-    .masthead { padding: 6.5rem 0 2rem; }
-    .colo { font-size: 0.5rem; gap: 0.4rem; flex-wrap: wrap; justify-content: center; }
+    .masthead { padding: 4rem 0 2rem; }
+    .masthead-hero { gap: 1rem; }
+    .masthead-photo { width: 56px; height: 56px; }
     .nameplate { font-size: clamp(2.6rem, 11vw, 3.4rem); }
     .bio { max-width: 100%; }
     .bio-row { grid-template-columns: 50px 1fr; gap: 0.7rem; }
