@@ -13,7 +13,7 @@ The true mark of great art is whether it stirs some shit up inside you. Not just
 
 Great art is the key that unblocks a jumble of inchoate emotions inside you. A sledgehammer to the dam holding back everything you haven't been able to articulate about what it feels like to be alive. It's also a mirror — one that shows you the things you're actively trying not to see. And in showing you, it helps you make sense of them.
 
-This was the first thought I had after I finished watching the movie.
+This was the first thought I had after I finished watching [Train Dreams](https://www.netflix.com/title/82020378).
 
 ---
 
@@ -23,7 +23,7 @@ What I actually want to do is write about how the movie made me feel. The images
 
 ---
 
-Train Dreams is based on a Pulitzer Prize–nominated novella of the same name by Denis Johnson. The movie revolves around the life of Robert Grainier, who's orphaned at a very young age and finds himself on a train with a note pinned to his chest that reads "Fry, Idaho." Nobody ever told him how he lost his parents. He doesn't even know his year of birth for certain. Then somehow he gets adopted by a family in Bonners Ferry, Idaho.
+Train Dreams is based on a Pulitzer Prize–nominated [novella of the same name](https://www.amazon.in/Train-Dreams-Novella-Denis-Johnson/dp/1250007658) by Denis Johnson. The movie revolves around the life of Robert Grainier, who's orphaned at a very young age and finds himself on a train with a note pinned to his chest that reads "Fry, Idaho." Nobody ever told him how he lost his parents. He doesn't even know his year of birth for certain. Then somehow he gets adopted by a family in Bonners Ferry, Idaho.
 
 Robert Grainier drifts through his childhood and youth without any direction or purpose. He drops out of school and doesn't really get interested in anything. His early years are pretty much a blur.
 
