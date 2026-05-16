@@ -53,7 +53,7 @@ The bigger technological shift in the movie is the railroad itself, snaking thro
 
 And it reminded me of right now. We're all trying to build lives in the shadow of AI — something that might reshape the world more profoundly than anything in living memory. The film opens with the Narrator speaking over black:
 
-*"And even though that old world is gone now. Even though it's been rolled up like a scroll and put somewhere, you can still feel the echo of it."*
+> "And even though that old world is gone now. Even though it's been rolled up like a scroll and put somewhere, you can still feel the echo of it."
 
 That's exactly the feeling. I don't know about others, but the anxiety in the circles I move in is palpable. Life is hard enough in the best of times. When the ground beneath you is shifting every day, it's a nightmare.
 
@@ -75,7 +75,7 @@ In the movie, Grainier works hard, both logging and on railroad crews, to build 
 
 What's both heartbreaking and heartwarming is that after he loses his family and his house in the wildfire, he goes back to the same plot and just lies there for a long time, hoping his wife and daughter will return. Eventually he rebuilds the cabin exactly as it was. The narrator tells us why:
 
-*"Though he confessed it to no one, he held some faint hope that Gladys and Kate might somehow return, and he wanted to be ready for them if they did."*
+> "Though he confessed it to no one, he held some faint hope that Gladys and Kate might somehow return, and he wanted to be ready for them if they did."
 
 But the cabin doesn't feel the same. There's a profound emptiness he has to contend with.
 
@@ -87,29 +87,29 @@ Towards the end of the movie, there's a scene where Grainier visits Claire Thomp
 
 Grainier confesses something he's never told anyone — that he still hears his wife and daughter in the woods sometimes, talking and laughing, and he doesn't turn toward the sound because he's afraid it will go away. Then, visibly struggling, he says:
 
-*"Sometimes it feels like the sadness is gonna eat me up. Sometimes it feels like it happened to somebody else."*
+> "Sometimes it feels like the sadness is gonna eat me up. Sometimes it feels like it happened to somebody else."
 
 Claire reveals her husband died too, a little over a year ago:
 
-*"When it was over it was like there was a hole in the world. I had more questions than answers. Like no human had ever died before."*
+> "When it was over it was like there was a hole in the world. I had more questions than answers. Like no human had ever died before."
 
 It's a gut-wrenching exchange. There were knots in my stomach watching it.
 
 What comes next is one of my favorite passages in the whole movie. Claire tells him:
 
-*"When you go through that, nothing you do is crazy. You just go through what you go through."*
+> "When you go through that, nothing you do is crazy. You just go through what you go through."
 
 Then she looks out across the forest:
 
-*"In the forest, every least thing is important. It's all threaded together so you can't tell where one thing ends and another begins. If you really look at it. The insects you can't even see play a role as vital as the river. The dead tree is as important as the living one. There must be something for us to learn from that."*
+> "In the forest, every least thing is important. It's all threaded together so you can't tell where one thing ends and another begins. If you really look at it. The insects you can't even see play a role as vital as the river. The dead tree is as important as the living one. There must be something for us to learn from that."
 
 Grainier asks what happens if you have nothing left to give. She tells him:
 
-*"The Lord needs a hermit in the woods as much as a preacher in the pulpit, you know."*
+> "The Lord needs a hermit in the woods as much as a preacher in the pulpit, you know."
 
 He asks: is that what I am? A hermit? She says:
 
-*"I believe we both are. In our own ways. Just waiting to see what we've been left here for."*
+> "I believe we both are. In our own ways. Just waiting to see what we've been left here for."
 
 I don't have much to add to that.
 
@@ -143,17 +143,17 @@ Notice how Arn's "stitched together" lines up almost word for word with what Cla
 
 When Grainier asks him whether bad deeds follow a man through life, Peeples says:
 
-*"I've seen bad men raised up and good men brought to their knees. If I could make any sense of it I reckon I'd be sleeping next to someone much better looking than you fellers."*
+> "I've seen bad men raised up and good men brought to their knees. If I could make any sense of it I reckon I'd be sleeping next to someone much better looking than you fellers."
 
 And later, sitting with Grainier by a dying fire, Arn tells him:
 
-*"It's good having you around. Not a lot of people I cross paths with more than once in this life. I see it as a blessing when they're brought back around."*
+> "It's good having you around. Not a lot of people I cross paths with more than once in this life. I see it as a blessing when they're brought back around."
 
 ---
 
 Towards the end, Grainier takes his first airplane ride and sees the landscape from above — and it mirrors exactly what Claire Thompson had told him. Everything connected to everything. Seen from the air, even loss looks like it belongs to some larger pattern. The Narrator puts it plainly:
 
-*"On that spring day, as he misplaced all sense of up and down, he felt, at last, connected to it all."*
+> "On that spring day, as he misplaced all sense of up and down, he felt, at last, connected to it all."
 
 Maybe that's what great art does too. It takes a sledgehammer to whatever dam you've built around your feelings and just lets it flood. It gives you permission to feel what you've been carrying around without being able to name it.
 
@@ -164,3 +164,9 @@ In a way, I feel like a sailor on a ship without a captain or wind in the sails,
 Train Dreams ends with Grainier at peace. I'm not there. And honestly, I don't know if that peace is somewhere I can reach, or just something that comes after you've outlived everything you ever loved.
 
 But the movie opens with a line I keep coming back to: the old world has been rolled up like a scroll, and yet you can still feel the echo of it. Maybe that's all I can say right now. The world I knew is gone. The new one is shapeless and frightening. But the echo is still here. And so am I.
+
+Go watch the movie now!
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 2rem 0;">
+  <iframe src="https://www.youtube-nocookie.com/embed/NNGEkvT2XlI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" title="Train Dreams trailer"></iframe>
+</div>
