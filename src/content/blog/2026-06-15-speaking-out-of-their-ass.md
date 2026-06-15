@@ -1,5 +1,5 @@
 ---
-title: "The Great Indian Ass-Speaking Epidemic"
+title: "A Rare Disease Is Spreading Through India's Finance Commentariat"
 description: "A public-health bulletin on the rare anatomical disorder spreading through India's finance commentariat."
 publishDate: 2026-06-15
 draft: false
