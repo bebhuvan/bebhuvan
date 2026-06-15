@@ -364,8 +364,7 @@ const heroSrcset = buildHeroSrcset(post.data.image);
        </span>
      Legacy <span class="sn"> markup still works (aliased below). */
 
-  .article-body :global(.margin-note),
-  .article-body :global(.sn) {
+  :global(.article-body .margin-note, .article-body .sn) {
     float: right;
     clear: right;
     margin-right: calc(-1 * (var(--margin) + var(--gap)));
@@ -455,8 +454,7 @@ const heroSrcset = buildHeroSrcset(post.data.image);
   /* Responsive */
   @media (max-width: 1400px) {
     .ah-margin { display: none; }
-    .article-body :global(.margin-note),
-    .article-body :global(.sn) {
+    :global(.article-body .margin-note, .article-body .sn) {
       float: none;
       width: auto;
       margin-right: 0;
