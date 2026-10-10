@@ -140,6 +140,11 @@ That's shoddy, irrational reasoning. If you're a participant in a democracy, you
 
 You may hate the issue they're protesting about. You may think they're idiots and what they're doing is pointless and utterly wrong. But they're keeping open the space for dissent, and you still need to support their right to protest. If tomorrow they come for you, you'll want that space open. You'll need the right to scream that you've been wronged, that a grave injustice has been committed. And if it's not you, it could be someone you love. A friend.
 
+<figure>
+  <img src="/blog-images/quit-india-movement-collage.webp" alt="Four photographs from the Quit India Movement: Gandhi writing beside Nehru, a procession with flags and banners, a long column of marchers in white caps, and a seated gathering in front of a stage" />
+  <figcaption>Scenes from the Quit India Movement, 1942. <a href="https://commons.wikimedia.org/wiki/File:Quit_india_Movement_Collage.png">Wikimedia Commons</a>, CC0.</figcaption>
+</figure>
+
 It's them today. It may very well be you tomorrow. And if you think that can't happen, then you don't know your history.
 
 All of this history is just one search away.
