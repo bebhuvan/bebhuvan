@@ -1,5 +1,15 @@
 export default {
   async fetch(request, env) {
+    // Permanent redirects for moved posts
+    const redirects = {
+      '/blog/why-you-should-back-the-protesters-especially-if-you-cant-stand-them': '/blog/defend-their-right-to-protest/',
+    };
+    const reqUrl = new URL(request.url);
+    const target = redirects[reqUrl.pathname.replace(/\/$/, '')];
+    if (target) {
+      return Response.redirect(new URL(target + reqUrl.search, reqUrl.origin).toString(), 301);
+    }
+
     // Serve static assets from the ASSETS binding
     const response = await env.ASSETS.fetch(request);
     
