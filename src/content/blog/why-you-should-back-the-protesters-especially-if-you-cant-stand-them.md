@@ -1,5 +1,5 @@
 ---
-title: "Why You Should Back the Protesters, Especially If You Can't Stand Them"
+title: "Defend Their Right to Protest. Especially If You Hate Them."
 description: "If you support the ruling party and think the protesters are idiots, you should still defend their right to protest. Time is a flat circle: it's them today, it may very well be you tomorrow."
 publishDate: 2026-10-09
 tags: ["politics", "india", "democracy", "history"]
