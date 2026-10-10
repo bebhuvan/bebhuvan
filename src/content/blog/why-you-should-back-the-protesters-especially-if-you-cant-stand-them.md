@@ -2,6 +2,8 @@
 title: "Defend Their Right to Protest. Especially If You Hate Them."
 description: "If you support the ruling party and think the protesters are idiots, you should still defend their right to protest. Time is a flat circle: it's them today, it may very well be you tomorrow."
 publishDate: 2026-10-09
+image: /blog-images/demonstration-against-british-rule-1930s-cover.webp
+imageCaption: "A demonstration against British rule in India, c. 1930s. Wikimedia Commons, public domain."
 tags: ["politics", "india", "democracy", "history"]
 draft: false
 ---
@@ -56,11 +58,6 @@ But those are the big-ticket items. There were countless other acts of protest a
 </figure>
 
 Not all of it was peaceful, and let's be honest about that. Some of it was violent, and it mattered. But the fact that a country the size of India won its freedom without an all-out war is a miracle in itself, and a testament to the power of keeping open the space for dissent. Not because our colonial overlords allowed it, but because we kept it open, taking blows from indiscriminate truncheons under a hail of bullets and every other kind of violence they used to assert their dominion over us.
-
-<figure>
-  <img src="/blog-images/demonstration-against-british-rule-1930s.webp" alt="A crowd in white caps seated on open ground under flags and palm trees, listening to a speaker at a demonstration against British rule, 1930s" />
-  <figcaption>A demonstration against British rule in India, c. 1930s. <a href="https://picryl.com/media/demonstration-against-british-rule-in-india-c1930s-65001e">Picryl</a>.</figcaption>
-</figure>
 
 And you don't have to go very far back to see our own government swinging the truncheon. On 25 June 1975, [Indira Gandhi](https://en.wikipedia.org/wiki/Indira_Gandhi), the then Prime Minister, invoked Article 352 of the Constitution and [declared a state of emergency](https://en.wikipedia.org/wiki/The_Emergency_(India)). Her ostensible reason for this draconian move was "internal disturbance" threatening the security of India.
 
