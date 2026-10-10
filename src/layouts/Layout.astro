@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
 
 export interface Props {
   title: string;
@@ -34,7 +36,12 @@ const {
 const siteUrl = 'https://bebhuvan.com';
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const defaultImage = image || '/profile-pic.webp';
-const fullImageUrl = new URL(defaultImage, Astro.site);
+// Some link-preview crawlers (WhatsApp, LinkedIn, at times X) reject WebP and
+// fall back to another image on the page. If a .jpg sits next to the .webp
+// in public/, hand that to crawlers instead.
+const jpgSibling = defaultImage.replace(/\.webp$/, '.jpg');
+const shareImage = jpgSibling !== defaultImage && existsSync(join(process.cwd(), 'public', jpgSibling)) ? jpgSibling : defaultImage;
+const fullImageUrl = new URL(shareImage, Astro.site);
 const ogImageAlt = imageAlt || `${title} — Bhuvan`;
 
 // Build JSON-LD as a @graph so a single script element describes the page,
