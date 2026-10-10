@@ -30,6 +30,11 @@ The problem with a lot of people, and I put myself in this camp, is that wheneve
 
 My contention is that you should support these protesters because you support the current government. These protests are proof that democracy is alive and kicking in this country. This is the purest form of democratic expression: the right to stand up to a government, ask questions and demand change.
 
+<figure>
+  <img src="/blog-images/indian-national-congress-new-delhi-1937.webp" alt="A street procession of Indian National Congress supporters in white caps carrying banners through a crowded market street, New Delhi, 1937" />
+  <figcaption>An Indian National Congress procession, New Delhi, 1937. <a href="https://picryl.com/media/indian-national-congress-new-delhi-1937-cee34d">Picryl</a>.</figcaption>
+</figure>
+
 It doesn't matter whether you agree with the demands. You might very well think these people are idiots, Soros and CIA funded anti-nationals out to destroy our great nation. But they're protesting because they think something wrong has been done. In this case, the disenfranchisement of crores of Indians. The Election Commission has struck more than 13 crore names off the electoral rolls. It says it's weeding out duplicates and ineligible voters. The protesters say it's shutting out real voters, disproportionately the ones who'd vote against the BJP. And what is a democracy if not the right to vote? Voting is the most sacred democratic act there is.
 
 Today you might feel a certain schadenfreude about all this. It's okay, because it's not your name that's been struck off the list. It's somebody else's. But remember, what goes around comes around.
