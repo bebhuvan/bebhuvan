@@ -345,6 +345,10 @@ const heroSrcset = buildHeroSrcset(post.data.image);
 
   /* Images */
   .article-body :global(img) { max-width: 100%; border-radius: 6px; margin: 2rem 0; }
+  .article-body :global(figure) { margin: 2.2rem 0; }
+  .article-body :global(figure img) { display: block; width: auto; max-height: min(70vh, 520px); margin: 0 auto; }
+  .article-body :global(figcaption) { font-family: var(--mono); font-size: 0.72rem; line-height: 1.5; color: var(--ink-faint); margin-top: 0.6rem; text-align: center; }
+  .article-body :global(figcaption a) { color: inherit; }
 
   /* Inline highlight */
   .article-body :global(mark) { background: var(--flame-wash); color: var(--ink-mid); border-radius: 2px; padding: 0.05em 0.2em; }
