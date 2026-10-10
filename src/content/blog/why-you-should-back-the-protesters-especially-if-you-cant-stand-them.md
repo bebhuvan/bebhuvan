@@ -142,7 +142,7 @@ You may hate the issue they're protesting about. You may think they're idiots an
 
 <figure>
   <img src="/blog-images/quit-india-movement-collage.webp" alt="Four photographs from the Quit India Movement: Gandhi writing beside Nehru, a procession with flags and banners, a long column of marchers in white caps, and a seated gathering in front of a stage" />
-  <figcaption>Scenes from the Quit India Movement, 1942. <a href="https://commons.wikimedia.org/wiki/File:Quit_india_Movement_Collage.png">Wikimedia Commons</a>, CC0.</figcaption>
+  <figcaption>Scenes from the Quit India Movement. <a href="https://commons.wikimedia.org/wiki/File:Quit_india_Movement_Collage.png">Wikimedia Commons</a>, CC0.</figcaption>
 </figure>
 
 It's them today. It may very well be you tomorrow. And if you think that can't happen, then you don't know your history.
