@@ -3,6 +3,8 @@ title: Thank you, Perry
 publishDate: 2026-10-14
 link: https://www.ineteconomics.org/perspectives/blog/remembering-perry-mehrling
 linkTitle: Remembering Perry Mehrling (INET)
+image: /update-images/perry-mehrling-cover.webp
+imageAlt: "In memoriam: Perry Mehrling, 1959–2026"
 tags: ["economics", "money", "macro"]
 ---
 I woke up to the news that the great [Perry Mehrling](https://en.wikipedia.org/wiki/Perry_Mehrling) has [passed away](https://www.ineteconomics.org/perspectives/blog/remembering-perry-mehrling). He was 67. I was shocked. It feels unfair that all the cool and awesome people keep getting taken away while assholes still roam free on Earth.

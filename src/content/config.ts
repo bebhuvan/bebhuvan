@@ -24,6 +24,8 @@ const updates = defineCollection({
     tags: z.array(z.string()).optional(),
     category: z.enum(['thinking', 'working', 'mindlog', 'voice']).optional(),
     marginNote: z.string().optional(),
+    image: z.string().optional(),
+    imageAlt: z.string().optional(),
   }),
 });
 

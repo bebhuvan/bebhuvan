@@ -17,7 +17,7 @@ const { update } = Astro.props;
 const { Content } = await update.render();
 ---
 
-<Layout title={`${update.data.title} — Bhuvan`} description={update.data.title}>
+<Layout title={`${update.data.title} — Bhuvan`} description={update.data.title} image={update.data.image} imageAlt={update.data.imageAlt}>
   <Nav active="marginalia" />
 
   <div class="wrap">
@@ -30,6 +30,9 @@ const { Content } = await update.render();
         {update.data.category && ` · ${update.data.category}`}
       </div>
       <h1>{update.data.title}</h1>
+      {update.data.image && (
+        <img src={update.data.image} alt={update.data.imageAlt || update.data.title} class="nd-cover" width="1600" height="840" loading="eager" decoding="async" />
+      )}
       <div class="nd-body">
         <Content />
       </div>
@@ -78,6 +81,14 @@ const { Content } = await update.render();
     letter-spacing: -0.02em;
     margin: 0 0 2rem 0;
     font-variation-settings: 'opsz' 48;
+  }
+
+  .nd-cover {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 0 2.5rem 0;
+    border-radius: 4px;
   }
 
   .nd-body :global(p) {
