@@ -30,3 +30,11 @@ Some of my favourites:
 - [Payments vs funding: the law of reflux for today](https://www.youtube.com/watch?v=Kj9dFGFE5yU) (Young Scholars Initiative)
 - [A money view on the emergent new international economic order](https://www.youtube.com/watch?v=bquHK40Hxmg) (Young Scholars Initiative)
 - [Financialization and its discontents](https://www.youtube.com/watch?v=T5ptAo6S3ok)
+
+If you want to go deeper:
+
+- [Economics of Money and Banking](https://www.coursera.org/learn/money-banking), his course on Coursera, filmed with INET
+- [His lecture notes for the course](https://sites.bu.edu/perry/lectures/mb-lectures/)
+- [His articles and papers at INET](https://www.ineteconomics.org/research/experts/pmehrling), including ["Payment vs. Funding: The Law of Reflux for Today"](https://www.ineteconomics.org/research/research-papers/payment-vs-funding-the-law-of-reflux-for-today)
+- [His blog](https://sites.bu.edu/perry/blog/), [papers](https://sites.bu.edu/perry/staging-publications/papers/) and [videos](https://sites.bu.edu/perry/staging-publications/video/)
+- [His books](https://sites.bu.edu/perry/staging-publications/staging-books/), from *The New Lombard Street* to *Money and Empire*
