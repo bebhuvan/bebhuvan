@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { unified } from '@astrojs/markdown-remark';
 import rehypeMarginNotes from './src/plugins/rehype-margin-notes.js';
 import rehypeImageAttrs from './src/plugins/rehype-image-attrs.js';
 
@@ -9,8 +10,8 @@ export default defineConfig({
   site: 'https://bebhuvan.com',
   // Trailing slashes consistent with how the existing URLs are linked.
   trailingSlash: 'always',
-  // HTML compression strips whitespace from the rendered output. Default in
-  // Astro 5 is true; making it explicit so it can't drift.
+  // true keeps whitespace between inline elements (Astro 7's default, 'jsx',
+  // would glue "<span>a</span> <em>b</em>" together).
   compressHTML: true,
   // Prefetch links on hover (cheap, no JS framework dep, just a tiny script).
   prefetch: {
@@ -25,8 +26,12 @@ export default defineConfig({
     }),
   ],
   markdown: {
-    rehypePlugins: [rehypeMarginNotes, rehypeImageAttrs],
-    smartypants: true,
+    // Astro 7 defaults to its native Sätteri processor; the margin-notes rehype
+    // plugin needs the unified (remark/rehype) pipeline.
+    processor: unified({
+      rehypePlugins: [rehypeMarginNotes, rehypeImageAttrs],
+      smartypants: true,
+    }),
   },
   build: {
     // Inline small stylesheets into the HTML (~4KB threshold), keep larger
