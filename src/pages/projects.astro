@@ -5,7 +5,6 @@ import { groupProjects } from '../utils/projects';
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
-import Tally from '../components/Tally.astro';
 
 const projects = (await getCollection('projects'))
   .filter((p) => p.data.status !== 'archived')
@@ -32,7 +31,6 @@ const join = (i: number, n: number) => (i < n - 2 ? ', ' : i === n - 2 ? ' and '
         ))}
       </h1>
       <p class="statement-sub">Every project is really an excuse to learn something.</p>
-      <Tally items={[{ n: projects.length, label: 'Projects' }, { n: groups.length, label: 'Kinds' }]} />
     </div>
 
     <div class="margin">

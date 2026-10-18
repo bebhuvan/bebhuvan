@@ -74,11 +74,6 @@ img, video { display: block; max-width: 100%; height: auto; }
 .statement-sub { margin-top: 28px; font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 1.14rem; line-height: 1.5; color: var(--ink-soft); max-width: 40ch; text-wrap: pretty; }
 .statement-sub a { font-style: normal; }
 
-/* large figures under a statement (components/Tally.astro) */
-.tally { display: flex; flex-wrap: wrap; gap: 18px 44px; margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--rule); max-width: 30em; }
-.tally div { display: flex; flex-direction: column-reverse; gap: 8px; }
-.tally dd { font-weight: 400; font-size: 2.7rem; line-height: .85; letter-spacing: -.035em; font-variant-numeric: tabular-nums; }
-.tally dt { font-weight: 600; font-size: .68rem; letter-spacing: .13em; text-transform: uppercase; color: var(--ink-soft); }
 .statement-sub a { color: var(--flame); }
 .signature { display: flex; align-items: center; gap: 16px; margin-top: 40px; }
 .signature .statement-sub { margin-top: 0; max-width: 44ch; }
