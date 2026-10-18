@@ -1,7 +1,12 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { glob } from 'astro/loaders';
+import { z } from 'astro/zod';
+
+// one folder per collection under src/content/; the entry id is the file name
+const md = (dir: string) => glob({ pattern: '**/[^_]*.md', base: `./src/content/${dir}` });
 
 const blog = defineCollection({
-  type: 'content',
+  loader: md('blog'),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -15,7 +20,7 @@ const blog = defineCollection({
 });
 
 const updates = defineCollection({
-  type: 'content',
+  loader: md('updates'),
   schema: z.object({
     title: z.string(),
     publishDate: z.coerce.date(),
@@ -30,7 +35,7 @@ const updates = defineCollection({
 });
 
 const projects = defineCollection({
-  type: 'content',
+  loader: md('projects'),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -48,7 +53,7 @@ const projects = defineCollection({
 });
 
 const now = defineCollection({
-  type: 'content',
+  loader: md('now'),
   schema: z.object({
     date: z.coerce.date(),
     category: z.enum(['thinking', 'working', 'mindlog']),
@@ -57,7 +62,7 @@ const now = defineCollection({
 });
 
 const books = defineCollection({
-  type: 'content',
+  loader: md('books'),
   schema: z.object({
     title: z.string(),
     author: z.string(),

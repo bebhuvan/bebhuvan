@@ -1,7 +1,7 @@
 ---
 // Home: one sentence about me, pinned on the left. Its numbered words are the
 // navigation; what they point to lives in the margin on the right.
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import { smart } from '../utils/typo';
 import { groupProjects } from '../utils/projects';
 import Layout from '../layouts/Layout.astro';
@@ -27,7 +27,7 @@ const books = (await getCollection('books'))
 const nowEntries = (await getCollection('now'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 const nowLatest = nowEntries[0];
-const NowContent = nowLatest ? (await nowLatest.render()).Content : null;
+const NowContent = nowLatest ? (await render(nowLatest)).Content : null;
 
 // "From the margins": one margin note from the archive, pulled at build time.
 // Sources: markdown footnotes ([^n]: …) and legacy <span class="sn"> asides in
@@ -45,11 +45,11 @@ const asides: Aside[] = [
       ...[...body.matchAll(/^\[\^[^\]]+\]:\s*(.+)$/gm)].map((m) => m[1]),
       ...[...body.matchAll(/<span class="sn">([\s\S]*?)<\/span>/g)].map((m) => m[1]),
     ];
-    return found.map((t) => ({ text: plain(t), title: p.data.title, href: `/blog/${p.slug}/` }));
+    return found.map((t) => ({ text: plain(t), title: p.data.title, href: `/blog/${p.id}/` }));
   }),
   ...(await getCollection('updates'))
     .filter((u) => u.data.marginNote)
-    .map((u) => ({ text: u.data.marginNote!, title: u.data.title, href: `/updates/${u.slug}/` })),
+    .map((u) => ({ text: u.data.marginNote!, title: u.data.title, href: `/updates/${u.id}/` })),
 ].filter((a) => a.text.length > 20 && a.text.length < 240);
 const day = Math.floor(Date.now() / 86_400_000);
 const aside = asides.length ? asides[day % asides.length] : null;
@@ -89,13 +89,13 @@ const fmtShort = (d: Date) => d.toLocaleDateString('en-GB', { month: 'short', ye
         {latest && (
           <article class="featured">
             <p class="kicker">{fmt(latest.data.publishDate)}</p>
-            <h3 class="featured-title"><a href={`/blog/${latest.slug}/`}>{smart(latest.data.title)}</a></h3>
+            <h3 class="featured-title"><a href={`/blog/${latest.id}/`}>{smart(latest.data.title)}</a></h3>
             {latest.data.description && <p class="featured-dek">{smart(latest.data.description)}</p>}
           </article>
         )}
         <ul class="second">
           {rest.slice(0, 2).map((p) => (
-            <li><a class="sec" href={`/blog/${p.slug}/`}>
+            <li><a class="sec" href={`/blog/${p.id}/`}>
               <span class="kicker">{fmt(p.data.publishDate)}</span>
               <span class="sec-t"><span class="hl">{smart(p.data.title)}</span></span>
               {dek(p.data.description) && <span class="sec-x">{dek(p.data.description)}</span>}
@@ -104,7 +104,7 @@ const fmtShort = (d: Date) => d.toLocaleDateString('en-GB', { month: 'short', ye
         </ul>
         <ul class="list tight">
           {rest.slice(2, 6).map((p) => (
-            <li><a class="row" href={`/blog/${p.slug}/`}><span class="t"><span class="hl">{smart(p.data.title)}</span></span><span class="d">{fmtShort(p.data.publishDate)}</span></a></li>
+            <li><a class="row" href={`/blog/${p.id}/`}><span class="t"><span class="hl">{smart(p.data.title)}</span></span><span class="d">{fmtShort(p.data.publishDate)}</span></a></li>
           ))}
         </ul>
         <a class="more" href="/writing/">All {posts.length} essays</a>
@@ -129,7 +129,7 @@ const fmtShort = (d: Date) => d.toLocaleDateString('en-GB', { month: 'short', ye
         <h2 class="ann-head"><span class="n">3</span>Notes</h2>
         <ul class="list">
           {notes.map((n) => (
-            <li><a class="row" href={`/updates/${n.slug}/`}><span class="t"><span class="hl">{smart(n.data.title)}</span></span><span class="d">{fmt(n.data.publishDate)}</span></a></li>
+            <li><a class="row" href={`/updates/${n.id}/`}><span class="t"><span class="hl">{smart(n.data.title)}</span></span><span class="d">{fmt(n.data.publishDate)}</span></a></li>
           ))}
         </ul>
         <a class="more" href="/marginalia/">All notes</a>
@@ -140,7 +140,7 @@ const fmtShort = (d: Date) => d.toLocaleDateString('en-GB', { month: 'short', ye
           <h2 class="ann-head"><span class="n">4</span>Books <span class="count">{books.length}</span></h2>
           <ul class="list">
             {books.map((b) => (
-              <li><a class="row" href={`/books/${b.slug}/`}><span class="t"><span class="hl">{smart(b.data.title)}</span></span><span class="d">{b.data.author}</span></a></li>
+              <li><a class="row" href={`/books/${b.id}/`}><span class="t"><span class="hl">{smart(b.data.title)}</span></span><span class="d">{b.data.author}</span></a></li>
             ))}
           </ul>
           <a class="more" href="/books/">Book notes</a>

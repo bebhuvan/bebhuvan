@@ -32,7 +32,7 @@ export async function GET(context: APIContext) {
         pubDate: post.data.publishDate,
         description: post.data.description,
         content: post.body,
-        link: `/${post.type === 'blog' ? 'blog' : 'updates'}/${post.slug}/`,
+        link: `/${post.type === 'blog' ? 'blog' : 'updates'}/${post.id}/`,
       };
     })),
     customData: `<language>en-us</language>`,

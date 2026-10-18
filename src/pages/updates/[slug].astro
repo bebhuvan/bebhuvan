@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import type { GetStaticPaths } from 'astro';
 import { smart } from '../../utils/typo';
 import Layout from '../../layouts/Layout.astro';
@@ -9,13 +9,13 @@ import Footer from '../../components/Footer.astro';
 export const getStaticPaths: GetStaticPaths = async () => {
   const updates = await getCollection('updates');
   return updates.map(update => ({
-    params: { slug: update.slug },
+    params: { slug: update.id },
     props: { update },
   }));
 };
 
 const { update } = Astro.props;
-const { Content } = await update.render();
+const { Content } = await render(update);
 ---
 
 <Layout title={`${smart(update.data.title)} — Bhuvan`} description={smart(update.data.title)} image={update.data.image} imageAlt={update.data.imageAlt}>

@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import type { GetStaticPaths } from 'astro';
 import { smart } from '../../utils/typo';
 import Layout from '../../layouts/Layout.astro';
@@ -9,13 +9,13 @@ import Footer from '../../components/Footer.astro';
 export const getStaticPaths: GetStaticPaths = async () => {
   const books = await getCollection('books');
   return books.map(book => ({
-    params: { slug: book.slug },
+    params: { slug: book.id },
     props: { book },
   }));
 };
 
 const { book } = Astro.props;
-const { Content } = await book.render();
+const { Content } = await render(book);
 const tags = book.data.tags || [];
 ---
 

@@ -15,7 +15,7 @@ export async function GET(context: APIContext) {
       title: `Update: ${update.data.publishDate.toLocaleDateString()}`,
       pubDate: update.data.publishDate,
       description: update.body,
-      link: `/updates/${update.slug}/`,
+      link: `/updates/${update.id}/`,
     })),
     customData: `<language>en-us</language>`,
   });

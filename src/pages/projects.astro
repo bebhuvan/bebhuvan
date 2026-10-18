@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import { smart } from '../utils/typo';
 import { groupProjects } from '../utils/projects';
 import Layout from '../layouts/Layout.astro';
@@ -38,7 +38,7 @@ const join = (i: number, n: number) => (i < n - 2 ? ', ' : i === n - 2 ? ' and '
         <>
           <h2 class="group-h">{g.label}<span>{g.items.length}</span></h2>
           {g.items.map(async (project) => {
-            const { Content } = await project.render();
+            const { Content } = await render(project);
             return (
               <section class="ann proj" id={id(project.data.title)}>
                 <h3 class="proj-name"><span class="n">{num.get(project.id)}</span><a class="hl" href={project.data.link || '#'}>{smart(project.data.title)}</a></h3>

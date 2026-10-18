@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import { smart } from '../utils/typo';
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
@@ -30,14 +30,14 @@ const months = Object.keys(updatesByMonth);
         <section class="month">
           <h2 class="group-h">{month}</h2>
           {updatesByMonth[month].map(async (update) => {
-            const { Content } = await update.render();
+            const { Content } = await render(update);
             return (
               <article class="note">
                 <p class="kicker">
                   {update.data.publishDate.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
                   {update.data.category && ` · ${update.data.category}`}
                 </p>
-                <h3 class="note-title"><a href={`/updates/${update.slug}/`}>{smart(update.data.title)}</a></h3>
+                <h3 class="note-title"><a href={`/updates/${update.id}/`}>{smart(update.data.title)}</a></h3>
                 <div class="prose note-body"><Content /></div>
                 {update.data.link && (
                   <a href={update.data.link} class="more" target="_blank" rel="noopener">{update.data.linkTitle || 'Link'}</a>

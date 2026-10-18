@@ -41,7 +41,7 @@ const fmt = (d: Date) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 
           <ul class="list">
             {postsByYear[year].map((post) => (
               <li>
-                <a class="row" href={`/blog/${post.slug}/`}>
+                <a class="row" href={`/blog/${post.id}/`}>
                   <span class="t"><span class="hl">{smart(post.data.title)}</span></span>
                   <span class="d">{fmt(post.data.publishDate)}</span>
                   {cleanDescription(post.data.description) && <span class="x">{smart(cleanDescription(post.data.description))}</span>}

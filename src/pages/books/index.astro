@@ -34,11 +34,11 @@ const years = Object.keys(booksByYear).sort((a, b) => Number(b) - Number(a));
           <h2 class="group-h">{year}<span>{booksByYear[year].length} book{booksByYear[year].length !== 1 ? 's' : ''}</span></h2>
           {booksByYear[year].map((book: any) => (
             <article class="book">
-              <h3 class="b-title"><a href={`/books/${book.slug}/`}>{smart(book.data.title)}</a></h3>
+              <h3 class="b-title"><a href={`/books/${book.id}/`}>{smart(book.data.title)}</a></h3>
               <p class="kicker">{book.data.author}{book.data.finishedDate ? ` · read ${book.data.finishedDate}` : ''}</p>
               {book.data.pull && <blockquote class="b-pull">{smart(book.data.pull)}</blockquote>}
               {book.data.hand && <p class="aside">{book.data.hand}</p>}
-              <a class="more" href={`/books/${book.slug}/`}>Read the notes</a>
+              <a class="more" href={`/books/${book.id}/`}>Read the notes</a>
             </article>
           ))}
         </section>
