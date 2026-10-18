@@ -1,0 +1,141 @@
+---
+// LAB round 2, B: "Plates". The home page as a sheet of plates on a tight
+// grid: the pictures Bhuvan chose for his essays, essays without pictures as
+// plates of type, and the websites as plates of ink. Three materials, one
+// grid, two-pixel gutters: a contact sheet, not a wall of cards.
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import { posts, projects, thumb, dek, href, smart } from '../../utils/lab';
+
+type Cell =
+  | { kind: 'img'; p: (typeof posts)[number]; size: string }
+  | { kind: 'type'; p: (typeof posts)[number]; size: string }
+  | { kind: 'proj'; p: (typeof projects)[number]; size: string }
+  | { kind: 'intro'; size: string };
+
+const withImg = posts.filter((p) => p.data.image);
+const withoutImg = posts.filter((p) => !p.data.image);
+const proj = projects.slice(0, 6);
+// a hand-set sequence of sizes (columns x rows on a 12-column grid)
+const I = (i: number, size: string): Cell => ({ kind: 'img', p: withImg[i], size });
+const T = (i: number, size: string): Cell => ({ kind: 'type', p: withoutImg[i], size });
+const P = (i: number, size: string): Cell => ({ kind: 'proj', p: proj[i], size });
+// hand-set bands: every band's widths add up to 12 and share one height, so the sheet tiles exactly
+const cells: Cell[] = [
+  { kind: 'intro', size: 'c4 r5' }, I(0, 'c8 r5'),
+  I(1, 'c4 r3'), I(2, 'c5 r3'), P(0, 'c3 r3'),
+  T(0, 'c3 r3'), I(3, 'c3 r3'), I(4, 'c6 r3'),
+  I(5, 'c5 r3'), P(1, 'c3 r3'), I(6, 'c4 r3'),
+  T(1, 'c3 r2'), I(7, 'c3 r2'), I(8, 'c3 r2'), P(2, 'c3 r2'),
+  I(9, 'c6 r3'), T(2, 'c3 r3'), I(10, 'c3 r3'),
+  P(3, 'c3 r2'), I(11, 'c3 r2'), T(3, 'c3 r2'), P(4, 'c3 r2'),
+  I(12, 'c4 r3'), I(13, 'c4 r3'), P(5, 'c4 r3'),
+];
+let plate = 0;
+---
+
+<Layout title="Lab: plates — Bhuvan" noindex>
+  <Nav />
+
+  <main class="sheet">
+    {cells.map((c) => {
+      if (c.kind === 'intro') return (
+        <div class:list={['cell intro', c.size]}>
+          <h1>I’m Bhuvan. I write essays few people read and build small websites nobody asked for.</h1>
+          <p>Bangalore. By day, markets, data and curation at Zerodha. These are the essays, with the pictures I chose for them, and the sites, in ink.</p>
+        </div>
+      );
+      if (c.kind === 'proj') return (
+        <a class:list={['cell proj', c.size]} href={c.p.data.link}>
+          <span class="pk">Website</span>
+          <span class="pt">{smart(c.p.data.title)}</span>
+          <span class="px">{smart(c.p.data.tagline)}</span>
+          <span class="pu">{c.p.data.url}</span>
+        </a>
+      );
+      plate++;
+      if (c.kind === 'img') return (
+        <a class:list={['cell img', c.size]} href={href(c.p)}>
+          <span class="frame"><img src={thumb(c.p.data.image)} alt="" /></span>
+          <span class="cap"><span class="pl">{plate}</span><span class="ct">{smart(c.p.data.title)}</span><span class="cd">{c.p.data.publishDate.getFullYear()}</span></span>
+        </a>
+      );
+      return (
+        <a class:list={['cell type', c.size]} href={href(c.p)}>
+          <span class="tt">{smart(c.p.data.title)}</span>
+          {dek(c.p.data.description) && <span class="tx">{dek(c.p.data.description)}</span>}
+          <span class="cap"><span class="pl">{plate}</span><span class="ct">Essay</span><span class="cd">{c.p.data.publishDate.getFullYear()}</span></span>
+        </a>
+      );
+    })}
+  </main>
+
+  <p class="sheet-end"><a class="more" href="/writing/">All {posts.length} essays</a><a class="more" href="/projects/">All {projects.length} websites</a><a class="more" href="/marginalia/">Notes</a><a class="more" href="/now/">Now</a></p>
+
+  <Footer />
+</Layout>
+
+<style>
+  .sheet {
+    display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-auto-rows: clamp(84px, 7.6vw, 112px); gap: 3px;
+    max-width: var(--frame); margin: 4vh auto 0; padding: 0 var(--pad);
+  }
+  .c3 { grid-column: span 3; } .c4 { grid-column: span 4; } .c5 { grid-column: span 5; } .c6 { grid-column: span 6; } .c8 { grid-column: span 8; }
+  .r1 { grid-row: span 1; } .r2 { grid-row: span 2; } .r3 { grid-row: span 3; } .r4 { grid-row: span 4; } .r5 { grid-row: span 5; }
+  .cell { position: relative; overflow: hidden; min-width: 0; }
+
+  .intro { display: flex; flex-direction: column; justify-content: space-between; padding: 6px 28px 18px 0; }
+  .intro h1 { font-family: var(--serif); font-weight: 300; font-size: clamp(1.6rem, 2.3vw, 2.3rem); line-height: 1.16; letter-spacing: -.012em; text-wrap: pretty; }
+  .intro p { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 1rem; line-height: 1.45; color: var(--ink-soft); }
+
+  /* plates: picture above, a one-line caption strip below */
+  .img { display: grid; grid-template-rows: minmax(0, 1fr) auto; background: var(--paper); }
+  .frame { overflow: hidden; }
+  .frame img { width: 100%; height: 100%; object-fit: cover; }
+  .cap { display: flex; gap: 10px; align-items: baseline; padding: 8px 12px 2px 0; min-width: 0; }
+  .pl { flex: none; font-family: var(--serif); font-style: italic; font-size: .92rem; color: var(--flame); min-width: 1.4em; }
+  .ct { flex: 1; min-width: 0; font-family: var(--serif); font-size: 1rem; line-height: 1.25; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .cd { flex: none; font-weight: 600; font-size: .64rem; letter-spacing: .12em; color: var(--ink-soft); }
+  .img:hover .ct { color: var(--flame); }
+
+  /* essays without a picture are plates of type, on the pale ground */
+  .type { display: flex; flex-direction: column; gap: 10px; padding: 18px 18px 10px; background: var(--tint); }
+  .type .tt { font-family: var(--serif); font-weight: 300; font-size: clamp(1.3rem, 1.75vw, 1.75rem); line-height: 1.14; letter-spacing: -.01em; text-wrap: balance; }
+  .type .tx { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: .98rem; line-height: 1.4; color: var(--ink-soft);
+              display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .type .cap { margin-top: auto; padding-right: 0; }
+  .type .tt { flex-shrink: 0; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+  .r2.type .tx { -webkit-line-clamp: 2; }
+  .type .tx { flex-shrink: 1; min-height: 0; }
+  .type:hover .tt { color: var(--flame); }
+
+  /* websites are plates of ink */
+  .proj { display: flex; flex-direction: column; gap: 4px; padding: 16px 18px; background: var(--ink); color: #F4F4F2; transition: background-color .2s; }
+  .proj:hover { background: #000; }
+  .pk { font-weight: 600; font-size: .62rem; letter-spacing: .14em; text-transform: uppercase; color: #A8A8A8; }
+  .pt { margin-top: auto; font-family: var(--serif); font-weight: 300; font-size: clamp(1.3rem, 1.8vw, 1.75rem); line-height: 1.1; letter-spacing: -.01em; }
+  .px { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: .95rem; line-height: 1.35; color: #C9C9C9; }
+  .pu { font-weight: 500; font-size: .74rem; color: #F08A5D; }
+  .r1.proj .pk, .r1.proj .px { display: none; }
+  .r1.proj { flex-direction: row; align-items: baseline; justify-content: space-between; gap: 12px; }
+  .r1.proj .pt { margin-top: 0; font-size: 1.3rem; }
+
+  .sheet-end { max-width: var(--frame); margin: 40px auto 0; padding: 22px var(--pad) 0; display: flex; gap: 32px; flex-wrap: wrap; }
+  .sheet-end .more { margin-top: 0; }
+
+  @media (max-width: 860px) {
+    .sheet { grid-template-columns: repeat(6, minmax(0, 1fr)); grid-auto-rows: 92px; }
+    .c3, .c4, .c5 { grid-column: span 3; } .c6, .c8 { grid-column: span 6; }
+    .intro { grid-column: span 6; grid-row: span 3; padding-right: 0; }
+  }
+  @media (max-width: 520px) {
+    .sheet { grid-auto-rows: 78px; }
+    .ct { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; font-size: .92rem; }
+    .cd { display: none; }
+    .type { padding: 12px 12px 8px; }
+    .type .tx { display: none; }
+    .proj { padding: 12px; }
+    .proj .px { display: none; }
+  }
+</style>

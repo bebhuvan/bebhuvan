@@ -1,0 +1,112 @@
+---
+// LAB round 2, A: "Lines". The home page shows the writing by its sentences,
+// not its titles. One line from each essay, set large and staggered across
+// the page; the title is the small print. The sites and books arrive as
+// interludes between them. Lines are picked by hand, verbatim from the essays.
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import { posts, projects, books, post, href, smart } from '../../utils/lab';
+
+const picks: [string, string][] = [
+  ['protest', 'Not because you secretly agree with them. Precisely because you can’t stand them.'],
+  ['rare-disease', 'Our ability to speak is an evolutionary miracle.'],
+  ['train-dreams', 'The true mark of great art is whether it stirs some shit up inside you.'],
+  ['before-we-had', 'Rereading the book got me thinking about why we tell these stories at all.'],
+  ['start-the-damn-blog', 'Pink, brown, and orange blinking lights in full Tamil style. Whatever the hell you want.'],
+  ['fragmented-thoughts', 'I’m stupid, trying to be less stupid.'],
+  ['escalate-your-reading', 'Everybody wants to read more books. Well, not everybody.'],
+  ['philosophy-of-money', 'Imagine a spectacular fireworks display, but for idiocy.'],
+  ['philosophy-of-life', 'Philosophy—such a loaded word, isn’t it?'],
+  ['a-world-without-news', 'At one point in my life, I wanted to be a journalist. Thank God I didn’t become one.'],
+  ['death-to-the-banks', 'Two narratives have been constant: “Banks are dead” and “Why do we need banks?”'],
+  ['hello-world', 'Yay! I am now another pretentious idiot on the internet with a blog.'],
+];
+// where each line sits on a 12-column grid: a slow zigzag, never the same twice in a row
+const place = ['1 / 10', '4 / 13', '1 / 9', '6 / 13', '2 / 11', '1 / 7', '5 / 13', '1 / 9', '7 / 13', '2 / 12', '4 / 12', '1 / 10'];
+const lines = picks.map(([k, text], i) => {
+  const p = post(k);
+  const size = text.length < 52 ? 'xl' : text.length < 80 ? 'l' : 'm';
+  return { p, text, size, col: place[i] };
+});
+---
+
+<Layout title="Lab: lines — Bhuvan" noindex>
+  <Nav />
+
+  <header class="li-head">
+    <p class="who"><img src="/profile-pic-160.webp" alt="" width="40" height="40" /><span>I’m Bhuvan. I work at Zerodha on markets, data and curation, and write essays on the side. Here is a line from some of them. Start reading from any one.</span></p>
+  </header>
+
+  <main class="li">
+    {lines.map((l, i) => (
+      <>
+        <a class:list={['line', l.size]} href={href(l.p)} style={`grid-column: ${l.col}`}>
+          <q class="lq"><span class="hl">{l.text}</span></q>
+          <span class="src"><span class="st">{smart(l.p.data.title)}</span><span class="sd">{l.p.data.publishDate.getFullYear()}</span></span>
+        </a>
+        {i === 3 && (
+          <aside class="inter">
+            <p class="il">Between essays, I build small websites nobody asked for:</p>
+            <p class="run">{projects.map((p, j) => <><a href={p.data.link}>{smart(p.data.title)}</a>{j < projects.length - 1 && <span class="dot"> · </span>}</>)}</p>
+            <a class="more" href="/projects/">What each one is</a>
+          </aside>
+        )}
+        {i === 8 && (
+          <aside class="inter">
+            <p class="il">And I write about the books I loved:</p>
+            <p class="run">{books.map((b, j) => <><a href={`/books/${b.id}/`}><cite>{b.data.title.split(':')[0]}</cite></a>{j < books.length - 1 && <span class="dot"> · </span>}</>)}</p>
+          </aside>
+        )}
+      </>
+    ))}
+    <p class="li-end"><a class="more" href="/writing/">All {posts.length} essays</a><a class="more" href="/marginalia/">Short notes</a><a class="more" href="/now/">What I’m doing now</a></p>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .li-head, .li { max-width: var(--frame); margin: 0 auto; padding: 0 var(--pad); }
+  .li-head { padding-top: 7vh; display: flex; justify-content: flex-end; }
+  .who { display: flex; gap: 14px; align-items: flex-start; max-width: 25em; font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 1.06rem; line-height: 1.45; color: var(--ink-soft); }
+  .who img { flex: none; width: 40px; height: 40px; border-radius: 50%; filter: grayscale(1); margin-top: 3px; }
+
+  .li { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: 13vh; padding-top: 8vh; }
+  .line { display: block; position: relative; }
+  .lq { display: block; font-family: var(--serif); font-weight: 300; letter-spacing: -.018em; text-wrap: balance; quotes: none; color: var(--ink); }
+  /* a flame opening quote hangs outside the line, so the text keeps its edge */
+  .lq::before { content: '“'; position: absolute; left: -.42em; color: var(--flame); }
+  .xl .lq { font-size: clamp(2.3rem, 4.6vw, 4.6rem); line-height: 1.04; }
+  .l .lq  { font-size: clamp(2rem, 3.5vw, 3.4rem); line-height: 1.1; }
+  .m .lq  { font-size: clamp(1.7rem, 2.7vw, 2.6rem); line-height: 1.16; }
+  .line:hover .hl { background-size: 100% var(--marker-h); }
+  .src { display: flex; gap: 14px; align-items: baseline; margin-top: 18px; padding-top: 10px; border-top: 1px solid var(--rule); max-width: 34em; }
+  .st { font-family: var(--serif); font-style: italic; font-size: 1.04rem; line-height: 1.35; }
+  .sd { margin-left: auto; font-weight: 600; font-size: .68rem; letter-spacing: .12em; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+  .line:hover .st { color: var(--flame); }
+
+  .inter { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); column-gap: 24px; padding: 26px 0 30px; border-top: 1px solid var(--rule-strong); border-bottom: 1px solid var(--rule); }
+  .il { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 1.08rem; line-height: 1.45; color: var(--ink-soft); padding-right: 12px; }
+  .run { font-family: var(--serif); font-weight: 400; font-size: clamp(1.3rem, 1.7vw, 1.65rem); line-height: 1.5; text-wrap: pretty; }
+  .run a { transition: color .2s; }
+  .run a:hover { color: var(--flame); }
+  .run cite { font-style: italic; }
+  .dot { color: var(--flame); }
+  .inter .more { grid-column: 2; margin-top: 12px; }
+  .li-end { grid-column: 1 / -1; display: flex; gap: 32px; flex-wrap: wrap; padding-top: 22px; border-top: 1px solid var(--rule-strong); }
+  .li-end .more { margin-top: 0; }
+
+  @media (max-width: 860px) {
+    .li { row-gap: 64px; }
+    .line { grid-column: 1 / -1 !important; }
+    .line:nth-of-type(even) { padding-left: 12%; }
+    .inter { grid-template-columns: minmax(0, 1fr); row-gap: 10px; }
+    .inter .more { grid-column: 1; }
+    .li-head { justify-content: flex-start; }
+  }
+  @media (max-width: 600px) {
+    .line:nth-of-type(even) { padding-left: 0; }
+    .lq::before { position: static; }
+  }
+</style>
