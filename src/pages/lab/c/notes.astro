@@ -1,0 +1,26 @@
+---
+// LAB directions, C: notes as a table of dated rows.
+import '../../../styles/lab/c.css';
+import Frame from '../../../components/lab/CFrame.astro';
+import { stream, fmt } from '../../../utils/lab';
+---
+<Frame title="Lab C · Notes — Bhuvan" active="Notes">
+  <header class="g phead">
+    <span class="lbl ink">Notes · {stream.length}</span>
+    <h1>Short notes and links, kept in the open. <span>Formerly rabbitholes.garden.</span></h1>
+  </header>
+  <section class="g nstream">
+    <div class="nh lbl"><span class="c1">Date</span><span class="c2">Kind</span><span class="c3">Note</span><span class="c4">Source</span></div>
+    {stream.map((n) => (
+      <article class="nrow">
+        <time>{fmt(n.date)}</time>
+        <span class="kind">{n.kind === 'link' ? <><span class="sq"></span>Link</> : 'Note'}</span>
+        <div class="body">
+          <h2>{n.kind === 'link' ? <a href={n.href}>{n.title}</a> : n.title}</h2>
+          <div class="txt">{n.html ? <Fragment set:html={n.html} /> : <p>{n.text}</p>}</div>
+        </div>
+        <span class="src">{n.domain && <a href={n.href}>{n.domain} ↗</a>}</span>
+      </article>
+    ))}
+  </section>
+</Frame>

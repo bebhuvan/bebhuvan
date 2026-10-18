@@ -1,0 +1,39 @@
+---
+// LAB directions, B: projects as a list of works in four parts, no pictures.
+import '../../../styles/lab/b.css';
+import Frame from '../../../components/lab/BFrame.astro';
+import { projects, smart, kinds, kindLabel, GITHUB, TWITTER } from '../../../utils/lab';
+const roman = ['I', 'II', 'III', 'IV'];
+---
+<Frame title="Lab B · Works — Bhuvan" active="Projects">
+  <header class="opening">
+    <span class="kick sc">{projects.length} works</span>
+    <h1>Works</h1>
+    <p class="arg">Small websites made on evenings and weekends: rooms for old words, Indian numbers explained, a commonplace book and a record of the street.</p>
+  </header>
+  <section class="block" style="padding-top:40px">
+    <div class="works">
+      {kinds.map((k, i) => (
+        <div class="part">
+          <p class="part-h sc"><b>Part {roman[i]}</b> · {kindLabel[k]}</p>
+          <div class="work-grid">
+            {projects.filter((p) => p.data.kind === k).map((p) => (
+              <article class="work">
+                <h3><a href={p.data.link}>{smart(p.data.title)}</a></h3>
+                <p class="tag">{smart(p.data.tagline ?? '')}</p>
+                <p class="desc">{smart(p.data.description)}</p>
+                {p.data.story && <p class="note">“{smart(p.data.story)}”</p>}
+                <a class="url" href={p.data.link}>{p.data.url}</a>
+              </article>
+            ))}
+          </div>
+        </div>
+      ))}
+      <div class="invite" id="invite">
+        <h3>An invitation</h3>
+        <p>I make these alone. If you read old Indian languages, know where forgotten books and letters are kept, or like building small careful websites, I would love the company.</p>
+        <div class="ways"><a class="sc" href={GITHUB}>GitHub</a><a class="sc" href={TWITTER}>Write to me</a></div>
+      </div>
+    </div>
+  </section>
+</Frame>

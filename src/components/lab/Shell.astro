@@ -1,0 +1,21 @@
+---
+// Bare page for the directions mockups: no global.css, fonts from Google
+// Fonts (they would be self-hosted on the real site), noindex.
+interface Props { title: string; fonts: string; dir: 'a' | 'b' | 'c' }
+const { title, fonts, dir } = Astro.props;
+---
+<!doctype html>
+<html lang="en" data-dir={dir}>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>{title}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href={fonts} />
+</head>
+<body>
+  <slot />
+</body>
+</html>

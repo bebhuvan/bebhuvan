@@ -1,0 +1,36 @@
+---
+// LAB directions, B: the essay as a chapter.
+import '../../../styles/lab/b.css';
+import Frame from '../../../components/lab/BFrame.astro';
+import { render } from 'astro:content';
+import { essay, posts, dek, fmtLong, smart, minutes } from '../../../utils/lab';
+const { Content } = await render(essay);
+const next = posts.filter((p) => p !== essay).slice(0, 5);
+const month = (d: Date) => d.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+---
+<Frame title={`Lab B · ${essay.data.title}`} active="Writing">
+  <header class="opening">
+    <span class="kick sc">An essay · {(essay.data.tags ?? [])[0]}</span>
+    <h1>{smart(essay.data.title)}</h1>
+    <p class="arg">{dek(essay.data.description)}</p>
+    <p class="by sc">{fmtLong(essay.data.publishDate)} · {minutes(essay)} minutes</p>
+  </header>
+  <figure class="plate">
+    <img src={essay.data.image} alt="" />
+    <figcaption>{essay.data.imageCaption ?? 'Frontispiece: a railway station, in oils'}</figcaption>
+  </figure>
+  <div class="page">
+    <article class="prose"><Content /></article>
+    <p class="finis">❦</p>
+    <div class="further contents">
+      <p class="yr sc">Further reading</p>
+      <ol class="toc">
+        {next.map((p) => (
+          <li><a href="/lab/b/essay/">
+            <span class="line"><span class="t">{smart(p.data.title)}</span><span class="dots"></span><span class="m sc">{month(p.data.publishDate)}</span></span>
+          </a></li>
+        ))}
+      </ol>
+    </div>
+  </div>
+</Frame>

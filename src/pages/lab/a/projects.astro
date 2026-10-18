@@ -1,0 +1,58 @@
+---
+// LAB directions, A: projects as magazine spreads, each with a picture of the thing.
+import '../../../styles/lab/a.css';
+import Frame from '../../../components/lab/AFrame.astro';
+import { projects, smart, shot, kindLabel, GITHUB, TWITTER } from '../../../utils/lab';
+const big = projects.filter((p) => p.data.story).concat(projects.filter((p) => !p.data.story)).slice(0, 5);
+const small = projects.filter((p) => !big.includes(p));
+---
+<Frame title="Lab A · Projects — Bhuvan" active="Projects">
+  <main class="wrap">
+    <header class="page-open">
+      <div>
+        <span class="cap fl">The workshop · {projects.length} projects</span>
+        <h1>Small websites, built on evenings and weekends, <em>for the public good.</em></h1>
+      </div>
+      <p>Old letters set to be read, Indian data explained, a commonplace book and a record of Bengaluru’s broken footpaths. Each one started as an itch. If one of them is your itch too, <a href="#invite">come and help</a>.</p>
+    </header>
+    {big.map((p) => (
+      <article class="spread">
+        <a class="frame" href={p.data.link}><img src={shot(p.id)} alt={`The ${p.data.title} home page`} /></a>
+        <div>
+          <span class="cap fl">{kindLabel[p.data.kind ?? 'library']}</span>
+          <h2><a href={p.data.link}>{smart(p.data.title)}</a></h2>
+          <p class="desc">{smart(p.data.description)}</p>
+          {p.data.story && <p class="why">“{smart(p.data.story)}”</p>}
+          <a class="url" href={p.data.link}>{p.data.url}</a>
+        </div>
+      </article>
+    ))}
+    <div class="smalls">
+      {small.map((p) => (
+        <a class="shot" href={p.data.link}>
+          <span class="frame"><img src={shot(p.id)} alt="" /></span>
+          <h4>{smart(p.data.title)}</h4>
+          <p>{smart(p.data.tagline ?? '')}</p>
+          <span class="cap">{p.data.url}</span>
+        </a>
+      ))}
+    </div>
+  </main>
+  <section class="invite" id="invite">
+    <div class="wrap invite-in">
+      <div>
+        <span class="cap">Collaborators wanted</span>
+        <h3>I build all of this alone, on evenings and weekends. <em>Come and build some of it with me.</em></h3>
+      </div>
+      <div>
+        <p>Every one of these needs more hands than mine. A few places to start:</p>
+        <ul>
+          <li>Readers of Kannada, Tamil, Hindi or Sanskrit to proof old books</li>
+          <li>People who know where rare Indian books and letters are hiding</li>
+          <li>Designers and developers who like small, careful websites</li>
+        </ul>
+        <a class="btn" href={GITHUB}>GitHub: bebhuvan ↗</a><a class="btn ghost" href={TWITTER}>Write to me</a>
+      </div>
+    </div>
+  </section>
+</Frame>

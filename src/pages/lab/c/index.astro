@@ -1,0 +1,78 @@
+---
+// LAB directions, C "Grid": writing, building and notes as three columns that start on one line.
+import '../../../styles/lab/c.css';
+import Frame from '../../../components/lab/CFrame.astro';
+import { render } from 'astro:content';
+import { posts, projects, stream, nowEntries, short, fmt, fmtLong, fmtMonth, smart, kinds, kindLabel, GITHUB, TWITTER } from '../../../utils/lab';
+const lead = posts.find((p) => p.data.image)!;
+const rows = posts.filter((p) => p !== lead).slice(0, 7);
+const now = nowEntries[0];
+const { Content: NowText } = await render(now);
+const E = '/lab/c/essay/';
+---
+<Frame title="Lab C · Grid — Bhuvan">
+  <section class="g hero">
+    <div class="pic">
+      <img src="/profile-pic.webp" alt="A cartoon of Bhuvan, grinning, with a peace sign" width="800" height="800" />
+    </div>
+    <h1>I’m Bhuvan. I write <a href={E}>essays</a> few people read, build <a href="/lab/c/projects/">small websites</a> nobody asked for and keep <a href="/lab/c/notes/">notes</a> on whatever caught my eye. <span>By day I work at Zerodha on markets, data and curation.</span></h1>
+    <div class="facts">
+      <div><span class="lbl">Based in</span><br />Bangalore, India</div>
+      <div><span class="lbl">Writing since</span><br />{posts[posts.length - 1].data.publishDate.getFullYear()}, {posts.length} essays</div>
+      <div><span class="lbl">Looking for</span><br /><a href="#collab">Collaborators <span class="dom">→</span></a></div>
+    </div>
+  </section>
+
+  <section class="g index">
+    <div class="col-w">
+      <div class="colh"><span><span class="num">01</span>Writing</span><a href={E}>All essays</a></div>
+      <div class="lead">
+        <a href={E}><img src={lead.data.image} alt="" /></a>
+        <h3><a href={E}>{smart(lead.data.title)}</a></h3>
+        <p>{short(lead.data.description)}</p>
+      </div>
+      <ul class="rows">
+        {rows.map((p) => <li><a href={E}><span>{smart(p.data.title)}</span><span class="d">{fmtMonth(p.data.publishDate)}</span></a></li>)}
+      </ul>
+    </div>
+    <div class="col-b">
+      <div class="colh"><span><span class="num">02</span>Building</span><a href="/lab/c/projects/">All</a></div>
+      <div class="plist">
+        {kinds.map((k) => (
+          <>
+            <p class="k lbl">{kindLabel[k]}</p>
+            {projects.filter((p) => p.data.kind === k).map((p) => <a href={p.data.link}><b>{smart(p.data.title)}</b><span>{p.data.url}</span></a>)}
+          </>
+        ))}
+      </div>
+    </div>
+    <div class="col-n">
+      <div class="colh"><span><span class="num">03</span>Notes</span><a href="/lab/c/notes/">All</a></div>
+      <div class="nlist">
+        {stream.slice(0, 7).map((n) => (
+          <div>
+            <span class="lbl">{fmt(n.date)}{n.domain && <> · <span class="dom">{n.domain}</span></>}</span>
+            <h4><a href={n.kind === 'link' ? n.href : '/lab/c/notes/'}>{n.title}</a></h4>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="g lower">
+    <div class="now" id="now">
+      <div class="colh"><span><span class="num">04</span>Now</span><span class="lbl">Updated {fmtLong(now.data.date)}</span></div>
+      <div class="txt"><NowText /></div>
+    </div>
+    <div class="collab" id="collab">
+      <div class="colh"><span><span class="num" style="color:inherit">05</span>Open to collaborators</span></div>
+      <h3>I build these alone. Come and build some of them with me.</h3>
+      <ol>
+        <li>Read Kannada, Tamil, Hindi or Sanskrit and can proof old books</li>
+        <li>Know where rare Indian books and letters are kept</li>
+        <li>Like designing or building small, careful websites</li>
+      </ol>
+      <a class="btn" href={GITHUB}>github.com/bebhuvan</a><a class="btn" href={TWITTER}>Write to me</a>
+    </div>
+  </section>
+</Frame>

@@ -1,0 +1,36 @@
+---
+// Hub for the three directions mockups (branch design-next-pass only).
+import Shell from '../../components/lab/Shell.astro';
+const dirs = [
+  { k: 'a', name: 'A · Contributor', idea: 'A magazine about one person. Each section has its own layout: a contributor portrait, a cover story, briefs, project spreads with screenshots and one solid flame block asking for collaborators.', type: 'Libre Bodoni (display), Source Serif 4 (text), Hanken Grotesk (labels)' },
+  { k: 'b', name: 'B · Edition', idea: 'The site as a well-made book. A title page, a preface, a table of contents with dotted leaders, works listed by part, a commonplace book, and essays set as chapters with red initials and numbered figures.', type: 'Alegreya and Alegreya SC (Huerta Tipográfica)' },
+  { k: 'c', name: 'C · Grid', idea: 'Swiss modernism. One grotesk for everything, essays included, on a strict 12-column grid. Writing, building and notes start on one line; flame appears only as a square or a block.', type: 'Host Grotesk (Element Type)' },
+];
+const pages = [['', 'Home'], ['essay/', 'Essay'], ['projects/', 'Projects'], ['notes/', 'Notes']];
+---
+<Shell title="Lab · Three directions" dir="a" fonts="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400..700&display=swap">
+  <main>
+    <h1>Three directions</h1>
+    <p class="lede">Built from the real content: the same essay (<em>Who are you without a job?</em>, chosen for its quotes, charts and links), the live project list, and Rabbit Holes’ recent posts folded into Notes. Essay links all open that one mocked essay; Books goes to the live page.</p>
+    {dirs.map((d) => (
+      <section>
+        <h2>{d.name}</h2>
+        <p>{d.idea}</p>
+        <p class="t">{d.type}</p>
+        <nav>{pages.map(([p, l]) => <a href={`/lab/${d.k}/${p}`}>{l}</a>)}</nav>
+      </section>
+    ))}
+  </main>
+  <style is:global>
+    body { margin: 0; background: #fff; color: #121212; font: 400 17px/1.55 'Hanken Grotesk', system-ui, sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 60px 20px 80px; }
+    h1 { font-size: 2.2rem; letter-spacing: -.02em; margin: 0 0 12px; }
+    .lede { color: #525252; margin: 0 0 40px; }
+    section { border-top: 2px solid #121212; padding: 14px 0 34px; }
+    h2 { margin: 0 0 8px; font-size: 1.3rem; }
+    section p { margin: 0 0 8px; }
+    .t { color: #525252; font-size: .92rem; }
+    nav { display: flex; gap: 22px; flex-wrap: wrap; margin-top: 12px; }
+    nav a { color: #D0491A; font-weight: 600; text-decoration: none; border-bottom: 1px solid currentColor; }
+  </style>
+</Shell>

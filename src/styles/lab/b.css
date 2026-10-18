@@ -1,0 +1,191 @@
+/* Direction B, "Edition": the site as a well-made book.
+   Alegreya and Alegreya SC (Huerta Tipográfica), one rubric red for initials,
+   note numbers and section marks. White page, centred measure, a margin for notes. */
+:root {
+  --paper: #fff; --ink: #161514; --soft: #5a5754; --faint: #9a9692; --rule: #e6e3df;
+  --red: #B9381A; --red-soft: #E9B7A6; --wash: #F8DDD2;
+  --serif: 'Alegreya', 'Iowan Old Style', Georgia, serif;
+  --sc: 'Alegreya SC', 'Alegreya', serif;
+  --measure: 34em;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 20px/1.6 var(--serif); font-variant-numeric: oldstyle-nums proportional-nums; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; height: auto; }
+::selection { background: var(--wash); }
+.sc { font-family: var(--sc); font-weight: 500; letter-spacing: .08em; text-transform: lowercase; font-variant-numeric: oldstyle-nums; }
+.red { color: var(--red); }
+.it { font-style: italic; }
+.fleuron { display: block; text-align: center; color: var(--red); font-size: 1.5rem; line-height: 1; margin: 1.4em 0; }
+
+/* running head */
+.run { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; max-width: 1180px; margin: 0 auto; padding: 22px 32px 0; }
+.run .home { font-size: 1.02rem; }
+.run nav { display: flex; gap: 22px; flex-wrap: wrap; }
+.run nav a { font-size: .98rem; color: var(--soft); transition: color .2s; }
+.run nav a:hover, .run nav a[aria-current] { color: var(--red); }
+
+/* chapter headings used on every page */
+.chap { text-align: center; margin: 0 auto 2.2em; max-width: 40rem; }
+.chap .num { display: block; color: var(--red); font-size: .95rem; margin-bottom: .5em; }
+.chap h2 { margin: 0; font: 400 2.3rem/1.15 var(--serif); letter-spacing: -.005em; }
+.chap p { margin: .5em 0 0; font-style: italic; color: var(--soft); }
+
+/* ---------------- home: title page, preface, contents ---------------- */
+.title-page { min-height: min(92vh, 900px); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 60px 24px 40px; }
+.title-page img { width: 168px; border-radius: 50%; margin-bottom: 40px; }
+.title-page h1 { margin: 0; font: 400 clamp(3rem, 6.2vw, 5.4rem)/1 var(--sc); letter-spacing: .14em; text-transform: lowercase; padding-left: .14em; }
+.title-page .sub { margin: 22px 0 0; font: italic 400 clamp(1.25rem, 1.9vw, 1.6rem)/1.4 var(--serif); color: #3b3936; max-width: 26em; }
+.title-page .fleuron { margin: 34px 0; font-size: 1.8rem; }
+.title-page .imprint { font-size: 1rem; color: var(--soft); }
+.title-page .imprint span { display: block; margin-top: 4px; }
+
+.block { max-width: 1180px; margin: 0 auto; padding: 0 32px 110px; }
+.preface { max-width: var(--measure); margin: 0 auto; font-size: 1.1rem; }
+.preface p { margin: 0 0 1em; text-indent: 1.5em; text-wrap: pretty; }
+.preface p:first-of-type { text-indent: 0; }
+.preface p:first-of-type::first-letter { float: left; font: 400 4.6em/.78 var(--serif); color: var(--red); margin: .07em .08em 0 0; }
+.preface p:first-of-type::first-line { font-variant: small-caps; letter-spacing: .04em; }
+.preface a { text-decoration: underline; text-decoration-color: var(--red-soft); text-underline-offset: .18em; transition: color .2s; }
+.preface a:hover { color: var(--red); }
+.sign { text-align: right; font-style: italic; margin-top: .4em; }
+
+/* contents: titles with dotted leaders running to the month */
+.contents { max-width: 44rem; margin: 0 auto; }
+.yr { margin: 2em 0 .6em; text-align: center; color: var(--red); font-size: 1.05rem; }
+.yr:first-child { margin-top: 0; }
+.toc { list-style: none; margin: 0; padding: 0; }
+.toc li { margin: 0 0 .75em; }
+.toc .line { display: flex; align-items: baseline; gap: .4em; }
+.toc .t { font-size: 1.15rem; transition: color .2s; }
+.toc a:hover .t { color: var(--red); }
+.toc .dots { flex: 1; border-bottom: 1.5px dotted #b9b4ae; transform: translateY(-.28em); min-width: 2em; }
+.toc .m { font-size: .95rem; color: var(--soft); white-space: nowrap; }
+.toc .arg { display: block; font-style: italic; color: var(--soft); font-size: 1rem; line-height: 1.45; margin-top: .1em; max-width: 34em; }
+.whole { display: block; text-align: center; margin-top: 2em; }
+.whole a { color: var(--red); border-bottom: 1px solid var(--red-soft); }
+
+/* works: the projects, set as a list of works, no pictures */
+.works { max-width: 60rem; margin: 0 auto; }
+.part { margin: 0 0 3em; }
+.part-h { text-align: center; margin: 0 0 1.6em; font-size: 1.05rem; color: var(--soft); }
+.part-h b { color: var(--red); font-weight: 500; }
+.work-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2em 3.2em; }
+.work h3 { margin: 0; font: 500 1.5rem/1.2 var(--sc); letter-spacing: .05em; text-transform: lowercase; }
+.work h3 a { transition: color .2s; }
+.work h3 a:hover { color: var(--red); }
+.work .tag { margin: .1em 0 .45em; font-style: italic; color: var(--soft); font-size: 1.05rem; }
+.work .desc { margin: 0 0 .45em; font-size: 1.02rem; line-height: 1.55; }
+.work .note { margin: 0 0 .4em; font-style: italic; color: var(--red); font-size: 1rem; }
+.work .url { font-size: .92rem; color: var(--soft); }
+.work .url:hover { color: var(--red); }
+
+/* the invitation: a letter between two red rules */
+.invite { max-width: 36rem; margin: 1em auto 0; padding: 2em 0; border-top: 1px solid var(--red); border-bottom: 1px solid var(--red); text-align: center; }
+.invite h3 { margin: 0 0 .5em; font: italic 400 1.75rem/1.25 var(--serif); }
+.invite p { margin: 0 0 1em; font-size: 1.05rem; }
+.invite .ways { display: flex; justify-content: center; gap: 2em; flex-wrap: wrap; }
+.invite .ways a { color: var(--red); border-bottom: 1px solid var(--red-soft); transition: border-color .2s; }
+.invite .ways a:hover { border-color: var(--red); }
+
+/* commonplace: notes with a red pilcrow */
+.common { max-width: var(--measure); margin: 0 auto; }
+.cp { margin: 0 0 1.5em; }
+.cp h3 { margin: 0; font: 500 1.18rem/1.35 var(--serif); }
+.cp h3::before { content: '¶'; color: var(--red); margin-right: .45em; font-weight: 400; }
+.cp h3 a { transition: color .2s; }
+.cp h3 a:hover { color: var(--red); }
+.cp .meta { font-size: .9rem; color: var(--soft); margin: .1em 0 .3em 1.15em; }
+.cp p { margin: 0 0 0 1.15em; font-size: 1.02rem; line-height: 1.55; color: #33312e; }
+
+.ps { max-width: var(--measure); margin: 0 auto; font-size: 1.1rem; }
+.ps .lab { color: var(--red); font-size: 1.05rem; }
+.ps p { margin: 0 0 .9em; text-wrap: pretty; }
+
+/* colophon */
+.colophon { max-width: 30rem; margin: 0 auto; padding: 30px 24px 70px; text-align: center; font-size: .95rem; color: var(--soft); line-height: 1.55; }
+.colophon .fleuron { margin: 0 0 18px; }
+.colophon nav { display: flex; justify-content: center; gap: 1.6em; margin-top: 14px; }
+.colophon nav a { color: var(--ink); }
+.colophon nav a:hover { color: var(--red); }
+
+/* ---------------- essay ---------------- */
+.opening { text-align: center; max-width: 46rem; margin: 0 auto; padding: 110px 24px 30px; }
+.opening .kick { color: var(--red); font-size: 1rem; }
+.opening h1 { margin: .35em 0 .4em; font: 400 clamp(2.6rem, 5.4vw, 4.4rem)/1.06 var(--serif); letter-spacing: -.012em; text-wrap: balance; }
+.opening .arg { margin: 0 auto; font: italic 400 1.35rem/1.45 var(--serif); color: var(--soft); max-width: 28em; }
+.opening .by { margin-top: 1.6em; font-size: 1rem; color: var(--soft); }
+.plate { max-width: 980px; margin: 30px auto 70px; padding: 0 32px; }
+.plate figcaption { margin-top: 12px; text-align: center; font-style: italic; color: var(--soft); font-size: .98rem; }
+
+.page { max-width: 1180px; margin: 0 auto; padding: 0 32px; display: grid; grid-template-columns: 1fr minmax(0, var(--measure)) 1fr; column-gap: 48px; }
+.page > * { grid-column: 2; }
+.prose { font-size: 1.12rem; line-height: 1.62; hanging-punctuation: first; counter-reset: fig; }
+.prose p { margin: 0; text-wrap: pretty; }
+/* book paragraphs: indented, no space between, except after a break */
+.prose p + p { text-indent: 1.5em; }
+.prose > p:first-of-type::first-letter { float: left; font: 400 4.75em/.78 var(--serif); color: var(--red); margin: .06em .07em 0 0; }
+.prose > p:first-of-type::first-line { font-variant: small-caps; letter-spacing: .05em; }
+.prose a { text-decoration: underline; text-decoration-color: var(--red-soft); text-decoration-thickness: 1px; text-underline-offset: .18em; transition: color .2s, text-decoration-color .2s; }
+.prose a:hover { color: var(--red); text-decoration-color: var(--red); }
+.prose h2 { margin: 2.2em 0 1em; text-align: center; font: 500 1.15rem/1.3 var(--sc); letter-spacing: .12em; text-transform: lowercase; }
+.prose h2::before { content: '§'; display: block; color: var(--red); font: 400 1.4rem/1 var(--serif); margin-bottom: .45em; letter-spacing: 0; }
+.prose h3 { margin: 1.8em 0 .6em; font: italic 500 1.15rem/1.3 var(--serif); }
+.prose blockquote { margin: 1.3em 2em 1.4em; font-size: .94em; line-height: 1.58; color: #2f2d2a; }
+.prose blockquote p + p { text-indent: 0; margin-top: .7em; }
+.prose blockquote strong { font-weight: 500; }
+/* figures: numbered like plates in a book */
+.prose p:has(> img) { counter-increment: fig; margin: 1.8em 0 1.9em; text-indent: 0; }
+.prose p:has(> img)::after { content: 'Fig. ' counter(fig); display: block; margin-top: .5em; text-align: center; font: italic 400 .92rem/1.3 var(--serif); color: var(--soft); }
+.prose p:has(> img) + p { text-indent: 0; }
+.prose blockquote + p, .prose h2 + p, .prose h3 + p, .prose hr + p, .prose ul + p, .prose ol + p { text-indent: 0; }
+.prose hr { border: 0; margin: 1.8em 0; text-align: center; }
+.prose hr::before { content: '⁂'; color: var(--red); font-size: 1.2rem; }
+.prose ul, .prose ol { margin: .8em 0 1em; padding-left: 1.4em; }
+.prose li { margin-bottom: .3em; }
+.mn-ref { color: var(--red); font-size: .7em; vertical-align: super; line-height: 0; margin-left: 1px; }
+.margin-note { float: right; clear: right; width: 14rem; margin-right: -17rem; font-size: .88rem; line-height: 1.45; color: var(--soft); text-indent: 0; }
+.finis { text-align: center; color: var(--red); font-size: 1.6rem; margin: 1.6em 0 0; }
+.further { margin-top: 70px; padding-top: 30px; border-top: 1px solid var(--rule); }
+.further .yr { margin-top: 0; }
+
+/* ---------------- notes page ---------------- */
+.cp-page { max-width: 1180px; margin: 0 auto; padding: 90px 32px 80px; display: grid; grid-template-columns: 1fr minmax(0, var(--measure)) 1fr; column-gap: 48px; }
+.cp-page > * { grid-column: 2; }
+.cp-entry { position: relative; margin: 0 0 2.4em; }
+.cp-entry time { position: absolute; right: calc(100% + 48px); top: .25em; width: 9rem; text-align: right; color: var(--soft); font-size: .95rem; }
+.cp-entry h3 { margin: 0 0 .3em; font: 500 1.3rem/1.3 var(--serif); }
+.cp-entry h3::before { content: '¶'; color: var(--red); margin-right: .4em; font-weight: 400; }
+.cp-entry h3 a:hover { color: var(--red); }
+.cp-entry .via { margin: 0 0 .5em; font-style: italic; color: var(--soft); font-size: 1rem; }
+.cp-entry .via a { color: var(--red); }
+.cp-entry .txt { font-size: 1.06rem; line-height: 1.6; }
+.cp-entry .txt p { margin: 0 0 .7em; }
+.cp-entry .txt a { text-decoration: underline; text-decoration-color: var(--red-soft); text-underline-offset: .16em; word-break: break-word; }
+.cp-entry .txt blockquote { margin: .5em 1.5em .8em; font-size: .95em; }
+
+@media (max-width: 1100px) {
+  .margin-note { float: none; display: block; width: auto; margin: .6em 0 .9em; padding-left: 12px; border-left: 1px solid var(--red); }
+  .cp-entry time { position: static; display: block; width: auto; text-align: left; margin-bottom: .2em; }
+}
+@media (max-width: 860px) {
+  .work-grid { grid-template-columns: 1fr; }
+  .page, .cp-page { grid-template-columns: minmax(0, 1fr); }
+  .page > *, .cp-page > * { grid-column: 1; }
+}
+@media (max-width: 600px) {
+  body { font-size: 18px; }
+  .run { flex-direction: column; gap: 6px; padding: 18px 20px 0; }
+  .run nav { gap: 14px; }
+  .block, .page, .plate { padding-left: 20px; padding-right: 20px; }
+  .cp-page { padding: 60px 20px; }
+  .title-page img { width: 128px; }
+  .title-page h1 { letter-spacing: .08em; }
+  .opening { padding-top: 70px; }
+  .prose blockquote { margin-left: 1em; margin-right: 0; }
+  .plate { padding: 0; }
+  .toc .m { display: none; }
+  .toc .dots { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
