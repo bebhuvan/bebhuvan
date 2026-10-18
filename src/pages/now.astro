@@ -9,282 +9,41 @@ const nowEntries = (await getCollection('now'))
 
 const latestDate = nowEntries[0]?.data.date;
 const categoryLabels: Record<string, string> = {
-  thinking: "what I'm thinking about",
-  working: "what I'm working on",
-  reading: "what I'm reading",
-  building: "what I'm building",
+  thinking: 'Thinking about',
+  working: 'Working on',
+  mindlog: 'Mind log',
 };
+const fmt = (d: Date) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 ---
 
 <Layout title="Now — Bhuvan" description="What I'm doing right now — a /now page, updated when things change.">
   <Nav active="now" />
 
-  <div class="wrap now-wrap">
-    <div class="col">
+  <main class="split">
+    <div class="statement">
+      <h1 class="statement-text">What I’m doing <em>now</em>. A snapshot, not a résumé.</h1>
+      <p class="statement-sub">
+        {latestDate && <>Last updated {fmt(latestDate)}, Bangalore. </>}
+        This is a <a href="https://nownownow.com/about">/now page</a>, an idea from Derek Sivers: what you’d tell a good friend who asked what you’ve been up to.
+      </p>
+    </div>
 
-      <div class="now-header">
-        <span class="nh-label">/now</span>
-        <h1>What I&apos;m Doing <em>Now</em></h1>
-        <p class="nh-sub">A snapshot, not a r&eacute;sum&eacute;. Updated when things change.</p>
-        {latestDate && (
-          <span class="nh-date">
-            Last updated {latestDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })} · Bangalore
-          </span>
-        )}
-      </div>
-
-      <div class="now-rule"></div>
-
+    <div class="margin">
       {nowEntries.map(async (entry, i) => {
         const { Content } = await entry.render();
-        const cat = entry.data.category || 'thinking';
-        const label = categoryLabels[cat] || cat;
-        const dateStr = entry.data.date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
         return (
-          <>
-            <section class="now-entry">
-              <div class="ne-head">
-                <span class="ne-cat">{label}</span>
-                <span class="ne-date">{dateStr}</span>
-              </div>
-              <div class="ne-body">
-                <Content />
-              </div>
-            </section>
-            {i < nowEntries.length - 1 && <div class="now-sep"></div>}
-          </>
+          <section class="ann">
+            <h2 class="ann-head"><span class="n">{i + 1}</span>{categoryLabels[entry.data.category] || entry.data.category}<span class="count">{entry.data.date.toLocaleDateString('en-GB', { month: 'short', year: 'numeric' })}</span></h2>
+            <div class="prose"><Content /></div>
+          </section>
         );
       })}
-
-      <div class="colophon">
-        <p>This is a <a href="https://nownownow.com/about">/now page</a>, a concept popularized by Derek Sivers. The idea is to share what you'd tell a good friend if they asked what you've been up to.</p>
-        <p>Updated irregularly, whenever something changes significantly enough to matter.</p>
-      </div>
-
-      <Footer
-        meta='Zerodha &middot; Bangalore &middot; The Internet<br>A small corner on the dumpster fire since 2019'
-        hand="This is me, right now. Ask me again in a month."
-      />
     </div>
-  </div>
+  </main>
+
+  <Footer hand="This is me, right now. Ask me again in a month." />
 </Layout>
 
 <style>
-  .now-wrap .col {
-    max-width: 580px;
-  }
-
-  /* --- Header --- */
-  .now-header {
-    padding: 8.5rem 0 2rem;
-    text-align: center;
-  }
-
-  .nh-label {
-    font-family: var(--hand);
-    font-size: 1.8rem;
-    color: var(--flame-warm);
-    display: block;
-    margin-bottom: 0.3rem;
-    transform: rotate(-1deg);
-    opacity: 0.7;
-  }
-
-  .now-header h1 {
-    font-family: var(--serif);
-    font-size: clamp(1.8rem, 3.2vw, 2.4rem);
-    font-weight: 200;
-    letter-spacing: -0.025em;
-    line-height: 1.15;
-    margin-bottom: 0.6rem;
-    font-variation-settings: 'opsz' 72;
-  }
-
-  .now-header h1 em {
-    font-style: italic;
-    color: var(--flame);
-    font-weight: 300;
-  }
-
-  .nh-sub {
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: 0.92rem;
-    font-weight: 300;
-    color: var(--ink-faint);
-    letter-spacing: 0.01em;
-    font-variation-settings: 'opsz' 14;
-  }
-
-  .nh-date {
-    font-family: var(--mono);
-    font-size: 0.56rem;
-    color: var(--ink-faint);
-    display: block;
-    margin-top: 0.8rem;
-  }
-
-  .now-rule {
-    width: 40px;
-    height: 1px;
-    background: var(--ink-ghost);
-    margin: 1.5rem auto 3rem;
-  }
-
-  /* --- Entries --- */
-  .now-entry {
-    margin-bottom: 0;
-  }
-
-  .ne-head {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--rule-faint);
-  }
-
-  .ne-cat {
-    font-family: var(--hand);
-    font-size: 1.3rem;
-    color: var(--ink-light);
-    transform: rotate(-0.5deg);
-    display: inline-block;
-  }
-
-  .ne-date {
-    font-family: var(--mono);
-    font-size: 0.5rem;
-    color: var(--ink-ghost);
-    letter-spacing: 0.03em;
-  }
-
-  .ne-body {
-    font-family: var(--serif);
-    font-size: 0.95rem;
-    font-weight: 300;
-    line-height: 1.78;
-    color: var(--ink-mid);
-    font-variation-settings: 'opsz' 14;
-    border-left: 2px solid var(--flame-line);
-    padding-left: 1.4rem;
-  }
-
-  .ne-body :global(p) {
-    margin: 0 0 0.8rem;
-  }
-
-  .ne-body :global(p:last-child) {
-    margin-bottom: 0;
-  }
-
-  .ne-body :global(p + p) {
-    text-indent: 1.2em;
-  }
-
-  .ne-body :global(strong) {
-    font-weight: 500;
-    color: var(--ink);
-  }
-
-  .ne-body :global(em) {
-    font-style: italic;
-  }
-
-  .ne-body :global(a) {
-    color: var(--flame);
-    text-decoration: none;
-    border-bottom: 1px solid var(--flame-line);
-    transition: color 0.2s, border-color 0.2s;
-  }
-
-  .ne-body :global(a:hover) {
-    color: var(--ink);
-    border-color: var(--ink-light);
-  }
-
-  .ne-body :global(ul) {
-    list-style: none;
-    padding: 0;
-  }
-
-  .ne-body :global(li) {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid var(--rule-faint);
-    display: flex;
-    align-items: baseline;
-    gap: 0.7rem;
-  }
-
-  .ne-body :global(li::before) {
-    content: '→';
-    color: var(--flame-line);
-    flex-shrink: 0;
-  }
-
-  .ne-body :global(li:last-child) {
-    border-bottom: none;
-  }
-
-  /* --- Separator --- */
-  .now-sep {
-    width: 40px;
-    height: 1px;
-    background: var(--ink-ghost);
-    margin: 3rem auto;
-  }
-
-  /* --- Colophon --- */
-  .colophon {
-    background: var(--paper-tint);
-    border: 1px solid var(--rule-faint);
-    border-radius: 6px;
-    padding: 1.8rem 2rem;
-    margin-top: 4rem;
-    position: relative;
-  }
-
-  .colophon::before {
-    content: 'about this page';
-    font-family: var(--hand);
-    font-size: 1rem;
-    color: var(--flame-warm);
-    position: absolute;
-    top: -0.75rem;
-    left: 1.2rem;
-    background: var(--paper-tint);
-    padding: 0 0.4rem;
-  }
-
-  .colophon :global(p) {
-    font-family: var(--serif);
-    font-size: 0.88rem;
-    font-weight: 300;
-    color: var(--ink-light);
-    line-height: 1.7;
-    margin-bottom: 0.5rem;
-  }
-
-  .colophon :global(p:last-child) {
-    margin-bottom: 0;
-  }
-
-  .colophon :global(a) {
-    color: var(--flame);
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-
-  .colophon :global(a:hover) {
-    color: var(--ink);
-  }
-
-  @media (max-width: 700px) {
-    .now-wrap .col {
-      max-width: 100%;
-    }
-    .now-header { padding: 7rem 0 1.5rem; }
-    .now-header h1 { font-size: clamp(1.5rem, 6vw, 1.8rem); }
-  }
+  .margin .prose :global(p) { font-size: 1.12rem; }
 </style>

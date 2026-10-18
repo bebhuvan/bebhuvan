@@ -1,12 +1,13 @@
 ---
 title: "Paper Lanterns"
-description: "A curated archive of historical letters, speeches, and essays from the public domain. Nehru writing to his daughter. Gandhi's midnight letters. Speeches that changed the course of history."
+description: "Letters, speeches, essays and lectures from the public domain, from Thoreau on walking to Bacon taking all knowledge for his province."
 link: "https://paperlanterns.ink/"
 url: paperlanterns.ink
 icon: "🏮"
 status: active
 story: "Nehru's letters to Indira still destroy me every time"
-order: 3
+order: 2
+kind: "library"
 ---
 
-A curated collection of historical letters, speeches, and essays that have entered the public domain. Paper Lanterns brings together the written words that shaped our world, making them accessible and discoverable for modern readers.
+Named after the idea that old words can still light up the dark.

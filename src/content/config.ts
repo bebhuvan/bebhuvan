@@ -39,6 +39,8 @@ const projects = defineCollection({
     icon: z.string().optional(),
     story: z.string().optional(),
     status: z.enum(['active', 'completed', 'archived']).optional(),
+    // groups the projects page: library | numbers | reading | street
+    kind: z.enum(['library', 'numbers', 'reading', 'street']).optional(),
     order: z.number().optional(),
   }),
 });

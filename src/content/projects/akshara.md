@@ -1,14 +1,14 @@
 ---
 title: Akshara
-description: "Using OCR and LLMs to digitize Indian public domain books — Kannada, Sanskrit, texts that exist in exactly one crumbling copy somewhere in a government archive."
+description: "Rare Indian books rescued from bad scans. OCR and language models pull out the text, which is cleaned up and published to be read."
 status: active
 link: https://akshara.ink/
 url: akshara.ink
 icon: "अ"
-order: 2
+order: 4
+kind: "library"
 ---
-Akshara.ink is a passion project dedicated to rescuing India's written heritage trapped in poorly scanned PDFs and making it readable and accessible.
 
-Using OCR and LLM technologies, the project extracts text from old, unreadable documents and publishes them in clean, readable formats. It's a love letter to the public domain—contributing to the preservation of India's cultural and literary wisdom.
+Many old Indian books survive as a single blurry PDF in some government archive. Akshara turns them into pages you can actually read, starting with books like T. Ramakrishna's *Life in an Indian Village* (1891).
 
-The name "akshara" (ಅಕ್ಷರ) is a Kannada word meaning both "letter" and "eternal"—a fitting metaphor for the timeless nature of written words.
+*Akshara* (ಅಕ್ಷರ) is Kannada for both "letter" and "eternal".

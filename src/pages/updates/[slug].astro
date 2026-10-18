@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import type { GetStaticPaths } from 'astro';
+import { smart } from '../../utils/typo';
 import Layout from '../../layouts/Layout.astro';
 import Nav from '../../components/Nav.astro';
 import Footer from '../../components/Footer.astro';
@@ -17,111 +18,43 @@ const { update } = Astro.props;
 const { Content } = await update.render();
 ---
 
-<Layout title={`${update.data.title} — Bhuvan`} description={update.data.title} image={update.data.image} imageAlt={update.data.imageAlt}>
+<Layout title={`${smart(update.data.title)} — Bhuvan`} description={smart(update.data.title)} image={update.data.image} imageAlt={update.data.imageAlt}>
   <Nav active="marginalia" />
 
-  <div class="wrap">
-    <div class="col">
-    <a href="/marginalia" class="breadcrumb">&larr; Marginalia</a>
+  <main class="read">
+    <header class="read-head">
+      <p class="crumb"><a href="/marginalia/">Notes</a></p>
+      <h1 class="read-title note-title">{smart(update.data.title)}</h1>
+      <div class="read-sub">
+        <span></span>
+        <p class="read-meta">
+          {update.data.publishDate.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
+          {update.data.category && <><br />{update.data.category}</>}
+        </p>
+      </div>
+    </header>
 
-    <article class="note-detail">
-      <div class="nd-meta">
-        {update.data.publishDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
-        {update.data.category && ` · ${update.data.category}`}
-      </div>
-      <h1>{update.data.title}</h1>
-      {update.data.image && (
-        <img src={update.data.image} alt={update.data.imageAlt || update.data.title} class="nd-cover" width="1600" height="840" loading="eager" decoding="async" />
-      )}
-      <div class="nd-body">
-        <Content />
-      </div>
-      {update.data.link && (
-        <a href={update.data.link} class="nd-link">&rarr; {update.data.linkTitle || 'read more'}</a>
-      )}
+    {update.data.image && (
+      <figure class="cover">
+        <img src={update.data.image} alt={update.data.imageAlt || update.data.title} width="1600" height="840" loading="eager" decoding="async" />
+      </figure>
+    )}
+
+    <article class="prose">
+      <Content />
+      {update.data.marginNote && <p class="aside">{update.data.marginNote}</p>}
     </article>
 
-    <Footer />
-    </div>
-  </div>
+    {update.data.link && (
+      <footer class="read-end">
+        <a class="more" href={update.data.link}>{update.data.linkTitle || 'Read more'}</a>
+      </footer>
+    )}
+  </main>
+
+  <Footer />
 </Layout>
 
 <style>
-  .breadcrumb {
-    display: inline-block;
-    font-family: var(--mono);
-    font-size: 0.6rem;
-    color: var(--ink-faint);
-    text-decoration: none;
-    padding-top: 8.5rem;
-    margin-bottom: 2rem;
-    transition: color 0.2s;
-  }
-
-  .breadcrumb:hover {
-    color: var(--flame);
-  }
-
-  .note-detail {
-    padding-bottom: 4rem;
-  }
-
-  .nd-meta {
-    font-family: var(--mono);
-    font-size: 0.6rem;
-    color: var(--ink-faint);
-    margin-bottom: 1.2rem;
-  }
-
-  .note-detail h1 {
-    font-family: var(--serif);
-    font-size: clamp(1.6rem, 3vw, 2.2rem);
-    font-weight: 300;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    margin: 0 0 2rem 0;
-    font-variation-settings: 'opsz' 48;
-  }
-
-  .nd-cover {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0 0 2.5rem 0;
-    border-radius: 4px;
-  }
-
-  .nd-body :global(p) {
-    font-family: var(--serif);
-    font-size: 0.95rem;
-    font-weight: 300;
-    line-height: 1.78;
-    color: var(--ink-mid);
-    margin-bottom: 1rem;
-  }
-
-  .nd-body :global(a) {
-    color: var(--flame);
-    text-decoration: none;
-    border-bottom: 1px solid var(--flame-line);
-  }
-
-  .nd-body :global(strong) {
-    font-weight: 500;
-    color: var(--ink);
-  }
-
-  .nd-link {
-    display: inline-block;
-    font-family: var(--mono);
-    font-size: 0.6rem;
-    color: var(--flame);
-    text-decoration: none;
-    margin-top: 1rem;
-    transition: color 0.2s;
-  }
-
-  .nd-link:hover {
-    color: var(--ink);
-  }
+  .note-title { font-size: clamp(2.4rem, 5vw, 4.6rem); }
 </style>

@@ -4,7 +4,9 @@ My personal website and blog, where I write about finance, economics, markets, b
 
 **Live site:** [bebhuvan.com](https://bebhuvan.com)
 
-It's built around an "editorial warmth" design language — a literary-magazine feel with handwritten marginalia, warm paper tones, and a flame-orange accent. Zero client-side JavaScript; every interaction and animation is CSS-only.
+The design is called *Annotated*: every page is one big sentence pinned on the left, with what it refers to living in a margin on the right. Margin notes are the signature, on the home page as much as in the essays. White ground, ink, one flame-orange accent, Spectral and Schibsted Grotesk. Zero client-side JavaScript; every interaction is CSS-only.
+
+How the design was arrived at, including the directions that were rejected, is in [`design-explorations/`](design-explorations/README.md).
 
 ## Tech
 

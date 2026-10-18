@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import type { GetStaticPaths } from 'astro';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
+import { smart } from '../../utils/typo';
 import Layout from '../../layouts/Layout.astro';
 import Nav from '../../components/Nav.astro';
 import Footer from '../../components/Footer.astro';
@@ -23,7 +24,8 @@ const allPosts = (await getCollection('blog'))
   .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
   .slice(0, 3);
 
-const date = post.data.publishDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+const fmt = (d: Date) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+const date = fmt(post.data.publishDate);
 const tags = post.data.tags || [];
 const wordCount = post.body ? post.body.split(/\s+/).filter(Boolean).length : 0;
 
@@ -53,8 +55,8 @@ const heroSrcset = buildHeroSrcset(post.data.image);
 ---
 
 <Layout
-  title={`${post.data.title} — Bhuvan`}
-  description={post.data.description}
+  title={`${smart(post.data.title)} — Bhuvan`}
+  description={smart(post.data.description)}
   image={post.data.image}
   imageAlt={post.data.imageCaption || post.data.title}
   type="article"
@@ -66,414 +68,52 @@ const heroSrcset = buildHeroSrcset(post.data.image);
 >
   <Nav active="writing" />
 
-  <div class="wrap">
-    <div class="col">
-      <div class="article-header">
-        <!-- Margin metadata (wide screens only) -->
-        <div class="ah-margin">
-          <span class="ah-label">about this essay</span>
-          <span class="ah-row">{date}</span>
-          <span class="ah-row">{post.data.readingTime || ''}{post.data.readingTime && wordCount > 0 ? ' · ' : ''}{wordCount > 0 ? `${wordCount.toLocaleString()} words` : ''}</span>
-          {tags.length > 0 && (
-            <span class="ah-row ah-tags">{tags.join(' · ')}</span>
-          )}
-        </div>
+  <main class="read">
+    <header class="read-head">
+      <p class="read-line">
+        <a href="/writing/">Essay</a>
+        <span>{date}</span>
+        {post.data.readingTime && <span>{post.data.readingTime}</span>}
+        {post.data.draft && <span class="badge">Living draft</span>}
+      </p>
+      <h1 class="read-title">{smart(post.data.title)}</h1>
+      {post.data.description && <p class="read-dek">{smart(post.data.description)}</p>}
+    </header>
 
-        <div class="breadcrumb">
-          <a href="/">Bhuvan</a>
-          <span class="sep">/</span>
-          <a href="/writing">Writing</a>
-          <span class="sep">/</span>
-          <span>essay</span>
-        </div>
+    {post.data.image && (
+      <figure class="cover">
+        <img
+          src={post.data.image}
+          srcset={heroSrcset || undefined}
+          sizes={heroSrcset ? '(max-width: 700px) 100vw, 640px' : undefined}
+          alt={post.data.imageCaption || post.data.title}
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+        />
+        {post.data.imageCaption && <figcaption>{post.data.imageCaption}</figcaption>}
+      </figure>
+    )}
 
-        {post.data.draft && (
-          <div class="draft-badge">living draft</div>
-        )}
+    <article class="prose">
+      <Content />
+    </article>
 
-        <h1 class="article-title">{post.data.title}</h1>
-
-        {post.data.description && (
-          <p class="article-lede">{post.data.description}</p>
-        )}
-      </div>
-
-      {post.data.image && (
-        <div class="article-image">
-          <img
-            src={post.data.image}
-            srcset={heroSrcset || undefined}
-            sizes={heroSrcset ? '(max-width: 700px) 100vw, (max-width: 1200px) 80vw, 760px' : undefined}
-            alt={post.data.imageCaption || post.data.title}
-            loading="eager"
-            decoding="async"
-            fetchpriority="high"
-          />
-          {post.data.imageCaption && <span class="ai-caption">{post.data.imageCaption}</span>}
-        </div>
-      )}
-
-      <div class="article-body">
-        <Content />
-      </div>
-
-      {tags.length > 0 && (
-        <div class="article-tags">
-          <span class="article-tags-label">Filed under</span>
-          <span class="article-tags-list">{tags.join(' · ')}</span>
-        </div>
-      )}
-
+    <footer class="read-end">
+      {tags.length > 0 && <p class="tags"><b>Filed under</b>{tags.join(' · ')}</p>}
       {allPosts.length > 0 && (
-        <div class="article-end">
-          <span class="ae-label">more like this &rarr;</span>
-          {allPosts.map(p => (
-            <div class="related-item">
-              <a href={`/blog/${p.slug}/`}>{p.data.title}</a>
-              <span>{p.data.publishDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
-            </div>
-          ))}
-        </div>
+        <>
+          <h2 class="group-h">More writing</h2>
+          <ul class="list">
+            {allPosts.map((p) => (
+              <li><a class="row" href={`/blog/${p.slug}/`}><span class="t"><span class="hl">{smart(p.data.title)}</span></span><span class="d">{p.data.publishDate.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</span></a></li>
+            ))}
+          </ul>
+          <a class="more" href="/writing/">All essays</a>
+        </>
       )}
+    </footer>
+  </main>
 
-      <Footer hand="Thanks for reading to the end. That's rare and I appreciate it." />
-    </div>
-  </div>
+  <Footer hand="Thanks for reading to the end. That's rare and I appreciate it." />
 </Layout>
-
-<style>
-  /* Article header */
-  .article-header { padding: 10rem 0 3.5rem; position: relative; border-bottom: 1px solid var(--rule-faint); margin-bottom: 3.5rem; }
-
-  /* Margin metadata */
-  .ah-margin { position: absolute; right: calc(100% + var(--gap)); top: 10rem; width: var(--margin); text-align: right; }
-  .ah-label { font-family: var(--hand); font-size: 0.95rem; color: var(--flame-warm); display: block; margin-bottom: 0.8rem; transform: rotate(-0.5deg); }
-  .ah-row { font-family: var(--mono); font-size: 0.66rem; color: var(--ink-light); display: block; line-height: 2; letter-spacing: 0.04em; }
-  .ah-row.ah-tags {
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: 0.92rem;
-    line-height: 1.5;
-    color: var(--ink-light);
-    margin-top: 0.7rem;
-    letter-spacing: 0;
-    font-variation-settings: 'opsz' 14;
-  }
-
-  /* Breadcrumb */
-  .breadcrumb { font-family: var(--mono); font-size: 0.54rem; color: var(--ink-ghost); margin-bottom: 1.8rem; display: flex; align-items: center; gap: 0.5rem; }
-  .breadcrumb a { color: var(--ink-faint); text-decoration: none; transition: color 0.3s; }
-  .breadcrumb a:hover { color: var(--flame); }
-  .breadcrumb .sep { color: var(--rule); }
-
-  /* Draft badge */
-  .draft-badge { display: inline-flex; align-items: center; gap: 0.3rem; font-family: var(--mono); font-size: 0.52rem; color: var(--flame); background: var(--flame-wash); padding: 0.15rem 0.55rem; border-radius: 3px; margin-bottom: 1.3rem; }
-  .draft-badge::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--flame); animation: pulse 2s ease infinite; }
-
-  /* Title and lede */
-  .article-title {
-    font-family: var(--serif);
-    font-size: clamp(1.95rem, 3.4vw, 2.75rem);
-    font-weight: 300;
-    line-height: 1.1;
-    letter-spacing: -0.022em;
-    color: var(--ink);
-    margin-bottom: 1.5rem;
-    font-variation-settings: 'opsz' 60;
-    text-wrap: balance;
-    font-feature-settings: 'liga', 'dlig', 'kern';
-  }
-  .article-lede {
-    font-family: var(--serif);
-    font-size: 1.14rem;
-    font-style: italic;
-    font-weight: 300;
-    line-height: 1.66;
-    color: var(--ink-soft);
-    max-width: 44ch;
-    font-variation-settings: 'opsz' 24;
-    text-wrap: pretty;
-  }
-
-  /* Article image */
-  .article-image { margin-bottom: 3.5rem; }
-  .article-image img { width: 100%; border-radius: 6px; display: block; }
-  .ai-caption { font-family: var(--mono); font-size: 0.54rem; color: var(--ink-faint); margin-top: 0.5rem; display: block; }
-
-  /* Article body */
-  .article-body {
-    position: relative;
-    hanging-punctuation: first last;
-    font-feature-settings: 'kern', 'liga', 'dlig', 'onum';
-  }
-  .article-body :global(p) {
-    font-family: var(--serif);
-    font-size: 1.06rem;
-    font-weight: 300;
-    line-height: 1.74;
-    color: var(--ink-mid);
-    margin-bottom: 1.45rem;
-    font-variation-settings: 'opsz' 14;
-    text-wrap: pretty;
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphenate-limit-chars: 8 4 4;
-  }
-  .article-body > :global(p:first-of-type::first-letter) {
-    font-family: var(--serif);
-    font-size: 3.6rem;
-    font-weight: 400;
-    float: left;
-    line-height: 0.82;
-    margin-right: 0.09em;
-    margin-top: 0.06em;
-    padding-right: 0.02em;
-    color: var(--ink);
-    font-variation-settings: 'opsz' 144;
-    -webkit-initial-letter: 3 2;
-    initial-letter: 3 2;
-  }
-  .article-body :global(blockquote p::first-letter),
-  .article-body :global(li p::first-letter),
-  .article-body :global(li::first-letter) {
-    float: none !important;
-    font-size: inherit !important;
-    font-weight: inherit !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    initial-letter: normal !important;
-  }
-  .article-body :global(p strong) { font-weight: 500; color: var(--ink); }
-  .article-body :global(h2) {
-    font-family: var(--serif);
-    font-size: 1.4rem;
-    font-weight: 400;
-    letter-spacing: -0.018em;
-    color: var(--ink);
-    margin: 3.2rem 0 1.1rem;
-    line-height: 1.25;
-    font-variation-settings: 'opsz' 32;
-    text-wrap: balance;
-  }
-  .article-body :global(h3) {
-    font-family: var(--serif);
-    font-size: 1.12rem;
-    font-weight: 500;
-    letter-spacing: -0.008em;
-    margin: 2.4rem 0 0.9rem;
-    font-variation-settings: 'opsz' 24;
-    text-wrap: balance;
-  }
-
-  /* Optional small-caps lead-in. Wrap the first phrase of an essay in
-     <span class="lead">…</span> for the classic editorial opener. */
-  .article-body :global(.lead) {
-    font-feature-settings: 'smcp', 'c2sc', 'kern';
-    text-transform: lowercase;
-    letter-spacing: 0.05em;
-    color: var(--ink);
-    font-weight: 400;
-  }
-
-  /* Blockquote — hanging opening quote */
-  .article-body :global(blockquote) {
-    margin: 2.2rem 0;
-    padding: 1.1rem 0 1.1rem 1.5rem;
-    border-left: 2px solid var(--flame);
-    quotes: "\201C" "\201D" "\2018" "\2019";
-  }
-  .article-body :global(blockquote p) {
-    font-style: italic;
-    color: var(--ink-mid);
-    font-size: 1.04rem;
-    line-height: 1.7;
-    font-variation-settings: 'opsz' 18;
-  }
-  .article-body :global(blockquote p:first-of-type)::before {
-    content: open-quote;
-    font-size: 1.6em;
-    line-height: 0;
-    vertical-align: -0.28em;
-    margin-right: 0.05em;
-    margin-left: -0.42em;
-    color: var(--flame-warm);
-    font-style: normal;
-  }
-  .article-body :global(blockquote p:last-of-type)::after {
-    content: close-quote;
-    font-size: 1.6em;
-    line-height: 0;
-    vertical-align: -0.28em;
-    margin-left: 0.04em;
-    color: var(--flame-warm);
-    font-style: normal;
-  }
-  .article-body :global(blockquote p:last-child) { margin-bottom: 0; }
-
-  /* Links — real underlines, descender-aware */
-  .article-body :global(a) {
-    color: var(--flame);
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-decoration-color: var(--flame-line);
-    text-underline-offset: 3px;
-    transition: text-decoration-color 0.2s, color 0.2s;
-  }
-  .article-body :global(a:hover) {
-    text-decoration-color: var(--flame);
-  }
-
-  /* Lists */
-  .article-body :global(ul), .article-body :global(ol) { padding-left: 1.5rem; margin-bottom: 1.5rem; }
-  .article-body :global(li) {
-    font-family: var(--serif);
-    font-size: 1.06rem;
-    font-weight: 300;
-    line-height: 1.74;
-    color: var(--ink-mid);
-    margin-bottom: 0.5rem;
-    text-wrap: pretty;
-  }
-
-  /* Code */
-  .article-body :global(code) { font-family: var(--mono); font-size: 0.88rem; background: var(--paper-tint); padding: 0.15rem 0.4rem; border-radius: 3px; }
-  .article-body :global(pre) { background: var(--paper-tint); border: 1px solid var(--rule-faint); border-radius: 6px; padding: 1.5rem; overflow-x: auto; margin: 2rem 0; }
-  .article-body :global(pre code) { background: none; padding: 0; }
-
-  /* HR */
-  .article-body :global(hr) { border: none; margin: 3rem 0; height: 1px; background: linear-gradient(90deg, transparent, var(--rule-faint) 20%, var(--rule-faint) 80%, transparent); }
-
-  /* Images */
-  .article-body :global(img) { max-width: 100%; border-radius: 6px; margin: 2rem 0; }
-  .article-body :global(figure) { margin: 2.2rem 0; }
-  .article-body :global(figure img) { display: block; width: auto; max-height: min(70vh, 520px); margin: 0 auto; }
-  .article-body :global(figcaption) { font-family: var(--mono); font-size: 0.72rem; line-height: 1.5; color: var(--ink-faint); margin-top: 0.6rem; text-align: center; }
-  .article-body :global(figcaption a) { color: inherit; }
-
-  /* Inline highlight */
-  .article-body :global(mark) { background: var(--flame-wash); color: var(--ink-mid); border-radius: 2px; padding: 0.05em 0.2em; }
-
-  /* Callout blocks */
-  .article-body :global(.callout) { margin: 2.5rem 0; padding: 1.2rem 1.5rem 1.2rem 1.4rem; border-left: 3px solid var(--flame-line); background: var(--paper-tint); border-radius: 0 6px 6px 0; position: relative; transition: border-left-color 0.3s; }
-  .article-body :global(.callout:hover) { border-left-color: var(--flame); }
-  .article-body :global(.callout p) { font-size: 0.9rem !important; font-weight: 300; color: var(--ink-soft); margin-bottom: 0 !important; }
-  .article-body :global(.callout p::first-letter) { float: none !important; font-size: inherit !important; }
-
-  /* ---- Margin notes ----------------------------------------------------
-     Authored as standard markdown footnotes ([^1] / [^*label]) and
-     transformed by src/plugins/rehype-margin-notes.js into:
-       <sup class="mn-ref">N</sup>
-       <span class="margin-note margin-note--numbered">
-         <span class="mn-num">N</span> body…
-       </span>
-     Legacy <span class="sn"> markup still works (aliased below). */
-
-  :global(.article-body .margin-note, .article-body .sn) {
-    float: right;
-    clear: right;
-    margin-right: calc(-1 * (var(--margin) + var(--gap)));
-    width: calc(var(--margin) - 0.5rem);
-    font-family: var(--serif);
-    font-size: 0.78rem;
-    font-style: italic;
-    font-weight: 300;
-    color: var(--ink-soft);
-    line-height: 1.55;
-    padding-left: 0.75rem;
-    border-left: 2px solid var(--flame-line);
-    margin-top: 0.4rem;
-    margin-bottom: 0.6rem;
-    font-variation-settings: 'opsz' 12;
-    text-wrap: pretty;
-    hyphens: auto;
-  }
-  .article-body :global(.margin-note .mn-num) {
-    font-family: var(--mono);
-    font-style: normal;
-    font-size: 0.55rem;
-    color: var(--flame);
-    margin-right: 0.4em;
-    vertical-align: 0.25em;
-    letter-spacing: 0.02em;
-  }
-  .article-body :global(.mn-ref) {
-    font-family: var(--mono);
-    font-size: 0.55rem;
-    font-weight: 400;
-    color: var(--flame);
-    vertical-align: super;
-    line-height: 0;
-    margin: 0 0.05em 0 0.1em;
-    cursor: default;
-  }
-  /* Caveat-styled variant — keep the old handwritten flavour for legacy
-     <span class="sn"> usages so existing posts don't visually shift. */
-  .article-body :global(.sn) {
-    font-family: var(--hand);
-    font-style: normal;
-    font-size: 1rem;
-    line-height: 1.45;
-    transform: rotate(0.4deg);
-  }
-
-  /* Inline annotation (subtle dashed underline, no margin treatment) */
-  .article-body :global(.an) { border-bottom: 1.5px dashed var(--flame-line); cursor: default; transition: border-color 0.3s; }
-  .article-body :global(.an:hover) { border-color: var(--flame); }
-
-  /* Tags — italic serif inline list, no pills */
-  .article-tags {
-    margin-top: 2.4rem;
-    padding-top: 1.4rem;
-    border-top: 1px solid var(--rule-faint);
-    display: flex;
-    align-items: baseline;
-    gap: 0.7rem;
-    flex-wrap: wrap;
-  }
-  .article-tags-label {
-    font-family: var(--mono);
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
-    color: var(--ink-light);
-    font-weight: 500;
-  }
-  .article-tags-list {
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: 1.02rem;
-    font-weight: 300;
-    color: var(--ink-mid);
-    font-variation-settings: 'opsz' 16;
-  }
-
-  /* Article end */
-  .article-end { margin-top: 5rem; padding-top: 3rem; border-top: 1px solid var(--rule-faint); }
-  .ae-label { font-family: var(--hand); font-size: 1.1rem; color: var(--ink-faint); display: block; margin-bottom: 1.5rem; }
-  .related-item { padding: 1rem 0; border-bottom: 1px solid var(--rule-faint); display: flex; justify-content: space-between; align-items: baseline; gap: 2rem; }
-  .related-item a { font-family: var(--serif); font-size: 1rem; font-weight: 400; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule-faint); transition: color 0.2s, border-color 0.2s; }
-  .related-item a:hover { color: var(--flame); border-color: var(--flame-line); }
-  .related-item span { font-family: var(--mono); font-size: 0.54rem; color: var(--ink-faint); flex-shrink: 0; }
-
-  /* Responsive */
-  @media (max-width: 1400px) {
-    .ah-margin { display: none; }
-    :global(.article-body .margin-note, .article-body .sn) {
-      float: none;
-      width: auto;
-      margin-right: 0;
-      display: block;
-      clear: both;
-      margin: 0.5rem 0 1rem;
-      padding: 0.7rem 1rem;
-      background: var(--paper-tint);
-      border-radius: 0 6px 6px 0;
-      transform: none;
-      font-size: 0.86rem;
-    }
-  }
-  @media (max-width: 700px) {
-    .article-header { padding: 7rem 0 2.5rem; }
-    .article-title { font-size: clamp(1.5rem, 7vw, 1.9rem); }
-  }
-</style>

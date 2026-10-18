@@ -10,8 +10,12 @@ const {
 } = Astro.props;
 ---
 
-<footer>
-  <span class="ft-brand">Bhuvan.</span>
-  <div class="ft-meta" set:html={meta} />
-  <span class="ft-hand">{hand}</span>
+<footer class="site-foot">
+  <div class="site-foot-inner">
+    <p class="foot-line">{hand}</p>
+    <div class="foot-meta">
+      <p set:html={meta} />
+      <p><a href="/rss.xml">RSS</a> &middot; <a href="/updates-rss.xml">Notes RSS</a> &middot; <a href="https://twitter.com/bhuvanesh2007">Twitter</a></p>
+    </div>
+  </div>
 </footer>

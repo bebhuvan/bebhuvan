@@ -4,16 +4,21 @@ export interface Props {
 }
 
 const { active } = Astro.props;
+const links = [
+  { key: 'writing', href: '/writing/', label: 'Writing' },
+  { key: 'marginalia', href: '/marginalia/', label: 'Notes' },
+  { key: 'projects', href: '/projects/', label: 'Projects' },
+  { key: 'books', href: '/books/', label: 'Books' },
+  { key: 'trails', href: '/trails/', label: 'Trails' },
+  { key: 'now', href: '/now/', label: 'Now' },
+];
 ---
 
-<nav>
-  <a href="/" class="n-brand">Bhuvan.</a>
-  <div class="n-links">
-    <a href="/writing" class:list={[{ active: active === 'writing' }]}>Writing</a>
-    <a href="/marginalia" class:list={[{ active: active === 'marginalia' }]}>Marginalia</a>
-    <a href="/trails" class:list={[{ active: active === 'trails' }]}>Trails</a>
-    <a href="/projects" class:list={[{ active: active === 'projects' }]}>Projects</a>
-    <a href="/books" class:list={[{ active: active === 'books' }]}>Books</a>
-    <a href="/now" class:list={['now-link', { active: active === 'now' }]}>Now</a>
-  </div>
-</nav>
+<header class="site-head">
+  <a href="/" class="brand">Bhuvan</a>
+  <nav class="site-nav" aria-label="Main">
+    {links.map((l) => (
+      <a href={l.href} aria-current={active === l.key ? 'page' : undefined}>{l.label}</a>
+    ))}
+  </nav>
+</header>
