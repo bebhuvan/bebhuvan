@@ -1,5 +1,6 @@
 ---
 title: "Tipsheet"
+tagline: "Indian markets at a glance"
 description: "Indian markets at a glance: returns, trends and valuations for every NSE index, sector and theme."
 link: "https://tipsheet.markets"
 url: tipsheet.markets

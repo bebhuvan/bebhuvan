@@ -1,5 +1,6 @@
 ---
 title: "Rabbit Holes"
+tagline: "A commonplace book kept in the open"
 description: "A commonplace book kept in the open: links, quotes, poems and stray thoughts, gathered as they struck me."
 link: "https://rabbitholes.garden"
 url: rabbitholes.garden

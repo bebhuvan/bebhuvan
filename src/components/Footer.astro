@@ -5,7 +5,7 @@ export interface Props {
 }
 
 const {
-  meta = 'Zerodha &middot; Bangalore &middot; The Internet<br>A small corner on the dumpster fire since 2019',
+  meta = 'Bangalore &middot; The Internet<br>A small corner on the dumpster fire since 2019',
   hand = "You read all the way to the footer? That's more commitment than most of my drafts get."
 } = Astro.props;
 ---
@@ -14,8 +14,9 @@ const {
   <div class="site-foot-inner">
     <p class="foot-line">{hand}</p>
     <div class="foot-meta">
+      <p class="foot-links"><a href="/rss.xml">RSS</a><a href="/updates-rss.xml">Notes RSS</a><a href="https://twitter.com/bhuvanesh2007">Twitter</a></p>
       <p set:html={meta} />
-      <p><a href="/rss.xml">RSS</a> &middot; <a href="/updates-rss.xml">Notes RSS</a> &middot; <a href="https://twitter.com/bhuvanesh2007">Twitter</a></p>
+      <p class="foot-colophon">Set in Spectral and Schibsted Grotesk, on white.</p>
     </div>
   </div>
 </footer>

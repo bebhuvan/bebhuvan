@@ -1,5 +1,6 @@
 ---
 title: "Soochi"
+tagline: "An index for people working on public problems"
 description: "A searchable index of the data, tools, organisations and research that people working on public problems actually rely on."
 link: "https://soochi.fyi"
 url: soochi.fyi

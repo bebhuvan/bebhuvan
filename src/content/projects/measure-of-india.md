@@ -1,5 +1,6 @@
 ---
 title: "Measure of India"
+tagline: "The latest official figures, explained"
 description: "What the latest official figures say about prices, growth, factories and jobs, with a plain-language guide to every statistic."
 link: "https://measure.thisindianlife.today/"
 url: measure.thisindianlife.today

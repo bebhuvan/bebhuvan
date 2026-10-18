@@ -1,5 +1,6 @@
 ---
 title: "Smallweb"
+tagline: "A reading room for the unhurried web"
 description: "A reading room for the unhurried web: hand-picked essays from independent writers, with nothing ranked, scored or chosen by an algorithm."
 link: "https://smallweb.blog"
 url: smallweb.blog

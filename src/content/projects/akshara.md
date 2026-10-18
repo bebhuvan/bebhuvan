@@ -1,5 +1,6 @@
 ---
 title: Akshara
+tagline: "Rare Indian books, rescued from bad scans"
 description: "Rare Indian books rescued from bad scans. OCR and language models pull out the text, which is cleaned up and published to be read."
 status: active
 link: https://akshara.ink/

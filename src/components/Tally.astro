@@ -1,0 +1,13 @@
+---
+// A row of large figures under a page's statement: counts, years.
+export interface Props {
+  items: { n: string | number; label: string }[];
+}
+const { items } = Astro.props;
+---
+
+<dl class="tally">
+  {items.map((i) => (
+    <div><dt>{i.label}</dt><dd>{i.n}</dd></div>
+  ))}
+</dl>

@@ -3,6 +3,7 @@
 // navigation; what they point to lives in the margin on the right.
 import { getCollection } from 'astro:content';
 import { smart } from '../utils/typo';
+import { groupProjects } from '../utils/projects';
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
@@ -53,7 +54,12 @@ const asides: Aside[] = [
 const day = Math.floor(Date.now() / 86_400_000);
 const aside = asides.length ? asides[day % asides.length] : null;
 
+const projectGroups = groupProjects(projects);
+// WordPress-era descriptions were cut off with an ellipsis; those read worse than none
+const dek = (d?: string) => (d && !/(\.\.\.|…)\s*$/.test(d) ? smart(d) : '');
+
 const fmt = (d: Date) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+const fmtShort = (d: Date) => d.toLocaleDateString('en-GB', { month: 'short', year: 'numeric' });
 ---
 
 <Layout title="Bhuvan">
@@ -66,7 +72,7 @@ const fmt = (d: Date) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 
       </h1>
       <div class="signature">
         <img class="portrait" src="/profile-pic-160.webp" alt="Bhuvan" width="44" height="44" loading="eager" decoding="async" />
-        <p class="statement-sub">Doer of random things, diver of weird rabbit holes, sharer of fascinating things. Bangalore. <a href="/rss.xml">RSS</a> · <a href="https://twitter.com/bhuvanesh2007">Twitter</a></p>
+        <p class="statement-sub">Doer of random things, diver of weird rabbit holes, sharer of fascinating things. Bangalore. <span class="links"><a href="/rss.xml">RSS</a> · <a href="https://twitter.com/bhuvanesh2007">Twitter</a></span></p>
       </div>
       {aside && (
         <figure class="from-margins">
@@ -87,9 +93,18 @@ const fmt = (d: Date) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 
             {latest.data.description && <p class="featured-dek">{smart(latest.data.description)}</p>}
           </article>
         )}
-        <ul class="list">
-          {rest.slice(0, 5).map((p) => (
-            <li><a class="row" href={`/blog/${p.slug}/`}><span class="t"><span class="hl">{smart(p.data.title)}</span></span><span class="d">{fmt(p.data.publishDate)}</span></a></li>
+        <ul class="second">
+          {rest.slice(0, 2).map((p) => (
+            <li><a class="sec" href={`/blog/${p.slug}/`}>
+              <span class="kicker">{fmt(p.data.publishDate)}</span>
+              <span class="sec-t"><span class="hl">{smart(p.data.title)}</span></span>
+              {dek(p.data.description) && <span class="sec-x">{dek(p.data.description)}</span>}
+            </a></li>
+          ))}
+        </ul>
+        <ul class="list tight">
+          {rest.slice(2, 6).map((p) => (
+            <li><a class="row" href={`/blog/${p.slug}/`}><span class="t"><span class="hl">{smart(p.data.title)}</span></span><span class="d">{fmtShort(p.data.publishDate)}</span></a></li>
           ))}
         </ul>
         <a class="more" href="/writing/">All {posts.length} essays</a>
@@ -97,11 +112,16 @@ const fmt = (d: Date) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 
 
       <section class="ann" id="websites">
         <h2 class="ann-head"><span class="n">2</span>Projects <span class="count">{projects.length}</span></h2>
-        <ul class="list">
-          {projects.map((p) => (
-            <li><a class="row" href={p.data.link || '/projects/'}><span class="t"><span class="hl">{smart(p.data.title)}</span></span><span class="d">{p.data.url}</span></a></li>
-          ))}
-        </ul>
+        {projectGroups.map((g) => (
+          <div class="pg">
+            <h3 class="pg-h">{g.label}</h3>
+            <ul>
+              {g.items.map((p) => (
+                <li><a class="prow" href={p.data.link || '/projects/'}><span class="pn"><span class="hl">{smart(p.data.title)}</span></span>{p.data.tagline && <span class="pt">{smart(p.data.tagline)}</span>}</a></li>
+              ))}
+            </ul>
+          </div>
+        ))}
         <a class="more" href="/projects/">What each one is</a>
       </section>
 
@@ -141,11 +161,39 @@ const fmt = (d: Date) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 
 </Layout>
 
 <style>
+  /* Essays: three levels. The lead (global .featured), two with their deks, then a compact list. */
+  .featured { padding-bottom: 24px; border-bottom: 1px solid var(--rule); }
+  .second { list-style: none; }
+  .sec { display: grid; gap: 6px; padding: 18px 0; border-bottom: 1px solid var(--rule); }
+  .sec-t { font-family: var(--serif); font-size: 1.3rem; line-height: 1.25; letter-spacing: -.005em; text-wrap: balance; }
+  .sec-x { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 1.04rem; line-height: 1.45; color: var(--ink-soft); text-wrap: pretty;
+           display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .sec:hover .hl { background-size: 100% var(--marker-h); }
+  .tight .row { padding: 8px 0; }
+  .tight .t { font-size: 1.02rem; }
+
+  /* Projects: grouped as on /projects; each name says what it is */
+  .pg + .pg { margin-top: 26px; }
+  .pg-h { padding-bottom: 7px; border-bottom: 1px solid var(--rule-strong); font-size: .7rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); }
+  .pg ul { list-style: none; }
+  .prow { display: grid; grid-template-columns: 11.5em minmax(0, 1fr); gap: 2px 18px; align-items: baseline; padding: 8px 0; border-bottom: 1px solid var(--rule); }
+  .pn { font-family: var(--serif); font-size: 1.08rem; line-height: 1.3; }
+  .pt { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 1rem; line-height: 1.4; color: var(--ink-soft); }
+  .prow:hover .hl { background-size: 100% var(--marker-h); }
+
+  @media (max-width: 600px) {
+    /* the compact list keeps its date on the same line, at the right */
+    .tight .row { grid-template-columns: minmax(0, 1fr) auto; gap: 2px 14px; }
+    .tight .row .d { order: 0; }
+    .sec-t { font-size: 1.22rem; }
+    .prow { grid-template-columns: minmax(0, 1fr); gap: 1px; }
+  }
+
   .now-snippet :global(p) { font-size: 1.1rem; }
 
   /* From the margins: one note from the archive, set like a margin note */
   .from-margins { margin-top: 9vh; max-width: 30em; padding-left: 18px; border-left: 1px solid var(--flame); }
-  .fm-label { font-size: .82rem; color: var(--flame); }
+  .fm-label { font-weight: 600; font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--flame); }
   .fm-text { margin-top: 8px; font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 1.22rem; line-height: 1.45; color: var(--ink); text-wrap: pretty; }
   .fm-src { margin-top: 10px; font-size: .86rem; color: var(--ink-soft); }
   .fm-src a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--flame); text-underline-offset: 3px; }

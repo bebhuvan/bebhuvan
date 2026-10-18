@@ -1,5 +1,6 @@
 ---
 title: "Collections"
+tagline: "Whole books of letters, read in order"
 description: "Whole books of letters from Paper Lanterns, read in order: Gandhi, Nehru writing to his daughter, Dostoevsky, Tagore."
 link: "https://collections.paperlanterns.ink"
 url: collections.paperlanterns.ink

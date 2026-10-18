@@ -1,26 +1,17 @@
 ---
 import { getCollection } from 'astro:content';
 import { smart } from '../utils/typo';
+import { groupProjects } from '../utils/projects';
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import Tally from '../components/Tally.astro';
 
 const projects = (await getCollection('projects'))
   .filter((p) => p.data.status !== 'archived')
   .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
 
-// The sentence and the margin are both grouped by `kind`. `lead` opens that
-// clause of the sentence; `label` heads the group in the margin.
-const kinds = [
-  { key: 'library', lead: 'Rooms for old words:', label: 'Rooms for old words' },
-  { key: 'numbers', lead: 'Ways to read India and the world in numbers:', label: 'In numbers' },
-  { key: 'reading', lead: 'Places to keep what I read:', label: 'What I read' },
-  { key: 'street', lead: 'And one for the street:', label: 'The street' },
-  { key: 'other', lead: 'And', label: 'Elsewhere' },
-];
-const groups = kinds
-  .map((k) => ({ ...k, items: projects.filter((p) => (p.data.kind ?? 'other') === k.key) }))
-  .filter((g) => g.items.length);
+const groups = groupProjects(projects);
 const num = new Map(groups.flatMap((g) => g.items).map((p, i) => [p.id, i + 1]));
 
 const id = (title: string) => title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -41,6 +32,7 @@ const join = (i: number, n: number) => (i < n - 2 ? ', ' : i === n - 2 ? ' and '
         ))}
       </h1>
       <p class="statement-sub">Every project is really an excuse to learn something.</p>
+      <Tally items={[{ n: projects.length, label: 'Projects' }, { n: groups.length, label: 'Kinds' }]} />
     </div>
 
     <div class="margin">
@@ -65,20 +57,18 @@ const join = (i: number, n: number) => (i < n - 2 ? ', ' : i === n - 2 ? ' and '
   </main>
 
   <Footer
-    meta={`Zerodha &middot; Bangalore &middot; The Internet<br>${projects.length} projects and counting. All of them started as &ldquo;just a weekend thing.&rdquo;`}
+    meta={`Bangalore &middot; The Internet<br>${projects.length} projects and counting. All of them started as &ldquo;just a weekend thing.&rdquo;`}
     hand="The best projects are the ones that were never supposed to be projects."
   />
 </Layout>
 
 <style>
   .nm { white-space: nowrap; }
-  .group-h { padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
   .group-h ~ .group-h { margin-top: 88px; }
-  .proj { margin-top: 40px; }
-  .group-h + .proj { margin-top: 28px; }
+  .proj { padding: 28px 0 30px; border-bottom: 1px solid var(--rule); }
   .proj-name { display: flex; align-items: baseline; gap: 12px; font-family: var(--serif); font-weight: 300; font-size: 1.85rem; line-height: 1.15; letter-spacing: -.01em; }
   /* the number is set like the margin numbers on the home page, at the name's size */
-  .proj-name .n { font-weight: 300; color: var(--flame); min-width: 1.25em; }
+  .proj-name .n { font-family: var(--grot); font-weight: 400; letter-spacing: -.03em; color: var(--flame); min-width: 1.25em; }
   .proj-name a { color: var(--ink); }
   .proj-name a:hover { background-size: 100% var(--marker-h); }
   /* text hangs from the name, past the number (1.25em of the name's size, plus the gap) */
@@ -87,7 +77,7 @@ const join = (i: number, n: number) => (i < n - 2 ? ', ' : i === n - 2 ? ' and '
   .story { margin-top: 8px; }
   .story :global(p) { font-size: 1rem; line-height: 1.6; color: var(--ink-soft); }
   .proj .aside { margin-top: 12px; }
-  .proj .more { display: block; width: fit-content; }
+  .proj .more { display: block; width: fit-content; text-transform: none; letter-spacing: .01em; font-size: .86rem; }
   @media (max-width: 600px) {
     .proj-name { font-size: 1.55rem; }
     .desc, .story, .proj .aside, .proj .more { margin-left: 0; }

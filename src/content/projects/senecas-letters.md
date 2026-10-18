@@ -1,5 +1,6 @@
 ---
 title: "Seneca's Letters"
+tagline: "All 124 letters to Lucilius, one at a time"
 description: "All 124 of Seneca's letters to Lucilius, set to be read one at a time, the way they were written."
 status: active
 link: https://seneca.ink/

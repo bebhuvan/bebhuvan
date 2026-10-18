@@ -1,5 +1,6 @@
 ---
 title: "Hope & Despair"
+tagline: "Is the world getting better or worse?"
 description: "Is the world getting better or worse? A living atlas that answers one question at a time with open data, read at two distances: the long arc of the centuries and the year we're living through."
 link: "https://hopeanddespair.world"
 url: hopeanddespair.world

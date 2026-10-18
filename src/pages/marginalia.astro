@@ -4,6 +4,7 @@ import { smart } from '../utils/typo';
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import Tally from '../components/Tally.astro';
 
 const updates = (await getCollection('updates'))
   .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
@@ -23,6 +24,7 @@ const months = Object.keys(updatesByMonth);
     <div class="statement">
       <h1 class="statement-text">Notes in the <em>margins</em>: thoughts, observations, and loose threads.</h1>
       <p class="statement-sub">Shorter than essays, written faster. <a href="/updates-rss.xml">RSS for notes</a></p>
+      <Tally items={[{ n: updates.length, label: 'Notes' }, { n: months.length, label: 'Months' }, { n: updates[updates.length - 1].data.publishDate.getFullYear(), label: 'Since' }]} />
     </div>
 
     <div class="margin">
@@ -52,7 +54,7 @@ const months = Object.keys(updatesByMonth);
   </main>
 
   <Footer
-    meta="Zerodha · Bangalore · The Internet<br>Thoughts captured before they could escape."
+    meta="Bangalore · The Internet<br>Thoughts captured before they could escape."
     hand="The best marginalia outlives the text it was scribbled on."
   />
 </Layout>

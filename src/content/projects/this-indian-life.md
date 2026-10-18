@@ -1,5 +1,6 @@
 ---
 title: "This Indian Life"
+tagline: "How India lives, one number at a time"
 description: "How India lives, one number at a time: sourced charts and plain-language answers to big questions about Indian life."
 link: "https://thisindianlife.today"
 url: thisindianlife.today

@@ -1,5 +1,6 @@
 ---
 title: "From the Dumpster Fire"
+tagline: "Things worth saving before they burn"
 description: "An irregular magazine of things worth pulling out of the internet and the archive before they burn."
 link: "https://fromthedumpsterfire.com"
 url: fromthedumpsterfire.com

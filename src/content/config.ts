@@ -34,6 +34,8 @@ const projects = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
+    // a few words for the home page list
+    tagline: z.string().optional(),
     link: z.string().optional(),
     url: z.string().optional(),
     icon: z.string().optional(),
