@@ -1,0 +1,92 @@
+---
+// LAB round 3, B: the timeline as a chart made of its own titles. Each year
+// is a column; its essays stack up from a baseline like a bar, oldest at the
+// bottom, so the height of the column is how much I wrote that year. The
+// websites hang below the line in flame. The shape of six years is visible
+// in one screen, and every title is readable in full.
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import { posts, project, href, smart } from '../../utils/lab';
+
+const launches: [string, string][] = [
+  ['paper-lanterns', '2025-08'], ['rabbit-holes', '2025-08'], ['seneca', '2025-09'], ['collections', '2025-11'],
+  ['dumpsterfire', '2025-11'], ['akshara', '2025-12'], ['hope-and-despair', '2026-06'], ['smallweb', '2026-06'],
+  ['this-indian', '2026-06'], ['measure-of-india', '2026-09'], ['tipsheet', '2026-09'], ['soochi', '2026-10'], ['let-me-walk', '2026-10'],
+];
+const sites = launches.map(([k, m]) => ({ p: project(k), date: new Date(m + '-15') }));
+const years = [...new Set(posts.map((p) => p.data.publishDate.getFullYear()))].sort((a, b) => a - b);
+const col = years.map((y) => ({
+  y,
+  essays: posts.filter((p) => p.data.publishDate.getFullYear() === y),        // newest first: top of the bar
+  sites: sites.filter((s) => s.date.getFullYear() === y).sort((a, b) => +a.date - +b.date),
+}));
+const mon = (d: Date) => d.toLocaleDateString('en-GB', { month: 'short' });
+---
+
+<Layout title="Lab: skyline — Bhuvan" noindex>
+  <Nav />
+
+  <header class="sk-head">
+    <h1>I’m Bhuvan. Since 2021 I’ve written {posts.length} essays, stacked above the line by year, and built {sites.length} websites, hung below it.</h1>
+  </header>
+
+  <main class="sky">
+    {col.map((c) => (
+      <section class="yr">
+        <ol class="up">
+          {c.essays.map((p) => (
+            <li><a href={href(p)}><span class="m">{mon(p.data.publishDate)}</span><span class="t"><span class="hl">{smart(p.data.title)}</span></span></a></li>
+          ))}
+        </ol>
+        <h2 class="axis"><span class="y">{c.y}</span><span class="n">{c.essays.length}</span></h2>
+        <ol class="down">
+          {c.sites.map((s) => (
+            <li><a href={s.p.data.link}><span class="m">{mon(s.date)}</span><span class="t">{smart(s.p.data.title)}</span></a></li>
+          ))}
+        </ol>
+      </section>
+    ))}
+  </main>
+
+  <p class="sk-end"><a class="more" href="/writing/">Read the essays</a><a class="more" href="/projects/">What each website is</a><a class="more" href="/marginalia/">Notes</a><a class="more" href="/now/">Now</a></p>
+
+  <Footer />
+</Layout>
+
+<style>
+  .sk-head, .sky, .sk-end { max-width: var(--frame); margin: 0 auto; padding: 0 var(--pad); }
+  .sk-head { padding-top: 11vh; padding-bottom: 7vh; }
+  .sk-head h1 { max-width: 22em; font-family: var(--serif); font-weight: 300; font-size: clamp(1.9rem, 2.8vw, 2.8rem); line-height: 1.2; letter-spacing: -.012em; text-wrap: pretty; }
+
+  /* six columns sharing one baseline: the bars grow up, the websites hang down */
+  .sky { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); grid-template-rows: auto auto auto; column-gap: clamp(14px, 1.8vw, 28px); }
+  .yr { display: grid; grid-row: 1 / span 3; grid-template-rows: subgrid; }
+  .yr ol { list-style: none; }
+  .up { display: flex; flex-direction: column; justify-content: flex-end; }
+  .up li a { display: grid; gap: 1px; padding: 8px 0 9px; border-top: 1px solid var(--rule); }
+  .up .t { font-family: var(--serif); font-size: clamp(.92rem, 1.05vw, 1.04rem); line-height: 1.25; text-wrap: balance; }
+  .up a:hover .hl { background-size: 100% var(--marker-h); }
+  .m { font-weight: 600; font-size: .6rem; letter-spacing: .11em; text-transform: uppercase; color: var(--ink-soft); }
+
+  .axis { display: flex; align-items: baseline; justify-content: space-between; padding: 10px 0 12px; border-top: 2px solid var(--rule-strong); }
+  .y { font-family: var(--serif); font-weight: 300; font-size: clamp(2rem, 3vw, 3rem); line-height: 1; letter-spacing: -.02em; font-variant-numeric: oldstyle-nums; }
+  .n { font-weight: 600; font-size: .66rem; letter-spacing: .1em; color: var(--ink-soft); }
+  .down li a { display: grid; gap: 1px; padding: 6px 0 7px 10px; border-left: 2px solid var(--flame); }
+  .down li + li a { border-top: 1px solid var(--paper); }
+  .down .t { font-family: var(--serif); font-style: italic; font-size: clamp(.92rem, 1.05vw, 1.04rem); line-height: 1.25; color: var(--flame); }
+  .down a:hover .t { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+  .sk-end { display: flex; gap: 32px; flex-wrap: wrap; margin-top: 64px; }
+  .sk-end .more { margin-top: 0; }
+
+  @media (max-width: 1000px) {
+    .sky { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: none; row-gap: 48px; }
+    .yr { grid-row: auto; grid-template-rows: auto; display: flex; flex-direction: column; }
+    .up { order: 1; } .axis { order: 0; } .down { order: 2; margin-top: 12px; }
+  }
+  @media (max-width: 600px) {
+    .sky { grid-template-columns: minmax(0, 1fr); }
+    .sk-head { padding-top: 6vh; }
+  }
+</style>
