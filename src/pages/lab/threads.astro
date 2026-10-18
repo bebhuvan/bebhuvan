@@ -1,0 +1,163 @@
+---
+// LAB (structure study B): the site arranged by what Bhuvan keeps coming back
+// to, not by kind of thing. Each thread braids the essays, the websites, the
+// books and the notes on one subject, so the writing and the building read as
+// one practice. Threads, glosses and assignments are hand-picked drafts.
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import { posts, post, project, book, note, thumb, dek, fmt, fmtMonth, href, smart } from '../../utils/lab';
+
+const threads = [
+  { title: 'Money, and the people who talk about it',
+    gloss: 'I spend my days in markets. The essays are where I say what I actually think of them.',
+    essays: ['rare-disease', 'philosophy-of-money', 'speculation-is-like-water', 'stories-that-cause-bank', 'institutional-investors'],
+    built: ['tipsheet'], read: ['fluke'], noted: ['perry'] },
+  { title: 'Old words',
+    gloss: 'Most of the best writing ever done is free, and almost nobody reads it. I’m working on the second part.',
+    essays: ['before-we-had-answers', 'philosophy-of-life-and-senecas', 'introducing-dhwani', 'escalate-your-reading'],
+    built: ['seneca', 'paper-lanterns', 'collections', 'akshara'], read: [], noted: ['heart-wants'] },
+  { title: 'The country I live in',
+    gloss: 'Essays when something about India makes me angry. Websites when I’d rather the numbers did the talking.',
+    essays: ['protest', 'dear-influencers', 'dear-fintechs', 'a-world-without-news'],
+    built: ['this-indian', 'measure-of-india', 'soochi', 'let-me-walk', 'hope-and-despair'], read: ['liberalism'], noted: [] },
+  { title: 'Machines that sort of think',
+    gloss: 'I build with LLMs every day and they keep surprising me. I still don’t know what to make of them.',
+    essays: ['train-dreams', 'fuck-around', 'fragmented-thoughts-on-ai', 'without-a-job'],
+    built: [], read: [], noted: [] },
+  { title: 'Too much of everything',
+    gloss: 'Reading, writing and the small web, and the few ways I’ve found to keep my head above the flood.',
+    essays: ['start-the-damn-blog', 'too-much-of-everything', 'go-curate-yourself', 'ripple-and-then', 'broken-news'],
+    built: ['rabbit-holes', 'smallweb', 'dumpsterfire'], read: ['four-thousand'], noted: ['next-good-read'] },
+].map((t) => ({
+  ...t,
+  essays: t.essays.map(post),
+  built: t.built.map(project),
+  read: t.read.map(book),
+  noted: t.noted.map(note),
+}));
+const roman = ['i', 'ii', 'iii', 'iv', 'v'];
+---
+
+<Layout title="Lab: threads — Bhuvan" noindex>
+  <Nav />
+
+  <header class="th-head">
+    <h1 class="th-statement">I’m Bhuvan. I work at Zerodha on markets, data and curation, and the rest of the time I write, build and read my way around the same <em>five things</em>.</h1>
+    <ol class="th-toc">
+      {threads.map((t, i) => <li><a href={`#t${i + 1}`}><span class="rn">{roman[i]}</span>{t.title}</a></li>)}
+    </ol>
+  </header>
+
+  <main>
+    {threads.map((t, i) => {
+      const [lead, ...more] = t.essays;
+      return (
+        <section class="thread" id={`t${i + 1}`}>
+          <div class="t-name">
+            <p class="t-num">{roman[i]}</p>
+            <h2 class="t-title">{t.title}</h2>
+            <p class="t-gloss">{t.gloss}</p>
+          </div>
+
+          <div class="t-writing">
+            <a class="t-lead" href={href(lead)}>
+              {lead.data.image && <img src={thumb(lead.data.image)} alt="" />}
+              <span class="k">{fmt(lead.data.publishDate)}</span>
+              <span class="lt"><span class="hl">{smart(lead.data.title)}</span></span>
+              {dek(lead.data.description) && <span class="lx">{dek(lead.data.description)}</span>}
+            </a>
+            <ul class="t-more">
+              {more.map((p) => <li><a href={href(p)}><span class="mt"><span class="hl">{smart(p.data.title)}</span></span><span class="k">{fmtMonth(p.data.publishDate)}</span></a></li>)}
+            </ul>
+          </div>
+
+          <div class="t-side">
+            {t.built.length > 0 && (
+              <div class="side">
+                <h3>Built</h3>
+                <ul>{t.built.map((p) => <li><a href={p.data.link}><span class="pn">{smart(p.data.title)}</span><span class="px">{smart(p.data.tagline)}</span></a></li>)}</ul>
+              </div>
+            )}
+            {t.read.length > 0 && (
+              <div class="side">
+                <h3>Read</h3>
+                {t.read.map((b) => <a class="bk" href={`/books/${b.id}/`}><q>{smart(b.data.pull)}</q><span class="by">{b.data.title.split(':')[0]}, {b.data.author}</span></a>)}
+              </div>
+            )}
+            {t.noted.length > 0 && (
+              <div class="side">
+                <h3>Noted</h3>
+                <ul>{t.noted.map((n) => <li><a href={`/updates/${n.id}/`}><span class="pn">{smart(n.data.title.trim())}</span><span class="px">{fmt(n.data.publishDate)}</span></a></li>)}</ul>
+              </div>
+            )}
+            {i === 3 && (
+              <div class="side">
+                <h3>Right now</h3>
+                <a class="bk" href="/now/"><q>Things that would have taken me weeks, or stayed impossible, now take hours.</q><span class="by">From the Now page, Dec 2025</span></a>
+              </div>
+            )}
+          </div>
+        </section>
+      );
+    })}
+
+    <p class="th-rest"><a href="/writing/">All {posts.length} essays, by year</a><a href="/projects/">Every project</a><a href="/marginalia/">All notes</a></p>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .th-head, main { max-width: var(--frame); margin: 0 auto; padding: 0 var(--pad); }
+  .th-head { display: grid; grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); gap: 40px var(--split-gap); align-items: end; padding-top: 13vh; padding-bottom: 9vh; }
+  .th-statement { font-family: var(--serif); font-weight: 300; font-size: clamp(1.9rem, 2.9vw, 2.9rem); line-height: 1.22; letter-spacing: -.01em; text-wrap: pretty; }
+  .th-statement em { font-style: italic; color: var(--flame); }
+  .th-toc { list-style: none; border-top: 1px solid var(--rule-strong); }
+  .th-toc a { display: grid; grid-template-columns: 2.2em 1fr; padding: 7px 0; border-bottom: 1px solid var(--rule); font-family: var(--serif); font-size: 1.04rem; transition: color .2s; }
+  .th-toc a:hover { color: var(--flame); }
+  .rn, .t-num { font-family: var(--serif); font-style: italic; color: var(--flame); }
+
+  .thread { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 5fr) minmax(0, 3fr); gap: 0 clamp(28px, 3.6vw, 56px);
+            padding: 34px 0 88px; border-top: 1px solid var(--rule-strong); scroll-margin-top: 16px; }
+  .t-name { position: sticky; top: 24px; align-self: start; }
+  .t-num { font-size: 1.5rem; line-height: 1; }
+  .t-title { margin-top: 14px; font-family: var(--serif); font-weight: 300; font-size: clamp(2rem, 2.8vw, 2.75rem); line-height: 1.08; letter-spacing: -.015em; text-wrap: balance; }
+  .t-gloss { margin-top: 18px; max-width: 26em; font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 1.12rem; line-height: 1.5; color: var(--ink-soft); text-wrap: pretty; }
+
+  .k { font-family: var(--grot); font-weight: 600; font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .t-lead { display: grid; gap: 6px; }
+  .t-lead img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; margin-bottom: 12px; }
+  .lt { font-family: var(--serif); font-weight: 400; font-size: 1.6rem; line-height: 1.16; letter-spacing: -.01em; text-wrap: balance; }
+  .lx { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 1.06rem; line-height: 1.45; color: var(--ink-soft); text-wrap: pretty; }
+  .t-lead:hover .hl, .t-more a:hover .hl { background-size: 100% var(--marker-h); }
+  .t-more { list-style: none; margin-top: 22px; border-top: 1px solid var(--rule); }
+  .t-more a { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid var(--rule); }
+  .mt { font-family: var(--serif); font-size: 1.1rem; line-height: 1.3; }
+
+  .side + .side { margin-top: 34px; }
+  .side h3 { padding-bottom: 7px; border-bottom: 1px solid var(--rule-strong); font-weight: 600; font-size: .68rem; letter-spacing: .13em; text-transform: uppercase; color: var(--flame); }
+  .side ul { list-style: none; }
+  .side li a { display: grid; gap: 1px; padding: 9px 0; border-bottom: 1px solid var(--rule); }
+  .pn { font-family: var(--serif); font-size: 1.06rem; line-height: 1.3; transition: color .2s; }
+  .side a:hover .pn { color: var(--flame); }
+  .px { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: .95rem; line-height: 1.35; color: var(--ink-soft); }
+  .bk { display: grid; gap: 8px; padding-top: 12px; }
+  .bk q { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 1.18rem; line-height: 1.38; quotes: '“' '”'; text-wrap: pretty; }
+  .by { font-family: var(--grot); font-weight: 500; font-size: .72rem; letter-spacing: .02em; color: var(--ink-soft); }
+
+  .th-rest { display: flex; flex-wrap: wrap; gap: 8px 32px; padding-top: 22px; border-top: 1px solid var(--rule-strong); }
+  .th-rest a { font-weight: 600; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--flame); }
+  .th-rest a::after { content: ' →'; }
+
+  @media (max-width: 1080px) {
+    .th-head { grid-template-columns: minmax(0, 1fr); }
+    .thread { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); row-gap: 32px; }
+    .t-name { grid-column: 1 / -1; position: static; }
+  }
+  @media (max-width: 700px) {
+    .th-head { padding-top: 6vh; padding-bottom: 6vh; }
+    .thread { grid-template-columns: minmax(0, 1fr); padding-bottom: 60px; }
+    .lt { font-size: 1.4rem; }
+  }
+</style>
