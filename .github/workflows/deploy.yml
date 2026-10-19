@@ -25,7 +25,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      # Pull requests only build (a check); deploying is for pushes to master.
       - name: Deploy to Cloudflare Workers
+        if: github.event_name == 'push'
         run: npm run deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
