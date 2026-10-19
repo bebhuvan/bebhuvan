@@ -1,8 +1,8 @@
 # Replaces the Rabbit Holes site with redirects. Same Worker name and routes as the
 # old site (bebhuvan/rabbit-holes, wrangler.toml), so deploying this takes over
-# rabbitholes.garden and www.rabbitholes.garden, plus the retired Paper Trails and
-# Book Trails subdomains. Their old Workers/Pages projects must be deleted first, or
-# the routes below will clash with theirs.
+# rabbitholes.garden and www.rabbitholes.garden (also bound to this Worker as custom
+# domains). papertrails. stays a custom domain on the substack-curator Pages project,
+# which already redirects to smallweb.blog; booktrails. has no DNS record.
 name = "rabbit-holes"
 main = "worker.js"
 compatibility_date = "2024-12-19"
@@ -10,7 +10,5 @@ workers_dev = false
 
 routes = [
   { pattern = "rabbitholes.garden/*", zone_name = "rabbitholes.garden" },
-  { pattern = "www.rabbitholes.garden/*", zone_name = "rabbitholes.garden" },
-  { pattern = "papertrails.rabbitholes.garden/*", zone_name = "rabbitholes.garden" },
-  { pattern = "booktrails.rabbitholes.garden/*", zone_name = "rabbitholes.garden" }
+  { pattern = "www.rabbitholes.garden/*", zone_name = "rabbitholes.garden" }
 ]

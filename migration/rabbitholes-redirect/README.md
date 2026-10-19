@@ -5,7 +5,8 @@ In October 2026 every Rabbit Holes post moved into the notes here
 `rabbitholes.garden/posts/<slug>` → `bebhuvan.com/notes/<slug>/`.
 
 This folder is a tiny Worker that replaces the Rabbit Holes site with 301 redirects.
-Deploy it only after bebhuvan.com is live with the notes:
+It is live (deployed 19 Oct 2026; all 469 public posts checked: one 301 to a 200).
+To redeploy after a change:
 
 ```sh
 cd migration/rabbitholes-redirect
@@ -30,8 +31,9 @@ What goes where:
 | /types/links, /types/verse | /notes/links/, /notes/verse/ |
 | /rss.xml | /notes/rss.xml |
 | everything else | /notes/ |
-| papertrails.rabbitholes.garden/* | / |
-| booktrails.rabbitholes.garden/* | /books/ |
+| /posts/ of the two Book Trails announcements (unpublished here) | /books/ |
+| papertrails.rabbitholes.garden/* | smallweb.blog (custom domain on the substack-curator Pages project, not this Worker) |
+| booktrails.rabbitholes.garden | no DNS record; dead |
 
 Not carried over yet: the study note on industrial policy (/glosses/…) and the
 Stardust explainer (/explainers/stardust). Both redirect to /notes/ until they are.

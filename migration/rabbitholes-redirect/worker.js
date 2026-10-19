@@ -2,6 +2,8 @@
 // The posts became notes with the same slugs; tags became topics; feeds point at the notes feed.
 const TO = 'https://bebhuvan.com';
 const map = [
+  // public on Rabbit Holes, unpublished here: they announced Book Trails, so they go to the books
+  [/^\/posts\/(2025-08-27-your-next-good-read|2025-09-06-aggregating-book-mentions)\/?$/, () => '/books/'],
   [/^\/posts\/([^/]+)\/?$/, (m) => `/notes/${m[1]}/`],
   [/^\/tags\/([^/]+)\/?$/, (m) => `/topics/${m[1]}/`],
   [/^\/types\/links\/?$/, () => '/notes/links/'],
