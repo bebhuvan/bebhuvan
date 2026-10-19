@@ -39,7 +39,7 @@ import rabbitRaw from '../data/lab-rabbitholes.json';
 export const nowEntries = (await getCollection('now'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
-const strip = (h: string) => h.replace(/<[^>]*>/g, ' ').replace(/!?\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/[*_#>]+/g, '').replace(/&amp;/g, '&').replace(/&#39;/g, '’').replace(/&quot;/g, '"').replace(/&nbsp;/g, ' ').replace(/https?:\/\/\S+/g, '').replace(/\s+/g, ' ').trim();
+const strip = (h: string) => h.replace(/<[^>]*>/g, ' ').replace(/&amp;/g, '&').replace(/&#39;/g, '’').replace(/&quot;/g, '"').replace(/&nbsp;/g, ' ').replace(/!?\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/[*_#>]+/g, '').replace(/https?:\/\/\S+/g, '').replace(/\s+/g, ' ').trim();
 const domain = (u: string) => { try { return new URL(u).hostname.replace(/^www\.|\.cdn\.ampproject\.org$/g, '').replace(/^www-/, '').replace(/-/g, '.'); } catch { return ''; } };
 const clip = (s: string, n: number) => (s.length > n ? s.slice(0, s.lastIndexOf(' ', n)) + '…' : s);
 

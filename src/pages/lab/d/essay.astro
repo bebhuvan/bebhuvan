@@ -1,0 +1,41 @@
+---
+// LAB directions, D: C's essay grid with the text set in the serif.
+import '../../../styles/lab/d.css';
+import Frame from '../../../components/lab/DFrame.astro';
+import { render } from 'astro:content';
+import { essay, posts, dek, short, fmtLong, fmtMonth, smart, minutes } from '../../../utils/lab';
+const { Content } = await render(essay);
+const next = posts.filter((p) => p !== essay).slice(0, 6);
+---
+<Frame title={`Lab D · ${essay.data.title}`} active="Writing">
+  <header class="g ehead">
+    <div class="meta">
+      <div><span class="lbl">Essay</span>{(essay.data.tags ?? []).join(', ')}</div>
+      <div><span class="lbl">Published</span>{fmtLong(essay.data.publishDate)}</div>
+      <div><span class="lbl">Reading time</span>{minutes(essay)} minutes</div>
+    </div>
+    <div class="tt">
+      <h1>{smart(essay.data.title)}</h1>
+      <p class="dek">{dek(essay.data.description)}</p>
+    </div>
+  </header>
+  <section class="g ecover">
+    <figure><img src={essay.data.image} alt="" /><figcaption class="lbl">{essay.data.imageCaption ?? 'Cover: a railway station, in oils'}</figcaption></figure>
+  </section>
+  <div class="g ebody">
+    <article class="prose"><Content /></article>
+    <div class="endbox">
+      <img src="/profile-pic-160.webp" alt="" />
+      <div>
+        <p><b>Bhuvan</b> works at Zerodha on markets, data and curation, and writes here about money, technology and whatever else he can’t stop thinking about.</p>
+        <a class="more" href="/rss.xml">Follow by RSS →</a>
+      </div>
+    </div>
+  </div>
+  <section class="g enext">
+    <div class="colh"><span><span class="num">→</span>More essays</span><a class="more" href="/lab/d/essay/">All {posts.length}</a></div>
+    <ul class="rows">
+      {next.map((p) => <li><a href="/lab/d/essay/"><b>{smart(p.data.title)}</b><span class="dek">{short(p.data.description)}</span><span class="d">{fmtMonth(p.data.publishDate)}</span></a></li>)}
+    </ul>
+  </section>
+</Frame>
