@@ -159,11 +159,15 @@ img { display: block; max-width: 100%; height: auto; }
 .prose h2::before { content: counter(h2, decimal-leading-zero); display: block; color: var(--flame); font-size: .9rem; letter-spacing: 0; margin-bottom: 8px; font-weight: 500; font-variant-numeric: tabular-nums; }
 .prose h3 { margin: 1.8em 0 .5em; font: 600 1.1rem/1.3 var(--sans); letter-spacing: -.01em; }
 .prose strong { font-weight: 600; }
-/* quoted passages: a step smaller, indented, with a flame quote mark hung in the gutter */
-.prose blockquote { position: relative; margin: 1.9em 0 2em; padding-left: 2.2em; font-size: 1.06rem; line-height: 1.62; color: #2e2e2e; }
-.prose blockquote::before { content: '“'; position: absolute; left: -.04em; top: -.12em; font: 600 3.3rem/1 var(--sans); color: var(--flame); }
+/* quoted passages: someone else's words, set as an inset on the grid. A 1px ink rule
+   opens them like a table, the text drops a size and a shade, and the flame quote
+   mark hangs outside the column so the words keep the text's left edge. */
+.prose blockquote { position: relative; margin: 2.2em 0 2.3em; padding: 16px 0 18px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule); font-size: 1.04rem; line-height: 1.62; color: #333; }
+.prose blockquote::before { content: '“'; position: absolute; right: calc(100% + .28em); top: 6px; font: 700 3.6rem/1 var(--serif); color: var(--flame); }
 .prose blockquote p { margin-bottom: .8em; }
 .prose blockquote p:last-child { margin-bottom: 0; }
+.prose blockquote strong { font-weight: 600; color: var(--ink); }
+.prose blockquote hr { margin: 1.4em 0; }
 /* figures sit on the text measure */
 .prose p:has(> img) { margin: 2.3em 0; }
 .prose p:has(> img) img { width: 100%; border: 1px solid var(--rule); }
@@ -238,7 +242,7 @@ img { display: block; max-width: 100%; height: auto; }
 .nrow .txt a { text-decoration: underline; text-decoration-color: var(--tint); text-decoration-thickness: 2px; text-underline-offset: .18em; word-break: break-word; }
 .nrow .txt img { margin: 12px 0; }
 .nrow .txt blockquote { position: relative; margin: .6em 0 .9em; padding-left: 1.6em; color: #3a3a3a; }
-.nrow .txt blockquote::before { content: '“'; position: absolute; left: 0; top: -.1em; font: 600 2.2rem/1 var(--sans); color: var(--flame); }
+.nrow .txt blockquote::before { content: '“'; position: absolute; left: 0; top: -.1em; font: 700 2.4rem/1 var(--serif); color: var(--flame); }
 .nrow .src { font-size: .9rem; padding-top: 5px; }
 .nrow .src a { color: var(--flame-ink); word-break: break-word; }
 .nrow .src a:hover { color: var(--ink); }
@@ -279,6 +283,8 @@ img { display: block; max-width: 100%; height: auto; }
   .ehead .tt { grid-column: 1 / -1; }
   .ebody > .prose, .ebody > .endbox { grid-column: 1 / -1; }
   .rows li a { grid-template-columns: 1fr auto; }
+  .prose blockquote { padding-top: 46px; }
+  .prose blockquote::before { right: auto; left: 0; top: 8px; font-size: 3rem; }
   .rows .dek { display: none; }
   .phead .lbl, .phead .tt, .group .gl, .group .gt { grid-column: 1 / -1; }
   .group .gl { margin-bottom: 8px; }
