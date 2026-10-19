@@ -37,9 +37,11 @@
 }
 /* dark: a near-black ground, soft white text, greys matched to the light ratios, a
    brighter flame for marks and text, a deep flame behind the collaborators call.
-   Contrast for each pairing is listed in CLAUDE.md. */
+   Contrast for each pairing is listed in CLAUDE.md. It follows the system setting
+   unless the reader picks a side with the header switch (data-theme on <html>).
+   The two dark blocks hold the same tokens: keep them in step. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --paper: #121212; --ink: #e6e6e6; --soft: #a0a0a0; --rule: #303030;
     --grey: #707070;
     --prose: #dadada; --note: #d4d4d4; --stand: #d0d0d0; --intro: #cccccc; --brief: #c8c8c8; --quote: #c2c2c2; --quote-note: #bbbbbb;
@@ -52,6 +54,20 @@
     --portrait-clip: circle(48.2%);
   }
 }
+:root[data-theme="dark"] {
+  --paper: #121212; --ink: #e6e6e6; --soft: #a0a0a0; --rule: #303030;
+  --grey: #707070;
+  --prose: #dadada; --note: #d4d4d4; --stand: #d0d0d0; --intro: #cccccc; --brief: #c8c8c8; --quote: #c2c2c2; --quote-note: #bbbbbb;
+  --wash: #1c1c1c; --wash-code: #202020;
+  --flame: #E85A2B; --flame-ink: #F2804F; --tint: #6B2D17;
+  --flame-text: #EE6A3C; --flame-block: #9A3313;
+  --invite-head: #F2B9A3; --invite-rule: rgba(255,255,255,.3);
+  --on-flame: #fff; --btn-hover: #fff; --ghost-hover: rgba(255,255,255,.1);
+  --img-ground: #ececec; --shot-filter: brightness(.88);
+  --portrait-clip: circle(48.2%);
+}
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 h1, h2, h3, h4, p, figure, blockquote, dl, dd { margin: 0; }
@@ -84,6 +100,10 @@ img { display: block; max-width: 100%; height: auto; }
 .head nav a { font-size: .95rem; color: var(--soft); transition: color .2s; }
 .head nav a:hover, .head nav a[aria-current] { color: var(--ink); }
 .head nav a[aria-current]::before { content: ''; display: inline-block; width: .5em; height: .5em; background: var(--flame); margin-right: .45em; vertical-align: .08em; }
+/* the light/dark switch: a half-filled circle, shown only when its script runs */
+.mode { align-self: center; margin: -6px; padding: 6px; border: 0; background: none; color: var(--soft); cursor: pointer; transition: color .2s; }
+.mode:hover { color: var(--ink); }
+.mode span { display: block; width: 13px; height: 13px; border: 1.5px solid currentColor; border-radius: 50%; box-shadow: inset 5px 0 0 currentColor; }
 
 /* section heads: number and name on a 2px rule */
 .colh { grid-column: 1 / -1; border-top: 2px solid var(--ink); padding-top: 10px; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: baseline; gap: 16px; font-weight: 500; font-size: .95rem; }
@@ -396,7 +416,8 @@ img { display: block; max-width: 100%; height: auto; }
 /* old WordPress posts carry inline text colours (a grey verse, #6e6e6e) chosen for white;
    on the dark ground they fall under 4.5:1, so they take the quote grey. The one rule here
    that isn't a token: it overrides content, not the design. */
-@media (prefers-color-scheme: dark) { .prose .has-text-color { color: var(--quote) !important; } }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .prose .has-text-color { color: var(--quote) !important; } }
+:root[data-theme="dark"] .prose .has-text-color { color: var(--quote) !important; }
 .prose .wp-block-verse, .prose pre.wp-block-verse { white-space: pre-wrap; padding: 0 0 0 1.4em; background: none; font: inherit; }
 .prose .wp-block-jetpack-slideshow ul { list-style: none; padding: 0; display: grid; gap: 14px; }
 .prose .wp-block-jetpack-slideshow li::before { display: none; }

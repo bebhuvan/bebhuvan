@@ -1,7 +1,9 @@
 // Runs before `astro build` (and `astro dev`). Two jobs:
 // 1. Heavy uploads (wider than 1400px or over 350KB, typically a phone photo
 //    added through Pages CMS) get resized WebP copies next to the original:
-//    <stem>-768w.webp and <stem>-1400w.webp. Originals are never touched.
+//    <stem>-768w.webp and <stem>-1400w.webp. Other images wider than 1000px get a
+//    768w copy, so phones and half-width slots (covers, project screenshots)
+//    don't download the full width. Originals are never touched.
 // 2. Writes src/data/images.generated.json: width, height and variants for every
 //    image, so pages can set width/height (no layout shift) and srcset.
 // Results are cached by path, size and mtime in node_modules/.cache, so repeat
@@ -15,6 +17,7 @@ const DIRS = ['blog-images', 'note-images', 'project-images', 'update-images', '
 const VARIANT = /-(\d+)w\.webp$/;
 const HEAVY_W = 1400;
 const HEAVY_BYTES = 350_000;
+const WIDE = 1000;
 const CACHE = 'node_modules/.cache/site-images.json';
 const OUT = 'src/data/images.generated.json';
 
@@ -45,8 +48,9 @@ for (const dir of DIRS) {
     }
     const stem = file.replace(/\.[a-z0-9]+$/i, '');
     const heavy = !/\.gif$/i.test(file) && (meta.w > HEAVY_W || st.size > HEAVY_BYTES);
-    if (heavy) {
-      for (const w of [768, 1400]) {
+    const widths = heavy ? [768, 1400] : meta.w > WIDE && !/\.gif$/i.test(file) ? [768] : [];
+    if (widths.length) {
+      for (const w of widths) {
         const out = `${stem}-${w}w.webp`;
         if (w >= meta.w && w !== 1400) continue;
         if (!existsSync(out)) {

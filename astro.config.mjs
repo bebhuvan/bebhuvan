@@ -51,9 +51,10 @@ export default defineConfig({
     }),
   },
   build: {
-    // Inline small stylesheets into the HTML (~4KB threshold), keep larger
-    // ones as separate files so they're cacheable across pages.
-    inlineStylesheets: 'auto',
+    // The one stylesheet goes inline in every page (about 8KB compressed): most
+    // visits are a single page from a shared link, and a separate file held the
+    // first paint for a whole round trip (PageSpeed, 19 Oct 2026).
+    inlineStylesheets: 'always',
     assets: '_astro',
   },
   vite: {

@@ -71,6 +71,8 @@ const nav = [['Writing', '/writing/'], ['Notes', '/notes/'], ['Projects', '/proj
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- the reader's light/dark choice, applied before the first paint so the page doesn't flash -->
+  <script is:inline>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
   <title>{fullTitle}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonical} />
@@ -122,8 +124,10 @@ const nav = [['Writing', '/writing/'], ['Notes', '/notes/'], ['Projects', '/proj
   <a class="skip" href="#main">Skip to the content</a>
   <header class="g head">
     <div class="id"><a class="name" href="/" rel="home">Bhuvan<i>.</i></a><span class="lbl when">Essays, notes and small websites</span></div>
-    <nav aria-label="Sections">{nav.map(([l, h]) => <a href={h} aria-current={l === active ? 'page' : undefined}>{l}</a>)}</nav>
+    <nav aria-label="Sections">{nav.map(([l, h]) => <a href={h} aria-current={l === active ? 'page' : undefined}>{l}</a>)}<button class="mode" type="button" aria-label="Dark mode" aria-pressed="false" title="Dark mode" hidden><span></span></button></nav>
   </header>
+  <!-- the switch: flips light/dark and remembers it; with no choice made, the system setting rules -->
+  <script is:inline>(function(){var r=document.documentElement,b=document.querySelector('.mode'),m=matchMedia('(prefers-color-scheme: dark)');function dark(){return r.dataset.theme?r.dataset.theme==='dark':m.matches}function show(){b.setAttribute('aria-pressed',String(dark()));if(r.dataset.theme)document.querySelectorAll('meta[name=theme-color]').forEach(function(x){x.content=dark()?'#121212':'#ffffff'})}b.hidden=false;show();m.addEventListener('change',show);b.addEventListener('click',function(){r.dataset.theme=dark()?'light':'dark';try{localStorage.setItem('theme',r.dataset.theme)}catch(e){}show()})})();</script>
   <main id="main">
     <slot />
   </main>
@@ -131,7 +135,7 @@ const nav = [['Writing', '/writing/'], ['Notes', '/notes/'], ['Projects', '/proj
     <div class="me"><img src="/profile-pic-160.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /><span>{SITE.tagline.split(', sharer')[0]}.</span></div>
     <div><a href={SITE.github} rel="me">GitHub</a><br /><a href={SITE.twitter} rel="me">Twitter</a><br /><a href="/topics/">Topics</a></div>
     <div><a href="/rss.xml">RSS: everything</a><br /><a href="/writing/rss.xml">RSS: essays</a><br /><a href="/notes/rss.xml">RSS: notes</a></div>
-    <div class="lbl">Set in Host Grotesk and Source Serif. No cookies, no trackers, no scripts. <a href="/trails/">Elsewhere</a> · <a href="/llms.txt">llms.txt</a></div>
+    <div class="lbl">Set in Host Grotesk and Source Serif. No cookies, no trackers. <a href="/trails/">Elsewhere</a> · <a href="/llms.txt">llms.txt</a></div>
   </footer>
 </body>
 </html>

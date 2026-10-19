@@ -20,7 +20,7 @@ const shelf = [...reading, ...books.filter((b) => b.data.status === 'read')].sli
 <Base title={`${SITE.name}: essays, notes and small websites`} description={SITE.description} type="profile" image="/og.jpg" home>
   <section class="g hero">
     <figure class="pic">
-      <img src="/profile-pic.webp" alt="A cartoon of Bhuvan, grinning, with a peace sign" width="800" height="800" fetchpriority="high" />
+      <img src="/profile-pic.webp" srcset="/profile-pic-160.webp 160w, /profile-pic-640w.webp 640w, /profile-pic.webp 800w" sizes="(max-width: 860px) 50vw, 420px" alt="A cartoon of Bhuvan, grinning, with a peace sign" width="800" height="800" fetchpriority="high" />
     </figure>
     <div class="say">
       <h1>Doer of random things, diver of weird rabbit holes, sharer of fascinating things. <span>Hi, I’m Bhuvan.</span></h1>
