@@ -16,6 +16,7 @@ export const SITE = {
   twitter: 'https://x.com/bebhuvan',
   handle: '@bebhuvan',
   linkedin: 'https://www.linkedin.com/in/bebhuvan/',
+  substack: 'https://bhuvan.substack.com/',
 };
 
 const byDate = <T extends { data: { publishDate?: Date; date?: Date } }>(a: T, b: T) =>
