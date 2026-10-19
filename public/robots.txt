@@ -1,4 +1,6 @@
+# Everyone is welcome to read, index and learn from this site, people and machines alike.
 User-agent: *
 Allow: /
 
 Sitemap: https://bebhuvan.com/sitemap-index.xml
+# For language models: https://bebhuvan.com/llms.txt and https://bebhuvan.com/llms-full.txt

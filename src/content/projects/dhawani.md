@@ -4,7 +4,6 @@ description: "Personal microblog for thinking out loud. Quick thoughts, observat
 status: "archived"
 link: https://dhawani.ink/
 url: dhawani.ink
-icon: "🔊"
 order: 5
 ---
 

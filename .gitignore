@@ -26,3 +26,9 @@ HANDOFF.md
 
 # jetbrains setting folder
 .idea/
+
+# made by scripts/images.mjs at build time
+src/data/images.generated.json
+public/**/*-768w.webp
+public/**/*-1400w.webp
+.wrangler/

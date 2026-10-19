@@ -1,56 +1,49 @@
 ---
+// One book: author and when, a line from it, my verdict, then notes.
 import { getCollection, render } from 'astro:content';
-import type { GetStaticPaths } from 'astro';
-import { smart } from '../../utils/typo';
-import Layout from '../../layouts/Layout.astro';
-import Nav from '../../components/Nav.astro';
-import Footer from '../../components/Footer.astro';
+import Base from '../../layouts/Base.astro';
+import { SITE, smart, fmtLong, bookHref, bookYear, plain, clip, topicHref, hasTopic } from '../../utils/site';
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const books = await getCollection('books');
-  return books.map(book => ({
-    params: { slug: book.id },
-    props: { book },
-  }));
+export async function getStaticPaths() {
+  return (await getCollection('books')).map((b) => ({ params: { slug: b.id }, props: { b } }));
+}
+const { b } = Astro.props;
+const d = b.data;
+const { Content } = await render(b);
+const year = bookYear(b);
+const description = smart(d.hand) ? `${smart(d.title)} by ${d.author}: ${smart(d.hand)}` : clip(plain(b.body), 155) || `${smart(d.title)} by ${d.author}, read by Bhuvan.`;
+const url = new URL(bookHref(b), SITE.url).toString();
+const review = {
+  '@type': 'Review',
+  '@id': `${url}#review`,
+  author: { '@id': `${SITE.url}/#person` },
+  itemReviewed: { '@type': 'Book', name: smart(d.title), author: { '@type': 'Person', name: d.author } },
+  ...(d.hand ? { reviewBody: smart(d.hand) } : {}),
+  ...(d.date ? { datePublished: d.date.toISOString() } : {}),
+  url,
 };
-
-const { book } = Astro.props;
-const { Content } = await render(book);
-const tags = book.data.tags || [];
+const status = { reading: 'Reading now', read: 'Read', abandoned: 'Put down' }[d.status];
 ---
-
-<Layout title={`${smart(book.data.title)} — Bhuvan`} description={book.data.pull || `Notes on ${smart(book.data.title)} by ${book.data.author}`}>
-  <Nav active="books" />
-
-  <main class="read">
-    <header class="read-head">
-      <p class="crumb"><a href="/books/">Book notes</a></p>
-      <h1 class="read-title">{smart(book.data.title)}</h1>
-      <div class="read-sub">
-        {book.data.pull ? <p class="read-dek">{smart(book.data.pull)}</p> : <span></span>}
-        <p class="read-meta">
-          {book.data.author}<br />
-          {book.data.finishedDate && <>Read {book.data.finishedDate}<br /></>}
-          {book.data.hand && <span class="hand">{book.data.hand}</span>}
-        </p>
+<Base title={`${smart(d.title)}, by ${d.author}`} description={description} active="Books" schema={[review]} crumbs={[['Books', '/books/'], [smart(d.title), bookHref(b)]]}>
+  <article>
+    <header class="g nhead">
+      <div class="meta">
+        <div><span class="lbl">Author</span>{d.author}</div>
+        <div><span class="lbl">{status}</span>{d.date ? <time datetime={d.date.toISOString()}>{fmtLong(d.date)}</time> : year ?? ''}</div>
+        {d.tags.length > 0 && <div class="tags"><span class="lbl">Filed under</span>{d.tags.map((t, k) => <>{k > 0 && ', '}{hasTopic(t) ? <a href={topicHref(t)}>{t}</a> : t}</>)}</div>}
+      </div>
+      <div class="tt">
+        <h1>{smart(d.title)}</h1>
+        {d.hand && <p class="aside">{smart(d.hand)}</p>}
       </div>
     </header>
-
-    <article class="prose">
-      <Content />
-    </article>
-
-    {tags.length > 0 && (
-      <footer class="read-end">
-        <p class="tags"><b>Filed under</b>{tags.join(' · ')}</p>
-        <a class="more" href="/books/">All book notes</a>
-      </footer>
-    )}
-  </main>
-
-  <Footer hand="Thanks for caring about books. Most people don't anymore." />
-</Layout>
-
-<style>
-  .hand { display: block; margin-top: 12px; font-family: var(--serif); font-style: italic; font-size: 1.1rem; line-height: 1.4; color: var(--flame); }
-</style>
+    <div class="g ebody nbody">
+      <div class="prose">
+        {d.pull && <p class="pull">{smart(d.pull)}</p>}
+        <Content />
+        {d.link && <p><a href={d.link} rel="noopener">More about the book ↗</a></p>}
+      </div>
+      <div class="nend"><nav class="ends"><a href="/books/"><span class="lbl">← All books</span></a><span /></nav></div>
+    </div>
+  </article>
+</Base>

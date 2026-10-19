@@ -1,0 +1,25 @@
+---
+// One note in a list: date, kind, the note (whole if short, an excerpt if long), its source.
+import { render } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import { cardHtml } from '../plugins/link-preview.js';
+import { fmt, domain, kindLabel, noteHref, excerpt, words, smart, topicHref, hasTopic } from '../utils/site';
+interface Props { n: CollectionEntry<'notes'>; level?: 'h2' | 'h3' }
+const { n, level = 'h2' } = Astro.props;
+const long = words(n.body) > 180;
+const { Content } = long ? { Content: null } : await render(n);
+const H = level;
+const src = domain(n.data.url);
+const card = n.data.url && !(n.body ?? '').includes(n.data.url) ? cardHtml(n.data.url) : '';
+---
+<article class="nrow">
+  <time datetime={n.data.date.toISOString()}>{fmt(n.data.date)}</time>
+  <span class="kind">{n.data.kind === 'link' && <span class="sq"></span>}{kindLabel[n.data.kind]}</span>
+  <div class="body">
+    <H><a href={noteHref(n)}>{smart(n.data.title)}</a></H>
+    {Content ? <div class:list={['txt', { verse: n.data.kind === 'verse' }]}><Content /></div> : <div class="txt"><p>{excerpt(n, 320)}</p><a class="read" href={noteHref(n)}>Read the note →</a></div>}
+    {card && <Fragment set:html={card} />}
+    {n.data.note && <p class="aside">{smart(n.data.note)}</p>}
+  </div>
+  <span class="src">{src && <a href={n.data.url} rel="noopener">{src} ↗</a>}</span>
+</article>

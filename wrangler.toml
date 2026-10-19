@@ -5,3 +5,5 @@ main = "src/worker.js"
 [assets]
 directory = "dist"
 binding = "ASSETS"
+# a path that is neither a file nor a redirect gets dist/404.html with a 404 status
+not_found_handling = "404-page"

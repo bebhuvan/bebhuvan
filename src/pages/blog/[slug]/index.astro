@@ -1,0 +1,95 @@
+---
+// An essay: meta column and title on the grid, the cover, then the text in columns
+// 4-9 with a sticky contents list to its left and margin notes to its right.
+import { getCollection, render } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import { SITE, posts, dek, short, fmtLong, fmtMonth, smart, minutes, words, postHref, topicHref, hasTopic, plain, clip } from '../../../utils/site';
+import { imageAttrs } from '../../../plugins/rehype-image-attrs.js';
+
+export async function getStaticPaths() {
+  // drafts are built too (unlisted, noindex) so a draft can be read at its URL before it goes out
+  return (await getCollection('blog')).map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content, headings } = await render(post);
+const d = post.data;
+const toc = headings.filter((h) => h.depth === 2);
+const noteCount = ((post.body ?? '').match(/^\[\^[^\]]+\]:/gm) ?? []).length + ((post.body ?? '').match(/<span class="sn">/g) ?? []).length;
+const i = posts.findIndex((p) => p.id === post.id);
+const next = posts.filter((p) => p.id !== post.id).slice(Math.max(0, i - 1), Math.max(0, i - 1) + 6);
+const pad = (n: number) => String(n).padStart(2, '0');
+const description = smart(d.description) || clip(plain(post.body), 155);
+const cover = d.image ? imageAttrs(d.image) : {};
+const url = new URL(postHref(post), SITE.url).toString();
+
+const article = {
+  '@type': 'BlogPosting',
+  '@id': `${url}#article`,
+  mainEntityOfPage: { '@id': `${url}#webpage` },
+  headline: smart(d.title),
+  description,
+  ...(d.image ? { image: new URL(d.image, SITE.url).toString() } : {}),
+  datePublished: d.publishDate.toISOString(),
+  dateModified: (d.updatedDate ?? d.publishDate).toISOString(),
+  author: { '@id': `${SITE.url}/#person` },
+  publisher: { '@id': `${SITE.url}/#person` },
+  inLanguage: 'en',
+  wordCount: words(post.body),
+  timeRequired: `PT${minutes(post)}M`,
+  ...(d.tags.length ? { keywords: d.tags.join(', '), articleSection: d.tags[0] } : {}),
+  url,
+};
+---
+<Base title={smart(d.title)} description={description} image={d.image} imageAlt={d.imageCaption || smart(d.title)} type="article" published={d.publishDate} modified={d.updatedDate} tags={d.tags} section={d.tags[0]} noindex={d.draft} active="Writing" schema={[article]} crumbs={[['Writing', '/writing/'], [smart(d.title), postHref(post)]]}>
+  <article>
+    <header class="g ehead">
+      <div class="meta">
+        <div><span class="lbl">Essay</span>{d.tags.length ? d.tags.slice(0, 3).map((t, k) => <>{k > 0 && ', '}{hasTopic(t) ? <a href={topicHref(t)}>{t}</a> : t}</>) : 'Writing'}</div>
+        <div><span class="lbl">Published</span><time datetime={d.publishDate.toISOString()}>{fmtLong(d.publishDate)}</time></div>
+        {d.updatedDate && <div><span class="lbl">Revised</span><time datetime={d.updatedDate.toISOString()}>{fmtLong(d.updatedDate)}</time></div>}
+        <div><span class="lbl">Reading time</span>{minutes(post)} minutes</div>
+        {d.draft && <div><span class="lbl">Status</span>Draft, unlisted</div>}
+      </div>
+      <div class="tt">
+        <h1>{smart(d.title)}</h1>
+        {dek(d.description) && <p class="dek">{dek(d.description)}</p>}
+      </div>
+    </header>
+    {d.image && (
+      <div class="g ecover">
+        <figure>
+          <img src={cover.src ?? d.image} srcset={cover.srcset} sizes="(max-width: 1440px) 100vw, 1320px" alt={d.imageCaption || ''} width={cover.width} height={cover.height} fetchpriority="high" decoding="async" />
+          {d.imageCaption && <figcaption class="lbl">{d.imageCaption}</figcaption>}
+        </figure>
+      </div>
+    )}
+    <div class="g ebody">
+      {(toc.length > 1 || noteCount > 0) && (
+        <aside class="toc" aria-label="Contents">
+          {toc.length > 1 && (
+            <>
+              <span class="lbl">In this essay</span>
+              <ol>{toc.map((h, k) => <li><a href={`#${h.slug}`}><span class="num">{pad(k + 1)}</span>{smart(h.text)}</a></li>)}</ol>
+            </>
+          )}
+          {noteCount > 0 && <p class="lbl">{noteCount} {noteCount === 1 ? 'note' : 'notes'} in the margin<span class="sq"></span></p>}
+        </aside>
+      )}
+      <div class="prose"><Content /></div>
+      <div class="endbox">
+        <img src="/profile-pic-160.webp" alt="" width="64" height="64" loading="lazy" decoding="async" />
+        <div>
+          <p><b>Bhuvan</b> works at Zerodha on markets, data and curation, and writes here about money, technology, history and whatever else he can’t stop thinking about.</p>
+          <a class="more" href="/writing/rss.xml">Follow the essays by RSS →</a>
+        </div>
+      </div>
+    </div>
+  </article>
+  <section class="g enext" aria-labelledby="h-more">
+    <h2 class="colh" id="h-more"><span><span class="num">→</span>More essays</span><a class="more" href="/writing/">All {posts.length}</a></h2>
+    <ul class="rows">
+      {next.map((p) => <li><a href={postHref(p)}><b>{smart(p.data.title)}</b><span class="dek">{short(p.data.description)}</span><span class="d">{fmtMonth(p.data.publishDate)}</span></a></li>)}
+    </ul>
+  </section>
+</Base>

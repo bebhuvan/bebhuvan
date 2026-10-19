@@ -1,0 +1,77 @@
+---
+// One note: its kind and date in the meta column, the title, its source, the text,
+// further reading, and the notes either side of it.
+import { getCollection, render } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import { SITE, notes, fmtLong, smart, domain, kindLabel, noteHref, topicHref, hasTopic, plain, clip, words } from '../../../utils/site';
+import { imageAttrs } from '../../../plugins/rehype-image-attrs.js';
+import { cardHtml } from '../../../plugins/link-preview.js';
+
+export async function getStaticPaths() {
+  // drafts stay private: no page until they're published
+  return (await getCollection('notes')).filter((n) => !n.data.draft).map((n) => ({ params: { slug: n.id }, props: { n } }));
+}
+const { n } = Astro.props;
+const d = n.data;
+const { Content } = await render(n);
+const i = notes.findIndex((x) => x.id === n.id);
+const newer = i > 0 ? notes[i - 1] : undefined;
+const older = i >= 0 && i < notes.length - 1 ? notes[i + 1] : undefined;
+const description = smart(d.description) || clip(plain(n.body), 155) || smart(d.title);
+const url = new URL(noteHref(n), SITE.url).toString();
+const img = d.image ? imageAttrs(d.image) : {};
+// the source as a preview card, unless the text already pastes it on its own line
+const sourceCard = d.url && !(n.body ?? '').includes(d.url) ? cardHtml(d.url) : '';
+const posting = {
+  '@type': 'BlogPosting',
+  '@id': `${url}#article`,
+  mainEntityOfPage: { '@id': `${url}#webpage` },
+  headline: smart(d.title),
+  description,
+  datePublished: d.date.toISOString(),
+  author: { '@id': `${SITE.url}/#person` },
+  publisher: { '@id': `${SITE.url}/#person` },
+  inLanguage: 'en',
+  wordCount: words(n.body),
+  articleSection: 'Notes',
+  ...(d.tags.length ? { keywords: d.tags.join(', ') } : {}),
+  ...(d.url ? { citation: d.url, isBasedOn: d.url } : {}),
+  ...(d.image ? { image: new URL(d.image, SITE.url).toString() } : {}),
+  url,
+};
+---
+<Base title={smart(d.title)} description={description} image={d.image} imageAlt={d.imageAlt} type="article" published={d.date} tags={d.tags} section="Notes" noindex={d.draft} active="Notes" schema={[posting]} crumbs={[['Notes', '/notes/'], [smart(d.title), noteHref(n)]]}>
+  <article>
+    <header class="g nhead">
+      <div class="meta">
+        <div><span class="lbl">Kind</span><a href={d.kind === 'note' ? '/notes/notes/' : d.kind === 'quote' ? '/notes/' : `/notes/${d.kind === 'link' ? 'links' : d.kind}/`}>{kindLabel[d.kind]}</a></div>
+        <div><span class="lbl">Kept</span><time datetime={d.date.toISOString()}>{fmtLong(d.date)}</time></div>
+        {d.tags.length > 0 && <div class="tags"><span class="lbl">Filed under</span>{d.tags.map((t, k) => <>{k > 0 && ', '}{hasTopic(t) ? <a href={topicHref(t)}>{t}</a> : t}</>)}</div>}
+      </div>
+      <div class="tt">
+        <h1>{smart(d.title)}</h1>
+        {d.description && <p class="dek">{smart(d.description)}</p>}
+        {d.note && <p class="aside">{smart(d.note)}</p>}
+      </div>
+    </header>
+    <div class="g ebody nbody">
+      <div class:list={['prose', { verse: d.kind === 'verse' }]}>
+        {sourceCard ? <Fragment set:html={sourceCard} /> : d.url && <a class="source" href={d.url} rel="noopener"><span class="lbl">Source</span><b>{domain(d.url)}</b><span aria-hidden="true">↗</span></a>}
+        {d.image && <figure><img src={img.src ?? d.image} srcset={img.srcset} sizes={img.sizes} width={img.width} height={img.height} alt={d.imageAlt ?? ''} decoding="async" /></figure>}
+        <Content />
+      </div>
+      <div class="nend">
+        {d.further && d.further.length > 0 && (
+          <section class="further" aria-labelledby="h-further">
+            <h2 class="lbl" id="h-further">Further</h2>
+            <ul>{d.further.map((f) => <li><a href={f.url} rel="noopener"><b>{smart(f.title)}</b><i>{domain(f.url)} ↗</i>{f.note && <span>{smart(f.note)}</span>}</a></li>)}</ul>
+          </section>
+        )}
+        <nav class="ends" aria-label="Neighbouring notes">
+          {newer ? <a href={noteHref(newer)} rel="prev"><span class="lbl">← Newer</span><b>{smart(newer.data.title)}</b></a> : <span />}
+          {older ? <a class="nx" href={noteHref(older)} rel="next"><span class="lbl">Older →</span><b>{smart(older.data.title)}</b></a> : <span />}
+        </nav>
+      </div>
+    </div>
+  </article>
+</Base>

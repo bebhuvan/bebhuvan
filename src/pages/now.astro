@@ -1,49 +1,40 @@
 ---
-import { getCollection, render } from 'astro:content';
-import Layout from '../layouts/Layout.astro';
-import Nav from '../components/Nav.astro';
-import Footer from '../components/Footer.astro';
-
-const nowEntries = (await getCollection('now'))
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-
-const latestDate = nowEntries[0]?.data.date;
-const categoryLabels: Record<string, string> = {
-  thinking: 'Thinking about',
-  working: 'Working on',
-  mindlog: 'Mind log',
-};
-const fmt = (d: Date) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+// Now: the latest entry as a letter, earlier entries below it. Derek Sivers' idea.
+import { render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { nowEntries, fmtLong, smart } from '../utils/site';
+const [now, ...earlier] = nowEntries;
+const { Content } = now ? await render(now) : { Content: null };
+const past = await Promise.all(earlier.map(async (e) => ({ e, C: (await render(e)).Content })));
 ---
-
-<Layout title="Now — Bhuvan" description="What I'm doing right now — a /now page, updated when things change.">
-  <Nav active="now" />
-
-  <main class="split">
-    <div class="statement">
-      <h1 class="statement-text">What I’m doing <em>now</em>. A snapshot, not a résumé.</h1>
-      <p class="statement-sub">
-        {latestDate && <>Last updated {fmt(latestDate)}, Bangalore. </>}
-        This is a <a href="https://nownownow.com/about">/now page</a>, an idea from Derek Sivers: what you’d tell a good friend who asked what you’ve been up to.
-      </p>
+<Base title="Now" description="What Bhuvan is doing right now: a /now page, updated when things change." active="Now" modified={now?.data.date} crumbs={[['Now', '/now/']]}>
+  <header class="g phead">
+    <span class="lbl ink">Now{now && <span class="lbl count">Updated <time datetime={now.data.date.toISOString()}>{fmtLong(now.data.date)}</time></span>}</span>
+    <div class="tt">
+      <h1>What I’m doing now. <span>A snapshot, not a résumé.</span></h1>
+      <p>A <a href="https://nownownow.com/about">/now page</a>, an idea from Derek Sivers: what you’d tell a good friend who asked what you’ve been up to.</p>
     </div>
-
-    <div class="margin">
-      {nowEntries.map(async (entry, i) => {
-        const { Content } = await render(entry);
-        return (
-          <section class="ann">
-            <h2 class="ann-head"><span class="n">{i + 1}</span>{categoryLabels[entry.data.category] || entry.data.category}<span class="count">{entry.data.date.toLocaleDateString('en-GB', { month: 'short', year: 'numeric' })}</span></h2>
-            <div class="prose"><Content /></div>
-          </section>
-        );
-      })}
-    </div>
-  </main>
-
-  <Footer hand="This is me, right now. Ask me again in a month." />
-</Layout>
-
-<style>
-  .margin .prose :global(p) { font-size: 1.12rem; }
-</style>
+  </header>
+  {now && (
+    <section class="g nowpage">
+      <div class="letter">
+        {now.data.title && <h2 class="lbl ink">{smart(now.data.title)}</h2>}
+        <div class="txt">{Content && <Content />}</div>
+        <p class="sig">— B., Bangalore</p>
+      </div>
+    </section>
+  )}
+  {past.length > 0 && (
+    <section class="g earlier" aria-labelledby="h-earlier">
+      <h2 class="gl" id="h-earlier">Earlier</h2>
+      <div class="list">
+        {past.map(({ e, C }) => (
+          <article>
+            <time class="lbl" datetime={e.data.date.toISOString()}>{fmtLong(e.data.date)}</time>
+            <div class="txt"><C /></div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+</Base>

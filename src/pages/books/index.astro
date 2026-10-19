@@ -1,63 +1,34 @@
 ---
-import { getCollection } from 'astro:content';
-import { smart } from '../../utils/typo';
-import Layout from '../../layouts/Layout.astro';
-import Nav from '../../components/Nav.astro';
-import Footer from '../../components/Footer.astro';
-
-let books: any[] = [];
-try {
-  books = (await getCollection('books'))
-    .sort((a, b) => (b.data.year ?? 0) - (a.data.year ?? 0));
-} catch (e) {}
-
-const booksByYear = books.reduce((acc, book) => {
-  const year = book.data.year ?? 'Undated';
-  (acc[year] ||= []).push(book);
-  return acc;
-}, {} as Record<string | number, typeof books>);
-const years = Object.keys(booksByYear).sort((a, b) => Number(b) - Number(a));
+// Books: what I'm reading, then everything read, by year.
+import Base from '../../layouts/Base.astro';
+import { SITE, books, smart, bookHref, bookYear } from '../../utils/site';
+const reading = books.filter((b) => b.data.status === 'reading');
+const read = books.filter((b) => b.data.status !== 'reading');
+const years = [...new Set(read.map((b) => bookYear(b) ?? 0))];
+const list = { '@type': 'CollectionPage', '@id': `${SITE.url}/books/#collection`, name: 'Books', mainEntity: { '@type': 'ItemList', itemListElement: books.map((b, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(bookHref(b), SITE.url).toString(), name: smart(b.data.title) })) } };
 ---
-
-<Layout title="Book Notes — Bhuvan" description="Not reviews — passages I loved, thoughts they sparked, connections they made.">
-  <Nav active="books" />
-
-  <main class="split">
-    <div class="statement">
-      <h1 class="statement-text">Book <em>notes</em>. Not reviews: passages I loved, thoughts they sparked, connections they made.</h1>
+<Base title="Books" description={`Books Bhuvan has read, with a line on each and notes on some: ${books.length} so far.`} active="Books" schema={[list]} crumbs={[['Books', '/books/']]}>
+  <header class="g phead">
+    <span class="lbl ink">Books · {books.length}</span>
+    <div class="tt">
+      <h1>What I read, with a line on each. <span>Some with notes and highlights.</span></h1>
+      <p>Not reviews, more like the marks I leave in the margins. Ask me about any of them on <a href={SITE.twitter}>Twitter</a>.</p>
     </div>
-
-    <div class="margin">
-      {books.length === 0 && <p class="statement-sub">Book notes coming soon. In the meantime, I’m reading.</p>}
-      {years.map((year) => (
-        <section class="year">
-          <h2 class="group-h">{year}<span>{booksByYear[year].length} book{booksByYear[year].length !== 1 ? 's' : ''}</span></h2>
-          {booksByYear[year].map((book: any) => (
-            <article class="book">
-              <h3 class="b-title"><a href={`/books/${book.id}/`}>{smart(book.data.title)}</a></h3>
-              <p class="kicker">{book.data.author}{book.data.finishedDate ? ` · read ${book.data.finishedDate}` : ''}</p>
-              {book.data.pull && <blockquote class="b-pull">{smart(book.data.pull)}</blockquote>}
-              {book.data.hand && <p class="aside">{book.data.hand}</p>}
-              <a class="more" href={`/books/${book.id}/`}>Read the notes</a>
-            </article>
-          ))}
-        </section>
-      ))}
-    </div>
-  </main>
-
-  <Footer
-    meta="Bangalore · The Internet<br>Reading is just thinking that someone else started."
-    hand="All of these are better than whatever you're about to read next. Probably."
-  />
-</Layout>
-
-<style>
-  .year + .year { margin-top: 48px; }
-  .book { padding: 16px 0 24px; border-top: 1px solid var(--rule); }
-  .b-title { font-family: var(--serif); font-weight: 400; font-size: 1.6rem; line-height: 1.15; }
-  .b-title a:hover { color: var(--flame); }
-  .book .kicker { margin-top: 6px; }
-  .b-pull { margin-top: 14px; padding-left: 18px; border-left: 2px solid var(--flame); font-family: var(--serif); font-style: italic; font-size: 1.12rem; line-height: 1.5; }
-  .book .aside { margin-top: 12px; }
-</style>
+  </header>
+  {reading.length > 0 && (
+    <section class="g reading" aria-labelledby="h-reading">
+      <h2 class="gl" id="h-reading"><span class="num">→</span>Reading now</h2>
+      <div class="list">{reading.map((b) => <div class="brow"><h3><a href={bookHref(b)}>{smart(b.data.title)}</a><span class="lbl">{b.data.author}</span></h3>{b.data.hand && <p class="verdict">{smart(b.data.hand)}</p>}</div>)}</div>
+    </section>
+  )}
+  {years.map((y) => (
+    <section class="g reading" aria-label={y ? String(y) : 'Undated'}>
+      <h2 class="gl">{y || 'Earlier'}</h2>
+      <div class="list">
+        {read.filter((b) => (bookYear(b) ?? 0) === y).map((b) => (
+          <div class="brow"><h3><a href={bookHref(b)}>{smart(b.data.title)}</a><span class="lbl">{b.data.author}{b.data.status === 'abandoned' && ' · put down'}</span></h3>{b.data.hand && <p class="verdict">{smart(b.data.hand)}</p>}</div>
+        ))}
+      </div>
+    </section>
+  ))}
+</Base>

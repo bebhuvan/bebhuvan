@@ -5,9 +5,9 @@ description: "Rare Indian books rescued from bad scans. OCR and language models 
 status: active
 link: https://akshara.ink/
 url: akshara.ink
-icon: "अ"
 order: 4
 kind: "library"
+image: /project-images/akshara.webp
 ---
 
 Many old Indian books survive as a single blurry PDF in some government archive. Akshara turns them into pages you can actually read, starting with books like T. Ramakrishna's *Life in an Indian Village* (1891).

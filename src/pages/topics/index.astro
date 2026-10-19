@@ -1,0 +1,17 @@
+---
+// Every topic with at least two essays or notes.
+import Base from '../../layouts/Base.astro';
+import { topics, topicHref } from '../../utils/site';
+---
+<Base title="Topics" description={`Bhuvan’s essays and notes by topic: ${topics.slice(0, 8).map((t) => t.tag).join(', ')} and ${topics.length - 8} more.`} crumbs={[['Topics', '/topics/']]}>
+  <header class="g phead">
+    <span class="lbl ink">Topics · {topics.length}</span>
+    <div class="tt">
+      <h1>Essays and notes, by what they’re about.</h1>
+      <p>Any topic with at least two pieces. The number is how many.</p>
+    </div>
+  </header>
+  <section class="g topics">
+    <nav class="tcloud" aria-label="Topics">{topics.map((t) => <a href={topicHref(t.tag)}>{t.tag}<span>{t.count}</span></a>)}</nav>
+  </section>
+</Base>

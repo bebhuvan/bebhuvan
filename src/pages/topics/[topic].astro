@@ -1,0 +1,31 @@
+---
+// One topic: its essays, then its notes.
+import Base from '../../layouts/Base.astro';
+import NoteRow from '../../components/NoteRow.astro';
+import { SITE, topics, smart, short, fmt, postHref, topicHref } from '../../utils/site';
+export function getStaticPaths() {
+  return topics.map((t) => ({ params: { topic: t.slug }, props: { t } }));
+}
+const { t } = Astro.props;
+const name = t.tag.charAt(0).toUpperCase() + t.tag.slice(1);
+const parts = [t.posts.length && `${t.posts.length} ${t.posts.length === 1 ? 'essay' : 'essays'}`, t.notes.length && `${t.notes.length} ${t.notes.length === 1 ? 'note' : 'notes'}`].filter(Boolean).join(' and ');
+const list = { '@type': 'CollectionPage', '@id': `${SITE.url}${topicHref(t.tag)}#collection`, name, about: t.tag };
+---
+<Base title={name} description={`${name}: ${parts} by Bhuvan.`} schema={[list]} crumbs={[['Topics', '/topics/'], [name, topicHref(t.tag)]]}>
+  <header class="g phead">
+    <span class="lbl ink"><a href="/topics/">Topics</a> · {t.count}</span>
+    <div class="tt"><h1>{name}. <span>{parts}.</span></h1></div>
+  </header>
+  {t.posts.length > 0 && (
+    <section class="g year" aria-labelledby="h-essays">
+      <h2 class="gl" id="h-essays">Essays</h2>
+      <ul class="rows">{t.posts.map((p) => <li><a class="with-dek" href={postHref(p)}><b class="tt">{smart(p.data.title)}</b>{short(p.data.description) && <span class="dek">{short(p.data.description)}</span>}<time class="d" datetime={p.data.publishDate.toISOString()}>{fmt(p.data.publishDate)}</time></a></li>)}</ul>
+    </section>
+  )}
+  {t.notes.length > 0 && (
+    <section class="g nstream" aria-labelledby="h-tnotes">
+      <h2 class="colh" id="h-tnotes"><span>Notes</span><span class="lbl">{t.notes.length}</span></h2>
+      {t.notes.map((n) => <NoteRow n={n} level="h3" />)}
+    </section>
+  )}
+</Base>

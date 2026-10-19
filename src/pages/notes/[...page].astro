@@ -1,0 +1,50 @@
+---
+// Notes, newest first, 30 to a page: /notes/, /notes/2/, ... and one stream per kind:
+// /notes/links/, /notes/verse/, ...
+import type { GetStaticPaths, Page } from 'astro';
+import type { CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import NoteRow from '../../components/NoteRow.astro';
+import { notes, noteStreams } from '../../utils/site';
+export const getStaticPaths = (({ paginate }) =>
+  noteStreams.flatMap(([k, , kind]) => {
+    const list = kind ? notes.filter((n) => n.data.kind === kind) : notes;
+    return paginate(list, { pageSize: 30, props: { k } }).map((p) => {
+      // paginate gives "links/2"-style params when nested; flatten to one rest param
+      const n = p.props.page.currentPage;
+      return { ...p, params: { page: [k, n > 1 ? String(n) : ''].filter(Boolean).join('/') || undefined } };
+    });
+  })) satisfies GetStaticPaths;
+
+const { page, k } = Astro.props as { page: Page<CollectionEntry<'notes'>>; k: string };
+const base = k ? `/notes/${k}/` : '/notes/';
+const href = (n: number) => (n === 1 ? base : `${base}${n}/`);
+const kinds = noteStreams;
+const label = kinds.find(([x]) => x === k)![1];
+const title = k ? `Notes: ${label.toLowerCase()}` : 'Notes';
+const p = page.currentPage;
+const desc = k
+  ? `${label} from Bhuvan’s notes: ${page.total} of them, newest first.`
+  : `Short notes and links by Bhuvan: things worth your time with a line on why, quotes, verse and half-thoughts. ${notes.length} so far, newest first. Formerly rabbitholes.garden.`;
+---
+<Base title={p > 1 ? `${title}, page ${p}` : title} description={desc} active="Notes" prev={page.url.prev ? href(p - 1) : undefined} next={page.url.next ? href(p + 1) : undefined} crumbs={[['Notes', '/notes/'], ...(k ? [[label, base]] as [string, string][] : [])]}>
+  <header class="g phead">
+    <span class="lbl ink">Notes · {page.total}<span class="lbl count">Page {p} of {page.lastPage}</span></span>
+    <div class="tt">
+      <h1>Short things, kept in the open. <span>A commonplace book, formerly rabbitholes.garden.</span></h1>
+      <p>Links worth your time with a line on why, quotes, verse, half-thoughts and the occasional rant. Longer pieces live in <a href="/writing/">writing</a>. Follow along by <a href="/notes/rss.xml">RSS</a>.</p>
+    </div>
+  </header>
+  <nav class="g" aria-label="Kinds of note"><div class="filters">{kinds.map(([x, l]) => <a href={x ? `/notes/${x}/` : '/notes/'} aria-current={x === k ? 'page' : undefined}>{l}</a>)}<a href="/topics/">By topic</a></div></nav>
+  <section class="g nstream">
+    <div class="nh lbl" aria-hidden="true"><span class="c1">Date</span><span class="c2">Kind</span><span class="c3">Note</span><span class="c4">Source</span></div>
+    {page.data.map((n) => <NoteRow n={n} />)}
+  </section>
+  <div class="g pager">
+    <nav aria-label="Pages">
+      {page.url.prev ? <a href={href(p - 1)} rel="prev">← Newer</a> : <span class="off">← Newer</span>}
+      <span class="lbl">Page {p} of {page.lastPage}</span>
+      {page.url.next ? <a href={href(p + 1)} rel="next">Older →</a> : <span class="off">Older →</span>}
+    </nav>
+  </div>
+</Base>

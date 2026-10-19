@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import { posts, notes, postHref, noteHref, smart } from '../utils/site';
+---
+<Base title="Not found" description="This page isn’t here." noindex>
+  <section class="g lost">
+    <div class="tt">
+      <h1>This page isn’t here. <span>It may have moved when Rabbit Holes became the notes.</span></h1>
+      <p>Try the <a href="/writing/">essays</a>, the <a href="/notes/">notes</a> or the <a href="/topics/">topics</a>. The newest essay is <a href={postHref(posts[0])}>{smart(posts[0].data.title)}</a>, and the newest note is <a href={noteHref(notes[0])}>{smart(notes[0].data.title)}</a>.</p>
+    </div>
+  </section>
+</Base>

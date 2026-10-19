@@ -7,6 +7,7 @@ url: tipsheet.markets
 status: active
 kind: "numbers"
 order: 7
+image: /project-images/tipsheet.webp
 ---
 
 It asks what you would ask before putting money in. Is the market expensive? Is it rising? Are most stocks taking part? How much of it runs on borrowed money? Breadth, flows, leverage and the economy, all in one place.
