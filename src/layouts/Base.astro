@@ -120,8 +120,7 @@ const nav = [['Writing', '/writing/'], ['Notes', '/notes/'], ['Projects', '/proj
 <body>
   <a class="skip" href="#main">Skip to the content</a>
   <header class="g head">
-    <a class="name" href="/" rel="home">Bhuvan<i>.</i></a>
-    <span class="lbl when">Essays, notes and small websites</span>
+    <div class="id"><a class="name" href="/" rel="home">Bhuvan<i>.</i></a><span class="lbl when">Essays, notes and small websites</span></div>
     <nav aria-label="Sections">{nav.map(([l, h]) => <a href={h} aria-current={l === active ? 'page' : undefined}>{l}</a>)}</nav>
   </header>
   <main id="main">

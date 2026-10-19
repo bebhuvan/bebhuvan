@@ -39,11 +39,13 @@ img { display: block; max-width: 100%; height: auto; }
 .more:hover { color: var(--flame); }
 
 /* header */
-.head { padding-top: 22px; padding-bottom: 20px; align-items: baseline; border-bottom: 1px solid var(--rule); }
-.head .name { grid-column: 1 / 4; font-weight: 600; font-size: 1.15rem; letter-spacing: -.015em; }
+/* name and line on the left, nav set tight on the right; the rule spans the content width, like the section rules */
+.head { padding-top: 22px; align-items: baseline; }
+.head::after { content: ''; grid-column: 1 / -1; margin-top: 20px; border-top: 1px solid var(--rule); }
+.head .id { grid-column: 1 / 7; display: flex; align-items: baseline; gap: 16px; }
+.head .name { font-weight: 600; font-size: 1.15rem; letter-spacing: -.015em; }
 .head .name i { font-style: normal; color: var(--flame); }
-.head .when { grid-column: 4 / 7; }
-.head nav { grid-column: 7 / 13; display: flex; justify-content: space-between; }
+.head nav { grid-column: 7 / 13; display: flex; justify-content: flex-end; gap: 32px; }
 .head nav a { font-size: .95rem; color: var(--soft); transition: color .2s; }
 .head nav a:hover, .head nav a[aria-current] { color: var(--ink); }
 .head nav a[aria-current]::before { content: ''; display: inline-block; width: .5em; height: .5em; background: var(--flame); margin-right: .45em; vertical-align: .08em; }
@@ -285,7 +287,6 @@ img { display: block; max-width: 100%; height: auto; }
   .ebody > .prose, .ebody > .endbox { grid-column: 3 / 11; }
   .prose p:has(> img) { width: 100%; }
   .head .when { display: none; }
-  .head nav { grid-column: 5 / 13; }
   .cover { grid-column: 1 / -1; margin-bottom: 40px; }
   .also { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; column-gap: var(--gut); }
   .also .more { grid-column: 1 / -1; }
@@ -294,7 +295,7 @@ img { display: block; max-width: 100%; height: auto; }
 }
 @media (max-width: 860px) {
   :root { --edge: 20px; --gut: 16px; }
-  .head .name { grid-column: 1 / -1; }
+  .head .id { grid-column: 1 / -1; }
   .head nav { grid-column: 1 / -1; margin-top: 10px; justify-content: flex-start; gap: 18px; flex-wrap: wrap; }
   .hero { padding-top: 32px; padding-bottom: 70px; }
   .hero .pic { grid-column: 1 / 7; margin-bottom: 28px; }
