@@ -3,12 +3,13 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "node scripts/images.mjs && astro dev",
-    "build": "node scripts/images.mjs && astro build",
+    "dev": "node scripts/link-previews.mjs && node scripts/images.mjs && astro dev",
+    "build": "node scripts/link-previews.mjs && node scripts/images.mjs && astro build",
     "preview": "astro preview",
     "deploy": "wrangler deploy",
     "astro": "astro",
-    "images": "node scripts/images.mjs"
+    "images": "node scripts/images.mjs",
+    "previews": "node scripts/link-previews.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^7.3.3",
@@ -17,6 +18,8 @@
     "@fontsource-variable/host-grotesk": "^5.3.0",
     "@fontsource-variable/source-serif-4": "^5.3.1",
     "astro": "^7.3.8",
+    "hast-util-to-html": "^9.0.5",
+    "hastscript": "^9.0.1",
     "rss-parser": "^3.13.0",
     "sharp": "^0.35.5"
   },

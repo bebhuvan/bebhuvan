@@ -1,8 +1,11 @@
 // rehype-bare-links
 // ----------------------------------------------------------------------------
 // A paragraph that is nothing but a pasted URL (common in notes: a tweet, an
-// article) becomes a tidy source line: "x.com/user/status/… ↗" with class
-// "linkline", instead of a long raw address breaking across the measure.
+// article) becomes a link preview card (src/plugins/link-preview.js, data fetched
+// by scripts/link-previews.mjs). With no preview, it becomes a tidy source line,
+// "x.com/user/status/… ↗" with class "linkline", instead of a raw address.
+import { cardHast } from './link-preview.js';
+
 export default function rehypeBareLinks() {
   return (tree) => walk(tree);
 }
@@ -17,6 +20,11 @@ function walk(node) {
         const text = a.children.map((k) => k.value ?? '').join('').trim();
         const href = String(a.properties?.href ?? '');
         if (/^https?:\/\//.test(text) && /^https?:\/\//.test(href)) {
+          const card = cardHast(href);
+          if (card) {
+            node.children[node.children.indexOf(c)] = card;
+            continue;
+          }
           c.properties = { ...(c.properties || {}), className: ['linkline'] };
           a.children = [{ type: 'text', value: pretty(href) }];
           continue;

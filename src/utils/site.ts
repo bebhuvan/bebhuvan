@@ -1,6 +1,7 @@
 // Shared data and formatting for every page. Collections are read once here.
 import { getCollection } from 'astro:content';
 import { imageAttrs, imageInfo } from '../plugins/rehype-image-attrs.js';
+import { host } from '../plugins/link-preview.js';
 import { smart } from './typo';
 export { smart };
 
@@ -79,14 +80,7 @@ export const clip = (s: string, n: number) => (s.length > n ? s.slice(0, s.lastI
 export const excerpt = (n: { body?: string; data: { description?: string } }, len = 240) =>
   smart(n.data.description || clip(plain(n.body), len));
 
-export const domain = (u?: string) => {
-  if (!u) return '';
-  try {
-    return new URL(u).hostname.replace(/^www\.|^m\./, '').replace(/\.cdn\.ampproject\.org$/, '');
-  } catch {
-    return '';
-  }
-};
+export const domain = (u?: string) => (u ? host(u) : '');
 
 export const kindLabel: Record<string, string> = { note: 'Note', link: 'Link', quote: 'Quote', verse: 'Verse' };
 export const projectKinds = [

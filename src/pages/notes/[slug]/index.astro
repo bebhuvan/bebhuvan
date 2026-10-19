@@ -5,6 +5,7 @@ import { getCollection, render } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
 import { SITE, notes, fmtLong, smart, domain, kindLabel, noteHref, topicHref, hasTopic, plain, clip, words } from '../../../utils/site';
 import { imageAttrs } from '../../../plugins/rehype-image-attrs.js';
+import { cardHtml } from '../../../plugins/link-preview.js';
 
 export async function getStaticPaths() {
   // drafts stay private: no page until they're published
@@ -19,6 +20,8 @@ const older = i >= 0 && i < notes.length - 1 ? notes[i + 1] : undefined;
 const description = smart(d.description) || clip(plain(n.body), 155) || smart(d.title);
 const url = new URL(noteHref(n), SITE.url).toString();
 const img = d.image ? imageAttrs(d.image) : {};
+// the source as a preview card, unless the text already pastes it on its own line
+const sourceCard = d.url && !(n.body ?? '').includes(d.url) ? cardHtml(d.url) : '';
 const posting = {
   '@type': 'BlogPosting',
   '@id': `${url}#article`,
@@ -53,7 +56,7 @@ const posting = {
     </header>
     <div class="g ebody nbody">
       <div class:list={['prose', { verse: d.kind === 'verse' }]}>
-        {d.url && <a class="source" href={d.url} rel="noopener"><span class="lbl">Source</span><b>{domain(d.url)}</b><span aria-hidden="true">↗</span></a>}
+        {sourceCard ? <Fragment set:html={sourceCard} /> : d.url && <a class="source" href={d.url} rel="noopener"><span class="lbl">Source</span><b>{domain(d.url)}</b><span aria-hidden="true">↗</span></a>}
         {d.image && <figure><img src={img.src ?? d.image} srcset={img.srcset} sizes={img.sizes} width={img.width} height={img.height} alt={d.imageAlt ?? ''} decoding="async" /></figure>}
         <Content />
       </div>
