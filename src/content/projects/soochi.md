@@ -7,6 +7,7 @@ url: soochi.fyi
 status: active
 kind: "numbers"
 order: 9
+image: /project-images/soochi.webp
 ---
 
 *Soochi* (सूची) means a list. Over five hundred entries, sorted by kind and by topic, from health and welfare to land, water and cities.

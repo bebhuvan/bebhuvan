@@ -1,228 +1,107 @@
 ---
-// Home: one sentence about me, pinned on the left. Its numbered words are the
-// navigation; what they point to lives in the margin on the right.
-import { getCollection, render } from 'astro:content';
-import { smart } from '../utils/typo';
-import { groupProjects } from '../utils/projects';
-import Layout from '../layouts/Layout.astro';
-import Nav from '../components/Nav.astro';
-import Footer from '../components/Footer.astro';
+// Home: who, then writing, notes, building, collaborators, now and the shelf, as
+// numbered sections on the grid.
+import Base from '../layouts/Base.astro';
+import Invite from '../components/Invite.astro';
+import { render } from 'astro:content';
+import { SITE, posts, notes, projects, nowEntries, books, short, fmt, fmtLong, smart, minutes, postHref, noteHref, bookHref, domain, excerpt, bookYear, srcset } from '../utils/site';
 
-const posts = (await getCollection('blog'))
-  .filter((p) => !p.data.draft)
-  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
-const [latest, ...rest] = posts;
-
-const notes = (await getCollection('updates'))
-  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
-  .slice(0, 4);
-
-const projects = (await getCollection('projects'))
-  .filter((p) => p.data.status !== 'archived')
-  .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
-
-const books = (await getCollection('books'))
-  .sort((a, b) => (b.data.year ?? 0) - (a.data.year ?? 0));
-
-const nowEntries = (await getCollection('now'))
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-const nowLatest = nowEntries[0];
-const NowContent = nowLatest ? (await render(nowLatest)).Content : null;
-
-// "From the margins": one margin note from the archive, pulled at build time.
-// Sources: markdown footnotes ([^n]: …) and legacy <span class="sn"> asides in
-// essays, plus `marginNote` on short notes. The pick rotates by build day.
-const plain = (md: string) => md
-  .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')   // [text](url) → text
-  .replace(/[*_`]/g, '')
-  .replace(/<[^>]+>/g, '')
-  .trim();
-type Aside = { text: string; title: string; href: string };
-const asides: Aside[] = [
-  ...posts.flatMap((p) => {
-    const body = p.body || '';
-    const found = [
-      ...[...body.matchAll(/^\[\^[^\]]+\]:\s*(.+)$/gm)].map((m) => m[1]),
-      ...[...body.matchAll(/<span class="sn">([\s\S]*?)<\/span>/g)].map((m) => m[1]),
-    ];
-    return found.map((t) => ({ text: plain(t), title: p.data.title, href: `/blog/${p.id}/` }));
-  }),
-  ...(await getCollection('updates'))
-    .filter((u) => u.data.marginNote)
-    .map((u) => ({ text: u.data.marginNote!, title: u.data.title, href: `/updates/${u.id}/` })),
-].filter((a) => a.text.length > 20 && a.text.length < 240);
-const day = Math.floor(Date.now() / 86_400_000);
-const aside = asides.length ? asides[day % asides.length] : null;
-
-const projectGroups = groupProjects(projects);
-// WordPress-era descriptions were cut off with an ellipsis; those read worse than none
-const dek = (d?: string) => (d && !/(\.\.\.|…)\s*$/.test(d) ? smart(d) : '');
-
-const fmt = (d: Date) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
-const fmtShort = (d: Date) => d.toLocaleDateString('en-GB', { month: 'short', year: 'numeric' });
+const lead = posts.find((p) => p.data.image) ?? posts[0];
+const also = posts.filter((p) => p !== lead).slice(0, 4);
+const featured = projects.filter((p) => p.data.featured && p.data.image).slice(0, 3);
+const rest = projects.filter((p) => !featured.includes(p));
+const latest = notes.slice(0, 6);
+const cols = [latest.slice(0, 2), latest.slice(2, 4), latest.slice(4, 6)];
+const now = nowEntries[0];
+const { Content: NowText } = now ? await render(now) : { Content: null };
+const reading = books.filter((b) => b.data.status === 'reading');
+const shelf = [...reading, ...books.filter((b) => b.data.status === 'read')].slice(0, 5);
+const since = posts.at(-1)?.data.publishDate.getFullYear();
 ---
-
-<Layout title="Bhuvan">
-  <Nav />
-
-  <main class="split">
-    <div class="statement">
-      <h1 class="statement-text">
-        I’m Bhuvan. By day I work at Zerodha on markets, data and curation. The rest of the time I <span class="ph" data-k="essays">write essays<a class="r" href="#essays" aria-label="Essays">1</a></span> that few people read, <span class="ph" data-k="websites">build small websites<a class="r" href="#websites" aria-label="Projects">2</a></span> nobody asked for, <span class="ph" data-k="notes">keep short notes<a class="r" href="#notes" aria-label="Notes">3</a></span> on whatever caught my eye, and <span class="ph" data-k="books">write about the books<a class="r" href="#books" aria-label="Books">4</a></span> I loved. <span class="ph" data-k="now">Right now<a class="r" href="#now" aria-label="Now">5</a></span> I’m lost in the treasures hiding in the public domain, and what on earth to do with them.
-      </h1>
-      <div class="signature">
-        <img class="portrait" src="/profile-pic-160.webp" alt="Bhuvan" width="44" height="44" loading="eager" decoding="async" />
-        <p class="statement-sub">Doer of random things, diver of weird rabbit holes, sharer of fascinating things. Bangalore. <span class="links"><a href="/rss.xml">RSS</a> · <a href="https://twitter.com/bhuvanesh2007">Twitter</a></span></p>
+<Base title={`${SITE.name}: essays, notes and small websites`} description={SITE.description} type="profile" image="/og.jpg" home>
+  <section class="g hero">
+    <figure class="pic">
+      <img src="/profile-pic.webp" alt="A cartoon of Bhuvan, grinning, with a peace sign" width="800" height="800" fetchpriority="high" />
+    </figure>
+    <div class="say">
+      <h1>Doer of random things, diver of weird rabbit holes, sharer of fascinating things. <span>Hi, I’m Bhuvan.</span></h1>
+      <p class="stand">By day I work at Zerodha on markets, data and curation. The rest of the time I write <a href="/writing/">long essays</a> that few people read, build <a href="/projects/">small websites</a> nobody asked for and keep <a href="/notes/">short notes</a> on whatever caught my eye.</p>
+      <div class="facts">
+        <div><span class="lbl">Based in</span><br />{SITE.city}</div>
+        <div><span class="lbl">Writing since</span><br />{since}, {posts.length} essays, {notes.length} notes</div>
+        <div><span class="lbl">Looking for</span><br /><a href="#collaborate">Collaborators →</a></div>
       </div>
-      {aside && (
-        <figure class="from-margins">
-          <figcaption class="fm-label">From the margins</figcaption>
-          <blockquote class="fm-text">{smart(aside.text)}</blockquote>
-          <p class="fm-src">A note in <a href={aside.href}>{smart(aside.title)}</a></p>
-        </figure>
-      )}
     </div>
+  </section>
 
-    <div class="margin">
-      <section class="ann" id="essays">
-        <h2 class="ann-head"><span class="n">1</span>Essays <span class="count">{posts.length}</span></h2>
-        {latest && (
-          <article class="featured">
-            <p class="kicker">{fmt(latest.data.publishDate)}</p>
-            <h3 class="featured-title"><a href={`/blog/${latest.id}/`}>{smart(latest.data.title)}</a></h3>
-            {latest.data.description && <p class="featured-dek">{smart(latest.data.description)}</p>}
-          </article>
-        )}
-        <ul class="second">
-          {rest.slice(0, 2).map((p) => (
-            <li><a class="sec" href={`/blog/${p.id}/`}>
-              <span class="kicker">{fmt(p.data.publishDate)}</span>
-              <span class="sec-t"><span class="hl">{smart(p.data.title)}</span></span>
-              {dek(p.data.description) && <span class="sec-x">{dek(p.data.description)}</span>}
-            </a></li>
-          ))}
-        </ul>
-        <ul class="list tight">
-          {rest.slice(2, 6).map((p) => (
-            <li><a class="row" href={`/blog/${p.id}/`}><span class="t"><span class="hl">{smart(p.data.title)}</span></span><span class="d">{fmtShort(p.data.publishDate)}</span></a></li>
-          ))}
-        </ul>
-        <a class="more" href="/writing/">All {posts.length} essays</a>
-      </section>
+  <section class="g writing" aria-labelledby="h-writing">
+    <h2 class="colh" id="h-writing"><span><span class="num">01</span>Writing</span><a class="more" href="/writing/">All {posts.length} essays</a></h2>
+    <article class="cover">
+      {lead.data.image && <a class="img" href={postHref(lead)} tabindex="-1" aria-hidden="true"><img src={lead.data.image} srcset={srcset(lead.data.image)} sizes="(max-width: 1100px) 100vw, 880px" alt="" width="1408" height="792" loading="lazy" decoding="async" /></a>}
+      <span class="lbl meta">{lead.data.tags[0] && <span class="dom">{lead.data.tags[0]}</span>}{lead.data.tags[0] && ' · '}<time datetime={lead.data.publishDate.toISOString()}>{fmtLong(lead.data.publishDate)}</time> · {minutes(lead)} min</span>
+      <h3><a href={postHref(lead)}>{smart(lead.data.title)}</a></h3>
+      <p class="dek">{short(lead.data.description)}</p>
+    </article>
+    <aside class="also" aria-label="More essays">
+      {also.map((p) => (
+        <article>
+          <time class="lbl" datetime={p.data.publishDate.toISOString()}>{fmt(p.data.publishDate)}</time>
+          <h3><a href={postHref(p)}>{smart(p.data.title)}</a></h3>
+          {short(p.data.description) && <p class="dek">{short(p.data.description)}</p>}
+        </article>
+      ))}
+      <a class="more" href="/writing/">Every essay →</a>
+    </aside>
+  </section>
 
-      <section class="ann" id="websites">
-        <h2 class="ann-head"><span class="n">2</span>Projects <span class="count">{projects.length}</span></h2>
-        {projectGroups.map((g) => (
-          <div class="pg">
-            <h3 class="pg-h">{g.label}</h3>
-            <ul>
-              {g.items.map((p) => (
-                <li><a class="prow" href={p.data.link || '/projects/'}><span class="pn"><span class="hl">{smart(p.data.title)}</span></span>{p.data.tagline && <span class="pt">{smart(p.data.tagline)}</span>}</a></li>
-              ))}
-            </ul>
+  <section class="g briefs" aria-labelledby="h-notes">
+    <h2 class="colh" id="h-notes"><span><span class="num">02</span>Notes and links</span><a class="more" href="/notes/">All {notes.length} notes</a></h2>
+    {cols.map((c) => (
+      <div class="brief">
+        {c.map((n) => (
+          <div class="item">
+            <span class="lbl"><time datetime={n.data.date.toISOString()}>{fmt(n.data.date)}</time>{n.data.url && <> · <span class="dom">{domain(n.data.url)}</span></>}</span>
+            <h3><a href={noteHref(n)}>{smart(n.data.title)}</a></h3>
+            <p>{excerpt(n, 220)}</p>
           </div>
         ))}
-        <a class="more" href="/projects/">What each one is</a>
-      </section>
+      </div>
+    ))}
+  </section>
 
-      <section class="ann" id="notes">
-        <h2 class="ann-head"><span class="n">3</span>Notes</h2>
-        <ul class="list">
-          {notes.map((n) => (
-            <li><a class="row" href={`/updates/${n.id}/`}><span class="t"><span class="hl">{smart(n.data.title)}</span></span><span class="d">{fmt(n.data.publishDate)}</span></a></li>
-          ))}
-        </ul>
-        <a class="more" href="/marginalia/">All notes</a>
-      </section>
-
-      {books.length > 0 && (
-        <section class="ann" id="books">
-          <h2 class="ann-head"><span class="n">4</span>Books <span class="count">{books.length}</span></h2>
-          <ul class="list">
-            {books.map((b) => (
-              <li><a class="row" href={`/books/${b.id}/`}><span class="t"><span class="hl">{smart(b.data.title)}</span></span><span class="d">{b.data.author}</span></a></li>
-            ))}
-          </ul>
-          <a class="more" href="/books/">Book notes</a>
-        </section>
-      )}
-
-      {nowLatest && NowContent && (
-        <section class="ann" id="now">
-          <h2 class="ann-head"><span class="n">5</span>Now <span class="count">{fmt(nowLatest.data.date)}</span></h2>
-          <div class="prose now-snippet"><NowContent /></div>
-          <a class="more" href="/now/">What I’m doing now</a>
-        </section>
-      )}
+  <section class="g building" aria-labelledby="h-building">
+    <h2 class="colh" id="h-building"><span><span class="num">03</span>Building</span><a class="more" href="/projects/">All {projects.length} projects</a></h2>
+    {featured.map((p, i) => (
+      <a class:list={['shot', i === 0 ? 'big' : 'sm']} href={p.data.link}>
+        <span class="frame"><img src={p.data.image} srcset={srcset(p.data.image, [768, 1400])} sizes={i === 0 ? '(max-width: 860px) 100vw, 880px' : '(max-width: 860px) 50vw, 430px'} alt={`The ${p.data.title} home page`} width="1280" height="800" loading="lazy" decoding="async" /></span>
+        <h3>{smart(p.data.title)}</h3>
+        <p class="dek">{smart(p.data.tagline ?? '')}</p>
+        <span class="lbl dom">{p.data.url}</span>
+      </a>
+    ))}
+    <div class="ptable">
+      {rest.map((p) => <a href={p.data.link}><b>{smart(p.data.title)}</b><span>{smart(p.data.tagline ?? '')}</span></a>)}
     </div>
-  </main>
+  </section>
 
-  <Footer />
-</Layout>
+  <Invite num="04" />
 
-<style>
-  /* Essays: three levels. The lead (global .featured), two with their deks, then a compact list. */
-  .featured { padding-bottom: 24px; border-bottom: 1px solid var(--rule); }
-  .second { list-style: none; }
-  .sec { display: grid; gap: 6px; padding: 18px 0; border-bottom: 1px solid var(--rule); }
-  .sec-t { font-family: var(--serif); font-size: 1.3rem; line-height: 1.25; letter-spacing: -.005em; text-wrap: balance; }
-  .sec-x { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 1.04rem; line-height: 1.45; color: var(--ink-soft); text-wrap: pretty;
-           display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-  .sec:hover .hl { background-size: 100% var(--marker-h); }
-  .tight .row { padding: 8px 0; }
-  .tight .t { font-size: 1.02rem; }
-
-  /* Projects: grouped as on /projects; each name says what it is */
-  .pg + .pg { margin-top: 26px; }
-  .pg-h { padding-bottom: 7px; border-bottom: 1px solid var(--rule-strong); font-size: .7rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); }
-  .pg ul { list-style: none; }
-  .prow { display: grid; grid-template-columns: 11.5em minmax(0, 1fr); gap: 2px 18px; align-items: baseline; padding: 8px 0; border-bottom: 1px solid var(--rule); }
-  .pn { font-family: var(--serif); font-size: 1.08rem; line-height: 1.3; }
-  .pt { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 1rem; line-height: 1.4; color: var(--ink-soft); }
-  .prow:hover .hl { background-size: 100% var(--marker-h); }
-
-  @media (max-width: 600px) {
-    /* the compact list keeps its date on the same line, at the right */
-    .tight .row { grid-template-columns: minmax(0, 1fr) auto; gap: 2px 14px; }
-    .tight .row .d { order: 0; }
-    .sec-t { font-size: 1.22rem; }
-    .prow { grid-template-columns: minmax(0, 1fr); gap: 1px; }
-  }
-
-  .now-snippet :global(p) { font-size: 1.1rem; }
-
-  /* From the margins: one note from the archive, set like a margin note */
-  .from-margins { margin-top: 9vh; max-width: 30em; padding-left: 18px; border-left: 1px solid var(--flame); }
-  .fm-label { font-weight: 600; font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--flame); }
-  .fm-text { margin-top: 8px; font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 1.22rem; line-height: 1.45; color: var(--ink); text-wrap: pretty; }
-  .fm-src { margin-top: 10px; font-size: .86rem; color: var(--ink-soft); }
-  .fm-src a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--flame); text-underline-offset: 3px; }
-  .fm-src a:hover { color: var(--flame); }
-
-  /* The sentence and its margin answer each other (CSS only).
-     Hover a reference: its annotation stays, the others step back.
-     Hover an annotation: its number in the sentence lights up. */
-  .ann { transition: opacity .3s; }
-  .split:has(.r:hover) .ann { opacity: .28; }
-  .split:has(.r[href="#essays"]:hover) #essays,
-  .split:has(.r[href="#websites"]:hover) #websites,
-  .split:has(.r[href="#notes"]:hover) #notes,
-  .split:has(.r[href="#books"]:hover) #books,
-  .split:has(.r[href="#now"]:hover) #now { opacity: 1; }
-  /* hovering a reference or its annotation sweeps the highlighter under the phrase */
-  .split:has(.r[href="#essays"]:hover, #essays:hover) .ph[data-k="essays"],
-  .split:has(.r[href="#websites"]:hover, #websites:hover) .ph[data-k="websites"],
-  .split:has(.r[href="#notes"]:hover, #notes:hover) .ph[data-k="notes"],
-  .split:has(.r[href="#books"]:hover, #books:hover) .ph[data-k="books"],
-  .split:has(.r[href="#now"]:hover, #now:hover) .ph[data-k="now"],
-  .ph:has(.r:focus-visible) { background-size: 100% var(--marker-h); }
-  .ann:target .ann-head { color: var(--flame); }
-
-  /* the pinned column is nearly a screen tall here; on short screens let it scroll */
-  @media (max-height: 860px) and (min-width: 861px) {
-    .statement { position: static; }
-  }
-  @media (max-width: 860px) {
-    .from-margins { margin-top: 44px; }
-  }
-</style>
+  <section class="g lower">
+    {now && (
+      <div class="now">
+        <h2 class="colh"><span><span class="num">05</span><a href="/now/">Now</a></span><span class="lbl">Updated <time datetime={now.data.date.toISOString()}>{fmtLong(now.data.date)}</time></span></h2>
+        <div class="txt">{NowText && <NowText />}</div>
+        <p class="sig">— B.</p>
+      </div>
+    )}
+    <div class="shelf">
+      <h2 class="colh"><span><span class="num">06</span>On the shelf</span><a class="more" href="/books/">Books</a></h2>
+      {shelf.map((b) => (
+        <div class="row">
+          <span class="lbl">{b.data.status === 'reading' ? 'Reading' : bookYear(b) ?? ''}</span>
+          <span><a href={bookHref(b)}><strong>{smart(b.data.title)}</strong></a><em>{b.data.author}</em></span>
+        </div>
+      ))}
+    </div>
+  </section>
+</Base>

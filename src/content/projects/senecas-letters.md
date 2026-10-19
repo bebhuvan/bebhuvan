@@ -5,10 +5,11 @@ description: "All 124 of Seneca's letters to Lucilius, set to be read one at a t
 status: active
 link: https://seneca.ink/
 url: seneca.ink
-icon: "📜"
 story: "my proudest project — the one I'd want to be remembered for"
 order: 1
 kind: "library"
+image: /project-images/senecas-letters.webp
+featured: true
 ---
 
 Letters on virtue, death, friendship and the art of living well, written in the last years of a life spent at the centre of Roman power. There are over a thousand footnotes, and a random-letter button for the days you don't know where to start.

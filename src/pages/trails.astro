@@ -1,55 +1,32 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Nav from '../components/Nav.astro';
-import Footer from '../components/Footer.astro';
+// Elsewhere: the latest from my other writing, fetched when the site is built.
+import Base from '../layouts/Base.astro';
 import { aggregateRSSFeeds } from '../utils/rss-aggregator';
-
-let rssItems: any[] = [];
-try {
-  rssItems = await aggregateRSSFeeds(20);
-} catch (e) {}
-
-const itemsByMonth = rssItems.reduce((acc, item) => {
-  const key = new Date(item.pubDate).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
-  (acc[key] ||= []).push(item);
-  return acc;
-}, {} as Record<string, typeof rssItems>);
-const months = Object.keys(itemsByMonth);
+import { fmt } from '../utils/site';
+let items: Awaited<ReturnType<typeof aggregateRSSFeeds>> = [];
+try { items = await aggregateRSSFeeds(30); } catch {}
+const sources = [
+  { name: 'Substack', home: 'https://bhuvan.substack.com/', blurb: 'The newsletter' },
+  { name: 'Paper Lanterns', home: 'https://paperlanterns.ink/', blurb: 'Letters and speeches from the public domain' },
+];
 ---
-
-<Layout title="Trails — Bhuvan" description="The latest from my other corners of the internet: my Substack, Rabbit Holes and Paper Lanterns.">
-  <Nav active="trails" />
-
-  <main class="split">
-    <div class="statement">
-      <h1 class="statement-text"><em>Trails</em>: the latest from my other corners of the internet, my Substack, Rabbit Holes and Paper Lanterns.</h1>
-      <p class="statement-sub">Gathered each time the site is built. For essays by other people worth an afternoon, see <a href="https://smallweb.blog/">Smallweb</a>.</p>
+<Base title="Elsewhere" description="The latest from Bhuvan’s other writing: the Substack and Paper Lanterns." crumbs={[['Elsewhere', '/trails/']]}>
+  <header class="g phead">
+    <span class="lbl ink">Elsewhere</span>
+    <div class="tt">
+      <h1>The latest from my other corners of the internet.</h1>
+      <p>Gathered each time this site is built. For essays by other people worth an afternoon, see <a href="https://smallweb.blog/">Smallweb</a>.</p>
     </div>
-
-    <div class="margin">
-      {rssItems.length === 0 && <p class="statement-sub">The feeds couldn’t be reached when this page was built.</p>}
-      {months.map((month) => (
-        <section class="month">
-          <h2 class="group-h">{month}</h2>
-          <ul class="list">
-            {itemsByMonth[month].map((item) => (
-              <li>
-                <a class="row" href={item.link} target="_blank" rel="noopener">
-                  <span class="t"><span class="hl">{item.title}</span></span>
-                  <span class="d">{item.source} · {new Date(item.pubDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}</span>
-                  {item.excerpt && <span class="x">{item.excerpt}</span>}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ))}
-    </div>
-  </main>
-
-  <Footer />
-</Layout>
-
-<style>
-  .month + .month { margin-top: 48px; }
-</style>
+  </header>
+  {sources.map((s) => {
+    const list = items.filter((i) => i.source === s.name).slice(0, 12);
+    return (
+      <section class="g trail" aria-label={s.name}>
+        <div class="gl"><b>{s.name}</b><span class="dek">{s.blurb}</span><br /><a href={s.home}>Visit ↗</a></div>
+        <ul class="rows">
+          {list.length ? list.map((i) => <li><a href={i.link} rel="noopener"><b>{i.title}</b><span class="dek"></span><span class="d">{fmt(new Date(i.pubDate))}</span></a></li>) : <li><span class="dek">Couldn’t reach the feed when this page was built.</span></li>}
+        </ul>
+      </section>
+    );
+  })}
+</Base>

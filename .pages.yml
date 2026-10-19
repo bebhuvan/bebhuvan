@@ -1,190 +1,386 @@
+# Pages CMS (https://app.pagescms.org) for bebhuvan.com.
+# Docs: https://pagescms.org/docs/configuration/
+#
+# Built for posting from a phone: every collection opens newest first, only the
+# fields you need are required, and dates fill themselves in. Saving commits to the
+# repo; the site rebuilds and deploys on its own a minute or two later.
+#
+# Keep in step with src/content.config.ts (the site's own schema).
+
 media:
-  - name: blog_media
-    label: Blog Images
+  - name: essays
+    label: Essay images
     input: public/blog-images
     output: /blog-images
-    extensions: [jpg, jpeg, png, webp, gif]
-  - name: project_media
-    label: Project Images
+    categories: [image]
+    rename: safe
+  - name: notes
+    label: Note images
+    input: public/note-images
+    output: /note-images
+    categories: [image]
+    rename: safe
+  - name: books
+    label: Book images
+    input: public/book-images
+    output: /book-images
+    categories: [image]
+    rename: safe
+  - name: projects
+    label: Project images
     input: public/project-images
     output: /project-images
-    extensions: [jpg, jpeg, png, webp, gif]
-  - name: update_media
-    label: Update Images
-    input: public/update-images
-    output: /update-images
-    extensions: [jpg, jpeg, png, webp, gif]
+    categories: [image]
+    rename: safe
+
+settings:
+  # keep frontmatter keys this file doesn't list (older posts carry a few) when saving
+  content:
+    merge: true
+  commit:
+    templates:
+      create: "Add {path} (via Pages CMS)"
+      update: "Edit {path} (via Pages CMS)"
+      delete: "Delete {path} (via Pages CMS)"
+      rename: "Rename {oldPath} to {newPath} (via Pages CMS)"
 
 components:
-  summary_text:
-    label: Summary Text
-    type: text
-    options:
-      rows: 6
-      autoresize: false
-  external_link:
-    label: External Link
+  tags:
+    label: Tags
+    type: string
+    list: true
+    description: "Optional. Lower case, one per line, e.g. economics, india, ai. Tags used twice or more get a page under /topics/."
+  url:
     type: string
     pattern:
-      regex: '^https?://.+$'
-      message: 'Use a full URL starting with http:// or https://'
+      regex: '^(https?://\S+)?$'
+      message: "One full address starting with https://, nothing else."
 
 content:
-  - name: blog
-    label: Blog Posts
-    path: src/content/blog
+  # ---------------------------------------------------------------- notes
+  - name: notes
+    label: Notes
     type: collection
+    path: src/content/notes
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      primary: title
+      fields: [title, kind, date, draft]
+      sort: [date, title]
+      search: [title, tags]
+      default:
+        sort: date
+        order: desc
     fields:
       - name: title
         label: Title
         type: string
         required: true
-      - name: description
-        label: Summary
-        component: summary_text
-        required: true
-        description: 'Short excerpt used on listings and SEO.'
-      - name: publishDate
-        label: Publish Date
+        description: "Also becomes the address, so keep it short."
+      - name: kind
+        label: Kind
+        type: select
+        default: note
+        options:
+          values:
+            - name: note
+              label: Note (a thought of my own)
+            - name: link
+              label: Link (something worth reading, with a line on why)
+            - name: quote
+              label: Quote
+            - name: verse
+              label: Verse (line breaks are kept)
+      - name: url
+        label: Link to the source
+        component: url
+        description: "For a link: paste the address of the thing (a tweet, an article). It's shown as the source; no need to repeat it in the text."
+      - name: body
+        label: Note
+        type: rich-text
+        description: "Write as much or as little as you like. Paste a link on its own line and it becomes a tidy source line."
+        options:
+          format: markdown
+          media: notes
+          path: public/note-images
+          rename: safe
+          switcher: true
+      - name: date
+        label: Date
         type: date
         required: true
-        default: today
+        description: "Filled in with now. Change it to backdate a note."
+        options:
+          time: true
+      - name: tags
+        component: tags
+      - name: note
+        label: Aside
+        type: string
+        description: "Optional one-liner set apart under the note, in italics."
+      - name: description
+        label: Summary for search and sharing
+        type: text
+        description: "Optional. Otherwise the start of the note is used."
+      - name: further
+        label: Further reading
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: url
+            label: Address
+            component: url
+            required: true
+          - name: note
+            label: Why
+            type: string
       - name: draft
         label: Draft
         type: boolean
         default: false
-        description: 'Leave checked while you are editing. Uncheck to publish.'
-      - name: tags
-        label: Tags
-        type: string
-        list: true
-        description: 'Optional keywords, one per line.'
-      - name: image
-        label: Featured Image
-        type: image
-        description: 'Optional hero image shown on the blog listing and detail page.'
-        options:
-          media: blog_media
-      - name: body
-        label: Content
-        type: rich-text
-        required: false
-        description: 'Write using the rich-text editor. Slash commands and Markdown shortcuts are supported.'
-        options:
-          media: true
-          path: public/blog-images
-          extensions: [jpg, jpeg, png, webp, gif]
-          toolbar:
-            - bold
-            - italic
-            - heading
-            - link
-            - code
-            - quote
-            - ul
-            - ol
-            - image
-            - table
-            - hr
+        description: "A draft is saved but not published."
 
-  - name: projects
-    label: Projects
-    path: src/content/projects
+  # ---------------------------------------------------------------- essays
+  - name: blog
+    label: Essays
     type: collection
+    path: src/content/blog
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      primary: title
+      fields: [title, publishDate, draft]
+      sort: [publishDate, title]
+      search: [title, description, tags]
+      default:
+        sort: publishDate
+        order: desc
     fields:
       - name: title
         label: Title
         type: string
         required: true
+        description: "Also becomes the address, so keep it short. You can change the title later; the address stays."
       - name: description
         label: Summary
-        component: summary_text
+        type: text
         required: true
-        description: 'One-sentence pitch that appears in the projects list.'
-      - name: link
-        label: Project Link
-        component: external_link
-        required: true
-      - name: order
-        label: Display Order
-        type: number
-        default: 1
-        description: 'Lower numbers appear first.'
-      - name: image
-        label: Project Image
-        type: image
-        description: 'Optional visual used on the project card.'
-        options:
-          media: project_media
+        description: "One or two sentences, shown under the title, in lists, in search results and when shared."
       - name: body
-        label: Details
-        type: rich-text
-        required: false
-        description: 'Longer description and background. Slash commands available for headings and lists.'
+        label: Essay (Markdown)
+        type: code
+        description: "Markdown. **bold**, _italic_, ## Heading, > quote, [link](https://…), ![alt](/blog-images/…). A margin note: put [^1] after the sentence and, anywhere below, a line starting [^1]: with the note. Plain Markdown on purpose: the rich editor drops margin notes and embeds."
         options:
-          media: true
-          path: public/project-images
-          extensions: [jpg, jpeg, png, webp, gif]
-          toolbar:
-            - bold
-            - italic
-            - heading
-            - link
-            - code
-            - quote
-            - ul
-            - ol
-            - image
-            - table
-            - hr
+          format: markdown
+      - name: draft
+        label: Draft
+        type: boolean
+        default: true
+        description: "Drafts aren't listed, aren't in feeds and aren't indexed, but can be read at their address. Untick to publish."
+      - name: publishDate
+        label: Published on
+        type: date
+        required: true
+      - name: updatedDate
+        label: Revised on
+        type: date
+        default: ""
+        description: "Optional. Set it after a substantial revision."
+      - name: image
+        label: Cover image
+        type: image
+        description: "Optional. Wide works best, at least 1400px across. Also used when the essay is shared."
+        options:
+          media: essays
+      - name: imageCaption
+        label: Cover caption
+        type: string
+        description: "Optional. Also used as the image's description for screen readers."
+      - name: tags
+        component: tags
 
-  - name: updates
-    label: Quick Updates
-    path: src/content/updates
+  # ---------------------------------------------------------------- books
+  - name: books
+    label: Books
     type: collection
+    path: src/content/books
+    filename: "{primary}.md"
+    view:
+      primary: title
+      fields: [title, author, status, date]
+      sort: [date, title]
+      search: [title, author]
+      default:
+        sort: date
+        order: desc
     fields:
       - name: title
         label: Title
         type: string
         required: true
-      - name: publishDate
-        label: Publish Date
+      - name: author
+        label: Author
+        type: string
+        required: true
+      - name: status
+        label: Status
+        type: select
+        default: read
+        options:
+          values:
+            - name: reading
+              label: Reading now
+            - name: read
+              label: Read
+            - name: abandoned
+              label: Put down
+      - name: date
+        label: Finished on (or started, if reading)
+        type: date
+      - name: hand
+        label: My verdict in a line
+        type: string
+        description: "Shown next to the book everywhere, e.g. “made me rethink every obvious cause-and-effect story”."
+      - name: pull
+        label: A line from the book
+        type: text
+      - name: body
+        label: Notes and highlights
+        type: rich-text
+        description: "Optional."
+        options:
+          format: markdown
+          media: books
+          path: public/book-images
+          rename: safe
+      - name: link
+        label: Link to the book
+        component: url
+        description: "Optional: the publisher, Open Library or a shop."
+      - name: tags
+        component: tags
+
+  # ---------------------------------------------------------------- now
+  - name: now
+    label: Now
+    type: collection
+    path: src/content/now
+    filename: "{year}-{month}-{day}-now.md"
+    view:
+      primary: date
+      fields: [date, title]
+      sort: [date]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: date
+        label: Date
         type: date
         required: true
-        default: today
-      - name: link
-        label: External Link
-        component: external_link
-        required: false
-        description: 'Optional source or related reading.'
-      - name: linkTitle
-        label: Link Title
+        description: "The newest entry is the /now page; older ones are listed below it."
+      - name: title
+        label: Heading
         type: string
-        description: 'Text to display for the external link.'
-      - name: image
-        label: Update Image
-        type: image
-        description: 'Optional image to accompany the update.'
-        options:
-          media: update_media
+        description: "Optional."
       - name: body
-        label: Update
+        label: What I'm doing now
         type: rich-text
-        required: false
-        description: 'Use the rich-text editor for quick notes. Slash commands enabled.'
+        required: true
         options:
-          media: true
-          path: public/update-images
-          extensions: [jpg, jpeg, png, webp, gif]
-          toolbar:
-            - bold
-            - italic
-            - heading
-            - link
-            - code
-            - quote
-            - ul
-            - ol
-            - image
-            - table
-            - hr
+          format: markdown
+          media: false
+
+  # ---------------------------------------------------------------- projects
+  - name: projects
+    label: Projects
+    type: collection
+    path: src/content/projects
+    filename: "{primary}.md"
+    view:
+      primary: title
+      fields: [title, kind, status, featured, order]
+      sort: [order, title]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: title
+        label: Name
+        type: string
+        required: true
+      - name: tagline
+        label: Tagline
+        type: string
+        description: "A few words for the lists, e.g. “All 124 letters to Lucilius, one at a time”."
+      - name: description
+        label: Description
+        type: text
+        required: true
+        description: "One or two sentences."
+      - name: link
+        label: Address
+        component: url
+        required: true
+      - name: url
+        label: Address as shown
+        type: string
+        description: "Short form for display, e.g. seneca.ink"
+      - name: story
+        label: Why it exists
+        type: string
+        description: "Optional one-liner, set in italics on the projects page."
+      - name: kind
+        label: Group
+        type: select
+        default: library
+        options:
+          values:
+            - name: library
+              label: Rooms for old words
+            - name: numbers
+              label: In numbers
+            - name: reading
+              label: What I read
+            - name: street
+              label: The street
+      - name: status
+        label: Status
+        type: select
+        default: active
+        options:
+          values:
+            - name: active
+              label: Active
+            - name: completed
+              label: Finished
+            - name: archived
+              label: Archived (hidden)
+      - name: featured
+        label: Featured
+        type: boolean
+        default: false
+        description: "Featured projects show a screenshot on the home and projects pages. Two or three at most."
+      - name: image
+        label: Screenshot
+        type: image
+        description: "1280×800 works best."
+        options:
+          media: projects
+      - name: order
+        label: Order
+        type: number
+        default: 99
+        description: "Lower comes first."
+      - name: body
+        label: More about it
+        type: rich-text
+        options:
+          format: markdown
+          media: false

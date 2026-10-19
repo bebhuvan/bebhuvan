@@ -7,6 +7,7 @@ url: measure.thisindianlife.today
 status: active
 kind: "numbers"
 order: 6
+image: /project-images/measure-of-india.webp
 ---
 
 The economics desk of This Indian Life. Every release comes with what it means and how it is measured, and over sixteen lakh data series are there to search and download.

@@ -1,0 +1,137 @@
+---
+// Every page: <head> (SEO, social cards, feeds, JSON-LD), the header and the footer.
+import '../styles/site.css';
+import grotesk from '@fontsource-variable/host-grotesk/files/host-grotesk-latin-wght-normal.woff2?url';
+import serif from '@fontsource-variable/source-serif-4/files/source-serif-4-latin-wght-normal.woff2?url';
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
+import { SITE } from '../utils/site';
+import { imageInfo } from '../plugins/rehype-image-attrs.js';
+
+export interface Props {
+  title: string; // the page's own title; " — Bhuvan" is added unless it is the home page
+  description?: string;
+  image?: string;
+  imageAlt?: string;
+  type?: 'website' | 'article' | 'profile';
+  published?: Date;
+  modified?: Date;
+  tags?: string[];
+  section?: string;
+  noindex?: boolean;
+  active?: string;
+  // extra JSON-LD nodes for this page (BlogPosting, CollectionPage, ...)
+  schema?: Record<string, unknown>[];
+  // a crumb trail for search results: [name, path][]
+  crumbs?: [string, string][];
+  prev?: string;
+  next?: string;
+  home?: boolean;
+}
+const { title, description = SITE.description, image, imageAlt, type = 'website', published, modified, tags = [], section, noindex = false, active, schema = [], crumbs, prev, next, home = false } = Astro.props;
+
+const fullTitle = home ? title : `${title} — ${SITE.name}`;
+const canonical = new URL(Astro.url.pathname, Astro.site).toString();
+// social cards: the page's image, else the site card. Crawlers that refuse WebP get a .jpg twin if one exists
+let card = image || '/og.jpg';
+const jpg = card.replace(/\.webp$/, '.jpg');
+if (jpg !== card && existsSync(join(process.cwd(), 'public', jpg))) card = jpg;
+const cardInfo = imageInfo(card);
+const cardUrl = new URL(card, Astro.site).toString();
+
+const person = {
+  '@type': 'Person',
+  '@id': `${SITE.url}/#person`,
+  name: SITE.author,
+  alternateName: 'Bhuvanesh',
+  url: `${SITE.url}/`,
+  image: `${SITE.url}/profile-pic.webp`,
+  description: SITE.tagline,
+  homeLocation: { '@type': 'Place', name: SITE.city },
+  sameAs: [SITE.twitter, SITE.github],
+};
+const website = { '@type': 'WebSite', '@id': `${SITE.url}/#website`, url: `${SITE.url}/`, name: SITE.name, description: SITE.description, inLanguage: 'en', publisher: { '@id': `${SITE.url}/#person` } };
+const webpage = {
+  '@type': home ? 'ProfilePage' : 'WebPage',
+  '@id': `${canonical}#webpage`,
+  url: canonical,
+  name: fullTitle,
+  description,
+  inLanguage: 'en',
+  isPartOf: { '@id': `${SITE.url}/#website` },
+  ...(home ? { mainEntity: { '@id': `${SITE.url}/#person` } } : {}),
+  ...(crumbs ? { breadcrumb: { '@type': 'BreadcrumbList', itemListElement: [['Home', '/'], ...crumbs].map(([name, path], i) => ({ '@type': 'ListItem', position: i + 1, name, item: new URL(path, SITE.url).toString() })) } } : {}),
+};
+const jsonLd = { '@context': 'https://schema.org', '@graph': [person, website, webpage, ...schema] };
+
+const nav = [['Writing', '/writing/'], ['Notes', '/notes/'], ['Projects', '/projects/'], ['Books', '/books/'], ['Now', '/now/']];
+---
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'} />
+  <meta name="author" content={SITE.author} />
+  <meta name="color-scheme" content="light only" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="preload" href={grotesk} as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href={serif} as="font" type="font/woff2" crossorigin />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="alternate" type="application/rss+xml" title="Bhuvan: everything" href="/rss.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Bhuvan: essays" href="/writing/rss.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Bhuvan: notes" href="/notes/rss.xml" />
+  <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
+  <link rel="me" href={SITE.twitter} />
+  <link rel="me" href={SITE.github} />
+  {prev && <link rel="prev" href={prev} />}
+  {next && <link rel="next" href={next} />}
+
+  <meta property="og:type" content={type} />
+  <meta property="og:site_name" content={SITE.name} />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={cardUrl} />
+  {cardInfo && <meta property="og:image:width" content={String(cardInfo.w)} />}
+  {cardInfo && <meta property="og:image:height" content={String(cardInfo.h)} />}
+  <meta property="og:image:alt" content={imageAlt || title} />
+  {published && <meta property="article:published_time" content={published.toISOString()} />}
+  {(modified || published) && type === 'article' && <meta property="article:modified_time" content={(modified || published)!.toISOString()} />}
+  {type === 'article' && <meta property="article:author" content={`${SITE.url}/`} />}
+  {type === 'article' && section && <meta property="article:section" content={section} />}
+  {type === 'article' && tags.map((t) => <meta property="article:tag" content={t} />)}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content={SITE.handle} />
+  <meta name="twitter:creator" content={SITE.handle} />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={cardUrl} />
+  <meta name="twitter:image:alt" content={imageAlt || title} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <slot name="head" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the content</a>
+  <header class="g head">
+    <a class="name" href="/" rel="home">Bhuvan<i>.</i></a>
+    <span class="lbl when">Essays, notes and small websites</span>
+    <nav aria-label="Sections">{nav.map(([l, h]) => <a href={h} aria-current={l === active ? 'page' : undefined}>{l}</a>)}</nav>
+  </header>
+  <main id="main">
+    <slot />
+  </main>
+  <footer class="g foot">
+    <div class="me"><img src="/profile-pic-160.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /><span>{SITE.tagline.split(', sharer')[0]}.</span></div>
+    <div><a href={SITE.github} rel="me">GitHub</a><br /><a href={SITE.twitter} rel="me">Twitter</a><br /><a href="/topics/">Topics</a></div>
+    <div><a href="/rss.xml">RSS: everything</a><br /><a href="/writing/rss.xml">RSS: essays</a><br /><a href="/notes/rss.xml">RSS: notes</a></div>
+    <div class="lbl">Set in Host Grotesk and Source Serif. No cookies, no trackers, no scripts. <a href="/trails/">Elsewhere</a> · <a href="/llms.txt">llms.txt</a></div>
+  </footer>
+</body>
+</html>

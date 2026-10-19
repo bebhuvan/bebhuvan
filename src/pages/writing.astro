@@ -1,61 +1,27 @@
 ---
-import { getCollection } from 'astro:content';
-import { smart } from '../utils/typo';
-import Layout from '../layouts/Layout.astro';
-import Nav from '../components/Nav.astro';
-import Footer from '../components/Footer.astro';
-
-const all = await getCollection('blog');
-const posts = all
-  .filter((post) => !post.data.draft)
-  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
-const draftCount = all.filter((p) => p.data.draft).length;
-
-const postsByYear = posts.reduce((acc, post) => {
-  const year = post.data.publishDate.getFullYear();
-  (acc[year] ||= []).push(post);
-  return acc;
-}, {} as Record<number, typeof posts>);
-const years = Object.keys(postsByYear).map(Number).sort((a, b) => b - a);
-const firstYear = years[years.length - 1];
-
-// Descriptions imported from the old WordPress blog are truncated excerpts
-// ending in an ellipsis; only show descriptions that were written as such.
-const cleanDescription = (d?: string) => (d && !/(\.\.\.|…)\s*$/.test(d) ? d : '');
-const fmt = (d: Date) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+// Every essay, by year.
+import Base from '../layouts/Base.astro';
+import { SITE, posts, short, fmt, smart, postHref } from '../utils/site';
+const years = [...new Set(posts.map((p) => p.data.publishDate.getFullYear()))];
+const list = { '@type': 'CollectionPage', '@id': `${SITE.url}/writing/#collection`, name: 'Essays', mainEntity: { '@type': 'ItemList', numberOfItems: posts.length, itemListElement: posts.map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(postHref(p), SITE.url).toString(), name: smart(p.data.title) })) } };
 ---
-
-<Layout title="Writing — Bhuvan" description="Long-form essays — the workshop, not the gallery.">
-  <Nav active="writing" />
-
-  <main class="split">
-    <div class="statement">
-      <h1 class="statement-text">Long-form <em>writing</em>. The workshop, not the gallery; nothing here is quite finished.</h1>
-      <p class="statement-sub">{posts.length} essays since {firstYear}{draftCount > 0 ? `, and ${draftCount} living draft${draftCount !== 1 ? 's' : ''}` : ''}. Newest first.</p>
+<Base title="Writing" description={`All ${posts.length} essays by Bhuvan, on money, markets, technology, history and books, from ${years.at(-1)} to now.`} active="Writing" schema={[list]} crumbs={[['Writing', '/writing/']]}>
+  <header class="g phead">
+    <span class="lbl ink">Essays · {posts.length}</span>
+    <div class="tt">
+      <h1>Long essays that few people read. <span>Money, technology, history and the occasional rant.</span></h1>
+      <p>Everything since {years.at(-1)}, newest first. There are shorter things in the <a href="/notes/">notes</a>, and the essays come by <a href="/writing/rss.xml">RSS</a> too.</p>
     </div>
-
-    <div class="margin">
-      {years.map((year) => (
-        <section>
-          <h2 class="group-h">{year}<span>{postsByYear[year].length} essay{postsByYear[year].length !== 1 ? 's' : ''}</span></h2>
-          <ul class="list">
-            {postsByYear[year].map((post) => (
-              <li>
-                <a class="row" href={`/blog/${post.id}/`}>
-                  <span class="t"><span class="hl">{smart(post.data.title)}</span></span>
-                  <span class="d">{fmt(post.data.publishDate)}</span>
-                  {cleanDescription(post.data.description) && <span class="x">{smart(cleanDescription(post.data.description))}</span>}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ))}
-    </div>
-  </main>
-
-  <Footer
-    meta={`Bangalore · The Internet<br>${posts.length} essays and counting. Most of them unfinished. All of them honest.`}
-    hand="Writing is just thinking with better posture."
-  />
-</Layout>
+  </header>
+  {years.map((y) => {
+    const ps = posts.filter((p) => p.data.publishDate.getFullYear() === y);
+    return (
+      <section class="g year" aria-label={String(y)}>
+        <h2 class="gl">{y}<span class="lbl">{ps.length} {ps.length === 1 ? 'essay' : 'essays'}</span></h2>
+        <ul class="rows">
+          {ps.map((p) => <li><a class="with-dek" href={postHref(p)}><b class="tt">{smart(p.data.title)}</b>{short(p.data.description) && <span class="dek">{short(p.data.description)}</span>}<time class="d" datetime={p.data.publishDate.toISOString()}>{fmt(p.data.publishDate)}</time></a></li>)}
+        </ul>
+      </section>
+    );
+  })}
+</Base>

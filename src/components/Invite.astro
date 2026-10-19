@@ -1,0 +1,21 @@
+---
+// The one solid field of flame: a call for collaborators, on the home and projects pages.
+import { SITE } from '../utils/site';
+interface Props { num?: string }
+const { num } = Astro.props;
+---
+<section class="invite" id="collaborate" aria-labelledby="collab-h">
+  <div class="g">
+    <div class="colh"><span>{num && <span class="num" style="color:inherit">{num}</span>}Collaborators wanted</span></div>
+    <h2 id="collab-h">I build all of this alone, on evenings and weekends. <span>Come and build some of it with me.</span></h2>
+    <div class="rest">
+      <p>Every one of these needs more hands than mine. A few places to start:</p>
+      <ol>
+        <li>Readers of Kannada, Tamil, Hindi or Sanskrit to proof old books</li>
+        <li>People who know where rare Indian books and letters are hiding</li>
+        <li>Designers and developers who like small, careful websites</li>
+      </ol>
+      <a class="btn" href={SITE.github} rel="me">github.com/bebhuvan ↗</a><a class="btn ghost" href={SITE.twitter}>Write to me</a>
+    </div>
+  </div>
+</section>
