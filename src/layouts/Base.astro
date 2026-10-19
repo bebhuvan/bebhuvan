@@ -76,8 +76,9 @@ const nav = [['Writing', '/writing/'], ['Notes', '/notes/'], ['Projects', '/proj
   <link rel="canonical" href={canonical} />
   <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'} />
   <meta name="author" content={SITE.author} />
-  <meta name="color-scheme" content="light only" />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)" />
   <meta name="format-detection" content="telephone=no" />
   <link rel="preload" href={grotesk} as="font" type="font/woff2" crossorigin />
   <link rel="preload" href={serif} as="font" type="font/woff2" crossorigin />

@@ -2,20 +2,55 @@
    Host Grotesk for headlines, labels and tables on a 12-column grid with numbered
    sections on 2px rules; Source Serif 4 for everything read at length (essays,
    deks, notes, the Now letter). One accent, flame, used as small squares, numbers
-   and one solid block. White ground, no dark mode. Fonts are self-hosted. */
+   and one solid block. White ground; a designed dark palette follows the reader's
+   system setting (prefers-color-scheme, CSS only). Fonts are self-hosted.
+   Every colour is a token on :root; the dark block redefines tokens and nothing else. */
 @import '@fontsource-variable/host-grotesk/wght.css';
 @import '@fontsource-variable/source-serif-4/wght.css';
 @import '@fontsource-variable/source-serif-4/wght-italic.css';
 :root {
-  --paper: #fff; --ink: #0f0f0f; --soft: #595959; --faint: #9a9a9a; --rule: #e2e2e2;
+  --paper: #fff; --ink: #0f0f0f; --soft: #595959; --rule: #e2e2e2;
+  /* the large grey second sentence in headlines (large text only) */
+  --grey: #8c8c8c;
+  /* text a shade off ink, darkest first: essay prose, note text and tweets, the hero
+     line, index intros, home briefs, quoted passages, quotes inside notes */
+  --prose: #1a1a1a; --note: #222; --stand: #262626; --intro: #2a2a2a; --brief: #2e2e2e; --quote: #333; --quote-note: #3a3a3a;
+  /* grounds for code, pre and callouts */
+  --wash: #f6f6f4; --wash-code: #f4f4f2;
   --flame: #D9471A; --flame-ink: #AE3510; --tint: #F7CDBC;
   /* flame for small text (numbers, note marks): 5:1 on white. The block behind the
      collaborators call is a brighter flame so ink on it reads at 5:1 too. */
   --flame-text: #C8401A; --flame-block: #E0531F;
+  /* on the flame block: the headline's first sentence, the list's hairlines */
+  --invite-head: #fff; --invite-rule: rgba(0,0,0,.4);
+  /* white text on flame (the video badge); the buttons */
+  --on-flame: #fff; --btn-hover: #000; --ghost-hover: rgba(0,0,0,.07);
+  /* behind images that may be transparent; screenshots' filter */
+  --img-ground: transparent; --shot-filter: none;
+  /* the portrait's white corners reach ~1.4% inside its circle: clipped on dark only */
+  --portrait-clip: none;
   --sans: 'Host Grotesk Variable', 'Helvetica Neue', Arial, sans-serif;
   --serif: 'Source Serif 4 Variable', Georgia, serif;
   --mono: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
   --gut: 24px; --edge: 40px;
+  color-scheme: light dark;
+}
+/* dark: a near-black ground, soft white text, greys matched to the light ratios, a
+   brighter flame for marks and text, a deep flame behind the collaborators call.
+   Contrast for each pairing is listed in CLAUDE.md. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #121212; --ink: #e6e6e6; --soft: #a0a0a0; --rule: #303030;
+    --grey: #707070;
+    --prose: #dadada; --note: #d4d4d4; --stand: #d0d0d0; --intro: #cccccc; --brief: #c8c8c8; --quote: #c2c2c2; --quote-note: #bbbbbb;
+    --wash: #1c1c1c; --wash-code: #202020;
+    --flame: #E85A2B; --flame-ink: #F2804F; --tint: #6B2D17;
+    --flame-text: #EE6A3C; --flame-block: #9A3313;
+    --invite-head: #F2B9A3; --invite-rule: rgba(255,255,255,.3);
+    --on-flame: #fff; --btn-hover: #fff; --ghost-hover: rgba(255,255,255,.1);
+    --img-ground: #ececec; --shot-filter: brightness(.88);
+    --portrait-clip: circle(48.2%);
+  }
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
@@ -23,7 +58,7 @@ h1, h2, h3, h4, p, figure, blockquote, dl, dd { margin: 0; }
 body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.5 var(--sans); -webkit-font-smoothing: antialiased; }
 a { color: inherit; text-decoration: none; }
 :focus-visible { outline: 2px solid var(--flame); outline-offset: 2px; }
-.skip { position: absolute; left: -9999px; top: 0; background: var(--ink); color: #fff; padding: 10px 14px; z-index: 10; }
+.skip { position: absolute; left: -9999px; top: 0; background: var(--ink); color: var(--paper); padding: 10px 14px; z-index: 10; }
 .skip:focus { left: 12px; top: 12px; }
 .vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 img { display: block; max-width: 100%; height: auto; }
@@ -56,12 +91,12 @@ img { display: block; max-width: 100%; height: auto; }
 /* ---------------- home ---------------- */
 .hero { padding-top: 64px; padding-bottom: 100px; align-items: center; }
 .hero .pic { grid-column: 1 / 5; margin: 0; }
-.hero .pic img { width: 100%; max-width: 420px; border-radius: 50%; }
+.hero .pic img { width: 100%; max-width: 420px; border-radius: 50%; clip-path: var(--portrait-clip); }
 .hero .pic figcaption { margin-top: 12px; }
 .hero .say { grid-column: 6 / 13; }
 .hero h1 { margin: 0 0 26px; font-weight: 500; font-size: clamp(2.3rem, 3.9vw, 3.8rem); line-height: 1.05; letter-spacing: -.033em; text-wrap: balance; }
-.hero h1 span { color: #8c8c8c; }
-.hero .stand { margin: 0; font: 300 1.3rem/1.55 var(--serif); color: #262626; max-width: 34em; text-wrap: pretty; }
+.hero h1 span { color: var(--grey); }
+.hero .stand { margin: 0; font: 300 1.3rem/1.55 var(--serif); color: var(--stand); max-width: 34em; text-wrap: pretty; }
 .hero .stand a { text-decoration: underline; text-decoration-color: var(--tint); text-decoration-thickness: 2px; text-underline-offset: .2em; transition: text-decoration-color .2s; }
 .hero .stand a:hover { text-decoration-color: var(--flame); }
 
@@ -87,7 +122,7 @@ img { display: block; max-width: 100%; height: auto; }
 .brief .item { padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid var(--rule); }
 .brief h3 { margin: 6px 0 8px; font-size: 1.2rem; line-height: 1.22; font-weight: 600; letter-spacing: -.015em; text-wrap: balance; }
 .brief h3 a:hover { color: var(--flame); }
-.brief p { margin: 0; font: 400 1.02rem/1.55 var(--serif); color: #2e2e2e; }
+.brief p { margin: 0; font: 400 1.02rem/1.55 var(--serif); color: var(--brief); }
 .dom { color: var(--flame-ink); }
 
 /* 03 building: three pictures, then the index as a table */
@@ -98,7 +133,7 @@ img { display: block; max-width: 100%; height: auto; }
 .shot.big { grid-column: 1 / 9; grid-row: 2 / span 2; }
 .shot.sm { grid-column: 9 / 13; }
 .shot .frame { display: block; border: 1px solid var(--rule); overflow: hidden; }
-.shot img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; transition: opacity .2s; }
+.shot img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; filter: var(--shot-filter); transition: opacity .2s; }
 .shot:hover img { opacity: .9; }
 .shot h3 { margin: 14px 0 4px; font-size: 1.35rem; line-height: 1.12; font-weight: 600; letter-spacing: -.022em; }
 .shot.big h3 { font-size: 1.9rem; }
@@ -114,17 +149,17 @@ img { display: block; max-width: 100%; height: auto; }
 .invite { background: var(--flame-block); margin: 96px 0; }
 .invite .g { padding-top: 26px; padding-bottom: 54px; }
 .invite .colh { border-color: var(--ink); }
-.invite h2 { grid-column: 1 / 7; margin: 0; font-size: clamp(2.1rem, 3.3vw, 3.2rem); line-height: 1.04; font-weight: 600; letter-spacing: -.033em; color: #fff; text-wrap: balance; }
+.invite h2 { grid-column: 1 / 7; margin: 0; font-size: clamp(2.1rem, 3.3vw, 3.2rem); line-height: 1.04; font-weight: 600; letter-spacing: -.033em; color: var(--invite-head); text-wrap: balance; }
 .invite h2 span { color: var(--ink); }
 .invite .rest { grid-column: 8 / 13; }
 .invite .rest p { margin: 0 0 16px; font: 400 1.12rem/1.5 var(--serif); }
-.invite ol { margin: 0 0 26px; padding: 0; list-style: none; counter-reset: c; border-top: 1px solid rgba(0,0,0,.4); }
-.invite li { counter-increment: c; padding: 9px 0; border-bottom: 1px solid rgba(0,0,0,.4); display: grid; grid-template-columns: 2.2em 1fr; font: 400 1.04rem/1.4 var(--serif); }
+.invite ol { margin: 0 0 26px; padding: 0; list-style: none; counter-reset: c; border-top: 1px solid var(--invite-rule); }
+.invite li { counter-increment: c; padding: 9px 0; border-bottom: 1px solid var(--invite-rule); display: grid; grid-template-columns: 2.2em 1fr; font: 400 1.04rem/1.4 var(--serif); }
 .invite li::before { content: counter(c, decimal-leading-zero); font: 500 .9rem/1.6 var(--sans); font-variant-numeric: tabular-nums; }
-.btn { display: inline-block; background: var(--ink); color: #fff; padding: 12px 18px; font-weight: 500; font-size: .95rem; transition: background .2s; }
-.btn:hover { background: #000; }
+.btn { display: inline-block; background: var(--ink); color: var(--paper); padding: 12px 18px; font-weight: 500; font-size: .95rem; transition: background .2s; }
+.btn:hover { background: var(--btn-hover); }
 .btn.ghost { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--ink); margin-left: 8px; }
-.btn.ghost:hover { background: rgba(0,0,0,.07); }
+.btn.ghost:hover { background: var(--ghost-hover); }
 
 /* 05 now, as a letter; the shelf beside it */
 .lower { padding-bottom: 90px; }
@@ -142,7 +177,7 @@ img { display: block; max-width: 100%; height: auto; }
 .foot { padding-bottom: 60px; }
 .foot > div { grid-column: span 3; font-size: .9rem; line-height: 1.5; border-top: 2px solid var(--ink); padding-top: 14px; }
 .foot .me { display: grid; grid-template-columns: 44px 1fr; gap: 12px; align-items: center; font: italic 400 .98rem/1.35 var(--serif); }
-.foot .me img { border-radius: 50%; }
+.foot .me img { border-radius: 50%; clip-path: var(--portrait-clip); }
 .foot a { display: inline-block; padding: 2px 0; }
 .foot a:hover { color: var(--flame-text); }
 
@@ -160,7 +195,7 @@ img { display: block; max-width: 100%; height: auto; }
 .ecover figcaption { margin-top: 8px; }
 .ebody > .prose { grid-column: 4 / 10; }
 .ebody > .endbox { grid-column: 4 / 10; }
-.prose { font: 400 1.2rem/1.62 var(--serif); font-variant-numeric: oldstyle-nums proportional-nums; font-kerning: normal; font-variant-ligatures: common-ligatures; hanging-punctuation: first allow-end; color: #1a1a1a; counter-reset: h2; }
+.prose { font: 400 1.2rem/1.62 var(--serif); font-variant-numeric: oldstyle-nums proportional-nums; font-kerning: normal; font-variant-ligatures: common-ligatures; hanging-punctuation: first allow-end; color: var(--prose); counter-reset: h2; }
 .prose p { margin: 0 0 1.05em; text-wrap: pretty; }
 .prose > p:first-of-type { font-size: 1.38rem; line-height: 1.52; }
 /* a raised initial, not a dropped one: it sits on the first baseline, so a one-line
@@ -176,7 +211,7 @@ img { display: block; max-width: 100%; height: auto; }
    opens them like a table, the text drops a size and a shade, and the flame quote
    mark hangs outside the column so the words keep the text's left edge. */
 /* no rules: an ink rule here read as a section break; the hung mark says 'quote' */
-.prose blockquote { position: relative; margin: 1.9em 0 2em; font-size: 1.04rem; line-height: 1.62; color: #333; }
+.prose blockquote { position: relative; margin: 1.9em 0 2em; font-size: 1.04rem; line-height: 1.62; color: var(--quote); }
 .prose blockquote::before { content: '“'; position: absolute; right: calc(100% + .28em); top: -.1em; font: 700 3.6rem/1 var(--serif); color: var(--flame); }
 .prose blockquote p { margin-bottom: .8em; }
 .prose blockquote p:last-child { margin-bottom: 0; }
@@ -185,6 +220,7 @@ img { display: block; max-width: 100%; height: auto; }
 /* figures sit on the text measure */
 .prose p:has(> img) { margin: 2.3em 0; }
 .prose p:has(> img) img { width: 100%; border: 1px solid var(--rule); }
+.prose img, .nrow .txt img, .lp-img img { background: var(--img-ground); }
 .prose hr { border: 0; margin: 2.6em 0; }
 .prose hr::before { content: ''; display: block; width: .55em; height: .55em; background: var(--flame); }
 .prose ul, .prose ol { list-style: none; padding-left: 1.6em; margin: 0 0 1.1em; counter-reset: li; }
@@ -192,7 +228,7 @@ img { display: block; max-width: 100%; height: auto; }
 .prose ul > li::before { content: ''; position: absolute; left: -1.25em; top: .62em; width: .36em; height: .36em; background: var(--flame); }
 .prose ol > li { counter-increment: li; }
 .prose ol > li::before { content: counter(li, decimal-leading-zero); position: absolute; left: -1.6em; top: .32em; font: 500 .74rem/1 var(--sans); color: var(--flame-text); font-variant-numeric: tabular-nums; }
-.prose code { font: .86em/1 ui-monospace, monospace; background: #f4f4f2; padding: .1em .3em; }
+.prose code { font: .86em/1 ui-monospace, monospace; background: var(--wash-code); padding: .1em .3em; }
 .prose > :last-child::after { content: ''; display: inline-block; width: .5em; height: .5em; background: var(--flame); margin-left: .4em; vertical-align: .05em; }
 .mn-ref { font: 600 .62em/0 var(--sans); color: var(--flame-text); vertical-align: super; margin-left: 1px; padding: 0 1px; transition: background .2s; }
 /* margin notes take columns 10-12: the text is six columns wide, so three columns plus two
@@ -215,7 +251,7 @@ img { display: block; max-width: 100%; height: auto; }
 .ebody > .prose { grid-row: 1; }
 .prose h2 { scroll-margin-top: 24px; }
 .endbox { margin-top: 56px; padding-top: 18px; border-top: 2px solid var(--ink); display: grid; grid-template-columns: 64px 1fr; gap: 18px; align-items: start; }
-.endbox img { width: 64px; border-radius: 50%; }
+.endbox img { width: 64px; border-radius: 50%; clip-path: var(--portrait-clip); }
 .endbox p { margin: 0 0 8px; font: italic 300 1.08rem/1.5 var(--serif); color: var(--soft); }
 .endbox p b { font: normal 600 1rem/1 var(--sans); color: var(--ink); }
 .endbox .more { color: var(--flame-ink); }
@@ -232,12 +268,12 @@ img { display: block; max-width: 100%; height: auto; }
 .phead .lbl { grid-column: 1 / 4; padding-top: 10px; border-top: 2px solid var(--ink); }
 .phead .tt { grid-column: 4 / 13; border-top: 2px solid var(--ink); padding-top: 4px; }
 .phead h1 { margin: 0 0 20px; font-weight: 500; font-size: clamp(2.3rem, 4vw, 3.75rem); line-height: 1.06; letter-spacing: -.033em; text-wrap: balance; }
-.phead h1 span { color: #8c8c8c; }
-.phead p { margin: 0; font: 300 1.22rem/1.55 var(--serif); color: #2a2a2a; max-width: 36em; }
+.phead h1 span { color: var(--grey); }
+.phead p { margin: 0; font: 300 1.22rem/1.55 var(--serif); color: var(--intro); max-width: 36em; }
 .phead p a { color: var(--flame-ink); text-decoration: underline; text-underline-offset: .2em; }
 .spread { padding-bottom: 64px; align-items: start; }
 .spread .frame { grid-column: 1 / 8; display: block; border: 1px solid var(--rule); overflow: hidden; }
-.spread .frame img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; }
+.spread .frame img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; filter: var(--shot-filter); }
 .spread .txt { grid-column: 8 / 13; border-top: 2px solid var(--ink); padding-top: 10px; }
 .spread h2 { margin: 18px 0 12px; font-size: clamp(2rem, 3vw, 2.8rem); line-height: 1.04; font-weight: 600; letter-spacing: -.033em; }
 .spread h2 a:hover { color: var(--flame); }
@@ -271,12 +307,12 @@ img { display: block; max-width: 100%; height: auto; }
 .nrow h2, .nrow h3 { margin: 0 0 10px; font-size: 1.45rem; line-height: 1.15; font-weight: 600; letter-spacing: -.022em; text-wrap: balance; }
 .nrow h2 a, .nrow h3 a { transition: color .2s; }
 .nrow h2 a:hover, .nrow h3 a:hover { color: var(--flame); }
-.nrow .txt { font: 400 1.1rem/1.6 var(--serif); color: #222; }
+.nrow .txt { font: 400 1.1rem/1.6 var(--serif); color: var(--note); }
 .nrow .txt p { margin: 0 0 .75em; }
 .nrow .txt p:last-child { margin-bottom: 0; }
 .nrow .txt a { text-decoration: underline; text-decoration-color: var(--tint); text-decoration-thickness: 2px; text-underline-offset: .18em; word-break: break-word; }
 .nrow .txt img { margin: 12px 0; }
-.nrow .txt blockquote { position: relative; margin: .6em 0 .9em; padding-left: 1.6em; color: #3a3a3a; }
+.nrow .txt blockquote { position: relative; margin: .6em 0 .9em; padding-left: 1.6em; color: var(--quote-note); }
 .nrow .txt blockquote::before { content: '“'; position: absolute; left: 0; top: -.1em; font: 700 2.4rem/1 var(--serif); color: var(--flame); }
 .nrow .src { font-size: .9rem; padding-top: 5px; }
 .nrow .src a { color: var(--flame-ink); word-break: break-word; }
@@ -345,7 +381,7 @@ img { display: block; max-width: 100%; height: auto; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 
 /* ---------------- prose: everything else markdown and old WordPress posts can hold ---------------- */
-.prose pre { margin: 0 0 1.2em; padding: 16px 18px; overflow-x: auto; background: #f6f6f4; font: .9rem/1.55 var(--mono); }
+.prose pre { margin: 0 0 1.2em; padding: 16px 18px; overflow-x: auto; background: var(--wash); font: .9rem/1.55 var(--mono); }
 .prose pre code { background: none; padding: 0; }
 .prose table { display: block; overflow-x: auto; margin: 1.8em 0; border-collapse: collapse; font: .95rem/1.4 var(--sans); font-variant-numeric: tabular-nums; }
 .prose th, .prose td { text-align: left; vertical-align: top; padding: 8px 18px 8px 0; border-bottom: 1px solid var(--rule); }
@@ -356,14 +392,18 @@ img { display: block; max-width: 100%; height: auto; }
 .prose iframe, .prose video { display: block; width: 100%; margin: 2em 0; border: 0; }
 .prose iframe[src*="youtube"], .prose iframe[src*="youtu.be"], .prose iframe[src*="vimeo"] { height: auto; aspect-ratio: 16 / 9; }
 .prose mark { background: var(--tint); padding: 0 .1em; }
-.prose .callout, .prose .has-background { padding: 16px 20px; background: #f6f6f4 !important; color: inherit !important; }
+.prose .callout, .prose .has-background { padding: 16px 20px; background: var(--wash) !important; color: inherit !important; }
+/* old WordPress posts carry inline text colours (a grey verse, #6e6e6e) chosen for white;
+   on the dark ground they fall under 4.5:1, so they take the quote grey. The one rule here
+   that isn't a token: it overrides content, not the design. */
+@media (prefers-color-scheme: dark) { .prose .has-text-color { color: var(--quote) !important; } }
 .prose .wp-block-verse, .prose pre.wp-block-verse { white-space: pre-wrap; padding: 0 0 0 1.4em; background: none; font: inherit; }
 .prose .wp-block-jetpack-slideshow ul { list-style: none; padding: 0; display: grid; gap: 14px; }
 .prose .wp-block-jetpack-slideshow li::before { display: none; }
 .prose .wp-block-jetpack-slideshow_button-prev, .prose .wp-block-jetpack-slideshow_button-next,
 .prose .wp-block-jetpack-slideshow_button-pause, .prose .wp-block-jetpack-slideshow_pagination,
 .prose .wp-block-jetpack-subscriptions { display: none; }
-.prose .wp-block-button__link { display: inline-block; padding: 10px 16px; background: var(--ink) !important; color: #fff; text-decoration: none; font: 500 .95rem/1 var(--sans); }
+.prose .wp-block-button__link { display: inline-block; padding: 10px 16px; background: var(--ink) !important; color: var(--paper) !important; text-decoration: none; font: 500 .95rem/1 var(--sans); }
 .prose .lead { font-variant-caps: all-small-caps; letter-spacing: .04em; }
 /* verse keeps its line breaks */
 .prose.verse p { white-space: pre-line; }
@@ -391,7 +431,7 @@ img { display: block; max-width: 100%; height: auto; }
 .nrow .aside { margin-top: 10px; }
 .nrow .txt h2, .nrow .txt h3 { font: 600 1.05rem/1.3 var(--sans); margin: 1em 0 .4em; }
 .nrow .txt ul, .nrow .txt ol { padding-left: 1.2em; margin: 0 0 .75em; }
-.nrow .txt pre { overflow-x: auto; font: .85rem/1.5 var(--mono); background: #f6f6f4; padding: 12px 14px; }
+.nrow .txt pre { overflow-x: auto; font: .85rem/1.5 var(--mono); background: var(--wash); padding: 12px 14px; }
 .nrow .txt iframe { width: 100%; height: auto; aspect-ratio: 16 / 9; border: 0; }
 .nrow .txt.verse p { white-space: pre-line; }
 .filters { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px 22px; margin: -40px 0 34px; font-size: .95rem; }
@@ -461,7 +501,7 @@ img { display: block; max-width: 100%; height: auto; }
 .earlier .gl { grid-column: 1 / 4; border-top: 2px solid var(--ink); padding-top: 10px; font-weight: 500; }
 .earlier .list { grid-column: 4 / 11; border-top: 2px solid var(--ink); }
 .earlier article { padding: 16px 0 18px; border-bottom: 1px solid var(--rule); }
-.earlier .txt { margin-top: 6px; font: 400 1.04rem/1.55 var(--serif); color: #333; }
+.earlier .txt { margin-top: 6px; font: 400 1.04rem/1.55 var(--serif); color: var(--quote); }
 .earlier .txt p { margin: 0 0 .6em; }
 
 /* ---------------- trails ---------------- */
@@ -475,7 +515,7 @@ img { display: block; max-width: 100%; height: auto; }
 .lost { padding-top: 80px; padding-bottom: 120px; }
 .lost .tt { grid-column: 4 / 11; border-top: 2px solid var(--ink); padding-top: 4px; }
 .lost h1 { font-size: clamp(2.3rem, 4vw, 3.75rem); line-height: 1.06; font-weight: 500; letter-spacing: -.033em; margin-bottom: 20px; }
-.lost h1 span { color: #8c8c8c; }
+.lost h1 span { color: var(--grey); }
 .lost p { font: 300 1.22rem/1.55 var(--serif); }
 .lost p a { color: var(--flame-ink); text-decoration: underline; text-underline-offset: .2em; }
 
@@ -531,10 +571,10 @@ a.lp-has-img { grid-template-columns: minmax(0, 1fr) 168px; align-items: start; 
 a.lp:hover .lp-title { color: var(--flame-text); }
 .lp-desc { display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-top: 6px; font: italic 300 .98rem/1.45 var(--serif); color: var(--soft); }
 .lp-img { position: relative; display: block; }
-.lp-img img { width: 100%; height: auto; aspect-ratio: 1.6; object-fit: cover; border: 1px solid var(--rule); margin: 0; }
-.lp-video::after { content: '▶'; position: absolute; left: 8px; bottom: 8px; padding: 5px 6px 5px 7px; background: var(--flame); color: #fff; font: 600 .62rem/1 var(--sans); }
+.lp-img img { width: 100%; height: auto; aspect-ratio: 1.6; object-fit: cover; border: 1px solid var(--rule); margin: 0; filter: var(--shot-filter); }
+.lp-video::after { content: '▶'; position: absolute; left: 8px; bottom: 8px; padding: 5px 6px 5px 7px; background: var(--flame); color: var(--on-flame); font: 600 .62rem/1 var(--sans); }
 /* a tweet: its words quoted in the serif, the author above */
-.lp-quote { display: block; font: 400 1.04rem/1.55 var(--serif); color: #222; }
+.lp-quote { display: block; font: 400 1.04rem/1.55 var(--serif); color: var(--note); }
 a.lp-tweet:hover .lp-quote { color: var(--ink); }
 .prose > a.lp:last-child::after { display: none; }
 .nrow .txt a.lp { margin: 1em 0 .4em; }
