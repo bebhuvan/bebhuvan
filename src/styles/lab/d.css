@@ -164,8 +164,8 @@ img { display: block; max-width: 100%; height: auto; }
 .prose blockquote::before { content: '“'; position: absolute; left: -.04em; top: -.12em; font: 600 3.3rem/1 var(--sans); color: var(--flame); }
 .prose blockquote p { margin-bottom: .8em; }
 .prose blockquote p:last-child { margin-bottom: 0; }
-/* figures run past the text into the margin columns */
-.prose p:has(> img) { margin: 2.3em 0; width: calc(150% + var(--gut) / 2); }
+/* figures sit on the text measure */
+.prose p:has(> img) { margin: 2.3em 0; }
 .prose p:has(> img) img { width: 100%; border: 1px solid var(--rule); }
 .prose hr { border: 0; margin: 2.6em 0; }
 .prose hr::before { content: ''; display: block; width: .55em; height: .55em; background: var(--flame); }
