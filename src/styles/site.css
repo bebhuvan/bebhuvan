@@ -59,13 +59,9 @@ img { display: block; max-width: 100%; height: auto; }
 .hero .say { grid-column: 6 / 13; }
 .hero h1 { margin: 0 0 26px; font-weight: 500; font-size: clamp(2.3rem, 3.9vw, 3.8rem); line-height: 1.05; letter-spacing: -.033em; text-wrap: balance; }
 .hero h1 span { color: #8c8c8c; }
-.hero .stand { margin: 0 0 32px; font: 300 1.3rem/1.55 var(--serif); color: #262626; max-width: 34em; text-wrap: pretty; }
+.hero .stand { margin: 0; font: 300 1.3rem/1.55 var(--serif); color: #262626; max-width: 34em; text-wrap: pretty; }
 .hero .stand a { text-decoration: underline; text-decoration-color: var(--tint); text-decoration-thickness: 2px; text-underline-offset: .2em; transition: text-decoration-color .2s; }
 .hero .stand a:hover { text-decoration-color: var(--flame); }
-.hero .facts { display: grid; grid-template-columns: repeat(3, 1fr); column-gap: var(--gut); padding-top: 12px; border-top: 1px solid var(--rule); }
-.hero .facts div { font-size: .95rem; line-height: 1.45; }
-.hero .facts a { color: var(--flame-ink); }
-.hero .facts a:hover { color: var(--ink); }
 
 /* 01 writing: the cover story and what else is new */
 .writing { padding-bottom: 96px; }
@@ -303,7 +299,6 @@ img { display: block; max-width: 100%; height: auto; }
   .hero { padding-top: 32px; padding-bottom: 70px; }
   .hero .pic { grid-column: 1 / 7; margin-bottom: 28px; }
   .hero .say { grid-column: 1 / -1; }
-  .hero .facts { grid-template-columns: 1fr; row-gap: 8px; }
   .also { grid-template-columns: 1fr; }
   .brief { grid-column: 1 / -1; }
   .shot.big { grid-column: 1 / -1; grid-row: auto; }

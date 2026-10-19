@@ -16,7 +16,6 @@ const now = nowEntries[0];
 const { Content: NowText } = now ? await render(now) : { Content: null };
 const reading = books.filter((b) => b.data.status === 'reading');
 const shelf = [...reading, ...books.filter((b) => b.data.status === 'read')].slice(0, 5);
-const since = posts.at(-1)?.data.publishDate.getFullYear();
 ---
 <Base title={`${SITE.name}: essays, notes and small websites`} description={SITE.description} type="profile" image="/og.jpg" home>
   <section class="g hero">
@@ -26,11 +25,6 @@ const since = posts.at(-1)?.data.publishDate.getFullYear();
     <div class="say">
       <h1>Doer of random things, diver of weird rabbit holes, sharer of fascinating things. <span>Hi, I’m Bhuvan.</span></h1>
       <p class="stand">By day I work at Zerodha on markets, data and curation. The rest of the time I write <a href="/writing/">long essays</a> that few people read, build <a href="/projects/">small websites</a> nobody asked for and keep <a href="/notes/">short notes</a> on whatever caught my eye.</p>
-      <div class="facts">
-        <div><span class="lbl">Based in</span><br />{SITE.city}</div>
-        <div><span class="lbl">Writing since</span><br />{since}, {posts.length} essays, {notes.length} notes</div>
-        <div><span class="lbl">Looking for</span><br /><a href="#collaborate">Collaborators →</a></div>
-      </div>
     </div>
   </section>
 
