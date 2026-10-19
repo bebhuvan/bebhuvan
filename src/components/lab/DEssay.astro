@@ -1,0 +1,59 @@
+---
+// Direction D essay body: the meta column turns into a sticky contents list beside the
+// text, and margin notes (rehype-margin-notes) sit in the three columns to its right.
+import Frame from './DFrame.astro';
+import { render } from 'astro:content';
+import { posts, dek, short, fmtLong, fmtMonth, smart, minutes } from '../../utils/lab';
+interface Props { entry: (typeof posts)[number] }
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+const toc = headings.filter((h) => h.depth === 2);
+const notes = ((entry.body ?? '').match(/^\[\^[^\]]+\]:/gm) ?? []).length;
+const next = posts.filter((p) => p !== entry).slice(0, 6);
+const pad = (n: number) => String(n).padStart(2, '0');
+---
+<Frame title={`Lab D · ${entry.data.title}`} active="Writing">
+  <header class="g ehead">
+    <div class="meta">
+      <div><span class="lbl">Essay</span>{(entry.data.tags ?? []).slice(0, 3).join(', ')}</div>
+      <div><span class="lbl">Published</span>{fmtLong(entry.data.publishDate)}</div>
+      <div><span class="lbl">Reading time</span>{minutes(entry)} minutes</div>
+    </div>
+    <div class="tt">
+      <h1>{smart(entry.data.title)}</h1>
+      <p class="dek">{dek(entry.data.description)}</p>
+    </div>
+  </header>
+  {entry.data.image && (
+    <section class="g ecover">
+      <figure><img src={entry.data.image} alt="" />{entry.data.imageCaption && <figcaption class="lbl">{entry.data.imageCaption}</figcaption>}</figure>
+    </section>
+  )}
+  <div class="g ebody">
+    {(toc.length > 1 || notes > 0) && (
+      <aside class="toc">
+        {toc.length > 1 && (
+          <>
+            <span class="lbl">In this essay</span>
+            <ol>{toc.map((h, i) => <li><a href={`#${h.slug}`}><span class="num">{pad(i + 1)}</span>{smart(h.text)}</a></li>)}</ol>
+          </>
+        )}
+        {notes > 0 && <p class="lbl">{notes} notes in the margin<span class="sq"></span></p>}
+      </aside>
+    )}
+    <article class="prose"><Content /></article>
+    <div class="endbox">
+      <img src="/profile-pic-160.webp" alt="" />
+      <div>
+        <p><b>Bhuvan</b> works at Zerodha on markets, data and curation, and writes here about money, technology and whatever else he can’t stop thinking about.</p>
+        <a class="more" href="/rss.xml">Follow by RSS →</a>
+      </div>
+    </div>
+  </div>
+  <section class="g enext">
+    <div class="colh"><span><span class="num">→</span>More essays</span><a class="more" href="/lab/d/essay/">All {posts.length}</a></div>
+    <ul class="rows">
+      {next.map((p) => <li><a href="/lab/d/essay/"><b>{smart(p.data.title)}</b><span class="dek">{short(p.data.description)}</span><span class="d">{fmtMonth(p.data.publishDate)}</span></a></li>)}
+    </ul>
+  </section>
+</Frame>

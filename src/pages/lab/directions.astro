@@ -18,7 +18,7 @@ const pages = [['', 'Home'], ['essay/', 'Essay'], ['projects/', 'Projects'], ['n
         <h2>{d.name}</h2>
         <p>{d.idea}</p>
         <p class="t">{d.type}</p>
-        <nav>{pages.map(([p, l]) => <a href={`/lab/${d.k}/${p}`}>{l}</a>)}</nav>
+        <nav>{pages.map(([p, l]) => <a href={`/lab/${d.k}/${p}`}>{l}</a>)}{d.k === 'd' && <a href="/lab/d/margin-notes/">Essay with margin notes</a>}</nav>
       </section>
     ))}
   </main>
