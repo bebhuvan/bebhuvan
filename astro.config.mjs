@@ -51,10 +51,12 @@ export default defineConfig({
     }),
   },
   build: {
-    // The one stylesheet goes inline in every page (about 8KB compressed): most
-    // visits are a single page from a shared link, and a separate file held the
-    // first paint for a whole round trip (PageSpeed, 19 Oct 2026).
-    inlineStylesheets: 'always',
+    // Inline small stylesheets into the HTML (~4KB threshold), keep larger
+    // ones as separate files so they're cacheable across pages. Inlining the
+    // main stylesheet was tried (19 Oct 2026): first paint came ~0.7s sooner, but
+    // with fallback fonts, and the swap moved the page (CLS up to 0.08). The
+    // separate file gives the preloaded fonts time to land first: CLS 0.
+    inlineStylesheets: 'auto',
     assets: '_astro',
   },
   vite: {
