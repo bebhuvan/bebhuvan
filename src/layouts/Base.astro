@@ -48,7 +48,7 @@ const person = {
   image: `${SITE.url}/profile-pic.webp`,
   description: SITE.tagline,
   homeLocation: { '@type': 'Place', name: SITE.city },
-  sameAs: [SITE.twitter, SITE.github],
+  sameAs: [SITE.twitter, SITE.linkedin, SITE.github],
 };
 const website = { '@type': 'WebSite', '@id': `${SITE.url}/#website`, url: `${SITE.url}/`, name: SITE.name, description: SITE.description, inLanguage: 'en', publisher: { '@id': `${SITE.url}/#person` } };
 const webpage = {
@@ -91,6 +91,7 @@ const nav = [['Writing', '/writing/'], ['Notes', '/notes/'], ['Projects', '/proj
   <link rel="alternate" type="application/rss+xml" title="Bhuvan: notes" href="/notes/rss.xml" />
   <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
   <link rel="me" href={SITE.twitter} />
+  <link rel="me" href={SITE.linkedin} />
   <link rel="me" href={SITE.github} />
   {prev && <link rel="prev" href={prev} />}
   {next && <link rel="next" href={next} />}
@@ -133,7 +134,7 @@ const nav = [['Writing', '/writing/'], ['Notes', '/notes/'], ['Projects', '/proj
   </main>
   <footer class="g foot">
     <div class="me"><img src="/profile-pic-160.webp" alt="" width="44" height="44" loading="lazy" decoding="async" /><span>{SITE.tagline.split(', sharer')[0]}.</span></div>
-    <div><a href={SITE.github} rel="me">GitHub</a><br /><a href={SITE.twitter} rel="me">Twitter</a><br /><a href="/topics/">Topics</a></div>
+    <div><a href={SITE.github} rel="me">GitHub</a><br /><a href={SITE.twitter} rel="me">Twitter</a><br /><a href={SITE.linkedin} rel="me">LinkedIn</a><br /><a href="/topics/">Topics</a></div>
     <div><a href="/rss.xml">RSS: everything</a><br /><a href="/writing/rss.xml">RSS: essays</a><br /><a href="/notes/rss.xml">RSS: notes</a></div>
     <div class="lbl">Set in Host Grotesk and Source Serif. No cookies, no trackers. <a href="/trails/">Elsewhere</a> · <a href="/llms.txt">llms.txt</a></div>
   </footer>

@@ -13,8 +13,9 @@ export const SITE = {
   description: 'Essays, notes and small websites by Bhuvan, from Bangalore: money, technology, history, books, and whatever rabbit hole he fell into this week.',
   city: 'Bangalore, India',
   github: 'https://github.com/bebhuvan',
-  twitter: 'https://twitter.com/bhuvanesh2007',
-  handle: '@bhuvanesh2007',
+  twitter: 'https://x.com/bebhuvan',
+  handle: '@bebhuvan',
+  linkedin: 'https://www.linkedin.com/in/bebhuvan/',
 };
 
 const byDate = <T extends { data: { publishDate?: Date; date?: Date } }>(a: T, b: T) =>
