@@ -1,30 +1,28 @@
-# The Folio — bebhuvan.com
+# bebhuvan.com
 
-My personal website and blog, where I write about finance, economics, markets, books, and whatever else is bothering me that week.
+My personal website: long essays, short notes and links, the small websites I build, the books I read and a /now page.
 
 **Live site:** [bebhuvan.com](https://bebhuvan.com)
 
-The design is called *Annotated*: every page is one big sentence pinned on the left, with what it refers to living in a margin on the right. Margin notes are the signature, on the home page as much as in the essays. White ground, ink, one flame-orange accent, Spectral and Schibsted Grotesk. Zero client-side JavaScript; every interaction is CSS-only.
+The design is *Contributor on the grid* (October 2026): a 12-column grid with numbered sections on ink rules, Host Grotesk for headlines and labels, Source Serif 4 for everything read at length, margin notes in their own columns beside the text, and one flame accent. White ground, no dark mode, zero client-side JavaScript.
 
-How the design was arrived at, including the directions that were rejected, is in [`design-explorations/`](design-explorations/README.md).
+The notes are a commonplace book that used to live at rabbitholes.garden; all of it moved here in October 2026 with the same slugs.
+
+## Writing from a phone
+
+Everything is edited in [Pages CMS](https://app.pagescms.org) (`.pages.yml`). Saving commits to this repo, and the site deploys itself a minute or two later.
+
+- **Notes**: title, kind (note, link, quote, verse), the source link if there is one, and the text. The date fills itself in.
+- **Essays**: plain Markdown, so margin notes (`[^1]`) and embeds survive. New essays start as drafts: readable at their address, not listed anywhere. Untick *Draft* to publish.
+- **Books**: title, author, reading/read, and a one-line verdict. Notes optional.
+- **Now**: add a new entry; the newest is the /now page and older ones stay below it.
 
 ## Tech
 
-- **[Astro](https://astro.build)** (v5) — static site generation, content collections
-- **Markdown** content, managed via [Pages CMS](https://pagescms.org) (git-based)
-- **Cloudflare Pages** for hosting, deployed with [Wrangler](https://developers.cloudflare.com/workers/wrangler/)
-- Custom rehype plugins for Tufte-style margin notes and responsive images
-
-## Sections
-
-Writing · Marginalia · Trails · Projects · Books · Now
-
-- **Writing** — long-form essays, archived by year
-- **Marginalia** — shorter notes, links, and voice memos
-- **Trails** — an RSS aggregator pulling from a handful of feeds I keep up with
-- **Projects** — things I've built ([Seneca's Letters](https://seneca.ink), [Rabbit Holes](https://rabbitholes.garden), [Smallweb](https://smallweb.blog), and more)
-- **Books** — notes and highlights from what I've read
-- **Now** — a static snapshot of what I'm currently up to
+- [Astro](https://astro.build) 7, static, Markdown content collections (`src/content.config.ts`)
+- Cloudflare Workers (static assets + a small redirect Worker, `src/worker.js`), deployed by GitHub Actions on push to `master`
+- Rehype plugins: margin notes from footnotes, image sizes and srcsets, tidy bare links
+- `scripts/images.mjs` runs before every build: sizes for every image, WebP copies of heavy uploads
 
 ## Local development
 
@@ -32,22 +30,7 @@ Writing · Marginalia · Trails · Projects · Books · Now
 npm install
 npm run dev      # dev server at localhost:4321
 npm run build    # production build to dist/
-npm run preview  # preview the production build
-npm run deploy   # build + deploy to Cloudflare Pages
+npm run preview  # preview the build
 ```
 
-## Structure
-
-```
-src/
-  pages/        route components (.astro)
-  layouts/      page shell, <head> meta, JSON-LD
-  components/   Nav, Footer, PageHeader, MarginNote, etc.
-  content/      markdown collections + schema (config.ts)
-  plugins/      rehype plugins (margin notes, image attrs)
-  styles/       global.css
-  utils/        RSS aggregator
-public/         static assets (images, favicon, robots.txt)
-```
-
-Content lives in `src/content/`, with a typed schema per collection in `src/content/config.ts`. Per-page styles are scoped in each page's own `<style>` block; shared styles live in `src/styles/global.css`.
+Feeds: `/rss.xml` (everything), `/writing/rss.xml` (essays), `/notes/rss.xml` (notes). For language models: `/llms.txt`, `/llms-full.txt`, and any essay or note as Markdown at `<its address>index.md`.

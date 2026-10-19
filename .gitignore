@@ -31,3 +31,4 @@ HANDOFF.md
 src/data/images.generated.json
 public/**/*-768w.webp
 public/**/*-1400w.webp
+.wrangler/
