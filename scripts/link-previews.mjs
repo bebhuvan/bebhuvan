@@ -18,6 +18,8 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from 
 import { createHash } from 'node:crypto';
 import { join } from 'node:path';
 import sharp from 'sharp';
+import { lookup } from 'node:dns/promises';
+import { isIP } from 'node:net';
 
 const DATA = 'src/data/link-previews.json';
 const IMG_DIR = 'public/link-images';
@@ -51,12 +53,73 @@ function links() {
 }
 
 // --- fetching ------------------------------------------------------------------
+// The pages we fetch choose their own preview image URL, and this runs on a CI
+// runner, so every request (and every redirect hop) must go to a public http(s)
+// address: no loopback, private, link-local (cloud metadata) or reserved ranges.
+// Bodies are capped so a hostile or huge response can't exhaust the build.
+const MAX_REDIRECTS = 5;
+const MAX_BYTES = { html: 2_000_000, image: 8_000_000, json: 500_000 };
+
+function privateIp(ip) {
+  if (isIP(ip) === 4) {
+    const [a, b] = ip.split('.').map(Number);
+    return a === 0 || a === 10 || a === 127 || (a === 100 && b >= 64 && b <= 127) || (a === 169 && b === 254) ||
+      (a === 172 && b >= 16 && b <= 31) || (a === 192 && b === 168) || (a === 192 && b === 0) || (a === 198 && (b === 18 || b === 19)) || a >= 224;
+  }
+  const v = ip.toLowerCase();
+  if (v.startsWith('::ffff:')) return privateIp(v.slice(7));
+  return v === '::' || v === '::1' || /^f[cd]/.test(v) || /^fe[89ab]/.test(v) || v.startsWith('ff') || v.startsWith('64:ff9b');
+}
+
+async function assertPublic(u) {
+  const url = new URL(u);
+  if (url.protocol !== 'https:' && url.protocol !== 'http:') throw new Error(`blocked scheme ${url.protocol}`);
+  if (url.username || url.password) throw new Error('blocked credentials in url');
+  const host = url.hostname.replace(/^\[|\]$/g, '');
+  const addrs = isIP(host) ? [{ address: host }] : await lookup(host, { all: true });
+  if (!addrs.length || addrs.some((a) => privateIp(a.address))) throw new Error(`blocked address for ${host}`);
+}
+
+async function readCapped(res, cap) {
+  const len = Number(res.headers.get('content-length') || 0);
+  if (len > cap) throw new Error(`too large (${len})`);
+  const chunks = [];
+  let total = 0;
+  for await (const c of res.body ?? []) {
+    total += c.length;
+    if (total > cap) throw new Error('too large');
+    chunks.push(c);
+  }
+  return Buffer.concat(chunks);
+}
+
+// fetch with redirects followed by hand, each hop checked; returns a small Response-like object
 async function get(url, accept = 'text/html') {
+  const kind = accept.startsWith('image') ? 'image' : accept.includes('json') ? 'json' : 'html';
   const ctl = new AbortController();
   const t = setTimeout(() => ctl.abort(), TIMEOUT);
   try {
-    const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: accept, 'Accept-Language': 'en' }, redirect: 'follow', signal: ctl.signal });
-    return res;
+    let current = url;
+    for (let hop = 0; hop <= MAX_REDIRECTS; hop++) {
+      await assertPublic(current);
+      const res = await fetch(current, { headers: { 'User-Agent': UA, Accept: accept, 'Accept-Language': 'en' }, redirect: 'manual', signal: ctl.signal });
+      if (res.status >= 300 && res.status < 400 && res.headers.get('location')) {
+        current = new URL(res.headers.get('location'), current).toString();
+        res.body?.cancel();
+        continue;
+      }
+      const body = res.ok ? await readCapped(res, MAX_BYTES[kind]) : Buffer.alloc(0);
+      return {
+        ok: res.ok,
+        status: res.status,
+        url: current,
+        headers: res.headers,
+        text: async () => body.toString('utf8'),
+        json: async () => JSON.parse(body.toString('utf8')),
+        arrayBuffer: async () => body,
+      };
+    }
+    throw new Error('too many redirects');
   } finally {
     clearTimeout(t);
   }
@@ -120,7 +183,7 @@ async function page(url) {
 async function saveImage(src, id) {
   const res = await get(src, 'image/*');
   if (!res.ok) throw new Error(`image ${res.status}`);
-  const buf = Buffer.from(await res.arrayBuffer());
+  const buf = await res.arrayBuffer();
   const file = join(IMG_DIR, `${id}.webp`);
   const info = await sharp(buf, { animated: false }).resize({ width: 480, height: 480, fit: 'inside', withoutEnlargement: true }).webp({ quality: 72 }).toFile(file);
   return { src: `/link-images/${id}.webp`, w: info.width, h: info.height };
