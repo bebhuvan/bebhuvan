@@ -175,8 +175,9 @@ img { display: block; max-width: 100%; height: auto; }
 /* quoted passages: someone else's words, set as an inset on the grid. A 1px ink rule
    opens them like a table, the text drops a size and a shade, and the flame quote
    mark hangs outside the column so the words keep the text's left edge. */
-.prose blockquote { position: relative; margin: 2.2em 0 2.3em; padding: 16px 0 18px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule); font-size: 1.04rem; line-height: 1.62; color: #333; }
-.prose blockquote::before { content: '“'; position: absolute; right: calc(100% + .28em); top: 6px; font: 700 3.6rem/1 var(--serif); color: var(--flame); }
+/* no rules: an ink rule here read as a section break; the hung mark says 'quote' */
+.prose blockquote { position: relative; margin: 1.9em 0 2em; font-size: 1.04rem; line-height: 1.62; color: #333; }
+.prose blockquote::before { content: '“'; position: absolute; right: calc(100% + .28em); top: -.1em; font: 700 3.6rem/1 var(--serif); color: var(--flame); }
 .prose blockquote p { margin-bottom: .8em; }
 .prose blockquote p:last-child { margin-bottom: 0; }
 .prose blockquote strong { font-weight: 600; color: var(--ink); }
@@ -316,8 +317,8 @@ img { display: block; max-width: 100%; height: auto; }
   .ehead .tt { grid-column: 1 / -1; }
   .ebody > .prose, .ebody > .endbox { grid-column: 1 / -1; }
   .rows li a { grid-template-columns: 1fr auto; }
-  .prose blockquote { padding-top: 46px; }
-  .prose blockquote::before { right: auto; left: 0; top: 8px; font-size: 3rem; }
+  .prose blockquote { padding-left: 1.5em; }
+  .prose blockquote::before { right: auto; left: 0; top: -.05em; font-size: 2.6rem; }
   .rows .dek { display: none; }
   .phead .lbl, .phead .tt, .group .gl, .group .gt { grid-column: 1 / -1; }
   .group .gl { margin-bottom: 8px; }
