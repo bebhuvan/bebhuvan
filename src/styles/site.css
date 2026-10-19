@@ -518,6 +518,8 @@ img { display: block; max-width: 100%; height: auto; }
 .nowpage .txt { font: 400 1.32rem/1.6 var(--serif); }
 .nowpage .txt p { margin: 0 0 1em; }
 .nowpage .sig { font: italic 400 1.2rem/1 var(--serif); }
+.now .txt a, .nowpage .txt a, .earlier .txt a { text-decoration: underline; text-decoration-color: var(--tint); text-decoration-thickness: 2px; text-underline-offset: .18em; transition: text-decoration-color .2s; word-break: break-word; }
+.now .txt a:hover, .nowpage .txt a:hover, .earlier .txt a:hover { text-decoration-color: var(--flame); }
 .earlier { padding-bottom: 80px; }
 .earlier .gl { grid-column: 1 / 4; border-top: 2px solid var(--ink); padding-top: 10px; font-weight: 500; }
 .earlier .list { grid-column: 4 / 11; border-top: 2px solid var(--ink); }
