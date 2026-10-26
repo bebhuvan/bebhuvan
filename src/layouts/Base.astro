@@ -36,7 +36,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site).toString();
 let card = image || '/og.jpg';
 const jpg = card.replace(/\.webp$/, '.jpg');
 if (jpg !== card && existsSync(join(process.cwd(), 'public', jpg))) card = jpg;
-const cardInfo = imageInfo(card);
+// generated title cards (src/pages/og/) are always 1200x630
+const cardInfo = card.startsWith('/og/') ? { w: 1200, h: 630 } : imageInfo(card);
 const cardUrl = new URL(card, Astro.site).toString();
 
 const person = {

@@ -40,7 +40,7 @@ const posting = {
   url,
 };
 ---
-<Base title={smart(d.title)} description={description} image={d.image} imageAlt={d.imageAlt} type="article" published={d.date} tags={d.tags} section="Notes" noindex={d.draft} active="Notes" schema={[posting]} crumbs={[['Notes', '/notes/'], [smart(d.title), noteHref(n)]]}>
+<Base title={smart(d.title)} description={description} image={d.image ?? `/og/notes/${n.id}.jpg`} imageAlt={d.image ? d.imageAlt : smart(d.title)} type="article" published={d.date} tags={d.tags} section="Notes" noindex={d.draft} active="Notes" schema={[posting]} crumbs={[['Notes', '/notes/'], [smart(d.title), noteHref(n)]]}>
   <article>
     <header class="g nhead">
       <div class="meta">
