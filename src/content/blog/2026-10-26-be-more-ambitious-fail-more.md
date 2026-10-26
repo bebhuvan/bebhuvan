@@ -1,13 +1,18 @@
 ---
-title: "Be More Ambitious, Fail More"
-description: "Not being ambitious in 2026, and not letting that ambition grow as the models get better, is to commit the sin of sloth. On hitting walls, failing more, and finding the shape of the jaggedness."
+title: Be More Ambitious, Fail More
+description: Not being ambitious in 2026, and not letting that ambition grow as
+  the models get better, is to commit the sin of sloth. On hitting walls,
+  failing more, and finding the shape of the jaggedness.
 publishDate: 2026-10-26
 image: /blog-images/monk-by-the-sea-cover.webp
-imageCaption: "Caspar David Friedrich, The Monk by the Sea, 1808–1810. Alte Nationalgalerie, Berlin. Wikimedia Commons, public domain."
-tags: ["ai", "llms", "work"]
+imageCaption: Caspar David Friedrich, The Monk by the Sea, 1808–1810. Alte
+  Nationalgalerie, Berlin. Wikimedia Commons, public domain.
+tags:
+  - ai
+  - llms
+  - work
 draft: false
 ---
-
 Couldn't agree more with [Ethan](https://x.com/emollick/status/2114503849826549842) here.
 
 <blockquote class="twitter-tweet" data-dnt="true" data-align="center"><p lang="en" dir="ltr">My general advice for using AI for any purpose is to ask yourself: &quot;how do I make what I am doing even more ambitious?&quot;<br><br>You do this until you either hit a wall and then you know the shape of the frontier (useful!) or you find out that the AI can do more than you think (common!)</p>&mdash; Ethan Mollick (@emollick) <a href="https://x.com/emollick/status/2114503849826549842">October 25, 2026</a></blockquote>
@@ -78,6 +83,8 @@ And then it happened again. I'm not making this up: I opened Substack, and the f
 Then he builds on Felix's essay and turns it into something tangible: a skill file you can download to make any task or prompt more ambitious.
 
 Okay, now I'm convinced. The universe is telling me to be more ambitious. It's time to move past things that merely induce AI psychosis and on to outright AI madness.
+
+I publish these posts on my [newsletter](https://bhuvan.substack.com/p/be-more-ambitious-fail-more?r=1eft5&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) as well.
 
 ---
 
