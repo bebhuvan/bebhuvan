@@ -8,7 +8,10 @@ tags: ["ai", "llms", "work"]
 draft: true
 ---
 
-Couldn't agree more with Ethan here.
+Couldn't agree more with [Ethan](https://x.com/emollick/status/2114503849826549842) here.
+
+<blockquote class="twitter-tweet" data-dnt="true" data-align="center"><p lang="en" dir="ltr">My general advice for using AI for any purpose is to ask yourself: &quot;how do I make what I am doing even more ambitious?&quot;<br><br>You do this until you either hit a wall and then you know the shape of the frontier (useful!) or you find out that the AI can do more than you think (common!)</p>&mdash; Ethan Mollick (@emollick) <a href="https://x.com/emollick/status/2114503849826549842">October 25, 2026</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Coincidentally, I was having a similar conversation with a friend recently. I told him he had absolutely no idea how far AI models had come, and that not being ambitious in 2026, and not letting that ambition expand as the models get better, is to commit the sin of sloth.
 
@@ -46,7 +49,11 @@ Go forth and be ambitious. If Jesus were here today, I think he'd have said some
 
 ## Pair this with Felix and Dan
 
-Pair this post with [How to be more ambitious: a tutorial for humans with models](https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/) by Felix Rieseberg. It covers a lot of the same ground, and it's a beautifully written post. One passage I loved:
+Pair this post with [How to be more ambitious: a tutorial for humans with models](https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/) by Felix Rieseberg. It covers a lot of the same ground, and it's a beautifully written post.
+
+<blockquote class="twitter-tweet" data-dnt="true" data-align="center"><p lang="en" dir="ltr">Hi, I&#39;m Felix. I&#39;m an eng lead working on Claude. I love watching people take flight and do things they never thought possible.<br><br>We often describe that as &quot;being more ambitious&quot; when using AI, which is tricky advice to follow. I wrote a tutorial:<br><br><a href="https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/">felixrieseberg.com/how-to-be-more…</a></p>&mdash; Felix Rieseberg (@felixrieseberg) <a href="https://x.com/felixrieseberg/status/2110023283169247623">October 13, 2026</a></blockquote>
+
+One passage I loved:
 
 > **Accomplish hard things by believing them to be possible:** In 1939, George Dantzig showed up late to a statistics class at Berkeley, copied two problems off the blackboard, and handed in his solutions thinking they were homework. They were two unsolved problems in statistics.
 >
