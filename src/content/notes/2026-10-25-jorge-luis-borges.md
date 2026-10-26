@@ -1,6 +1,6 @@
 ---
 title: Jorge Luis Borges 🗣️
-kind: note
+kind: quote
 date: 2026-10-25T07:06
 tags:
   - "Quotes "
