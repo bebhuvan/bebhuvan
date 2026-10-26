@@ -1,11 +1,11 @@
 ---
-title: "Go Forth and Be Ambitious"
+title: "Be More Ambitious, Fail More"
 description: "Not being ambitious in 2026, and not letting that ambition expand as the models get better, is to commit the sin of sloth. A stream of consciousness on AI, cognitive freedom and the shape of the jaggedness."
 publishDate: 2026-10-26
 image: /blog-images/monk-by-the-sea-cover.webp
 imageCaption: "Caspar David Friedrich, The Monk by the Sea, 1808–1810. Alte Nationalgalerie, Berlin. Wikimedia Commons, public domain."
 tags: ["ai", "llms", "work"]
-draft: true
+draft: false
 ---
 
 Couldn't agree more with [Ethan](https://x.com/emollick/status/2114503849826549842) here.
