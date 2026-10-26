@@ -1,6 +1,6 @@
 ---
 title: "Be More Ambitious, Fail More"
-description: "Not being ambitious in 2026, and not letting that ambition expand as the models get better, is to commit the sin of sloth. A stream of consciousness on AI, cognitive freedom and the shape of the jaggedness."
+description: "Not being ambitious in 2026, and not letting that ambition grow as the models get better, is to commit the sin of sloth. On hitting walls, failing more, and finding the shape of the jaggedness."
 publishDate: 2026-10-26
 image: /blog-images/monk-by-the-sea-cover.webp
 imageCaption: "Caspar David Friedrich, The Monk by the Sea, 1808–1810. Alte Nationalgalerie, Berlin. Wikimedia Commons, public domain."
@@ -25,7 +25,7 @@ I'm not saying this from the point of view that everything will work out. But as
 
 By hitting walls, I mean you should actively want to fail more. Take extra-ambitious shots to figure out what's possible and what isn't. Every failure is valuable feedback that you can fold into your mental model of how these models work, and of what they're capable of and what they aren't. That mental model is always tentative, given how fast the models keep improving. But there's a whole lot to learn from hitting walls and failing outright. At least, that's been my experience with these tools.
 
-I heard Josh Woodward, who runs Google Labs and the Gemini app, describe something like this on [Lenny Rachitsky's podcast](https://www.lennysnewsletter.com/p/why-every-company-now-needs-to-think). His team keeps a running list of what's almost possible, and they stay at the frontier by playing with the models and watching what people are building. When something on that list crosses over, he compares it to a phase shift, like solid turning to gas, where you go, "Ooh, that just became possible." Then they get a team around it and just go.
+I heard Josh Woodward, who runs Google Labs and the Gemini app, describe something like this on [Lenny Rachitsky's podcast](https://www.lennysnewsletter.com/p/why-every-company-now-needs-to-think). His team keeps a running list of what's almost possible, and when something on that list crosses over, they get a team around it and just go:
 
 > I mean, one thing we try to do a lot, and I think this would apply in any of those situations, is how do you get yourself to the frontier? And that can be both with playing with the models, but also just watching what are the types of experiences that have just become possible where we have a phrase on the team, we talk about what's almost possible and we just have a list actually where we're trying to track those things.
 >
@@ -49,7 +49,7 @@ Which goes back to a point I've made multiple times in earlier posts: using AI t
 
 Go forth and be ambitious. If Jesus were here today, I think he'd have said something to that effect.
 
-## Pair this with Felix and Dan
+## Pair this with Felix, Dan and Khe
 
 Pair this post with [How to be more ambitious: a tutorial for humans with models](https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/) by Felix Rieseberg. It covers a lot of the same ground, and it's a beautifully written post.
 
@@ -68,6 +68,14 @@ And just as I was about to publish this post, I came across [this post by Dan Lu
 > BTW, when people have said they used the new model and everything just works, software is solved, etc., I haven't found this to be true at all. It's true that there are a lot more things the newer model can one-shot, where things basically just work, but this just means that I end up working on more ambitious things where models still struggle. I'm [more productive and can work faster](https://danluu.com/productivity-velocity/), but I find that, in terms of what I'm doing, I get farther from "it just works" with each more capable model because the gap between what the model [can verify effectively without significant handholding](https://danluu.com/agentic-testing/) and what the model can implement has been increasing. All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build.
 
 Is this the universe sending me a sign that I'm right? Can't be a coincidence. It's a coincidence, I know. I'm kidding.
+
+And then it happened again. I'm not making this up: I opened Substack, and the first post on my screen was [Are you being ambitious enough?](https://khemaridh.substack.com/p/are-you-being-ambitious-enough) by Khe Hy. Khe starts from a feeling I suspect a lot of people share:
+
+> "You need to be more ambitious with AI." This advice regularly gets dispensed by engineers at the frontier labs. And I hate it. Not only does it make me feel permanently behind. But it reveals my own shortcomings.
+
+Then he builds on Felix's essay and turns it into something tangible: a skill file you can download to make any task or prompt more ambitious.
+
+Okay, now I'm convinced. The universe is telling me to be more ambitious. It's time to move past things that merely induce AI psychosis and on to outright AI madness.
 
 ---
 
