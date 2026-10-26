@@ -1333,6 +1333,10 @@
   "failed": "http 403",
   "fetched": "2026-10-19"
  },
+ "https://www.bbc.co.uk/news/articles/cmvg7p001qj9o": {
+  "failed": "http 403",
+  "fetched": "2026-10-26"
+ },
  "https://www.bbc.com/news/articles/c2lrjlkpw2eo?utm_source=firefox-newtab-en-intl": {
   "kind": "page",
   "title": "How India Gives report: Ordinary citizens power $6bn in charity annually",
@@ -2498,6 +2502,16 @@
   "site": "X",
   "fetched": "2026-10-19"
  },
+ "https://x.com/florianederer/status/2113009222271246743?s=20": {
+  "kind": "tweet",
+  "title": "Florian Ederer",
+  "author": "Florian Ederer",
+  "handle": "florianederer",
+  "text": "Heterodox economists claim that they're systematically shut out of top econ journals. So I have a genuine question: What are the best recent heterodox papers that deserved publication in a top journal but were rejected?@IsabellaMWeber @devikadutt @DanielaGabor",
+  "date": "October 21, 2026",
+  "site": "X",
+  "fetched": "2026-10-26"
+ },
  "https://x.com/greg_ip/status/2098894201454727356": {
   "kind": "tweet",
   "title": "Greg Ip",
@@ -2812,6 +2826,16 @@
   "site": "X",
   "fetched": "2026-10-19"
  },
+ "https://x.com/jposhaughnessy/status/1477706291082670084": {
+  "kind": "tweet",
+  "title": "Jim O'Shaughnessy",
+  "author": "Jim O'Shaughnessy",
+  "handle": "jposhaughnessy",
+  "text": "Jorge Luis Borges 🗣️ “Don't talk unless you can improve the silence.” “Reality is not always probable, or likely.” “The original is unfaithful to the translation.” “Nothing is built on stone; All is built on sand, but we must build as if the sand were stone.”",
+  "date": "January 2, 2022",
+  "site": "X",
+  "fetched": "2026-10-26"
+ },
  "https://x.com/jposhaughnessy/status/2097033143215693994?s=20": {
   "kind": "tweet",
   "title": "Jim O'Shaughnessy",
@@ -3039,6 +3063,18 @@
    "h": 360
   },
   "fetched": "2026-10-19"
+ },
+ "https://youtu.be/D-pz8L1orVI?si=QngQbEIxmJgIgGQW": {
+  "kind": "video",
+  "title": "Claude Duet Is Here! (Better than Grok Bot?)",
+  "description": "Peter Yang on YouTube",
+  "site": "YouTube",
+  "img": {
+   "src": "/link-images/fb74b8446080496b.webp",
+   "w": 480,
+   "h": 360
+  },
+  "fetched": "2026-10-26"
  },
  "https://youtu.be/Dikga62kLYk?si=xWYzKmpbof-YcmIx": {
   "kind": "video",
