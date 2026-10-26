@@ -249,7 +249,8 @@ img { display: block; max-width: 100%; height: auto; }
 .prose ol > li { counter-increment: li; }
 .prose ol > li::before { content: counter(li, decimal-leading-zero); position: absolute; left: -1.6em; top: .32em; font: 500 .74rem/1 var(--sans); color: var(--flame-text); font-variant-numeric: tabular-nums; }
 .prose code { font: .86em/1 ui-monospace, monospace; background: var(--wash-code); padding: .1em .3em; }
-.prose > :last-child::after { content: ''; display: inline-block; width: .5em; height: .5em; background: var(--flame); margin-left: .4em; vertical-align: .05em; }
+/* the end mark: a no-break space carries the square, so it never wraps onto a line of its own */
+.prose > :last-child::after { content: '\00a0'; padding-right: .5em; margin-left: .15em; background: linear-gradient(var(--flame), var(--flame)) right 0 bottom .27em / .5em .5em no-repeat; }
 .mn-ref { font: 600 .62em/0 var(--sans); color: var(--flame-text); vertical-align: super; margin-left: 1px; padding: 0 1px; transition: background .2s; }
 /* margin notes take columns 10-12: the text is six columns wide, so three columns plus two
    gutters is half its width less half a gutter, pushed out by one gutter */
