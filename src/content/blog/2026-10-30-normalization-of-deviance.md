@@ -1,7 +1,7 @@
 ---
 title: Normalization of deviance
-description: What the Challenger disaster can teach us about why Bangalore's
-  streets keep getting worse, and why the slide can be reversed.
+description: "Into the ditch together: what the Challenger disaster can teach us
+  about why Bangalore's streets keep getting worse."
 publishDate: 2026-10-30
 image: /blog-images/blind-leading-the-blind-cover.webp
 imageCaption: Pieter Bruegel the Elder, The Blind Leading the Blind, 1568.
